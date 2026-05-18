@@ -1,0 +1,44 @@
+[
+  {
+    "id": "minjun-kim",
+    "name": "김민준",
+    "headline": "재활 PT와 바디프로필을 함께 운영하는 5년차 트레이너",
+    "area": "서울 강남 · 서초",
+    "experienceYears": 5,
+    "specialties": ["재활 PT", "바디프로필", "체형 분석"],
+    "desiredRoles": ["정규직", "파트타임", "오전 수업"],
+    "availability": "평일 오전/오후 협의 가능",
+    "verifiedProfile": true,
+    "summary": "회원 유지율과 수업 기록 관리를 중요하게 생각합니다. 계약 조건과 정산 기준이 명확한 업장을 선호합니다.",
+    "preferredConditions": ["정산일 명시", "계약서 제공", "무리한 회원권 강매 없음"],
+    "portfolioNotes": ["NSCA-CPT", "재활운동 과정 수료", "바디프로필 고객 관리 80건 이상"]
+  },
+  {
+    "id": "seoyeon-lee",
+    "name": "이서연",
+    "headline": "체형교정과 필라테스 기반 PT를 제공하는 트레이너",
+    "area": "서울 마포 · 용산",
+    "experienceYears": 4,
+    "specialties": ["체형교정", "필라테스", "여성 PT"],
+    "desiredRoles": ["파트타임", "프리랜서"],
+    "availability": "화/목/토 가능",
+    "verifiedProfile": true,
+    "summary": "소규모 스튜디오에서 상담과 수업 품질을 함께 관리해 온 경험이 있습니다.",
+    "preferredConditions": ["예약 시스템 사용", "상담실 제공", "교육 지원"],
+    "portfolioNotes": ["필라테스 지도자 과정", "체형평가 세미나", "리텐션 프로그램 운영"]
+  },
+  {
+    "id": "dohyun-park",
+    "name": "박도현",
+    "headline": "웨이트 트레이닝과 선수 컨디셔닝 중심의 7년차 트레이너",
+    "area": "서울 성동 · 광진",
+    "experienceYears": 7,
+    "specialties": ["웨이트", "선수 트레이닝", "컨디셔닝"],
+    "desiredRoles": ["정규직", "저녁 피크타임"],
+    "availability": "평일 저녁 중심",
+    "verifiedProfile": false,
+    "summary": "프리웨이트 장비가 충분하고 인센티브 기준이 투명한 업장을 찾고 있습니다.",
+    "preferredConditions": ["장비 컨디션 우수", "성과급 기준 공개", "회원 배정 기준 명확"],
+    "portfolioNotes": ["생활체육지도자", "대회 준비반 운영", "그룹 트레이닝 리드"]
+  }
+]

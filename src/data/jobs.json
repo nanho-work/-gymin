@@ -1,0 +1,58 @@
+[
+  {
+    "id": "hire-peakbody-01",
+    "type": "hiring",
+    "title": "강남 PT 스튜디오 오전 파트 트레이너 모집",
+    "authorName": "피크바디짐 강남점",
+    "area": "서울 강남",
+    "employmentType": "파트타임",
+    "compensation": "수업료 55% + 신규 인센티브",
+    "schedule": "평일 07:00-13:00",
+    "postedAt": "2026-05-15",
+    "tags": ["사업자 인증", "정산일 고정", "오전"],
+    "summary": "오전 고객 증가로 재활 PT와 체형 분석이 가능한 트레이너를 찾습니다.",
+    "status": "지원 가능"
+  },
+  {
+    "id": "hire-balancefit-01",
+    "type": "hiring",
+    "title": "체형교정 스튜디오 토요일 전담 트레이너 채용",
+    "authorName": "밸런스핏 합정",
+    "area": "서울 마포",
+    "employmentType": "프리랜서",
+    "compensation": "회당 정산 + 월말 지급",
+    "schedule": "토요일 10:00-18:00",
+    "postedAt": "2026-05-12",
+    "tags": ["재활 특화", "주말", "소규모"],
+    "summary": "상담부터 운동 처방까지 안정적으로 진행할 수 있는 트레이너를 선호합니다.",
+    "status": "검수 완료"
+  },
+  {
+    "id": "seek-minjun-01",
+    "type": "seeking",
+    "title": "강남/서초 오전 PT 수업 가능한 업장 찾습니다",
+    "authorName": "김민준 트레이너",
+    "area": "서울 강남 · 서초",
+    "employmentType": "파트타임",
+    "compensation": "수업료 배분 협의",
+    "schedule": "평일 오전",
+    "postedAt": "2026-05-16",
+    "tags": ["재활 PT", "계약서 필수", "정산일 명시"],
+    "summary": "재활 PT와 바디프로필 고객 관리를 함께 진행할 수 있는 업장을 찾습니다.",
+    "status": "오픈"
+  },
+  {
+    "id": "seek-seoyeon-01",
+    "type": "seeking",
+    "title": "마포/용산 체형교정 파트타임 구직",
+    "authorName": "이서연 트레이너",
+    "area": "서울 마포 · 용산",
+    "employmentType": "파트타임",
+    "compensation": "회당 정산 선호",
+    "schedule": "화/목/토",
+    "postedAt": "2026-05-14",
+    "tags": ["체형교정", "필라테스", "상담실 선호"],
+    "summary": "상담과 수업 기록 관리가 가능한 스튜디오형 업장을 선호합니다.",
+    "status": "오픈"
+  }
+]

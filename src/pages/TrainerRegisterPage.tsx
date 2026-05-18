@@ -8,13 +8,6 @@ export function TrainerRegisterPage() {
   return (
     <Container className="grid gap-6 py-8 lg:grid-cols-[minmax(0,1fr)_360px]">
         <form className="space-y-6 rounded-lg border border-line bg-white p-6 shadow-sm">
-          <div>
-            <p className="text-sm font-black text-forest">트레이너 프로필</p>
-            <h1 className="mt-2 text-2xl font-black tracking-tight text-ink">트레이너 정보 등록</h1>
-            <p className="mt-2 text-sm leading-6 text-muted">
-              프로필과 구직 조건을 등록하는 목업 화면입니다. 실제 회원가입과 저장 로직은 없습니다.
-            </p>
-          </div>
           <SectionTitle title="기본 프로필" />
           <div className="grid gap-4 md:grid-cols-2">
             <MockField label="이름" placeholder="예: 김민준" />

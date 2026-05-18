@@ -19,26 +19,20 @@ export function HiringJobsPage() {
 
   return (
     <Container className="space-y-6 py-8">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <h1 className="text-2xl font-black tracking-tight text-ink">구인글</h1>
-          <p className="mt-2 text-sm leading-6 text-muted">
-            사업자 인증을 마친 헬스장 사장님이 트레이너를 찾는 게시판입니다.
-          </p>
-        </div>
-        <PrimaryLink to="/gyms/new">헬스장 등록 후 구인 작성</PrimaryLink>
-      </div>
-        <SearchPanel
-          onQueryChange={setQuery}
-          placeholder="지역, 업장명, 직무 조건으로 검색"
-          query={query}
-          rightSlot={
-            <>
-              <Badge tone="green">사업자 인증 작성</Badge>
-              <Badge>{filteredItems.length}개 공고</Badge>
-            </>
-          }
-        />
+      <SearchPanel
+        onQueryChange={setQuery}
+        placeholder="지역, 업장명, 직무 조건으로 검색"
+        query={query}
+        rightSlot={
+          <>
+            <Badge tone="green">사업자 인증 작성</Badge>
+            <Badge>{filteredItems.length}개 공고</Badge>
+            <PrimaryLink to="/gyms/new" variant="light">
+              헬스장 등록 후 구인 작성
+            </PrimaryLink>
+          </>
+        }
+      />
         <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
           <h2 className="text-xl font-black text-ink">작성 권한 안내</h2>
           <p className="mt-3 leading-7 text-muted">

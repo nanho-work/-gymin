@@ -20,26 +20,20 @@ export function SeekingJobsPage() {
 
   return (
     <Container className="space-y-6 py-8">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <h1 className="text-2xl font-black tracking-tight text-ink">구직글</h1>
-          <p className="mt-2 text-sm leading-6 text-muted">
-            트레이너가 희망 지역, 근무 형태, 정산 조건을 공개하는 게시판입니다.
-          </p>
-        </div>
-        <PrimaryLink to="/trainers/new">트레이너 정보 등록</PrimaryLink>
-      </div>
-        <SearchPanel
-          onQueryChange={setQuery}
-          placeholder="지역, 전문 분야, 희망 조건으로 검색"
-          query={query}
-          rightSlot={
-            <>
-              <Badge tone="green">전체 이용 가능</Badge>
-              <Badge>{filteredItems.length}개 구직글</Badge>
-            </>
-          }
-        />
+      <SearchPanel
+        onQueryChange={setQuery}
+        placeholder="지역, 전문 분야, 희망 조건으로 검색"
+        query={query}
+        rightSlot={
+          <>
+            <Badge tone="green">전체 이용 가능</Badge>
+            <Badge>{filteredItems.length}개 구직글</Badge>
+            <PrimaryLink to="/trainers/new" variant="light">
+              트레이너 정보 등록
+            </PrimaryLink>
+          </>
+        }
+      />
         <div className="space-y-4">
           {filteredItems.map((post) => (
             <JobPostCard key={post.id} post={post} />

@@ -17,26 +17,20 @@ export function GymListPage() {
 
   return (
     <Container className="space-y-6 py-8">
-      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
-        <div>
-          <h1 className="text-2xl font-black tracking-tight text-ink">헬스장 목록</h1>
-          <p className="mt-2 text-sm leading-6 text-muted">
-            인증 상태와 근무 조건을 비교해서 트레이너가 일할 업장을 찾습니다.
-          </p>
-        </div>
-        <PrimaryLink to="/gyms/new">헬스장 정보 등록</PrimaryLink>
-      </div>
-        <SearchPanel
-          onQueryChange={setQuery}
-          placeholder="지역, 업장명, 수업 형태로 검색"
-          query={query}
-          rightSlot={
-            <>
-              <Badge tone="green">사업자 인증 우선</Badge>
-              <Badge>목업 데이터 {filteredItems.length}개</Badge>
-            </>
-          }
-        />
+      <SearchPanel
+        onQueryChange={setQuery}
+        placeholder="지역, 업장명, 수업 형태로 검색"
+        query={query}
+        rightSlot={
+          <>
+            <Badge tone="green">사업자 인증 우선</Badge>
+            <Badge>목업 데이터 {filteredItems.length}개</Badge>
+            <PrimaryLink to="/gyms/new" variant="light">
+              헬스장 정보 등록
+            </PrimaryLink>
+          </>
+        }
+      />
         <div className="content-grid grid gap-5">
           {filteredItems.map((gym) => (
             <GymCard gym={gym} key={gym.id} />

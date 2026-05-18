@@ -1,6 +1,5 @@
 import { Badge } from "@/components/common/Badge";
 import { Container } from "@/components/common/Container";
-import { PageHeader } from "@/components/common/PageHeader";
 import { PrimaryLink } from "@/components/common/PrimaryLink";
 import { GymCard } from "@/components/cards/GymCard";
 import { SearchPanel } from "@/components/domain/SearchPanel";
@@ -17,14 +16,16 @@ export function GymListPage() {
   );
 
   return (
-    <>
-      <PageHeader
-        actions={<PrimaryLink to="/gyms/new">헬스장 정보 등록</PrimaryLink>}
-        description="트레이너가 근무 조건과 업장 정보를 비교할 수 있도록 인증 상태, 채용 상태, 주요 평가 항목을 함께 보여줍니다."
-        eyebrow="헬스장 탐색"
-        title="헬스장 목록"
-      />
-      <Container className="space-y-6 py-8">
+    <Container className="space-y-6 py-8">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h1 className="text-2xl font-black tracking-tight text-ink">헬스장 목록</h1>
+          <p className="mt-2 text-sm leading-6 text-muted">
+            인증 상태와 근무 조건을 비교해서 트레이너가 일할 업장을 찾습니다.
+          </p>
+        </div>
+        <PrimaryLink to="/gyms/new">헬스장 정보 등록</PrimaryLink>
+      </div>
         <SearchPanel
           onQueryChange={setQuery}
           placeholder="지역, 업장명, 수업 형태로 검색"
@@ -41,7 +42,6 @@ export function GymListPage() {
             <GymCard gym={gym} key={gym.id} />
           ))}
         </div>
-      </Container>
-    </>
+    </Container>
   );
 }

@@ -1,6 +1,5 @@
 import { Badge } from "@/components/common/Badge";
 import { Container } from "@/components/common/Container";
-import { PageHeader } from "@/components/common/PageHeader";
 import { PrimaryLink } from "@/components/common/PrimaryLink";
 import { BoardPostCard } from "@/components/cards/BoardPostCard";
 import { AccessPolicyPanel } from "@/components/domain/AccessPolicyPanel";
@@ -14,15 +13,17 @@ export function OwnerBoardPage() {
   useDocumentTitle("사장님 게시판");
 
   return (
-    <>
-      <PageHeader
-        actions={<PrimaryLink to="/gyms/new">사업자 인증 UI 보기</PrimaryLink>}
-        description="헬스장 운영자끼리 구인, 계약, 운영 노하우를 공유하는 게시판입니다. 사업자등록 인증 완료 사장님만 이용 가능한 영역으로 표현합니다."
-        eyebrow="사업자 인증 전용"
-        title="헬스장 사장님 게시판"
-      />
-      <Container className="grid gap-6 py-8 lg:grid-cols-[minmax(0,1fr)_360px]">
+    <Container className="grid gap-6 py-8 lg:grid-cols-[minmax(0,1fr)_360px]">
         <div className="space-y-4">
+          <div className="flex flex-col gap-3 rounded-lg border border-line bg-white p-5 shadow-sm sm:flex-row sm:items-end sm:justify-between">
+            <div>
+              <h1 className="text-2xl font-black tracking-tight text-ink">헬스장 사장님 게시판</h1>
+              <p className="mt-2 text-sm leading-6 text-muted">
+                사업자등록 인증 완료 사장님만 이용 가능한 운영자 전용 게시판입니다.
+              </p>
+            </div>
+            <PrimaryLink to="/gyms/new">사업자 인증 UI 보기</PrimaryLink>
+          </div>
           <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
             <div className="flex flex-wrap items-center justify-between gap-3">
               <div>
@@ -43,7 +44,6 @@ export function OwnerBoardPage() {
           <BusinessVerificationPanel />
           <AccessPolicyPanel />
         </div>
-      </Container>
-    </>
+    </Container>
   );
 }

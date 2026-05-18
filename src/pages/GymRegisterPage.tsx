@@ -1,6 +1,5 @@
 import { Container } from "@/components/common/Container";
 import { MockField } from "@/components/common/MockField";
-import { PageHeader } from "@/components/common/PageHeader";
 import { BusinessVerificationPanel } from "@/components/domain/BusinessVerificationPanel";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 
@@ -8,14 +7,15 @@ export function GymRegisterPage() {
   useDocumentTitle("헬스장 정보 등록");
 
   return (
-    <>
-      <PageHeader
-        description="헬스장 사장님이 업장 정보를 등록하는 목업 화면입니다. 실제 저장, 인증, 파일 업로드는 연결하지 않습니다."
-        eyebrow="사장님용 등록"
-        title="헬스장 정보 등록"
-      />
-      <Container className="grid gap-6 py-8 lg:grid-cols-[minmax(0,1fr)_360px]">
+    <Container className="grid gap-6 py-8 lg:grid-cols-[minmax(0,1fr)_360px]">
         <form className="space-y-6 rounded-lg border border-line bg-white p-6 shadow-sm">
+          <div>
+            <p className="text-sm font-black text-forest">사장님용 등록</p>
+            <h1 className="mt-2 text-2xl font-black tracking-tight text-ink">헬스장 정보 등록</h1>
+            <p className="mt-2 text-sm leading-6 text-muted">
+              실제 저장, 인증, 파일 업로드 없이 등록 흐름만 보여주는 목업 화면입니다.
+            </p>
+          </div>
           <SectionTitle title="기본 정보" />
           <div className="grid gap-4 md:grid-cols-2">
             <MockField label="헬스장명" placeholder="예: 피크바디짐 강남점" />
@@ -51,8 +51,7 @@ export function GymRegisterPage() {
             </p>
           </aside>
         </div>
-      </Container>
-    </>
+    </Container>
   );
 }
 

@@ -1,6 +1,5 @@
 import { Badge } from "@/components/common/Badge";
 import { Container } from "@/components/common/Container";
-import { PageHeader } from "@/components/common/PageHeader";
 import { PrimaryLink } from "@/components/common/PrimaryLink";
 import { JobPostCard } from "@/components/cards/JobPostCard";
 import { SearchPanel } from "@/components/domain/SearchPanel";
@@ -19,14 +18,16 @@ export function HiringJobsPage() {
   );
 
   return (
-    <>
-      <PageHeader
-        actions={<PrimaryLink to="/gyms/new">헬스장 등록 후 구인 작성</PrimaryLink>}
-        description="헬스장 사장님이 트레이너를 찾는 게시판입니다. 목업에서는 작성 권한을 사업자 인증 완료 업장으로 표현합니다."
-        eyebrow="헬스장 사장님 작성"
-        title="구인글 페이지"
-      />
-      <Container className="space-y-6 py-8">
+    <Container className="space-y-6 py-8">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h1 className="text-2xl font-black tracking-tight text-ink">구인글</h1>
+          <p className="mt-2 text-sm leading-6 text-muted">
+            사업자 인증을 마친 헬스장 사장님이 트레이너를 찾는 게시판입니다.
+          </p>
+        </div>
+        <PrimaryLink to="/gyms/new">헬스장 등록 후 구인 작성</PrimaryLink>
+      </div>
         <SearchPanel
           onQueryChange={setQuery}
           placeholder="지역, 업장명, 직무 조건으로 검색"
@@ -50,7 +51,6 @@ export function HiringJobsPage() {
             <JobPostCard key={post.id} post={post} />
           ))}
         </div>
-      </Container>
-    </>
+    </Container>
   );
 }

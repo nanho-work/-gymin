@@ -1,6 +1,5 @@
 import { Badge } from "@/components/common/Badge";
 import { Container } from "@/components/common/Container";
-import { PageHeader } from "@/components/common/PageHeader";
 import { PrimaryLink } from "@/components/common/PrimaryLink";
 import { JobPostCard } from "@/components/cards/JobPostCard";
 import { TrainerCard } from "@/components/cards/TrainerCard";
@@ -20,14 +19,16 @@ export function SeekingJobsPage() {
   );
 
   return (
-    <>
-      <PageHeader
-        actions={<PrimaryLink to="/trainers/new">트레이너 정보 등록</PrimaryLink>}
-        description="트레이너가 희망 지역, 근무 형태, 정산 조건을 공개해 업장과 연결되는 구직 게시판입니다."
-        eyebrow="트레이너 중심"
-        title="구직글 페이지"
-      />
-      <Container className="space-y-6 py-8">
+    <Container className="space-y-6 py-8">
+      <div className="flex flex-col gap-3 sm:flex-row sm:items-end sm:justify-between">
+        <div>
+          <h1 className="text-2xl font-black tracking-tight text-ink">구직글</h1>
+          <p className="mt-2 text-sm leading-6 text-muted">
+            트레이너가 희망 지역, 근무 형태, 정산 조건을 공개하는 게시판입니다.
+          </p>
+        </div>
+        <PrimaryLink to="/trainers/new">트레이너 정보 등록</PrimaryLink>
+      </div>
         <SearchPanel
           onQueryChange={setQuery}
           placeholder="지역, 전문 분야, 희망 조건으로 검색"
@@ -57,7 +58,6 @@ export function SeekingJobsPage() {
             ))}
           </div>
         </section>
-      </Container>
-    </>
+    </Container>
   );
 }

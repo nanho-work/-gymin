@@ -1,6 +1,6 @@
-# gymin
+# GymIn
 
-트레이너를 위한 헬스장 정보, 구인구직, 게시판 목업 웹 서비스입니다.
+피트니스 업계용 무료 구인 게시판 목업 웹 서비스입니다.
 
 ## 기술 스택
 
@@ -28,15 +28,17 @@ npm run build
 ## 페이지
 
 - 홈: `/`
-- 헬스장 정보 등록: `/gyms/new`
-- 헬스장 목록: `/gyms`
-- 헬스장 상세보기: `/gyms/:gymId`
+- 로그인/회원가입 선택: `/login`
+- 사업자 회원가입: `/signup/business`
+- 일반 회원가입: `/signup/general`
+- 센터 등록: `/gyms/new`
+- 센터 상세보기: `/gyms/:gymId`
 - 구인글 페이지: `/jobs/hiring`
-- 구직글 페이지: `/jobs/seeking`
+- 구인글 등록: `/jobs/hiring/new`
+- 사장님 전용: `/owner`
+- 트레이너 전용: `/trainer`
 - 트레이너 정보 등록: `/trainers/new`
 - 트레이너 상세보기: `/trainers/:trainerId`
-- 사장님 게시판: `/boards/owners`
-- 트레이너 게시판: `/boards/trainers`
 
 ## 구조
 

@@ -30,23 +30,47 @@ export type Gym = {
 export type Trainer = {
   id: string;
   name: string;
+  age: number;
+  birthDate: string;
+  gender: string;
+  contact: string;
+  residenceRegion: string;
+  profileImage: string;
   headline: string;
   area: string;
   experienceYears: number;
   specialties: string[];
+  workType: string;
   desiredRoles: string[];
   availability: string;
   verifiedProfile: boolean;
   summary: string;
+  workHistory: Array<{
+    gymName: string;
+    period: string;
+    role: string;
+  }>;
+  certifications: string[];
+  portfolioLinks: Array<{
+    label: string;
+    url: string;
+  }>;
+  mediaItems: string[];
+  mediaImages: Array<{
+    label: string;
+    url: string;
+  }>;
   preferredConditions: string[];
   portfolioNotes: string[];
 };
 
-export type JobType = "hiring" | "seeking";
+export type JobType = "hiring";
 
 export type JobPost = {
   id: string;
   type: JobType;
+  gymId?: string;
+  trainerId?: string;
   title: string;
   authorName: string;
   area: string;
@@ -59,16 +83,11 @@ export type JobPost = {
   status: string;
 };
 
-export type BoardAudience = "owners" | "trainers";
-
-export type BoardPost = {
+export type Application = {
   id: string;
-  audience: BoardAudience;
-  title: string;
-  category: string;
-  author: string;
-  excerpt: string;
-  createdAt: string;
-  comments: number;
-  lockedForBusinessVerification: boolean;
+  jobId: string;
+  trainerId: string;
+  status: string;
+  appliedAt: string;
+  message: string;
 };

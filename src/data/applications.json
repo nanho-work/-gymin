@@ -1,0 +1,26 @@
+[
+  {
+    "id": "app-hire-peakbody-01-minjun",
+    "jobId": "hire-peakbody-01",
+    "trainerId": "minjun-kim",
+    "status": "검토 전",
+    "appliedAt": "2026-05-18",
+    "message": "오전 수업과 재활 PT 경험이 있어 지원합니다."
+  },
+  {
+    "id": "app-hire-peakbody-01-seoyeon",
+    "jobId": "hire-peakbody-01",
+    "trainerId": "seoyeon-lee",
+    "status": "검토 중",
+    "appliedAt": "2026-05-18",
+    "message": "체형교정 수업 경험을 살려 오전 파트 지원 가능합니다."
+  },
+  {
+    "id": "app-hire-balancefit-01-seoyeon",
+    "jobId": "hire-balancefit-01",
+    "trainerId": "seoyeon-lee",
+    "status": "검토 전",
+    "appliedAt": "2026-05-16",
+    "message": "토요일 수업과 필라테스 기반 교정 수업 모두 가능합니다."
+  }
+]

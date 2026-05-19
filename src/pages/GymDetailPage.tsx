@@ -5,7 +5,7 @@ import { PrimaryLink } from "@/components/common/PrimaryLink";
 import { RatingBreakdown } from "@/components/domain/RatingBreakdown";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
 import { getAverageRating } from "@/utils/rating";
-import { getGymById } from "@/utils/mockRepository";
+import { getGymById, getJobsByGymId } from "@/utils/mockRepository";
 
 export function GymDetailPage() {
   const { gymId } = useParams();
@@ -16,12 +16,14 @@ export function GymDetailPage() {
     return (
       <Container className="py-16">
         <h1 className="text-3xl font-black text-ink">헬스장 정보를 찾을 수 없습니다</h1>
-        <Link className="mt-5 inline-block rounded-md bg-ink px-4 py-3 text-sm font-black text-white" to="/gyms">
-          목록으로 돌아가기
+        <Link className="mt-5 inline-block rounded-md bg-ink px-4 py-3 text-sm font-black text-white" to="/jobs/hiring">
+          구인글로 돌아가기
         </Link>
       </Container>
     );
   }
+
+  const hiringJobs = getJobsByGymId(gym.id);
 
   return (
     <>
@@ -38,8 +40,11 @@ export function GymDetailPage() {
             <p className="mt-5 leading-8 text-muted">{gym.summary}</p>
             <div className="mt-7 flex flex-wrap gap-3">
               <PrimaryLink to="/jobs/hiring">구인글 보기</PrimaryLink>
-              <PrimaryLink to="/gyms" variant="light">
-                목록으로
+              <PrimaryLink to="/jobs/hiring/new" variant="light">
+                구인글 등록
+              </PrimaryLink>
+              <PrimaryLink to="/jobs/hiring" variant="light">
+                구인글 목록
               </PrimaryLink>
             </div>
           </div>
@@ -64,6 +69,19 @@ export function GymDetailPage() {
               {gym.reviewPolicy} 현재 목업에서는 감정적인 서술보다 정산, 계약, 휴무, 영업 압박 같은 항목
               중심으로만 표시합니다.
             </p>
+          </section>
+          <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
+            <h2 className="text-xl font-black text-ink">이 업장의 구인 연결</h2>
+            <div className="mt-4 space-y-3">
+              {hiringJobs.map((job) => (
+                <div className="rounded-md border border-line bg-paper p-4" key={job.id}>
+                  <p className="font-black text-ink">{job.title}</p>
+                  <p className="mt-2 text-sm font-bold text-muted">
+                    {job.employmentType} · {job.schedule} · {job.status}
+                  </p>
+                </div>
+              ))}
+            </div>
           </section>
         </div>
         <aside className="space-y-5">

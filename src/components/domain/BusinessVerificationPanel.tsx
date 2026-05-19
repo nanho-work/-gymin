@@ -1,21 +1,26 @@
 import { Badge } from "@/components/common/Badge";
+import { MockField } from "@/components/common/MockField";
 
 export function BusinessVerificationPanel() {
   return (
     <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
       <div className="flex flex-wrap items-center justify-between gap-3">
         <div>
-          <Badge tone="amber">목업 UI</Badge>
-          <h2 className="mt-4 text-xl font-black text-ink">사업자등록 인증</h2>
+          <Badge tone="amber">선택 인증</Badge>
+          <h2 className="mt-4 text-xl font-black text-ink">인증 배지 신청</h2>
         </div>
-        <span className="rounded-md bg-paper px-3 py-2 text-sm font-black text-muted">파일 저장 없음</span>
+        <span className="rounded-md bg-paper px-3 py-2 text-sm font-black text-muted">필수 아님</span>
       </div>
       <p className="mt-4 text-sm leading-6 text-muted">
-        지금은 실제 업로드나 검증을 수행하지 않습니다. 추후 FastAPI 서버에서 파일 업로드, 사업자 인증 상태,
-        사장님 게시판 권한을 연결할 수 있게 UI 위치만 잡아 둡니다.
+        구인글 등록에 필수는 아닙니다. 나중에 운영자가 확인한 센터에는 인증 배지를 표시하는 선택 기능으로
+        연결할 수 있게 UI 위치만 잡아 둡니다.
       </p>
+      <div className="mt-5 space-y-3">
+        <MockField label="대표자명 선택" placeholder="예: 홍길동" />
+        <MockField label="사업자등록번호 선택" placeholder="예: 123-45-67890" />
+      </div>
       <button className="mt-5 w-full rounded-md border border-dashed border-green bg-paper px-4 py-4 text-sm font-black text-forest">
-        사업자등록증 업로드 영역
+        인증 자료 선택 업로드 UI
       </button>
     </section>
   );

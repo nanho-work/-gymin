@@ -2,30 +2,38 @@ import { Link } from "react-router-dom";
 import { Badge } from "@/components/common/Badge";
 import { Container } from "@/components/common/Container";
 import { PrimaryLink } from "@/components/common/PrimaryLink";
-import { AccessPolicyPanel } from "@/components/domain/AccessPolicyPanel";
 import { useDocumentTitle } from "@/hooks/useDocumentTitle";
-import { gyms, jobs, trainers } from "@/utils/mockRepository";
+import type { JobPost } from "@/types/domain";
+import { getGymById, gyms, jobs, trainers } from "@/utils/mockRepository";
+
+const hiringPosts = jobs.filter((job) => job.type === "hiring");
+
+const notices = [
+  "허위 구인글, 과장 급여, 타인 비방 글은 운영자가 숨김 처리할 수 있습니다.",
+  "연락처 공개 전에는 개인정보와 계약 조건을 꼭 직접 확인해 주세요.",
+  "트레이너는 내 프로필을 등록해두면 구인글에 지원할 때 그대로 사용할 수 있습니다."
+];
 
 export function HomePage() {
-  useDocumentTitle("트레이너를 위한 헬스장 정보 플랫폼");
+  useDocumentTitle("피트니스 무료 구인 게시판");
 
   return (
     <>
       <section className="border-b border-line bg-white">
         <Container className="grid gap-10 py-12 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:py-16">
           <div>
-            <Badge tone="green">Trainer first web platform</Badge>
+            <Badge tone="green">무료 피트니스 구인</Badge>
             <h1 className="mt-5 max-w-4xl text-5xl font-black leading-tight tracking-tight text-ink sm:text-6xl">
-              트레이너가 일할 헬스장을 더 정확히 고르는 웹
+              트레이너가 구인글을 보고 프로필로 지원하는 게시판
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
-              gymin은 헬스장 정보, 구인글, 구직글, 트레이너 프로필을 한 곳에서 확인하는 목업 웹 서비스입니다.
-              서버는 나중에 FastAPI로 붙이고, 지금은 구조와 UX 흐름을 먼저 잡습니다.
+              GymIn은 센터 사장님이 구인글을 올리고, 트레이너가 미리 등록한 프로필로 지원하는 무료 목업 웹
+              서비스입니다. 구인글과 트레이너 프로필 기반 지원 흐름에 집중합니다.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
-              <PrimaryLink to="/gyms">헬스장 목록 보기</PrimaryLink>
-              <PrimaryLink to="/jobs/hiring" variant="light">
-                구인글 확인
+              <PrimaryLink to="/jobs/hiring">구인글 보기</PrimaryLink>
+              <PrimaryLink to="/trainer" variant="light">
+                내 프로필 등록
               </PrimaryLink>
             </div>
           </div>
@@ -36,55 +44,38 @@ export function HomePage() {
               src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80"
             />
             <div className="grid grid-cols-3 border-t border-line bg-white">
-              <Stat label="등록 헬스장" value={`${gyms.length}`} />
-              <Stat label="구인/구직" value={`${jobs.length}`} />
+              <Stat label="등록 센터" value={`${gyms.length}`} />
+              <Stat label="구인글" value={`${jobs.length}`} />
               <Stat label="트레이너" value={`${trainers.length}`} />
             </div>
           </div>
         </Container>
       </section>
 
-      <Container className="py-12">
-        <div className="grid gap-5 md:grid-cols-3">
-          <FlowCard
-            title="헬스장 정보 등록"
-            description="사장님은 사업자 인증 UI와 함께 기본 정보, 시설, 채용 조건을 등록합니다."
-            to="/gyms/new"
-          />
-          <FlowCard
-            title="트레이너 정보 등록"
-            description="트레이너는 경력, 희망 조건, 전문 분야를 등록해 구직글과 상세 페이지로 연결합니다."
-            to="/trainers/new"
-          />
-          <FlowCard
-            title="구인구직 게시 흐름"
-            description="구인글은 업장이, 구직글은 트레이너가 작성하는 웹 게시판형 구조로 설계합니다."
-            to="/jobs/seeking"
-          />
-        </div>
+      <Container className="space-y-10 py-12">
+        <HomeRail actionLabel="전체 보기" actionTo="/jobs/hiring" items={hiringPosts} title="최신 구인글" type="hiring" />
       </Container>
 
       <section className="border-y border-line bg-white">
         <Container className="grid gap-6 py-12 lg:grid-cols-[1fr_380px]">
           <div>
-            <Badge tone="dark">웹 구조</Badge>
-            <h2 className="mt-4 text-3xl font-black tracking-tight text-ink">앱이 아니라 웹서비스처럼 탐색합니다</h2>
+            <Badge tone="dark">공지사항</Badge>
+            <h2 className="mt-4 text-3xl font-black tracking-tight text-ink">무료 게시판 이용 안내</h2>
             <p className="mt-4 max-w-3xl leading-8 text-muted">
-              상단 내비게이션, 목록 검색, 상세 페이지, 게시판형 콘텐츠를 중심으로 구성했습니다. 모바일에서도
-              대응하지만 기본 인상은 데스크톱 웹 플랫폼입니다.
+              구인글을 편하게 올리고 트레이너가 프로필로 지원하는 목업입니다. 실제 운영 단계에서는 로그인,
+              지원자 열람 권한, 신고/숨김 처리를 최소한의 운영 장치로 둡니다.
             </p>
-            <div className="mt-7 grid gap-4 sm:grid-cols-2">
-              <Link className="rounded-lg border border-line bg-paper p-5 hover:border-green" to="/boards/trainers">
-                <p className="text-sm font-black text-forest">트레이너 게시판</p>
-                <h3 className="mt-2 text-xl font-black text-ink">모든 사용자 접근 가능</h3>
-              </Link>
-              <Link className="rounded-lg border border-line bg-paper p-5 hover:border-green" to="/boards/owners">
-                <p className="text-sm font-black text-forest">사장님 게시판</p>
-                <h3 className="mt-2 text-xl font-black text-ink">사업자 인증 후 접근</h3>
-              </Link>
-            </div>
           </div>
-          <AccessPolicyPanel />
+          <aside className="rounded-lg border border-line bg-paper p-5">
+            <h3 className="text-lg font-black text-ink">운영 공지</h3>
+            <ul className="mt-4 space-y-3">
+              {notices.map((notice) => (
+                <li className="rounded-md border border-line bg-white p-3 text-sm font-bold leading-6 text-muted" key={notice}>
+                  {notice}
+                </li>
+              ))}
+            </ul>
+          </aside>
         </Container>
       </section>
     </>
@@ -100,12 +91,51 @@ function Stat({ label, value }: { label: string; value: string }) {
   );
 }
 
-function FlowCard({ title, description, to }: { title: string; description: string; to: string }) {
+function HomeRail({
+  title,
+  items,
+  type,
+  actionLabel,
+  actionTo
+}: {
+  title: string;
+  items: JobPost[];
+  type: "hiring";
+  actionLabel: string;
+  actionTo: string;
+}) {
   return (
-    <Link className="rounded-lg border border-line bg-white p-6 shadow-sm transition hover:border-green" to={to}>
-      <h2 className="text-xl font-black text-ink">{title}</h2>
-      <p className="mt-3 leading-7 text-muted">{description}</p>
-      <p className="mt-5 text-sm font-black text-forest">페이지 이동</p>
+    <section>
+      <div className="flex items-center justify-between gap-4">
+        <h2 className="text-2xl font-black tracking-tight text-ink">{title}</h2>
+        <PrimaryLink to={actionTo} variant="light">
+          {actionLabel}
+        </PrimaryLink>
+      </div>
+      <div className="mt-5 flex gap-4 overflow-x-auto pb-3">
+        {items.map((item) => (
+          <HomePostCard item={item} key={item.id} type={type} />
+        ))}
+      </div>
+    </section>
+  );
+}
+
+function HomePostCard({ item, type }: { item: JobPost; type: "hiring" }) {
+  const gym = item.gymId ? getGymById(item.gymId) : undefined;
+  const image = gym?.heroImage;
+  const detailTo = gym ? `/gyms/${gym.id}` : "#";
+  const meta = `${item.area} · ${item.employmentType}`;
+
+  return (
+    <Link className="w-[280px] shrink-0 overflow-hidden rounded-lg border border-line bg-white shadow-sm transition hover:border-green" to={detailTo}>
+      {image ? <img alt={item.title} className="h-40 w-full object-cover" src={image} /> : null}
+      <div className="p-4">
+        <Badge tone={type === "hiring" ? "green" : "neutral"}>구인</Badge>
+        <h3 className="mt-3 line-clamp-2 text-lg font-black leading-6 text-ink">{item.title}</h3>
+        <p className="mt-2 text-sm font-bold text-muted">{item.authorName}</p>
+        <p className="mt-1 text-sm font-bold text-muted">{meta}</p>
+      </div>
     </Link>
   );
 }

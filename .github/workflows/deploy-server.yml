@@ -1,0 +1,127 @@
+name: Deploy Server
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "server/**"
+      - "infra/**"
+      - "docker-compose.prod.yml"
+      - ".github/workflows/deploy-server.yml"
+  workflow_dispatch:
+
+concurrency:
+  group: gymin-server-production
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    env:
+      DEPLOY_PATH: /opt/gymin
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Prepare SSH
+        env:
+          EC2_HOST: ${{ secrets.EC2_HOST }}
+          EC2_PORT: ${{ secrets.EC2_PORT }}
+          EC2_SSH_KEY: ${{ secrets.EC2_SSH_KEY }}
+        run: |
+          set -euo pipefail
+          test -n "$EC2_HOST"
+          test -n "$EC2_SSH_KEY"
+
+          PORT="${EC2_PORT:-22}"
+          mkdir -p ~/.ssh
+          chmod 700 ~/.ssh
+          printf '%s\n' "$EC2_SSH_KEY" > ~/.ssh/gymin_ec2
+          chmod 600 ~/.ssh/gymin_ec2
+          ssh-keyscan -p "$PORT" -H "$EC2_HOST" >> ~/.ssh/known_hosts
+
+      - name: Package server files
+        run: |
+          set -euo pipefail
+          tar -czf gymin-server-deploy.tar.gz server infra docker-compose.prod.yml
+
+      - name: Upload package to EC2
+        env:
+          EC2_HOST: ${{ secrets.EC2_HOST }}
+          EC2_PORT: ${{ secrets.EC2_PORT }}
+          EC2_USER: ${{ secrets.EC2_USER }}
+        run: |
+          set -euo pipefail
+          PORT="${EC2_PORT:-22}"
+          USER_NAME="${EC2_USER:-ec2-user}"
+          scp -P "$PORT" -i ~/.ssh/gymin_ec2 gymin-server-deploy.tar.gz "$USER_NAME@$EC2_HOST:/tmp/gymin-server-deploy.tar.gz"
+
+      - name: Deploy on EC2
+        env:
+          API_DOMAIN: ${{ secrets.API_DOMAIN }}
+          EC2_HOST: ${{ secrets.EC2_HOST }}
+          EC2_PORT: ${{ secrets.EC2_PORT }}
+          EC2_USER: ${{ secrets.EC2_USER }}
+          SYNC_NGINX: ${{ secrets.SYNC_NGINX }}
+        run: |
+          set -euo pipefail
+          PORT="${EC2_PORT:-22}"
+          USER_NAME="${EC2_USER:-ec2-user}"
+          REMOTE_API_DOMAIN="${API_DOMAIN:-_}"
+          REMOTE_SYNC_NGINX="${SYNC_NGINX:-true}"
+
+          ssh -p "$PORT" -i ~/.ssh/gymin_ec2 "$USER_NAME@$EC2_HOST" \
+            "DEPLOY_PATH='$DEPLOY_PATH' API_DOMAIN='$REMOTE_API_DOMAIN' SYNC_NGINX='$REMOTE_SYNC_NGINX' bash -s" <<'REMOTE'
+          set -euo pipefail
+
+          DEPLOY_PATH="${DEPLOY_PATH:-/opt/gymin}"
+          API_DOMAIN="${API_DOMAIN:-_}"
+          SYNC_NGINX="${SYNC_NGINX:-true}"
+
+          sudo mkdir -p "$DEPLOY_PATH" "$DEPLOY_PATH/server" "$DEPLOY_PATH/secrets"
+          sudo tar -xzf /tmp/gymin-server-deploy.tar.gz -C "$DEPLOY_PATH"
+          sudo chown -R "$USER:$USER" "$DEPLOY_PATH"
+
+          if [ ! -f "$DEPLOY_PATH/server/.env" ]; then
+            echo "Missing $DEPLOY_PATH/server/.env"
+            echo "Create the production env file on EC2 before deployment."
+            exit 1
+          fi
+
+          if [ ! -f "$DEPLOY_PATH/secrets/firebase-service-account.json" ]; then
+            echo "Missing $DEPLOY_PATH/secrets/firebase-service-account.json"
+            echo "Upload the Firebase service account JSON before deployment."
+            exit 1
+          fi
+
+          if sudo docker compose version >/dev/null 2>&1; then
+            COMPOSE="sudo docker compose"
+          elif command -v docker-compose >/dev/null 2>&1; then
+            COMPOSE="sudo docker-compose"
+          else
+            echo "Docker Compose is not installed on EC2."
+            exit 1
+          fi
+
+          $COMPOSE -f "$DEPLOY_PATH/docker-compose.prod.yml" up -d --build
+          $COMPOSE -f "$DEPLOY_PATH/docker-compose.prod.yml" ps
+
+          if [ "$SYNC_NGINX" != "false" ]; then
+            if ! command -v nginx >/dev/null 2>&1; then
+              echo "Nginx is not installed on EC2."
+              exit 1
+            fi
+
+            tmp_conf="$(mktemp)"
+            sed "s/__API_DOMAIN__/${API_DOMAIN}/g" "$DEPLOY_PATH/infra/nginx/gymin-api.conf" > "$tmp_conf"
+            sudo install -m 0644 "$tmp_conf" /etc/nginx/conf.d/gymin-api.conf
+            rm -f "$tmp_conf"
+
+            sudo nginx -t
+            sudo systemctl reload nginx || sudo systemctl restart nginx
+          fi
+          REMOTE

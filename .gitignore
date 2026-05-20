@@ -1,7 +1,17 @@
 node_modules
 dist
+.next
 *.tsbuildinfo
 .DS_Store
 .env
 .env.local
+web/.env
+server/.env
+server/*firebase*.json
+server/*service-account*.json
+server/.venv
+.venv
+__pycache__/
+*.pyc
 .vercel
+docs/private/

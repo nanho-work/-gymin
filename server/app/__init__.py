@@ -1,0 +1,1 @@
+"""GymIn FastAPI application package."""

@@ -20,7 +20,6 @@ app.add_middleware(
     allow_headers=["*"]
 )
 
-
 app.include_router(api_router, prefix=settings.api_prefix)
 
 

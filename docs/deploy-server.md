@@ -330,8 +330,11 @@ GitHub -> Actions -> Deploy EC2 -> Run workflow
 배포가 성공하면 GitHub Actions가 EC2에서 아래 작업을 자동으로 한다.
 
 ```txt
-/opt/gymin에 서버 파일 업로드
-Docker 이미지 빌드
+EC2의 /opt/gymin/web/.env 읽기
+GitHub Actions 러너에서 Docker 이미지 빌드
+/opt/gymin에 배포 파일 업로드
+EC2에 Docker 이미지 업로드
+EC2에서 Docker 이미지 load
 gymin-web 컨테이너 재시작
 gymin-api 컨테이너 재시작
 Nginx 설정 반영

@@ -2,6 +2,7 @@ name: gymin
 
 services:
   web:
+    image: gymin-web:latest
     build:
       context: ./web
       dockerfile: Dockerfile
@@ -30,6 +31,7 @@ services:
         condition: service_started
 
   api:
+    image: gymin-api:latest
     build:
       context: ./server
       dockerfile: Dockerfile

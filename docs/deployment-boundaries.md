@@ -7,6 +7,9 @@
 ```txt
 GitHub main push
 -> GitHub Actions
+   -> Docker image build
+   -> gymin-web image
+   -> gymin-api image
 -> EC2 /opt/gymin
 -> Docker Compose
    -> gymin-web  : Next.js, 127.0.0.1:3000
@@ -55,7 +58,9 @@ GitHub에는 올리지 않고 EC2에만 둔다.
 ## 웹 환경변수
 
 Next.js의 `NEXT_PUBLIC_*` 값은 빌드 시점에 필요하다.
-그래서 GitHub Actions가 EC2에서 Docker Compose를 실행하기 전에 `/opt/gymin/web/.env`를 읽어서 빌드 인자로 전달한다.
+그래서 GitHub Actions가 EC2의 `/opt/gymin/web/.env`를 읽은 뒤 GitHub Actions 러너에서 `gymin-web` Docker 이미지를 빌드한다.
+
+EC2는 Next.js 빌드를 하지 않고 이미 빌드된 이미지를 받아 실행만 한다.
 
 ## 서버 환경변수
 

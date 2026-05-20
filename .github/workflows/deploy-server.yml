@@ -64,6 +64,50 @@ jobs:
             exit 1
           fi
 
+      - name: Fetch web build env from EC2
+        env:
+          EC2_HOST: ${{ secrets.EC2_HOST }}
+          EC2_PORT: ${{ secrets.EC2_PORT }}
+          EC2_USER: ${{ secrets.EC2_USER }}
+        run: |
+          set -euo pipefail
+          if [ -z "${EC2_HOST:-}" ]; then
+            echo "::error::Missing GitHub Actions secret: EC2_HOST"
+            exit 1
+          fi
+
+          PORT="${EC2_PORT:-22}"
+          USER_NAME="${EC2_USER:-ec2-user}"
+
+          ssh -o BatchMode=yes -o ConnectTimeout=20 -p "$PORT" -i ~/.ssh/gymin_ec2 "$USER_NAME@$EC2_HOST" \
+            "sudo test -f /opt/gymin/web/.env && sudo cat /opt/gymin/web/.env" > web-production.env
+
+          chmod 600 web-production.env
+
+      - name: Build Docker images
+        run: |
+          set -euo pipefail
+          set -a
+          . ./web-production.env
+          set +a
+
+          docker build -t gymin-api:latest ./server
+          docker build \
+            --build-arg NEXT_PUBLIC_API_BASE_URL="${NEXT_PUBLIC_API_BASE_URL:-/api}" \
+            --build-arg NEXT_PUBLIC_FIREBASE_API_KEY="${NEXT_PUBLIC_FIREBASE_API_KEY:-}" \
+            --build-arg NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN="${NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN:-}" \
+            --build-arg NEXT_PUBLIC_FIREBASE_PROJECT_ID="${NEXT_PUBLIC_FIREBASE_PROJECT_ID:-}" \
+            --build-arg NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET="${NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET:-}" \
+            --build-arg NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID="${NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID:-}" \
+            --build-arg NEXT_PUBLIC_FIREBASE_APP_ID="${NEXT_PUBLIC_FIREBASE_APP_ID:-}" \
+            --build-arg NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID="${NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID:-}" \
+            -t gymin-web:latest ./web
+
+      - name: Save Docker images
+        run: |
+          set -euo pipefail
+          docker save gymin-web:latest gymin-api:latest | gzip > gymin-images.tar.gz
+
       - name: Package deploy files
         run: |
           set -euo pipefail
@@ -95,6 +139,7 @@ jobs:
           PORT="${EC2_PORT:-22}"
           USER_NAME="${EC2_USER:-ec2-user}"
           scp -o BatchMode=yes -o ConnectTimeout=20 -P "$PORT" -i ~/.ssh/gymin_ec2 gymin-ec2-deploy.tar.gz "$USER_NAME@$EC2_HOST:/tmp/gymin-ec2-deploy.tar.gz"
+          scp -o BatchMode=yes -o ConnectTimeout=20 -P "$PORT" -i ~/.ssh/gymin_ec2 gymin-images.tar.gz "$USER_NAME@$EC2_HOST:/tmp/gymin-images.tar.gz"
 
       - name: Deploy on EC2
         env:
@@ -163,7 +208,9 @@ jobs:
             exit 1
           fi
 
-          $COMPOSE -f "$DEPLOY_PATH/docker-compose.prod.yml" up -d --build
+          gzip -dc /tmp/gymin-images.tar.gz | sudo docker load
+
+          $COMPOSE -f "$DEPLOY_PATH/docker-compose.prod.yml" up -d --no-build --remove-orphans
           $COMPOSE -f "$DEPLOY_PATH/docker-compose.prod.yml" ps
 
           if [ "$SYNC_NGINX" != "false" ]; then

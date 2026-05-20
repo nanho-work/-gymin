@@ -8,6 +8,7 @@
     "dev:web": "npm --prefix web run dev",
     "build": "npm --prefix web run build",
     "build:web": "npm --prefix web run build",
+    "vercel:ignore": "node scripts/vercel-ignore.mjs",
     "preview": "npm --prefix web run preview",
     "install:web": "npm --prefix web install",
     "dev:server": "cd server && uvicorn app.main:app --reload",

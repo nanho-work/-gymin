@@ -188,7 +188,7 @@ Repository -> Settings -> Secrets and variables -> Actions -> New repository sec
 ```txt
 EC2_HOST=3.39.23.9
 EC2_USER=ec2-user
-EC2_SSH_KEY=gymin-ec2-key.pem 파일 내용 전체
+EC2_SSH_KEY_B64=base64로 변환한 gymin-ec2-key.pem 내용
 ```
 
 선택:
@@ -199,12 +199,20 @@ API_DOMAIN=api.your-domain.com
 SYNC_NGINX=true
 ```
 
-`EC2_SSH_KEY`는 `.pem` 파일 내용을 그대로 넣는다.
+`EC2_SSH_KEY_B64`는 `.pem` 파일을 base64로 변환한 값을 넣는다.
+여러 줄 private key를 그대로 붙여넣으면 GitHub Actions에서 `error in libcrypto`가 날 수 있으므로 base64 방식을 사용한다.
 
-로컬 터미널에서 내용 확인:
+로컬 터미널에서 아래 명령을 실행하면 값이 클립보드에 복사된다.
 
 ```bash
-cat "/Users/choenamho/Downloads/00. 앱/gymin/gymin-ec2-key.pem"
+base64 -i "/Users/choenamho/Downloads/00. 앱/gymin/gymin-ec2-key.pem" | tr -d '\n' | pbcopy
+```
+
+그 다음 GitHub Secret에 아래처럼 등록한다.
+
+```txt
+Name: EC2_SSH_KEY_B64
+Value: 방금 클립보드에 복사된 base64 문자열
 ```
 
 GitHub CLI를 이미 쓰고 있다면 아래 명령으로도 등록할 수 있다.
@@ -215,7 +223,7 @@ gh secret set EC2_USER --body "ec2-user"
 gh secret set EC2_PORT --body "22"
 gh secret set API_DOMAIN --body "api.your-domain.com"
 gh secret set SYNC_NGINX --body "true"
-gh secret set EC2_SSH_KEY < "/Users/choenamho/Downloads/00. 앱/gymin/gymin-ec2-key.pem"
+base64 -i "/Users/choenamho/Downloads/00. 앱/gymin/gymin-ec2-key.pem" | tr -d '\n' | gh secret set EC2_SSH_KEY_B64 --body-file -
 ```
 
 GitHub CLI를 안 쓰면 웹에서 등록하면 된다.

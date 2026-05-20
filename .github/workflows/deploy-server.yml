@@ -32,6 +32,7 @@ jobs:
           EC2_HOST: ${{ secrets.EC2_HOST }}
           EC2_PORT: ${{ secrets.EC2_PORT }}
           EC2_SSH_KEY: ${{ secrets.EC2_SSH_KEY }}
+          EC2_SSH_KEY_B64: ${{ secrets.EC2_SSH_KEY_B64 }}
         run: |
           set -euo pipefail
           if [ -z "${EC2_HOST:-}" ]; then
@@ -39,16 +40,23 @@ jobs:
             exit 1
           fi
 
-          if [ -z "${EC2_SSH_KEY:-}" ]; then
-            echo "::error::Missing GitHub Actions secret: EC2_SSH_KEY"
+          if [ -z "${EC2_SSH_KEY_B64:-}" ] && [ -z "${EC2_SSH_KEY:-}" ]; then
+            echo "::error::Missing GitHub Actions secret: EC2_SSH_KEY_B64 or EC2_SSH_KEY"
             exit 1
           fi
 
           PORT="${EC2_PORT:-22}"
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
-          printf '%s\n' "$EC2_SSH_KEY" > ~/.ssh/gymin_ec2
+
+          if [ -n "${EC2_SSH_KEY_B64:-}" ]; then
+            printf '%s' "$EC2_SSH_KEY_B64" | base64 --decode > ~/.ssh/gymin_ec2
+          else
+            printf '%s\n' "$EC2_SSH_KEY" > ~/.ssh/gymin_ec2
+          fi
+
           chmod 600 ~/.ssh/gymin_ec2
+          ssh-keygen -y -f ~/.ssh/gymin_ec2 >/dev/null
 
           if ! ssh-keyscan -T 10 -p "$PORT" -H "$EC2_HOST" >> ~/.ssh/known_hosts; then
             echo "::error::Failed to reach EC2 SSH on $EC2_HOST:$PORT. Check EC2 security group inbound SSH rule. GitHub Actions runners are not your local IP."

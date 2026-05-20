@@ -234,7 +234,7 @@ EC2_SSH_KEY_B64=base64로 변환한 gymin-ec2-key.pem 내용
 
 ```txt
 EC2_PORT=22
-API_DOMAIN=api.your-domain.com
+SITE_DOMAIN=your-domain.com
 SYNC_NGINX=true
 ```
 
@@ -260,7 +260,7 @@ GitHub CLI를 이미 쓰고 있다면 아래 명령으로도 등록할 수 있�
 gh secret set EC2_HOST --body "3.39.23.9"
 gh secret set EC2_USER --body "ec2-user"
 gh secret set EC2_PORT --body "22"
-gh secret set API_DOMAIN --body "api.your-domain.com"
+gh secret set SITE_DOMAIN --body "your-domain.com"
 gh secret set SYNC_NGINX --body "true"
 base64 -i "/Users/choenamho/Downloads/00. 앱/gymin/gymin-ec2-key.pem" | tr -d '\n' | gh secret set EC2_SSH_KEY_B64 --body-file -
 ```
@@ -324,7 +324,7 @@ docker-compose.prod.yml
 수동 실행:
 
 ```txt
-GitHub -> Actions -> Deploy Server -> Run workflow
+GitHub -> Actions -> Deploy EC2 -> Run workflow
 ```
 
 배포가 성공하면 GitHub Actions가 EC2에서 아래 작업을 자동으로 한다.

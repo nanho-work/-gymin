@@ -7,11 +7,26 @@ type ApiRequestOptions = {
   headers?: HeadersInit;
 };
 
-const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL ?? "/api";
+const defaultApiBaseUrl = process.env.NODE_ENV === "development" ? "http://localhost:8000/api" : "/api";
+const apiBaseUrl = process.env.NEXT_PUBLIC_API_BASE_URL ?? defaultApiBaseUrl;
+
+function getApiBaseUrl() {
+  if (apiBaseUrl.startsWith("http://") || apiBaseUrl.startsWith("https://")) {
+    return apiBaseUrl.replace(/\/$/, "");
+  }
+
+  const normalizedBaseUrl = apiBaseUrl.startsWith("/") ? apiBaseUrl : `/${apiBaseUrl}`;
+
+  if (typeof window !== "undefined") {
+    return new URL(normalizedBaseUrl, window.location.origin).toString().replace(/\/$/, "");
+  }
+
+  return `http://localhost:3000${normalizedBaseUrl}`.replace(/\/$/, "");
+}
 
 function buildApiUrl(path: string, query?: Record<string, QueryValue>) {
   const normalizedPath = path.startsWith("/") ? path : `/${path}`;
-  const url = new URL(`${apiBaseUrl}${normalizedPath}`);
+  const url = new URL(`${getApiBaseUrl()}${normalizedPath}`);
 
   Object.entries(query ?? {}).forEach(([key, value]) => {
     if (value !== undefined && value !== null && value !== "") {

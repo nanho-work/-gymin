@@ -99,6 +99,7 @@ jobs:
       - name: Deploy on EC2
         env:
           API_DOMAIN: ${{ secrets.API_DOMAIN }}
+          SITE_DOMAIN: ${{ secrets.SITE_DOMAIN }}
           EC2_HOST: ${{ secrets.EC2_HOST }}
           EC2_PORT: ${{ secrets.EC2_PORT }}
           EC2_USER: ${{ secrets.EC2_USER }}
@@ -112,15 +113,15 @@ jobs:
 
           PORT="${EC2_PORT:-22}"
           USER_NAME="${EC2_USER:-ec2-user}"
-          REMOTE_API_DOMAIN="${API_DOMAIN:-_}"
+          REMOTE_SITE_DOMAIN="${SITE_DOMAIN:-${API_DOMAIN:-_}}"
           REMOTE_SYNC_NGINX="${SYNC_NGINX:-true}"
 
           ssh -o BatchMode=yes -o ConnectTimeout=20 -p "$PORT" -i ~/.ssh/gymin_ec2 "$USER_NAME@$EC2_HOST" \
-            "DEPLOY_PATH='$DEPLOY_PATH' API_DOMAIN='$REMOTE_API_DOMAIN' SYNC_NGINX='$REMOTE_SYNC_NGINX' bash -s" <<'REMOTE'
+            "DEPLOY_PATH='$DEPLOY_PATH' SITE_DOMAIN='$REMOTE_SITE_DOMAIN' SYNC_NGINX='$REMOTE_SYNC_NGINX' bash -s" <<'REMOTE'
           set -euo pipefail
 
           DEPLOY_PATH="${DEPLOY_PATH:-/opt/gymin}"
-          API_DOMAIN="${API_DOMAIN:-_}"
+          SITE_DOMAIN="${SITE_DOMAIN:-_}"
           SYNC_NGINX="${SYNC_NGINX:-true}"
 
           sudo mkdir -p "$DEPLOY_PATH" "$DEPLOY_PATH/web" "$DEPLOY_PATH/server" "$DEPLOY_PATH/secrets"
@@ -172,7 +173,7 @@ jobs:
             fi
 
             tmp_conf="$(mktemp)"
-            sed "s/__API_DOMAIN__/${API_DOMAIN}/g" "$DEPLOY_PATH/infra/nginx/gymin-api.conf" > "$tmp_conf"
+            sed "s/__API_DOMAIN__/${SITE_DOMAIN}/g" "$DEPLOY_PATH/infra/nginx/gymin-api.conf" > "$tmp_conf"
             sudo install -m 0644 "$tmp_conf" /etc/nginx/conf.d/gymin-api.conf
             rm -f "$tmp_conf"
 

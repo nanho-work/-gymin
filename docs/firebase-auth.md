@@ -36,7 +36,7 @@ NEXT_PUBLIC_FIREBASE_APP_ID=...
 NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=...
 ```
 
-Vercel 배포 시에는 Vercel 프로젝트의 Environment Variables에도 같은 `NEXT_PUBLIC_*` 값을 넣는다. `NEXT_PUBLIC_API_BASE_URL`은 운영 FastAPI 주소로 바꾼다.
+EC2 배포 시에는 `/opt/gymin/web/.env`에도 같은 `NEXT_PUBLIC_*` 값을 넣는다. `NEXT_PUBLIC_API_BASE_URL`은 같은 도메인에서 Nginx가 `/api`로 프록시하므로 `/api`를 사용한다.
 
 ## 서버 환경변수
 
@@ -107,7 +107,7 @@ Authentication
 필요 도메인:
 
 - `localhost`
-- Vercel 배포 도메인
+- 운영 웹 도메인
 - 실제 운영 도메인
 
 ## 로그인 흐름

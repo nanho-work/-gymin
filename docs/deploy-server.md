@@ -1,13 +1,13 @@
-# GymIn 서버 배포 절차
+# GymIn EC2 배포 절차
 
-프론트는 Vercel에서 자동 배포한다.
-이 문서는 FastAPI 서버를 EC2 + Docker + Nginx로 배포하는 절차다.
+프론트와 FastAPI 서버를 모두 EC2 + Docker + Nginx로 배포한다.
+Vercel은 더 이상 운영 배포 경로로 사용하지 않는다.
 
 ## 전체 순서
 
 1. 로컬에서 EC2 접속 확인
 2. EC2 최초 세팅
-3. EC2에 운영 `.env` 작성
+3. EC2에 웹/서버 운영 `.env` 작성
 4. EC2에 Firebase 서비스 계정 JSON 업로드
 5. GitHub Secrets 등록
 6. `main` 브랜치 push 또는 GitHub Actions 수동 실행
@@ -69,7 +69,7 @@ sudo dnf update -y
 sudo dnf install -y docker nginx git docker-compose-plugin
 sudo systemctl enable --now docker
 sudo systemctl enable --now nginx
-sudo mkdir -p /opt/gymin/server /opt/gymin/secrets
+sudo mkdir -p /opt/gymin/web /opt/gymin/server /opt/gymin/secrets
 sudo chmod 750 /opt/gymin/secrets
 sudo docker compose version
 nginx -v
@@ -87,6 +87,44 @@ sudo docker compose version
 
 ## 3. EC2에 운영 환경변수 작성
 
+### 3-1. 웹 환경변수
+
+EC2 터미널에서 실행한다.
+
+```bash
+sudo nano /opt/gymin/web/.env
+```
+
+아래 내용을 넣고 실제 Firebase 값으로 바꾼다.
+
+```bash
+NEXT_PUBLIC_API_BASE_URL=/api
+
+NEXT_PUBLIC_FIREBASE_API_KEY=CHANGE_ME
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=gymin-78912.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=gymin-78912
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=gymin-78912.firebasestorage.app
+NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=CHANGE_ME
+NEXT_PUBLIC_FIREBASE_APP_ID=CHANGE_ME
+NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=CHANGE_ME
+```
+
+저장:
+
+```txt
+Ctrl + O
+Enter
+Ctrl + X
+```
+
+권한 정리:
+
+```bash
+sudo chmod 600 /opt/gymin/web/.env
+```
+
+### 3-2. 서버 환경변수
+
 EC2 터미널에서 실행한다.
 
 ```bash
@@ -99,7 +137,7 @@ sudo nano /opt/gymin/server/.env
 APP_NAME=GymIn API
 APP_ENV=production
 API_PREFIX=/api
-CORS_ORIGINS=https://YOUR_VERCEL_DOMAIN
+CORS_ORIGINS=http://3.39.23.9
 
 DATABASE_URL=postgresql+psycopg://gymin_admin:YOUR_DB_PASSWORD@YOUR_RDS_ENDPOINT:5432/gymin
 
@@ -130,6 +168,7 @@ sudo chmod 600 /opt/gymin/server/.env
 - 이 파일은 GitHub에 올리지 않는다.
 - EC2 안에만 둔다.
 - AWS S3는 EC2 IAM Role을 쓰므로 `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`를 넣지 않는다.
+- 웹 `.env`의 `NEXT_PUBLIC_*` 값은 브라우저에 노출되는 공개 설정이다.
 
 ## 4. Firebase 서비스 계정 JSON 업로드
 
@@ -270,11 +309,12 @@ AWS 콘솔
 main 브랜치에 push
 ```
 
-서버 관련 파일이 바뀌면 `.github/workflows/deploy-server.yml`이 실행된다.
+웹/서버 관련 파일이 바뀌면 `.github/workflows/deploy-server.yml`이 실행된다.
 
 자동 배포 대상 파일:
 
 ```txt
+web/**
 server/**
 infra/**
 docker-compose.prod.yml
@@ -292,6 +332,7 @@ GitHub -> Actions -> Deploy Server -> Run workflow
 ```txt
 /opt/gymin에 서버 파일 업로드
 Docker 이미지 빌드
+gymin-web 컨테이너 재시작
 gymin-api 컨테이너 재시작
 Nginx 설정 반영
 nginx -t
@@ -304,7 +345,9 @@ EC2 터미널에서 실행한다.
 
 ```bash
 sudo docker compose -f /opt/gymin/docker-compose.prod.yml ps
+sudo docker logs gymin-web --tail 100
 sudo docker logs gymin-api --tail 100
+curl http://127.0.0.1:3000
 curl http://127.0.0.1:8000/health
 curl http://127.0.0.1:8000/health/db
 ```
@@ -313,12 +356,14 @@ curl http://127.0.0.1:8000/health/db
 
 ```bash
 curl http://3.39.23.9/health
+curl http://3.39.23.9
 ```
 
 도메인을 연결했다면:
 
 ```bash
-curl http://api.your-domain.com/health
+curl http://your-domain.com/health
+curl http://your-domain.com
 ```
 
 ## 8. Nginx 설정 위치
@@ -352,11 +397,9 @@ sudo systemctl reload nginx
 ## 9. 현재 운영 구조
 
 ```txt
-Vercel frontend
-  -> API domain
-
 EC2
   -> Nginx :80
+  -> Docker Next.js :127.0.0.1:3000
   -> Docker FastAPI :127.0.0.1:8000
   -> RDS PostgreSQL
   -> S3 private bucket

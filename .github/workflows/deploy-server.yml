@@ -1,10 +1,11 @@
-name: Deploy Server
+name: Deploy EC2
 
 on:
   push:
     branches:
       - main
     paths:
+      - "web/**"
       - "server/**"
       - "infra/**"
       - "docker-compose.prod.yml"
@@ -12,7 +13,7 @@ on:
   workflow_dispatch:
 
 concurrency:
-  group: gymin-server-production
+  group: gymin-ec2-production
   cancel-in-progress: true
 
 jobs:
@@ -63,10 +64,21 @@ jobs:
             exit 1
           fi
 
-      - name: Package server files
+      - name: Package deploy files
         run: |
           set -euo pipefail
-          tar -czf gymin-server-deploy.tar.gz server infra docker-compose.prod.yml
+          tar \
+            --exclude='web/node_modules' \
+            --exclude='web/.next' \
+            --exclude='web/.env' \
+            --exclude='web/.env.local' \
+            --exclude='server/.venv' \
+            --exclude='server/.env' \
+            --exclude='server/*firebase*.json' \
+            --exclude='server/*service-account*.json' \
+            --exclude='**/__pycache__' \
+            --exclude='*.pyc' \
+            -czf gymin-ec2-deploy.tar.gz web server infra docker-compose.prod.yml
 
       - name: Upload package to EC2
         env:
@@ -82,7 +94,7 @@ jobs:
 
           PORT="${EC2_PORT:-22}"
           USER_NAME="${EC2_USER:-ec2-user}"
-          scp -o BatchMode=yes -o ConnectTimeout=20 -P "$PORT" -i ~/.ssh/gymin_ec2 gymin-server-deploy.tar.gz "$USER_NAME@$EC2_HOST:/tmp/gymin-server-deploy.tar.gz"
+          scp -o BatchMode=yes -o ConnectTimeout=20 -P "$PORT" -i ~/.ssh/gymin_ec2 gymin-ec2-deploy.tar.gz "$USER_NAME@$EC2_HOST:/tmp/gymin-ec2-deploy.tar.gz"
 
       - name: Deploy on EC2
         env:
@@ -111,9 +123,15 @@ jobs:
           API_DOMAIN="${API_DOMAIN:-_}"
           SYNC_NGINX="${SYNC_NGINX:-true}"
 
-          sudo mkdir -p "$DEPLOY_PATH" "$DEPLOY_PATH/server" "$DEPLOY_PATH/secrets"
-          sudo tar -xzf /tmp/gymin-server-deploy.tar.gz -C "$DEPLOY_PATH"
+          sudo mkdir -p "$DEPLOY_PATH" "$DEPLOY_PATH/web" "$DEPLOY_PATH/server" "$DEPLOY_PATH/secrets"
+          sudo tar -xzf /tmp/gymin-ec2-deploy.tar.gz -C "$DEPLOY_PATH"
           sudo chown -R "$USER:$USER" "$DEPLOY_PATH"
+
+          if [ ! -f "$DEPLOY_PATH/web/.env" ]; then
+            echo "Missing $DEPLOY_PATH/web/.env"
+            echo "Create the production web env file on EC2 before deployment."
+            exit 1
+          fi
 
           if [ ! -f "$DEPLOY_PATH/server/.env" ]; then
             echo "Missing $DEPLOY_PATH/server/.env"
@@ -126,6 +144,14 @@ jobs:
             echo "Upload the Firebase service account JSON before deployment."
             exit 1
           fi
+
+          chmod 600 "$DEPLOY_PATH/web/.env"
+          chmod 600 "$DEPLOY_PATH/server/.env"
+          chmod 644 "$DEPLOY_PATH/secrets/firebase-service-account.json"
+
+          set -a
+          . "$DEPLOY_PATH/web/.env"
+          set +a
 
           if sudo docker compose version >/dev/null 2>&1; then
             COMPOSE="sudo docker compose"

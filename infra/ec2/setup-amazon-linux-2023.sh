@@ -7,7 +7,7 @@ sudo dnf install -y docker nginx git docker-compose-plugin || sudo dnf install -
 sudo systemctl enable --now docker
 sudo systemctl enable --now nginx
 
-sudo mkdir -p /opt/gymin/server /opt/gymin/secrets
+sudo mkdir -p /opt/gymin/web /opt/gymin/server /opt/gymin/secrets
 sudo chmod 750 /opt/gymin/secrets
 
 if ! sudo docker compose version >/dev/null 2>&1; then
@@ -16,4 +16,4 @@ if ! sudo docker compose version >/dev/null 2>&1; then
 fi
 
 echo "EC2 base setup completed."
-echo "Next: create /opt/gymin/server/.env and /opt/gymin/secrets/firebase-service-account.json."
+echo "Next: create /opt/gymin/web/.env, /opt/gymin/server/.env, and /opt/gymin/secrets/firebase-service-account.json."

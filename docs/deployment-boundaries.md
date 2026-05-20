@@ -1,113 +1,63 @@
 # GymIn 배포 경계
 
-이 문서는 어떤 파일이 바뀔 때 어떤 배포가 실행되어야 하는지 정리한다.
+현재 운영 배포는 Vercel을 사용하지 않고 EC2 한 대에서 웹과 서버를 같이 관리한다.
 
-## 서버 배포
-
-서버 배포는 GitHub Actions가 담당한다.
-
-파일:
+## 운영 구조
 
 ```txt
-.github/workflows/deploy-server.yml
+GitHub main push
+-> GitHub Actions
+-> EC2 /opt/gymin
+-> Docker Compose
+   -> gymin-web  : Next.js, 127.0.0.1:3000
+   -> gymin-api  : FastAPI, 127.0.0.1:8000
+-> Nginx
+   -> /      : gymin-web
+   -> /api   : gymin-api
+   -> /health: gymin-api
 ```
 
-현재 서버 배포가 실행되는 변경 범위:
+## 배포 실행 조건
+
+아래 파일이 바뀌면 EC2 배포가 실행된다.
 
 ```txt
+web/**
 server/**
 infra/**
 docker-compose.prod.yml
 .github/workflows/deploy-server.yml
 ```
 
-즉 아래 파일만 바뀌면 서버 배포가 실행된다.
+## Vercel 처리
+
+Vercel 프로젝트가 아직 GitHub에 연결되어 있어도 빌드를 진행하지 않도록 한다.
 
 ```txt
-FastAPI 코드
-Dockerfile
-Nginx 설정
-EC2 배포 스크립트
-docker-compose.prod.yml
-서버 배포 workflow
-```
-
-웹 파일만 바뀌면 서버 배포는 실행되지 않는다.
-
-## 웹 배포
-
-웹 배포는 Vercel이 담당한다.
-
-Vercel은 기본값으로는 GitHub push가 있을 때마다 배포를 시도할 수 있다.
-서버 파일만 바뀌었을 때 Vercel 웹 배포를 건너뛰려면 Vercel 프로젝트에 Ignored Build Step을 설정한다.
-
-Vercel 설정 위치:
-
-```txt
-Vercel 프로젝트
--> Settings
--> Build and Deployment
--> Ignored Build Step
-```
-
-입력할 명령:
-
-```bash
-npm run vercel:ignore
-```
-
-이 명령은 아래 파일이 바뀐 경우에만 Vercel build를 진행시킨다.
-
-```txt
-web/**
-package.json
-package-lock.json
 vercel.json
-scripts/vercel-ignore.mjs
+-> ignoreCommand
+-> npm run vercel:ignore
+-> 항상 exit 0
 ```
 
-서버 파일만 바뀌면 Vercel build를 skip한다.
+즉 Vercel은 더 이상 실제 배포 경로가 아니다.
 
-## 현재 의도한 동작
+## EC2에서 필요한 비공개 파일
 
-서버만 수정:
+GitHub에는 올리지 않고 EC2에만 둔다.
 
 ```txt
-server/** 변경
--> GitHub Actions 서버 배포 실행
--> Vercel 웹 배포 skip
+/opt/gymin/web/.env
+/opt/gymin/server/.env
+/opt/gymin/secrets/firebase-service-account.json
 ```
 
-웹만 수정:
+## 웹 환경변수
 
-```txt
-web/** 변경
--> Vercel 웹 배포 실행
--> GitHub Actions 서버 배포 미실행
-```
+Next.js의 `NEXT_PUBLIC_*` 값은 빌드 시점에 필요하다.
+그래서 GitHub Actions가 EC2에서 Docker Compose를 실행하기 전에 `/opt/gymin/web/.env`를 읽어서 빌드 인자로 전달한다.
 
-서버와 웹을 같이 수정:
+## 서버 환경변수
 
-```txt
-server/** 변경
-web/** 변경
--> GitHub Actions 서버 배포 실행
--> Vercel 웹 배포 실행
-```
-
-문서만 수정:
-
-```txt
-docs/** 변경
--> 서버 배포 미실행
--> Vercel 웹 배포 skip
-```
-
-## 주의
-
-Vercel에서 `Ignored Build Step`을 설정하지 않으면 서버 파일만 바뀌어도 Vercel이 웹 배포를 시도할 수 있다.
-정확한 배포 경계를 원하면 반드시 아래 명령을 Vercel에 설정한다.
-
-```bash
-npm run vercel:ignore
-```
+FastAPI는 런타임에 `/opt/gymin/server/.env`를 읽는다.
+Firebase Admin SDK JSON은 Docker 볼륨으로 `/run/secrets/firebase-service-account.json`에 연결된다.

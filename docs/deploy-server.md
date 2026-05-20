@@ -155,7 +155,8 @@ scp -i "/Users/choenamho/Downloads/00. 앱/gymin/gymin-ec2-key.pem" \
 
 ```bash
 sudo mv /tmp/firebase-service-account.json /opt/gymin/secrets/firebase-service-account.json
-sudo chmod 600 /opt/gymin/secrets/firebase-service-account.json
+sudo chown root:root /opt/gymin/secrets/firebase-service-account.json
+sudo chmod 644 /opt/gymin/secrets/firebase-service-account.json
 sudo ls -l /opt/gymin/secrets/firebase-service-account.json
 ```
 
@@ -170,6 +171,9 @@ Docker 컨테이너 안에서는 이 파일이 아래 경로로 연결된다.
 ```bash
 FIREBASE_CREDENTIALS_FILE=/run/secrets/firebase-service-account.json
 ```
+
+컨테이너는 `app` 사용자로 실행되므로 Firebase JSON은 컨테이너 안에서 읽을 수 있어야 한다.
+그래서 파일은 `644`, 상위 디렉터리는 `750`으로 둔다.
 
 ## 5. GitHub Secrets 등록
 
@@ -215,6 +219,40 @@ gh secret set EC2_SSH_KEY < "/Users/choenamho/Downloads/00. 앱/gymin/gymi
 ```
 
 GitHub CLI를 안 쓰면 웹에서 등록하면 된다.
+
+## 5-1. EC2 보안 그룹에서 GitHub Actions SSH 허용
+
+현재 배포 방식은 GitHub Actions 서버가 EC2에 SSH로 접속하는 방식이다.
+그래서 EC2 보안 그룹의 SSH 22번 포트가 내 로컬 IP만 허용되어 있으면 GitHub Actions가 접속하지 못한다.
+
+확인 위치:
+
+```txt
+AWS 콘솔
+-> EC2
+-> 인스턴스
+-> i-08a957884fd3a5583 선택
+-> 보안 탭
+-> 보안 그룹 클릭
+-> 인바운드 규칙 편집
+```
+
+현재 방식으로 GitHub Actions 배포를 먼저 성공시키려면 SSH 규칙이 필요하다.
+
+```txt
+유형: SSH
+프로토콜: TCP
+포트: 22
+소스: 0.0.0.0/0
+설명: GitHub Actions deploy ssh
+```
+
+주의:
+
+```txt
+이 방식은 빠르게 배포 확인하기 위한 설정이다.
+운영 보안을 더 올리려면 나중에 self-hosted runner, SSM 배포, 또는 고정 배포 서버 방식으로 바꾸는 것이 좋다.
+```
 
 ## 6. 배포 실행
 

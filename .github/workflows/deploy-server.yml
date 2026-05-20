@@ -34,15 +34,26 @@ jobs:
           EC2_SSH_KEY: ${{ secrets.EC2_SSH_KEY }}
         run: |
           set -euo pipefail
-          test -n "$EC2_HOST"
-          test -n "$EC2_SSH_KEY"
+          if [ -z "${EC2_HOST:-}" ]; then
+            echo "::error::Missing GitHub Actions secret: EC2_HOST"
+            exit 1
+          fi
+
+          if [ -z "${EC2_SSH_KEY:-}" ]; then
+            echo "::error::Missing GitHub Actions secret: EC2_SSH_KEY"
+            exit 1
+          fi
 
           PORT="${EC2_PORT:-22}"
           mkdir -p ~/.ssh
           chmod 700 ~/.ssh
           printf '%s\n' "$EC2_SSH_KEY" > ~/.ssh/gymin_ec2
           chmod 600 ~/.ssh/gymin_ec2
-          ssh-keyscan -p "$PORT" -H "$EC2_HOST" >> ~/.ssh/known_hosts
+
+          if ! ssh-keyscan -T 10 -p "$PORT" -H "$EC2_HOST" >> ~/.ssh/known_hosts; then
+            echo "::error::Failed to reach EC2 SSH on $EC2_HOST:$PORT. Check EC2 security group inbound SSH rule. GitHub Actions runners are not your local IP."
+            exit 1
+          fi
 
       - name: Package server files
         run: |
@@ -56,9 +67,14 @@ jobs:
           EC2_USER: ${{ secrets.EC2_USER }}
         run: |
           set -euo pipefail
+          if [ -z "${EC2_HOST:-}" ]; then
+            echo "::error::Missing GitHub Actions secret: EC2_HOST"
+            exit 1
+          fi
+
           PORT="${EC2_PORT:-22}"
           USER_NAME="${EC2_USER:-ec2-user}"
-          scp -P "$PORT" -i ~/.ssh/gymin_ec2 gymin-server-deploy.tar.gz "$USER_NAME@$EC2_HOST:/tmp/gymin-server-deploy.tar.gz"
+          scp -o BatchMode=yes -o ConnectTimeout=20 -P "$PORT" -i ~/.ssh/gymin_ec2 gymin-server-deploy.tar.gz "$USER_NAME@$EC2_HOST:/tmp/gymin-server-deploy.tar.gz"
 
       - name: Deploy on EC2
         env:
@@ -69,12 +85,17 @@ jobs:
           SYNC_NGINX: ${{ secrets.SYNC_NGINX }}
         run: |
           set -euo pipefail
+          if [ -z "${EC2_HOST:-}" ]; then
+            echo "::error::Missing GitHub Actions secret: EC2_HOST"
+            exit 1
+          fi
+
           PORT="${EC2_PORT:-22}"
           USER_NAME="${EC2_USER:-ec2-user}"
           REMOTE_API_DOMAIN="${API_DOMAIN:-_}"
           REMOTE_SYNC_NGINX="${SYNC_NGINX:-true}"
 
-          ssh -p "$PORT" -i ~/.ssh/gymin_ec2 "$USER_NAME@$EC2_HOST" \
+          ssh -o BatchMode=yes -o ConnectTimeout=20 -p "$PORT" -i ~/.ssh/gymin_ec2 "$USER_NAME@$EC2_HOST" \
             "DEPLOY_PATH='$DEPLOY_PATH' API_DOMAIN='$REMOTE_API_DOMAIN' SYNC_NGINX='$REMOTE_SYNC_NGINX' bash -s" <<'REMOTE'
           set -euo pipefail
 

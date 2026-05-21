@@ -10,20 +10,13 @@ from app.features.auth.firebase import FirebaseAuthError
 from app.features.auth.schema import (
     AuthSessionResponse,
     AuthUserRead,
-    FirebaseLoginRequest,
-    SocialLoginMockRequest,
-    SocialLoginMockResponse
+    FirebaseLoginRequest
 )
-from app.features.auth.service import login_with_firebase, mock_social_login
+from app.features.auth.service import login_with_firebase
 from app.features.auth.token import AuthTokenError, create_access_token
 
 
 router = APIRouter(prefix="/auth", tags=["auth"])
-
-
-@router.post("/social/mock", response_model=SocialLoginMockResponse)
-def social_login_mock(payload: SocialLoginMockRequest) -> SocialLoginMockResponse:
-    return mock_social_login(payload)
 
 
 @router.post("/firebase/login", response_model=AuthSessionResponse)

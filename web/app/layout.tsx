@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { SiteLayout } from "@/shared/components/layout/SiteLayout";
+import { AuthProvider } from "@/features/auth/context/AuthContext";
 import "@/styles/global.css";
 
 export const metadata: Metadata = {
@@ -14,9 +15,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <body>
-        <SiteLayout>{children}</SiteLayout>
+        <AuthProvider>
+          <SiteLayout>{children}</SiteLayout>
+        </AuthProvider>
       </body>
     </html>
   );
 }
-

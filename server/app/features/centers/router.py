@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 
 from app.common.pagination import Page, PaginationParams, get_pagination_params
 from app.db.session import get_db
+from app.features.auth.dependencies import CurrentUser, require_business
 from app.features.centers.schema import CenterCreate, CenterRead
 from app.features.centers.service import create_center, get_center, list_centers
 
@@ -29,5 +30,9 @@ def read_center(center_id: uuid.UUID, db: Session = Depends(get_db)) -> CenterRe
 
 
 @router.post("", response_model=CenterRead, status_code=201)
-def create_center_endpoint(payload: CenterCreate, db: Session = Depends(get_db)) -> CenterRead:
+def create_center_endpoint(
+    payload: CenterCreate,
+    db: Session = Depends(get_db),
+    _current_user: CurrentUser = Depends(require_business)
+) -> CenterRead:
     return create_center(db, payload)

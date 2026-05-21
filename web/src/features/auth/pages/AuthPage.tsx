@@ -1,11 +1,10 @@
 "use client";
 
 import { Container } from "@/shared/components/ui/Container";
-import { loginWithFirebaseToken, type AuthRole } from "@/shared/api/authClient";
-import { getFirebaseAuth, googleProvider } from "@/shared/lib/firebase";
+import { useAuth } from "@/features/auth/context/AuthContext";
+import type { AuthRole } from "@/shared/api/authClient";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
-import { signInWithPopup } from "firebase/auth";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 
 type LoginRole = "general" | "business";
@@ -30,25 +29,26 @@ const roleContent: Record<
 export function AuthPage() {
   useDocumentTitle("로그인");
   const router = useRouter();
+  const { loginWithGoogle, status, user } = useAuth();
   const [selectedRole, setSelectedRole] = useState<LoginRole>("general");
   const [isGoogleLoading, setIsGoogleLoading] = useState(false);
   const [loginError, setLoginError] = useState<string | null>(null);
   const selectedContent = roleContent[selectedRole];
   const authRole: AuthRole = selectedRole === "business" ? "business" : "trainer";
 
+  useEffect(() => {
+    if (status === "authenticated" && user) {
+      router.replace(getDefaultPathByRole(user.role));
+    }
+  }, [router, status, user]);
+
   async function handleGoogleLogin() {
     setIsGoogleLoading(true);
     setLoginError(null);
 
     try {
-      const auth = getFirebaseAuth();
-      const result = await signInWithPopup(auth, googleProvider);
-      const idToken = await result.user.getIdToken();
-      const session = await loginWithFirebaseToken({
-        idToken,
-        role: authRole
-      });
-      router.push(session.user.role === "business" ? "/owner" : "/trainer");
+      const session = await loginWithGoogle(authRole);
+      router.push(getRedirectPath(getNextPathFromLocation(), session.user.role));
       router.refresh();
     } catch (error) {
       setLoginError(error instanceof Error ? error.message : "Google 로그인에 실패했습니다.");
@@ -70,7 +70,7 @@ export function AuthPage() {
           </p>
           <p className="mt-5 max-w-xl text-base leading-8 text-muted">
             구인글 확인, 트레이너 프로필 등록, 센터 공고 관리를 역할에 맞게 이어서 사용할 수 있습니다.
-            현재는 실제 인증과 서버 저장 없이 화면 흐름만 확인하는 목업입니다.
+            Google 계정으로 로그인하면 역할별 공간으로 이동합니다.
           </p>
           <div className="mt-10 grid max-w-xl gap-4 border-y border-line py-6 sm:grid-cols-3">
             <LoginStat label="구인글" value="센터 공고" />
@@ -130,6 +130,43 @@ export function AuthPage() {
       </section>
     </Container>
   );
+}
+
+function getDefaultPathByRole(role: AuthRole) {
+  return role === "business" ? "/owner" : "/trainer";
+}
+
+function getNextPathFromLocation() {
+  if (typeof window === "undefined") {
+    return null;
+  }
+
+  return new URLSearchParams(window.location.search).get("next");
+}
+
+function getRedirectPath(nextPath: string | null, role: AuthRole) {
+  if (!nextPath || !nextPath.startsWith("/") || nextPath.startsWith("//")) {
+    return getDefaultPathByRole(role);
+  }
+
+  if (role === "business") {
+    return isBusinessPath(nextPath) ? nextPath : "/owner";
+  }
+
+  return isTrainerPath(nextPath) ? nextPath : "/trainer";
+}
+
+function isBusinessPath(pathname: string) {
+  return (
+    pathname === "/owner" ||
+    pathname.startsWith("/owner/") ||
+    pathname === "/gyms/new" ||
+    pathname === "/jobs/hiring/new"
+  );
+}
+
+function isTrainerPath(pathname: string) {
+  return pathname === "/trainer" || pathname === "/trainers/new";
 }
 
 function LoginStat({ label, value }: { label: string; value: string }) {

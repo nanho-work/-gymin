@@ -5,6 +5,7 @@ from sqlalchemy.orm import Session
 
 from app.common.pagination import Page, PaginationParams, get_pagination_params
 from app.db.session import get_db
+from app.features.auth.dependencies import CurrentUser, require_trainer
 from app.features.trainers.schema import TrainerProfileCreate, TrainerProfileRead
 from app.features.trainers.service import create_trainer_profile, get_trainer_profile, list_trainers
 
@@ -29,5 +30,9 @@ def read_trainer(trainer_id: uuid.UUID, db: Session = Depends(get_db)) -> Traine
 
 
 @router.post("", response_model=TrainerProfileRead, status_code=201)
-def create_trainer_endpoint(payload: TrainerProfileCreate, db: Session = Depends(get_db)) -> TrainerProfileRead:
+def create_trainer_endpoint(
+    payload: TrainerProfileCreate,
+    db: Session = Depends(get_db),
+    _current_user: CurrentUser = Depends(require_trainer)
+) -> TrainerProfileRead:
     return create_trainer_profile(db, payload)

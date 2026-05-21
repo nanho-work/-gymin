@@ -3,21 +3,18 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
-import { logout } from "@/shared/api/authClient";
+import { useAuth } from "@/features/auth/context/AuthContext";
 import { getPlatformStats } from "@/shared/api/platformClient";
 import type { PlatformStats } from "@/shared/api/types";
 import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
 
 export function SiteHeader() {
   const pathname = usePathname();
+  const { logout, status, user } = useAuth();
   const [stats, setStats] = useState<PlatformStats | null>(null);
-  const isOwnerArea =
-    pathname === "/owner" ||
-    pathname.startsWith("/owner/jobs/") ||
-    pathname === "/gyms/new" ||
-    pathname === "/jobs/hiring/new";
-  const isSignedInArea = isOwnerArea || pathname === "/trainer" || pathname === "/trainers/new";
   const headerAction = pathname === "/login" ? { to: "/", label: "홈으로" } : { to: "/login", label: "로그인" };
+  const dashboardHref = user?.role === "business" ? "/owner" : "/trainer";
+  const dashboardLabel = user?.role === "business" ? "사장님 홈" : "트레이너 홈";
 
   async function handleLogout() {
     try {
@@ -62,14 +59,21 @@ export function SiteHeader() {
             </div>
           ) : null}
         </div>
-        {isSignedInArea ? (
-          <button
-            className="inline-flex items-center justify-center border border-line bg-white px-4 py-2 text-sm font-black text-ink transition hover:border-neutral-400"
-            onClick={handleLogout}
-            type="button"
-          >
-            로그아웃
-          </button>
+        {user ? (
+          <div className="flex items-center gap-2">
+            <PrimaryLink to={dashboardHref} variant="light">
+              {dashboardLabel}
+            </PrimaryLink>
+            <button
+              className="inline-flex items-center justify-center border border-line bg-white px-4 py-2 text-sm font-black text-ink transition hover:border-neutral-400"
+              onClick={handleLogout}
+              type="button"
+            >
+              로그아웃
+            </button>
+          </div>
+        ) : status === "loading" ? (
+          <span className="text-sm font-black text-muted">확인 중</span>
         ) : (
           <PrimaryLink to={headerAction.to} variant="light">
             {headerAction.label}

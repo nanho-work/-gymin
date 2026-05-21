@@ -5,17 +5,8 @@ from app.features.auth.firebase import verify_firebase_id_token
 from app.features.auth.schema import (
     AuthSessionResponse,
     AuthUserRead,
-    FirebaseLoginRequest,
-    SocialLoginMockRequest,
-    SocialLoginMockResponse
+    FirebaseLoginRequest
 )
-
-
-def mock_social_login(payload: SocialLoginMockRequest) -> SocialLoginMockResponse:
-    return SocialLoginMockResponse(
-        access_token=f"mock-{payload.provider}-{payload.role}-{payload.provider_user_id}",
-        role=payload.role
-    )
 
 
 def login_with_firebase(db: Session, payload: FirebaseLoginRequest) -> AuthSessionResponse:

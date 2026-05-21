@@ -15,7 +15,12 @@ let firebaseApp: FirebaseApp | null = null;
 let firebaseAuth: Auth | null = null;
 
 function hasFirebaseConfig() {
-  return Object.values(firebaseConfig).every((value) => value && value !== "CHANGE_ME");
+  return [
+    firebaseConfig.apiKey,
+    firebaseConfig.authDomain,
+    firebaseConfig.projectId,
+    firebaseConfig.appId
+  ].every((value) => value && value !== "CHANGE_ME");
 }
 
 export function getFirebaseAuth() {

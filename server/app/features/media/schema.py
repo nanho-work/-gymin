@@ -29,3 +29,40 @@ class PresignedUploadResponse(BaseModel):
     object_key: str
     bucket: str
     expires_in: int
+
+
+class CompleteUploadRequest(BaseModel):
+    entity_type: MediaEntityType
+    entity_id: uuid.UUID
+    purpose: MediaPurpose
+    object_key: str = Field(min_length=1, max_length=500)
+    original_filename: str = Field(min_length=1, max_length=255)
+    content_type: str = Field(min_length=1, max_length=100)
+    file_size: int = Field(ge=0)
+    sort_order: int = Field(default=0, ge=0)
+
+    @field_validator("content_type")
+    @classmethod
+    def validate_image_content_type(cls, value: str) -> str:
+        allowed_content_types = {"image/jpeg", "image/png", "image/webp"}
+        if value not in allowed_content_types:
+            raise ValueError("jpeg, png, webp 이미지만 업로드할 수 있습니다.")
+        return value
+
+
+class MediaVariantResponse(BaseModel):
+    variant_type: str
+    object_key: str
+    width: int
+    height: int
+    file_size: int
+    content_type: str
+
+
+class CompleteUploadResponse(BaseModel):
+    id: uuid.UUID
+    bucket: str
+    object_key: str
+    width: int
+    height: int
+    variants: list[MediaVariantResponse]

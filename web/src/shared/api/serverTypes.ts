@@ -96,3 +96,32 @@ export type PresignedUploadResponse = {
   bucket: string;
   expires_in: number;
 };
+
+export type CompleteUploadRequest = {
+  entity_type: PresignedUploadRequest["entity_type"];
+  entity_id: string;
+  purpose: PresignedUploadRequest["purpose"];
+  object_key: string;
+  original_filename: string;
+  content_type: string;
+  file_size: number;
+  sort_order: number;
+};
+
+export type MediaVariantResponse = {
+  variant_type: "original" | "medium" | "thumbnail";
+  object_key: string;
+  width: number;
+  height: number;
+  file_size: number;
+  content_type: string;
+};
+
+export type CompleteUploadResponse = {
+  id: string;
+  bucket: string;
+  object_key: string;
+  width: number;
+  height: number;
+  variants: MediaVariantResponse[];
+};

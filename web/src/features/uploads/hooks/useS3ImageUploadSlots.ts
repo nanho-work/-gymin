@@ -39,6 +39,10 @@ export function useS3ImageUploadSlots({
     async (slot: ImageUploadSlot, file: File) => {
       const validationError = validateImageFile(file, maxFileSizeMB);
       const purpose = slot.purpose ?? defaultPurpose;
+      const sortOrder = Math.max(
+        0,
+        slots.findIndex((item) => item.id === slot.id)
+      );
       const id = createUploadId();
       const previewUrl = URL.createObjectURL(file);
 
@@ -67,14 +71,19 @@ export function useS3ImageUploadSlots({
           entityId,
           entityType,
           file,
-          purpose
+          purpose,
+          sortOrder
         });
 
         const uploadedImage: UploadedImage = {
           ...pendingImage,
           bucket: result.bucket,
+          height: result.height,
+          mediaFileId: result.mediaFileId,
           objectKey: result.objectKey,
-          status: "uploaded"
+          status: "uploaded",
+          variants: result.variants,
+          width: result.width
         };
 
         setImages((current) => current.map((image) => (image.id === id ? uploadedImage : image)));
@@ -88,7 +97,7 @@ export function useS3ImageUploadSlots({
         setNotice(message);
       }
     },
-    [defaultPurpose, entityId, entityType, maxFileSizeMB, onUploaded]
+    [defaultPurpose, entityId, entityType, maxFileSizeMB, onUploaded, slots]
   );
 
   const uploadFiles = useCallback(
@@ -136,4 +145,3 @@ export function useS3ImageUploadSlots({
     uploadFileToSlot
   };
 }
-

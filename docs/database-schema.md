@@ -289,7 +289,7 @@ media_files
 
 ## media_files
 
-S3 업로드 파일 메타데이터다. 한 테이블에서 여러 도메인에 연결한다.
+S3 업로드 파일 메타데이터다. 한 테이블에서 여러 도메인에 연결한다. 실제 화면 표시에는 `media_file_variants`의 변환본을 우선 사용한다.
 
 | 컬럼 | 타입 | 설명 |
 | --- | --- | --- |
@@ -299,7 +299,7 @@ S3 업로드 파일 메타데이터다. 한 테이블에서 여러 도메인에 
 | entity_id | uuid | 연결 대상 ID |
 | purpose | varchar(40) | `profile`, `representative`, `gallery`, `verification`, `portfolio`, `content` |
 | bucket | varchar(120) | S3 버킷 |
-| object_key | varchar(500) | S3 key |
+| object_key | varchar(500) | original 변환본 S3 key |
 | original_filename | varchar(255) nullable | 원본 파일명 |
 | content_type | varchar(100) nullable | MIME type |
 | file_size | bigint nullable | byte |
@@ -315,6 +315,28 @@ S3 업로드 파일 메타데이터다. 한 테이블에서 여러 도메인에 
 
 - `(entity_type, entity_id, purpose)`
 - `(owner_user_id)`
+
+## media_file_variants
+
+S3 업로드 이미지의 변환본이다. 목록은 `thumbnail`, 상세는 `medium`, 필요 시 원본급 이미지는 `original`을 사용한다.
+
+| 컬럼 | 타입 | 설명 |
+| --- | --- | --- |
+| id | uuid pk | 변환본 ID |
+| media_file_id | uuid fk media_files.id | 원본 메타데이터 |
+| variant_type | varchar(30) | `original`, `medium`, `thumbnail` |
+| bucket | varchar(120) | S3 버킷 |
+| object_key | varchar(500) | 변환본 S3 key |
+| content_type | varchar(100) | 기본 `image/webp` |
+| file_size | bigint | byte |
+| width | int | 이미지 너비 |
+| height | int | 이미지 높이 |
+| created_at | timestamptz | 생성일 |
+
+인덱스:
+
+- unique `(media_file_id, variant_type)`
+- `(media_file_id)`
 
 ## 추후 확장 테이블
 
@@ -344,9 +366,11 @@ S3 업로드 파일 메타데이터다. 한 테이블에서 여러 도메인에 
 11. job_posts
 12. job_applications
 13. media_files
+14. media_file_variants
 
 ## 현재 DB 반영 상태
 
 - `db/manual/00_create_database.sql`: 실행 완료
 - `db/migrations/0001_initial_schema.sql`: 실행 완료
-- `db/migrations/0002_add_media_content_purpose.sql`: 실행 필요
+- `db/migrations/0002_add_media_content_purpose.sql`: 실행 완료
+- `db/migrations/0003_add_media_file_variants.sql`: 실행 필요

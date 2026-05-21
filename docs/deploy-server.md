@@ -170,6 +170,35 @@ sudo chmod 600 /opt/gymin/server/.env
 - AWS S3는 EC2 IAM Role을 쓰므로 `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`를 넣지 않는다.
 - 웹 `.env`의 `NEXT_PUBLIC_*` 값은 브라우저에 노출되는 공개 설정이다.
 
+S3 업로드 URL 생성에 `Unable to locate credentials`가 나오면 `.env`에 AWS 키를 넣지 말고 아래를 확인한다.
+
+```txt
+AWS 콘솔
+-> EC2
+-> 인스턴스
+-> i-08a957884fd3a5583 선택
+-> 작업
+-> 보안
+-> IAM 역할 수정
+-> gymin-ec2-s3-role 선택
+-> IAM 역할 업데이트
+```
+
+Docker 컨테이너가 EC2 IAM Role을 읽으려면 metadata hop limit도 2여야 한다.
+
+```txt
+AWS 콘솔
+-> EC2
+-> 인스턴스
+-> i-08a957884fd3a5583 선택
+-> 작업
+-> 인스턴스 설정
+-> 인스턴스 메타데이터 옵션 수정
+-> IMDSv2: Required
+-> Metadata response hop limit: 2
+-> 저장
+```
+
 ## 4. Firebase 서비스 계정 JSON 업로드
 
 로컬 터미널에서 실행한다.

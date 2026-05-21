@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 import { Container } from "@/shared/components/ui/Container";
 import { MockField } from "@/shared/components/ui/MockField";
 import { ImageUploadSection } from "@/features/uploads/components/ImageUploadSection";
@@ -9,6 +11,8 @@ import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
 export function TrainerRegisterPage() {
   useDocumentTitle("트레이너 정보 등록");
   const draftTrainerProfileId = useDraftUploadEntityId();
+  const [careerRows, setCareerRows] = useState([1]);
+  const [credentialRows, setCredentialRows] = useState([1]);
 
   return (
     <Container className="grid gap-10 py-8 lg:grid-cols-[minmax(0,1fr)_320px]">
@@ -59,23 +63,30 @@ export function TrainerRegisterPage() {
 
           <SectionTitle title="경력 및 이력" />
           <div className="space-y-3">
-            <CareerRow index={1} />
-            <CareerRow index={2} />
-            <CareerRow index={3} />
+            {careerRows.map((rowNumber, index) => (
+              <CareerRow index={index + 1} key={rowNumber} />
+            ))}
           </div>
-          <button className="border border-line bg-white px-4 py-2.5 text-sm font-black text-ink" type="button">
-            경력 항목 추가 UI
-          </button>
+          <AddRowButton
+            label="경력 및 이력 추가"
+            onClick={() => setCareerRows((current) => [...current, current.length + 1])}
+          />
 
           <SectionTitle title="자격증 또는 수상경력" />
           <div className="space-y-3">
-            <SimpleRow index={1} placeholder="예: 생활스포츠지도사 2급" title="자격/수상" />
-            <SimpleRow index={2} placeholder="예: CPR/AED, 재활/교정 관련 자격" title="자격/수상" />
-            <SimpleRow index={3} placeholder="예: 스포츠모델 대회 입상" title="자격/수상" />
+            {credentialRows.map((rowNumber, index) => (
+              <SimpleRow
+                index={index + 1}
+                key={rowNumber}
+                placeholder="예: 생활스포츠지도사 2급, CPR/AED, 대회 입상"
+                title="자격/수상"
+              />
+            ))}
           </div>
-          <button className="border border-line bg-white px-4 py-2.5 text-sm font-black text-ink" type="button">
-            자격/수상 항목 추가 UI
-          </button>
+          <AddRowButton
+            label="자격증 또는 수상경력 추가"
+            onClick={() => setCredentialRows((current) => [...current, current.length + 1])}
+          />
 
           <SectionTitle title="포트폴리오 링크" />
           <div className="space-y-3">
@@ -129,6 +140,20 @@ export function TrainerRegisterPage() {
 
 function SectionTitle({ title }: { title: string }) {
   return <h2 className="border-b border-line pb-3 text-xl font-black text-ink">{title}</h2>;
+}
+
+function AddRowButton({ label, onClick }: { label: string; onClick: () => void }) {
+  return (
+    <button
+      className="flex w-full items-center justify-center gap-3 border border-dashed border-line bg-white px-4 py-3 text-sm font-black text-muted transition hover:border-green hover:text-forest"
+      onClick={onClick}
+      type="button"
+    >
+      <span className="h-px flex-1 bg-line" />
+      <span>+ {label}</span>
+      <span className="h-px flex-1 bg-line" />
+    </button>
+  );
 }
 
 function CareerRow({ index }: { index: number }) {

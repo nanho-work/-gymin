@@ -25,6 +25,7 @@ export type UploadedImageStatus = "uploading" | "uploaded" | "error";
 
 export type UploadedImage = {
   id: string;
+  mediaFileId?: string;
   slotId: string;
   slotLabel: string;
   purpose: UploadPurpose;
@@ -35,6 +36,15 @@ export type UploadedImage = {
   status: UploadedImageStatus;
   bucket?: string;
   objectKey?: string;
+  width?: number;
+  height?: number;
+  variants?: {
+    variantType: "original" | "medium" | "thumbnail";
+    objectKey: string;
+    width: number;
+    height: number;
+    fileSize: number;
+    contentType: string;
+  }[];
   error?: string;
 };
-

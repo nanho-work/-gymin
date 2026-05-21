@@ -3,7 +3,7 @@ from app.features.auth.model import SocialAccount, UserRole
 from app.features.business.model import BusinessProfile
 from app.features.centers.model import Center
 from app.features.jobs.model import JobPost
-from app.features.media.model import MediaFile
+from app.features.media.model import MediaFile, MediaFileVariant
 from app.features.trainers.model import (
     TrainerCredential,
     TrainerPortfolioLink,
@@ -19,6 +19,7 @@ __all__ = [
     "JobApplication",
     "JobPost",
     "MediaFile",
+    "MediaFileVariant",
     "SocialAccount",
     "TrainerCredential",
     "TrainerPortfolioLink",

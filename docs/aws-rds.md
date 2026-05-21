@@ -55,6 +55,20 @@ S3_BUCKET_NAME=실제_버킷명
 S3_PRESIGNED_URL_EXPIRES_SECONDS=300
 ```
 
+EC2 Docker 컨테이너에서 boto3가 IAM Role을 읽으려면 EC2 설정이 아래와 같아야 한다.
+
+- EC2 인스턴스 `i-08a957884fd3a5583`에 IAM Role `gymin-ec2-s3-role` 연결
+- EC2 metadata option의 `IMDSv2`는 `Required` 유지
+- EC2 metadata option의 `Metadata response hop limit`은 `2`
+
+확인 명령:
+
+```bash
+TOKEN=$(curl -sS -X PUT "http://169.254.169.254/latest/api/token" -H "X-aws-ec2-metadata-token-ttl-seconds: 21600")
+curl -sS -H "X-aws-ec2-metadata-token: $TOKEN" http://169.254.169.254/latest/meta-data/iam/security-credentials/
+sudo docker exec gymin-api python -c "import boto3; print(boto3.client('sts', region_name='ap-northeast-2').get_caller_identity()['Arn'])"
+```
+
 ## 로컬 접속 체크리스트
 
 1. RDS 상태가 `Available`인지 확인한다.

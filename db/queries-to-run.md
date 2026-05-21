@@ -6,7 +6,8 @@
 
 - `db/manual/00_create_database.sql`: 실행 완료
 - `db/migrations/0001_initial_schema.sql`: 실행 완료
-- `db/migrations/0002_add_media_content_purpose.sql`: 실행 필요
+- `db/migrations/0002_add_media_content_purpose.sql`: 실행 완료
+- `db/migrations/0003_add_media_file_variants.sql`: 실행 필요
 
 ## 현재 실행 순서
 
@@ -49,6 +50,14 @@ db/migrations/0001_initial_schema.sql
 db/migrations/0002_add_media_content_purpose.sql
 ```
 
+### 6. 이미지 변환본 테이블 추가
+
+이미지 업로드 완료 후 `original`, `medium`, `thumbnail` 변환본을 저장하려면 `gymin` 데이터베이스에 연결한 상태에서 아래 파일의 쿼리를 추가로 실행한다.
+
+```text
+db/migrations/0003_add_media_file_variants.sql
+```
+
 ## 실행 후 확인 쿼리
 
 ```sql
@@ -73,6 +82,7 @@ ORDER BY table_name;
 - `job_posts`
 - `job_applications`
 - `media_files`
+- `media_file_variants`
 
 ## 관리 규칙
 

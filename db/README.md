@@ -34,6 +34,6 @@ DB 변경이 생기면 아래 순서를 따른다.
 ## 주의
 
 - 비밀번호, RDS endpoint, `DATABASE_URL`은 이 폴더에 기록하지 않는다.
-- 이미지 파일은 DB에 직접 저장하지 않는다. S3 object key만 `media_files`에 저장한다.
+- 이미지 파일은 DB에 직접 저장하지 않는다. 원본급 파일은 `media_files`, 화면용 변환본은 `media_file_variants`에 S3 object key만 저장한다.
 - FK와 index 없이 새 테이블을 만들지 않는다.
 - DBeaver에서 직접 실행하기 전에는 실행 대상 DB가 `postgres`인지 `gymin`인지 반드시 확인한다.

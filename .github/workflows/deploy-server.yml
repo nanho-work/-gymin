@@ -235,16 +235,26 @@ jobs:
 
           PORT="${EC2_PORT:-22}"
           USER_NAME="${EC2_USER:-ec2-user}"
-          REMOTE_SITE_DOMAIN="${SITE_DOMAIN:-${API_DOMAIN:-_}}"
+          REMOTE_SITE_DOMAIN="${SITE_DOMAIN:-${API_DOMAIN:-gymin.co.kr}}"
           REMOTE_SYNC_NGINX="${SYNC_NGINX:-true}"
+
+          if [ -z "$REMOTE_SITE_DOMAIN" ] || [ "$REMOTE_SITE_DOMAIN" = "_" ]; then
+            echo "::error::SITE_DOMAIN is empty. Set GitHub Actions secret SITE_DOMAIN=gymin.co.kr"
+            exit 1
+          fi
 
           ssh -o BatchMode=yes -o ConnectTimeout=30 -p "$PORT" -i ~/.ssh/gymin_ec2 "$USER_NAME@$EC2_HOST" \
             "DEPLOY_PATH='$DEPLOY_PATH' SITE_DOMAIN='$REMOTE_SITE_DOMAIN' SYNC_NGINX='$REMOTE_SYNC_NGINX' bash -s" <<'REMOTE'
           set -euo pipefail
 
           DEPLOY_PATH="${DEPLOY_PATH:-/opt/gymin}"
-          SITE_DOMAIN="${SITE_DOMAIN:-_}"
+          SITE_DOMAIN="${SITE_DOMAIN:-gymin.co.kr}"
           SYNC_NGINX="${SYNC_NGINX:-true}"
+
+          if [ -z "$SITE_DOMAIN" ] || [ "$SITE_DOMAIN" = "_" ]; then
+            echo "SITE_DOMAIN is empty. Refusing to write an invalid Nginx certificate path."
+            exit 1
+          fi
 
           sudo mkdir -p "$DEPLOY_PATH" "$DEPLOY_PATH/web" "$DEPLOY_PATH/server" "$DEPLOY_PATH/secrets"
           sudo tar -xzf /tmp/gymin-ec2-deploy.tar.gz -C "$DEPLOY_PATH"
@@ -270,7 +280,7 @@ jobs:
 
           chmod 600 "$DEPLOY_PATH/web/.env"
           chmod 600 "$DEPLOY_PATH/server/.env"
-          chmod 644 "$DEPLOY_PATH/secrets/firebase-service-account.json"
+          chmod 600 "$DEPLOY_PATH/secrets/firebase-service-account.json"
 
           set -a
           . "$DEPLOY_PATH/web/.env"

@@ -19,7 +19,7 @@ Vercel은 더 이상 운영 배포 경로로 사용하지 않는다.
 
 ```txt
 인스턴스 ID: i-08a957884fd3a5583
-퍼블릭 IPv4 주소: 3.39.23.9
+퍼블릭 IPv4 주소: 13.125.133.220
 키페어 이름: gymin-ec2-key
 플랫폼: Linux/UNIX
 AMI: Amazon Linux 2023
@@ -29,8 +29,8 @@ EC2 사용자명: ec2-user
 로컬 터미널에서 실행한다.
 
 ```bash
-chmod 400 "/Users/choenamho/Downloads/app/gymin/gymin-ec2-key.pem"
-ssh -i "/Users/choenamho/Downloads/00. 앱/gymin/gymin-ec2-key.pem" ec2-user@3.39.23.9
+chmod 400 "/Users/choenamho/Downloads/00. 앱/gymin/gymin-ec2-key.pem"
+ssh -i "/Users/choenamho/Downloads/00. 앱/gymin/gymin-ec2-key.pem" ec2-user@13.125.133.220
 ```
 
 현재 확인된 pem 파일 위치:
@@ -57,7 +57,7 @@ AWS 콘솔
 예: ec2-12-34-56-78.ap-northeast-2.compute.amazonaws.com
 ```
 
-처음에는 DNS보다 `3.39.23.9`를 `EC2_HOST`로 쓰는 것이 가장 단순하다.
+처음에는 DNS보다 `13.125.133.220`를 `EC2_HOST`로 쓰는 것이 가장 단순하다.
 접속이 되면 EC2 안에서 다음 단계로 진행한다.
 
 ## 2. EC2 최초 세팅
@@ -137,7 +137,7 @@ sudo nano /opt/gymin/server/.env
 APP_NAME=GymIn API
 APP_ENV=production
 API_PREFIX=/api
-CORS_ORIGINS=http://3.39.23.9
+CORS_ORIGINS=http://13.125.133.220
 
 DATABASE_URL=postgresql+psycopg://gymin_admin:YOUR_DB_PASSWORD@YOUR_RDS_ENDPOINT:5432/gymin
 
@@ -177,7 +177,7 @@ sudo chmod 600 /opt/gymin/server/.env
 ```bash
 scp -i /path/to/gymin-ec2-key.pem \
   /path/to/firebase-service-account.json \
-  ec2-user@3.39.23.9:/tmp/firebase-service-account.json
+  ec2-user@13.125.133.220:/tmp/firebase-service-account.json
 ```
 
 현재 확인된 실제 경로 기준:
@@ -185,10 +185,10 @@ scp -i /path/to/gymin-ec2-key.pem \
 ```bash
 scp -i "/Users/choenamho/Downloads/00. 앱/gymin/gymin-ec2-key.pem" \
   "/Users/choenamho/Downloads/00. 앱/gymin/gymin-78912-firebase-adminsdk-fbsvc-8ccabed6ba.json" \
-  ec2-user@3.39.23.9:/tmp/firebase-service-account.json
+  ec2-user@13.125.133.220:/tmp/firebase-service-account.json
 ```
 
-현재 EC2 퍼블릭 IPv4 주소는 `3.39.23.9`다.
+현재 EC2 퍼블릭 IPv4 주소는 `13.125.133.220`다.
 
 그 다음 EC2 터미널에서 실행한다.
 
@@ -225,7 +225,7 @@ Repository -> Settings -> Secrets and variables -> Actions -> New repository sec
 필수:
 
 ```txt
-EC2_HOST=3.39.23.9
+EC2_HOST=13.125.133.220
 EC2_USER=ec2-user
 EC2_SSH_KEY_B64=base64로 변환한 gymin-ec2-key.pem 내용
 ```
@@ -257,7 +257,7 @@ Value: 방금 클립보드에 복사된 base64 문자열
 GitHub CLI를 이미 쓰고 있다면 아래 명령으로도 등록할 수 있다.
 
 ```bash
-gh secret set EC2_HOST --body "3.39.23.9"
+gh secret set EC2_HOST --body "13.125.133.220"
 gh secret set EC2_USER --body "ec2-user"
 gh secret set EC2_PORT --body "22"
 gh secret set SITE_DOMAIN --body "your-domain.com"
@@ -358,8 +358,8 @@ curl http://127.0.0.1:8000/health/db
 외부에서 확인한다.
 
 ```bash
-curl http://3.39.23.9/health
-curl http://3.39.23.9
+curl http://13.125.133.220/health
+curl http://13.125.133.220
 ```
 
 도메인을 연결했다면:

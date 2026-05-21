@@ -3,8 +3,9 @@ from sqlalchemy.orm import Session
 from app.features.auth import crud
 from app.features.auth.firebase import verify_firebase_id_token
 from app.features.auth.schema import (
+    AuthSessionResponse,
+    AuthUserRead,
     FirebaseLoginRequest,
-    FirebaseLoginResponse,
     SocialLoginMockRequest,
     SocialLoginMockResponse
 )
@@ -17,7 +18,7 @@ def mock_social_login(payload: SocialLoginMockRequest) -> SocialLoginMockRespons
     )
 
 
-def login_with_firebase(db: Session, payload: FirebaseLoginRequest) -> FirebaseLoginResponse:
+def login_with_firebase(db: Session, payload: FirebaseLoginRequest) -> AuthSessionResponse:
     decoded_token = verify_firebase_id_token(payload.id_token)
     provider_user_id = decoded_token["uid"]
     email = decoded_token.get("email")
@@ -41,10 +42,12 @@ def login_with_firebase(db: Session, payload: FirebaseLoginRequest) -> FirebaseL
     else:
         user, is_new_user = crud.touch_social_login(db, social_account, email)
 
-    return FirebaseLoginResponse(
-        user_id=user.id,
-        role=payload.role,
-        display_name=user.display_name,
-        email=user.email,
+    return AuthSessionResponse(
+        user=AuthUserRead(
+            id=user.id,
+            role=payload.role,
+            display_name=user.display_name,
+            email=user.email
+        ),
         is_new_user=is_new_user
     )

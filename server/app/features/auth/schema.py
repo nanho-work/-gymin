@@ -30,3 +30,15 @@ class FirebaseLoginResponse(BaseModel):
     display_name: str
     email: str | None = None
     is_new_user: bool
+
+
+class AuthUserRead(BaseModel):
+    id: uuid.UUID
+    role: Literal["trainer", "business", "admin"]
+    display_name: str
+    email: str | None = None
+
+
+class AuthSessionResponse(BaseModel):
+    user: AuthUserRead
+    is_new_user: bool = False

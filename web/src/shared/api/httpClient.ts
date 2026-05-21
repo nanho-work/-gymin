@@ -46,6 +46,7 @@ export async function apiRequest<T>(path: string, options: ApiRequestOptions = {
 
   const response = await fetch(buildApiUrl(path, options.query), {
     method: options.method ?? "GET",
+    credentials: "include",
     headers,
     body: options.body ? JSON.stringify(options.body) : undefined
   });

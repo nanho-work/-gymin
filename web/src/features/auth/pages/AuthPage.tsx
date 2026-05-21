@@ -6,7 +6,6 @@ import { getFirebaseAuth, googleProvider } from "@/shared/lib/firebase";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
 import { signInWithPopup } from "firebase/auth";
 import { useState } from "react";
-import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 type LoginRole = "general" | "business";
@@ -16,18 +15,15 @@ const roleContent: Record<
   {
     label: string;
     description: string;
-    continueTo: string;
   }
 > = {
   general: {
     label: "트레이너 계정",
-    description: "트레이너 프로필 등록과 구인글 지원을 위한 계정입니다.",
-    continueTo: "/trainer"
+    description: "트레이너 프로필 등록과 구인글 지원을 위한 계정입니다."
   },
   business: {
     label: "센터 사장님 계정",
-    description: "센터 등록과 구인글 작성을 위한 사장님 계정입니다.",
-    continueTo: "/owner"
+    description: "센터 등록과 구인글 작성을 위한 사장님 계정입니다."
   }
 };
 
@@ -48,11 +44,12 @@ export function AuthPage() {
       const auth = getFirebaseAuth();
       const result = await signInWithPopup(auth, googleProvider);
       const idToken = await result.user.getIdToken();
-      await loginWithFirebaseToken({
+      const session = await loginWithFirebaseToken({
         idToken,
         role: authRole
       });
-      router.push(selectedContent.continueTo);
+      router.push(session.user.role === "business" ? "/owner" : "/trainer");
+      router.refresh();
     } catch (error) {
       setLoginError(error instanceof Error ? error.message : "Google 로그인에 실패했습니다.");
     } finally {
@@ -105,8 +102,8 @@ export function AuthPage() {
           <div className="mt-5 space-y-3">
             <SocialLoginButton
               icon={<KakaoIcon />}
+              disabled
               label={`${selectedContent.label}으로 카카오 로그인`}
-              to={selectedContent.continueTo}
               tone="kakao"
             />
             <SocialLoginButton
@@ -149,14 +146,12 @@ function SocialLoginButton({
   icon,
   label,
   onClick,
-  to,
   tone
 }: {
   disabled?: boolean;
   icon: React.ReactNode;
   label: string;
   onClick?: () => void;
-  to?: string;
   tone: "google" | "kakao";
 }) {
   const toneClassName =
@@ -179,13 +174,14 @@ function SocialLoginButton({
   }
 
   return (
-    <Link
-      className={`flex w-full items-center justify-center gap-3 border px-5 py-3.5 text-sm font-black transition ${toneClassName}`}
-      href={to ?? "/"}
+    <button
+      className={`flex w-full cursor-not-allowed items-center justify-center gap-3 border px-5 py-3.5 text-sm font-black opacity-50 transition ${toneClassName}`}
+      disabled
+      type="button"
     >
       {icon}
-      <span>{label}</span>
-    </Link>
+      <span>{label} 준비 중</span>
+    </button>
   );
 }
 

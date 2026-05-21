@@ -18,9 +18,21 @@ class Settings(BaseSettings):
     firebase_project_id: str | None = None
     firebase_credentials_file: str | None = None
 
+    jwt_secret_key: str | None = None
+    jwt_algorithm: str = "HS256"
+    auth_cookie_name: str = "gymin_session"
+    auth_cookie_max_age_seconds: int = 60 * 60 * 24 * 14
+    auth_cookie_secure: bool | None = None
+
     @property
     def cors_origin_list(self) -> list[str]:
         return [origin.strip() for origin in self.cors_origins.split(",") if origin.strip()]
+
+    @property
+    def should_use_secure_auth_cookie(self) -> bool:
+        if self.auth_cookie_secure is not None:
+            return self.auth_cookie_secure
+        return self.app_env not in ("local", "development", "test")
 
     model_config = SettingsConfigDict(
         env_file=".env",

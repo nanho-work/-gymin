@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { useEffect, useState } from "react";
+import { logout } from "@/shared/api/authClient";
 import { getPlatformStats } from "@/shared/api/platformClient";
 import type { PlatformStats } from "@/shared/api/types";
 import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
@@ -16,7 +17,15 @@ export function SiteHeader() {
     pathname === "/gyms/new" ||
     pathname === "/jobs/hiring/new";
   const isSignedInArea = isOwnerArea || pathname === "/trainer" || pathname === "/trainers/new";
-  const headerAction = pathname === "/login" ? { to: "/", label: "홈으로" } : isSignedInArea ? { to: "/", label: "로그아웃" } : { to: "/login", label: "로그인" };
+  const headerAction = pathname === "/login" ? { to: "/", label: "홈으로" } : { to: "/login", label: "로그인" };
+
+  async function handleLogout() {
+    try {
+      await logout();
+    } finally {
+      window.location.href = "/";
+    }
+  }
 
   useEffect(() => {
     let isMounted = true;
@@ -53,9 +62,19 @@ export function SiteHeader() {
             </div>
           ) : null}
         </div>
-        <PrimaryLink to={headerAction.to} variant="light">
-          {headerAction.label}
-        </PrimaryLink>
+        {isSignedInArea ? (
+          <button
+            className="inline-flex items-center justify-center border border-line bg-white px-4 py-2 text-sm font-black text-ink transition hover:border-neutral-400"
+            onClick={handleLogout}
+            type="button"
+          >
+            로그아웃
+          </button>
+        ) : (
+          <PrimaryLink to={headerAction.to} variant="light">
+            {headerAction.label}
+          </PrimaryLink>
+        )}
       </div>
     </header>
   );

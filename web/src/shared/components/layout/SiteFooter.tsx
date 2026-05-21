@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="border-t border-line bg-white">
       <Container className="flex flex-col gap-3 py-8 text-sm text-muted sm:flex-row sm:items-center sm:justify-between">
         <p className="font-bold text-ink">GymIn</p>
-        <p>React 목업 · 서버/API/인증/업로드 미연동 · FastAPI 연동 예정 구조</p>
+        <p>트레이너와 센터를 연결하는 피트니스 구인 플랫폼</p>
       </Container>
     </footer>
   );

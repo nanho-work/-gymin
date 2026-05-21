@@ -101,9 +101,9 @@ sudo nano /opt/gymin/web/.env
 NEXT_PUBLIC_API_BASE_URL=/api
 
 NEXT_PUBLIC_FIREBASE_API_KEY=CHANGE_ME
-NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=gymin-78912.firebaseapp.com
-NEXT_PUBLIC_FIREBASE_PROJECT_ID=gymin-78912
-NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=gymin-78912.firebasestorage.app
+NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=gymin-69ae6.firebaseapp.com
+NEXT_PUBLIC_FIREBASE_PROJECT_ID=gymin-69ae6
+NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET=gymin-69ae6.firebasestorage.app
 NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID=CHANGE_ME
 NEXT_PUBLIC_FIREBASE_APP_ID=CHANGE_ME
 NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=CHANGE_ME
@@ -137,15 +137,17 @@ sudo nano /opt/gymin/server/.env
 APP_NAME=GymIn API
 APP_ENV=production
 API_PREFIX=/api
-CORS_ORIGINS=http://13.125.133.220
+CORS_ORIGINS=https://gymin.co.kr,https://www.gymin.co.kr
 
 DATABASE_URL=postgresql+psycopg://gymin_admin:YOUR_DB_PASSWORD@YOUR_RDS_ENDPOINT:5432/gymin
+JWT_SECRET_KEY=OPENSSL_RANDOM_HEX_VALUE
+AUTH_COOKIE_SECURE=true
 
 AWS_REGION=ap-northeast-2
 S3_BUCKET_NAME=gymin-media-prod
 S3_PRESIGNED_URL_EXPIRES_SECONDS=300
 
-FIREBASE_PROJECT_ID=gymin-78912
+FIREBASE_PROJECT_ID=gymin-69ae6
 FIREBASE_CREDENTIALS_FILE=/run/secrets/firebase-service-account.json
 ```
 
@@ -213,7 +215,7 @@ scp -i /path/to/gymin-ec2-key.pem \
 
 ```bash
 scp -i "/Users/choenamho/Downloads/00. 앱/gymin/gymin-ec2-key.pem" \
-  "/Users/choenamho/Downloads/00. 앱/gymin/gymin-78912-firebase-adminsdk-fbsvc-8ccabed6ba.json" \
+  "/Users/choenamho/Downloads/00. 앱/gymin/gymin-69ae6-firebase-adminsdk-fbsvc-76d4a29bf3.json" \
   ec2-user@13.125.133.220:/tmp/firebase-service-account.json
 ```
 
@@ -263,7 +265,7 @@ EC2_SSH_KEY_B64=base64로 변환한 gymin-ec2-key.pem 내용
 
 ```txt
 EC2_PORT=22
-SITE_DOMAIN=your-domain.com
+SITE_DOMAIN=gymin.co.kr
 SYNC_NGINX=true
 ```
 
@@ -289,7 +291,7 @@ GitHub CLI를 이미 쓰고 있다면 아래 명령으로도 등록할 수 있�
 gh secret set EC2_HOST --body "13.125.133.220"
 gh secret set EC2_USER --body "ec2-user"
 gh secret set EC2_PORT --body "22"
-gh secret set SITE_DOMAIN --body "your-domain.com"
+gh secret set SITE_DOMAIN --body "gymin.co.kr"
 gh secret set SYNC_NGINX --body "true"
 base64 -i "/Users/choenamho/Downloads/00. 앱/gymin/gymin-ec2-key.pem" | tr -d '\n' | gh secret set EC2_SSH_KEY_B64 --body-file -
 ```
@@ -387,15 +389,15 @@ curl http://127.0.0.1:8000/health/db
 외부에서 확인한다.
 
 ```bash
-curl http://13.125.133.220/health
-curl http://13.125.133.220
+curl https://gymin.co.kr/health
+curl https://gymin.co.kr
 ```
 
-도메인을 연결했다면:
+IP 직접 접속을 확인해야 할 때:
 
 ```bash
-curl http://your-domain.com/health
-curl http://your-domain.com
+curl http://13.125.133.220/health
+curl http://13.125.133.220
 ```
 
 ## 8. Nginx 설정 위치
@@ -437,19 +439,29 @@ EC2
   -> S3 private bucket
 ```
 
-## 10. 아직 자동화하지 않은 것
+## 10. SSL 인증서
+
+`gymin.co.kr`, `www.gymin.co.kr` 인증서는 Certbot으로 발급했다.
+Certbot이 갱신 스케줄을 등록하므로 인증서 자동 갱신은 켜져 있다.
+
+확인 명령:
+
+```bash
+sudo certbot certificates
+sudo certbot renew --dry-run
+```
+
+Nginx 설정 원본은 `infra/nginx/gymin-api.conf`이고, 배포 시 `SITE_DOMAIN=gymin.co.kr` 값으로 `/etc/nginx/conf.d/gymin-api.conf`에 반영된다.
+
+## 11. 아직 자동화하지 않은 것
 
 현재는 아래 항목은 자동화하지 않는다.
 
 ```txt
 DB migration
-SSL 인증서 발급
-도메인 DNS 설정
 운영 .env 생성
 Firebase 서비스 계정 JSON 업로드
 ```
 
 DB 스키마는 당분간 직접 SQL을 실행한다.
 나중에 Alembic을 붙이면 DB migration도 CI/CD에 포함할 수 있다.
-
-SSL은 도메인 연결 후 Certbot으로 붙인다.

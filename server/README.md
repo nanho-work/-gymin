@@ -14,7 +14,6 @@ server/
       pagination.py
     core/
       config.py
-      security.py
     db/
       base.py
       session.py
@@ -49,7 +48,7 @@ features/jobs/
 - DB 접근은 router에서 직접 하지 않고 service 또는 crud를 통한다.
 - 페이지네이션은 `app/common/pagination.py`를 사용한다.
 - 헤더/상단 카운터용 집계 API는 `features/stats`에서 관리한다.
-- S3 업로드 URL 생성은 `features/media`에서 관리한다.
+- S3 업로드 URL 생성과 이미지 변환 완료 처리는 `features/media`에서 관리한다.
 - 인증은 `features/auth`, 사용자/역할은 `features/users`에서 관리한다.
 - 실제 RDS endpoint, DB 비밀번호, S3 bucket 이름은 `server/.env`에만 둔다.
 - 운영 EC2에서는 `AWS_ACCESS_KEY_ID`, `AWS_SECRET_ACCESS_KEY`를 `.env`에 넣지 않고 EC2 IAM Role로 S3 권한을 받는다.

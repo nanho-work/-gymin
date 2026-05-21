@@ -25,7 +25,7 @@ Firebase 콘솔에서 확인 위치:
 `firebaseConfig` 값을 아래처럼 넣는다.
 
 ```env
-NEXT_PUBLIC_API_BASE_URL=http://localhost:8000/api
+NEXT_PUBLIC_API_BASE_URL=/api
 
 NEXT_PUBLIC_FIREBASE_API_KEY=...
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=...
@@ -38,6 +38,13 @@ NEXT_PUBLIC_FIREBASE_MEASUREMENT_ID=...
 
 EC2 배포 시에는 `/opt/gymin/web/.env`에도 같은 `NEXT_PUBLIC_*` 값을 넣는다. `NEXT_PUBLIC_API_BASE_URL`은 같은 도메인에서 Nginx가 `/api`로 프록시하므로 `/api`를 사용한다.
 
+현재 운영 Firebase 프로젝트:
+
+```text
+프로젝트 ID: gymin-69ae6
+운영 승인 도메인: gymin.co.kr, www.gymin.co.kr
+```
+
 ## 서버 환경변수
 
 파일 위치:
@@ -49,8 +56,8 @@ server/.env
 필요한 Firebase 값:
 
 ```env
-FIREBASE_PROJECT_ID=...
-FIREBASE_CREDENTIALS_FILE=...
+FIREBASE_PROJECT_ID=gymin-69ae6
+FIREBASE_CREDENTIALS_FILE=/run/secrets/firebase-service-account.json
 ```
 
 확인 위치:
@@ -83,7 +90,17 @@ server/firebase-service-account.json
 FIREBASE_CREDENTIALS_FILE=./firebase-service-account.json
 ```
 
-EC2 운영 서버에서는 서버 안의 안전한 경로에 JSON 파일을 두고, `FIREBASE_CREDENTIALS_FILE`에 그 절대 경로를 적는다.
+EC2 운영 서버에서는 아래 위치에 JSON 파일을 둔다.
+
+```text
+/opt/gymin/secrets/firebase-service-account.json
+```
+
+Docker 컨테이너 안에서는 아래 경로로 마운트된다.
+
+```text
+/run/secrets/firebase-service-account.json
+```
 
 ## Firebase 콘솔 설정
 
@@ -107,8 +124,8 @@ Authentication
 필요 도메인:
 
 - `localhost`
-- 운영 웹 도메인
-- 실제 운영 도메인
+- `gymin.co.kr`
+- `www.gymin.co.kr`
 
 ## 로그인 흐름
 
@@ -118,4 +135,5 @@ Next.js Google 로그인
 -> FastAPI /api/auth/firebase/login
 -> Firebase Admin SDK로 token 검증
 -> users, user_roles, social_accounts 저장 또는 조회
+-> FastAPI가 httpOnly cookie 세션 설정
 ```

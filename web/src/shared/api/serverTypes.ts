@@ -67,9 +67,90 @@ export type TrainerProfileRead = {
   profile_status: string;
   created_at: string;
   updated_at: string;
+  specialties: TrainerSpecialtyRead[];
+  work_experiences: TrainerWorkExperienceRead[];
+  credentials: TrainerCredentialRead[];
+  portfolio_links: TrainerPortfolioLinkRead[];
+  media: MediaFileResponse[];
 };
 
-export type TrainerProfileCreate = Omit<TrainerProfileRead, "id" | "profile_status" | "created_at" | "updated_at">;
+export type TrainerProfileCreate = Omit<
+  TrainerProfileRead,
+  | "id"
+  | "profile_status"
+  | "created_at"
+  | "updated_at"
+  | "specialties"
+  | "work_experiences"
+  | "credentials"
+  | "portfolio_links"
+  | "media"
+>;
+
+export type TrainerSpecialtyWrite = {
+  name: string;
+  sort_order: number;
+};
+
+export type TrainerSpecialtyRead = TrainerSpecialtyWrite & {
+  id: string;
+};
+
+export type TrainerWorkExperienceWrite = {
+  center_name: string;
+  start_date: string | null;
+  end_date: string | null;
+  period_text: string | null;
+  role_description: string;
+  sort_order: number;
+};
+
+export type TrainerWorkExperienceRead = TrainerWorkExperienceWrite & {
+  id: string;
+};
+
+export type TrainerCredentialWrite = {
+  credential_type: string;
+  title: string;
+  issued_by: string | null;
+  issued_at: string | null;
+  sort_order: number;
+};
+
+export type TrainerCredentialRead = TrainerCredentialWrite & {
+  id: string;
+};
+
+export type TrainerPortfolioLinkWrite = {
+  label: string;
+  url: string;
+  sort_order: number;
+};
+
+export type TrainerPortfolioLinkRead = TrainerPortfolioLinkWrite & {
+  id: string;
+};
+
+export type TrainerProfileUpsert = {
+  name: string | null;
+  birth_date: string | null;
+  age: number | null;
+  gender: string | null;
+  phone: string | null;
+  residence_sido: string | null;
+  residence_sigungu: string | null;
+  desired_area_text: string | null;
+  headline: string | null;
+  experience_years: number | null;
+  work_type: string | null;
+  availability: string | null;
+  summary: string | null;
+  profile_status: string;
+  specialties: TrainerSpecialtyWrite[];
+  work_experiences: TrainerWorkExperienceWrite[];
+  credentials: TrainerCredentialWrite[];
+  portfolio_links: TrainerPortfolioLinkWrite[];
+};
 
 export type JobApplicationRead = {
   id: string;
@@ -115,6 +196,7 @@ export type MediaVariantResponse = {
   height: number;
   file_size: number;
   content_type: string;
+  url: string | null;
 };
 
 export type CompleteUploadResponse = {
@@ -123,5 +205,22 @@ export type CompleteUploadResponse = {
   object_key: string;
   width: number;
   height: number;
+  variants: MediaVariantResponse[];
+};
+
+export type MediaFileResponse = {
+  id: string;
+  entity_type: PresignedUploadRequest["entity_type"];
+  entity_id: string;
+  purpose: PresignedUploadRequest["purpose"];
+  bucket: string;
+  object_key: string;
+  original_filename: string | null;
+  content_type: string | null;
+  file_size: number | null;
+  width: number | null;
+  height: number | null;
+  sort_order: number;
+  created_at: string;
   variants: MediaVariantResponse[];
 };

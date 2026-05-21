@@ -57,6 +57,7 @@ class MediaVariantResponse(BaseModel):
     height: int
     file_size: int
     content_type: str
+    url: str | None = None
 
 
 class CompleteUploadResponse(BaseModel):
@@ -65,4 +66,21 @@ class CompleteUploadResponse(BaseModel):
     object_key: str
     width: int
     height: int
+    variants: list[MediaVariantResponse]
+
+
+class MediaFileResponse(BaseModel):
+    id: uuid.UUID
+    entity_type: str
+    entity_id: uuid.UUID
+    purpose: str
+    bucket: str
+    object_key: str
+    original_filename: str | None
+    content_type: str | None
+    file_size: int | None
+    width: int | None
+    height: int | None
+    sort_order: int
+    created_at: str
     variants: list[MediaVariantResponse]

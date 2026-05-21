@@ -1,6 +1,6 @@
 import uuid
 from dataclasses import dataclass
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from io import BytesIO
 from pathlib import Path
 
@@ -16,6 +16,7 @@ from app.features.media.model import MediaFile, MediaFileVariant
 from app.features.media.schema import (
     CompleteUploadRequest,
     CompleteUploadResponse,
+    MediaFileResponse,
     MediaVariantResponse,
     PresignedUploadRequest,
     PresignedUploadResponse
@@ -26,6 +27,7 @@ ALLOWED_IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp"}
 VARIANT_CONTENT_TYPE = "image/webp"
 MAX_SERVER_PROCESSING_BYTES = 12 * 1024 * 1024
 SINGLE_PRIMARY_PURPOSES = {"profile", "representative"}
+VIEW_URL_EXPIRES_SECONDS = 300
 
 
 @dataclass(frozen=True)
@@ -149,6 +151,57 @@ def create_presigned_upload_url(payload: PresignedUploadRequest, owner_user_id: 
     )
 
 
+def create_presigned_view_url(bucket: str, object_key: str) -> str:
+    settings = get_settings()
+    s3_client = boto3.client("s3", region_name=settings.aws_region)
+    try:
+        return s3_client.generate_presigned_url(
+            ClientMethod="get_object",
+            Params={"Bucket": bucket, "Key": object_key},
+            ExpiresIn=VIEW_URL_EXPIRES_SECONDS
+        )
+    except NoCredentialsError as exc:
+        raise HTTPException(
+            status_code=status.HTTP_503_SERVICE_UNAVAILABLE,
+            detail="S3 조회 권한을 찾을 수 없습니다. EC2 IAM Role 연결 상태를 확인해 주세요."
+        ) from exc
+    except (BotoCoreError, ClientError) as exc:
+        raise HTTPException(
+            status_code=status.HTTP_502_BAD_GATEWAY,
+            detail="S3 이미지 조회 URL 생성에 실패했습니다."
+        ) from exc
+
+
+def to_media_file_response(media_file: MediaFile) -> MediaFileResponse:
+    return MediaFileResponse(
+        id=media_file.id,
+        entity_type=media_file.entity_type,
+        entity_id=media_file.entity_id,
+        purpose=media_file.purpose,
+        bucket=media_file.bucket,
+        object_key=media_file.object_key,
+        original_filename=media_file.original_filename,
+        content_type=media_file.content_type,
+        file_size=media_file.file_size,
+        width=media_file.width,
+        height=media_file.height,
+        sort_order=media_file.sort_order,
+        created_at=media_file.created_at.isoformat(),
+        variants=[
+            MediaVariantResponse(
+                variant_type=variant.variant_type,
+                object_key=variant.object_key,
+                width=variant.width,
+                height=variant.height,
+                file_size=variant.file_size,
+                content_type=variant.content_type,
+                url=create_presigned_view_url(variant.bucket, variant.object_key)
+            )
+            for variant in sorted(media_file.variants, key=lambda item: item.variant_type)
+        ]
+    )
+
+
 def complete_uploaded_image(
     db: Session,
     payload: CompleteUploadRequest,
@@ -182,7 +235,7 @@ def complete_uploaded_image(
                     MediaFile.purpose == payload.purpose,
                     MediaFile.deleted_at.is_(None)
                 )
-                .values(status="deleted", deleted_at=datetime.now(UTC))
+                .values(status="deleted", deleted_at=datetime.now(timezone.utc))
             )
 
         media_file = MediaFile(

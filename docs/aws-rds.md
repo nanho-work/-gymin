@@ -28,7 +28,6 @@
 - 마스터 사용자명
 - 마스터 비밀번호
 - `DATABASE_URL`
-- S3 bucket 실제 이름
 - 보안 그룹에 등록한 로컬 IP
 
 권장 보관 위치:
@@ -45,13 +44,13 @@
 - 신뢰할 수 있는 엔터티: EC2
 - 현재 권한: `AmazonS3FullAccess`
 - 운영 전 목표: 전체 S3 권한 대신 GymIn media bucket만 접근 가능한 커스텀 정책으로 축소
-- 실제 S3 bucket 이름은 Git에 올리지 않고 `server/.env`와 로컬 전용 `docs/private/aws-local.md`에만 기록한다.
+- S3 bucket 이름: `gymin-media-prod`
 
 운영 `server/.env`에는 아래 값만 둔다.
 
 ```env
 AWS_REGION=ap-northeast-2
-S3_BUCKET_NAME=실제_버킷명
+S3_BUCKET_NAME=gymin-media-prod
 S3_PRESIGNED_URL_EXPIRES_SECONDS=300
 ```
 
@@ -108,11 +107,14 @@ sudo docker exec gymin-api python -c "import boto3; print(boto3.client('sts', re
 
 ### EC2 인바운드 규칙
 
-- SSH `22`: 내 IP만 허용
+- SSH `22`: GitHub Actions 배포를 위해 현재 `0.0.0.0/0` 허용
+- SSH `22`: 내 로컬 IP 허용 규칙도 별도 유지 가능
 - HTTP `80`: `0.0.0.0/0`
 - HTTPS `443`: `0.0.0.0/0`
 
 초기에는 FastAPI 직접 포트 `8000`을 열지 않는다. 이후 Nginx에서 `80/443` 요청을 Docker 컨테이너의 FastAPI 포트로 프록시한다.
+
+운영 보안을 더 올릴 때는 SSH `0.0.0.0/0` 규칙을 self-hosted runner, SSM, 고정 배포 서버 방식으로 대체하는 것을 검토한다.
 
 ## DBeaver SSH 터널 목표 구조
 

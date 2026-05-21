@@ -339,7 +339,7 @@ CREATE TABLE IF NOT EXISTS media_files (
   CONSTRAINT media_files_entity_type_check
     CHECK (entity_type IN ('center', 'trainer_profile', 'job_post', 'business_verification')),
   CONSTRAINT media_files_purpose_check
-    CHECK (purpose IN ('profile', 'representative', 'gallery', 'verification', 'portfolio')),
+    CHECK (purpose IN ('profile', 'representative', 'gallery', 'verification', 'portfolio', 'content')),
   CONSTRAINT media_files_status_check
     CHECK (status IN ('uploaded', 'attached', 'deleted')),
   CONSTRAINT media_files_file_size_check CHECK (file_size IS NULL OR file_size >= 0),
@@ -361,3 +361,12 @@ DROP TRIGGER IF EXISTS media_files_set_updated_at ON media_files;
 CREATE TRIGGER media_files_set_updated_at
 BEFORE UPDATE ON media_files
 FOR EACH ROW EXECUTE FUNCTION set_updated_at();
+
+-- 0002_add_media_content_purpose.sql
+-- 이미 0001을 실행한 운영 DB에서 게시글 본문 이미지 purpose를 추가할 때 실행한다.
+ALTER TABLE media_files
+  DROP CONSTRAINT IF EXISTS media_files_purpose_check;
+
+ALTER TABLE media_files
+  ADD CONSTRAINT media_files_purpose_check
+  CHECK (purpose IN ('profile', 'representative', 'gallery', 'verification', 'portfolio', 'content'));

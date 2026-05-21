@@ -6,6 +6,7 @@
 
 - `db/manual/00_create_database.sql`: 실행 완료
 - `db/migrations/0001_initial_schema.sql`: 실행 완료
+- `db/migrations/0002_add_media_content_purpose.sql`: 실행 필요
 
 ## 현재 실행 순서
 
@@ -38,6 +39,14 @@ DBeaver에서 같은 RDS endpoint로 새 연결을 만들고 Database 값을 `gy
 
 ```text
 db/migrations/0001_initial_schema.sql
+```
+
+### 5. 게시글 본문 이미지 purpose 추가
+
+이미 운영 DB에 `0001_initial_schema.sql`을 실행했다면 `gymin` 데이터베이스에 연결한 상태에서 아래 파일의 쿼리를 추가로 실행한다.
+
+```text
+db/migrations/0002_add_media_content_purpose.sql
 ```
 
 ## 실행 후 확인 쿼리

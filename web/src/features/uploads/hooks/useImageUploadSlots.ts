@@ -1,9 +1,4 @@
-export type ImageUploadSlot = {
-  id: string;
-  label: string;
-  helperText: string;
-  required: boolean;
-};
+import type { ImageUploadSlot, ImageUploadSlotInput } from "@/features/uploads/types";
 
 export function useImageUploadSlots({
   optional,
@@ -14,15 +9,17 @@ export function useImageUploadSlots({
   optional: boolean;
   requiredFirst: boolean;
   requiredLabel: string;
-  slots: string[];
+  slots: ImageUploadSlotInput[];
 }): ImageUploadSlot[] {
   return slots.map((slot, index) => {
-    const required = requiredFirst && index === 0;
+    const slotConfig = typeof slot === "string" ? { label: slot } : slot;
+    const required = slotConfig.required ?? (requiredFirst && index === 0);
 
     return {
-      id: `${slot}-${index}`,
-      label: slot,
-      helperText: required ? requiredLabel : optional ? "선택 등록" : "이미지 선택 UI",
+      id: slotConfig.id ?? `${slotConfig.label}-${index}`,
+      label: slotConfig.label,
+      helperText: slotConfig.helperText ?? (required ? requiredLabel : optional ? "선택 등록" : "이미지 등록"),
+      purpose: slotConfig.purpose,
       required
     };
   });

@@ -83,10 +83,9 @@ export type JobApplicationRead = {
 export type JobApplicationCreate = Omit<JobApplicationRead, "id" | "status" | "applied_at">;
 
 export type PresignedUploadRequest = {
-  owner_user_id: string;
-  entity_type: string;
+  entity_type: "center" | "trainer_profile" | "job_post" | "business_verification";
   entity_id: string;
-  purpose: string;
+  purpose: "profile" | "representative" | "gallery" | "verification" | "portfolio" | "content";
   filename: string;
   content_type: string;
 };

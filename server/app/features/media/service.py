@@ -2,13 +2,23 @@ import uuid
 from pathlib import Path
 
 import boto3
+from fastapi import HTTPException, status
 
 from app.core.config import get_settings
 from app.features.media.schema import PresignedUploadRequest, PresignedUploadResponse
 
 
+ALLOWED_IMAGE_SUFFIXES = {".jpg", ".jpeg", ".png", ".webp"}
+
+
 def build_object_key(payload: PresignedUploadRequest) -> str:
     suffix = Path(payload.filename).suffix.lower()
+    if suffix not in ALLOWED_IMAGE_SUFFIXES:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail="jpg, png, webp 파일만 업로드할 수 있습니다."
+        )
+
     file_id = uuid.uuid4()
     return f"{payload.entity_type}/{payload.entity_id}/{payload.purpose}/{file_id}{suffix}"
 

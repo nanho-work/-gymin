@@ -339,7 +339,7 @@ CREATE TABLE IF NOT EXISTS media_files (
   CONSTRAINT media_files_entity_type_check
     CHECK (entity_type IN ('center', 'trainer_profile', 'job_post', 'business_verification')),
   CONSTRAINT media_files_purpose_check
-    CHECK (purpose IN ('profile', 'representative', 'gallery', 'verification', 'portfolio')),
+    CHECK (purpose IN ('profile', 'representative', 'gallery', 'verification', 'portfolio', 'content')),
   CONSTRAINT media_files_status_check
     CHECK (status IN ('uploaded', 'attached', 'deleted')),
   CONSTRAINT media_files_file_size_check CHECK (file_size IS NULL OR file_size >= 0),

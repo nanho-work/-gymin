@@ -297,7 +297,7 @@ S3 업로드 파일 메타데이터다. 한 테이블에서 여러 도메인에 
 | owner_user_id | uuid fk users.id | 업로드 사용자 |
 | entity_type | varchar(40) | `center`, `trainer_profile`, `job_post`, `business_verification` |
 | entity_id | uuid | 연결 대상 ID |
-| purpose | varchar(40) | `profile`, `representative`, `gallery`, `verification`, `portfolio` |
+| purpose | varchar(40) | `profile`, `representative`, `gallery`, `verification`, `portfolio`, `content` |
 | bucket | varchar(120) | S3 버킷 |
 | object_key | varchar(500) | S3 key |
 | original_filename | varchar(255) nullable | 원본 파일명 |
@@ -349,3 +349,4 @@ S3 업로드 파일 메타데이터다. 한 테이블에서 여러 도메인에 
 
 - `db/manual/00_create_database.sql`: 실행 완료
 - `db/migrations/0001_initial_schema.sql`: 실행 완료
+- `db/migrations/0002_add_media_content_purpose.sql`: 실행 필요

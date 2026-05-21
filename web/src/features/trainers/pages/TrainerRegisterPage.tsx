@@ -2,11 +2,13 @@
 
 import { Container } from "@/shared/components/ui/Container";
 import { MockField } from "@/shared/components/ui/MockField";
-import { PhotoUploadMock } from "@/features/uploads/components/PhotoUploadMock";
+import { ImageUploadSection } from "@/features/uploads/components/ImageUploadSection";
+import { useDraftUploadEntityId } from "@/features/uploads/hooks/useDraftUploadEntityId";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
 
 export function TrainerRegisterPage() {
   useDocumentTitle("트레이너 정보 등록");
+  const draftTrainerProfileId = useDraftUploadEntityId();
 
   return (
     <Container className="grid gap-10 py-8 lg:grid-cols-[minmax(0,1fr)_320px]">
@@ -18,15 +20,21 @@ export function TrainerRegisterPage() {
               이름, 나이, 성별, 연락처, 거주지역이 필요합니다.
             </p>
           </section>
-          <PhotoUploadMock
+          <ImageUploadSection
+            defaultPurpose="profile"
             description="지원자 목록과 상세 화면에 노출될 대표 프로필 사진입니다. 프로필 저장은 사진 없이도 가능하지만, 구인글 지원 시에는 필요합니다."
+            entityId={draftTrainerProfileId}
+            entityType="trainer_profile"
             requiredFirst
             requiredLabel="지원 필수"
             slots={["프로필 사진"]}
             title="대표 프로필 사진"
           />
-          <PhotoUploadMock
-            description="전신, 운동 사진, 바디프로필, 회원 수업 장면 등 포트폴리오 사진을 선택 등록하는 목업 UI입니다."
+          <ImageUploadSection
+            defaultPurpose="portfolio"
+            description="전신, 운동 사진, 바디프로필, 회원 수업 장면 등 포트폴리오 사진을 선택 등록합니다."
+            entityId={draftTrainerProfileId}
+            entityType="trainer_profile"
             optional
             slots={["전신 사진", "운동 사진", "바디프로필", "수업 장면", "추가 사진"]}
             title="운동 사진"

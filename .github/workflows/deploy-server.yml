@@ -280,7 +280,7 @@ jobs:
 
           chmod 600 "$DEPLOY_PATH/web/.env"
           chmod 600 "$DEPLOY_PATH/server/.env"
-          chmod 600 "$DEPLOY_PATH/secrets/firebase-service-account.json"
+          chmod 644 "$DEPLOY_PATH/secrets/firebase-service-account.json"
 
           set -a
           . "$DEPLOY_PATH/web/.env"

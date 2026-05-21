@@ -1,12 +1,17 @@
 "use client";
 
 import { Container } from "@/shared/components/ui/Container";
+import { ImageUploadSection } from "@/features/uploads/components/ImageUploadSection";
+import { useDraftUploadEntityId } from "@/features/uploads/hooks/useDraftUploadEntityId";
 import { MockField } from "@/shared/components/ui/MockField";
 import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
+import { useState } from "react";
 
 export function HiringJobCreatePage() {
   useDocumentTitle("구인글 등록");
+  const draftJobPostId = useDraftUploadEntityId();
+  const [description, setDescription] = useState("");
 
   return (
     <Container className="grid gap-10 py-8 lg:grid-cols-[minmax(0,1fr)_320px]">
@@ -50,10 +55,28 @@ export function HiringJobCreatePage() {
         </div>
 
         <SectionTitle title="트레이너에게 보여줄 내용" />
-        <MockField
-          label="상세 설명"
-          placeholder="센터 분위기, 회원층, 수업 방식, 함께 일할 선생님에게 전하고 싶은 내용을 자유롭게 적어주세요."
-          textarea
+        <label className="block">
+          <span className="text-sm font-black text-ink">상세 설명</span>
+          <textarea
+            className="mt-2 min-h-44 w-full border border-line bg-white px-3 py-3 text-sm outline-none transition focus:border-green"
+            onChange={(event) => setDescription(event.target.value)}
+            placeholder="센터 분위기, 회원층, 수업 방식, 함께 일할 선생님에게 전하고 싶은 내용을 자유롭게 적어주세요."
+            value={description}
+          />
+        </label>
+
+        <ImageUploadSection
+          defaultPurpose="content"
+          description="공고 본문 중간에 넣을 공간 사진, 근무 환경 이미지 등을 업로드합니다. 저장 로직을 붙일 때 이 object key를 본문 이미지로 연결합니다."
+          entityId={draftJobPostId}
+          entityType="job_post"
+          onUploaded={(image) => {
+            const imageMarkdown = `![${image.slotLabel}](s3://${image.bucket}/${image.objectKey})`;
+            setDescription((current) => `${current}${current.trim() ? "\n\n" : ""}${imageMarkdown}`);
+          }}
+          optional
+          slots={["본문 이미지 1", "본문 이미지 2", "본문 이미지 3", "본문 이미지 4", "본문 이미지 5"]}
+          title="본문 이미지"
         />
 
         <div className="flex flex-wrap gap-2">

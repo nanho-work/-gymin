@@ -3,7 +3,8 @@
 import { Container } from "@/shared/components/ui/Container";
 import { MockField } from "@/shared/components/ui/MockField";
 import { BusinessVerificationPanel } from "@/features/centers/components/BusinessVerificationPanel";
-import { PhotoUploadMock } from "@/features/uploads/components/PhotoUploadMock";
+import { ImageUploadSection } from "@/features/uploads/components/ImageUploadSection";
+import { useDraftUploadEntityId } from "@/features/uploads/hooks/useDraftUploadEntityId";
 import regionData from "@/data/mock/regions.json";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
 import { useMemo, useState } from "react";
@@ -18,6 +19,7 @@ const industryCategories = ["헬스/PT", "필라테스", "요가", "크로스핏
 
 export function GymRegisterPage() {
   useDocumentTitle("센터 등록");
+  const draftCenterId = useDraftUploadEntityId();
   const [selectedRegion, setSelectedRegion] = useState(regions[0]?.name ?? "");
   const selectedSubRegions = useMemo(
     () => regions.find((region) => region.name === selectedRegion)?.children ?? [],
@@ -27,11 +29,20 @@ export function GymRegisterPage() {
   return (
     <Container className="grid gap-10 py-8 lg:grid-cols-[minmax(0,1fr)_320px]">
         <form className="space-y-8">
-          <PhotoUploadMock
-            description="대표 사진 1장은 필수이고, 나머지 사진은 센터 상세에서 보여줄 이미지를 선택으로 등록하는 목업 UI입니다."
+          <ImageUploadSection
+            defaultPurpose="gallery"
+            description="대표 사진 1장은 필수이고, 나머지 사진은 센터 상세에서 보여줄 이미지를 선택으로 등록합니다."
+            entityId={draftCenterId}
+            entityType="center"
             optional
             requiredFirst
-            slots={["대표 사진", "운동 공간", "상담 공간", "샤워/탈의실", "추가 이미지"]}
+            slots={[
+              { label: "대표 사진", purpose: "representative", required: true, helperText: "필수 등록" },
+              { label: "운동 공간", purpose: "gallery" },
+              { label: "상담 공간", purpose: "gallery" },
+              { label: "샤워/탈의실", purpose: "gallery" },
+              { label: "추가 이미지", purpose: "gallery" }
+            ]}
             title="센터 사진"
           />
           <SectionTitle title="기본 정보" />

@@ -1,6 +1,6 @@
 from typing import Annotated
 
-from fastapi import APIRouter, Depends, HTTPException, Response, status
+from fastapi import APIRouter, Depends, HTTPException, Response
 from sqlalchemy.orm import Session
 
 from app.core.config import get_settings
@@ -59,8 +59,8 @@ def read_current_session(
     )
 
 
-@router.post("/logout", status_code=status.HTTP_204_NO_CONTENT)
-def logout(response: Response) -> Response:
+@router.post("/logout")
+def logout(response: Response) -> dict[str, str]:
     settings = get_settings()
     response.delete_cookie(
         key=settings.auth_cookie_name,
@@ -69,4 +69,4 @@ def logout(response: Response) -> Response:
         secure=settings.should_use_secure_auth_cookie,
         samesite="lax"
     )
-    return response
+    return {"status": "ok"}

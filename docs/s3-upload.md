@@ -11,6 +11,16 @@ GymIn은 이미지를 DB에 직접 저장하지 않고 S3에 업로드한 뒤 ob
 5. 서버가 S3 원본을 읽어 `original`, `medium`, `thumbnail` WebP 변환본을 생성한다.
 6. 서버가 `media_files`, `media_file_variants`에 파일 메타데이터를 저장한다.
 
+## 조회 흐름
+
+S3 버킷은 private으로 운영한다. 프론트는 `object_key`를 직접 이미지 URL로 사용하지 않는다.
+
+- 트레이너 내 프로필은 `GET /api/trainers/me` 응답의 `media`를 사용한다.
+- 트레이너 공개 상세는 `GET /api/trainers/{trainer_id}` 응답의 `media`를 사용한다.
+- 소유자 관리용 미디어 목록은 `GET /api/media?entity_type=...&entity_id=...&purpose=...`를 사용한다.
+- 서버는 각 `media_file_variants` 항목에 짧은 만료 시간의 presigned GET URL을 포함해 내려준다.
+- 프론트는 `medium`, `thumbnail`, `original` 순서로 표시용 URL을 선택한다.
+
 ## S3 key 규칙
 
 업로드 파일은 로그인 사용자 ID 아래에 저장한다.

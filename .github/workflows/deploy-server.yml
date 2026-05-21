@@ -27,6 +27,45 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Detect changed services
+        run: |
+          set -euo pipefail
+
+          BUILD_WEB=false
+          BUILD_API=false
+
+          if [ "${{ github.event_name }}" = "workflow_dispatch" ]; then
+            BUILD_WEB=true
+            BUILD_API=true
+          else
+            BASE="${{ github.event.before }}"
+            HEAD="${{ github.sha }}"
+
+            if [ -z "$BASE" ] || [ "$BASE" = "0000000000000000000000000000000000000000" ]; then
+              git diff-tree --no-commit-id --name-only -r "$HEAD" > changed-files.txt
+            else
+              git diff --name-only "$BASE" "$HEAD" > changed-files.txt
+            fi
+
+            if grep -Eq '^(web/|docker-compose\.prod\.yml$|\.github/workflows/deploy-server\.yml$)' changed-files.txt; then
+              BUILD_WEB=true
+            fi
+
+            if grep -Eq '^(server/|docker-compose\.prod\.yml$|\.github/workflows/deploy-server\.yml$)' changed-files.txt; then
+              BUILD_API=true
+            fi
+          fi
+
+          {
+            echo "BUILD_WEB=$BUILD_WEB"
+            echo "BUILD_API=$BUILD_API"
+          } >> "$GITHUB_ENV"
+
+          echo "BUILD_WEB=$BUILD_WEB"
+          echo "BUILD_API=$BUILD_API"
 
       - name: Prepare SSH
         env:
@@ -76,6 +115,7 @@ jobs:
           done
 
       - name: Fetch web build env from EC2
+        if: env.BUILD_WEB == 'true'
         env:
           EC2_HOST: ${{ secrets.EC2_HOST }}
           EC2_PORT: ${{ secrets.EC2_PORT }}
@@ -95,14 +135,20 @@ jobs:
 
           chmod 600 web-production.env
 
-      - name: Build Docker images
+      - name: Build API Docker image
+        if: env.BUILD_API == 'true'
+        run: |
+          set -euo pipefail
+          docker build -t gymin-api:latest ./server
+
+      - name: Build web Docker image
+        if: env.BUILD_WEB == 'true'
         run: |
           set -euo pipefail
           set -a
           . ./web-production.env
           set +a
 
-          docker build -t gymin-api:latest ./server
           docker build \
             --build-arg NEXT_PUBLIC_API_BASE_URL="${NEXT_PUBLIC_API_BASE_URL:-/api}" \
             --build-arg NEXT_PUBLIC_FIREBASE_API_KEY="${NEXT_PUBLIC_FIREBASE_API_KEY:-}" \
@@ -117,7 +163,21 @@ jobs:
       - name: Save Docker images
         run: |
           set -euo pipefail
-          docker save gymin-web:latest gymin-api:latest | gzip > gymin-images.tar.gz
+          images=()
+
+          if [ "${BUILD_WEB:-false}" = "true" ]; then
+            images+=(gymin-web:latest)
+          fi
+
+          if [ "${BUILD_API:-false}" = "true" ]; then
+            images+=(gymin-api:latest)
+          fi
+
+          if [ "${#images[@]}" -gt 0 ]; then
+            docker save "${images[@]}" | gzip > gymin-images.tar.gz
+          else
+            touch gymin-images.skip
+          fi
 
       - name: Package deploy files
         run: |
@@ -150,7 +210,13 @@ jobs:
           PORT="${EC2_PORT:-22}"
           USER_NAME="${EC2_USER:-ec2-user}"
           scp -o BatchMode=yes -o ConnectTimeout=30 -P "$PORT" -i ~/.ssh/gymin_ec2 gymin-ec2-deploy.tar.gz "$USER_NAME@$EC2_HOST:/tmp/gymin-ec2-deploy.tar.gz"
-          scp -o BatchMode=yes -o ConnectTimeout=30 -P "$PORT" -i ~/.ssh/gymin_ec2 gymin-images.tar.gz "$USER_NAME@$EC2_HOST:/tmp/gymin-images.tar.gz"
+
+          if [ -f gymin-images.tar.gz ]; then
+            scp -o BatchMode=yes -o ConnectTimeout=30 -P "$PORT" -i ~/.ssh/gymin_ec2 gymin-images.tar.gz "$USER_NAME@$EC2_HOST:/tmp/gymin-images.tar.gz"
+          else
+            ssh -o BatchMode=yes -o ConnectTimeout=30 -p "$PORT" -i ~/.ssh/gymin_ec2 "$USER_NAME@$EC2_HOST" \
+              "rm -f /tmp/gymin-images.tar.gz"
+          fi
 
       - name: Deploy on EC2
         env:
@@ -219,7 +285,12 @@ jobs:
             exit 1
           fi
 
-          gzip -dc /tmp/gymin-images.tar.gz | sudo docker load
+          if [ -f /tmp/gymin-images.tar.gz ]; then
+            gzip -dc /tmp/gymin-images.tar.gz | sudo docker load
+            rm -f /tmp/gymin-images.tar.gz
+          else
+            echo "No Docker image changed. Keeping existing images."
+          fi
 
           $COMPOSE -f "$DEPLOY_PATH/docker-compose.prod.yml" up -d --no-build --remove-orphans
           $COMPOSE -f "$DEPLOY_PATH/docker-compose.prod.yml" ps

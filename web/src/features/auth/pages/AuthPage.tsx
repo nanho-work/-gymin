@@ -154,6 +154,10 @@ function getRedirectPath(nextPath: string | null, role: AuthRole) {
     return getDefaultPathByRole(role);
   }
 
+  if (isPublicPath(nextPath)) {
+    return nextPath;
+  }
+
   if (role === "business") {
     return isBusinessPath(nextPath) ? nextPath : "/owner";
   }
@@ -172,6 +176,10 @@ function isBusinessPath(pathname: string) {
 
 function isTrainerPath(pathname: string) {
   return pathname === "/trainer" || pathname === "/trainers/new";
+}
+
+function isPublicPath(pathname: string) {
+  return pathname === "/" || pathname === "/jobs/hiring" || pathname.startsWith("/gyms/");
 }
 
 function isLoginCancelledError(error: unknown) {

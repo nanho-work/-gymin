@@ -14,7 +14,7 @@ export function SiteHeader() {
   const [stats, setStats] = useState<PlatformStats | null>(null);
   const headerAction = pathname === "/login" ? { to: "/", label: "홈으로" } : { to: "/login", label: "로그인" };
   const dashboardHref = user?.role === "business" ? "/owner" : "/trainer";
-  const dashboardLabel = user?.role === "business" ? "사장님 홈" : "트레이너 홈";
+  const dashboardLabel = user?.role === "business" ? "사업장 관리" : "내 활동 관리";
 
   async function handleLogout() {
     try {
@@ -52,8 +52,18 @@ export function SiteHeader() {
             <span className="grid h-9 w-9 place-items-center rounded-md bg-ink text-sm font-black text-mint">G</span>
             <span className="text-lg font-black tracking-tight text-ink">GymIn</span>
           </Link>
+          <nav className="flex items-center gap-1 border-l border-line pl-4">
+            <Link
+              className={`rounded-md px-3 py-2 text-sm font-black transition ${
+                pathname.startsWith("/jobs/hiring") ? "bg-paper text-ink" : "text-muted hover:bg-paper hover:text-ink"
+              }`}
+              href="/jobs/hiring"
+            >
+              구인글
+            </Link>
+          </nav>
           {stats ? (
-            <div className="hidden items-center gap-3 border-l border-line pl-5 text-xs font-black text-muted md:flex">
+            <div className="hidden items-center gap-3 border-l border-line pl-5 text-xs font-black text-muted lg:flex">
               <span>회원 {stats.total_members.toLocaleString("ko-KR")}명</span>
               <span>구인글 {stats.open_job_posts.toLocaleString("ko-KR")}개</span>
             </div>

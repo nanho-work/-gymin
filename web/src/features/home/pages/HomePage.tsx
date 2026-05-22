@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Badge } from "@/shared/components/ui/Badge";
 import { Container } from "@/shared/components/ui/Container";
@@ -136,6 +136,38 @@ function HomeRail({
   actionLabel: string;
   actionTo: string;
 }) {
+  const railRef = useRef<HTMLDivElement | null>(null);
+  const isPausedRef = useRef(false);
+
+  useEffect(() => {
+    if (items.length < 2) {
+      return;
+    }
+
+    const intervalId = window.setInterval(() => {
+      const rail = railRef.current;
+      if (!rail || isPausedRef.current) {
+        return;
+      }
+
+      const maxScrollLeft = rail.scrollWidth - rail.clientWidth;
+      if (maxScrollLeft <= 0) {
+        return;
+      }
+
+      if (rail.scrollLeft >= maxScrollLeft - 24) {
+        rail.scrollTo({ left: 0, behavior: "smooth" });
+        return;
+      }
+
+      rail.scrollBy({ left: 304, behavior: "smooth" });
+    }, 3600);
+
+    return () => {
+      window.clearInterval(intervalId);
+    };
+  }, [items.length]);
+
   return (
     <section>
       <div className="flex items-center justify-between gap-4">
@@ -144,7 +176,16 @@ function HomeRail({
           {actionLabel}
         </PrimaryLink>
       </div>
-      <div className="mt-5 flex gap-4 overflow-x-auto pb-3">
+      <div
+        className="mt-5 flex snap-x gap-4 overflow-x-auto scroll-smooth pb-3"
+        onMouseEnter={() => {
+          isPausedRef.current = true;
+        }}
+        onMouseLeave={() => {
+          isPausedRef.current = false;
+        }}
+        ref={railRef}
+      >
         {items.length > 0 ? (
           items.map((item) => (
             <HomePostCard item={item} key={item.id} type={type} />
@@ -164,7 +205,7 @@ function HomePostCard({ item, type }: { item: JobPost; type: "hiring" }) {
   const meta = `${item.area} · ${item.employmentType}`;
 
   return (
-    <Link className="w-[280px] shrink-0 overflow-hidden rounded-lg border border-line bg-white shadow-sm transition hover:border-green" href={detailTo}>
+    <Link className="w-[280px] shrink-0 snap-start overflow-hidden rounded-lg border border-line bg-white shadow-sm transition hover:border-green" href={detailTo}>
       <div className="p-4">
         <Badge tone={type === "hiring" ? "green" : "neutral"}>구인</Badge>
         <h3 className="mt-3 line-clamp-2 text-lg font-black leading-6 text-ink">{item.title}</h3>

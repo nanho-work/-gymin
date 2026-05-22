@@ -12,7 +12,7 @@ import { getMyTrainerProfile, getTrainerReadiness, toDomainTrainer } from "@/sha
 import type { JobPost, Trainer } from "@/shared/types/domain";
 
 export function TrainerHomePage() {
-  useDocumentTitle("트레이너 홈");
+  useDocumentTitle("내 활동 관리");
   const [trainer, setTrainer] = useState<Trainer | null>(null);
   const [latestJobs, setLatestJobs] = useState<JobPost[]>([]);
   const [myApplications, setMyApplications] = useState<Array<{ id: string; job: JobPost; status: string; appliedAt: string; reviewedAt: string }>>([]);
@@ -97,7 +97,7 @@ export function TrainerHomePage() {
       <Container className="py-12">
         <section className="border-y border-line py-10">
           <Badge tone="amber">확인 필요</Badge>
-          <h1 className="mt-4 text-3xl font-black tracking-tight text-ink">트레이너 홈을 불러오지 못했습니다</h1>
+          <h1 className="mt-4 text-3xl font-black tracking-tight text-ink">내 활동 관리를 불러오지 못했습니다</h1>
           <p className="mt-3 max-w-2xl leading-7 text-muted">{errorMessage || "잠시 후 다시 시도해 주세요."}</p>
           <div className="mt-6 flex flex-wrap gap-3">
             <PrimaryLink to="/login">로그인</PrimaryLink>

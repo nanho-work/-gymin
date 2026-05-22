@@ -1,12 +1,17 @@
 "use client";
 
 import Link from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { useState } from "react";
+import { useAuth } from "@/features/auth/context/AuthContext";
 import { Badge } from "@/shared/components/ui/Badge";
 import type { JobPost } from "@/shared/types/domain";
 import { createJobApplication } from "@/shared/api/applicationsClient";
 
 export function JobPostCard({ enableApplication = true, post }: { enableApplication?: boolean; post: JobPost }) {
+  const pathname = usePathname();
+  const router = useRouter();
+  const { status, user } = useAuth();
   const profileHref = post.gymId ? `/gyms/${post.gymId}` : "#";
   const secondaryLabel = "업장 상세";
   const [applicationState, setApplicationState] = useState<"idle" | "submitting" | "submitted" | "error">("idle");
@@ -15,6 +20,17 @@ export function JobPostCard({ enableApplication = true, post }: { enableApplicat
 
   const handleApply = async () => {
     if (!canApply || applicationState === "submitting" || applicationState === "submitted") {
+      return;
+    }
+
+    if (!user) {
+      router.push(`/login?next=${encodeURIComponent(pathname)}`);
+      return;
+    }
+
+    if (user.role !== "trainer") {
+      setApplicationState("error");
+      setApplicationMessage("트레이너 계정으로 로그인하면 지원할 수 있습니다.");
       return;
     }
 
@@ -72,7 +88,7 @@ export function JobPostCard({ enableApplication = true, post }: { enableApplicat
       <div className="mt-5 flex flex-wrap gap-2 border-t border-line pt-4">
         <button
           className="rounded-md bg-ink px-4 py-2.5 text-sm font-black text-white disabled:cursor-not-allowed disabled:opacity-60"
-          disabled={!canApply || applicationState === "submitting" || applicationState === "submitted"}
+          disabled={!canApply || status === "loading" || applicationState === "submitting" || applicationState === "submitted"}
           onClick={handleApply}
           type="button"
         >

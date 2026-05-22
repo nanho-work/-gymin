@@ -8,7 +8,7 @@ import Link from "next/link";
 import { getJobsByGymId, gyms } from "@/shared/api/mockRepository";
 
 export function OwnerHomePage() {
-  useDocumentTitle("사장님 전용");
+  useDocumentTitle("사업장 관리");
   const myCenter = gyms[0];
   const myJobs = getJobsByGymId(myCenter.id);
 

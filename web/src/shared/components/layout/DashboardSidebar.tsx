@@ -7,20 +7,20 @@ type SidebarRole = "owner" | "trainer";
 
 const menuItems: Record<SidebarRole, Array<{ to: string; label: string; description: string }>> = {
   owner: [
-    { to: "/owner", label: "사장님 홈", description: "센터와 공고 현황" },
+    { to: "/owner", label: "사업장 관리", description: "센터와 공고 현황" },
     { to: "/gyms/new", label: "센터 정보", description: "센터 등록/수정" },
     { to: "/jobs/hiring/new", label: "구인글 등록", description: "채용 조건 작성" }
   ],
   trainer: [
-    { to: "/trainer", label: "트레이너 홈", description: "프로필과 지원 현황" },
+    { to: "/trainer", label: "내 활동 관리", description: "프로필과 지원 현황" },
     { to: "/trainers/new", label: "내 프로필", description: "프로필 임시 저장" },
     { to: "/jobs/hiring", label: "구인글 보기", description: "공고 둘러보기" }
   ]
 };
 
 const roleTitle: Record<SidebarRole, string> = {
-  owner: "사장님 메뉴",
-  trainer: "트레이너 메뉴"
+  owner: "사업장 관리",
+  trainer: "내 활동 관리"
 };
 
 export function DashboardSidebar({ role }: { role: SidebarRole }) {

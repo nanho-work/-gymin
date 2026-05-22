@@ -47,12 +47,12 @@ export function getTrainerReadiness(trainer: Trainer): TrainerReadiness {
 }
 
 export function toDomainTrainer(profile: TrainerProfileRead): Trainer {
-  const profileImage = getMediaUrl(profile.media.find((item) => item.purpose === "profile"));
+  const profileImage = getMediaDisplayUrl(profile.media.find((item) => item.purpose === "profile"));
   const portfolioMedia = profile.media.filter((item) => item.purpose === "portfolio" || item.purpose === "gallery");
   const mediaImages = portfolioMedia
     .map((item, index) => ({
       label: item.original_filename || `포트폴리오 사진 ${index + 1}`,
-      url: getMediaUrl(item)
+      url: getMediaDisplayUrl(item)
     }))
     .filter((item) => item.url);
 
@@ -93,7 +93,7 @@ export function toDomainTrainer(profile: TrainerProfileRead): Trainer {
   };
 }
 
-function getMediaUrl(mediaFile: MediaFileResponse | undefined) {
+export function getMediaDisplayUrl(mediaFile: MediaFileResponse | undefined) {
   if (!mediaFile) {
     return "";
   }

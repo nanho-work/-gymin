@@ -13,6 +13,8 @@ import { getMediaDisplayUrl } from "@/shared/api/mediaClient";
 import type { CenterRead } from "@/shared/api/serverTypes";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
 import type { JobPost } from "@/shared/types/domain";
+import { JsonLdScript } from "@/shared/seo/JsonLdScript";
+import { createCenterJsonLd } from "@/shared/seo/structuredData";
 import {
   formatCenterIndustry,
   formatCenterVerificationStatus,
@@ -115,6 +117,7 @@ export function GymDetailPage() {
 
   return (
     <>
+      <JsonLdScript data={createCenterJsonLd(center)} />
       <section className="border-b border-line bg-white">
         <Container className="grid gap-8 py-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           {heroImageUrl ? (

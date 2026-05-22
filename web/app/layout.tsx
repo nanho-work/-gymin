@@ -1,15 +1,12 @@
 import type { Metadata } from "next";
 import { SiteLayout } from "@/shared/components/layout/SiteLayout";
 import { AuthProvider } from "@/features/auth/context/AuthContext";
+import { JsonLdScript } from "@/shared/seo/JsonLdScript";
+import { createRootMetadata } from "@/shared/seo/metadata";
+import { createOrganizationJsonLd, createWebsiteJsonLd } from "@/shared/seo/structuredData";
 import "@/styles/global.css";
 
-export const metadata: Metadata = {
-  title: {
-    default: "GymIn | 트레이너를 위한 피트니스 구인 게시판",
-    template: "%s | GymIn"
-  },
-  description: "GymIn은 트레이너와 센터를 연결하는 피트니스 구인 게시판입니다."
-};
+export const metadata: Metadata = createRootMetadata();
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -18,6 +15,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <AuthProvider>
           <SiteLayout>{children}</SiteLayout>
         </AuthProvider>
+        <JsonLdScript data={[createOrganizationJsonLd(), createWebsiteJsonLd()]} />
       </body>
     </html>
   );

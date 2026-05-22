@@ -15,6 +15,8 @@ import { useJobDetail } from "@/features/jobs/hooks/useJobDetail";
 import { Badge } from "@/shared/components/ui/Badge";
 import { Container } from "@/shared/components/ui/Container";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
+import { JsonLdScript } from "@/shared/seo/JsonLdScript";
+import { createJobPostingJsonLd } from "@/shared/seo/structuredData";
 
 export function JobDetailPage() {
   const { jobId } = useParams<{ jobId: string }>();
@@ -74,6 +76,7 @@ export function JobDetailPage() {
 
   return (
     <Container className="py-8">
+      <JsonLdScript data={createJobPostingJsonLd(job)} />
       <article className="mx-auto max-w-4xl">
         <JobDetailHero imageAlt={`${domainJob.authorName} 대표 이미지`} imageUrl={centerImageUrl} />
         <JobDetailHeader canApply={canApply} domainJob={domainJob} job={job} />

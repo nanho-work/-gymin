@@ -102,6 +102,7 @@ sudo nano /opt/gymin/web/.env
 
 ```bash
 NEXT_PUBLIC_API_BASE_URL=/api
+NEXT_PUBLIC_SITE_URL=https://gymin.co.kr
 
 NEXT_PUBLIC_FIREBASE_API_KEY=CHANGE_ME
 NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN=gymin-69ae6.firebaseapp.com
@@ -269,6 +270,7 @@ EC2_SSH_KEY_B64=base64로 변환한 gymin-ec2-key.pem 내용
 ```txt
 EC2_PORT=22
 SITE_DOMAIN=gymin.co.kr
+NEXT_PUBLIC_SITE_URL=https://gymin.co.kr
 SYNC_NGINX=true
 ```
 
@@ -295,6 +297,7 @@ gh secret set EC2_HOST --body "13.125.133.220"
 gh secret set EC2_USER --body "ec2-user"
 gh secret set EC2_PORT --body "22"
 gh secret set SITE_DOMAIN --body "gymin.co.kr"
+gh secret set NEXT_PUBLIC_SITE_URL --body "https://gymin.co.kr"
 gh secret set SYNC_NGINX --body "true"
 base64 -i "/Users/choenamho/Downloads/00. 앱/gymin/gymin-ec2-key.pem" | tr -d '\n' | gh secret set EC2_SSH_KEY_B64 --body-file -
 ```

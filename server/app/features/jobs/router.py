@@ -15,7 +15,8 @@ from app.features.jobs.service import (
     get_job,
     get_my_job,
     list_jobs,
-    list_my_jobs
+    list_my_jobs,
+    to_job_post_read
 )
 
 
@@ -44,7 +45,7 @@ def read_job(job_id: uuid.UUID, db: Session = Depends(get_db)) -> JobPostRead:
     job = get_job(db, job_id)
     if job is None:
         raise HTTPException(status_code=404, detail="구인글을 찾을 수 없습니다.")
-    return job
+    return to_job_post_read(db, job, include_center_media=True, include_job_media=True)
 
 
 @router.post("", response_model=JobPostRead, status_code=201)

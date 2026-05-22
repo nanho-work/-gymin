@@ -4,13 +4,13 @@ import Link from "next/link";
 import { useParams, usePathname, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
 
+import { useAuth } from "@/features/auth/context/AuthContext";
 import { createJobApplication } from "@/shared/api/applicationsClient";
 import { getJobPost, toDomainJobPost } from "@/shared/api/jobsClient";
+import { getMediaDisplayUrl } from "@/shared/api/mediaClient";
 import type { JobPostRead } from "@/shared/api/serverTypes";
-import { useAuth } from "@/features/auth/context/AuthContext";
 import { Badge } from "@/shared/components/ui/Badge";
 import { Container } from "@/shared/components/ui/Container";
-import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
 import { formatCenterIndustry, getCenterAddress, getCenterArea } from "@/shared/utils/center";
 import {
@@ -21,6 +21,7 @@ import {
   formatMemberHandover,
   formatSalesPressure
 } from "@/shared/utils/job";
+import { formatWorkDays, parseWorkDayCodes, weekdayOptions } from "@/shared/utils/weekdays";
 
 export function JobDetailPage() {
   const { jobId } = useParams<{ jobId: string }>();
@@ -64,6 +65,14 @@ export function JobDetailPage() {
   const domainJob = useMemo(() => (job ? toDomainJobPost(job) : null), [job]);
   const center = job?.center ?? null;
   const canApply = job?.status === "open";
+  const contentImages = useMemo(
+    () =>
+      (job?.media ?? [])
+        .filter((item) => item.purpose === "content")
+        .map((item) => ({ id: item.id, url: getMediaDisplayUrl(item) }))
+        .filter((item) => item.url),
+    [job]
+  );
 
   const handleApply = async () => {
     if (!job || !canApply || applicationState === "submitting" || applicationState === "submitted") {
@@ -129,9 +138,9 @@ export function JobDetailPage() {
   }
 
   return (
-    <Container className="grid gap-8 py-8 lg:grid-cols-[minmax(0,1fr)_320px]">
-      <main className="space-y-6">
-        <section className="border-b border-line pb-7">
+    <Container className="py-8">
+      <article className="mx-auto max-w-4xl">
+        <header className="border-b border-line pb-7">
           <div className="flex flex-wrap gap-2">
             <Badge tone={canApply ? "green" : "neutral"}>{formatJobStatus(job.status)}</Badge>
             <Badge>{formatJobRole(job.job_role)}</Badge>
@@ -141,56 +150,24 @@ export function JobDetailPage() {
           <p className="mt-3 text-sm font-bold text-muted">
             {domainJob.authorName} · {domainJob.area} · {domainJob.postedAt}
           </p>
-          <p className="mt-5 max-w-3xl leading-8 text-muted">
-            {job.description || job.support_detail || "상세 설명이 아직 등록되지 않았습니다."}
-          </p>
-        </section>
-
-        <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
-          <h2 className="text-xl font-black text-ink">근무 조건</h2>
-          <div className="mt-5 grid gap-4 md:grid-cols-2">
-            <InfoBlock label="근무 시작" value={job.start_date_text || "협의"} />
-            <InfoBlock label="근무 요일" value={job.work_days || "협의"} />
-            <InfoBlock label="근무 시간" value={job.work_hours || "협의"} />
-            <InfoBlock label="휴게 시간" value={job.rest_time || "협의"} />
-            <InfoBlock label="기본급" value={job.base_pay || "협의"} />
-            <InfoBlock label="수업료/인센티브" value={job.incentive || "협의"} />
-            <InfoBlock label="정산 방식" value={job.settlement_type || "협의"} />
-            <InfoBlock label="4대보험" value={formatInsuranceType(job.insurance_type)} />
-            <InfoBlock label="영업 압박" value={formatSalesPressure(job.sales_pressure)} />
-            <InfoBlock label="회원 인계" value={formatMemberHandover(job.member_handover)} />
-            <InfoBlock label="휴가/월차" value={job.vacation || "협의"} />
-            <InfoBlock label="추가 지원" value={job.support_detail || "미입력"} />
+          <div className="mt-6 flex flex-wrap gap-2">
+            <button
+              className="rounded-md bg-ink px-5 py-3 text-sm font-black text-white transition hover:bg-forest disabled:cursor-not-allowed disabled:opacity-60"
+              disabled={!canApply || authStatus === "loading" || applicationState === "submitting" || applicationState === "submitted"}
+              onClick={handleApply}
+              type="button"
+            >
+              {applicationState === "submitting" ? "지원 중" : applicationState === "submitted" ? "지원 완료" : "내 프로필로 지원"}
+            </button>
+            {job.center_id ? (
+              <Link className="rounded-md border border-line px-5 py-3 text-sm font-black text-ink hover:border-green" href={`/gyms/${job.center_id}`}>
+                업장 정보 보기
+              </Link>
+            ) : null}
+            <Link className="rounded-md border border-line px-5 py-3 text-sm font-black text-ink hover:border-green" href="/jobs/hiring">
+              목록으로
+            </Link>
           </div>
-        </section>
-
-        {center ? (
-          <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
-            <h2 className="text-xl font-black text-ink">업장 정보</h2>
-            <div className="mt-5 grid gap-4 md:grid-cols-2">
-              <InfoBlock label="센터명" value={center.name} />
-              <InfoBlock label="지역" value={getCenterArea(center)} />
-              <InfoBlock label="주소" value={getCenterAddress(center)} />
-              <InfoBlock label="업종" value={formatCenterIndustry(center.industry)} />
-            </div>
-          </section>
-        ) : null}
-      </main>
-
-      <aside className="h-fit space-y-4 border-t border-line pt-5 lg:sticky lg:top-24 lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0">
-        <section>
-          <h2 className="text-sm font-black text-ink">지원</h2>
-          <p className="mt-3 text-sm font-bold leading-6 text-muted">
-            저장된 트레이너 프로필로 지원합니다. 지원 후 사업자가 공개 프로필과 연락처를 확인할 수 있습니다.
-          </p>
-          <button
-            className="mt-4 w-full rounded-md bg-ink px-4 py-3 text-sm font-black text-white disabled:cursor-not-allowed disabled:opacity-60"
-            disabled={!canApply || authStatus === "loading" || applicationState === "submitting" || applicationState === "submitted"}
-            onClick={handleApply}
-            type="button"
-          >
-            {applicationState === "submitting" ? "지원 중" : applicationState === "submitted" ? "지원 완료" : "내 프로필로 지원"}
-          </button>
           {applicationMessage ? (
             <p className={`mt-3 text-sm font-bold ${applicationState === "error" ? "text-amber-800" : "text-forest"}`}>
               {applicationMessage}
@@ -201,28 +178,100 @@ export function JobDetailPage() {
               ) : null}
             </p>
           ) : null}
+        </header>
+
+        <section className="border-b border-line py-8">
+          <h2 className="text-xl font-black text-ink">공고 내용</h2>
+          <p className="mt-4 whitespace-pre-line leading-8 text-muted">
+            {job.description || job.support_detail || "상세 설명이 아직 등록되지 않았습니다."}
+          </p>
         </section>
 
-        <div className="space-y-2 border-t border-line pt-4">
-          {job.center_id ? (
-            <PrimaryLink to={`/gyms/${job.center_id}`} variant="light">
-              업장 정보 보기
-            </PrimaryLink>
-          ) : null}
-          <PrimaryLink to="/jobs/hiring" variant="light">
-            목록으로 돌아가기
-          </PrimaryLink>
-        </div>
-      </aside>
+        {contentImages.length > 0 ? (
+          <section className="border-b border-line py-8">
+            <h2 className="text-xl font-black text-ink">현장 이미지</h2>
+            <div className="mt-5 grid gap-3 sm:grid-cols-2">
+              {contentImages.map((image) => (
+                <img alt="구인글 본문 이미지" className="h-64 w-full rounded-md bg-paper object-cover" key={image.id} src={image.url} />
+              ))}
+            </div>
+          </section>
+        ) : null}
+
+        <section className="border-b border-line py-8">
+          <h2 className="text-xl font-black text-ink">근무 조건</h2>
+          <WeekdaySummary value={job.work_days} />
+          <InfoGrid
+            items={[
+              { label: "근무 시작", value: job.start_date_text || "협의" },
+              { label: "근무 시간", value: job.work_hours || "협의" },
+              { label: "휴게 시간", value: job.rest_time || "협의" },
+              { label: "기본급", value: job.base_pay || "협의" },
+              { label: "수업료/인센티브", value: job.incentive || "협의" },
+              { label: "정산 방식", value: job.settlement_type || "협의" },
+              { label: "4대보험", value: formatInsuranceType(job.insurance_type) },
+              { label: "영업 압박", value: formatSalesPressure(job.sales_pressure) },
+              { label: "회원 인계", value: formatMemberHandover(job.member_handover) },
+              { label: "휴가/월차", value: job.vacation || "협의" },
+              { label: "추가 지원", value: job.support_detail || "미입력" }
+            ]}
+          />
+        </section>
+
+        {center ? (
+          <section className="py-8">
+            <h2 className="text-xl font-black text-ink">업장 정보</h2>
+            <InfoGrid
+              items={[
+                { label: "센터명", value: center.name },
+                { label: "지역", value: getCenterArea(center) },
+                { label: "주소", value: getCenterAddress(center) },
+                { label: "업종", value: formatCenterIndustry(center.industry) }
+              ]}
+            />
+          </section>
+        ) : null}
+      </article>
     </Container>
   );
 }
 
-function InfoBlock({ label, value }: { label: string; value: string }) {
+function WeekdaySummary({ value }: { value: string | null }) {
+  const selectedCodes = parseWorkDayCodes(value);
+
   return (
-    <div className="rounded-md border border-line bg-paper p-4">
-      <p className="text-xs font-black uppercase text-muted">{label}</p>
-      <p className="mt-2 font-bold leading-6 text-ink">{value}</p>
+    <div className="mt-5">
+      <p className="text-sm font-black text-ink">근무 요일</p>
+      <div className="mt-2 grid grid-cols-7 gap-1.5 sm:max-w-lg">
+        {weekdayOptions.map((day) => {
+          const isSelected = selectedCodes.includes(day.value);
+
+          return (
+            <span
+              className={`grid h-10 place-items-center border text-sm font-black ${
+                isSelected ? "border-green bg-green text-white" : "border-line bg-paper text-muted"
+              }`}
+              key={day.value}
+            >
+              {day.label}
+            </span>
+          );
+        })}
+      </div>
+      {selectedCodes.length === 0 ? <p className="mt-2 text-sm font-bold text-muted">{formatWorkDays(value)}</p> : null}
     </div>
+  );
+}
+
+function InfoGrid({ items }: { items: Array<{ label: string; value: string }> }) {
+  return (
+    <dl className="mt-5 grid border-t border-line md:grid-cols-2">
+      {items.map((item) => (
+        <div className="border-b border-line py-4 md:odd:pr-5 md:even:pl-5" key={item.label}>
+          <dt className="text-xs font-black uppercase text-muted">{item.label}</dt>
+          <dd className="mt-1 font-bold leading-6 text-ink">{item.value}</dd>
+        </div>
+      ))}
+    </dl>
   );
 }

@@ -30,7 +30,9 @@ export type CenterRead = {
 export type CenterSummary = Pick<
   CenterRead,
   "id" | "name" | "sido" | "sigungu" | "detail_address" | "industry" | "operation_type" | "verification_status" | "status"
->;
+> & {
+  media: MediaFileResponse[];
+};
 
 export type CenterCreate = Omit<
   CenterRead,
@@ -44,6 +46,7 @@ export type JobPostRead = {
   center_id: string;
   business_profile_id: string;
   center: CenterSummary | null;
+  media: MediaFileResponse[];
   title: string;
   job_role: string;
   employment_type: string;
@@ -69,7 +72,7 @@ export type JobPostRead = {
 
 export type JobPostCreate = Omit<
   JobPostRead,
-  "id" | "business_profile_id" | "center" | "status" | "published_at" | "closed_at" | "created_at" | "updated_at"
+  "id" | "business_profile_id" | "center" | "media" | "status" | "published_at" | "closed_at" | "created_at" | "updated_at"
 >;
 
 export type OwnerJobPostRead = JobPostRead & {

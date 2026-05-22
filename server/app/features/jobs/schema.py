@@ -1,9 +1,10 @@
 import uuid
 from datetime import datetime
 
-from pydantic import BaseModel
+from pydantic import BaseModel, Field
 
 from app.features.centers.schema import CenterSummary
+from app.features.media.schema import MediaFileResponse
 
 
 class JobPostWrite(BaseModel):
@@ -34,6 +35,7 @@ class JobPostRead(JobPostWrite):
     id: uuid.UUID
     business_profile_id: uuid.UUID
     center: CenterSummary | None = None
+    media: list[MediaFileResponse] = Field(default_factory=list)
     status: str
     published_at: datetime | None
     closed_at: datetime | None

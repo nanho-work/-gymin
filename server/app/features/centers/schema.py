@@ -37,6 +37,7 @@ class CenterSummary(BaseModel):
     operation_type: str | None = None
     verification_status: str
     status: str
+    media: list[MediaFileResponse] = Field(default_factory=list)
 
     model_config = {"from_attributes": True}
 

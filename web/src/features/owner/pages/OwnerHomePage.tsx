@@ -17,6 +17,8 @@ import {
   formatCenterVerificationStatus,
   getCenterArea
 } from "@/shared/utils/center";
+import { formatJobStatus } from "@/shared/utils/job";
+import { formatWorkDays } from "@/shared/utils/weekdays";
 
 type OwnerHomeStatus = "loading" | "ready" | "error";
 
@@ -297,16 +299,6 @@ function SummaryRow({ label, value }: { label: string; value: string }) {
 }
 
 function formatJobSchedule(job: OwnerJobPostRead) {
-  return [job.work_days, job.work_hours].filter(Boolean).join(" · ") || "협의";
-}
-
-function formatJobStatus(status: string) {
-  const labels: Record<string, string> = {
-    draft: "작성 중",
-    open: "지원 가능",
-    closed: "마감",
-    hidden: "숨김",
-    deleted: "삭제됨"
-  };
-  return labels[status] ?? status;
+  const workDays = formatWorkDays(job.work_days);
+  return [workDays === "협의" ? "" : workDays, job.work_hours].filter(Boolean).join(" · ") || "협의";
 }

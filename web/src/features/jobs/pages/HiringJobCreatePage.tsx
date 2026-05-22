@@ -9,6 +9,7 @@ import { defaultImageAccept } from "@/features/uploads/utils/imageFiles";
 import { listMyCenters } from "@/shared/api/centersClient";
 import { createJobPost } from "@/shared/api/jobsClient";
 import type { CenterRead, JobPostCreate, JobPostRead } from "@/shared/api/serverTypes";
+import { WeekdaySelector } from "@/shared/components/forms/WeekdaySelector";
 import { Container } from "@/shared/components/ui/Container";
 import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
@@ -153,6 +154,11 @@ export function HiringJobCreatePage() {
       setSaveStatus("idle");
     };
 
+  const handleWorkDaysChange = (value: string) => {
+    setForm((current) => ({ ...current, workDays: value }));
+    setSaveStatus("idle");
+  };
+
   const handleContentImagesChange = (event: ChangeEvent<HTMLInputElement>) => {
     const files = Array.from(event.target.files ?? []);
     event.target.value = "";
@@ -276,7 +282,7 @@ export function HiringJobCreatePage() {
         <SectionTitle title="근무 시간" />
         <div className="grid gap-4 md:grid-cols-2">
           <TextField label="근무 시작일" onChange={handleFieldChange("startDateText")} placeholder="예: 2026년 6월 1일부터 / 협의 가능" value={form.startDateText} />
-          <TextField label="근무 요일" onChange={handleFieldChange("workDays")} placeholder="예: 주 5일 스케줄 근무, 월수금, 주말 파트" value={form.workDays} />
+          <WeekdaySelector onChange={handleWorkDaysChange} value={form.workDays} />
           <TextField label="근무 시간" onChange={handleFieldChange("workHours")} placeholder="예: 12:00 ~ 21:00, 면접 시 협의 가능" value={form.workHours} />
           <TextField label="휴게 시간" onChange={handleFieldChange("restTime")} placeholder="예: 일 2시간 제공, 수업 사이 자유 휴게" value={form.restTime} />
         </div>

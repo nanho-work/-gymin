@@ -52,6 +52,7 @@ export type JobPost = {
   tags: string[];
   summary: string;
   status: string;
+  imageUrl?: string;
 };
 
 export type Application = {

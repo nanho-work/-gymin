@@ -2,6 +2,7 @@ import { apiGet, apiPatch, apiPost } from "@/shared/api/httpClient";
 import type { JobPostCreate, JobPostRead, OwnerJobPostRead } from "@/shared/api/serverTypes";
 import type { Page } from "@/shared/api/types";
 import type { JobPost } from "@/shared/types/domain";
+import { getMediaDisplayUrl } from "@/shared/api/mediaClient";
 import { getCenterArea } from "@/shared/utils/center";
 import {
   formatEmploymentType,
@@ -11,6 +12,7 @@ import {
   formatMemberHandover,
   formatSalesPressure
 } from "@/shared/utils/job";
+import { formatWorkDays } from "@/shared/utils/weekdays";
 
 export function listJobPosts(params: { page?: number; size?: number } = {}) {
   return apiGet<Page<JobPostRead>>("/jobs", params);
@@ -39,8 +41,13 @@ export function toDomainJobPost(job: JobPostRead): JobPost {
     job.member_handover ? formatMemberHandover(job.member_handover) : "",
     job.insurance_type ? `4대보험 ${formatInsuranceType(job.insurance_type)}` : ""
   ].filter(Boolean);
-  const schedule = [job.work_days, job.work_hours].filter(Boolean).join(" · ") || "협의";
+  const workDays = formatWorkDays(job.work_days);
+  const schedule = [workDays === "협의" ? "" : workDays, job.work_hours].filter(Boolean).join(" · ") || "협의";
   const center = job.center;
+  const centerMedia = center?.media ?? [];
+  const representativeImage =
+    centerMedia.find((item) => item.purpose === "representative") ??
+    centerMedia.find((item) => item.purpose === "gallery");
 
   return {
     id: job.id,
@@ -55,7 +62,8 @@ export function toDomainJobPost(job: JobPostRead): JobPost {
     postedAt: formatDate(job.published_at ?? job.created_at),
     tags,
     summary: job.description || job.support_detail || "상세 내용은 구인글에서 확인해 주세요.",
-    status: formatJobStatus(job.status)
+    status: formatJobStatus(job.status),
+    imageUrl: getMediaDisplayUrl(representativeImage)
   };
 }
 

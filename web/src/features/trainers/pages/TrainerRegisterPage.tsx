@@ -333,41 +333,25 @@ export function TrainerRegisterPage() {
   return (
     <Container className="grid gap-10 py-8 lg:grid-cols-[minmax(0,1fr)_320px]">
       <form className="space-y-8" onSubmit={handleSubmit}>
-        <section className="sticky top-0 z-10 border-y border-line bg-white/95 py-3 backdrop-blur">
-          <div className="flex justify-end gap-2">
-            {profile && !isEditing ? (
-              <button
-                className="border border-line bg-white px-5 py-3 text-sm font-black text-ink transition hover:border-green"
-                onClick={() => {
-                  setIsEditing(true);
-                  setSaveStatus("idle");
-                }}
-                type="button"
-              >
-                수정
-              </button>
-            ) : null}
-            {isEditing ? (
-              <button
-                className="bg-ink px-5 py-3 text-sm font-black text-white disabled:opacity-60"
-                disabled={saveStatus === "saving"}
-                type="submit"
-              >
-                {saveStatus === "saving" ? "저장 중" : "저장"}
-              </button>
-            ) : null}
-          </div>
-          {notice ? <p className="mt-3 border-l-2 border-green pl-3 text-sm font-bold text-muted">{notice}</p> : null}
-        </section>
+        <ProfileFormActions
+          isEditing={isEditing}
+          notice={notice}
+          onEdit={() => {
+            setIsEditing(true);
+            setSaveStatus("idle");
+          }}
+          profile={profile}
+          saveStatus={saveStatus}
+        />
 
         <section className="space-y-4">
           <SectionTitle title="대표 프로필 사진" />
           <div className="grid gap-4 md:grid-cols-[220px_1fr]">
             <div className="overflow-hidden border border-line bg-paper">
               {profileImage ? (
-                <img alt="선택한 대표 프로필 사진" className="h-72 w-full object-cover" src={profileImage.previewUrl} />
+                <img alt="선택한 대표 프로필 사진" className="h-72 w-full object-contain" src={profileImage.previewUrl} />
               ) : existingProfileUrl ? (
-                <img alt="현재 대표 프로필 사진" className="h-72 w-full object-cover" src={existingProfileUrl} />
+                <img alt="현재 대표 프로필 사진" className="h-72 w-full object-contain" src={existingProfileUrl} />
               ) : (
                 <div className="grid h-72 place-items-center text-sm font-black text-muted">대표 사진 없음</div>
               )}
@@ -478,6 +462,18 @@ export function TrainerRegisterPage() {
           textarea
           value={form.summary}
         />
+
+        <ProfileFormActions
+          isEditing={isEditing}
+          notice=""
+          onEdit={() => {
+            setIsEditing(true);
+            setSaveStatus("idle");
+          }}
+          placement="bottom"
+          profile={profile}
+          saveStatus={saveStatus}
+        />
       </form>
 
       <div className="space-y-8 border-t border-line pt-6 lg:border-l lg:border-t-0 lg:pl-7 lg:pt-0">
@@ -499,6 +495,48 @@ export function TrainerRegisterPage() {
         </aside>
       </div>
     </Container>
+  );
+}
+
+function ProfileFormActions({
+  isEditing,
+  notice,
+  onEdit,
+  placement = "top",
+  profile,
+  saveStatus
+}: {
+  isEditing: boolean;
+  notice: string;
+  onEdit: () => void;
+  placement?: "top" | "bottom";
+  profile: TrainerProfileRead | null;
+  saveStatus: "idle" | "saving" | "saved" | "error";
+}) {
+  return (
+    <section className={placement === "top" ? "border-b border-line pb-5" : "border-t border-line pt-6"}>
+      <div className="flex justify-end gap-2">
+        {profile && !isEditing ? (
+          <button
+            className="rounded-md border border-line bg-white px-5 py-3 text-sm font-black text-ink transition hover:border-green"
+            onClick={onEdit}
+            type="button"
+          >
+            수정
+          </button>
+        ) : null}
+        {isEditing ? (
+          <button
+            className="rounded-md bg-ink px-5 py-3 text-sm font-black text-white transition hover:bg-forest disabled:opacity-60"
+            disabled={saveStatus === "saving"}
+            type="submit"
+          >
+            {saveStatus === "saving" ? "저장 중" : "저장"}
+          </button>
+        ) : null}
+      </div>
+      {notice ? <p className="mt-3 border-l-2 border-green pl-3 text-sm font-bold text-muted">{notice}</p> : null}
+    </section>
   );
 }
 

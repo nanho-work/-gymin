@@ -101,7 +101,7 @@ export function TrainerDetailPage() {
               </div>
             </div>
             {trainer.profileImage ? (
-              <img alt={`${trainer.name} 프로필`} className="h-64 w-full border border-line object-cover" src={trainer.profileImage} />
+              <img alt={`${trainer.name} 프로필`} className="h-64 w-full border border-line bg-paper object-contain" src={trainer.profileImage} />
             ) : (
               <div className="grid h-64 place-items-center border border-line bg-paper text-sm font-black text-muted">대표 사진 없음</div>
             )}

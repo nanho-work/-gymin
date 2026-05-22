@@ -51,7 +51,12 @@ export function AuthPage() {
       router.push(getRedirectPath(getNextPathFromLocation(), session.user.role));
       router.refresh();
     } catch (error) {
-      setLoginError(error instanceof Error ? error.message : "Google 로그인에 실패했습니다.");
+      if (isLoginCancelledError(error)) {
+        setLoginError(null);
+        return;
+      }
+
+      setLoginError(getLoginErrorMessage(error));
     } finally {
       setIsGoogleLoading(false);
     }
@@ -167,6 +172,34 @@ function isBusinessPath(pathname: string) {
 
 function isTrainerPath(pathname: string) {
   return pathname === "/trainer" || pathname === "/trainers/new";
+}
+
+function isLoginCancelledError(error: unknown) {
+  const code = getFirebaseErrorCode(error);
+  return code === "auth/user-cancelled" || code === "auth/popup-closed-by-user" || code === "auth/cancelled-popup-request";
+}
+
+function getLoginErrorMessage(error: unknown) {
+  const code = getFirebaseErrorCode(error);
+
+  if (code === "auth/popup-blocked") {
+    return "브라우저에서 로그인 팝업이 차단되었습니다. 팝업 허용 후 다시 시도해 주세요.";
+  }
+
+  if (code === "auth/network-request-failed") {
+    return "네트워크 연결이 불안정합니다. 잠시 후 다시 시도해 주세요.";
+  }
+
+  return "Google 로그인에 실패했습니다. 잠시 후 다시 시도해 주세요.";
+}
+
+function getFirebaseErrorCode(error: unknown) {
+  if (typeof error === "object" && error && "code" in error) {
+    const code = (error as { code?: unknown }).code;
+    return typeof code === "string" ? code : null;
+  }
+
+  return null;
 }
 
 function LoginStat({ label, value }: { label: string; value: string }) {

@@ -91,7 +91,7 @@ web/
     features/
       auth/                  # 로그인/회원가입 화면
       centers/               # 센터 등록/상세 UI
-      jobs/                  # 구인글 목록/등록 UI
+      jobs/                  # 구인글 pages/components/hooks
       owner/                 # 사업장 관리/지원자 관리 화면
       trainers/              # 내 활동 관리/등록/상세 화면
       uploads/               # S3 이미지 업로드 API와 저장 전 선택 훅

@@ -146,6 +146,8 @@ media_files
 | user_id | uuid fk users.id | 사용자 |
 | name | varchar(80) nullable | 이름 |
 | birth_year | smallint nullable | 출생년도, 나이는 서버 응답에서 계산 |
+| birth_date | date nullable | 구버전 API 호환용, 새 로직에서는 사용하지 않음 |
+| age | smallint nullable | 구버전 API 호환용, 새 로직에서는 서버 계산값을 응답에만 포함 |
 | gender | varchar(20) nullable | 성별 |
 | phone | varchar(30) nullable | 숫자만 저장하는 연락처 |
 | residence_sido | varchar(40) nullable | 거주 시/도 |

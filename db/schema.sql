@@ -144,6 +144,8 @@ CREATE TABLE IF NOT EXISTS trainer_profiles (
   user_id uuid NOT NULL REFERENCES users(id) ON DELETE CASCADE,
   name varchar(80),
   birth_year smallint,
+  birth_date date,
+  age smallint,
   gender varchar(20),
   phone varchar(30),
   residence_sido varchar(40),
@@ -162,6 +164,7 @@ CREATE TABLE IF NOT EXISTS trainer_profiles (
     CHECK (birth_year IS NULL OR (birth_year >= 1900 AND birth_year <= 2100)),
   CONSTRAINT trainer_profiles_phone_digits_check
     CHECK (phone IS NULL OR phone ~ '^[0-9]+$'),
+  CONSTRAINT trainer_profiles_age_check CHECK (age IS NULL OR (age >= 14 AND age <= 100)),
   CONSTRAINT trainer_profiles_experience_years_check
     CHECK (experience_years IS NULL OR (experience_years >= 0 AND experience_years <= 80)),
   CONSTRAINT trainer_profiles_gender_check

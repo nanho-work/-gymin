@@ -9,6 +9,7 @@
 - `db/migrations/0002_add_media_content_purpose.sql`: 실행 완료
 - `db/migrations/0003_add_media_file_variants.sql`: 실행 필요
 - `db/migrations/0004_refine_trainer_profile_contact_birth_year.sql`: 실행 필요
+- `db/migrations/0005_restore_trainer_profile_legacy_birth_columns.sql`: 필요 시 실행
 
 ## 현재 실행 순서
 
@@ -65,6 +66,14 @@ db/migrations/0003_add_media_file_variants.sql
 
 ```text
 db/migrations/0004_refine_trainer_profile_contact_birth_year.sql
+```
+
+주의: API 컨테이너를 새 코드로 재배포하기 전에 기존 `birth_date`, `age` 컬럼을 삭제하면 구버전 API가 500을 낸다. 현재 `0004`는 호환을 위해 기존 컬럼을 삭제하지 않는다.
+
+이미 이전 버전의 `0004`를 실행해서 `birth_date`, `age`가 삭제되었다면 아래 복구 쿼리를 먼저 실행한 뒤 API를 재배포한다.
+
+```text
+db/migrations/0005_restore_trainer_profile_legacy_birth_columns.sql
 ```
 
 ## 실행 후 확인 쿼리

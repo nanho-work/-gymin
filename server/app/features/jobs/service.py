@@ -5,14 +5,14 @@ from sqlalchemy.orm import Session
 from app.common.pagination import PaginationParams, Page
 from app.features.jobs import crud
 from app.features.jobs.model import JobPost
-from app.features.jobs.schema import JobPostCreate, JobPostRead
+from app.features.jobs.schema import JobPostCreate, JobPostRead, JobPostSearchParams
 from app.features.media import crud as media_crud
 from app.features.media.model import MediaFile
 from app.features.media.service import to_media_file_response
 
 
-def list_jobs(db: Session, params: PaginationParams) -> Page:
-    page = crud.list_jobs(db, params=params)
+def list_jobs(db: Session, params: PaginationParams, search: JobPostSearchParams | None = None) -> Page:
+    page = crud.list_jobs(db, params=params, search=search)
     return page.model_copy(
         update={
             "items": [

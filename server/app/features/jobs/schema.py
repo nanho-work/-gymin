@@ -31,6 +31,13 @@ class JobPostCreate(JobPostWrite):
     pass
 
 
+class JobPostSearchParams(BaseModel):
+    q: str | None = None
+    sido: str | None = None
+    sigungu: str | None = None
+    industry: str | None = None
+
+
 class JobPostRead(JobPostWrite):
     id: uuid.UUID
     business_profile_id: uuid.UUID

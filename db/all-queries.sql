@@ -2,6 +2,7 @@
 -- Keep this file in sync whenever a migration query is added or changed.
 
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
+CREATE EXTENSION IF NOT EXISTS pg_trgm WITH SCHEMA public;
 
 CREATE OR REPLACE FUNCTION set_updated_at()
 RETURNS trigger AS $$
@@ -124,6 +125,9 @@ CREATE TABLE IF NOT EXISTS centers (
 
 CREATE INDEX IF NOT EXISTS ix_centers_business_profile_id
 ON centers(business_profile_id);
+
+CREATE INDEX IF NOT EXISTS ix_centers_name_trgm
+ON centers USING gin (name public.gin_trgm_ops);
 
 CREATE INDEX IF NOT EXISTS ix_centers_region
 ON centers(sido, sigungu);
@@ -287,6 +291,9 @@ ON job_posts(job_role);
 CREATE INDEX IF NOT EXISTS ix_job_posts_employment_type
 ON job_posts(employment_type);
 
+CREATE INDEX IF NOT EXISTS ix_job_posts_title_trgm
+ON job_posts USING gin (title public.gin_trgm_ops);
+
 DROP TRIGGER IF EXISTS job_posts_set_updated_at ON job_posts;
 CREATE TRIGGER job_posts_set_updated_at
 BEFORE UPDATE ON job_posts
@@ -386,6 +393,23 @@ ON media_file_variants(media_file_id, variant_type);
 
 CREATE INDEX IF NOT EXISTS ix_media_file_variants_media_file_id
 ON media_file_variants(media_file_id);
+
+-- 0006_add_job_search_indexes.sql
+-- 공개 구인글 서버 검색을 위한 인덱스다.
+-- 지역/업종은 센터 테이블의 기존 btree 인덱스를 보강하고, 제목/센터명 부분 검색은 pg_trgm GIN 인덱스를 사용한다.
+CREATE EXTENSION IF NOT EXISTS pg_trgm WITH SCHEMA public;
+
+CREATE INDEX IF NOT EXISTS ix_centers_region
+ON centers(sido, sigungu);
+
+CREATE INDEX IF NOT EXISTS ix_centers_industry
+ON centers(industry);
+
+CREATE INDEX IF NOT EXISTS ix_centers_name_trgm
+ON centers USING gin (name public.gin_trgm_ops);
+
+CREATE INDEX IF NOT EXISTS ix_job_posts_title_trgm
+ON job_posts USING gin (title public.gin_trgm_ops);
 
 -- 0004_refine_trainer_profile_contact_birth_year.sql
 -- 트레이너 프로필의 연락처 저장값을 숫자만 남기고, 나이는 출생년도 기반 서버 계산값으로 전환한다.

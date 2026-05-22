@@ -11,7 +11,7 @@ export function JobPostCard({ post }: { post: JobPost }) {
       className="block overflow-hidden rounded-lg border border-line bg-white shadow-sm transition hover:border-green hover:bg-paper"
       href={`/jobs/hiring/${post.id}`}
     >
-      <article className="grid gap-0 md:grid-cols-[minmax(0,1fr)_190px]">
+      <article className="grid gap-0 md:grid-cols-[minmax(0,1fr)_220px]">
         <div className="p-5">
           <div className="flex flex-col justify-between gap-4 md:flex-row md:items-start">
             <div>
@@ -50,11 +50,11 @@ export function JobPostCard({ post }: { post: JobPost }) {
             ))}
           </div>
         </div>
-        <div className="min-h-48 border-t border-line bg-paper md:min-h-full md:border-l md:border-t-0">
+        <div className="aspect-square border-t border-line bg-paper p-3 md:border-l md:border-t-0">
           {post.imageUrl ? (
-            <img alt={`${post.authorName} 대표 이미지`} className="h-full min-h-48 w-full object-cover" src={post.imageUrl} />
+            <img alt={`${post.authorName} 대표 이미지`} className="h-full w-full object-contain" src={post.imageUrl} />
           ) : (
-            <div className="grid h-full min-h-48 place-items-center px-4 text-center text-sm font-black text-muted">
+            <div className="grid h-full w-full place-items-center px-4 text-center text-sm font-black text-muted">
               대표 이미지 없음
             </div>
           )}

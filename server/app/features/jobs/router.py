@@ -1,6 +1,8 @@
 import uuid
+from typing import Annotated
 
 from fastapi import APIRouter, Depends, HTTPException
+from fastapi import Query
 from sqlalchemy.orm import Session
 
 from app.common.pagination import Page, PaginationParams, get_pagination_params
@@ -8,7 +10,7 @@ from app.db.session import get_db
 from app.features.auth.dependencies import CurrentUser, require_business
 from app.features.business.service import ensure_business_profile
 from app.features.centers.service import get_center
-from app.features.jobs.schema import JobPostCreate, JobPostRead, OwnerJobPostRead
+from app.features.jobs.schema import JobPostCreate, JobPostRead, JobPostSearchParams, OwnerJobPostRead
 from app.features.jobs.service import (
     close_job,
     create_job,
@@ -26,9 +28,14 @@ router = APIRouter(prefix="/jobs", tags=["jobs"])
 @router.get("", response_model=Page[JobPostRead])
 def read_jobs(
     pagination: PaginationParams = Depends(get_pagination_params),
+    q: Annotated[str | None, Query(max_length=80)] = None,
+    sido: Annotated[str | None, Query(max_length=40)] = None,
+    sigungu: Annotated[str | None, Query(max_length=60)] = None,
+    industry: Annotated[str | None, Query(max_length=40)] = None,
     db: Session = Depends(get_db)
 ) -> Page[JobPostRead]:
-    return list_jobs(db, params=pagination)
+    search = JobPostSearchParams(q=q, sido=sido, sigungu=sigungu, industry=industry)
+    return list_jobs(db, params=pagination, search=search)
 
 
 @router.get("/me", response_model=Page[OwnerJobPostRead])

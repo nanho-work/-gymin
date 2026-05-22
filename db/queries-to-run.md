@@ -10,6 +10,7 @@
 - `db/migrations/0003_add_media_file_variants.sql`: 실행 필요
 - `db/migrations/0004_refine_trainer_profile_contact_birth_year.sql`: 운영 DB 실행 완료
 - `db/migrations/0005_restore_trainer_profile_legacy_birth_columns.sql`: 운영 DB 수동 복구 완료
+- `db/migrations/0006_add_job_search_indexes.sql`: 실행 필요
 
 ## 현재 실행 순서
 
@@ -74,6 +75,14 @@ db/migrations/0004_refine_trainer_profile_contact_birth_year.sql
 
 ```text
 db/migrations/0005_restore_trainer_profile_legacy_birth_columns.sql
+```
+
+### 8. 구인글 검색 인덱스 추가
+
+구인글 목록에서 지역, 업종, 제목, 센터명 서버 검색을 사용하려면 아래 파일의 쿼리를 추가로 실행한다.
+
+```text
+db/migrations/0006_add_job_search_indexes.sql
 ```
 
 ## 실행 후 확인 쿼리

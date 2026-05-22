@@ -135,6 +135,7 @@ media_files
 - `(sido, sigungu)`
 - `(industry)`
 - `(business_profile_id)`
+- `name gin_trgm_ops`
 
 ## trainer_profiles
 
@@ -267,6 +268,7 @@ media_files
 - `(status, published_at desc)`
 - `(job_role)`
 - `(employment_type)`
+- `title gin_trgm_ops`
 
 ## job_applications
 
@@ -377,3 +379,4 @@ S3 업로드 이미지의 변환본이다. 목록은 `thumbnail`, 상세는 `med
 - `db/migrations/0003_add_media_file_variants.sql`: 실행 필요
 - `db/migrations/0004_refine_trainer_profile_contact_birth_year.sql`: 운영 DB 실행 완료
 - `db/migrations/0005_restore_trainer_profile_legacy_birth_columns.sql`: 운영 DB 수동 복구 완료
+- `db/migrations/0006_add_job_search_indexes.sql`: 실행 필요

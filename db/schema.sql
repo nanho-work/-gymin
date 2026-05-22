@@ -2,6 +2,7 @@
 -- Keep this file in sync whenever a migration query is added or changed.
 
 CREATE EXTENSION IF NOT EXISTS pgcrypto;
+CREATE EXTENSION IF NOT EXISTS pg_trgm WITH SCHEMA public;
 
 CREATE OR REPLACE FUNCTION set_updated_at()
 RETURNS trigger AS $$
@@ -124,6 +125,9 @@ CREATE TABLE IF NOT EXISTS centers (
 
 CREATE INDEX IF NOT EXISTS ix_centers_business_profile_id
 ON centers(business_profile_id);
+
+CREATE INDEX IF NOT EXISTS ix_centers_name_trgm
+ON centers USING gin (name public.gin_trgm_ops);
 
 CREATE INDEX IF NOT EXISTS ix_centers_region
 ON centers(sido, sigungu);
@@ -289,6 +293,9 @@ ON job_posts(job_role);
 
 CREATE INDEX IF NOT EXISTS ix_job_posts_employment_type
 ON job_posts(employment_type);
+
+CREATE INDEX IF NOT EXISTS ix_job_posts_title_trgm
+ON job_posts USING gin (title public.gin_trgm_ops);
 
 DROP TRIGGER IF EXISTS job_posts_set_updated_at ON job_posts;
 CREATE TRIGGER job_posts_set_updated_at

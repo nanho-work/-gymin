@@ -14,7 +14,16 @@ import {
 } from "@/shared/utils/job";
 import { formatWorkDays } from "@/shared/utils/weekdays";
 
-export function listJobPosts(params: { page?: number; size?: number } = {}) {
+export type JobPostListParams = {
+  page?: number;
+  size?: number;
+  q?: string;
+  sido?: string;
+  sigungu?: string;
+  industry?: string;
+};
+
+export function listJobPosts(params: JobPostListParams = {}) {
   return apiGet<Page<JobPostRead>>("/jobs", params);
 }
 

@@ -58,8 +58,7 @@ def create_job_endpoint(
     if center is None or center.business_profile_id != profile.id:
         raise HTTPException(status_code=404, detail="센터를 찾을 수 없습니다.")
 
-    payload = payload.model_copy(update={"business_profile_id": profile.id})
-    return create_job(db, payload)
+    return create_job(db, payload, profile.id)
 
 
 @router.patch("/{job_id}/close", response_model=JobPostRead)

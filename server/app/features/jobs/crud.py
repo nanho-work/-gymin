@@ -82,9 +82,15 @@ def get_job_for_business_user_id(db: Session, job_id: uuid.UUID, user_id: uuid.U
     return db.scalar(statement)
 
 
-def create_job(db: Session, payload: JobPostCreate) -> JobPost:
+def create_job(db: Session, payload: JobPostCreate, business_profile_id: uuid.UUID) -> JobPost:
     now = datetime.now(timezone.utc)
-    job = JobPost(**payload.model_dump(), status="open", published_at=now, updated_at=now)
+    job = JobPost(
+        **payload.model_dump(),
+        business_profile_id=business_profile_id,
+        status="open",
+        published_at=now,
+        updated_at=now
+    )
     db.add(job)
     db.commit()
     db.refresh(job)

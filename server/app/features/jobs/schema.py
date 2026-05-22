@@ -4,9 +4,8 @@ from datetime import datetime
 from pydantic import BaseModel
 
 
-class JobPostCreate(BaseModel):
+class JobPostWrite(BaseModel):
     center_id: uuid.UUID
-    business_profile_id: uuid.UUID
     title: str
     job_role: str
     employment_type: str
@@ -25,8 +24,13 @@ class JobPostCreate(BaseModel):
     description: str | None = None
 
 
-class JobPostRead(JobPostCreate):
+class JobPostCreate(JobPostWrite):
+    pass
+
+
+class JobPostRead(JobPostWrite):
     id: uuid.UUID
+    business_profile_id: uuid.UUID
     status: str
     published_at: datetime | None
     closed_at: datetime | None

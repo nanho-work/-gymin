@@ -60,7 +60,10 @@ export type JobPostRead = {
   updated_at: string;
 };
 
-export type JobPostCreate = Omit<JobPostRead, "id" | "status" | "published_at" | "closed_at" | "created_at" | "updated_at">;
+export type JobPostCreate = Omit<
+  JobPostRead,
+  "id" | "business_profile_id" | "status" | "published_at" | "closed_at" | "created_at" | "updated_at"
+>;
 
 export type OwnerJobPostRead = JobPostRead & {
   applicant_count: number;

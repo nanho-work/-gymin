@@ -24,8 +24,8 @@ def get_my_job(db: Session, job_id: uuid.UUID, user_id: uuid.UUID) -> JobPost | 
     return crud.get_job_for_business_user_id(db, job_id, user_id)
 
 
-def create_job(db: Session, payload: JobPostCreate) -> JobPost:
-    return crud.create_job(db, payload)
+def create_job(db: Session, payload: JobPostCreate, business_profile_id: uuid.UUID) -> JobPost:
+    return crud.create_job(db, payload, business_profile_id)
 
 
 def close_job(db: Session, job: JobPost) -> JobPost:

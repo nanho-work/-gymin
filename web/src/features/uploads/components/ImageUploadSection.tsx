@@ -11,7 +11,7 @@ import type {
   UploadEntityType,
   UploadPurpose
 } from "@/features/uploads/types";
-import { defaultImageAccept, formatFileSize } from "@/features/uploads/utils/imageFiles";
+import { defaultImageAccept } from "@/features/uploads/utils/imageFiles";
 
 export function ImageUploadSection({
   accept = defaultImageAccept,
@@ -123,7 +123,7 @@ export function ImageUploadSection({
                     className="absolute right-2 top-2 bg-white px-2 py-1 text-xs font-black text-ink"
                     onClick={(event) => {
                       event.preventDefault();
-                      removeImage(image.id);
+                      void removeImage(image.id);
                     }}
                     type="button"
                   >
@@ -144,22 +144,6 @@ export function ImageUploadSection({
         })}
       </div>
 
-      {images.length > 0 ? (
-        <div className="border-t border-line pt-3">
-          <p className="text-xs font-black text-muted">업로드된 S3 object key</p>
-          <div className="mt-2 space-y-2">
-            {images
-              .filter((image) => image.status === "uploaded")
-              .map((image) => (
-                <div className="grid gap-2 text-xs text-muted md:grid-cols-[140px_1fr_70px]" key={image.id}>
-                  <span className="font-black text-ink">{image.slotLabel}</span>
-                  <code className="break-all bg-stone-100 px-2 py-1">{image.objectKey}</code>
-                  <span>{formatFileSize(image.fileSize)}</span>
-                </div>
-              ))}
-          </div>
-        </div>
-      ) : null}
     </section>
   );
 }

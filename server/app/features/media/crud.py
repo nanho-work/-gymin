@@ -28,3 +28,12 @@ def list_entity_media(
         statement = statement.where(MediaFile.purpose == purpose)
 
     return list(db.scalars(statement).all())
+
+
+def get_media_file(db: Session, media_file_id: uuid.UUID) -> MediaFile | None:
+    statement = (
+        select(MediaFile)
+        .options(selectinload(MediaFile.variants))
+        .where(MediaFile.id == media_file_id, MediaFile.deleted_at.is_(None))
+    )
+    return db.scalar(statement)

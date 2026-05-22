@@ -202,6 +202,25 @@ def to_media_file_response(media_file: MediaFile) -> MediaFileResponse:
     )
 
 
+def delete_media_file(db: Session, media_file: MediaFile) -> None:
+    settings = get_settings()
+    object_keys = {media_file.object_key, *(variant.object_key for variant in media_file.variants)}
+
+    db.execute(
+        update(MediaFile)
+        .where(MediaFile.id == media_file.id, MediaFile.deleted_at.is_(None))
+        .values(status="deleted", deleted_at=datetime.now(timezone.utc))
+    )
+    db.commit()
+
+    s3_client = boto3.client("s3", region_name=settings.aws_region)
+    for object_key in object_keys:
+        try:
+            s3_client.delete_object(Bucket=settings.s3_bucket_name, Key=object_key)
+        except (BotoCoreError, ClientError, NoCredentialsError):
+            pass
+
+
 def complete_uploaded_image(
     db: Session,
     payload: CompleteUploadRequest,

@@ -53,7 +53,7 @@ export function toDomainTrainer(profile: TrainerProfileRead): Trainer {
   const portfolioMedia = profile.media.filter((item) => item.purpose === "portfolio" || item.purpose === "gallery");
   const mediaImages = portfolioMedia
     .map((item, index) => ({
-      label: item.original_filename || `포트폴리오 사진 ${index + 1}`,
+      label: `포트폴리오 사진 ${index + 1}`,
       url: getMediaDisplayUrl(item)
     }))
     .filter((item) => item.url);

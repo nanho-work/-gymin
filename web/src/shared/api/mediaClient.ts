@@ -1,4 +1,4 @@
-import { apiGet, apiPost } from "@/shared/api/httpClient";
+import { apiDelete, apiGet, apiPost } from "@/shared/api/httpClient";
 import type {
   CompleteUploadRequest,
   CompleteUploadResponse,
@@ -21,6 +21,10 @@ export function listMediaFiles(params: {
   purpose?: PresignedUploadRequest["purpose"];
 }) {
   return apiGet<MediaFileResponse[]>("/media", params);
+}
+
+export function deleteMediaFile(mediaFileId: string) {
+  return apiDelete<void>(`/media/${mediaFileId}`);
 }
 
 export function getMediaDisplayUrl(mediaFile: MediaFileResponse | undefined) {

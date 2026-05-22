@@ -17,7 +17,12 @@ from app.features.media.schema import (
     PresignedUploadRequest,
     PresignedUploadResponse
 )
-from app.features.media.service import complete_uploaded_image, create_presigned_upload_url, to_media_file_response
+from app.features.media.service import (
+    complete_uploaded_image,
+    create_presigned_upload_url,
+    delete_media_file,
+    to_media_file_response
+)
 
 
 router = APIRouter(prefix="/media", tags=["media"])
@@ -41,6 +46,21 @@ def read_entity_media(
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="미디어 소유자를 확인할 수 없습니다.")
 
     return [to_media_file_response(media_file) for media_file in media_files]
+
+
+@router.delete("/{media_file_id}", status_code=status.HTTP_204_NO_CONTENT)
+def delete_media(
+    media_file_id: uuid.UUID,
+    db: Session = Depends(get_db),
+    current_user: CurrentUser = Depends(get_current_user)
+) -> None:
+    media_file = crud.get_media_file(db, media_file_id)
+    if media_file is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="이미지를 찾을 수 없습니다.")
+    if media_file.owner_user_id != current_user.id:
+        raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="미디어 소유자를 확인할 수 없습니다.")
+
+    delete_media_file(db, media_file)
 
 
 @router.post("/presigned-upload", response_model=PresignedUploadResponse)

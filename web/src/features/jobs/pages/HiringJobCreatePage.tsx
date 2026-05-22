@@ -67,13 +67,9 @@ export function HiringJobCreatePage() {
 
         <ImageUploadSection
           defaultPurpose="content"
-          description="공고 본문 중간에 넣을 공간 사진, 근무 환경 이미지 등을 업로드합니다. 저장 로직을 붙일 때 이 object key를 본문 이미지로 연결합니다."
+          description="공고 본문 중간에 넣을 공간 사진, 근무 환경 이미지 등을 업로드합니다."
           entityId={draftJobPostId}
           entityType="job_post"
-          onUploaded={(image) => {
-            const imageMarkdown = `![${image.slotLabel}](s3://${image.bucket}/${image.objectKey})`;
-            setDescription((current) => `${current}${current.trim() ? "\n\n" : ""}${imageMarkdown}`);
-          }}
           optional
           slots={["본문 이미지 1", "본문 이미지 2", "본문 이미지 3", "본문 이미지 4", "본문 이미지 5"]}
           title="본문 이미지"

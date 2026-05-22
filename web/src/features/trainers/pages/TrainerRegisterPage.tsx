@@ -4,10 +4,10 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import type { ChangeEvent, Dispatch, FormEvent, SetStateAction } from "react";
 
 import { uploadImageToS3 } from "@/features/uploads/api/uploadImageToS3";
-import { defaultImageAccept, formatFileSize, validateImageFile } from "@/features/uploads/utils/imageFiles";
+import { defaultImageAccept, validateImageFile } from "@/features/uploads/utils/imageFiles";
 import { RegionSelect } from "@/shared/components/forms/RegionSelect";
 import { Container } from "@/shared/components/ui/Container";
-import { getMediaDisplayUrl } from "@/shared/api/mediaClient";
+import { deleteMediaFile, getMediaDisplayUrl } from "@/shared/api/mediaClient";
 import { getMyTrainerProfile, upsertMyTrainerProfile } from "@/shared/api/trainersClient";
 import type { MediaFileResponse, TrainerProfileRead, TrainerProfileUpsert } from "@/shared/api/serverTypes";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
@@ -86,6 +86,7 @@ export function TrainerRegisterPage() {
   const [notice, setNotice] = useState("");
   const [profileImage, setProfileImage] = useState<PendingImage | null>(null);
   const [portfolioImages, setPortfolioImages] = useState<PendingImage[]>([]);
+  const [deletedMediaIds, setDeletedMediaIds] = useState<Set<string>>(() => new Set());
   const pendingImagesRef = useRef<{ profileImage: PendingImage | null; portfolioImages: PendingImage[] }>({
     profileImage: null,
     portfolioImages: []
@@ -102,6 +103,7 @@ export function TrainerRegisterPage() {
 
         setProfile(nextProfile);
         setForm(toFormState(nextProfile));
+        setDeletedMediaIds(new Set());
         setIsEditing(false);
         setLoadStatus("ready");
       })
@@ -113,6 +115,7 @@ export function TrainerRegisterPage() {
         if (error.message.includes("찾을 수 없습니다")) {
           setProfile(null);
           setForm(emptyForm);
+          setDeletedMediaIds(new Set());
           setIsEditing(true);
           setLoadStatus("ready");
           return;
@@ -138,12 +141,15 @@ export function TrainerRegisterPage() {
   }, []);
 
   const existingProfileImage = useMemo(
-    () => profile?.media.find((item) => item.purpose === "profile"),
-    [profile]
+    () => profile?.media.find((item) => item.purpose === "profile" && !deletedMediaIds.has(item.id)),
+    [deletedMediaIds, profile]
   );
   const existingPortfolioImages = useMemo(
-    () => profile?.media.filter((item) => item.purpose === "portfolio" || item.purpose === "gallery") ?? [],
-    [profile]
+    () =>
+      profile?.media.filter(
+        (item) => (item.purpose === "portfolio" || item.purpose === "gallery") && !deletedMediaIds.has(item.id)
+      ) ?? [],
+    [deletedMediaIds, profile]
   );
   const readinessChecks = useMemo(
     () => [
@@ -235,12 +241,17 @@ export function TrainerRegisterPage() {
   };
 
   const removeProfileImage = () => {
-    setProfileImage((current) => {
-      if (current) {
-        URL.revokeObjectURL(current.previewUrl);
-      }
-      return null;
-    });
+    if (profileImage) {
+      URL.revokeObjectURL(profileImage.previewUrl);
+      setProfileImage(null);
+      setSaveStatus("idle");
+      setNotice("선택한 대표 사진을 취소했습니다.");
+      return;
+    }
+
+    if (existingProfileImage) {
+      markMediaForDeletion(existingProfileImage.id);
+    }
   };
 
   const removePortfolioImage = (imageId: string) => {
@@ -251,6 +262,12 @@ export function TrainerRegisterPage() {
       }
       return current.filter((image) => image.id !== imageId);
     });
+  };
+
+  const markMediaForDeletion = (mediaFileId: string) => {
+    setDeletedMediaIds((current) => new Set(current).add(mediaFileId));
+    setSaveStatus("idle");
+    setNotice("삭제할 사진이 표시되었습니다. 저장 버튼을 누르면 반영됩니다.");
   };
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
@@ -268,6 +285,11 @@ export function TrainerRegisterPage() {
       const savedProfile = await upsertMyTrainerProfile(
         toUpsertPayload(form, isReadyForApply && !shouldDeferReadyUntilImageUpload)
       );
+
+      const mediaIdsToDelete = Array.from(deletedMediaIds);
+      if (mediaIdsToDelete.length > 0) {
+        await Promise.all(mediaIdsToDelete.map((mediaFileId) => deleteMediaFile(mediaFileId)));
+      }
 
       if (profileImage) {
         await uploadImageToS3({
@@ -301,6 +323,7 @@ export function TrainerRegisterPage() {
       clearPendingImages(profileImage, portfolioImages);
       setProfileImage(null);
       setPortfolioImages([]);
+      setDeletedMediaIds(new Set());
       setIsEditing(false);
       setSaveStatus("saved");
       setNotice("프로필이 저장되었습니다.");
@@ -348,7 +371,7 @@ export function TrainerRegisterPage() {
         <section className="space-y-4">
           <SectionTitle title="대표 프로필 사진" />
           <div className="grid gap-4 md:grid-cols-[220px_1fr]">
-            <div className="overflow-hidden border border-line bg-paper">
+            <div className="relative overflow-hidden border border-line bg-paper">
               {profileImage ? (
                 <img alt="선택한 대표 프로필 사진" className="h-72 w-full object-contain" src={profileImage.previewUrl} />
               ) : existingProfileUrl ? (
@@ -356,6 +379,15 @@ export function TrainerRegisterPage() {
               ) : (
                 <div className="grid h-72 place-items-center text-sm font-black text-muted">대표 사진 없음</div>
               )}
+              {isEditing && (profileImage || existingProfileImage) ? (
+                <button
+                  className="absolute right-3 top-3 rounded-md bg-ink/85 px-3 py-2 text-xs font-black text-white"
+                  onClick={removeProfileImage}
+                  type="button"
+                >
+                  {profileImage ? "취소" : "삭제"}
+                </button>
+              ) : null}
             </div>
             <div className="flex flex-col justify-center gap-3">
               <label className={`inline-flex w-fit ${isEditing ? "cursor-pointer" : "cursor-not-allowed opacity-60"}`}>
@@ -368,11 +400,6 @@ export function TrainerRegisterPage() {
                   type="file"
                 />
               </label>
-              {profileImage ? (
-                <button className="w-fit text-sm font-black text-muted" onClick={removeProfileImage} type="button">
-                  선택 취소
-                </button>
-              ) : null}
               <p className="text-xs font-bold leading-5 text-muted">jpg, png, webp · 8MB 이하</p>
             </div>
           </div>
@@ -385,7 +412,7 @@ export function TrainerRegisterPage() {
           </p>
           <div className="grid gap-3 md:grid-cols-3">
             {existingPortfolioImages.map((image) => (
-              <ImagePreviewCard image={image} key={image.id} />
+              <ImagePreviewCard image={image} isEditing={isEditing} key={image.id} onRemove={markMediaForDeletion} />
             ))}
             {portfolioImages.map((image) => (
               <PendingImageCard image={image} key={image.id} onRemove={removePortfolioImage} />
@@ -702,28 +729,43 @@ function PortfolioRow({
 
 function PendingImageCard({ image, onRemove }: { image: PendingImage; onRemove: (imageId: string) => void }) {
   return (
-    <figure className="overflow-hidden border border-line bg-white">
-      <img alt={image.file.name} className="h-40 w-full object-cover" src={image.previewUrl} />
-      <figcaption className="space-y-2 border-t border-line p-3 text-xs font-bold text-muted">
-        <span className="block truncate font-black text-ink">{image.file.name}</span>
-        <span>{formatFileSize(image.file.size)}</span>
-        <button className="block font-black text-amber-800" onClick={() => onRemove(image.id)} type="button">
-          선택 취소
-        </button>
-      </figcaption>
+    <figure className="relative overflow-hidden border border-line bg-white">
+      <img alt="선택한 운동 사진" className="h-40 w-full object-cover" src={image.previewUrl} />
+      <span className="absolute inset-x-0 bottom-0 bg-ink/80 px-3 py-2 text-xs font-black text-white">저장 대기</span>
+      <button
+        className="absolute right-2 top-2 rounded-md bg-white px-2 py-1 text-xs font-black text-ink shadow-sm"
+        onClick={() => onRemove(image.id)}
+        type="button"
+      >
+        취소
+      </button>
     </figure>
   );
 }
 
-function ImagePreviewCard({ image }: { image: MediaFileResponse }) {
+function ImagePreviewCard({
+  image,
+  isEditing,
+  onRemove
+}: {
+  image: MediaFileResponse;
+  isEditing: boolean;
+  onRemove: (mediaFileId: string) => void;
+}) {
   const url = getMediaDisplayUrl(image);
 
   return (
-    <figure className="overflow-hidden border border-line bg-white">
-      {url ? <img alt={image.original_filename || "등록된 운동 사진"} className="h-40 w-full object-cover" src={url} /> : null}
-      <figcaption className="border-t border-line p-3 text-xs font-bold text-muted">
-        <span className="block truncate font-black text-ink">{image.original_filename || "등록된 사진"}</span>
-      </figcaption>
+    <figure className="relative overflow-hidden border border-line bg-white">
+      {url ? <img alt="등록된 운동 사진" className="h-40 w-full object-cover" src={url} /> : null}
+      {isEditing ? (
+        <button
+          className="absolute right-2 top-2 rounded-md bg-white px-2 py-1 text-xs font-black text-ink shadow-sm"
+          onClick={() => onRemove(image.id)}
+          type="button"
+        >
+          삭제
+        </button>
+      ) : null}
     </figure>
   );
 }

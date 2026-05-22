@@ -14,12 +14,23 @@ GymIn은 이미지를 DB에 직접 저장하지 않고 S3에 업로드한 뒤 ob
 ## 조회 흐름
 
 S3 버킷은 private으로 운영한다. 프론트는 `object_key`를 직접 이미지 URL로 사용하지 않는다.
+사용자 화면에는 원본 파일명이나 S3 object key를 노출하지 않는다. 파일명은 업로드 추적용 메타데이터로만 저장한다.
 
 - 트레이너 내 프로필은 `GET /api/trainers/me` 응답의 `media`를 사용한다.
 - 트레이너 공개 상세는 `GET /api/trainers/{trainer_id}` 응답의 `media`를 사용한다.
 - 소유자 관리용 미디어 목록은 `GET /api/media?entity_type=...&entity_id=...&purpose=...`를 사용한다.
 - 서버는 각 `media_file_variants` 항목에 짧은 만료 시간의 presigned GET URL을 포함해 내려준다.
 - 프론트는 `medium`, `thumbnail`, `original` 순서로 표시용 URL을 선택한다.
+
+## 삭제 흐름
+
+1. 프론트에서 로그인 쿠키를 포함해 `DELETE /api/media/{media_file_id}`를 호출한다.
+2. 서버는 `media_files.owner_user_id`와 현재 로그인 사용자를 비교해 소유권을 확인한다.
+3. 서버는 `media_files.status = 'deleted'`, `deleted_at = now()`로 soft delete한다.
+4. S3의 WebP 변환본은 best-effort로 삭제한다.
+
+트레이너 프로필 수정 화면에서는 기존 저장 이미지를 바로 삭제하지 않고, 편집 모드에서 삭제 표시 후 저장 버튼을 누를 때 삭제 API를 호출한다.
+신규 업로드 직후 슬롯에서 제거하는 경우에는 해당 media file을 즉시 삭제한다.
 
 ## S3 key 규칙
 

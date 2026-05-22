@@ -5,6 +5,7 @@ import { useCallback, useEffect, useRef, useState } from "react";
 import { uploadImageToS3 } from "@/features/uploads/api/uploadImageToS3";
 import type { ImageUploadSlot, UploadedImage, UploadEntityType, UploadPurpose } from "@/features/uploads/types";
 import { createUploadId, validateImageFile } from "@/features/uploads/utils/imageFiles";
+import { deleteMediaFile } from "@/shared/api/mediaClient";
 
 export function useS3ImageUploadSlots({
   defaultPurpose,
@@ -126,7 +127,21 @@ export function useS3ImageUploadSlots({
     [slots, uploadToSlot]
   );
 
-  const removeImage = useCallback((imageId: string) => {
+  const removeImage = useCallback(async (imageId: string) => {
+    const target = images.find((image) => image.id === imageId);
+    if (!target) {
+      return;
+    }
+
+    if (target.mediaFileId && target.status === "uploaded") {
+      try {
+        await deleteMediaFile(target.mediaFileId);
+      } catch (error) {
+        setNotice(error instanceof Error ? error.message : "이미지 삭제에 실패했습니다.");
+        return;
+      }
+    }
+
     setImages((current) => {
       const target = current.find((image) => image.id === imageId);
       if (target) {
@@ -135,7 +150,8 @@ export function useS3ImageUploadSlots({
 
       return current.filter((image) => image.id !== imageId);
     });
-  }, []);
+    setNotice(null);
+  }, [images]);
 
   return {
     images,

@@ -209,6 +209,15 @@ jobs:
 
           PORT="${EC2_PORT:-22}"
           USER_NAME="${EC2_USER:-ec2-user}"
+
+          ssh -o BatchMode=yes -o ConnectTimeout=30 -p "$PORT" -i ~/.ssh/gymin_ec2 "$USER_NAME@$EC2_HOST" \
+            "set -euo pipefail
+             rm -f /tmp/gymin-images.tar.gz /tmp/gymin-ec2-deploy.tar.gz
+             sudo docker container prune -f
+             sudo docker image prune -af
+             sudo docker builder prune -af
+             sudo docker system df"
+
           scp -o BatchMode=yes -o ConnectTimeout=30 -P "$PORT" -i ~/.ssh/gymin_ec2 gymin-ec2-deploy.tar.gz "$USER_NAME@$EC2_HOST:/tmp/gymin-ec2-deploy.tar.gz"
 
           if [ -f gymin-images.tar.gz ]; then
@@ -304,6 +313,12 @@ jobs:
 
           $COMPOSE -f "$DEPLOY_PATH/docker-compose.prod.yml" up -d --no-build --remove-orphans
           $COMPOSE -f "$DEPLOY_PATH/docker-compose.prod.yml" ps
+
+          sudo docker container prune -f
+          sudo docker image prune -af
+          sudo docker builder prune -af
+          rm -f /tmp/gymin-images.tar.gz /tmp/gymin-ec2-deploy.tar.gz
+          sudo docker system df
 
           if [ "$SYNC_NGINX" != "false" ]; then
             if ! command -v nginx >/dev/null 2>&1; then

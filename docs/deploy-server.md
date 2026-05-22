@@ -26,6 +26,9 @@ AMI: Amazon Linux 2023
 EC2 사용자명: ec2-user
 ```
 
+운영 인프라 값과 확인 위치는 [infra-inventory.md](infra-inventory.md)에 함께 정리한다.
+인스턴스 유형, 루트 볼륨, 보안 그룹, Docker 용량처럼 자주 확인해야 하는 값은 배포 절차가 아니라 인프라 인벤토리에서 갱신한다.
+
 로컬 터미널에서 실행한다.
 
 ```bash
@@ -368,9 +371,19 @@ EC2에 Docker 이미지 업로드
 EC2에서 Docker 이미지 load
 gymin-web 컨테이너 재시작
 gymin-api 컨테이너 재시작
+이전 Docker 이미지와 빌드 캐시 정리
 Nginx 설정 반영
 nginx -t
 Nginx reload
+```
+
+루트 볼륨이 8GB처럼 작은 인스턴스에서는 Docker 이미지가 몇 번만 누적되어도 `/var/lib/docker`가 가득 찰 수 있다. 배포 워크플로우는 이미지 업로드 전과 컨테이너 재시작 후에 아래 정리를 자동 실행한다.
+
+```bash
+sudo docker container prune -f
+sudo docker image prune -af
+sudo docker builder prune -af
+rm -f /tmp/gymin-images.tar.gz /tmp/gymin-ec2-deploy.tar.gz
 ```
 
 ## 7. 서버 상태 확인

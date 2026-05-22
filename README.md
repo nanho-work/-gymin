@@ -56,6 +56,7 @@ npm run build
 - Firebase 로그인 설정: [docs/firebase-auth.md](docs/firebase-auth.md)
 - PostgreSQL 스키마 초안: [docs/database-schema.md](docs/database-schema.md)
 - DB 실행 쿼리 안내: [db/queries-to-run.md](db/queries-to-run.md)
+- 운영 인프라 인벤토리: [docs/infra-inventory.md](docs/infra-inventory.md)
 - EC2 배포 절차: [docs/deploy-server.md](docs/deploy-server.md)
 - 배포 경계: [docs/deployment-boundaries.md](docs/deployment-boundaries.md)
 - S3 이미지 업로드: [docs/s3-upload.md](docs/s3-upload.md)

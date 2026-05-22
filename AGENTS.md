@@ -57,6 +57,7 @@
 - S3 업로드/조회 흐름은 `docs/s3-upload.md`에 반영한다.
 - Firebase 인증 흐름은 `docs/firebase-auth.md`에 반영한다.
 - 배포 경계와 운영 절차는 `docs/deployment-boundaries.md`, `docs/deploy-server.md`, `docs/aws-rds.md`에 반영한다.
+- EC2 식별자, 운영 구조, 확인 명령, 용량 정책은 `docs/infra-inventory.md`에 반영한다. 단, private key, `.env`, `DATABASE_URL`, DB 비밀번호, Firebase service account 내용은 문서에 기록하지 않는다.
 
 ## 트레이너 프로필 전환 기준
 

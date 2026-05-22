@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     default: "GymIn | 트레이너를 위한 피트니스 구인 게시판",
     template: "%s | GymIn"
   },
-  description: "GymIn은 트레이너를 위한 피트니스 구인 게시판 목업 웹 서비스입니다."
+  description: "GymIn은 트레이너와 센터를 연결하는 피트니스 구인 게시판입니다."
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

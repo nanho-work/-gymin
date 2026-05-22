@@ -87,17 +87,17 @@ web/
     (trainer)/layout.tsx     # 트레이너 영역 공통 사이드바
     **/page.tsx              # URL 라우트 진입점
   src/
-    data/mock/               # 정적 지역 선택 데이터
     features/
       auth/                  # 로그인/회원가입 화면
-      centers/               # 센터 등록/상세/검증 UI
+      centers/               # 센터 등록/상세 UI
       jobs/                  # 구인글 목록/등록 UI
       owner/                 # 사업장 관리/지원자 관리 화면
       trainers/              # 내 활동 관리/등록/상세 화면
-      uploads/               # S3 이미지 업로드 UI와 훅
+      uploads/               # S3 이미지 업로드 API와 저장 전 선택 훅
     shared/
       api/                   # FastAPI client
       components/            # 전역 레이아웃과 공용 UI
+      data/                  # 정적 지역 선택 데이터
       hooks/                 # 도메인에 묶이지 않는 공용 훅
       types/                 # 공용 도메인 타입
       utils/                 # 공용 계산 유틸

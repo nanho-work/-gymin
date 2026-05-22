@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { ChangeEvent, Dispatch, FormEvent, SetStateAction } from "react";
 
 import { uploadImageToS3 } from "@/features/uploads/api/uploadImageToS3";
-import { defaultImageAccept, validateImageFile } from "@/features/uploads/utils/imageFiles";
+import { useDeferredImageList, useDeferredSingleImage, type DeferredImage } from "@/features/uploads/hooks/useDeferredImages";
+import { defaultImageAccept } from "@/features/uploads/utils/imageFiles";
 import { RegionSelect } from "@/shared/components/forms/RegionSelect";
 import { Container } from "@/shared/components/ui/Container";
 import { deleteMediaFile, getMediaDisplayUrl } from "@/shared/api/mediaClient";
@@ -30,12 +31,6 @@ type PortfolioLinkForm = {
   id: string;
   label: string;
   url: string;
-};
-
-type PendingImage = {
-  id: string;
-  file: File;
-  previewUrl: string;
 };
 
 type TrainerFormState = {
@@ -84,13 +79,18 @@ export function TrainerRegisterPage() {
   const [isEditing, setIsEditing] = useState(true);
   const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved" | "error">("idle");
   const [notice, setNotice] = useState("");
-  const [profileImage, setProfileImage] = useState<PendingImage | null>(null);
-  const [portfolioImages, setPortfolioImages] = useState<PendingImage[]>([]);
   const [deletedMediaIds, setDeletedMediaIds] = useState<Set<string>>(() => new Set());
-  const pendingImagesRef = useRef<{ profileImage: PendingImage | null; portfolioImages: PendingImage[] }>({
-    profileImage: null,
-    portfolioImages: []
-  });
+  const {
+    clearImage: clearProfileImage,
+    image: profileImage,
+    setFile: setProfileImageFile
+  } = useDeferredSingleImage();
+  const {
+    addFiles: addPortfolioImages,
+    clearImages: clearPortfolioImages,
+    images: portfolioImages,
+    removeImage: removeSelectedPortfolioImage
+  } = useDeferredImageList({ maxImages: 5 });
 
   useEffect(() => {
     let isMounted = true;
@@ -127,16 +127,6 @@ export function TrainerRegisterPage() {
 
     return () => {
       isMounted = false;
-    };
-  }, []);
-
-  useEffect(() => {
-    pendingImagesRef.current = { profileImage, portfolioImages };
-  }, [portfolioImages, profileImage]);
-
-  useEffect(() => {
-    return () => {
-      clearPendingImages(pendingImagesRef.current.profileImage, pendingImagesRef.current.portfolioImages);
     };
   }, []);
 
@@ -190,22 +180,12 @@ export function TrainerRegisterPage() {
       return;
     }
 
-    const validationError = validateImageFile(file, 8);
-    if (validationError) {
-      setNotice(validationError);
+    const result = setProfileImageFile(file);
+    if (!result.ok) {
+      setNotice(result.message);
       return;
     }
 
-    setProfileImage((current) => {
-      if (current) {
-        URL.revokeObjectURL(current.previewUrl);
-      }
-      return {
-        id: createLocalId(),
-        file,
-        previewUrl: URL.createObjectURL(file)
-      };
-    });
     setSaveStatus("idle");
     setNotice("대표 사진이 선택되었습니다. 저장 버튼을 누르면 업로드됩니다.");
   };
@@ -218,32 +198,19 @@ export function TrainerRegisterPage() {
       return;
     }
 
-    const validImages: PendingImage[] = [];
-    for (const file of files) {
-      const validationError = validateImageFile(file, 8);
-      if (validationError) {
-        setNotice(validationError);
-        continue;
-      }
-
-      validImages.push({
-        id: createLocalId(),
-        file,
-        previewUrl: URL.createObjectURL(file)
-      });
-    }
-
-    if (validImages.length > 0) {
-      setPortfolioImages((current) => [...current, ...validImages].slice(0, 5));
+    const result = addPortfolioImages(files);
+    if (result.ok) {
       setSaveStatus("idle");
-      setNotice("운동 사진이 선택되었습니다. 저장 버튼을 누르면 업로드됩니다.");
+      setNotice(result.message || "운동 사진이 선택되었습니다. 저장 버튼을 누르면 업로드됩니다.");
+      return;
     }
+
+    setNotice(result.message);
   };
 
   const removeProfileImage = () => {
     if (profileImage) {
-      URL.revokeObjectURL(profileImage.previewUrl);
-      setProfileImage(null);
+      clearProfileImage();
       setSaveStatus("idle");
       setNotice("선택한 대표 사진을 취소했습니다.");
       return;
@@ -255,13 +222,8 @@ export function TrainerRegisterPage() {
   };
 
   const removePortfolioImage = (imageId: string) => {
-    setPortfolioImages((current) => {
-      const target = current.find((image) => image.id === imageId);
-      if (target) {
-        URL.revokeObjectURL(target.previewUrl);
-      }
-      return current.filter((image) => image.id !== imageId);
-    });
+    removeSelectedPortfolioImage(imageId);
+    setSaveStatus("idle");
   };
 
   const markMediaForDeletion = (mediaFileId: string) => {
@@ -320,9 +282,8 @@ export function TrainerRegisterPage() {
       const refreshedProfile = await getMyTrainerProfile();
       setProfile(refreshedProfile);
       setForm(toFormState(refreshedProfile));
-      clearPendingImages(profileImage, portfolioImages);
-      setProfileImage(null);
-      setPortfolioImages([]);
+      clearProfileImage();
+      clearPortfolioImages();
       setDeletedMediaIds(new Set());
       setIsEditing(false);
       setSaveStatus("saved");
@@ -727,7 +688,7 @@ function PortfolioRow({
   );
 }
 
-function PendingImageCard({ image, onRemove }: { image: PendingImage; onRemove: (imageId: string) => void }) {
+function PendingImageCard({ image, onRemove }: { image: DeferredImage; onRemove: (imageId: string) => void }) {
   return (
     <figure className="relative overflow-hidden border border-line bg-white">
       <img alt="선택한 운동 사진" className="h-40 w-full object-cover" src={image.previewUrl} />
@@ -921,11 +882,4 @@ function splitList(value: string) {
 function toNullableString(value: string) {
   const trimmed = value.trim();
   return trimmed ? trimmed : null;
-}
-
-function clearPendingImages(profileImage: PendingImage | null, portfolioImages: PendingImage[]) {
-  if (profileImage) {
-    URL.revokeObjectURL(profileImage.previewUrl);
-  }
-  portfolioImages.forEach((image) => URL.revokeObjectURL(image.previewUrl));
 }

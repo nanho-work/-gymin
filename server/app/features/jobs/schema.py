@@ -3,6 +3,8 @@ from datetime import datetime
 
 from pydantic import BaseModel
 
+from app.features.centers.schema import CenterSummary
+
 
 class JobPostWrite(BaseModel):
     center_id: uuid.UUID
@@ -31,6 +33,7 @@ class JobPostCreate(JobPostWrite):
 class JobPostRead(JobPostWrite):
     id: uuid.UUID
     business_profile_id: uuid.UUID
+    center: CenterSummary | None = None
     status: str
     published_at: datetime | None
     closed_at: datetime | None

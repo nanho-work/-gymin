@@ -18,6 +18,7 @@ S3 버킷은 private으로 운영한다. 프론트는 `object_key`를 직접 이
 
 - 트레이너 내 프로필은 `GET /api/trainers/me` 응답의 `media`를 사용한다.
 - 트레이너 공개 상세는 `GET /api/trainers/{trainer_id}` 응답의 `media`를 사용한다.
+- 센터 공개 상세는 `GET /api/centers/{center_id}` 응답의 `media`를 사용한다.
 - 소유자 관리용 미디어 목록은 `GET /api/media?entity_type=...&entity_id=...&purpose=...`를 사용한다.
 - 서버는 각 `media_file_variants` 항목에 짧은 만료 시간의 presigned GET URL을 포함해 내려준다.
 - 프론트는 `medium`, `thumbnail`, `original` 순서로 표시용 URL을 선택한다.

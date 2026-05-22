@@ -1,6 +1,6 @@
 # GymIn 데이터베이스 스키마 초안
 
-GymIn의 1차 운영 범위는 센터 사장님이 구인글을 올리고, 트레이너가 본인 프로필로 지원하는 흐름이다. 현재 목업 기준으로 PostgreSQL + FastAPI + SQLAlchemy/Alembic 전환을 고려해 작성한다.
+GymIn의 1차 운영 범위는 센터 사장님이 구인글을 올리고, 트레이너가 본인 프로필로 지원하는 흐름이다. PostgreSQL + FastAPI + SQLAlchemy 기준으로 현재 운영 스키마를 정리한다.
 
 ## 설계 원칙
 
@@ -375,3 +375,5 @@ S3 업로드 이미지의 변환본이다. 목록은 `thumbnail`, 상세는 `med
 - `db/migrations/0001_initial_schema.sql`: 실행 완료
 - `db/migrations/0002_add_media_content_purpose.sql`: 실행 완료
 - `db/migrations/0003_add_media_file_variants.sql`: 실행 필요
+- `db/migrations/0004_refine_trainer_profile_contact_birth_year.sql`: 운영 DB 실행 완료
+- `db/migrations/0005_restore_trainer_profile_legacy_birth_columns.sql`: 운영 DB 수동 복구 완료

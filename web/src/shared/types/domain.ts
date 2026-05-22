@@ -1,32 +1,3 @@
-export type RatingBreakdown = {
-  settlement: number;
-  workEnvironment: number;
-  contractClarity: number;
-  dayOff: number;
-  salesPressure: number;
-  incentive: number;
-};
-
-export type Gym = {
-  id: string;
-  name: string;
-  area: string;
-  address: string;
-  category: string;
-  verified: boolean;
-  ownerVerified: boolean;
-  registrationStatus: string;
-  summary: string;
-  heroImage: string;
-  tags: string[];
-  ratings: RatingBreakdown;
-  benefits: string[];
-  facilities: string[];
-  hiringStatus: string;
-  reviewPolicy: string;
-  contactNote: string;
-};
-
 export type Trainer = {
   id: string;
   name: string;

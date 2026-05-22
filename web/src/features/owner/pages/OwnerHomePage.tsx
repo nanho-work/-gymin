@@ -11,6 +11,12 @@ import { closeJobPost, listMyJobPosts } from "@/shared/api/jobsClient";
 import { getMediaDisplayUrl, listMediaFiles } from "@/shared/api/mediaClient";
 import type { BusinessProfileRead, CenterRead, OwnerJobPostRead } from "@/shared/api/serverTypes";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
+import {
+  formatCenterIndustry,
+  formatCenterStatus,
+  formatCenterVerificationStatus,
+  getCenterArea
+} from "@/shared/utils/center";
 
 type OwnerHomeStatus = "loading" | "ready" | "error";
 
@@ -156,7 +162,7 @@ export function OwnerHomePage() {
           <h2 className="text-lg font-black text-ink">사업자 프로필</h2>
           <div className="mt-4 divide-y divide-line border-y border-line">
             <SummaryRow label="담당자" value={businessProfile?.owner_name || "이름 미등록"} />
-            <SummaryRow label="인증 상태" value={formatVerificationStatus(businessProfile?.verification_status)} />
+            <SummaryRow label="인증 상태" value={formatCenterVerificationStatus(businessProfile?.verification_status)} />
           </div>
         </section>
       </Container>
@@ -178,20 +184,20 @@ export function OwnerHomePage() {
             <div className="flex flex-wrap items-center gap-2">
               <Badge tone={primaryCenter.status === "active" ? "green" : "amber"}>{formatCenterStatus(primaryCenter.status)}</Badge>
               <Badge tone={primaryCenter.verification_status === "verified" ? "green" : "neutral"}>
-                {formatVerificationStatus(primaryCenter.verification_status)}
+                {formatCenterVerificationStatus(primaryCenter.verification_status)}
               </Badge>
               <span className="text-xs font-black text-muted">내 센터 정보</span>
             </div>
             <h1 className="mt-4 text-3xl font-black tracking-tight text-ink">{primaryCenter.name}</h1>
             <p className="mt-3 text-sm font-bold text-muted">
-              {formatArea(primaryCenter)} · {formatIndustry(primaryCenter.industry)}
+              {getCenterArea(primaryCenter)} · {formatCenterIndustry(primaryCenter.industry)}
             </p>
             <p className="mt-2 text-sm font-bold text-muted">{primaryCenter.detail_address}</p>
             <p className="mt-4 max-w-3xl leading-7 text-muted">
               {primaryCenter.introduction || "센터 소개를 저장하면 공개 센터 화면과 구인글에 함께 활용됩니다."}
             </p>
             <div className="mt-5 flex flex-wrap gap-2">
-              {[formatIndustry(primaryCenter.industry), primaryCenter.operation_type, primaryCenter.homepage_url ? "홈페이지 등록" : ""]
+              {[formatCenterIndustry(primaryCenter.industry), primaryCenter.operation_type, primaryCenter.homepage_url ? "홈페이지 등록" : ""]
                 .filter(Boolean)
                 .map((tag) => (
                   <span className="border-b border-line pb-1 text-xs font-black text-muted" key={tag}>
@@ -241,7 +247,7 @@ export function OwnerHomePage() {
                       <Badge tone={job.status === "open" ? "green" : "neutral"}>{formatJobStatus(job.status)}</Badge>
                     </div>
                     <p className="mt-2 text-sm font-bold text-muted">
-                      {center ? formatArea(center) : "센터 정보 없음"} · {job.employment_type} · {formatJobSchedule(job)}
+                      {center ? getCenterArea(center) : "센터 정보 없음"} · {job.employment_type} · {formatJobSchedule(job)}
                     </p>
                     <p className="mt-1 text-sm font-bold text-muted">{job.base_pay || job.incentive || "급여 협의"}</p>
                     <p className="mt-2 text-xs font-black text-muted">
@@ -290,45 +296,8 @@ function SummaryRow({ label, value }: { label: string; value: string }) {
   );
 }
 
-function formatArea(center: CenterRead) {
-  return `${center.sido} ${center.sigungu}`;
-}
-
 function formatJobSchedule(job: OwnerJobPostRead) {
   return [job.work_days, job.work_hours].filter(Boolean).join(" · ") || "협의";
-}
-
-function formatCenterStatus(status: string) {
-  const labels: Record<string, string> = {
-    active: "운영 중",
-    draft: "등록 준비",
-    hidden: "비공개",
-    deleted: "삭제됨"
-  };
-  return labels[status] ?? status;
-}
-
-function formatVerificationStatus(status: string | undefined) {
-  const labels: Record<string, string> = {
-    not_requested: "인증 전",
-    pending: "인증 확인 중",
-    verified: "인증 완료",
-    rejected: "인증 반려"
-  };
-  return labels[status ?? ""] ?? "인증 전";
-}
-
-function formatIndustry(industry: string) {
-  const labels: Record<string, string> = {
-    health_pt: "헬스/PT",
-    pilates: "필라테스",
-    yoga: "요가",
-    crossfit: "크로스핏",
-    rehab: "재활/교정",
-    mixed: "복합 센터",
-    etc: "기타"
-  };
-  return labels[industry] ?? industry;
 }
 
 function formatJobStatus(status: string) {

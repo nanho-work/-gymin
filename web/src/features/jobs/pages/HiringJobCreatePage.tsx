@@ -1,22 +1,18 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import type { ChangeEvent, FormEvent } from "react";
 
 import { uploadImageToS3 } from "@/features/uploads/api/uploadImageToS3";
-import { createUploadId, defaultImageAccept, validateImageFile } from "@/features/uploads/utils/imageFiles";
+import { useDeferredImageList, type DeferredImage } from "@/features/uploads/hooks/useDeferredImages";
+import { defaultImageAccept } from "@/features/uploads/utils/imageFiles";
 import { listMyCenters } from "@/shared/api/centersClient";
 import { createJobPost } from "@/shared/api/jobsClient";
 import type { CenterRead, JobPostCreate, JobPostRead } from "@/shared/api/serverTypes";
 import { Container } from "@/shared/components/ui/Container";
 import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
-
-type PendingImage = {
-  id: string;
-  file: File;
-  previewUrl: string;
-};
+import { formatCenterIndustry } from "@/shared/utils/center";
 
 type JobFormState = {
   centerId: string;
@@ -100,12 +96,16 @@ export function HiringJobCreatePage() {
   useDocumentTitle("구인글 등록");
   const [centers, setCenters] = useState<CenterRead[]>([]);
   const [form, setForm] = useState<JobFormState>(emptyForm);
-  const [contentImages, setContentImages] = useState<PendingImage[]>([]);
   const [createdJob, setCreatedJob] = useState<JobPostRead | null>(null);
   const [loadStatus, setLoadStatus] = useState<"loading" | "ready" | "error">("loading");
   const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved" | "error">("idle");
   const [notice, setNotice] = useState("");
-  const contentImagesRef = useRef<PendingImage[]>([]);
+  const {
+    addFiles: addContentImages,
+    clearImages: clearContentImages,
+    images: contentImages,
+    removeImage: removeSelectedContentImage
+  } = useDeferredImageList({ maxImages: 5 });
 
   useEffect(() => {
     let isMounted = true;
@@ -134,13 +134,8 @@ export function HiringJobCreatePage() {
 
     return () => {
       isMounted = false;
-      contentImagesRef.current.forEach((image) => URL.revokeObjectURL(image.previewUrl));
     };
   }, []);
-
-  useEffect(() => {
-    contentImagesRef.current = contentImages;
-  }, [contentImages]);
 
   const selectedCenter = centers.find((center) => center.id === form.centerId) ?? null;
   const requiredChecks = [
@@ -166,36 +161,18 @@ export function HiringJobCreatePage() {
       return;
     }
 
-    const validImages: PendingImage[] = [];
-    for (const file of files) {
-      const validationError = validateImageFile(file, 8);
-      if (validationError) {
-        setNotice(validationError);
-        continue;
-      }
-
-      validImages.push({
-        id: createUploadId(),
-        file,
-        previewUrl: URL.createObjectURL(file)
-      });
-    }
-
-    if (validImages.length > 0) {
-      setContentImages((current) => [...current, ...validImages].slice(0, 5));
+    const result = addContentImages(files);
+    if (result.ok) {
       setSaveStatus("idle");
-      setNotice("본문 이미지가 선택되었습니다. 저장 버튼을 누르면 업로드됩니다.");
+      setNotice(result.message || "본문 이미지가 선택되었습니다. 저장 버튼을 누르면 업로드됩니다.");
+      return;
     }
+
+    setNotice(result.message);
   };
 
   const removeContentImage = (imageId: string) => {
-    setContentImages((current) => {
-      const target = current.find((image) => image.id === imageId);
-      if (target) {
-        URL.revokeObjectURL(target.previewUrl);
-      }
-      return current.filter((image) => image.id !== imageId);
-    });
+    removeSelectedContentImage(imageId);
     setSaveStatus("idle");
   };
 
@@ -228,8 +205,7 @@ export function HiringJobCreatePage() {
         )
       );
 
-      contentImages.forEach((image) => URL.revokeObjectURL(image.previewUrl));
-      setContentImages([]);
+      clearContentImages();
       setSaveStatus("saved");
       setNotice("구인글이 등록되었습니다.");
     } catch (error) {
@@ -292,7 +268,7 @@ export function HiringJobCreatePage() {
           <p className="text-sm font-black text-ink">구인글에 자동 노출되는 센터 정보</p>
           <p className="mt-2 text-sm leading-6 text-muted">
             {selectedCenter
-              ? `${selectedCenter.name} · ${selectedCenter.sido} ${selectedCenter.sigungu} · ${formatIndustry(selectedCenter.industry)}`
+              ? `${selectedCenter.name} · ${selectedCenter.sido} ${selectedCenter.sigungu} · ${formatCenterIndustry(selectedCenter.industry)}`
               : "센터를 선택하면 지역과 센터 정보가 구인글에 연결됩니다."}
           </p>
         </section>
@@ -491,7 +467,7 @@ function CenterSelect({
   );
 }
 
-function PendingImageCard({ image, onRemove }: { image: PendingImage; onRemove: (imageId: string) => void }) {
+function PendingImageCard({ image, onRemove }: { image: DeferredImage; onRemove: (imageId: string) => void }) {
   return (
     <div className="relative min-h-40 overflow-hidden border border-line bg-paper">
       <img alt="선택한 구인글 이미지" className="h-40 w-full object-cover" src={image.previewUrl} />
@@ -531,17 +507,4 @@ function toJobPayload(form: JobFormState): JobPostCreate {
 function trimOptional(value: string) {
   const trimmed = value.trim();
   return trimmed ? trimmed : null;
-}
-
-function formatIndustry(industry: string) {
-  const labels: Record<string, string> = {
-    health_pt: "헬스/PT",
-    pilates: "필라테스",
-    yoga: "요가",
-    crossfit: "크로스핏",
-    rehab: "재활/교정",
-    mixed: "복합 센터",
-    etc: "기타"
-  };
-  return labels[industry] ?? industry;
 }

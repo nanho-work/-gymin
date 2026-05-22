@@ -5,7 +5,9 @@ from sqlalchemy.orm import Session
 from app.common.pagination import PaginationParams, Page
 from app.features.centers import crud
 from app.features.centers.model import Center
-from app.features.centers.schema import CenterCreate, CenterUpdate
+from app.features.centers.schema import CenterCreate, CenterRead, CenterUpdate
+from app.features.media import crud as media_crud
+from app.features.media.service import to_media_file_response
 
 
 def list_centers(db: Session, params: PaginationParams) -> Page:
@@ -30,3 +32,14 @@ def create_center(db: Session, payload: CenterCreate, business_profile_id: uuid.
 
 def update_center(db: Session, center: Center, payload: CenterUpdate) -> Center:
     return crud.update_center(db, center, payload)
+
+
+def to_center_read(db: Session, center: Center) -> CenterRead:
+    response = CenterRead.model_validate(center)
+    media_files = media_crud.list_entity_media(
+        db,
+        entity_type="center",
+        entity_id=center.id
+    )
+    response.media = [to_media_file_response(media_file) for media_file in media_files]
+    return response

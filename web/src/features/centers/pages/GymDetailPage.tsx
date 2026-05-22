@@ -9,10 +9,17 @@ import { Container } from "@/shared/components/ui/Container";
 import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
 import { getCenter } from "@/shared/api/centersClient";
 import { listJobPosts, toDomainJobPost } from "@/shared/api/jobsClient";
-import { getMediaDisplayUrl, listMediaFiles } from "@/shared/api/mediaClient";
+import { getMediaDisplayUrl } from "@/shared/api/mediaClient";
 import type { CenterRead } from "@/shared/api/serverTypes";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
 import type { JobPost } from "@/shared/types/domain";
+import {
+  formatCenterIndustry,
+  formatCenterStatus,
+  formatCenterVerificationStatus,
+  getCenterAddress,
+  getCenterArea
+} from "@/shared/utils/center";
 
 export function GymDetailPage() {
   const { gymId } = useParams<{ gymId: string }>();
@@ -29,17 +36,16 @@ export function GymDetailPage() {
 
     Promise.all([
       getCenter(gymId),
-      listJobPosts({ page: 1, size: 50 }),
-      listMediaFiles({ entity_type: "center", entity_id: gymId }).catch(() => [])
+      listJobPosts({ page: 1, size: 50 })
     ])
-      .then(([nextCenter, jobsPage, mediaFiles]) => {
+      .then(([nextCenter, jobsPage]) => {
         if (!isMounted) {
           return;
         }
 
         const representativeImage =
-          mediaFiles.find((item) => item.purpose === "representative") ??
-          mediaFiles.find((item) => item.purpose === "gallery");
+          nextCenter.media.find((item) => item.purpose === "representative") ??
+          nextCenter.media.find((item) => item.purpose === "gallery");
 
         setCenter(nextCenter);
         setHeroImageUrl(getMediaDisplayUrl(representativeImage));
@@ -95,7 +101,9 @@ export function GymDetailPage() {
     );
   }
 
-  const address = [center.sido, center.sigungu, center.detail_address].filter(Boolean).join(" ");
+  const address = getCenterAddress(center);
+  const area = getCenterArea(center);
+  const industryLabel = formatCenterIndustry(center.industry);
 
   return (
     <>
@@ -110,12 +118,14 @@ export function GymDetailPage() {
           )}
           <div>
             <div className="flex flex-wrap gap-2">
-              <Badge tone={center.verification_status === "approved" ? "green" : "amber"}>{formatVerificationStatus(center.verification_status)}</Badge>
+              <Badge tone={center.verification_status === "verified" ? "green" : "amber"}>
+                {formatCenterVerificationStatus(center.verification_status)}
+              </Badge>
               <Badge>{formatCenterStatus(center.status)}</Badge>
             </div>
             <h1 className="mt-5 text-4xl font-black tracking-tight text-ink sm:text-5xl">{center.name}</h1>
             <p className="mt-3 text-lg font-bold text-muted">
-              {[center.sido, center.sigungu].filter(Boolean).join(" ")} · {center.industry}
+              {area} · {industryLabel}
             </p>
             <p className="mt-5 leading-8 text-muted">{center.introduction || "센터 소개가 아직 등록되지 않았습니다."}</p>
             <div className="mt-7 flex flex-wrap gap-3">
@@ -133,10 +143,10 @@ export function GymDetailPage() {
           <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
             <h2 className="text-xl font-black text-ink">공개 정보</h2>
             <div className="mt-5 grid gap-4 md:grid-cols-2">
-              <InfoBlock title="주소" value={address || "주소 미입력"} />
-              <InfoBlock title="업종" value={center.industry} />
+              <InfoBlock title="주소" value={address} />
+              <InfoBlock title="업종" value={industryLabel} />
               <InfoBlock title="운영 형태" value={center.operation_type || "운영 형태 미입력"} />
-              <InfoBlock title="인증 상태" value={formatVerificationStatus(center.verification_status)} />
+              <InfoBlock title="인증 상태" value={formatCenterVerificationStatus(center.verification_status)} />
             </div>
           </section>
 
@@ -203,24 +213,4 @@ function ExternalLink({ href, label }: { href: string | null; label: string }) {
       {label}
     </a>
   );
-}
-
-function formatVerificationStatus(status: string) {
-  if (status === "approved") {
-    return "인증 완료";
-  }
-  if (status === "rejected") {
-    return "인증 반려";
-  }
-  return "인증 확인 중";
-}
-
-function formatCenterStatus(status: string) {
-  if (status === "active") {
-    return "운영 중";
-  }
-  if (status === "inactive") {
-    return "비활성";
-  }
-  return status;
 }

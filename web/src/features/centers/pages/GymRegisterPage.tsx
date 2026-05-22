@@ -1,10 +1,11 @@
 "use client";
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import type { ChangeEvent, FormEvent } from "react";
 
 import { uploadImageToS3 } from "@/features/uploads/api/uploadImageToS3";
-import { createUploadId, defaultImageAccept, validateImageFile } from "@/features/uploads/utils/imageFiles";
+import { useDeferredImageList, useDeferredSingleImage, type DeferredImage } from "@/features/uploads/hooks/useDeferredImages";
+import { defaultImageAccept } from "@/features/uploads/utils/imageFiles";
 import { createCenter, listMyCenters, updateCenter } from "@/shared/api/centersClient";
 import { deleteMediaFile, getMediaDisplayUrl, listMediaFiles } from "@/shared/api/mediaClient";
 import type { CenterCreate, CenterRead, MediaFileResponse } from "@/shared/api/serverTypes";
@@ -12,12 +13,6 @@ import { RegionSelect } from "@/shared/components/forms/RegionSelect";
 import { Container } from "@/shared/components/ui/Container";
 import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
-
-type PendingImage = {
-  id: string;
-  file: File;
-  previewUrl: string;
-};
 
 type CenterFormState = {
   name: string;
@@ -60,17 +55,22 @@ export function GymRegisterPage() {
   const [center, setCenter] = useState<CenterRead | null>(null);
   const [form, setForm] = useState<CenterFormState>(emptyForm);
   const [mediaFiles, setMediaFiles] = useState<MediaFileResponse[]>([]);
-  const [representativeImage, setRepresentativeImage] = useState<PendingImage | null>(null);
-  const [galleryImages, setGalleryImages] = useState<PendingImage[]>([]);
   const [deletedMediaIds, setDeletedMediaIds] = useState<Set<string>>(() => new Set());
   const [loadStatus, setLoadStatus] = useState<"loading" | "ready" | "error">("loading");
   const [isEditing, setIsEditing] = useState(true);
   const [saveStatus, setSaveStatus] = useState<"idle" | "saving" | "saved" | "error">("idle");
   const [notice, setNotice] = useState("");
-  const pendingImagesRef = useRef<{ representativeImage: PendingImage | null; galleryImages: PendingImage[] }>({
-    representativeImage: null,
-    galleryImages: []
-  });
+  const {
+    clearImage: clearRepresentativeImage,
+    image: representativeImage,
+    setFile: setRepresentativeImageFile
+  } = useDeferredSingleImage();
+  const {
+    addFiles: addGalleryImages,
+    clearImages: clearGalleryImages,
+    images: galleryImages,
+    removeImage: removeSelectedGalleryImage
+  } = useDeferredImageList({ maxImages: 4 });
 
   useEffect(() => {
     let isMounted = true;
@@ -127,16 +127,6 @@ export function GymRegisterPage() {
     };
   }, []);
 
-  useEffect(() => {
-    pendingImagesRef.current = { representativeImage, galleryImages };
-  }, [galleryImages, representativeImage]);
-
-  useEffect(() => {
-    return () => {
-      clearPendingImages(pendingImagesRef.current.representativeImage, pendingImagesRef.current.galleryImages);
-    };
-  }, []);
-
   const existingRepresentativeImage = useMemo(
     () => mediaFiles.find((item) => item.purpose === "representative" && !deletedMediaIds.has(item.id)),
     [deletedMediaIds, mediaFiles]
@@ -178,22 +168,12 @@ export function GymRegisterPage() {
       return;
     }
 
-    const validationError = validateImageFile(file, 8);
-    if (validationError) {
-      setNotice(validationError);
+    const result = setRepresentativeImageFile(file);
+    if (!result.ok) {
+      setNotice(result.message);
       return;
     }
 
-    setRepresentativeImage((current) => {
-      if (current) {
-        URL.revokeObjectURL(current.previewUrl);
-      }
-      return {
-        id: createUploadId(),
-        file,
-        previewUrl: URL.createObjectURL(file)
-      };
-    });
     setSaveStatus("idle");
     setNotice("대표 사진이 선택되었습니다. 저장 버튼을 누르면 업로드됩니다.");
   };
@@ -206,32 +186,19 @@ export function GymRegisterPage() {
       return;
     }
 
-    const validImages: PendingImage[] = [];
-    for (const file of files) {
-      const validationError = validateImageFile(file, 8);
-      if (validationError) {
-        setNotice(validationError);
-        continue;
-      }
-
-      validImages.push({
-        id: createUploadId(),
-        file,
-        previewUrl: URL.createObjectURL(file)
-      });
-    }
-
-    if (validImages.length > 0) {
-      setGalleryImages((current) => [...current, ...validImages].slice(0, 4));
+    const result = addGalleryImages(files);
+    if (result.ok) {
       setSaveStatus("idle");
-      setNotice("센터 사진이 선택되었습니다. 저장 버튼을 누르면 업로드됩니다.");
+      setNotice(result.message || "센터 사진이 선택되었습니다. 저장 버튼을 누르면 업로드됩니다.");
+      return;
     }
+
+    setNotice(result.message);
   };
 
   const removeRepresentativeImage = () => {
     if (representativeImage) {
-      URL.revokeObjectURL(representativeImage.previewUrl);
-      setRepresentativeImage(null);
+      clearRepresentativeImage();
       setSaveStatus("idle");
       setNotice("선택한 대표 사진을 취소했습니다.");
       return;
@@ -243,13 +210,7 @@ export function GymRegisterPage() {
   };
 
   const removePendingGalleryImage = (imageId: string) => {
-    setGalleryImages((current) => {
-      const target = current.find((image) => image.id === imageId);
-      if (target) {
-        URL.revokeObjectURL(target.previewUrl);
-      }
-      return current.filter((image) => image.id !== imageId);
-    });
+    removeSelectedGalleryImage(imageId);
     setSaveStatus("idle");
   };
 
@@ -321,9 +282,8 @@ export function GymRegisterPage() {
       setCenter(nextCenter);
       setForm(toFormState(nextCenter));
       setMediaFiles(refreshedMediaFiles);
-      clearPendingImages(representativeImage, galleryImages);
-      setRepresentativeImage(null);
-      setGalleryImages([]);
+      clearRepresentativeImage();
+      clearGalleryImages();
       setDeletedMediaIds(new Set());
       setIsEditing(false);
       setSaveStatus("saved");
@@ -616,7 +576,7 @@ function SelectField({
   );
 }
 
-function PendingImageCard({ image, onRemove }: { image: PendingImage; onRemove: (imageId: string) => void }) {
+function PendingImageCard({ image, onRemove }: { image: DeferredImage; onRemove: (imageId: string) => void }) {
   return (
     <div className="relative min-h-40 overflow-hidden border border-line bg-paper">
       <img alt="선택한 센터 사진" className="h-40 w-full object-cover" src={image.previewUrl} />
@@ -695,12 +655,4 @@ function toCenterPayload(form: CenterFormState): CenterCreate {
 function trimOptional(value: string) {
   const trimmed = value.trim();
   return trimmed ? trimmed : null;
-}
-
-function clearPendingImages(representativeImage: PendingImage | null, galleryImages: PendingImage[]) {
-  if (representativeImage) {
-    URL.revokeObjectURL(representativeImage.previewUrl);
-  }
-
-  galleryImages.forEach((image) => URL.revokeObjectURL(image.previewUrl));
 }

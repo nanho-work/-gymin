@@ -14,6 +14,7 @@ from app.features.centers.service import (
     get_my_center,
     list_centers,
     list_my_centers,
+    to_center_read,
     update_center
 )
 
@@ -43,7 +44,7 @@ def read_center(center_id: uuid.UUID, db: Session = Depends(get_db)) -> CenterRe
     center = get_center(db, center_id)
     if center is None:
         raise HTTPException(status_code=404, detail="센터를 찾을 수 없습니다.")
-    return center
+    return to_center_read(db, center)
 
 
 @router.post("", response_model=CenterRead, status_code=201)
@@ -53,7 +54,8 @@ def create_center_endpoint(
     current_user: CurrentUser = Depends(require_business)
 ) -> CenterRead:
     profile = ensure_business_profile(db, current_user.id, owner_name=current_user.display_name)
-    return create_center(db, payload, profile.id)
+    center = create_center(db, payload, profile.id)
+    return to_center_read(db, center)
 
 
 @router.put("/{center_id}", response_model=CenterRead)
@@ -67,4 +69,5 @@ def update_center_endpoint(
     if center is None:
         raise HTTPException(status_code=404, detail="센터를 찾을 수 없습니다.")
 
-    return update_center(db, center, payload)
+    updated_center = update_center(db, center, payload)
+    return to_center_read(db, updated_center)

@@ -2,7 +2,7 @@ import uuid
 from datetime import datetime, timezone
 
 from sqlalchemy import func, select
-from sqlalchemy.orm import Session
+from sqlalchemy.orm import Session, joinedload
 
 from app.common.pagination import PaginationParams, Page, build_page, paginate_statement
 from app.features.applications.model import JobApplication
@@ -12,7 +12,12 @@ from app.features.jobs.schema import JobPostCreate, OwnerJobPostRead
 
 
 def list_jobs(db: Session, params: PaginationParams) -> Page:
-    statement = select(JobPost).where(JobPost.deleted_at.is_(None)).order_by(JobPost.created_at.desc())
+    statement = (
+        select(JobPost)
+        .options(joinedload(JobPost.center))
+        .where(JobPost.deleted_at.is_(None))
+        .order_by(JobPost.created_at.desc())
+    )
     items, total = paginate_statement(db, statement, params)
     return build_page(items, total, params)
 
@@ -20,6 +25,7 @@ def list_jobs(db: Session, params: PaginationParams) -> Page:
 def list_jobs_by_business_user_id(db: Session, user_id: uuid.UUID, params: PaginationParams) -> Page:
     statement = (
         select(JobPost)
+        .options(joinedload(JobPost.center))
         .join(BusinessProfile, BusinessProfile.id == JobPost.business_profile_id)
         .where(
             BusinessProfile.user_id == user_id,
@@ -65,13 +71,18 @@ def get_application_counts_by_job_ids(db: Session, job_ids: list[uuid.UUID]) -> 
 
 
 def get_job(db: Session, job_id: uuid.UUID) -> JobPost | None:
-    statement = select(JobPost).where(JobPost.id == job_id, JobPost.deleted_at.is_(None))
+    statement = (
+        select(JobPost)
+        .options(joinedload(JobPost.center))
+        .where(JobPost.id == job_id, JobPost.deleted_at.is_(None))
+    )
     return db.scalar(statement)
 
 
 def get_job_for_business_user_id(db: Session, job_id: uuid.UUID, user_id: uuid.UUID) -> JobPost | None:
     statement = (
         select(JobPost)
+        .options(joinedload(JobPost.center))
         .join(BusinessProfile, BusinessProfile.id == JobPost.business_profile_id)
         .where(
             JobPost.id == job_id,

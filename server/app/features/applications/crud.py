@@ -33,7 +33,7 @@ def list_applications_by_trainer_profile(
 ) -> Page:
     statement = (
         select(JobApplication)
-        .options(joinedload(JobApplication.job_post))
+        .options(joinedload(JobApplication.job_post).joinedload(JobPost.center))
         .where(JobApplication.trainer_profile_id == trainer_profile_id)
         .order_by(JobApplication.applied_at.desc())
     )
@@ -60,6 +60,7 @@ def get_job_for_business(
 ) -> JobPost | None:
     statement = (
         select(JobPost)
+        .options(joinedload(JobPost.center))
         .join(BusinessProfile, BusinessProfile.id == JobPost.business_profile_id)
         .where(
             JobPost.id == job_post_id,

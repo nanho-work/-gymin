@@ -13,7 +13,7 @@ const menuItems: Record<SidebarRole, Array<{ to: string; label: string; descript
   ],
   trainer: [
     { to: "/trainer", label: "내 활동 관리", description: "프로필과 지원 현황" },
-    { to: "/trainers/new", label: "내 프로필", description: "프로필 임시 저장" },
+    { to: "/trainers/new", label: "내 프로필", description: "프로필 저장/수정" },
     { to: "/jobs/hiring", label: "구인글 보기", description: "공고 둘러보기" }
   ]
 };

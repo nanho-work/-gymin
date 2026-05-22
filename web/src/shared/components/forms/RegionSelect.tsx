@@ -1,6 +1,6 @@
 "use client";
 
-import regionData from "@/data/mock/regions.json";
+import regionData from "@/shared/data/regions.json";
 
 type Region = {
   name: string;

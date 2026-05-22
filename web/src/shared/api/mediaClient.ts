@@ -22,3 +22,16 @@ export function listMediaFiles(params: {
 }) {
   return apiGet<MediaFileResponse[]>("/media", params);
 }
+
+export function getMediaDisplayUrl(mediaFile: MediaFileResponse | undefined) {
+  if (!mediaFile) {
+    return "";
+  }
+
+  const preferredVariant =
+    mediaFile.variants.find((item) => item.variant_type === "medium") ??
+    mediaFile.variants.find((item) => item.variant_type === "thumbnail") ??
+    mediaFile.variants.find((item) => item.variant_type === "original");
+
+  return preferredVariant?.url ?? "";
+}

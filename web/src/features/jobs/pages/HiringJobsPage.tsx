@@ -9,15 +9,13 @@ import { SearchPanel } from "@/shared/components/ui/SearchPanel";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
 import { useTextFilter } from "@/shared/hooks/useTextFilter";
 import type { JobPost } from "@/shared/types/domain";
-import { getJobsByType } from "@/shared/api/mockRepository";
 import { listJobPosts, toDomainJobPost } from "@/shared/api/jobsClient";
-
-const mockHiringPosts = getJobsByType("hiring");
 
 export function HiringJobsPage() {
   useDocumentTitle("구인글");
-  const [posts, setPosts] = useState<JobPost[]>(mockHiringPosts);
-  const [dataState, setDataState] = useState<"loading" | "connected" | "fallback">("loading");
+  const [posts, setPosts] = useState<JobPost[]>([]);
+  const [dataState, setDataState] = useState<"loading" | "connected" | "error">("loading");
+  const [errorMessage, setErrorMessage] = useState("");
   const { query, setQuery, filteredItems } = useTextFilter<JobPost>(
     posts,
     (post) => `${post.title} ${post.authorName} ${post.area} ${post.tags.join(" ")}`
@@ -40,8 +38,9 @@ export function HiringJobsPage() {
           return;
         }
 
-        setPosts(mockHiringPosts);
-        setDataState("fallback");
+        setPosts([]);
+        setErrorMessage("구인글을 불러오지 못했습니다. 잠시 후 다시 시도해 주세요.");
+        setDataState("error");
       });
 
     return () => {
@@ -58,7 +57,7 @@ export function HiringJobsPage() {
         rightSlot={
           <>
             <Badge tone={dataState === "connected" ? "green" : "amber"}>
-              {dataState === "connected" ? "서버 연결" : dataState === "loading" ? "불러오는 중" : "목업 표시"}
+              {dataState === "connected" ? "서버 연결" : dataState === "loading" ? "불러오는 중" : "확인 필요"}
             </Badge>
             <Badge tone="green">무료 등록</Badge>
             <Badge>{filteredItems.length}개 공고</Badge>
@@ -71,12 +70,17 @@ export function HiringJobsPage() {
         <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
           <h2 className="text-xl font-black text-ink">무료 구인글 안내</h2>
           <p className="mt-3 leading-7 text-muted">
-            센터 사장님이 트레이너를 찾는 글을 올리는 공간입니다. 지금은 목업이라 실제 지원 관리 없이,
-            글 내용과 연락 방법을 확인하는 카페형 흐름으로 구성합니다.
+            센터 사장님이 트레이너를 찾는 글을 올리는 공간입니다. 트레이너는 저장된 프로필로 지원하고,
+            사장님은 지원자 목록에서 공개 프로필과 연락처를 확인합니다.
           </p>
         </section>
         <div className="space-y-4">
-          {filteredItems.length > 0 ? (
+          {dataState === "error" ? (
+            <section className="border-y border-line py-12 text-center">
+              <h2 className="text-xl font-black text-ink">구인글을 불러오지 못했습니다</h2>
+              <p className="mt-3 text-sm font-bold text-muted">{errorMessage}</p>
+            </section>
+          ) : filteredItems.length > 0 ? (
             filteredItems.map((post) => (
               <JobPostCard enableApplication={dataState === "connected"} key={post.id} post={post} />
             ))

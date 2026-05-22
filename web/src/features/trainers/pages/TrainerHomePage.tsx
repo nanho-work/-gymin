@@ -6,17 +6,15 @@ import { Badge } from "@/shared/components/ui/Badge";
 import { Container } from "@/shared/components/ui/Container";
 import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
 import { listMyJobApplications } from "@/shared/api/applicationsClient";
-import { toDomainJobPost } from "@/shared/api/jobsClient";
+import { listJobPosts, toDomainJobPost } from "@/shared/api/jobsClient";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
-import { getGymById, jobs } from "@/shared/api/mockRepository";
 import { getMyTrainerProfile, getTrainerReadiness, toDomainTrainer } from "@/shared/api/trainersClient";
 import type { JobPost, Trainer } from "@/shared/types/domain";
-
-const latestJobs = jobs.slice(0, 3);
 
 export function TrainerHomePage() {
   useDocumentTitle("트레이너 홈");
   const [trainer, setTrainer] = useState<Trainer | null>(null);
+  const [latestJobs, setLatestJobs] = useState<JobPost[]>([]);
   const [myApplications, setMyApplications] = useState<Array<{ id: string; job: JobPost; status: string; appliedAt: string; reviewedAt: string }>>([]);
   const [status, setStatus] = useState<"loading" | "ready" | "missing" | "error">("loading");
   const [errorMessage, setErrorMessage] = useState("");
@@ -31,11 +29,15 @@ export function TrainerHomePage() {
         }
 
         setTrainer(toDomainTrainer(profile));
-        const applicationsPage = await listMyJobApplications({ page: 1, size: 20 });
+        const [applicationsPage, jobsPage] = await Promise.all([
+          listMyJobApplications({ page: 1, size: 20 }),
+          listJobPosts({ page: 1, size: 3 })
+        ]);
         if (!isMounted) {
           return;
         }
 
+        setLatestJobs(jobsPage.items.map(toDomainJobPost));
         setMyApplications(
           applicationsPage.items.map((application) => ({
             id: application.id,
@@ -166,17 +168,13 @@ export function TrainerHomePage() {
           </PrimaryLink>
         </div>
         <div className="mt-6 divide-y divide-line border-y border-line">
-          {latestJobs.map((job) => {
-            const gym = getGymById(job.gymId);
-
-            return (
+          {latestJobs.length > 0 ? (
+            latestJobs.map((job) => (
               <Link
-                className="grid gap-4 py-5 transition hover:bg-paper md:grid-cols-[112px_minmax(0,1fr)_auto]"
-                key={job.id} href={gym ? `/gyms/${gym.id}` : "/jobs/hiring"}
+                className="grid gap-4 py-5 transition hover:bg-paper md:grid-cols-[minmax(0,1fr)_auto]"
+                key={job.id}
+                href={job.gymId ? `/gyms/${job.gymId}` : "/jobs/hiring"}
               >
-                {gym ? (
-                  <img alt={`${gym.name} 대표 사진`} className="h-20 w-full object-cover md:w-28" src={gym.heroImage} />
-                ) : null}
                 <div>
                   <p className="font-black text-ink">{job.title}</p>
                   <p className="mt-2 text-sm font-bold text-muted">
@@ -188,8 +186,10 @@ export function TrainerHomePage() {
                 </div>
                 <span className="h-fit text-xs font-black text-muted">{job.status}</span>
               </Link>
-            );
-          })}
+            ))
+          ) : (
+            <p className="py-8 text-sm font-bold leading-6 text-muted">현재 표시할 최신 구인글이 없습니다.</p>
+          )}
         </div>
       </section>
 

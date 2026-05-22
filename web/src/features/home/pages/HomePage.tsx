@@ -1,14 +1,16 @@
 "use client";
 
 import Link from "next/link";
+import { useEffect, useState } from "react";
+
 import { Badge } from "@/shared/components/ui/Badge";
 import { Container } from "@/shared/components/ui/Container";
 import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
 import type { JobPost } from "@/shared/types/domain";
-import { getGymById, gyms, jobs, trainers } from "@/shared/api/mockRepository";
-
-const hiringPosts = jobs.filter((job) => job.type === "hiring");
+import { listJobPosts, toDomainJobPost } from "@/shared/api/jobsClient";
+import { getPlatformStats } from "@/shared/api/platformClient";
+import type { PlatformStats } from "@/shared/api/types";
 
 const notices = [
   "허위 구인글, 과장 급여, 타인 비방 글은 운영자가 숨김 처리할 수 있습니다.",
@@ -18,6 +20,34 @@ const notices = [
 
 export function HomePage() {
   useDocumentTitle("피트니스 무료 구인 게시판");
+  const [stats, setStats] = useState<PlatformStats | null>(null);
+  const [hiringPosts, setHiringPosts] = useState<JobPost[]>([]);
+
+  useEffect(() => {
+    let isMounted = true;
+
+    Promise.all([getPlatformStats(), listJobPosts({ page: 1, size: 8 })])
+      .then(([nextStats, jobsPage]) => {
+        if (!isMounted) {
+          return;
+        }
+
+        setStats(nextStats);
+        setHiringPosts(jobsPage.items.map(toDomainJobPost));
+      })
+      .catch(() => {
+        if (!isMounted) {
+          return;
+        }
+
+        setStats(null);
+        setHiringPosts([]);
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, []);
 
   return (
     <>
@@ -29,8 +59,8 @@ export function HomePage() {
               트레이너가 구인글을 보고 프로필로 지원하는 게시판
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
-              GymIn은 센터 사장님이 구인글을 올리고, 트레이너가 미리 등록한 프로필로 지원하는 무료 목업 웹
-              서비스입니다. 구인글과 트레이너 프로필 기반 지원 흐름에 집중합니다.
+              GymIn은 센터 사장님이 구인글을 올리고, 트레이너가 미리 등록한 프로필로 지원하는 무료 웹 서비스입니다.
+              구인글과 트레이너 프로필 기반 지원 흐름에 집중합니다.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <PrimaryLink to="/jobs/hiring">구인글 보기</PrimaryLink>
@@ -46,9 +76,9 @@ export function HomePage() {
               src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80"
             />
             <div className="grid grid-cols-3 border-t border-line bg-white">
-              <Stat label="등록 센터" value={`${gyms.length}`} />
-              <Stat label="구인글" value={`${jobs.length}`} />
-              <Stat label="트레이너" value={`${trainers.length}`} />
+              <Stat label="등록 센터" value={stats ? `${stats.centers}` : "-"} />
+              <Stat label="구인글" value={stats ? `${stats.open_job_posts}` : "-"} />
+              <Stat label="트레이너" value={stats ? `${stats.trainer_profiles}` : "-"} />
             </div>
           </div>
         </Container>
@@ -64,8 +94,8 @@ export function HomePage() {
             <Badge tone="dark">공지사항</Badge>
             <h2 className="mt-4 text-3xl font-black tracking-tight text-ink">무료 게시판 이용 안내</h2>
             <p className="mt-4 max-w-3xl leading-8 text-muted">
-              구인글을 편하게 올리고 트레이너가 프로필로 지원하는 목업입니다. 실제 운영 단계에서는 로그인,
-              지원자 열람 권한, 신고/숨김 처리를 최소한의 운영 장치로 둡니다.
+              구인글을 편하게 올리고 트레이너가 프로필로 지원합니다. 로그인, 지원자 열람 권한,
+              신고/숨김 처리를 최소한의 운영 장치로 둡니다.
             </p>
           </div>
           <aside className="rounded-lg border border-line bg-paper p-5">
@@ -115,23 +145,26 @@ function HomeRail({
         </PrimaryLink>
       </div>
       <div className="mt-5 flex gap-4 overflow-x-auto pb-3">
-        {items.map((item) => (
-          <HomePostCard item={item} key={item.id} type={type} />
-        ))}
+        {items.length > 0 ? (
+          items.map((item) => (
+            <HomePostCard item={item} key={item.id} type={type} />
+          ))
+        ) : (
+          <p className="border-y border-line py-8 text-sm font-bold leading-6 text-muted">
+            현재 표시할 구인글이 없습니다.
+          </p>
+        )}
       </div>
     </section>
   );
 }
 
 function HomePostCard({ item, type }: { item: JobPost; type: "hiring" }) {
-  const gym = item.gymId ? getGymById(item.gymId) : undefined;
-  const image = gym?.heroImage;
-  const detailTo = gym ? `/gyms/${gym.id}` : "#";
+  const detailTo = item.gymId ? `/gyms/${item.gymId}` : "/jobs/hiring";
   const meta = `${item.area} · ${item.employmentType}`;
 
   return (
     <Link className="w-[280px] shrink-0 overflow-hidden rounded-lg border border-line bg-white shadow-sm transition hover:border-green" href={detailTo}>
-      {image ? <img alt={item.title} className="h-40 w-full object-cover" src={image} /> : null}
       <div className="p-4">
         <Badge tone={type === "hiring" ? "green" : "neutral"}>구인</Badge>
         <h3 className="mt-3 line-clamp-2 text-lg font-black leading-6 text-ink">{item.title}</h3>

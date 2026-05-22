@@ -1,5 +1,6 @@
 import { apiGet, apiPost, apiPut } from "@/shared/api/httpClient";
-import type { MediaFileResponse, TrainerProfileCreate, TrainerProfileRead, TrainerProfileUpsert } from "@/shared/api/serverTypes";
+import { getMediaDisplayUrl } from "@/shared/api/mediaClient";
+import type { TrainerProfileCreate, TrainerProfileRead, TrainerProfileUpsert } from "@/shared/api/serverTypes";
 import type { Page } from "@/shared/api/types";
 import type { Trainer } from "@/shared/types/domain";
 import { formatKoreanPhoneNumber } from "@/shared/utils/phone";
@@ -92,19 +93,6 @@ export function toDomainTrainer(profile: TrainerProfileRead): Trainer {
     preferredConditions: [],
     portfolioNotes: []
   };
-}
-
-export function getMediaDisplayUrl(mediaFile: MediaFileResponse | undefined) {
-  if (!mediaFile) {
-    return "";
-  }
-
-  const preferredVariant =
-    mediaFile.variants.find((item) => item.variant_type === "medium") ??
-    mediaFile.variants.find((item) => item.variant_type === "thumbnail") ??
-    mediaFile.variants.find((item) => item.variant_type === "original");
-
-  return preferredVariant?.url ?? "";
 }
 
 function formatGender(value: string | null) {

@@ -4,13 +4,11 @@ import Link from "next/link";
 import { useState } from "react";
 import { Badge } from "@/shared/components/ui/Badge";
 import type { JobPost } from "@/shared/types/domain";
-import { getGymById } from "@/shared/api/mockRepository";
 import { createJobApplication } from "@/shared/api/applicationsClient";
 
 export function JobPostCard({ enableApplication = true, post }: { enableApplication?: boolean; post: JobPost }) {
   const profileHref = post.gymId ? `/gyms/${post.gymId}` : "#";
   const secondaryLabel = "업장 상세";
-  const gym = post.gymId ? getGymById(post.gymId) : undefined;
   const [applicationState, setApplicationState] = useState<"idle" | "submitting" | "submitted" | "error">("idle");
   const [applicationMessage, setApplicationMessage] = useState("");
   const canApply = enableApplication && post.status === "지원 가능";
@@ -52,19 +50,6 @@ export function JobPostCard({ enableApplication = true, post }: { enableApplicat
         <p className="text-sm font-bold text-muted">{post.postedAt}</p>
       </div>
       <p className="mt-4 leading-7 text-muted">{post.summary}</p>
-      {gym ? (
-        <section className="mt-5 flex flex-col gap-4 rounded-md border border-line bg-paper p-4 sm:flex-row sm:items-center">
-          <img alt={`${gym.name} 대표 사진`} className="h-20 w-full rounded-md object-cover sm:w-28" src={gym.heroImage} />
-          <div className="min-w-0">
-            <div className="flex flex-wrap gap-2">
-              <Badge tone={gym.verified ? "green" : "amber"}>{gym.registrationStatus}</Badge>
-              <Badge>{gym.category}</Badge>
-            </div>
-            <p className="mt-2 font-black text-ink">{gym.name}</p>
-            <p className="mt-1 text-sm font-bold text-muted">{gym.area}</p>
-          </div>
-        </section>
-      ) : null}
       <dl className="mt-5 grid gap-3 border-t border-line pt-4 sm:grid-cols-3">
         <div>
           <dt className="text-xs font-black uppercase text-muted">형태</dt>
@@ -93,9 +78,11 @@ export function JobPostCard({ enableApplication = true, post }: { enableApplicat
         >
           {applicationState === "submitting" ? "지원 중" : applicationState === "submitted" ? "지원 완료" : "내 프로필로 지원"}
         </button>
-        <Link className="rounded-md border border-line px-4 py-2.5 text-sm font-black text-ink hover:border-green" href={profileHref}>
-          {secondaryLabel}
-        </Link>
+        {post.gymId ? (
+          <Link className="rounded-md border border-line px-4 py-2.5 text-sm font-black text-ink hover:border-green" href={profileHref}>
+            {secondaryLabel}
+          </Link>
+        ) : null}
       </div>
       {!enableApplication ? (
         <p className="mt-3 text-sm font-bold text-muted">서버 공고를 불러온 뒤 지원할 수 있습니다.</p>

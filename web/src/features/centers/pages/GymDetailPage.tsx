@@ -2,23 +2,82 @@
 
 import Link from "next/link";
 import { useParams } from "next/navigation";
+import { useEffect, useState } from "react";
+
 import { Badge } from "@/shared/components/ui/Badge";
 import { Container } from "@/shared/components/ui/Container";
 import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
-import { RatingBreakdown } from "@/features/centers/components/RatingBreakdown";
+import { getCenter } from "@/shared/api/centersClient";
+import { listJobPosts, toDomainJobPost } from "@/shared/api/jobsClient";
+import { getMediaDisplayUrl, listMediaFiles } from "@/shared/api/mediaClient";
+import type { CenterRead } from "@/shared/api/serverTypes";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
-import { getAverageRating } from "@/shared/utils/rating";
-import { getGymById, getJobsByGymId } from "@/shared/api/mockRepository";
+import type { JobPost } from "@/shared/types/domain";
 
 export function GymDetailPage() {
   const { gymId } = useParams<{ gymId: string }>();
-  const gym = getGymById(gymId);
-  useDocumentTitle(gym ? `${gym.name} 상세보기` : "헬스장 상세보기");
+  const [center, setCenter] = useState<CenterRead | null>(null);
+  const [heroImageUrl, setHeroImageUrl] = useState("");
+  const [hiringJobs, setHiringJobs] = useState<JobPost[]>([]);
+  const [status, setStatus] = useState<"loading" | "ready" | "missing" | "error">("loading");
+  const [errorMessage, setErrorMessage] = useState("");
 
-  if (!gym) {
+  useDocumentTitle(center ? `${center.name} 상세보기` : "헬스장 상세보기");
+
+  useEffect(() => {
+    let isMounted = true;
+
+    Promise.all([
+      getCenter(gymId),
+      listJobPosts({ page: 1, size: 50 }),
+      listMediaFiles({ entity_type: "center", entity_id: gymId }).catch(() => [])
+    ])
+      .then(([nextCenter, jobsPage, mediaFiles]) => {
+        if (!isMounted) {
+          return;
+        }
+
+        const representativeImage =
+          mediaFiles.find((item) => item.purpose === "representative") ??
+          mediaFiles.find((item) => item.purpose === "gallery");
+
+        setCenter(nextCenter);
+        setHeroImageUrl(getMediaDisplayUrl(representativeImage));
+        setHiringJobs(
+          jobsPage.items
+            .filter((job) => job.center_id === nextCenter.id)
+            .map(toDomainJobPost)
+        );
+        setStatus("ready");
+      })
+      .catch((error: Error) => {
+        if (!isMounted) {
+          return;
+        }
+
+        setErrorMessage(error.message);
+        setStatus(error.message.includes("찾을 수 없습니다") ? "missing" : "error");
+      });
+
+    return () => {
+      isMounted = false;
+    };
+  }, [gymId]);
+
+  if (status === "loading") {
+    return (
+      <Container className="py-16">
+        <Badge tone="green">센터 상세</Badge>
+        <h1 className="mt-4 text-3xl font-black text-ink">센터 정보를 불러오는 중입니다</h1>
+      </Container>
+    );
+  }
+
+  if (status === "missing" || !center) {
     return (
       <Container className="py-16">
         <h1 className="text-3xl font-black text-ink">헬스장 정보를 찾을 수 없습니다</h1>
+        <p className="mt-3 max-w-2xl text-sm font-bold leading-6 text-muted">{errorMessage}</p>
         <Link className="mt-5 inline-block rounded-md bg-ink px-4 py-3 text-sm font-black text-white" href="/jobs/hiring">
           구인글로 돌아가기
         </Link>
@@ -26,28 +85,43 @@ export function GymDetailPage() {
     );
   }
 
-  const hiringJobs = getJobsByGymId(gym.id);
+  if (status === "error") {
+    return (
+      <Container className="py-16">
+        <Badge tone="amber">확인 필요</Badge>
+        <h1 className="mt-4 text-3xl font-black text-ink">센터 정보를 불러오지 못했습니다</h1>
+        <p className="mt-3 max-w-2xl text-sm font-bold leading-6 text-muted">{errorMessage || "잠시 후 다시 시도해 주세요."}</p>
+      </Container>
+    );
+  }
+
+  const address = [center.sido, center.sigungu, center.detail_address].filter(Boolean).join(" ");
 
   return (
     <>
       <section className="border-b border-line bg-white">
         <Container className="grid gap-8 py-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
-          <img alt={`${gym.name} 시설`} className="h-80 w-full rounded-lg object-cover shadow-soft" src={gym.heroImage} />
+          {heroImageUrl ? (
+            <img alt={`${center.name} 시설`} className="h-80 w-full rounded-lg bg-paper object-cover shadow-soft" src={heroImageUrl} />
+          ) : (
+            <div className="grid h-80 place-items-center rounded-lg border border-line bg-paper text-sm font-black text-muted shadow-soft">
+              대표 사진 없음
+            </div>
+          )}
           <div>
             <div className="flex flex-wrap gap-2">
-              <Badge tone={gym.verified ? "green" : "amber"}>{gym.registrationStatus}</Badge>
-              <Badge>{gym.hiringStatus}</Badge>
+              <Badge tone={center.verification_status === "approved" ? "green" : "amber"}>{formatVerificationStatus(center.verification_status)}</Badge>
+              <Badge>{formatCenterStatus(center.status)}</Badge>
             </div>
-            <h1 className="mt-5 text-4xl font-black tracking-tight text-ink sm:text-5xl">{gym.name}</h1>
-            <p className="mt-3 text-lg font-bold text-muted">{gym.area}</p>
-            <p className="mt-5 leading-8 text-muted">{gym.summary}</p>
+            <h1 className="mt-5 text-4xl font-black tracking-tight text-ink sm:text-5xl">{center.name}</h1>
+            <p className="mt-3 text-lg font-bold text-muted">
+              {[center.sido, center.sigungu].filter(Boolean).join(" ")} · {center.industry}
+            </p>
+            <p className="mt-5 leading-8 text-muted">{center.introduction || "센터 소개가 아직 등록되지 않았습니다."}</p>
             <div className="mt-7 flex flex-wrap gap-3">
               <PrimaryLink to="/jobs/hiring">구인글 보기</PrimaryLink>
               <PrimaryLink to="/jobs/hiring/new" variant="light">
                 구인글 등록
-              </PrimaryLink>
-              <PrimaryLink to="/jobs/hiring" variant="light">
-                구인글 목록
               </PrimaryLink>
             </div>
           </div>
@@ -56,49 +130,52 @@ export function GymDetailPage() {
 
       <Container className="detail-grid grid gap-6 py-8">
         <div className="space-y-6">
-          <RatingBreakdown ratings={gym.ratings} />
           <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
             <h2 className="text-xl font-black text-ink">공개 정보</h2>
             <div className="mt-5 grid gap-4 md:grid-cols-2">
-              <InfoBlock title="주소" value={gym.address} />
-              <InfoBlock title="운영 형태" value={gym.category} />
-              <InfoBlock title="시설" value={gym.facilities.join(", ")} />
-              <InfoBlock title="복지/지원" value={gym.benefits.join(", ")} />
+              <InfoBlock title="주소" value={address || "주소 미입력"} />
+              <InfoBlock title="업종" value={center.industry} />
+              <InfoBlock title="운영 형태" value={center.operation_type || "운영 형태 미입력"} />
+              <InfoBlock title="인증 상태" value={formatVerificationStatus(center.verification_status)} />
             </div>
           </section>
-          <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
-            <h2 className="text-xl font-black text-ink">제한 노출 리뷰</h2>
-            <p className="mt-3 leading-7 text-muted">
-              {gym.reviewPolicy} 현재 목업에서는 감정적인 서술보다 정산, 계약, 휴무, 영업 압박 같은 항목
-              중심으로만 표시합니다.
-            </p>
-          </section>
+
           <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
             <h2 className="text-xl font-black text-ink">이 업장의 구인 연결</h2>
             <div className="mt-4 space-y-3">
-              {hiringJobs.map((job) => (
-                <div className="rounded-md border border-line bg-paper p-4" key={job.id}>
-                  <p className="font-black text-ink">{job.title}</p>
-                  <p className="mt-2 text-sm font-bold text-muted">
-                    {job.employmentType} · {job.schedule} · {job.status}
-                  </p>
-                </div>
-              ))}
+              {hiringJobs.length > 0 ? (
+                hiringJobs.map((job) => (
+                  <div className="rounded-md border border-line bg-paper p-4" key={job.id}>
+                    <p className="font-black text-ink">{job.title}</p>
+                    <p className="mt-2 text-sm font-bold text-muted">
+                      {job.employmentType} · {job.schedule} · {job.status}
+                    </p>
+                  </div>
+                ))
+              ) : (
+                <p className="rounded-md border border-line bg-paper p-4 text-sm font-bold text-muted">
+                  현재 이 센터에 연결된 구인글이 없습니다.
+                </p>
+              )}
             </div>
           </section>
         </div>
+
         <aside className="space-y-5">
           <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
-            <p className="text-sm font-black uppercase text-muted">평균 신뢰 점수</p>
-            <p className="mt-2 text-5xl font-black text-ink">{getAverageRating(gym.ratings)}</p>
-            <p className="mt-3 leading-6 text-muted">{gym.contactNote}</p>
+            <p className="text-sm font-black uppercase text-muted">센터 상태</p>
+            <p className="mt-2 text-3xl font-black text-ink">{formatCenterStatus(center.status)}</p>
+            <p className="mt-3 leading-6 text-muted">
+              사장님이 등록한 공개 센터 정보입니다. 구인글과 지원자 관리 흐름에서 이 센터 ID를 기준으로 연결됩니다.
+            </p>
           </section>
+
           <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
-            <h2 className="text-xl font-black text-ink">태그</h2>
-            <div className="mt-4 flex flex-wrap gap-2">
-              {gym.tags.map((tag) => (
-                <Badge key={tag}>{tag}</Badge>
-              ))}
+            <h2 className="text-xl font-black text-ink">외부 채널</h2>
+            <div className="mt-4 space-y-2">
+              <ExternalLink href={center.homepage_url} label="홈페이지" />
+              <ExternalLink href={center.instagram_url} label="인스타그램" />
+              <ExternalLink href={center.youtube_url} label="유튜브" />
             </div>
           </section>
         </aside>
@@ -114,4 +191,36 @@ function InfoBlock({ title, value }: { title: string; value: string }) {
       <p className="mt-2 font-bold leading-6 text-ink">{value}</p>
     </div>
   );
+}
+
+function ExternalLink({ href, label }: { href: string | null; label: string }) {
+  if (!href) {
+    return <p className="text-sm font-bold text-muted">{label} 미등록</p>;
+  }
+
+  return (
+    <a className="block text-sm font-black text-ink underline" href={href} rel="noreferrer" target="_blank">
+      {label}
+    </a>
+  );
+}
+
+function formatVerificationStatus(status: string) {
+  if (status === "approved") {
+    return "인증 완료";
+  }
+  if (status === "rejected") {
+    return "인증 반려";
+  }
+  return "인증 확인 중";
+}
+
+function formatCenterStatus(status: string) {
+  if (status === "active") {
+    return "운영 중";
+  }
+  if (status === "inactive") {
+    return "비활성";
+  }
+  return status;
 }

@@ -61,6 +61,7 @@ def read_trainer(trainer_id: uuid.UUID, db: Session = Depends(get_db)) -> Traine
 def create_trainer_endpoint(
     payload: TrainerProfileCreate,
     db: Session = Depends(get_db),
-    _current_user: CurrentUser = Depends(require_trainer)
+    current_user: CurrentUser = Depends(require_trainer)
 ) -> TrainerProfileRead:
+    payload.user_id = current_user.id
     return create_trainer_profile(db, payload)

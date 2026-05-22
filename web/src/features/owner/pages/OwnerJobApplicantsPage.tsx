@@ -1,8 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { useEffect, useMemo, useState } from "react";
+import type { MouseEvent } from "react";
 
 import { Badge } from "@/shared/components/ui/Badge";
 import { Container } from "@/shared/components/ui/Container";
@@ -22,6 +23,7 @@ type ApplicantItem = {
 
 export function OwnerJobApplicantsPage() {
   const { jobId } = useParams<{ jobId: string }>();
+  const router = useRouter();
   const [job, setJob] = useState<JobPost | null>(null);
   const [applicants, setApplicants] = useState<ApplicantItem[]>([]);
   const [selectedApplicantId, setSelectedApplicantId] = useState<string | null>(null);
@@ -98,8 +100,14 @@ export function OwnerJobApplicantsPage() {
     }
   };
 
-  const markPublicProfileClick = (applicationId: string) => {
-    void markApplicantViewed(applicationId);
+  const markPublicProfileClick = async (event: MouseEvent<HTMLAnchorElement>, applicationId: string, trainerId: string) => {
+    event.preventDefault();
+    try {
+      await markApplicantViewed(applicationId);
+    } catch {
+      // 공개 프로필 이동 자체는 막지 않고, 확인 신호 저장 실패만 조용히 넘긴다.
+    }
+    router.push(`/trainers/${trainerId}`);
   };
 
   if (status === "loading") {
@@ -216,7 +224,7 @@ function ApplicantDetail({
 }: {
   isContactVisible: boolean;
   item: ApplicantItem;
-  onPublicProfileClick: (applicationId: string) => void;
+  onPublicProfileClick: (event: MouseEvent<HTMLAnchorElement>, applicationId: string, trainerId: string) => void;
   onRevealContact: (applicationId: string) => void;
 }) {
   const { application, appliedAt, reviewedAt, trainer } = item;
@@ -265,7 +273,7 @@ function ApplicantDetail({
               <Link
                 className="border border-line bg-white px-3 py-2 text-xs font-black text-ink"
                 href={`/trainers/${trainer.id}`}
-                onClick={() => onPublicProfileClick(application.id)}
+                onClick={(event) => onPublicProfileClick(event, application.id, trainer.id)}
               >
                 공개 프로필 보기
               </Link>

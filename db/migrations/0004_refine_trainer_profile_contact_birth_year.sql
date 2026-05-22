@@ -39,8 +39,14 @@ SET phone = NULLIF(regexp_replace(phone, '\D', '', 'g'), '')
 WHERE phone IS NOT NULL;
 
 ALTER TABLE trainer_profiles
+  DROP CONSTRAINT IF EXISTS trainer_profiles_birth_year_check;
+
+ALTER TABLE trainer_profiles
   ADD CONSTRAINT trainer_profiles_birth_year_check
   CHECK (birth_year IS NULL OR (birth_year >= 1900 AND birth_year <= 2100));
+
+ALTER TABLE trainer_profiles
+  DROP CONSTRAINT IF EXISTS trainer_profiles_phone_digits_check;
 
 ALTER TABLE trainer_profiles
   ADD CONSTRAINT trainer_profiles_phone_digits_check

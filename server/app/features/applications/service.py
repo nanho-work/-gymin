@@ -102,7 +102,7 @@ def get_missing_application_fields(db: Session, trainer) -> list[str]:
         ("출생년도", trainer.birth_year is not None),
         ("성별", bool(trainer.gender)),
         ("연락처", bool(trainer.phone)),
-        ("거주지역", bool(trainer.residence_sido or trainer.residence_sigungu))
+        ("거주지역", bool(trainer.residence_sido and trainer.residence_sigungu))
     ]
 
     return [label for label, ready in checks if not ready]

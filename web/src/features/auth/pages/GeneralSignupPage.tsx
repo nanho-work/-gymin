@@ -19,7 +19,7 @@ export function GeneralSignupPage() {
           <MockField label="비밀번호" placeholder="비밀번호 입력" type="password" />
         </div>
         <button className="rounded-md bg-ink px-5 py-3 text-sm font-black text-white" type="button">
-          일반 회원가입 목업
+          일반 회원가입
         </button>
       </form>
       <aside className="h-fit rounded-lg border border-line bg-paper p-5">
@@ -28,7 +28,6 @@ export function GeneralSignupPage() {
           <PrimaryLink to="/trainers/new" variant="light">
             내 프로필 등록
           </PrimaryLink>
-          <PrimaryLink to="/jobs/hiring">구인글 보기</PrimaryLink>
         </div>
       </aside>
     </Container>

@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
+import { useAuth } from "@/features/auth/context/AuthContext";
 import { Badge } from "@/shared/components/ui/Badge";
 import { Container } from "@/shared/components/ui/Container";
 import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
@@ -20,8 +21,15 @@ const notices = [
 
 export function HomePage() {
   useDocumentTitle("피트니스 무료 구인 게시판");
+  const { user } = useAuth();
   const [stats, setStats] = useState<PlatformStats | null>(null);
   const [hiringPosts, setHiringPosts] = useState<JobPost[]>([]);
+  const managementAction =
+    user?.role === "business"
+      ? { label: "센터관리", to: "/owner" }
+      : user?.role === "trainer"
+        ? { label: "내 활동 관리", to: "/trainer" }
+        : { label: "로그인", to: "/login" };
 
   useEffect(() => {
     let isMounted = true;
@@ -64,8 +72,8 @@ export function HomePage() {
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <PrimaryLink to="/jobs/hiring">구인글 보기</PrimaryLink>
-              <PrimaryLink to="/trainer" variant="light">
-                내 프로필 등록
+              <PrimaryLink to={managementAction.to} variant="light">
+                {managementAction.label}
               </PrimaryLink>
             </div>
           </div>

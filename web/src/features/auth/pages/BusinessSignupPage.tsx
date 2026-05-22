@@ -24,7 +24,7 @@ export function BusinessSignupPage() {
           <MockField label="지역" placeholder="예: 서울 강남구 역삼동" />
         </div>
         <button className="rounded-md bg-ink px-5 py-3 text-sm font-black text-white" type="button">
-          사업자 회원가입 목업
+          사업자 회원가입
         </button>
       </form>
       <aside className="h-fit rounded-lg border border-line bg-paper p-5">
@@ -33,7 +33,6 @@ export function BusinessSignupPage() {
           <PrimaryLink to="/gyms/new" variant="light">
             센터 등록
           </PrimaryLink>
-          <PrimaryLink to="/jobs/hiring/new">구인글 등록</PrimaryLink>
         </div>
       </aside>
     </Container>

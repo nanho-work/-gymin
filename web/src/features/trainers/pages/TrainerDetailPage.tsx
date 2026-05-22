@@ -5,7 +5,6 @@ import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 import { Badge } from "@/shared/components/ui/Badge";
 import { Container } from "@/shared/components/ui/Container";
-import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
 import { getTrainerProfile, getTrainerReadiness, toDomainTrainer } from "@/shared/api/trainersClient";
 import type { Trainer } from "@/shared/types/domain";
@@ -93,12 +92,6 @@ export function TrainerDetailPage() {
               <h1 className="mt-5 text-4xl font-black tracking-tight text-ink sm:text-5xl">{trainer.name}</h1>
               <p className="mt-3 text-lg font-bold text-muted">{trainer.headline}</p>
               <p className="mt-5 max-w-3xl leading-8 text-muted">{trainer.summary}</p>
-              <div className="mt-7 flex flex-wrap gap-3">
-                <PrimaryLink to="/jobs/hiring">구인글 보기</PrimaryLink>
-                <PrimaryLink to="/trainers/new" variant="light">
-                  트레이너 등록
-                </PrimaryLink>
-              </div>
             </div>
             {trainer.profileImage ? (
               <img alt={`${trainer.name} 프로필`} className="h-64 w-full border border-line bg-paper object-contain" src={trainer.profileImage} />

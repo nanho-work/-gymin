@@ -56,6 +56,7 @@ export function useJobApplication({
   return {
     applicationMessage,
     applicationState,
+    canShowApply: !user || user.role === "trainer",
     handleApply,
     isApplyDisabled:
       !canApply ||

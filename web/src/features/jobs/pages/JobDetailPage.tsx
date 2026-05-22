@@ -31,6 +31,7 @@ export function JobDetailPage() {
   const {
     applicationMessage,
     applicationState,
+    canShowApply,
     handleApply,
     isApplyDisabled
   } = useJobApplication({
@@ -79,12 +80,14 @@ export function JobDetailPage() {
         <JobDescriptionSection description={job.description} supportDetail={job.support_detail} />
         <JobContentImages images={contentImages} />
         <JobConditionGrid job={job} />
-        <JobApplySection
-          applicationMessage={applicationMessage}
-          applicationState={applicationState}
-          disabled={isApplyDisabled}
-          onApply={handleApply}
-        />
+        {canShowApply ? (
+          <JobApplySection
+            applicationMessage={applicationMessage}
+            applicationState={applicationState}
+            disabled={isApplyDisabled}
+            onApply={handleApply}
+          />
+        ) : null}
         <JobCenterInfo center={center} />
       </article>
     </Container>

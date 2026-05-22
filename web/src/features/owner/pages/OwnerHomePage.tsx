@@ -216,7 +216,6 @@ export function OwnerHomePage() {
           <aside className="h-fit border-t border-line pt-4 lg:border-l lg:border-t-0 lg:pl-6 lg:pt-0">
             <h2 className="text-sm font-black text-ink">운영 요약</h2>
             <div className="mt-4 divide-y divide-line">
-              <SummaryRow label="센터 상태" value={formatCenterStatus(primaryCenter.status)} />
               <SummaryRow label="진행 중인 구인글" value={`${openJobCount}건`} />
               <SummaryRow label="전체 지원자" value={`${applicantCount}명`} />
               <SummaryRow label="미확인 지원자" value={`${pendingApplicantCount}명`} />

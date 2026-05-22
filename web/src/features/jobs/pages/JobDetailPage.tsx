@@ -65,6 +65,13 @@ export function JobDetailPage() {
   const domainJob = useMemo(() => (job ? toDomainJobPost(job) : null), [job]);
   const center = job?.center ?? null;
   const canApply = job?.status === "open";
+  const centerImageUrl = useMemo(() => {
+    const centerMedia = center?.media ?? [];
+    const representativeImage =
+      centerMedia.find((item) => item.purpose === "representative") ??
+      centerMedia.find((item) => item.purpose === "gallery");
+    return getMediaDisplayUrl(representativeImage);
+  }, [center]);
   const contentImages = useMemo(
     () =>
       (job?.media ?? [])
@@ -140,44 +147,38 @@ export function JobDetailPage() {
   return (
     <Container className="py-8">
       <article className="mx-auto max-w-4xl">
+        <Link className="mb-5 inline-block text-sm font-black text-muted hover:text-ink" href="/jobs/hiring">
+          ← 구인글 목록
+        </Link>
+
+        {centerImageUrl ? (
+          <img alt={`${domainJob.authorName} 대표 이미지`} className="mb-7 h-72 w-full rounded-lg bg-paper object-cover sm:h-96" src={centerImageUrl} />
+        ) : null}
+
         <header className="border-b border-line pb-7">
           <div className="flex flex-wrap gap-2">
             <Badge tone={canApply ? "green" : "neutral"}>{formatJobStatus(job.status)}</Badge>
             <Badge>{formatJobRole(job.job_role)}</Badge>
             <Badge>{formatEmploymentType(job.employment_type)}</Badge>
           </div>
-          <h1 className="mt-5 text-3xl font-black tracking-tight text-ink sm:text-4xl">{job.title}</h1>
-          <p className="mt-3 text-sm font-bold text-muted">
-            {domainJob.authorName} · {domainJob.area} · {domainJob.postedAt}
-          </p>
-          <div className="mt-6 flex flex-wrap gap-2">
-            <button
-              className="rounded-md bg-ink px-5 py-3 text-sm font-black text-white transition hover:bg-forest disabled:cursor-not-allowed disabled:opacity-60"
-              disabled={!canApply || authStatus === "loading" || applicationState === "submitting" || applicationState === "submitted"}
-              onClick={handleApply}
-              type="button"
-            >
-              {applicationState === "submitting" ? "지원 중" : applicationState === "submitted" ? "지원 완료" : "내 프로필로 지원"}
-            </button>
+          <div className="mt-5 flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
+            <div>
+              <h1 className="text-3xl font-black tracking-tight text-ink sm:text-4xl">{job.title}</h1>
+              <p className="mt-3 text-sm font-bold text-muted">
+                {domainJob.authorName} · {domainJob.area} · {domainJob.postedAt}
+              </p>
+            </div>
             {job.center_id ? (
-              <Link className="rounded-md border border-line px-5 py-3 text-sm font-black text-ink hover:border-green" href={`/gyms/${job.center_id}`}>
-                업장 정보 보기
+              <Link
+                className="shrink-0 text-sm font-black text-forest underline-offset-4 hover:underline"
+                href={`/gyms/${job.center_id}`}
+                rel="noreferrer"
+                target="_blank"
+              >
+                센터 보기 ↗
               </Link>
             ) : null}
-            <Link className="rounded-md border border-line px-5 py-3 text-sm font-black text-ink hover:border-green" href="/jobs/hiring">
-              목록으로
-            </Link>
           </div>
-          {applicationMessage ? (
-            <p className={`mt-3 text-sm font-bold ${applicationState === "error" ? "text-amber-800" : "text-forest"}`}>
-              {applicationMessage}
-              {applicationState === "error" && applicationMessage.includes("프로필") ? (
-                <Link className="ml-2 underline" href="/trainers/new">
-                  프로필 작성
-                </Link>
-              ) : null}
-            </p>
-          ) : null}
         </header>
 
         <section className="border-b border-line py-8">
@@ -202,6 +203,7 @@ export function JobDetailPage() {
           <h2 className="text-xl font-black text-ink">근무 조건</h2>
           <WeekdaySummary value={job.work_days} />
           <InfoGrid
+            variant="compact"
             items={[
               { label: "근무 시작", value: job.start_date_text || "협의" },
               { label: "근무 시간", value: job.work_hours || "협의" },
@@ -218,10 +220,35 @@ export function JobDetailPage() {
           />
         </section>
 
+        <section className="border-b border-line py-7">
+          <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
+            <h2 className="text-xl font-black text-ink">지원</h2>
+            <button
+              className="rounded-md bg-ink px-7 py-3 text-sm font-black text-white transition hover:bg-forest disabled:cursor-not-allowed disabled:opacity-60"
+              disabled={!canApply || authStatus === "loading" || applicationState === "submitting" || applicationState === "submitted"}
+              onClick={handleApply}
+              type="button"
+            >
+              {applicationState === "submitting" ? "지원 중" : applicationState === "submitted" ? "지원 완료" : "지원하기"}
+            </button>
+          </div>
+          {applicationMessage ? (
+            <p className={`mt-3 text-sm font-bold ${applicationState === "error" ? "text-amber-800" : "text-forest"}`}>
+              {applicationMessage}
+              {applicationState === "error" && applicationMessage.includes("프로필") ? (
+                <Link className="ml-2 underline" href="/trainers/new">
+                  프로필 작성
+                </Link>
+              ) : null}
+            </p>
+          ) : null}
+        </section>
+
         {center ? (
           <section className="py-8">
             <h2 className="text-xl font-black text-ink">업장 정보</h2>
             <InfoGrid
+              variant="spacious"
               items={[
                 { label: "센터명", value: center.name },
                 { label: "지역", value: getCenterArea(center) },
@@ -263,13 +290,21 @@ function WeekdaySummary({ value }: { value: string | null }) {
   );
 }
 
-function InfoGrid({ items }: { items: Array<{ label: string; value: string }> }) {
+function InfoGrid({
+  items,
+  variant = "compact"
+}: {
+  items: Array<{ label: string; value: string }>;
+  variant?: "compact" | "spacious";
+}) {
+  const gridClassName = variant === "compact" ? "sm:grid-cols-2 lg:grid-cols-3" : "md:grid-cols-2";
+
   return (
-    <dl className="mt-5 grid border-t border-line md:grid-cols-2">
+    <dl className={`mt-5 grid gap-2 ${gridClassName}`}>
       {items.map((item) => (
-        <div className="border-b border-line py-4 md:odd:pr-5 md:even:pl-5" key={item.label}>
+        <div className="rounded-md border border-line bg-white px-3 py-2.5" key={item.label}>
           <dt className="text-xs font-black uppercase text-muted">{item.label}</dt>
-          <dd className="mt-1 font-bold leading-6 text-ink">{item.value}</dd>
+          <dd className="mt-1 break-words text-sm font-bold leading-6 text-ink">{item.value}</dd>
         </div>
       ))}
     </dl>

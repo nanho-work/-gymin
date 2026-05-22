@@ -1,9 +1,14 @@
 import { apiGet, apiPost } from "@/shared/api/httpClient";
-import type { JobApplicationCreate, JobApplicationRead, MyJobApplicationRead } from "@/shared/api/serverTypes";
+import type {
+  JobApplicationCreate,
+  JobApplicationRead,
+  JobApplicationWithTrainerRead,
+  MyJobApplicationRead
+} from "@/shared/api/serverTypes";
 import type { Page } from "@/shared/api/types";
 
 export function listJobApplications(jobPostId: string, params: { page?: number; size?: number } = {}) {
-  return apiGet<Page<JobApplicationRead>>(`/applications/jobs/${jobPostId}`, params);
+  return apiGet<Page<JobApplicationWithTrainerRead>>(`/applications/jobs/${jobPostId}`, params);
 }
 
 export function listMyJobApplications(params: { page?: number; size?: number } = {}) {

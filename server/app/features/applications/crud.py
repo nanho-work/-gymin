@@ -13,7 +13,12 @@ def list_applications_by_job(
     job_post_id: uuid.UUID,
     params: PaginationParams
 ) -> Page:
-    statement = select(JobApplication).where(JobApplication.job_post_id == job_post_id).order_by(JobApplication.applied_at.desc())
+    statement = (
+        select(JobApplication)
+        .options(joinedload(JobApplication.trainer_profile))
+        .where(JobApplication.job_post_id == job_post_id)
+        .order_by(JobApplication.applied_at.desc())
+    )
     items, total = paginate_statement(db, statement, params)
     return build_page(items, total, params)
 

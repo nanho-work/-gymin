@@ -4,6 +4,7 @@ from datetime import datetime
 from pydantic import BaseModel
 
 from app.features.jobs.schema import JobPostRead
+from app.features.trainers.schema import TrainerProfileRead
 
 
 class JobApplicationCreate(BaseModel):
@@ -24,3 +25,7 @@ class JobApplicationRead(BaseModel):
 
 class MyJobApplicationRead(JobApplicationRead):
     job_post: JobPostRead
+
+
+class JobApplicationWithTrainerRead(JobApplicationRead):
+    trainer_profile: TrainerProfileRead

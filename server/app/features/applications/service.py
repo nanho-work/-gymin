@@ -6,11 +6,12 @@ from sqlalchemy.orm import Session
 from app.common.pagination import PaginationParams, Page
 from app.features.applications import crud
 from app.features.applications.model import JobApplication
-from app.features.applications.schema import JobApplicationCreate
+from app.features.applications.schema import JobApplicationCreate, JobApplicationWithTrainerRead
 from app.features.auth.dependencies import CurrentUser
 from app.features.jobs.crud import get_job
 from app.features.media.crud import list_entity_media
 from app.features.trainers.crud import get_trainer_profile_by_user_id
+from app.features.trainers.service import to_trainer_profile_read
 
 
 def list_applications_by_job(
@@ -18,7 +19,16 @@ def list_applications_by_job(
     job_post_id: uuid.UUID,
     params: PaginationParams
 ) -> Page:
-    return crud.list_applications_by_job(db, job_post_id, params=params)
+    page = crud.list_applications_by_job(db, job_post_id, params=params)
+    return Page(
+        items=[to_application_with_trainer_read(db, application) for application in page.items],
+        page=page.page,
+        size=page.size,
+        total=page.total,
+        total_pages=page.total_pages,
+        has_next=page.has_next,
+        has_prev=page.has_prev
+    )
 
 
 def list_my_applications(
@@ -79,3 +89,18 @@ def get_missing_application_fields(db: Session, trainer) -> list[str]:
     ]
 
     return [label for label, ready in checks if not ready]
+
+
+def to_application_with_trainer_read(
+    db: Session,
+    application: JobApplication
+) -> JobApplicationWithTrainerRead:
+    return JobApplicationWithTrainerRead(
+        id=application.id,
+        job_post_id=application.job_post_id,
+        trainer_profile_id=application.trainer_profile_id,
+        message=application.message,
+        status=application.status,
+        applied_at=application.applied_at,
+        trainer_profile=to_trainer_profile_read(db, application.trainer_profile)
+    )

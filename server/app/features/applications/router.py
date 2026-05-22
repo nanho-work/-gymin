@@ -6,7 +6,12 @@ from sqlalchemy.orm import Session
 from app.common.pagination import Page, PaginationParams, get_pagination_params
 from app.db.session import get_db
 from app.features.auth.dependencies import CurrentUser, require_business, require_trainer
-from app.features.applications.schema import JobApplicationCreate, JobApplicationRead, MyJobApplicationRead
+from app.features.applications.schema import (
+    JobApplicationCreate,
+    JobApplicationRead,
+    JobApplicationWithTrainerRead,
+    MyJobApplicationRead
+)
 from app.features.applications.service import create_application, list_applications_by_job, list_my_applications
 
 
@@ -22,13 +27,13 @@ def read_my_applications(
     return list_my_applications(db, current_user, params=pagination)
 
 
-@router.get("/jobs/{job_post_id}", response_model=Page[JobApplicationRead])
+@router.get("/jobs/{job_post_id}", response_model=Page[JobApplicationWithTrainerRead])
 def read_applications_by_job(
     job_post_id: uuid.UUID,
     pagination: PaginationParams = Depends(get_pagination_params),
     db: Session = Depends(get_db),
     _current_user: CurrentUser = Depends(require_business)
-) -> Page[JobApplicationRead]:
+) -> Page[JobApplicationWithTrainerRead]:
     return list_applications_by_job(db, job_post_id, params=pagination)
 
 

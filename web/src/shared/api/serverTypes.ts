@@ -170,6 +170,10 @@ export type MyJobApplicationRead = JobApplicationRead & {
   job_post: JobPostRead;
 };
 
+export type JobApplicationWithTrainerRead = JobApplicationRead & {
+  trainer_profile: TrainerProfileRead;
+};
+
 export type PresignedUploadRequest = {
   entity_type: "center" | "trainer_profile" | "job_post" | "business_verification";
   entity_id: string;

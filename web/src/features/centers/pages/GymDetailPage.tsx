@@ -6,7 +6,6 @@ import { useEffect, useState } from "react";
 
 import { Badge } from "@/shared/components/ui/Badge";
 import { Container } from "@/shared/components/ui/Container";
-import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
 import { getCenter } from "@/shared/api/centersClient";
 import { listJobPosts, toDomainJobPost } from "@/shared/api/jobsClient";
 import { getMediaDisplayUrl } from "@/shared/api/mediaClient";
@@ -15,10 +14,8 @@ import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
 import type { JobPost } from "@/shared/types/domain";
 import {
   formatCenterIndustry,
-  formatCenterStatus,
   formatCenterVerificationStatus,
-  getCenterAddress,
-  getCenterArea
+  getCenterAddress
 } from "@/shared/utils/center";
 
 export function GymDetailPage() {
@@ -102,8 +99,12 @@ export function GymDetailPage() {
   }
 
   const address = getCenterAddress(center);
-  const area = getCenterArea(center);
   const industryLabel = formatCenterIndustry(center.industry);
+  const centerGalleryImages = center.media
+    .filter((item) => item.purpose === "gallery")
+    .sort((left, right) => left.sort_order - right.sort_order)
+    .map((item) => ({ id: item.id, url: getMediaDisplayUrl(item) }))
+    .filter((item) => item.url);
 
   return (
     <>
@@ -121,37 +122,40 @@ export function GymDetailPage() {
               <Badge tone={center.verification_status === "verified" ? "green" : "amber"}>
                 {formatCenterVerificationStatus(center.verification_status)}
               </Badge>
-              <Badge>{formatCenterStatus(center.status)}</Badge>
             </div>
             <h1 className="mt-5 text-4xl font-black tracking-tight text-ink sm:text-5xl">{center.name}</h1>
-            <p className="mt-3 text-lg font-bold text-muted">
-              {area} · {industryLabel}
-            </p>
-            <p className="mt-5 leading-8 text-muted">{center.introduction || "센터 소개가 아직 등록되지 않았습니다."}</p>
-            <div className="mt-7 flex flex-wrap gap-3">
-              <PrimaryLink to="/jobs/hiring">구인글 보기</PrimaryLink>
-              <PrimaryLink to="/jobs/hiring/new" variant="light">
-                구인글 등록
-              </PrimaryLink>
+            <div className="mt-4 space-y-2 text-base font-bold leading-7 text-muted">
+              <p>{address}</p>
+              <p>{[industryLabel, center.operation_type].filter(Boolean).join(" · ")}</p>
             </div>
+            <p className="mt-5 leading-8 text-muted">{center.introduction || "센터 소개가 아직 등록되지 않았습니다."}</p>
           </div>
         </Container>
       </section>
 
       <Container className="detail-grid grid gap-6 py-8">
         <div className="space-y-6">
-          <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
-            <h2 className="text-xl font-black text-ink">공개 정보</h2>
-            <div className="mt-5 grid gap-4 md:grid-cols-2">
-              <InfoBlock title="주소" value={address} />
-              <InfoBlock title="업종" value={industryLabel} />
-              <InfoBlock title="운영 형태" value={center.operation_type || "운영 형태 미입력"} />
-              <InfoBlock title="인증 상태" value={formatCenterVerificationStatus(center.verification_status)} />
-            </div>
-          </section>
+          {centerGalleryImages.length > 0 ? (
+            <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
+              <h2 className="text-xl font-black text-ink">센터 사진</h2>
+              <div className="mt-5 grid gap-3 md:grid-cols-2">
+                {centerGalleryImages.map((image) => (
+                  <img
+                    alt={`${center.name} 등록 사진`}
+                    className="h-56 w-full rounded-md bg-paper object-contain"
+                    key={image.id}
+                    src={image.url}
+                  />
+                ))}
+              </div>
+            </section>
+          ) : null}
 
           <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
-            <h2 className="text-xl font-black text-ink">이 업장의 구인 연결</h2>
+            <div className="flex flex-wrap items-center justify-between gap-3">
+              <h2 className="text-xl font-black text-ink">이 업장의 구인 연결</h2>
+              <span className="text-xs font-black text-muted">{hiringJobs.length}건</span>
+            </div>
             <div className="mt-4 space-y-3">
               {hiringJobs.length > 0 ? (
                 hiringJobs.map((job) => (
@@ -177,14 +181,6 @@ export function GymDetailPage() {
 
         <aside className="space-y-5">
           <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
-            <p className="text-sm font-black uppercase text-muted">센터 상태</p>
-            <p className="mt-2 text-3xl font-black text-ink">{formatCenterStatus(center.status)}</p>
-            <p className="mt-3 leading-6 text-muted">
-              사장님이 등록한 공개 센터 정보입니다. 구인글과 지원자 관리 흐름에서 이 센터 ID를 기준으로 연결됩니다.
-            </p>
-          </section>
-
-          <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
             <h2 className="text-xl font-black text-ink">외부 채널</h2>
             <div className="mt-4 space-y-2">
               <ExternalLink href={center.homepage_url} label="홈페이지" />
@@ -195,15 +191,6 @@ export function GymDetailPage() {
         </aside>
       </Container>
     </>
-  );
-}
-
-function InfoBlock({ title, value }: { title: string; value: string }) {
-  return (
-    <div className="rounded-md border border-line bg-paper p-4">
-      <p className="text-xs font-black uppercase text-muted">{title}</p>
-      <p className="mt-2 font-bold leading-6 text-ink">{value}</p>
-    </div>
   );
 }
 

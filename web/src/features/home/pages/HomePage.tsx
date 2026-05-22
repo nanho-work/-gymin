@@ -15,11 +15,11 @@ import type { PlatformStats } from "@/shared/api/types";
 const notices = [
   "허위 구인글, 과장 급여, 타인 비방 글은 운영자가 숨김 처리할 수 있습니다.",
   "연락처 공개 전에는 개인정보와 계약 조건을 꼭 직접 확인해 주세요.",
-  "트레이너는 내 프로필을 등록해두면 구인글에 지원할 때 그대로 사용할 수 있습니다."
+  "강사와 트레이너는 내 프로필을 등록해두면 구인글에 지원할 때 그대로 사용할 수 있습니다."
 ];
 
 export function HomePage() {
-  useDocumentTitle("피트니스 무료 구인 게시판");
+  useDocumentTitle("피트니스 구인구직 플랫폼");
   const [stats, setStats] = useState<PlatformStats | null>(null);
   const [hiringPosts, setHiringPosts] = useState<JobPost[]>([]);
 
@@ -54,25 +54,25 @@ export function HomePage() {
       <section className="border-b border-line bg-white">
         <Container className="grid gap-10 py-12 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:py-16">
           <div>
-            <Badge tone="green">무료 피트니스 구인</Badge>
+            <Badge tone="green">피트니스 구인구직</Badge>
             <h1 className="mt-5 max-w-4xl text-5xl font-black leading-tight tracking-tight text-ink sm:text-6xl">
-              트레이너가 구인글을 보고 프로필로 지원하는 게시판
+              피트니스 시설과 운동 지도자를 연결하는 구인구직 플랫폼
             </h1>
             <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
-              GymIn은 센터 사장님이 구인글을 올리고, 트레이너가 미리 등록한 프로필로 지원하는 무료 웹 서비스입니다.
-              구인글과 트레이너 프로필 기반 지원 흐름에 집중합니다.
+              헬스장, 필라테스 스튜디오, 요가원, 크로스핏 박스가 공고를 올리고
+              강사와 트레이너는 등록한 프로필로 지원합니다. 업종별 공고, 시설 정보, 지원자 확인 흐름을 한곳에서 이어갑니다.
             </p>
           </div>
           <div className="overflow-hidden rounded-lg border border-line bg-paper shadow-soft">
             <img
-              alt="트레이너가 이용할 수 있는 헬스장 시설"
+              alt="운동 지도자가 이용할 수 있는 피트니스 시설"
               className="h-72 w-full object-cover sm:h-96"
               src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80"
             />
             <div className="grid grid-cols-3 border-t border-line bg-white">
               <Stat label="등록 센터" value={stats ? `${stats.centers}` : "-"} />
               <Stat label="구인글" value={stats ? `${stats.open_job_posts}` : "-"} />
-              <Stat label="트레이너" value={stats ? `${stats.trainer_profiles}` : "-"} />
+              <Stat label="등록 프로필" value={stats ? `${stats.trainer_profiles}` : "-"} />
             </div>
           </div>
         </Container>
@@ -86,10 +86,10 @@ export function HomePage() {
         <Container className="grid gap-6 py-12 lg:grid-cols-[1fr_380px]">
           <div>
             <Badge tone="dark">공지사항</Badge>
-            <h2 className="mt-4 text-3xl font-black tracking-tight text-ink">무료 게시판 이용 안내</h2>
+            <h2 className="mt-4 text-3xl font-black tracking-tight text-ink">피트니스 구인구직 이용 안내</h2>
             <p className="mt-4 max-w-3xl leading-8 text-muted">
-              구인글을 편하게 올리고 트레이너가 프로필로 지원합니다. 로그인, 지원자 열람 권한,
-              신고/숨김 처리를 최소한의 운영 장치로 둡니다.
+              시설은 공고를 올리고 강사와 트레이너는 프로필로 지원합니다. 로그인, 지원자 열람 권한,
+              신고/숨김 처리를 기본 운영 장치로 둡니다.
             </p>
           </div>
           <aside className="rounded-lg border border-line bg-paper p-5">

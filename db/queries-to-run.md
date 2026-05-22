@@ -8,6 +8,7 @@
 - `db/migrations/0001_initial_schema.sql`: 실행 완료
 - `db/migrations/0002_add_media_content_purpose.sql`: 실행 완료
 - `db/migrations/0003_add_media_file_variants.sql`: 실행 필요
+- `db/migrations/0004_refine_trainer_profile_contact_birth_year.sql`: 실행 필요
 
 ## 현재 실행 순서
 
@@ -56,6 +57,14 @@ db/migrations/0002_add_media_content_purpose.sql
 
 ```text
 db/migrations/0003_add_media_file_variants.sql
+```
+
+### 7. 트레이너 연락처/출생년도 정리
+
+트레이너 프로필 연락처를 숫자 저장값으로 정규화하고, 나이 저장 컬럼을 출생년도 기반 계산값으로 전환하려면 아래 파일의 쿼리를 추가로 실행한다.
+
+```text
+db/migrations/0004_refine_trainer_profile_contact_birth_year.sql
 ```
 
 ## 실행 후 확인 쿼리

@@ -2,6 +2,7 @@ import { apiGet, apiPost, apiPut } from "@/shared/api/httpClient";
 import type { MediaFileResponse, TrainerProfileCreate, TrainerProfileRead, TrainerProfileUpsert } from "@/shared/api/serverTypes";
 import type { Page } from "@/shared/api/types";
 import type { Trainer } from "@/shared/types/domain";
+import { formatKoreanPhoneNumber } from "@/shared/utils/phone";
 
 export function listTrainerProfiles(params: { page?: number; size?: number } = {}) {
   return apiGet<Page<TrainerProfileRead>>("/trainers", params);
@@ -35,7 +36,7 @@ export function getTrainerReadiness(trainer: Trainer): TrainerReadiness {
   const checks = [
     { label: "대표 사진", ready: Boolean(trainer.profileImage) },
     { label: "이름", ready: Boolean(trainer.name && trainer.name !== "이름 미입력") },
-    { label: "나이/성별", ready: Boolean(trainer.age && trainer.gender) },
+    { label: "출생년도/성별", ready: Boolean(trainer.age && trainer.gender) },
     { label: "연락처", ready: Boolean(trainer.contact) },
     { label: "거주지역", ready: Boolean(trainer.residenceRegion) }
   ];
@@ -60,9 +61,9 @@ export function toDomainTrainer(profile: TrainerProfileRead): Trainer {
     id: profile.id,
     name: profile.name || "이름 미입력",
     age: profile.age ?? 0,
-    birthDate: formatDate(profile.birth_date),
+    birthYear: profile.birth_year ? `${profile.birth_year}` : "",
     gender: formatGender(profile.gender),
-    contact: profile.phone || "",
+    contact: profile.phone ? formatKoreanPhoneNumber(profile.phone) : "",
     residenceRegion: [profile.residence_sido, profile.residence_sigungu].filter(Boolean).join(" "),
     profileImage,
     headline: profile.headline || "트레이너 소개 문구를 입력해 주세요.",

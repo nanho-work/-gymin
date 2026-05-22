@@ -31,7 +31,7 @@ export type Trainer = {
   id: string;
   name: string;
   age: number;
-  birthDate: string;
+  birthYear: string;
   gender: string;
   contact: string;
   residenceRegion: string;

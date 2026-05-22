@@ -52,7 +52,7 @@ export type TrainerProfileRead = {
   id: string;
   user_id: string;
   name: string | null;
-  birth_date: string | null;
+  birth_year: number | null;
   age: number | null;
   gender: string | null;
   phone: string | null;
@@ -77,6 +77,7 @@ export type TrainerProfileRead = {
 export type TrainerProfileCreate = Omit<
   TrainerProfileRead,
   | "id"
+  | "age"
   | "profile_status"
   | "created_at"
   | "updated_at"
@@ -133,8 +134,7 @@ export type TrainerPortfolioLinkRead = TrainerPortfolioLinkWrite & {
 
 export type TrainerProfileUpsert = {
   name: string | null;
-  birth_date: string | null;
-  age: number | null;
+  birth_year: number | null;
   gender: string | null;
   phone: string | null;
   residence_sido: string | null;

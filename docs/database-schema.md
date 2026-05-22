@@ -145,10 +145,9 @@ media_files
 | id | uuid pk | 트레이너 프로필 ID |
 | user_id | uuid fk users.id | 사용자 |
 | name | varchar(80) nullable | 이름 |
-| birth_date | date nullable | 생년월일 |
-| age | smallint nullable | 나이, 검색 편의를 위한 캐시값 |
+| birth_year | smallint nullable | 출생년도, 나이는 서버 응답에서 계산 |
 | gender | varchar(20) nullable | 성별 |
-| phone | varchar(30) nullable | 연락처 |
+| phone | varchar(30) nullable | 숫자만 저장하는 연락처 |
 | residence_sido | varchar(40) nullable | 거주 시/도 |
 | residence_sigungu | varchar(60) nullable | 거주 구/시/군 |
 | desired_area_text | varchar(255) nullable | 희망 활동 지역 자유 입력 |
@@ -170,10 +169,10 @@ media_files
 
 - 대표 사진 존재
 - name
-- age 또는 birth_date
+- birth_year
 - gender
 - phone
-- residence_sido/residence_sigungu 또는 residence text
+- residence_sido/residence_sigungu
 
 ## trainer_specialties
 

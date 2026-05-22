@@ -99,7 +99,7 @@ def get_missing_application_fields(db: Session, trainer) -> list[str]:
     checks = [
         ("대표 사진", bool(profile_media)),
         ("이름", bool(trainer.name)),
-        ("나이", trainer.age is not None),
+        ("출생년도", trainer.birth_year is not None),
         ("성별", bool(trainer.gender)),
         ("연락처", bool(trainer.phone)),
         ("거주지역", bool(trainer.residence_sido or trainer.residence_sigungu))

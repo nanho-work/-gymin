@@ -5,10 +5,12 @@ import type { ChangeEvent, Dispatch, FormEvent, SetStateAction } from "react";
 
 import { uploadImageToS3 } from "@/features/uploads/api/uploadImageToS3";
 import { defaultImageAccept, formatFileSize, validateImageFile } from "@/features/uploads/utils/imageFiles";
+import { RegionSelect } from "@/shared/components/forms/RegionSelect";
 import { Container } from "@/shared/components/ui/Container";
 import { getMediaDisplayUrl, getMyTrainerProfile, upsertMyTrainerProfile } from "@/shared/api/trainersClient";
 import type { MediaFileResponse, TrainerProfileRead, TrainerProfileUpsert } from "@/shared/api/serverTypes";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
+import { formatKoreanPhoneNumber, normalizePhoneDigits } from "@/shared/utils/phone";
 
 type WorkExperienceForm = {
   id: string;
@@ -37,12 +39,11 @@ type PendingImage = {
 
 type TrainerFormState = {
   name: string;
-  age: string;
+  birthYear: string;
   gender: string;
   phone: string;
   residenceSido: string;
   residenceSigungu: string;
-  birthDate: string;
   desiredAreaText: string;
   headline: string;
   experienceYears: string;
@@ -57,12 +58,11 @@ type TrainerFormState = {
 
 const emptyForm: TrainerFormState = {
   name: "",
-  age: "",
+  birthYear: "",
   gender: "",
   phone: "",
   residenceSido: "",
   residenceSigungu: "",
-  birthDate: "",
   desiredAreaText: "",
   headline: "",
   experienceYears: "",
@@ -148,12 +148,12 @@ export function TrainerRegisterPage() {
     () => [
       { label: "대표 프로필 사진", ready: Boolean(profileImage || existingProfileImage) },
       { label: "이름", ready: Boolean(form.name.trim()) },
-      { label: "나이", ready: Boolean(parseOptionalNumber(form.age)) },
+      { label: "출생년도", ready: Boolean(parseOptionalNumber(form.birthYear)) },
       { label: "성별", ready: Boolean(form.gender) },
-      { label: "연락처", ready: Boolean(form.phone.trim()) },
-      { label: "거주지역", ready: Boolean(form.residenceSido.trim() || form.residenceSigungu.trim()) }
+      { label: "연락처", ready: Boolean(normalizePhoneDigits(form.phone)) },
+      { label: "거주지역", ready: Boolean(form.residenceSido.trim() && form.residenceSigungu.trim()) }
     ],
-    [existingProfileImage, form.age, form.gender, form.name, form.phone, form.residenceSido, form.residenceSigungu, profileImage]
+    [existingProfileImage, form.birthYear, form.gender, form.name, form.phone, form.residenceSido, form.residenceSigungu, profileImage]
   );
   const isReadyForApply = readinessChecks.every((check) => check.ready);
   const existingProfileUrl = getMediaDisplayUrl(existingProfileImage);
@@ -164,6 +164,16 @@ export function TrainerRegisterPage() {
       setForm((current) => ({ ...current, [field]: event.target.value }));
       setSaveStatus("idle");
     };
+
+  const handlePhoneChange = (event: ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    setForm((current) => ({ ...current, phone: formatKoreanPhoneNumber(event.target.value) }));
+    setSaveStatus("idle");
+  };
+
+  const handleRegionChange = (value: { sido: string; sigungu: string }) => {
+    setForm((current) => ({ ...current, residenceSido: value.sido, residenceSigungu: value.sigungu }));
+    setSaveStatus("idle");
+  };
 
   const handleProfileImageChange = (event: ChangeEvent<HTMLInputElement>) => {
     const file = event.target.files?.[0];
@@ -323,49 +333,35 @@ export function TrainerRegisterPage() {
   return (
     <Container className="grid gap-10 py-8 lg:grid-cols-[minmax(0,1fr)_320px]">
       <form className="space-y-8" onSubmit={handleSubmit}>
-        <section className="sticky top-0 z-10 border-y border-line bg-white/95 py-4 backdrop-blur">
-          <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
-            <div>
-              <p className="text-xs font-black text-forest">{profile ? "트레이너 프로필" : "새 트레이너 프로필"}</p>
-              <h1 className="mt-1 text-2xl font-black tracking-tight text-ink">
-                {isEditing ? "프로필 편집" : "프로필 보기"}
-              </h1>
-              <p className="mt-2 text-sm font-bold leading-6 text-muted">
-                입력과 이미지 선택은 저장 전까지 로컬에만 보관됩니다.
-              </p>
-            </div>
-            <div className="flex flex-wrap gap-2">
-              {profile && !isEditing ? (
-                <button
-                  className="border border-line bg-white px-5 py-3 text-sm font-black text-ink transition hover:border-green"
-                  onClick={() => {
-                    setIsEditing(true);
-                    setSaveStatus("idle");
-                  }}
-                  type="button"
-                >
-                  수정
-                </button>
-              ) : null}
-              {isEditing ? (
-                <button
-                  className="bg-ink px-5 py-3 text-sm font-black text-white disabled:opacity-60"
-                  disabled={saveStatus === "saving"}
-                  type="submit"
-                >
-                  {saveStatus === "saving" ? "저장 중" : "저장"}
-                </button>
-              ) : null}
-            </div>
+        <section className="sticky top-0 z-10 border-y border-line bg-white/95 py-3 backdrop-blur">
+          <div className="flex justify-end gap-2">
+            {profile && !isEditing ? (
+              <button
+                className="border border-line bg-white px-5 py-3 text-sm font-black text-ink transition hover:border-green"
+                onClick={() => {
+                  setIsEditing(true);
+                  setSaveStatus("idle");
+                }}
+                type="button"
+              >
+                수정
+              </button>
+            ) : null}
+            {isEditing ? (
+              <button
+                className="bg-ink px-5 py-3 text-sm font-black text-white disabled:opacity-60"
+                disabled={saveStatus === "saving"}
+                type="submit"
+              >
+                {saveStatus === "saving" ? "저장 중" : "저장"}
+              </button>
+            ) : null}
           </div>
           {notice ? <p className="mt-3 border-l-2 border-green pl-3 text-sm font-bold text-muted">{notice}</p> : null}
         </section>
 
         <section className="space-y-4">
           <SectionTitle title="대표 프로필 사진" />
-          <p className="text-sm leading-6 text-muted">
-            지원자 목록과 상세 화면에 노출될 대표 프로필 사진입니다. 저장 버튼을 누르기 전에는 S3 업로드를 하지 않습니다.
-          </p>
           <div className="grid gap-4 md:grid-cols-[220px_1fr]">
             <div className="overflow-hidden border border-line bg-paper">
               {profileImage ? (
@@ -428,16 +424,19 @@ export function TrainerRegisterPage() {
         <SectionTitle title="지원 시 필요한 기본 정보" />
         <div className="grid gap-4 md:grid-cols-2">
           <TextField disabled={!isEditing} label="이름 (지원 필수)" onChange={handleFieldChange("name")} placeholder="예: 김민준" value={form.name} />
-          <TextField disabled={!isEditing} label="나이 (지원 필수)" onChange={handleFieldChange("age")} placeholder="예: 29" type="number" value={form.age} />
+          <TextField disabled={!isEditing} label="출생년도 (지원 필수)" onChange={handleFieldChange("birthYear")} placeholder="예: 1997" type="number" value={form.birthYear} />
           <SelectField disabled={!isEditing} label="성별 (지원 필수)" onChange={handleFieldChange("gender")} value={form.gender} />
-          <TextField disabled={!isEditing} label="연락처 (지원 필수)" onChange={handleFieldChange("phone")} placeholder="예: 010-1234-5678" value={form.phone} />
-          <TextField disabled={!isEditing} label="시/도 (지원 필수)" onChange={handleFieldChange("residenceSido")} placeholder="예: 서울" value={form.residenceSido} />
-          <TextField disabled={!isEditing} label="시/군/구 (지원 필수)" onChange={handleFieldChange("residenceSigungu")} placeholder="예: 서초구" value={form.residenceSigungu} />
+          <TextField disabled={!isEditing} label="연락처 (지원 필수)" onChange={handlePhoneChange} placeholder="예: 010-1234-5678" value={form.phone} />
+          <RegionSelect
+            disabled={!isEditing}
+            onChange={handleRegionChange}
+            required
+            value={{ sido: form.residenceSido, sigungu: form.residenceSigungu }}
+          />
         </div>
 
         <SectionTitle title="추가 프로필 정보" />
         <div className="grid gap-4 md:grid-cols-2">
-          <TextField disabled={!isEditing} label="생년월일" onChange={handleFieldChange("birthDate")} type="date" value={form.birthDate} />
           <TextField disabled={!isEditing} label="희망 활동 지역" onChange={handleFieldChange("desiredAreaText")} placeholder="예: 서울 강남 · 서초" value={form.desiredAreaText} />
           <TextField disabled={!isEditing} label="총 경력" onChange={handleFieldChange("experienceYears")} placeholder="예: 5" type="number" value={form.experienceYears} />
           <TextField disabled={!isEditing} label="전문 분야" onChange={handleFieldChange("specialtiesText")} placeholder="예: 재활 PT, 바디프로필" value={form.specialtiesText} />
@@ -497,12 +496,6 @@ export function TrainerRegisterPage() {
               </div>
             ))}
           </div>
-        </aside>
-        <aside className="border-t border-line pt-5">
-          <h2 className="text-xl font-black text-ink">저장 흐름</h2>
-          <p className="mt-4 text-sm leading-6 text-muted">
-            페이지 진입 시에는 기존 프로필 조회만 실행합니다. 입력값과 새 이미지는 저장 버튼을 누를 때 프로필 저장 후 실제 프로필 ID로 업로드됩니다.
-          </p>
         </aside>
       </div>
     </Container>
@@ -702,12 +695,11 @@ const rowInputClassName =
 function toFormState(profile: TrainerProfileRead): TrainerFormState {
   return {
     name: profile.name ?? "",
-    age: profile.age?.toString() ?? "",
+    birthYear: profile.birth_year?.toString() ?? "",
     gender: profile.gender ?? "",
-    phone: profile.phone ?? "",
+    phone: profile.phone ? formatKoreanPhoneNumber(profile.phone) : "",
     residenceSido: profile.residence_sido ?? "",
     residenceSigungu: profile.residence_sigungu ?? "",
-    birthDate: normalizeDateInput(profile.birth_date),
     desiredAreaText: profile.desired_area_text ?? "",
     headline: profile.headline ?? "",
     experienceYears: profile.experience_years?.toString() ?? "",
@@ -746,10 +738,9 @@ function toFormState(profile: TrainerProfileRead): TrainerFormState {
 function toUpsertPayload(form: TrainerFormState, isReadyForApply: boolean): TrainerProfileUpsert {
   return {
     name: toNullableString(form.name),
-    birth_date: toNullableString(form.birthDate),
-    age: parseOptionalNumber(form.age),
+    birth_year: parseOptionalNumber(form.birthYear),
     gender: toNullableString(form.gender),
-    phone: toNullableString(form.phone),
+    phone: toNullableString(normalizePhoneDigits(form.phone)),
     residence_sido: toNullableString(form.residenceSido),
     residence_sigungu: toNullableString(form.residenceSigungu),
     desired_area_text: toNullableString(form.desiredAreaText),
@@ -849,14 +840,6 @@ function splitList(value: string) {
 function toNullableString(value: string) {
   const trimmed = value.trim();
   return trimmed ? trimmed : null;
-}
-
-function normalizeDateInput(value: string | null) {
-  if (!value) {
-    return "";
-  }
-
-  return value.slice(0, 10);
 }
 
 function clearPendingImages(profileImage: PendingImage | null, portfolioImages: PendingImage[]) {

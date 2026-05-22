@@ -245,7 +245,7 @@ function ApplicantDetail({
             <p className="mt-3 text-lg font-black text-ink">{trainer.headline}</p>
             <div className="mt-5 grid gap-3 md:grid-cols-2">
               <ProfileField label="나이" value={trainer.age ? `${trainer.age}세` : "미입력"} />
-              <ProfileField label="생년월일" value={trainer.birthDate || "미입력"} />
+              <ProfileField label="출생년도" value={trainer.birthYear ? `${trainer.birthYear}년생` : "미입력"} />
               <ProfileField label="성별" value={trainer.gender || "미입력"} />
               <ProfileField label="연락처" value={isContactVisible ? trainer.contact || "미입력" : "확인 버튼을 눌러 표시"} />
               <ProfileField label="거주지역" value={trainer.residenceRegion || "미입력"} />

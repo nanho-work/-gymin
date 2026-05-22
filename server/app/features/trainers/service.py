@@ -2,6 +2,7 @@ import uuid
 
 from sqlalchemy.orm import Session
 
+from app.common.age import calculate_age_from_birth_year
 from app.common.pagination import PaginationParams, Page
 from app.features.media import crud as media_crud
 from app.features.media.service import to_media_file_response
@@ -32,6 +33,7 @@ def upsert_my_trainer_profile(db: Session, user_id: uuid.UUID, payload: TrainerP
 
 def to_trainer_profile_read(db: Session, trainer: TrainerProfile) -> TrainerProfileRead:
     response = TrainerProfileRead.model_validate(trainer)
+    response.age = calculate_age_from_birth_year(trainer.birth_year)
     media_files = media_crud.list_entity_media(
         db,
         entity_type="trainer_profile",

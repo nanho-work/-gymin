@@ -114,7 +114,7 @@ export function TrainerDetailPage() {
           <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
             <h2 className="text-xl font-black text-ink">프로필 정보</h2>
             <div className="mt-5 grid gap-4 md:grid-cols-2">
-              <InfoBlock title="나이/생년월일" value={`${trainer.age}세 · ${trainer.birthDate}`} />
+              <InfoBlock title="나이/출생년도" value={`${trainer.age ? `${trainer.age}세` : "미입력"} · ${trainer.birthYear ? `${trainer.birthYear}년생` : "미입력"}`} />
               <InfoBlock title="성별" value={trainer.gender} />
               <InfoBlock title="연락처" value={trainer.contact} />
               <InfoBlock title="거주지역" value={trainer.residenceRegion} />

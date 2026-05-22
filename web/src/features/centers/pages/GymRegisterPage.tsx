@@ -5,26 +5,16 @@ import { MockField } from "@/shared/components/ui/MockField";
 import { BusinessVerificationPanel } from "@/features/centers/components/BusinessVerificationPanel";
 import { ImageUploadSection } from "@/features/uploads/components/ImageUploadSection";
 import { useDraftUploadEntityId } from "@/features/uploads/hooks/useDraftUploadEntityId";
-import regionData from "@/data/mock/regions.json";
+import { getDefaultRegionValue, RegionSelect } from "@/shared/components/forms/RegionSelect";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 
-type Region = {
-  name: string;
-  children: string[];
-};
-
-const regions = regionData as Region[];
 const industryCategories = ["헬스/PT", "필라테스", "요가", "크로스핏", "재활/교정", "복합 센터", "기타"];
 
 export function GymRegisterPage() {
   useDocumentTitle("센터 등록");
   const draftCenterId = useDraftUploadEntityId();
-  const [selectedRegion, setSelectedRegion] = useState(regions[0]?.name ?? "");
-  const selectedSubRegions = useMemo(
-    () => regions.find((region) => region.name === selectedRegion)?.children ?? [],
-    [selectedRegion]
-  );
+  const [selectedRegion, setSelectedRegion] = useState(getDefaultRegionValue);
 
   return (
     <Container className="grid gap-10 py-8 lg:grid-cols-[minmax(0,1fr)_320px]">
@@ -48,16 +38,7 @@ export function GymRegisterPage() {
           <SectionTitle title="기본 정보" />
           <div className="grid gap-4 md:grid-cols-2">
             <MockField label="센터명" placeholder="예: 피크바디짐 강남점" />
-            <MockSelect
-              label="시/도"
-              onChange={(value) => setSelectedRegion(value)}
-              options={regions.map((region) => region.name)}
-              value={selectedRegion}
-            />
-            <MockSelect
-              label={selectedRegion.includes("특별시") || selectedRegion.includes("광역시") ? "구/군" : "시/군"}
-              options={selectedSubRegions}
-            />
+            <RegionSelect onChange={setSelectedRegion} value={selectedRegion} />
             <MockField label="상세주소" placeholder="예: 테헤란로 118, 지하 1층" />
             <MockSelect label="업종" options={industryCategories} />
             <MockField label="운영형태" placeholder="예: 1:1 PT 중심, 기구 필라테스 6:1 그룹수업, 재활운동 병행" />

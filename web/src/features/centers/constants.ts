@@ -1,0 +1,1 @@
+export const CENTER_GALLERY_MAX_IMAGES = 4;

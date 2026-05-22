@@ -27,7 +27,7 @@ S3 버킷은 private으로 운영한다. 프론트는 `object_key`를 직접 이
 
 1. 프론트에서 로그인 쿠키를 포함해 `DELETE /api/media/{media_file_id}`를 호출한다.
 2. 서버는 `media_files.owner_user_id`와 현재 로그인 사용자를 비교해 소유권을 확인한다.
-3. 서버는 `media_files.status = 'deleted'`, `deleted_at = now()`로 soft delete한다.
+3. 서버는 `media_files`와 연결된 `media_file_variants` row를 hard delete한다.
 4. S3의 WebP 변환본은 best-effort로 삭제한다.
 
 트레이너 프로필 수정 화면에서는 기존 저장 이미지를 바로 삭제하지 않고, 편집 모드에서 삭제 표시 후 저장 버튼을 누를 때 삭제 API를 호출한다.
@@ -96,7 +96,7 @@ users/0f4b.../trainer_profile/7a91.../portfolio/2d5c.../thumbnail.webp
 
 - `profile`: 트레이너 대표 프로필 사진
 - `representative`: 센터 대표 사진
-- `gallery`: 센터 갤러리 사진
+- `gallery`: 센터 갤러리 사진. 센터 한 곳당 최대 4장까지 등록한다.
 - `verification`: 사업자/센터 인증 자료
 - `portfolio`: 트레이너 포트폴리오 사진
 - `content`: 구인글 본문 이미지

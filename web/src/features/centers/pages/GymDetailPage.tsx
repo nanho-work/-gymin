@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useParams } from "next/navigation";
 import { useEffect, useState } from "react";
 
+import { CENTER_GALLERY_MAX_IMAGES } from "@/features/centers/constants";
 import { Badge } from "@/shared/components/ui/Badge";
 import { Container } from "@/shared/components/ui/Container";
 import { getCenter } from "@/shared/api/centersClient";
@@ -100,11 +101,17 @@ export function GymDetailPage() {
 
   const address = getCenterAddress(center);
   const industryLabel = formatCenterIndustry(center.industry);
+  const externalLinks = [
+    { href: center.homepage_url, label: "홈페이지" },
+    { href: center.instagram_url, label: "인스타그램" },
+    { href: center.youtube_url, label: "유튜브" }
+  ].filter((item) => item.href);
   const centerGalleryImages = center.media
     .filter((item) => item.purpose === "gallery")
     .sort((left, right) => left.sort_order - right.sort_order)
     .map((item) => ({ id: item.id, url: getMediaDisplayUrl(item) }))
-    .filter((item) => item.url);
+    .filter((item) => item.url)
+    .slice(0, CENTER_GALLERY_MAX_IMAGES);
 
   return (
     <>
@@ -129,79 +136,69 @@ export function GymDetailPage() {
               <p>{[industryLabel, center.operation_type].filter(Boolean).join(" · ")}</p>
             </div>
             <p className="mt-5 leading-8 text-muted">{center.introduction || "센터 소개가 아직 등록되지 않았습니다."}</p>
+            {externalLinks.length > 0 ? (
+              <div className="mt-5 flex flex-wrap gap-3">
+                {externalLinks.map((link) => (
+                  <a
+                    className="border-b border-line pb-1 text-xs font-black text-muted transition hover:border-ink hover:text-ink"
+                    href={link.href ?? ""}
+                    key={link.label}
+                    rel="noreferrer"
+                    target="_blank"
+                  >
+                    {link.label}
+                  </a>
+                ))}
+              </div>
+            ) : null}
           </div>
         </Container>
       </section>
 
-      <Container className="detail-grid grid gap-6 py-8">
-        <div className="space-y-6">
-          {centerGalleryImages.length > 0 ? (
-            <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
-              <h2 className="text-xl font-black text-ink">센터 사진</h2>
-              <div className="mt-5 grid gap-3 md:grid-cols-2">
-                {centerGalleryImages.map((image) => (
-                  <img
-                    alt={`${center.name} 등록 사진`}
-                    className="h-56 w-full rounded-md bg-paper object-contain"
-                    key={image.id}
-                    src={image.url}
-                  />
-                ))}
-              </div>
-            </section>
-          ) : null}
-
+      <Container className="space-y-6 py-8">
+        {centerGalleryImages.length > 0 ? (
           <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
-            <div className="flex flex-wrap items-center justify-between gap-3">
-              <h2 className="text-xl font-black text-ink">이 업장의 구인 연결</h2>
-              <span className="text-xs font-black text-muted">{hiringJobs.length}건</span>
-            </div>
-            <div className="mt-4 space-y-3">
-              {hiringJobs.length > 0 ? (
-                hiringJobs.map((job) => (
-                  <Link
-                    className="block rounded-md border border-line bg-paper p-4 transition hover:border-green hover:bg-white"
-                    href={`/jobs/hiring/${job.id}`}
-                    key={job.id}
-                  >
-                    <p className="font-black text-ink">{job.title}</p>
-                    <p className="mt-2 text-sm font-bold text-muted">
-                      {job.employmentType} · {job.schedule} · {job.status}
-                    </p>
-                  </Link>
-                ))
-              ) : (
-                <p className="rounded-md border border-line bg-paper p-4 text-sm font-bold text-muted">
-                  현재 이 센터에 연결된 구인글이 없습니다.
-                </p>
-              )}
+            <h2 className="text-xl font-black text-ink">센터 사진</h2>
+            <div className="mt-5 grid gap-3 md:grid-cols-2">
+              {centerGalleryImages.map((image) => (
+                <img
+                  alt={`${center.name} 등록 사진`}
+                  className="h-56 w-full rounded-md bg-paper object-contain"
+                  key={image.id}
+                  src={image.url}
+                />
+              ))}
             </div>
           </section>
-        </div>
+        ) : null}
 
-        <aside className="space-y-5">
-          <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
-            <h2 className="text-xl font-black text-ink">외부 채널</h2>
-            <div className="mt-4 space-y-2">
-              <ExternalLink href={center.homepage_url} label="홈페이지" />
-              <ExternalLink href={center.instagram_url} label="인스타그램" />
-              <ExternalLink href={center.youtube_url} label="유튜브" />
-            </div>
-          </section>
-        </aside>
+        <section className="rounded-lg border border-line bg-white p-5 shadow-sm">
+          <div className="flex flex-wrap items-center justify-between gap-3">
+            <h2 className="text-xl font-black text-ink">이 업장의 구인 연결</h2>
+            <span className="text-xs font-black text-muted">{hiringJobs.length}건</span>
+          </div>
+          <div className="mt-4 space-y-3">
+            {hiringJobs.length > 0 ? (
+              hiringJobs.map((job) => (
+                <Link
+                  className="block rounded-md border border-line bg-paper p-4 transition hover:border-green hover:bg-white"
+                  href={`/jobs/hiring/${job.id}`}
+                  key={job.id}
+                >
+                  <p className="font-black text-ink">{job.title}</p>
+                  <p className="mt-2 text-sm font-bold text-muted">
+                    {job.employmentType} · {job.schedule} · {job.status}
+                  </p>
+                </Link>
+              ))
+            ) : (
+              <p className="rounded-md border border-line bg-paper p-4 text-sm font-bold text-muted">
+                현재 이 센터에 연결된 구인글이 없습니다.
+              </p>
+            )}
+          </div>
+        </section>
       </Container>
     </>
-  );
-}
-
-function ExternalLink({ href, label }: { href: string | null; label: string }) {
-  if (!href) {
-    return <p className="text-sm font-bold text-muted">{label} 미등록</p>;
-  }
-
-  return (
-    <a className="block text-sm font-black text-ink underline" href={href} rel="noreferrer" target="_blank">
-      {label}
-    </a>
   );
 }

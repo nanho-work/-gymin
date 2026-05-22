@@ -314,6 +314,8 @@ S3 업로드 파일 메타데이터다. 한 테이블에서 여러 도메인에 
 | updated_at | timestamptz | 수정일 |
 | deleted_at | timestamptz nullable | 삭제일 |
 
+사용자가 이미지 삭제를 확정하면 media row와 변환본 row는 hard delete한다. `deleted_at`은 과거 soft-delete 호환과 단일 대표 이미지 교체 처리에 남아 있다.
+
 인덱스:
 
 - `(entity_type, entity_id, purpose)`

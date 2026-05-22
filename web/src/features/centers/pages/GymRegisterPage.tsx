@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { ChangeEvent, FormEvent } from "react";
 
+import { CENTER_GALLERY_MAX_IMAGES } from "@/features/centers/constants";
 import { uploadImageToS3 } from "@/features/uploads/api/uploadImageToS3";
 import { useDeferredImageList, useDeferredSingleImage, type DeferredImage } from "@/features/uploads/hooks/useDeferredImages";
 import { defaultImageAccept } from "@/features/uploads/utils/imageFiles";
@@ -70,7 +71,7 @@ export function GymRegisterPage() {
     clearImages: clearGalleryImages,
     images: galleryImages,
     removeImage: removeSelectedGalleryImage
-  } = useDeferredImageList({ maxImages: 4 });
+  } = useDeferredImageList({ maxImages: CENTER_GALLERY_MAX_IMAGES });
 
   useEffect(() => {
     let isMounted = true;
@@ -147,6 +148,9 @@ export function GymRegisterPage() {
   );
   const canSave = readinessChecks.every((check) => check.ready);
   const representativeImageUrl = getMediaDisplayUrl(existingRepresentativeImage);
+  const galleryImageCount = existingGalleryImages.length + galleryImages.length;
+  const remainingGalleryImageCount = Math.max(CENTER_GALLERY_MAX_IMAGES - galleryImageCount, 0);
+  const canSelectGalleryImages = isEditing && remainingGalleryImageCount > 0;
 
   const handleFieldChange =
     (field: keyof Omit<CenterFormState, "sido" | "sigungu">) =>
@@ -186,10 +190,20 @@ export function GymRegisterPage() {
       return;
     }
 
-    const result = addGalleryImages(files);
+    if (remainingGalleryImageCount === 0) {
+      setNotice(`센터 사진은 최대 ${CENTER_GALLERY_MAX_IMAGES}장까지 등록할 수 있습니다.`);
+      return;
+    }
+
+    const limitedFiles = files.slice(0, remainingGalleryImageCount);
+    const result = addGalleryImages(limitedFiles);
     if (result.ok) {
       setSaveStatus("idle");
-      setNotice(result.message || "센터 사진이 선택되었습니다. 저장 버튼을 누르면 업로드됩니다.");
+      setNotice(
+        files.length > limitedFiles.length
+          ? `센터 사진은 최대 ${CENTER_GALLERY_MAX_IMAGES}장까지 등록할 수 있습니다.`
+          : result.message || "센터 사진이 선택되었습니다. 저장 버튼을 누르면 업로드됩니다."
+      );
       return;
     }
 
@@ -343,11 +357,12 @@ export function GymRegisterPage() {
               )}
               {isEditing && (representativeImage || existingRepresentativeImage) ? (
                 <button
-                  className="absolute right-3 top-3 rounded-md bg-ink/85 px-3 py-2 text-xs font-black text-white"
+                  aria-label={representativeImage ? "선택한 대표 사진 취소" : "대표 사진 삭제"}
+                  className="absolute right-3 top-3 grid h-8 w-8 place-items-center rounded-md bg-ink/85 text-sm font-black text-white"
                   onClick={removeRepresentativeImage}
                   type="button"
                 >
-                  {representativeImage ? "취소" : "삭제"}
+                  X
                 </button>
               ) : null}
             </div>
@@ -377,10 +392,10 @@ export function GymRegisterPage() {
             {galleryImages.map((image) => (
               <PendingImageCard image={image} key={image.id} onRemove={removePendingGalleryImage} />
             ))}
-            {isEditing ? (
+            {canSelectGalleryImages ? (
               <label className="grid min-h-40 cursor-pointer place-items-center border border-dashed border-line bg-white p-4 text-center transition hover:border-green">
                 <span className="text-sm font-black text-ink">사진 선택</span>
-                <span className="mt-2 block text-xs font-bold text-muted">최대 4장 선택 가능</span>
+                <span className="mt-2 block text-xs font-bold text-muted">최대 {CENTER_GALLERY_MAX_IMAGES}장 선택 가능</span>
                 <input
                   accept={defaultImageAccept}
                   className="sr-only"
@@ -579,13 +594,14 @@ function SelectField({
 function PendingImageCard({ image, onRemove }: { image: DeferredImage; onRemove: (imageId: string) => void }) {
   return (
     <div className="relative min-h-40 overflow-hidden border border-line bg-paper">
-      <img alt="선택한 센터 사진" className="h-40 w-full object-cover" src={image.previewUrl} />
+      <img alt="선택한 센터 사진" className="h-40 w-full object-contain" src={image.previewUrl} />
       <button
-        className="absolute right-2 top-2 rounded-md bg-ink/85 px-2 py-1 text-xs font-black text-white"
+        aria-label="선택한 센터 사진 취소"
+        className="absolute right-2 top-2 grid h-8 w-8 place-items-center rounded-md bg-ink/85 text-sm font-black text-white"
         onClick={() => onRemove(image.id)}
         type="button"
       >
-        취소
+        X
       </button>
     </div>
   );
@@ -605,17 +621,18 @@ function ImagePreviewCard({
   return (
     <div className="relative min-h-40 overflow-hidden border border-line bg-paper">
       {imageUrl ? (
-        <img alt="등록된 센터 사진" className="h-40 w-full object-cover" src={imageUrl} />
+        <img alt="등록된 센터 사진" className="h-40 w-full object-contain" src={imageUrl} />
       ) : (
         <div className="grid h-40 place-items-center text-sm font-black text-muted">이미지 준비 중</div>
       )}
       {isEditing ? (
         <button
-          className="absolute right-2 top-2 rounded-md bg-ink/85 px-2 py-1 text-xs font-black text-white"
+          aria-label="등록된 센터 사진 삭제"
+          className="absolute right-2 top-2 grid h-8 w-8 place-items-center rounded-md bg-ink/85 text-sm font-black text-white"
           onClick={() => onRemove(image.id)}
           type="button"
         >
-          삭제
+          X
         </button>
       ) : null}
     </div>

@@ -8,7 +8,7 @@ import boto3
 from botocore.exceptions import BotoCoreError, ClientError, NoCredentialsError
 from fastapi import HTTPException, status
 from PIL import Image, ImageOps, UnidentifiedImageError
-from sqlalchemy import update
+from sqlalchemy import func, select, update
 from sqlalchemy.orm import Session
 
 from app.core.config import get_settings
@@ -28,6 +28,7 @@ VARIANT_CONTENT_TYPE = "image/webp"
 MAX_SERVER_PROCESSING_BYTES = 12 * 1024 * 1024
 SINGLE_PRIMARY_PURPOSES = {"profile", "representative"}
 VIEW_URL_EXPIRES_SECONDS = 300
+CENTER_GALLERY_MAX_IMAGES = 4
 
 
 @dataclass(frozen=True)
@@ -118,6 +119,27 @@ def ensure_owned_object_key(payload: CompleteUploadRequest, owner_user_id: uuid.
         raise HTTPException(status_code=status.HTTP_403_FORBIDDEN, detail="업로드 파일 소유자를 확인할 수 없습니다.")
 
 
+def ensure_upload_count_limit(db: Session, payload: CompleteUploadRequest, owner_user_id: uuid.UUID) -> None:
+    if payload.entity_type != "center" or payload.purpose != "gallery":
+        return
+
+    media_count = db.scalar(
+        select(func.count(MediaFile.id)).where(
+            MediaFile.owner_user_id == owner_user_id,
+            MediaFile.entity_type == payload.entity_type,
+            MediaFile.entity_id == payload.entity_id,
+            MediaFile.purpose == payload.purpose,
+            MediaFile.deleted_at.is_(None)
+        )
+    ) or 0
+
+    if media_count >= CENTER_GALLERY_MAX_IMAGES:
+        raise HTTPException(
+            status_code=status.HTTP_400_BAD_REQUEST,
+            detail=f"센터 사진은 최대 {CENTER_GALLERY_MAX_IMAGES}장까지 등록할 수 있습니다."
+        )
+
+
 def create_presigned_upload_url(payload: PresignedUploadRequest, owner_user_id: uuid.UUID) -> PresignedUploadResponse:
     settings = get_settings()
     object_key = build_object_key(payload, owner_user_id)
@@ -206,11 +228,7 @@ def delete_media_file(db: Session, media_file: MediaFile) -> None:
     settings = get_settings()
     object_keys = {media_file.object_key, *(variant.object_key for variant in media_file.variants)}
 
-    db.execute(
-        update(MediaFile)
-        .where(MediaFile.id == media_file.id, MediaFile.deleted_at.is_(None))
-        .values(status="deleted", deleted_at=datetime.now(timezone.utc))
-    )
+    db.delete(media_file)
     db.commit()
 
     s3_client = boto3.client("s3", region_name=settings.aws_region)
@@ -228,6 +246,7 @@ def complete_uploaded_image(
 ) -> CompleteUploadResponse:
     settings = get_settings()
     ensure_owned_object_key(payload, owner_user_id)
+    ensure_upload_count_limit(db, payload, owner_user_id)
     s3_client = boto3.client("s3", region_name=settings.aws_region)
 
     try:

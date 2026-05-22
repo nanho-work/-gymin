@@ -26,7 +26,12 @@ export type CenterRead = {
   updated_at: string;
 };
 
-export type CenterCreate = Omit<CenterRead, "id" | "verification_status" | "status" | "created_at" | "updated_at">;
+export type CenterCreate = Omit<
+  CenterRead,
+  "id" | "business_profile_id" | "verification_status" | "status" | "created_at" | "updated_at"
+>;
+
+export type CenterUpdate = CenterCreate;
 
 export type JobPostRead = {
   id: string;

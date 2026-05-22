@@ -4,8 +4,7 @@ from datetime import datetime
 from pydantic import BaseModel
 
 
-class CenterCreate(BaseModel):
-    business_profile_id: uuid.UUID
+class CenterWrite(BaseModel):
     name: str
     sido: str
     sigungu: str
@@ -18,8 +17,17 @@ class CenterCreate(BaseModel):
     youtube_url: str | None = None
 
 
-class CenterRead(CenterCreate):
+class CenterCreate(CenterWrite):
+    pass
+
+
+class CenterUpdate(CenterWrite):
+    pass
+
+
+class CenterRead(CenterWrite):
     id: uuid.UUID
+    business_profile_id: uuid.UUID
     verification_status: str
     status: str
     created_at: datetime

@@ -7,8 +7,15 @@ from app.common.pagination import Page, PaginationParams, get_pagination_params
 from app.db.session import get_db
 from app.features.auth.dependencies import CurrentUser, require_business
 from app.features.business.service import ensure_business_profile
-from app.features.centers.schema import CenterCreate, CenterRead
-from app.features.centers.service import create_center, get_center, list_centers, list_my_centers
+from app.features.centers.schema import CenterCreate, CenterRead, CenterUpdate
+from app.features.centers.service import (
+    create_center,
+    get_center,
+    get_my_center,
+    list_centers,
+    list_my_centers,
+    update_center
+)
 
 
 router = APIRouter(prefix="/centers", tags=["centers"])
@@ -46,5 +53,18 @@ def create_center_endpoint(
     current_user: CurrentUser = Depends(require_business)
 ) -> CenterRead:
     profile = ensure_business_profile(db, current_user.id, owner_name=current_user.display_name)
-    payload = payload.model_copy(update={"business_profile_id": profile.id})
-    return create_center(db, payload)
+    return create_center(db, payload, profile.id)
+
+
+@router.put("/{center_id}", response_model=CenterRead)
+def update_center_endpoint(
+    center_id: uuid.UUID,
+    payload: CenterUpdate,
+    db: Session = Depends(get_db),
+    current_user: CurrentUser = Depends(require_business)
+) -> CenterRead:
+    center = get_my_center(db, center_id, current_user.id)
+    if center is None:
+        raise HTTPException(status_code=404, detail="센터를 찾을 수 없습니다.")
+
+    return update_center(db, center, payload)

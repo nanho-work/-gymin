@@ -173,7 +173,7 @@ export function TrainerHomePage() {
               <Link
                 className="grid gap-4 py-5 transition hover:bg-paper md:grid-cols-[minmax(0,1fr)_auto]"
                 key={job.id}
-                href={job.gymId ? `/gyms/${job.gymId}` : "/jobs/hiring"}
+                href={`/jobs/hiring/${job.id}`}
               >
                 <div>
                   <p className="font-black text-ink">{job.title}</p>
@@ -204,7 +204,7 @@ export function TrainerHomePage() {
         <div className="mt-6 divide-y divide-line border-y border-line">
           {myApplications.length > 0 ? (
             myApplications.map((application) => (
-              <div className="py-5" key={application.id}>
+              <Link className="block py-5 transition hover:bg-paper" href={`/jobs/hiring/${application.job.id}`} key={application.id}>
                 <div className="flex flex-wrap items-center justify-between gap-3">
                   <p className="font-black text-ink">{application.job.title}</p>
                   <span className="text-xs font-black text-muted">{application.status}</span>
@@ -213,7 +213,7 @@ export function TrainerHomePage() {
                   {application.job.authorName} · 지원일 {application.appliedAt}
                   {application.reviewedAt ? ` · 확인 ${application.reviewedAt}` : ""}
                 </p>
-              </div>
+              </Link>
             ))
           ) : (
             <p className="py-8 text-sm font-bold leading-6 text-muted">아직 지원한 구인글이 없습니다.</p>

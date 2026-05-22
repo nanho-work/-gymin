@@ -155,12 +155,16 @@ export function GymDetailPage() {
             <div className="mt-4 space-y-3">
               {hiringJobs.length > 0 ? (
                 hiringJobs.map((job) => (
-                  <div className="rounded-md border border-line bg-paper p-4" key={job.id}>
+                  <Link
+                    className="block rounded-md border border-line bg-paper p-4 transition hover:border-green hover:bg-white"
+                    href={`/jobs/hiring/${job.id}`}
+                    key={job.id}
+                  >
                     <p className="font-black text-ink">{job.title}</p>
                     <p className="mt-2 text-sm font-bold text-muted">
                       {job.employmentType} · {job.schedule} · {job.status}
                     </p>
-                  </div>
+                  </Link>
                 ))
               ) : (
                 <p className="rounded-md border border-line bg-paper p-4 text-sm font-bold text-muted">

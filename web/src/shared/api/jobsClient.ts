@@ -3,6 +3,14 @@ import type { JobPostCreate, JobPostRead, OwnerJobPostRead } from "@/shared/api/
 import type { Page } from "@/shared/api/types";
 import type { JobPost } from "@/shared/types/domain";
 import { getCenterArea } from "@/shared/utils/center";
+import {
+  formatEmploymentType,
+  formatInsuranceType,
+  formatJobRole,
+  formatJobStatus,
+  formatMemberHandover,
+  formatSalesPressure
+} from "@/shared/utils/job";
 
 export function listJobPosts(params: { page?: number; size?: number } = {}) {
   return apiGet<Page<JobPostRead>>("/jobs", params);
@@ -25,7 +33,12 @@ export function closeJobPost(jobId: string) {
 }
 
 export function toDomainJobPost(job: JobPostRead): JobPost {
-  const tags = [job.job_role, job.sales_pressure, job.member_handover, job.insurance_type].filter(Boolean) as string[];
+  const tags = [
+    formatJobRole(job.job_role),
+    job.sales_pressure ? formatSalesPressure(job.sales_pressure) : "",
+    job.member_handover ? formatMemberHandover(job.member_handover) : "",
+    job.insurance_type ? `4대보험 ${formatInsuranceType(job.insurance_type)}` : ""
+  ].filter(Boolean);
   const schedule = [job.work_days, job.work_hours].filter(Boolean).join(" · ") || "협의";
   const center = job.center;
 
@@ -36,13 +49,13 @@ export function toDomainJobPost(job: JobPostRead): JobPost {
     title: job.title,
     authorName: center?.name ?? "센터 정보 없음",
     area: center ? getCenterArea(center) : "지역 정보 없음",
-    employmentType: job.employment_type,
+    employmentType: formatEmploymentType(job.employment_type),
     compensation: job.base_pay || job.incentive || "협의",
     schedule,
     postedAt: formatDate(job.published_at ?? job.created_at),
     tags,
     summary: job.description || job.support_detail || "상세 내용은 구인글에서 확인해 주세요.",
-    status: job.status === "open" ? "지원 가능" : "마감"
+    status: formatJobStatus(job.status)
   };
 }
 

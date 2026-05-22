@@ -201,7 +201,7 @@ function HomeRail({
 }
 
 function HomePostCard({ item, type }: { item: JobPost; type: "hiring" }) {
-  const detailTo = item.gymId ? `/gyms/${item.gymId}` : "/jobs/hiring";
+  const detailTo = `/jobs/hiring/${item.id}`;
   const meta = `${item.area} · ${item.employmentType}`;
 
   return (

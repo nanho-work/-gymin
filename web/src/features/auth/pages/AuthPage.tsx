@@ -179,7 +179,12 @@ function isTrainerPath(pathname: string) {
 }
 
 function isPublicPath(pathname: string) {
-  return pathname === "/" || pathname === "/jobs/hiring" || pathname.startsWith("/gyms/");
+  return (
+    pathname === "/" ||
+    pathname === "/jobs/hiring" ||
+    (pathname.startsWith("/jobs/hiring/") && pathname !== "/jobs/hiring/new") ||
+    pathname.startsWith("/gyms/")
+  );
 }
 
 function isLoginCancelledError(error: unknown) {

@@ -70,6 +70,7 @@ npm run build
 - 센터 등록: `/gyms/new`
 - 센터 상세보기: `/gyms/[gymId]`
 - 구인글 페이지: `/jobs/hiring`
+- 구인글 상세보기: `/jobs/hiring/[jobId]`
 - 구인글 등록: `/jobs/hiring/new`
 - 사업장 관리: `/owner`
 - 공고 지원자 목록: `/owner/jobs/[jobId]/applicants`

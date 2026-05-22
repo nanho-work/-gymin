@@ -38,3 +38,4 @@ def database_health_check() -> dict[str, str]:
     with engine.connect() as connection:
         connection.execute(text("SELECT 1"))
     return {"status": "ok"}
+

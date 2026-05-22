@@ -62,6 +62,9 @@ S3 버킷: gymin-media-prod
 현재 퍼블릭 IP는 탄력적 IP가 아니라 자동 할당 IP다.
 인스턴스를 중지했다가 다시 시작하면 IP가 바뀔 수 있으므로, 운영 도메인을 안정적으로 유지하려면 나중에 Elastic IP 연결을 검토한다.
 
+2026-05-22 AWS 공식 가격표 기준 서울 리전 `t3.micro` Linux On-Demand 단가는 `0.013 USD / hour`다.
+계속 실행하면 730시간 기준 약 `9.49 USD/month` 수준이며, EBS 스토리지 비용과 별도로 계산된다.
+
 현재 비용 절감 기준으로 루트 볼륨은 작은 용량으로 운영한다.
 2026-05-22 EC2 스토리지 탭과 장애 확인 당시 EC2 디스크 상태는 아래와 같았다.
 
@@ -69,11 +72,13 @@ S3 버킷: gymin-media-prod
 루트 디바이스 이름: /dev/xvda
 루트 디바이스 유형: EBS
 루트 EBS 볼륨 ID: vol-0d9988caa318ced2f
-루트 EBS 볼륨 크기: 8 GiB
+루트 EBS 볼륨 크기: 20 GiB
+루트 EBS 볼륨 유형: gp3
+Free Tier 적용: 아님
 EBS 최적화: 활성
 암호화: 아니요
 루트 파일시스템: /dev/nvme0n1p1
-운영체제에서 보이는 루트 볼륨 크기: 8.0GB
+기존 운영체제에서 보이던 루트 볼륨 크기: 8.0GB
 루트 사용량: 7.4GB / 8.0GB, 93%
 /var/lib/docker 사용량: 6.4GB
 /tmp 사용량: 205MB
@@ -86,6 +91,28 @@ Docker build cache reclaimable: 1.531GB
 
 루트 볼륨을 늘리면 EBS provisioned storage 기준으로 추가 과금될 수 있다.
 정확한 단가는 볼륨 타입과 AWS 계정의 Free Tier/크레딧 상태에 따라 달라진다.
+2026-05-22 AWS 공식 가격표 기준 서울 리전 gp3 단가는 `0.0912 USD / GB-month`다.
+현재 계정은 Free Tier가 아니므로 8 GiB는 약 `0.73 USD/month`, 16 GiB는 약 `1.46 USD/month`, 20 GiB는 약 `1.82 USD/month` 수준이다.
+8 GiB에서 20 GiB로 늘리면 EBS 스토리지 차액은 약 `1.09 USD/month`다.
+세금, 환율, 스냅샷, 추가 IOPS/처리량, 데이터 전송 비용은 별도다.
+gp3 기본 성능 범위 안에서는 3,000 IOPS와 125 MB/s 처리량이 포함된다.
+
+AWS 콘솔에서 EBS 볼륨 크기를 늘린 뒤 EC2 운영체제 안에서도 파티션과 파일시스템을 확장해야 한다.
+Amazon Linux 2023 루트 볼륨은 보통 `xfs`를 사용하므로 아래 순서로 확인한다.
+
+```bash
+lsblk
+df -hT /
+sudo growpart /dev/nvme0n1 1
+sudo xfs_growfs -d /
+df -h /
+```
+
+만약 `df -hT /`에서 파일시스템 타입이 `ext4`로 나오면 `sudo xfs_growfs -d /` 대신 아래를 실행한다.
+
+```bash
+sudo resize2fs /dev/nvme0n1p1
+```
 
 볼륨 타입과 비용을 확인할 때는 아래 위치를 본다.
 

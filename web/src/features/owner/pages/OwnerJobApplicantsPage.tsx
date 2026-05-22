@@ -6,7 +6,7 @@ import { useEffect, useMemo, useState } from "react";
 
 import { Badge } from "@/shared/components/ui/Badge";
 import { Container } from "@/shared/components/ui/Container";
-import { listJobApplications } from "@/shared/api/applicationsClient";
+import { listJobApplications, markJobApplicationViewed } from "@/shared/api/applicationsClient";
 import { getJobPost, toDomainJobPost } from "@/shared/api/jobsClient";
 import type { JobApplicationWithTrainerRead } from "@/shared/api/serverTypes";
 import { toDomainTrainer } from "@/shared/api/trainersClient";
@@ -16,7 +16,7 @@ import type { JobPost, Trainer } from "@/shared/types/domain";
 type ApplicantItem = {
   application: JobApplicationWithTrainerRead;
   appliedAt: string;
-  statusLabel: string;
+  reviewedAt: string;
   trainer: Trainer;
 };
 
@@ -25,6 +25,7 @@ export function OwnerJobApplicantsPage() {
   const [job, setJob] = useState<JobPost | null>(null);
   const [applicants, setApplicants] = useState<ApplicantItem[]>([]);
   const [selectedApplicantId, setSelectedApplicantId] = useState<string | null>(null);
+  const [visibleContactIds, setVisibleContactIds] = useState<Set<string>>(new Set());
   const [status, setStatus] = useState<"loading" | "ready" | "missing" | "error">("loading");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -42,7 +43,7 @@ export function OwnerJobApplicantsPage() {
         const nextApplicants = applicationsPage.items.map((application) => ({
           application,
           appliedAt: formatDate(application.applied_at),
-          statusLabel: formatApplicationStatus(application.status),
+          reviewedAt: application.reviewed_at ? formatDateTime(application.reviewed_at) : "",
           trainer: toDomainTrainer(application.trainer_profile)
         }));
 
@@ -69,6 +70,37 @@ export function OwnerJobApplicantsPage() {
     () => applicants.find((item) => item.application.id === selectedApplicantId) ?? applicants[0],
     [applicants, selectedApplicantId]
   );
+
+  const markApplicantViewed = async (applicationId: string) => {
+    const updatedApplication = await markJobApplicationViewed(applicationId);
+    setApplicants((current) =>
+      current.map((item) =>
+        item.application.id === applicationId
+          ? {
+              ...item,
+              application: {
+                ...item.application,
+                reviewed_at: updatedApplication.reviewed_at
+              },
+              reviewedAt: updatedApplication.reviewed_at ? formatDateTime(updatedApplication.reviewed_at) : item.reviewedAt
+            }
+          : item
+      )
+    );
+  };
+
+  const revealContact = async (applicationId: string) => {
+    setVisibleContactIds((current) => new Set(current).add(applicationId));
+    try {
+      await markApplicantViewed(applicationId);
+    } catch {
+      // 연락처 확인 자체는 막지 않고, 확인 신호 저장 실패만 조용히 넘긴다.
+    }
+  };
+
+  const markPublicProfileClick = (applicationId: string) => {
+    void markApplicantViewed(applicationId);
+  };
 
   if (status === "loading") {
     return (
@@ -144,7 +176,9 @@ export function OwnerJobApplicantsPage() {
                   type="button"
                 >
                   <span className="block text-sm font-black text-ink">{item.trainer.name}</span>
-                  <span className="mt-1 block text-xs font-bold text-muted">{item.statusLabel}</span>
+                  <span className="mt-1 block text-xs font-bold text-muted">
+                    {item.reviewedAt ? "확인함" : "새 지원"}
+                  </span>
                   <span className="mt-1 block text-xs font-bold text-muted">{item.appliedAt}</span>
                 </button>
               ))}
@@ -153,7 +187,12 @@ export function OwnerJobApplicantsPage() {
 
           <main className="py-6 lg:pl-6">
             {selectedApplicant ? (
-              <ApplicantDetail item={selectedApplicant} />
+              <ApplicantDetail
+                isContactVisible={visibleContactIds.has(selectedApplicant.application.id)}
+                item={selectedApplicant}
+                onPublicProfileClick={markPublicProfileClick}
+                onRevealContact={revealContact}
+              />
             ) : (
               <div className="grid min-h-80 place-items-center border border-line p-8 text-center">
                 <div>
@@ -169,8 +208,18 @@ export function OwnerJobApplicantsPage() {
   );
 }
 
-function ApplicantDetail({ item }: { item: ApplicantItem }) {
-  const { application, appliedAt, statusLabel, trainer } = item;
+function ApplicantDetail({
+  isContactVisible,
+  item,
+  onPublicProfileClick,
+  onRevealContact
+}: {
+  isContactVisible: boolean;
+  item: ApplicantItem;
+  onPublicProfileClick: (applicationId: string) => void;
+  onRevealContact: (applicationId: string) => void;
+}) {
+  const { application, appliedAt, reviewedAt, trainer } = item;
   const profileImages = trainer.profileImage ? [{ label: "프로필 사진", url: trainer.profileImage }] : [];
   const mediaImages = [...profileImages, ...trainer.mediaImages];
 
@@ -191,14 +240,14 @@ function ApplicantDetail({ item }: { item: ApplicantItem }) {
               <Badge tone={trainer.verifiedProfile ? "green" : "amber"}>
                 {trainer.verifiedProfile ? "지원 가능 프로필" : "작성 중 프로필"}
               </Badge>
-              <span className="text-xs font-black text-muted">{statusLabel}</span>
+              <span className="text-xs font-black text-muted">{reviewedAt ? `확인 ${reviewedAt}` : "새 지원"}</span>
             </div>
             <p className="mt-3 text-lg font-black text-ink">{trainer.headline}</p>
             <div className="mt-5 grid gap-3 md:grid-cols-2">
               <ProfileField label="나이" value={trainer.age ? `${trainer.age}세` : "미입력"} />
               <ProfileField label="생년월일" value={trainer.birthDate || "미입력"} />
               <ProfileField label="성별" value={trainer.gender || "미입력"} />
-              <ProfileField label="연락처" value={trainer.contact || "미입력"} />
+              <ProfileField label="연락처" value={isContactVisible ? trainer.contact || "미입력" : "확인 버튼을 눌러 표시"} />
               <ProfileField label="거주지역" value={trainer.residenceRegion || "미입력"} />
               <ProfileField label="희망 활동 지역" value={trainer.area} />
               <ProfileField label="경력" value={`${trainer.experienceYears}년차`} />
@@ -206,7 +255,18 @@ function ApplicantDetail({ item }: { item: ApplicantItem }) {
               <ProfileField label="가능 시간" value={trainer.availability} />
             </div>
             <div className="mt-5 flex flex-wrap gap-2">
-              <Link className="border border-line bg-white px-3 py-2 text-xs font-black text-ink" href={`/trainers/${trainer.id}`}>
+              <button
+                className="border border-ink bg-ink px-3 py-2 text-xs font-black text-white"
+                onClick={() => onRevealContact(application.id)}
+                type="button"
+              >
+                전화번호 확인
+              </button>
+              <Link
+                className="border border-line bg-white px-3 py-2 text-xs font-black text-ink"
+                href={`/trainers/${trainer.id}`}
+                onClick={() => onPublicProfileClick(application.id)}
+              >
                 공개 프로필 보기
               </Link>
             </div>
@@ -371,18 +431,6 @@ function MediaPanel({
   );
 }
 
-function formatApplicationStatus(status: string) {
-  const statusLabel: Record<string, string> = {
-    submitted: "지원 완료",
-    reviewing: "검토 중",
-    accepted: "합격",
-    rejected: "불합격",
-    cancelled: "취소"
-  };
-
-  return statusLabel[status] ?? status;
-}
-
 function formatDate(value: string) {
   const date = new Date(value);
 
@@ -394,5 +442,21 @@ function formatDate(value: string) {
     year: "numeric",
     month: "2-digit",
     day: "2-digit"
+  });
+}
+
+function formatDateTime(value: string) {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+
+  return date.toLocaleString("ko-KR", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit"
   });
 }

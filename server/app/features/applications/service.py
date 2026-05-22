@@ -17,8 +17,13 @@ from app.features.trainers.service import to_trainer_profile_read
 def list_applications_by_job(
     db: Session,
     job_post_id: uuid.UUID,
+    current_user: CurrentUser,
     params: PaginationParams
 ) -> Page:
+    job = crud.get_job_for_business(db, job_post_id, current_user.id)
+    if job is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="구인글을 찾을 수 없습니다.")
+
     page = crud.list_applications_by_job(db, job_post_id, params=params)
     return Page(
         items=[to_application_with_trainer_read(db, application) for application in page.items],
@@ -72,6 +77,18 @@ def create_application(
     return crud.create_application(db, payload, trainer.id)
 
 
+def mark_application_viewed(
+    db: Session,
+    application_id: uuid.UUID,
+    current_user: CurrentUser
+) -> JobApplication:
+    application = crud.get_application_for_business(db, application_id, current_user.id)
+    if application is None:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail="지원 정보를 찾을 수 없습니다.")
+
+    return crud.mark_application_viewed(db, application)
+
+
 def get_missing_application_fields(db: Session, trainer) -> list[str]:
     profile_media = list_entity_media(
         db,
@@ -102,5 +119,6 @@ def to_application_with_trainer_read(
         message=application.message,
         status=application.status,
         applied_at=application.applied_at,
+        reviewed_at=application.reviewed_at,
         trainer_profile=to_trainer_profile_read(db, application.trainer_profile)
     )

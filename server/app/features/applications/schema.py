@@ -19,6 +19,7 @@ class JobApplicationRead(BaseModel):
     message: str | None = None
     status: str
     applied_at: datetime
+    reviewed_at: datetime | None = None
 
     model_config = {"from_attributes": True}
 

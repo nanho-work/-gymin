@@ -159,6 +159,7 @@ export type JobApplicationRead = {
   message: string | null;
   status: string;
   applied_at: string;
+  reviewed_at: string | null;
 };
 
 export type JobApplicationCreate = {

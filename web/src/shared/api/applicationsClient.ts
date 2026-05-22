@@ -1,4 +1,4 @@
-import { apiGet, apiPost } from "@/shared/api/httpClient";
+import { apiGet, apiPatch, apiPost } from "@/shared/api/httpClient";
 import type {
   JobApplicationCreate,
   JobApplicationRead,
@@ -17,4 +17,8 @@ export function listMyJobApplications(params: { page?: number; size?: number } =
 
 export function createJobApplication(payload: JobApplicationCreate) {
   return apiPost<JobApplicationRead>("/applications", payload);
+}
+
+export function markJobApplicationViewed(applicationId: string) {
+  return apiPatch<JobApplicationRead>(`/applications/${applicationId}/viewed`);
 }

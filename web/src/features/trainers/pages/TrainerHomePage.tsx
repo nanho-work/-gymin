@@ -17,7 +17,7 @@ const latestJobs = jobs.slice(0, 3);
 export function TrainerHomePage() {
   useDocumentTitle("트레이너 홈");
   const [trainer, setTrainer] = useState<Trainer | null>(null);
-  const [myApplications, setMyApplications] = useState<Array<{ id: string; job: JobPost; status: string; appliedAt: string }>>([]);
+  const [myApplications, setMyApplications] = useState<Array<{ id: string; job: JobPost; status: string; appliedAt: string; reviewedAt: string }>>([]);
   const [status, setStatus] = useState<"loading" | "ready" | "missing" | "error">("loading");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -40,8 +40,9 @@ export function TrainerHomePage() {
           applicationsPage.items.map((application) => ({
             id: application.id,
             job: toDomainJobPost(application.job_post),
-            status: formatApplicationStatus(application.status),
-            appliedAt: formatDate(application.applied_at)
+            status: application.reviewed_at ? "사업장이 확인" : "지원 완료",
+            appliedAt: formatDate(application.applied_at),
+            reviewedAt: application.reviewed_at ? formatDateTime(application.reviewed_at) : ""
           }))
         );
         setStatus("ready");
@@ -210,6 +211,7 @@ export function TrainerHomePage() {
                 </div>
                 <p className="mt-2 text-sm font-bold text-muted">
                   {application.job.authorName} · 지원일 {application.appliedAt}
+                  {application.reviewedAt ? ` · 확인 ${application.reviewedAt}` : ""}
                 </p>
               </div>
             ))
@@ -220,18 +222,6 @@ export function TrainerHomePage() {
       </section>
     </Container>
   );
-}
-
-function formatApplicationStatus(status: string) {
-  const statusLabel: Record<string, string> = {
-    submitted: "지원 완료",
-    reviewing: "검토 중",
-    accepted: "합격",
-    rejected: "불합격",
-    cancelled: "취소"
-  };
-
-  return statusLabel[status] ?? status;
 }
 
 function formatDate(value: string) {
@@ -245,6 +235,22 @@ function formatDate(value: string) {
     year: "numeric",
     month: "2-digit",
     day: "2-digit"
+  });
+}
+
+function formatDateTime(value: string) {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+
+  return date.toLocaleString("ko-KR", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit",
+    hour: "2-digit",
+    minute: "2-digit"
   });
 }
 

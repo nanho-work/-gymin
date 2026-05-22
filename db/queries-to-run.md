@@ -80,6 +80,7 @@ db/migrations/0005_restore_trainer_profile_legacy_birth_columns.sql
 ### 8. 구인글 검색 인덱스 추가
 
 구인글 목록에서 지역, 업종, 제목, 센터명 서버 검색을 사용하려면 아래 파일의 쿼리를 추가로 실행한다.
+`gin_trgm_ops` 오류가 나면 `CREATE EXTENSION IF NOT EXISTS pg_trgm WITH SCHEMA public;` 문장이 같은 `gymin` DB에서 먼저 실행됐는지 확인한다.
 
 ```text
 db/migrations/0006_add_job_search_indexes.sql

@@ -1,6 +1,6 @@
 import { DashboardSidebar } from "@/shared/components/layout/DashboardSidebar";
 
-type DashboardRole = "owner" | "trainer";
+type DashboardRole = "trainer";
 
 export function DashboardLayout({
   children,

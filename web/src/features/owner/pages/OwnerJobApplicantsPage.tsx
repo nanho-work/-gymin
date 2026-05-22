@@ -125,7 +125,7 @@ export function OwnerJobApplicantsPage() {
         <h1 className="text-3xl font-black text-ink">구인글을 찾을 수 없습니다</h1>
         <p className="mt-3 max-w-2xl text-sm font-bold leading-6 text-muted">{errorMessage}</p>
         <Link className="mt-5 inline-block bg-ink px-4 py-3 text-sm font-black text-white" href="/owner">
-          사업장 관리로
+          센터관리로
         </Link>
       </Container>
     );
@@ -138,7 +138,7 @@ export function OwnerJobApplicantsPage() {
         <h1 className="mt-4 text-3xl font-black text-ink">지원자 목록을 불러오지 못했습니다</h1>
         <p className="mt-3 max-w-2xl text-sm font-bold leading-6 text-muted">{errorMessage}</p>
         <Link className="mt-5 inline-block bg-ink px-4 py-3 text-sm font-black text-white" href="/owner">
-          사업장 관리로
+          센터관리로
         </Link>
       </Container>
     );
@@ -160,8 +160,8 @@ export function OwnerJobApplicantsPage() {
               <Link className="border border-line bg-white px-4 py-2.5 text-sm font-black text-ink" href="/owner">
                 구인글 관리
               </Link>
-              <Link className="border border-ink bg-ink px-4 py-2.5 text-sm font-black text-white" href="/jobs/hiring/new">
-                공고 수정
+              <Link className="border border-ink bg-ink px-4 py-2.5 text-sm font-black text-white" href={`/jobs/hiring/${jobId}`}>
+                구인글 상세
               </Link>
             </div>
           </div>

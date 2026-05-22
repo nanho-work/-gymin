@@ -456,7 +456,7 @@ export function GymRegisterPage() {
           <p className="mt-3">센터를 저장하면 구인글 등록 시 이 센터 정보를 기준으로 공고와 지원자 관리가 연결됩니다.</p>
           <div className="mt-5 flex flex-wrap gap-2">
             <PrimaryLink to="/owner" variant="light">
-              사업장 관리
+              센터관리
             </PrimaryLink>
             <PrimaryLink to="/jobs/hiring/new" variant="light">
               구인글 등록

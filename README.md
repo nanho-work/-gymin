@@ -72,7 +72,7 @@ npm run build
 - 구인글 페이지: `/jobs/hiring`
 - 구인글 상세보기: `/jobs/hiring/[jobId]`
 - 구인글 등록: `/jobs/hiring/new`
-- 사업장 관리: `/owner`
+- 센터관리: `/owner`
 - 공고 지원자 목록: `/owner/jobs/[jobId]/applicants`
 - 내 활동 관리: `/trainer`
 - 트레이너 정보 등록: `/trainers/new`
@@ -84,7 +84,7 @@ npm run build
 web/
   app/
     layout.tsx               # 전역 HTML + 헤더/푸터 프레임
-    (owner)/layout.tsx       # 사업장 관리 영역 공통 사이드바
+    (owner)/layout.tsx       # 센터관리 영역 인증 보호
     (trainer)/layout.tsx     # 트레이너 영역 공통 사이드바
     **/page.tsx              # URL 라우트 진입점
   src/
@@ -92,7 +92,7 @@ web/
       auth/                  # 로그인/회원가입 화면
       centers/               # 센터 등록/상세 UI
       jobs/                  # 구인글 pages/components/hooks
-      owner/                 # 사업장 관리/지원자 관리 화면
+      owner/                 # 센터관리/지원자 관리 화면
       trainers/              # 내 활동 관리/등록/상세 화면
       uploads/               # S3 이미지 업로드 API와 저장 전 선택 훅
     shared/
@@ -120,4 +120,4 @@ db/
 docs/
 ```
 
-현재 로그인, 로그아웃, 홈 통계/최신 구인글, 이미지 업로드/삭제, 센터 등록/수정/상세, 구인글 목록/서버 검색/페이지네이션/등록/상세/요일 선택/본문 이미지 노출, 트레이너 프로필 등록/수정/입력값 정규화/내 프로필/상세 노출, 트레이너 구인글 지원/지원 현황, 사업장 관리, 지원자 목록/확인 신호는 FastAPI와 연결되어 있다. 회원가입 목업 화면 등 일부 미완성 흐름은 아직 `MockField`를 사용한다.
+현재 로그인, 로그아웃, 홈 통계/최신 구인글, 이미지 업로드/삭제, 센터 등록/수정/상세, 구인글 목록/서버 검색/페이지네이션/등록/상세/요일 선택/본문 이미지 노출, 트레이너 프로필 등록/수정/입력값 정규화/내 프로필/상세 노출, 트레이너 구인글 지원/지원 현황, 센터관리, 지원자 목록/확인 신호는 FastAPI와 연결되어 있다. 회원가입 목업 화면 등 일부 미완성 흐름은 아직 `MockField`를 사용한다.

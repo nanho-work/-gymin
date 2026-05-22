@@ -23,7 +23,7 @@ import { formatWorkDays } from "@/shared/utils/weekdays";
 type OwnerHomeStatus = "loading" | "ready" | "error";
 
 export function OwnerHomePage() {
-  useDocumentTitle("사업장 관리");
+  useDocumentTitle("센터관리");
   const [businessProfile, setBusinessProfile] = useState<BusinessProfileRead | null>(null);
   const [centers, setCenters] = useState<CenterRead[]>([]);
   const [jobs, setJobs] = useState<OwnerJobPostRead[]>([]);
@@ -125,8 +125,8 @@ export function OwnerHomePage() {
     return (
       <Container className="py-12">
         <section className="border-y border-line py-10">
-          <Badge tone="green">사업장 관리</Badge>
-          <h1 className="mt-4 text-3xl font-black tracking-tight text-ink">사업장 정보를 불러오는 중입니다</h1>
+          <Badge tone="green">센터관리</Badge>
+          <h1 className="mt-4 text-3xl font-black tracking-tight text-ink">센터 정보를 불러오는 중입니다</h1>
         </section>
       </Container>
     );
@@ -137,7 +137,7 @@ export function OwnerHomePage() {
       <Container className="py-12">
         <section className="border-y border-line py-10">
           <Badge tone="amber">확인 필요</Badge>
-          <h1 className="mt-4 text-3xl font-black tracking-tight text-ink">사업장 관리를 불러오지 못했습니다</h1>
+          <h1 className="mt-4 text-3xl font-black tracking-tight text-ink">센터관리를 불러오지 못했습니다</h1>
           <p className="mt-3 max-w-2xl leading-7 text-muted">{errorMessage || "잠시 후 다시 시도해 주세요."}</p>
         </section>
       </Container>
@@ -155,9 +155,6 @@ export function OwnerHomePage() {
           </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <PrimaryLink to="/gyms/new">센터 등록하기</PrimaryLink>
-            <PrimaryLink to="/jobs/hiring" variant="light">
-              공개 구인글 보기
-            </PrimaryLink>
           </div>
         </section>
         <section className="border-t border-line pt-5">
@@ -245,7 +242,12 @@ export function OwnerHomePage() {
                 <div className="grid gap-4 py-5 md:grid-cols-[minmax(0,1fr)_auto]" key={job.id}>
                   <div>
                     <div className="flex flex-wrap items-center gap-2">
-                      <p className="font-black text-ink">{job.title}</p>
+                      <Link
+                        className="font-black text-ink transition hover:text-forest"
+                        href={`/jobs/hiring/${job.id}`}
+                      >
+                        {job.title}
+                      </Link>
                       <Badge tone={job.status === "open" ? "green" : "neutral"}>{formatJobStatus(job.status)}</Badge>
                     </div>
                     <p className="mt-2 text-sm font-bold text-muted">

@@ -14,7 +14,7 @@ export function SiteHeader() {
   const [stats, setStats] = useState<PlatformStats | null>(null);
   const headerAction = pathname === "/login" ? { to: "/", label: "홈으로" } : { to: "/login", label: "로그인" };
   const dashboardHref = user?.role === "business" ? "/owner" : "/trainer";
-  const dashboardLabel = user?.role === "business" ? "사업장 관리" : "내 활동 관리";
+  const dashboardLabel = user?.role === "business" ? "센터관리" : "내 활동 관리";
 
   async function handleLogout() {
     try {

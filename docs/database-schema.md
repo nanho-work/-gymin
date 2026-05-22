@@ -135,7 +135,7 @@ media_files
 - `(sido, sigungu)`
 - `(industry)`
 - `(business_profile_id)`
-- `name gin_trgm_ops`
+- `name public.gin_trgm_ops`
 
 ## trainer_profiles
 
@@ -268,7 +268,7 @@ media_files
 - `(status, published_at desc)`
 - `(job_role)`
 - `(employment_type)`
-- `title gin_trgm_ops`
+- `title public.gin_trgm_ops`
 
 ## job_applications
 

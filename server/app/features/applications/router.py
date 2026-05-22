@@ -6,11 +6,20 @@ from sqlalchemy.orm import Session
 from app.common.pagination import Page, PaginationParams, get_pagination_params
 from app.db.session import get_db
 from app.features.auth.dependencies import CurrentUser, require_business, require_trainer
-from app.features.applications.schema import JobApplicationCreate, JobApplicationRead
-from app.features.applications.service import create_application, list_applications_by_job
+from app.features.applications.schema import JobApplicationCreate, JobApplicationRead, MyJobApplicationRead
+from app.features.applications.service import create_application, list_applications_by_job, list_my_applications
 
 
 router = APIRouter(prefix="/applications", tags=["applications"])
+
+
+@router.get("/me", response_model=Page[MyJobApplicationRead])
+def read_my_applications(
+    pagination: PaginationParams = Depends(get_pagination_params),
+    db: Session = Depends(get_db),
+    current_user: CurrentUser = Depends(require_trainer)
+) -> Page[MyJobApplicationRead]:
+    return list_my_applications(db, current_user, params=pagination)
 
 
 @router.get("/jobs/{job_post_id}", response_model=Page[JobApplicationRead])
@@ -27,6 +36,6 @@ def read_applications_by_job(
 def create_application_endpoint(
     payload: JobApplicationCreate,
     db: Session = Depends(get_db),
-    _current_user: CurrentUser = Depends(require_trainer)
+    current_user: CurrentUser = Depends(require_trainer)
 ) -> JobApplicationRead:
-    return create_application(db, payload)
+    return create_application(db, payload, current_user)

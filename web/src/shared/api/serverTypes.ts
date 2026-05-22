@@ -161,7 +161,14 @@ export type JobApplicationRead = {
   applied_at: string;
 };
 
-export type JobApplicationCreate = Omit<JobApplicationRead, "id" | "status" | "applied_at">;
+export type JobApplicationCreate = {
+  job_post_id: string;
+  message: string | null;
+};
+
+export type MyJobApplicationRead = JobApplicationRead & {
+  job_post: JobPostRead;
+};
 
 export type PresignedUploadRequest = {
   entity_type: "center" | "trainer_profile" | "job_post" | "business_verification";

@@ -5,16 +5,19 @@ import { useEffect, useState } from "react";
 import { Badge } from "@/shared/components/ui/Badge";
 import { Container } from "@/shared/components/ui/Container";
 import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
+import { listMyJobApplications } from "@/shared/api/applicationsClient";
+import { toDomainJobPost } from "@/shared/api/jobsClient";
 import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
 import { getGymById, jobs } from "@/shared/api/mockRepository";
 import { getMyTrainerProfile, getTrainerReadiness, toDomainTrainer } from "@/shared/api/trainersClient";
-import type { Trainer } from "@/shared/types/domain";
+import type { JobPost, Trainer } from "@/shared/types/domain";
 
 const latestJobs = jobs.slice(0, 3);
 
 export function TrainerHomePage() {
   useDocumentTitle("트레이너 홈");
   const [trainer, setTrainer] = useState<Trainer | null>(null);
+  const [myApplications, setMyApplications] = useState<Array<{ id: string; job: JobPost; status: string; appliedAt: string }>>([]);
   const [status, setStatus] = useState<"loading" | "ready" | "missing" | "error">("loading");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -22,12 +25,25 @@ export function TrainerHomePage() {
     let isMounted = true;
 
     getMyTrainerProfile()
-      .then((profile) => {
+      .then(async (profile) => {
         if (!isMounted) {
           return;
         }
 
         setTrainer(toDomainTrainer(profile));
+        const applicationsPage = await listMyJobApplications({ page: 1, size: 20 });
+        if (!isMounted) {
+          return;
+        }
+
+        setMyApplications(
+          applicationsPage.items.map((application) => ({
+            id: application.id,
+            job: toDomainJobPost(application.job_post),
+            status: formatApplicationStatus(application.status),
+            appliedAt: formatDate(application.applied_at)
+          }))
+        );
         setStatus("ready");
       })
       .catch((error: Error) => {
@@ -182,16 +198,54 @@ export function TrainerHomePage() {
             <Badge tone="green">지원 현황</Badge>
             <h2 className="mt-3 text-xl font-black text-ink">내가 지원한 구인글</h2>
           </div>
-          <span className="text-sm font-black text-muted">0건</span>
+          <span className="text-sm font-black text-muted">{myApplications.length}건</span>
         </div>
-        <div className="mt-6 border-y border-line py-8">
-          <p className="text-sm font-bold leading-6 text-muted">
-            지원 내역은 실제 지원 API가 연결되면 이 영역에 표시됩니다.
-          </p>
+        <div className="mt-6 divide-y divide-line border-y border-line">
+          {myApplications.length > 0 ? (
+            myApplications.map((application) => (
+              <div className="py-5" key={application.id}>
+                <div className="flex flex-wrap items-center justify-between gap-3">
+                  <p className="font-black text-ink">{application.job.title}</p>
+                  <span className="text-xs font-black text-muted">{application.status}</span>
+                </div>
+                <p className="mt-2 text-sm font-bold text-muted">
+                  {application.job.authorName} · 지원일 {application.appliedAt}
+                </p>
+              </div>
+            ))
+          ) : (
+            <p className="py-8 text-sm font-bold leading-6 text-muted">아직 지원한 구인글이 없습니다.</p>
+          )}
         </div>
       </section>
     </Container>
   );
+}
+
+function formatApplicationStatus(status: string) {
+  const statusLabel: Record<string, string> = {
+    submitted: "지원 완료",
+    reviewing: "검토 중",
+    accepted: "합격",
+    rejected: "불합격",
+    cancelled: "취소"
+  };
+
+  return statusLabel[status] ?? status;
+}
+
+function formatDate(value: string) {
+  const date = new Date(value);
+
+  if (Number.isNaN(date.getTime())) {
+    return value;
+  }
+
+  return date.toLocaleDateString("ko-KR", {
+    year: "numeric",
+    month: "2-digit",
+    day: "2-digit"
+  });
 }
 
 function StatusRow({ label, ready }: { label: string; ready: boolean }) {

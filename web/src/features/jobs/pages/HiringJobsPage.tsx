@@ -78,7 +78,7 @@ export function HiringJobsPage() {
         <div className="space-y-4">
           {filteredItems.length > 0 ? (
             filteredItems.map((post) => (
-              <JobPostCard key={post.id} post={post} />
+              <JobPostCard enableApplication={dataState === "connected"} key={post.id} post={post} />
             ))
           ) : (
             <section className="border-y border-line py-12 text-center">

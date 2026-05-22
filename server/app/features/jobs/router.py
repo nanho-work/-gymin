@@ -6,8 +6,17 @@ from sqlalchemy.orm import Session
 from app.common.pagination import Page, PaginationParams, get_pagination_params
 from app.db.session import get_db
 from app.features.auth.dependencies import CurrentUser, require_business
-from app.features.jobs.schema import JobPostCreate, JobPostRead
-from app.features.jobs.service import close_job, create_job, get_job, list_jobs
+from app.features.business.service import ensure_business_profile
+from app.features.centers.service import get_center
+from app.features.jobs.schema import JobPostCreate, JobPostRead, OwnerJobPostRead
+from app.features.jobs.service import (
+    close_job,
+    create_job,
+    get_job,
+    get_my_job,
+    list_jobs,
+    list_my_jobs
+)
 
 
 router = APIRouter(prefix="/jobs", tags=["jobs"])
@@ -19,6 +28,15 @@ def read_jobs(
     db: Session = Depends(get_db)
 ) -> Page[JobPostRead]:
     return list_jobs(db, params=pagination)
+
+
+@router.get("/me", response_model=Page[OwnerJobPostRead])
+def read_my_jobs(
+    pagination: PaginationParams = Depends(get_pagination_params),
+    db: Session = Depends(get_db),
+    current_user: CurrentUser = Depends(require_business)
+) -> Page[OwnerJobPostRead]:
+    return list_my_jobs(db, current_user.id, params=pagination)
 
 
 @router.get("/{job_id}", response_model=JobPostRead)
@@ -33,8 +51,14 @@ def read_job(job_id: uuid.UUID, db: Session = Depends(get_db)) -> JobPostRead:
 def create_job_endpoint(
     payload: JobPostCreate,
     db: Session = Depends(get_db),
-    _current_user: CurrentUser = Depends(require_business)
+    current_user: CurrentUser = Depends(require_business)
 ) -> JobPostRead:
+    profile = ensure_business_profile(db, current_user.id, owner_name=current_user.display_name)
+    center = get_center(db, payload.center_id)
+    if center is None or center.business_profile_id != profile.id:
+        raise HTTPException(status_code=404, detail="센터를 찾을 수 없습니다.")
+
+    payload = payload.model_copy(update={"business_profile_id": profile.id})
     return create_job(db, payload)
 
 
@@ -42,9 +66,9 @@ def create_job_endpoint(
 def close_job_endpoint(
     job_id: uuid.UUID,
     db: Session = Depends(get_db),
-    _current_user: CurrentUser = Depends(require_business)
+    current_user: CurrentUser = Depends(require_business)
 ) -> JobPostRead:
-    job = get_job(db, job_id)
+    job = get_my_job(db, job_id, current_user.id)
     if job is None:
         raise HTTPException(status_code=404, detail="구인글을 찾을 수 없습니다.")
     if job.status == "closed":

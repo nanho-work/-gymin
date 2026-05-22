@@ -1,10 +1,14 @@
 import { apiGet, apiPatch, apiPost } from "@/shared/api/httpClient";
-import type { JobPostCreate, JobPostRead } from "@/shared/api/serverTypes";
+import type { JobPostCreate, JobPostRead, OwnerJobPostRead } from "@/shared/api/serverTypes";
 import type { Page } from "@/shared/api/types";
 import type { JobPost } from "@/shared/types/domain";
 
 export function listJobPosts(params: { page?: number; size?: number } = {}) {
   return apiGet<Page<JobPostRead>>("/jobs", params);
+}
+
+export function listMyJobPosts(params: { page?: number; size?: number } = {}) {
+  return apiGet<Page<OwnerJobPostRead>>("/jobs/me", params);
 }
 
 export function getJobPost(jobId: string) {

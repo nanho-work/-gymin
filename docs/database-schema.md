@@ -346,7 +346,7 @@ S3 업로드 이미지의 변환본이다. 목록은 `thumbnail`, 상세는 `med
 - notices: 공지사항
 - reports: 신고/검수
 - center_reviews: 센터 평판/항목 평가
-- trainer_reviews: 사장님 전용 트레이너 평가
+- trainer_reviews: 사업장 전용 트레이너 평가
 - subscriptions: SaaS 구독
 - payments: 결제 내역
 - audit_logs: 운영 로그

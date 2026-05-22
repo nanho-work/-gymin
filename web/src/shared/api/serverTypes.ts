@@ -1,3 +1,12 @@
+export type BusinessProfileRead = {
+  id: string;
+  user_id: string;
+  owner_name: string | null;
+  phone: string | null;
+  verification_status: string;
+  created_at: string;
+};
+
 export type CenterRead = {
   id: string;
   business_profile_id: string;
@@ -47,6 +56,11 @@ export type JobPostRead = {
 };
 
 export type JobPostCreate = Omit<JobPostRead, "id" | "status" | "published_at" | "closed_at" | "created_at" | "updated_at">;
+
+export type OwnerJobPostRead = JobPostRead & {
+  applicant_count: number;
+  reviewed_applicant_count: number;
+};
 
 export type TrainerProfileRead = {
   id: string;

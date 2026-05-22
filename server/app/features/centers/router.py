@@ -6,8 +6,9 @@ from sqlalchemy.orm import Session
 from app.common.pagination import Page, PaginationParams, get_pagination_params
 from app.db.session import get_db
 from app.features.auth.dependencies import CurrentUser, require_business
+from app.features.business.service import ensure_business_profile
 from app.features.centers.schema import CenterCreate, CenterRead
-from app.features.centers.service import create_center, get_center, list_centers
+from app.features.centers.service import create_center, get_center, list_centers, list_my_centers
 
 
 router = APIRouter(prefix="/centers", tags=["centers"])
@@ -19,6 +20,15 @@ def read_centers(
     db: Session = Depends(get_db)
 ) -> Page[CenterRead]:
     return list_centers(db, params=pagination)
+
+
+@router.get("/me", response_model=Page[CenterRead])
+def read_my_centers(
+    pagination: PaginationParams = Depends(get_pagination_params),
+    db: Session = Depends(get_db),
+    current_user: CurrentUser = Depends(require_business)
+) -> Page[CenterRead]:
+    return list_my_centers(db, current_user.id, params=pagination)
 
 
 @router.get("/{center_id}", response_model=CenterRead)
@@ -33,6 +43,8 @@ def read_center(center_id: uuid.UUID, db: Session = Depends(get_db)) -> CenterRe
 def create_center_endpoint(
     payload: CenterCreate,
     db: Session = Depends(get_db),
-    _current_user: CurrentUser = Depends(require_business)
+    current_user: CurrentUser = Depends(require_business)
 ) -> CenterRead:
+    profile = ensure_business_profile(db, current_user.id, owner_name=current_user.display_name)
+    payload = payload.model_copy(update={"business_profile_id": profile.id})
     return create_center(db, payload)

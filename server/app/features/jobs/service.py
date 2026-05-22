@@ -12,8 +12,16 @@ def list_jobs(db: Session, params: PaginationParams) -> Page:
     return crud.list_jobs(db, params=params)
 
 
+def list_my_jobs(db: Session, user_id: uuid.UUID, params: PaginationParams) -> Page:
+    return crud.list_jobs_by_business_user_id(db, user_id, params=params)
+
+
 def get_job(db: Session, job_id: uuid.UUID) -> JobPost | None:
     return crud.get_job(db, job_id)
+
+
+def get_my_job(db: Session, job_id: uuid.UUID, user_id: uuid.UUID) -> JobPost | None:
+    return crud.get_job_for_business_user_id(db, job_id, user_id)
 
 
 def create_job(db: Session, payload: JobPostCreate) -> JobPost:

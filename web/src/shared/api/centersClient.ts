@@ -6,6 +6,10 @@ export function listCenters(params: { page?: number; size?: number } = {}) {
   return apiGet<Page<CenterRead>>("/centers", params);
 }
 
+export function listMyCenters(params: { page?: number; size?: number } = {}) {
+  return apiGet<Page<CenterRead>>("/centers/me", params);
+}
+
 export function getCenter(centerId: string) {
   return apiGet<CenterRead>(`/centers/${centerId}`);
 }

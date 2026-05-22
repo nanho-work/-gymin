@@ -12,6 +12,10 @@ def list_centers(db: Session, params: PaginationParams) -> Page:
     return crud.list_centers(db, params=params)
 
 
+def list_my_centers(db: Session, user_id: uuid.UUID, params: PaginationParams) -> Page:
+    return crud.list_centers_by_business_user_id(db, user_id, params=params)
+
+
 def get_center(db: Session, center_id: uuid.UUID) -> Center | None:
     return crud.get_center(db, center_id)
 

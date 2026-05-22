@@ -7,6 +7,7 @@ from app.features.auth.schema import (
     AuthUserRead,
     FirebaseLoginRequest
 )
+from app.features.business.service import ensure_business_profile
 
 
 def login_with_firebase(db: Session, payload: FirebaseLoginRequest) -> AuthSessionResponse:
@@ -32,6 +33,9 @@ def login_with_firebase(db: Session, payload: FirebaseLoginRequest) -> AuthSessi
         )
     else:
         user, is_new_user = crud.touch_social_login(db, social_account, email)
+
+    if payload.role == "business":
+        ensure_business_profile(db, user.id, owner_name=display_name)
 
     return AuthSessionResponse(
         user=AuthUserRead(

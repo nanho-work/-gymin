@@ -34,3 +34,8 @@ class JobPostRead(JobPostCreate):
     updated_at: datetime
 
     model_config = {"from_attributes": True}
+
+
+class OwnerJobPostRead(JobPostRead):
+    applicant_count: int = 0
+    reviewed_applicant_count: int = 0

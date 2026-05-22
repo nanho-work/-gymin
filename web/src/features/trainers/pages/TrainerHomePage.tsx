@@ -99,11 +99,8 @@ export function TrainerHomePage() {
           <Badge tone="amber">확인 필요</Badge>
           <h1 className="mt-4 text-3xl font-black tracking-tight text-ink">내 활동 관리를 불러오지 못했습니다</h1>
           <p className="mt-3 max-w-2xl leading-7 text-muted">{errorMessage || "잠시 후 다시 시도해 주세요."}</p>
-          <div className="mt-6 flex flex-wrap gap-3">
+          <div className="mt-6">
             <PrimaryLink to="/login">로그인</PrimaryLink>
-            <PrimaryLink to="/jobs/hiring" variant="light">
-              구인글 보기
-            </PrimaryLink>
           </div>
         </section>
       </Container>
@@ -142,7 +139,6 @@ export function TrainerHomePage() {
                 <PrimaryLink to={`/trainers/${trainer.id}`} variant="light">
                   공개 화면 보기
                 </PrimaryLink>
-                <PrimaryLink to="/jobs/hiring">구인글 보기</PrimaryLink>
               </div>
             </div>
           </div>
@@ -163,9 +159,6 @@ export function TrainerHomePage() {
             <Badge tone="green">추천 구인글</Badge>
             <h2 className="mt-3 text-xl font-black text-ink">내 지역과 가까운 최신 공고</h2>
           </div>
-          <PrimaryLink to="/jobs/hiring" variant="light">
-            전체 보기
-          </PrimaryLink>
         </div>
         <div className="mt-6 divide-y divide-line border-y border-line">
           {latestJobs.length > 0 ? (

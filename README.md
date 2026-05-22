@@ -85,7 +85,7 @@ web/
   app/
     layout.tsx               # 전역 HTML + 헤더/푸터 프레임
     (owner)/layout.tsx       # 센터관리 영역 인증 보호
-    (trainer)/layout.tsx     # 트레이너 영역 공통 사이드바
+    (trainer)/layout.tsx     # 트레이너 영역 인증 보호
     **/page.tsx              # URL 라우트 진입점
   src/
     features/

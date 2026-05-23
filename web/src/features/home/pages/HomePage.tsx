@@ -1,22 +1,16 @@
 "use client";
 
-import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useState } from "react";
 
-import { Badge } from "@/shared/components/ui/Badge";
-import { Container } from "@/shared/components/ui/Container";
-import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
-import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
-import type { JobPost } from "@/shared/types/domain";
+import { HomeHeroSection } from "@/features/home/components/HomeHeroSection";
+import { HomeNoticeSection } from "@/features/home/components/HomeNoticeSection";
+import { LatestJobsRail } from "@/features/home/components/LatestJobsRail";
 import { listJobPosts, toDomainJobPost } from "@/shared/api/jobsClient";
 import { getPlatformStats } from "@/shared/api/platformClient";
 import type { PlatformStats } from "@/shared/api/types";
-
-const notices = [
-  "허위 구인글, 과장 급여, 타인 비방 글은 운영자가 숨김 처리할 수 있습니다.",
-  "연락처 공개 전에는 개인정보와 계약 조건을 꼭 직접 확인해 주세요.",
-  "강사와 트레이너는 내 프로필을 등록해두면 구인글에 지원할 때 그대로 사용할 수 있습니다."
-];
+import { Container } from "@/shared/components/ui/Container";
+import { useDocumentTitle } from "@/shared/hooks/useDocumentTitle";
+import type { JobPost } from "@/shared/types/domain";
 
 export function HomePage() {
   useDocumentTitle("피트니스 구인구직 플랫폼");
@@ -51,161 +45,13 @@ export function HomePage() {
 
   return (
     <>
-      <section className="border-b border-line bg-white">
-        <Container className="grid gap-10 py-12 lg:grid-cols-[1.08fr_0.92fr] lg:items-center lg:py-16">
-          <div>
-            <Badge tone="green">피트니스 구인구직</Badge>
-            <h1 className="mt-5 max-w-4xl text-5xl font-black leading-tight tracking-tight text-ink sm:text-6xl">
-              피트니스 시설과 운동 지도자를 연결하는 구인구직 플랫폼
-            </h1>
-            <p className="mt-6 max-w-2xl text-lg leading-8 text-muted">
-              헬스장, 필라테스 스튜디오, 요가원, 크로스핏 박스가 공고를 올리고
-              강사와 트레이너는 등록한 프로필로 지원합니다. 업종별 공고, 시설 정보, 지원자 확인 흐름을 한곳에서 이어갑니다.
-            </p>
-          </div>
-          <div className="overflow-hidden rounded-lg border border-line bg-paper shadow-soft">
-            <img
-              alt="운동 지도자가 이용할 수 있는 피트니스 시설"
-              className="h-72 w-full object-cover sm:h-96"
-              src="https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?auto=format&fit=crop&w=1200&q=80"
-            />
-            <div className="grid grid-cols-3 border-t border-line bg-white">
-              <Stat label="등록 센터" value={stats ? `${stats.centers}` : "-"} />
-              <Stat label="구인글" value={stats ? `${stats.open_job_posts}` : "-"} />
-              <Stat label="등록 프로필" value={stats ? `${stats.trainer_profiles}` : "-"} />
-            </div>
-          </div>
-        </Container>
-      </section>
+      <HomeHeroSection stats={stats} />
 
       <Container className="space-y-10 py-12">
-        <HomeRail actionLabel="전체 보기" actionTo="/jobs/hiring" items={hiringPosts} title="최신 구인글" type="hiring" />
+        <LatestJobsRail items={hiringPosts} />
       </Container>
 
-      <section className="border-y border-line bg-white">
-        <Container className="grid gap-6 py-12 lg:grid-cols-[1fr_380px]">
-          <div>
-            <Badge tone="dark">공지사항</Badge>
-            <h2 className="mt-4 text-3xl font-black tracking-tight text-ink">피트니스 구인구직 이용 안내</h2>
-            <p className="mt-4 max-w-3xl leading-8 text-muted">
-              시설은 공고를 올리고 강사와 트레이너는 프로필로 지원합니다. 로그인, 지원자 열람 권한,
-              신고/숨김 처리를 기본 운영 장치로 둡니다.
-            </p>
-          </div>
-          <aside className="rounded-lg border border-line bg-paper p-5">
-            <h3 className="text-lg font-black text-ink">운영 공지</h3>
-            <ul className="mt-4 space-y-3">
-              {notices.map((notice) => (
-                <li className="rounded-md border border-line bg-white p-3 text-sm font-bold leading-6 text-muted" key={notice}>
-                  {notice}
-                </li>
-              ))}
-            </ul>
-          </aside>
-        </Container>
-      </section>
+      <HomeNoticeSection />
     </>
-  );
-}
-
-function Stat({ label, value }: { label: string; value: string }) {
-  return (
-    <div className="border-r border-line p-5 last:border-r-0">
-      <p className="text-3xl font-black text-ink">{value}</p>
-      <p className="mt-1 text-sm font-bold text-muted">{label}</p>
-    </div>
-  );
-}
-
-function HomeRail({
-  title,
-  items,
-  type,
-  actionLabel,
-  actionTo
-}: {
-  title: string;
-  items: JobPost[];
-  type: "hiring";
-  actionLabel: string;
-  actionTo: string;
-}) {
-  const railRef = useRef<HTMLDivElement | null>(null);
-  const isPausedRef = useRef(false);
-
-  useEffect(() => {
-    if (items.length < 2) {
-      return;
-    }
-
-    const intervalId = window.setInterval(() => {
-      const rail = railRef.current;
-      if (!rail || isPausedRef.current) {
-        return;
-      }
-
-      const maxScrollLeft = rail.scrollWidth - rail.clientWidth;
-      if (maxScrollLeft <= 0) {
-        return;
-      }
-
-      if (rail.scrollLeft >= maxScrollLeft - 24) {
-        rail.scrollTo({ left: 0, behavior: "smooth" });
-        return;
-      }
-
-      rail.scrollBy({ left: 304, behavior: "smooth" });
-    }, 3600);
-
-    return () => {
-      window.clearInterval(intervalId);
-    };
-  }, [items.length]);
-
-  return (
-    <section>
-      <div className="flex items-center justify-between gap-4">
-        <h2 className="text-2xl font-black tracking-tight text-ink">{title}</h2>
-        <PrimaryLink to={actionTo} variant="light">
-          {actionLabel}
-        </PrimaryLink>
-      </div>
-      <div
-        className="mt-5 flex snap-x gap-4 overflow-x-auto scroll-smooth pb-3"
-        onMouseEnter={() => {
-          isPausedRef.current = true;
-        }}
-        onMouseLeave={() => {
-          isPausedRef.current = false;
-        }}
-        ref={railRef}
-      >
-        {items.length > 0 ? (
-          items.map((item) => (
-            <HomePostCard item={item} key={item.id} type={type} />
-          ))
-        ) : (
-          <p className="border-y border-line py-8 text-sm font-bold leading-6 text-muted">
-            현재 표시할 구인글이 없습니다.
-          </p>
-        )}
-      </div>
-    </section>
-  );
-}
-
-function HomePostCard({ item, type }: { item: JobPost; type: "hiring" }) {
-  const detailTo = `/jobs/hiring/${item.id}`;
-  const meta = `${item.area} · ${item.employmentType}`;
-
-  return (
-    <Link className="w-[280px] shrink-0 snap-start overflow-hidden rounded-lg border border-line bg-white shadow-sm transition hover:border-green" href={detailTo}>
-      <div className="p-4">
-        <Badge tone={type === "hiring" ? "green" : "neutral"}>구인</Badge>
-        <h3 className="mt-3 line-clamp-2 text-lg font-black leading-6 text-ink">{item.title}</h3>
-        <p className="mt-2 text-sm font-bold text-muted">{item.authorName}</p>
-        <p className="mt-1 text-sm font-bold text-muted">{meta}</p>
-      </div>
-    </Link>
   );
 }

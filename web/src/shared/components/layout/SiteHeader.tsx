@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 import { useAuth } from "@/features/auth/context/AuthContext";
 import { getPlatformStats } from "@/shared/api/platformClient";
 import type { PlatformStats } from "@/shared/api/types";
+import { BrandMark } from "@/shared/components/layout/BrandMark";
 import { PrimaryLink } from "@/shared/components/ui/PrimaryLink";
 
 export function SiteHeader() {
@@ -49,7 +50,7 @@ export function SiteHeader() {
       <div className="mx-auto flex min-h-16 w-full max-w-7xl items-center justify-between gap-4 px-5 sm:px-8">
         <div className="flex min-w-0 items-center gap-5">
           <Link className="flex items-center gap-3" href="/">
-            <span className="grid h-9 w-9 place-items-center rounded-md bg-ink text-sm font-black text-mint">G</span>
+            <BrandMark />
             <span className="text-lg font-black tracking-tight text-ink">GymIn</span>
           </Link>
           <nav className="flex items-center gap-1 border-l border-line pl-4">

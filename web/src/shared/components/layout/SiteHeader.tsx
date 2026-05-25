@@ -62,6 +62,14 @@ export function SiteHeader() {
             >
               구인글
             </Link>
+            <Link
+              className={`rounded-md px-3 py-2 text-sm font-black transition ${
+                pathname.startsWith("/insights") ? "bg-paper text-ink" : "text-muted hover:bg-paper hover:text-ink"
+              }`}
+              href="/insights"
+            >
+              인사이트
+            </Link>
           </nav>
           {stats ? (
             <div className="hidden items-center gap-3 border-l border-line pl-5 text-xs font-black text-muted lg:flex">

@@ -1,0 +1,152 @@
+{
+  "tool": "built-in image_gen",
+  "entries": [
+    {
+      "id": "mongdang",
+      "kind": "portrait",
+      "prompt": "Create a NEW close-up character portrait based exactly on reference identity, same face, materials and costume. Head and shoulders ONLY, face occupies 60% of image, no full body, no feet. Vertical 4:5 composition, centered eyes, head fully inside frame, warm plain parchment background. Unified hand-painted Korean historical fantasy gouache and ink style. Preserve nonhuman face and origin material. No text or labels.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-c060a010-0aa8-4e7e-820b-e1fc2e010d70.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sageum",
+      "kind": "portrait",
+      "prompt": "Create a NEW close-up character portrait based exactly on reference identity, same face, materials and costume. Head and shoulders ONLY, face occupies 60% of image, no full body, no feet. Vertical 4:5 composition, centered eyes, head fully inside frame, warm plain parchment background. Unified hand-painted Korean historical fantasy gouache and ink style. Preserve nonhuman face and origin material. No text or labels.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-c7e4f8d7-aadb-4264-b1ba-5a8011ac9dda.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mangsil",
+      "kind": "portrait",
+      "prompt": "Create a NEW close-up character portrait based exactly on reference identity, same face, materials and costume. Head and shoulders ONLY, face occupies 60% of image, no full body, no feet. Vertical 4:5 composition, centered eyes, head fully inside frame, warm plain parchment background. Unified hand-painted Korean historical fantasy gouache and ink style. Preserve nonhuman face and origin material. No text or labels.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-5ab6d859-67f9-4a65-8044-96afabfe6eb8.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "bulssi",
+      "kind": "portrait",
+      "prompt": "Create a NEW close-up character portrait based exactly on reference identity, same face, materials and costume. Head and shoulders ONLY, face occupies 60% of image, no full body, no feet. Vertical 4:5 composition, centered eyes, head fully inside frame, warm plain parchment background. Unified hand-painted Korean historical fantasy gouache and ink style. Preserve nonhuman face and origin material. No text or labels.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-9ad91a7f-570c-4250-9269-66dd1eea9c31.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "kungdol",
+      "kind": "portrait",
+      "prompt": "Create a NEW close-up character portrait based exactly on reference identity, same face, materials and costume. Head and shoulders ONLY, face occupies 60% of image, no full body, no feet. Vertical 4:5 composition, centered eyes, head fully inside frame, warm plain parchment background. Unified hand-painted Korean historical fantasy gouache and ink style. Preserve nonhuman face and origin material. No text or labels.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-79600157-45fd-48a8-9cb7-1241c20e6438.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sageum",
+      "kind": "nw",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face back three-quarter facing upper left 11 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-21d2bd04-1404-4134-993d-e7c8bfb2ff1e.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sageum",
+      "kind": "ne",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face back three-quarter facing upper right 2 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-81744423-c523-4ee7-94e4-970416c8f90f.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sageum",
+      "kind": "se",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face front three-quarter facing lower right 5 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f1293512-44e7-47ea-9582-eaa220115f5a.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sageum",
+      "kind": "sw",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face front three-quarter facing lower left 7 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-5d70f68d-0f29-493d-8e88-67073239ac18.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mangsil",
+      "kind": "nw",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face back three-quarter facing upper left 11 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-533f967a-e812-41bc-a51b-a5dbb8114b02.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mangsil",
+      "kind": "ne",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face back three-quarter facing upper right 2 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-206617d7-11cd-4b97-b9a4-fbc04b6ea016.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mangsil",
+      "kind": "se",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face front three-quarter facing lower right 5 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-3988e04d-324d-4e4a-8d39-40bad165a6c9.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mangsil",
+      "kind": "sw",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face front three-quarter facing lower left 7 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-b4da07ea-ff5a-4c1e-9357-f04bacd1af4d.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "bulssi",
+      "kind": "nw",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face back three-quarter facing upper left 11 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-b1a17298-8aeb-4697-ae71-5e31790ce8c9.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "bulssi",
+      "kind": "ne",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face back three-quarter facing upper right 2 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-b3483e33-4c2a-49e7-abd3-42733260a6bb.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "bulssi",
+      "kind": "se",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face front three-quarter facing lower right 5 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-255b7d8f-9187-4d78-992b-f026863a5075.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "bulssi",
+      "kind": "sw",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face front three-quarter facing lower left 7 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-da2e32af-4c26-41a2-b8dc-0a1166fe0889.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "kungdol",
+      "kind": "nw",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face back three-quarter facing upper left 11 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-860b0263-ed4e-4065-8f90-636331d3bbc0.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "kungdol",
+      "kind": "ne",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face back three-quarter facing upper right 2 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f073ddd7-a68b-4342-a96f-bb1cf6cc9098.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "kungdol",
+      "kind": "se",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face front three-quarter facing lower right 5 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-0e9d018e-0c3e-4191-922c-b2f360fdffe6.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "kungdol",
+      "kind": "sw",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face front three-quarter facing lower left 7 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-a87611e8-fa9a-4c4e-9bf9-4c850d0504cd.png",
+      "originalRemoved": "2026-10-25"
+    }
+  ]
+}

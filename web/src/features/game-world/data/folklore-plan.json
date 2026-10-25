@@ -41,7 +41,8 @@
       "family": "도깨비",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/mongdang-concept-v1.webp",
-      "portrait": "/images/folklore/mongdang-concept-v1-portrait.webp"
+      "portrait": "/images/folklore/mongdang-portrait-v2.webp",
+      "motion": "mongdang-motion-v2"
     },
     {
       "id": 24,
@@ -66,7 +67,8 @@
       "family": "도깨비",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/sageum-concept-v1.webp",
-      "portrait": "/images/folklore/sageum-concept-v1-portrait.webp"
+      "portrait": "/images/folklore/sageum-portrait-v2.webp",
+      "motion": "sageum-motion-v2"
     },
     {
       "id": 25,
@@ -91,7 +93,8 @@
       "family": "도깨비",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/mangsil-concept-v1.webp",
-      "portrait": "/images/folklore/mangsil-concept-v1-portrait.webp"
+      "portrait": "/images/folklore/mangsil-portrait-v2.webp",
+      "motion": "mangsil-motion-v2"
     },
     {
       "id": 1001,
@@ -116,7 +119,8 @@
       "source": "https://encykorea.aks.ac.kr/Article/E0015527",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/bulssi-concept-v1.webp",
-      "portrait": "/images/folklore/bulssi-concept-v1-portrait.webp"
+      "portrait": "/images/folklore/bulssi-portrait-v2.webp",
+      "motion": "bulssi-motion-v2"
     },
     {
       "id": 1002,
@@ -141,7 +145,8 @@
       "source": "https://encykorea.aks.ac.kr/Article/E0015527",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/kungdol-concept-v1.webp",
-      "portrait": "/images/folklore/kungdol-concept-v1-portrait.webp"
+      "portrait": "/images/folklore/kungdol-portrait-v2.webp",
+      "motion": "kungdol-motion-v2"
     },
     {
       "id": 1003,
@@ -166,7 +171,8 @@
       "source": "https://www.kh.or.kr/brd/board/741/L/menu/740?bbIdx=112290&brdType=R&searchText=finden&thisPage=1",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/yeoul-concept-v1.webp",
-      "portrait": "/images/folklore/yeoul-concept-v1-portrait.webp"
+      "portrait": "/images/folklore/yeoul-portrait-v2.webp",
+      "motion": "yeoul-motion-v2"
     },
     {
       "id": 1004,
@@ -191,7 +197,8 @@
       "source": "https://folkency.nfm.go.kr/topic/비내린이무기",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/mulgyeol-concept-v1.webp",
-      "portrait": "/images/folklore/mulgyeol-concept-v1-portrait.webp"
+      "portrait": "/images/folklore/mulgyeol-portrait-v2.webp",
+      "motion": "mulgyeol-motion-v2"
     },
     {
       "id": 1005,
@@ -216,7 +223,8 @@
       "source": "https://kdp.aks.ac.kr/inde/gubi?id=POKS.GUBI.GUBI.2_19364",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/sodam-concept-v1.webp",
-      "portrait": "/images/folklore/sodam-concept-v1-portrait.webp"
+      "portrait": "/images/folklore/sodam-portrait-v2.webp",
+      "motion": "sodam-motion-v2"
     },
     {
       "id": 1006,
@@ -241,7 +249,8 @@
       "source": "https://encykorea.aks.ac.kr/Article/E0024904",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/soedong-concept-v1.webp",
-      "portrait": "/images/folklore/soedong-concept-v1-portrait.webp"
+      "portrait": "/images/folklore/soedong-portrait-v2.webp",
+      "motion": "soedong-motion-v2"
     },
     {
       "id": 1007,
@@ -266,7 +275,8 @@
       "source": "https://encykorea.aks.ac.kr/Article/E0048619",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/gilmok-concept-v1.webp",
-      "portrait": "/images/folklore/gilmok-concept-v1-portrait.webp"
+      "portrait": "/images/folklore/gilmok-portrait-v2.webp",
+      "motion": "gilmok-motion-v2"
     }
   ],
   "learning": [

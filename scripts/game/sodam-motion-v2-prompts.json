@@ -1,0 +1,26 @@
+{
+  "asset": "sodam-motion-v2",
+  "entries": [
+    {
+      "id": "nw",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-250d6b65-c7b8-4971-a2ea-afe601385d49.png",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper LEFT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity."
+    },
+    {
+      "id": "ne",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-8d1a6185-e757-46b5-adb2-c7159738f6b7.png",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper RIGHT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity."
+    },
+    {
+      "id": "se",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-cb5c0b83-d217-4ad4-9600-44a1ebad5972.png",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing front lower right 5 o'clock. human snail-shell backpack healer, walk alternate feet, attack palm strike, skill present bowl and raise free hand. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing front lower right 5 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference."
+    },
+    {
+      "id": "sw",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-2e6a0c11-ee65-43fc-a07d-ebee02166152.png",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing front lower left 7 o'clock. human snail-shell backpack healer, walk alternate feet, attack palm strike, skill present bowl and raise free hand. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing front lower left 7 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference."
+    }
+  ],
+  "originalRemoved": "2026-10-25"
+}

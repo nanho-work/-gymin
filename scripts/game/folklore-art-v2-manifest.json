@@ -1,0 +1,78 @@
+{
+  "date": "2026-10-25",
+  "status": "concept-draft",
+  "motionBytes": 3391640,
+  "portraitBytes": 60916,
+  "characters": [
+    {
+      "name": "몽당",
+      "motion": "mongdang-motion-v2",
+      "frames": 64,
+      "bytes": 388600,
+      "portraitBytes": 6392
+    },
+    {
+      "name": "사금",
+      "motion": "sageum-motion-v2",
+      "frames": 64,
+      "bytes": 333970,
+      "portraitBytes": 5626
+    },
+    {
+      "name": "망실",
+      "motion": "mangsil-motion-v2",
+      "frames": 64,
+      "bytes": 393760,
+      "portraitBytes": 6742
+    },
+    {
+      "name": "불씨",
+      "motion": "bulssi-motion-v2",
+      "frames": 64,
+      "bytes": 305524,
+      "portraitBytes": 5468
+    },
+    {
+      "name": "쿵돌",
+      "motion": "kungdol-motion-v2",
+      "frames": 64,
+      "bytes": 381700,
+      "portraitBytes": 6198
+    },
+    {
+      "name": "여울",
+      "motion": "yeoul-motion-v2",
+      "frames": 64,
+      "bytes": 277362,
+      "portraitBytes": 5616
+    },
+    {
+      "name": "물결",
+      "motion": "mulgyeol-motion-v2",
+      "frames": 64,
+      "bytes": 408586,
+      "portraitBytes": 5784
+    },
+    {
+      "name": "소담",
+      "motion": "sodam-motion-v2",
+      "frames": 64,
+      "bytes": 291372,
+      "portraitBytes": 4916
+    },
+    {
+      "name": "쇠동",
+      "motion": "soedong-motion-v2",
+      "frames": 64,
+      "bytes": 264326,
+      "portraitBytes": 6602
+    },
+    {
+      "name": "길목",
+      "motion": "gilmok-motion-v2",
+      "frames": 64,
+      "bytes": 346440,
+      "portraitBytes": 7572
+    }
+  ]
+}

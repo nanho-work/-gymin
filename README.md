@@ -77,3 +77,11 @@ Next.js + React + TypeScript. 화면 구현은 `web/src/features/game-world/page
 ### 설화 캐릭터 콘셉트 v1
 
 인물 페이지의 10명 전신 초안은 `web/public/images/folklore/`에 보관합니다. 내장 이미지 생성 도구로 제작한 창작 외형이며, 전승의 고증 복원도나 최종 게임 스프라이트가 아닙니다. 정확한 생성 프롬프트는 `scripts/game/folklore-image-prompts.json`에 기록했습니다. 프로젝트에는 512px WebP 전신과 128×160px WebP 썸네일만 저장합니다. 클릭하면 512px 전신을 엽니다. 기존 대형 PNG의 프로젝트 복사본은 경량본으로 대체했습니다.
+
+생성 도구에 별도 저장된 설화 후보 원본 10장도 2026-10-25 정리했습니다. 현재 경량 이미지 20개 합계는 383,494바이트입니다. 이후 이미지 저장 및 카드 배치 기준은 `AGENTS.md`를 따릅니다.
+
+몽당 모션 초안: `mongdang-motion-v1.webp`(4열×3행), 대기·걷기·공격 각 4프레임. 인물 카드에서 동작 선택과 재생·정지를 지원합니다. 한 방향 검토용이며 최종 게임 모션은 아닙니다. 생성 프롬프트는 `scripts/game/mongdang-motion-prompts.json`, 대형 생성 원본은 경량본 확인 후 정리했습니다.
+
+몽당 모션 v2: `web/public/images/folklore/mongdang-motion-v2/`에 4방향×4동작×4프레임(160px WebP, 총 388,600바이트). 실루엣 단위 분리와 하단 기준선 정렬을 적용하며 페이지에서 방향·동작·프레임을 선택합니다. 프롬프트와 프레임 목록은 `scripts/game/mongdang-motion-v2-*.json`에 기록합니다. 큰 생성 원본은 정리했습니다.
+
+설화 후보 10명 모두 얼굴 초상화 v2와 4방향 모션 선택기를 사용합니다. 초상화 10장 합계 60,916바이트, 모션 640장 합계 3,391,640바이트(몽당 기존 포함)입니다. 생성 프롬프트는 `scripts/game/*-v2-prompts.json`, 용량 목록은 `scripts/game/folklore-art-v2-manifest.json`, 공통 제작 절차는 `docs/game/character-art-workflow.md`에 기록했습니다. 이번 대형 생성 원본은 정리했습니다. 비교용 초안이며 프레임별 형태·시선 각도·동작 연결은 최종 게임 적용 전 보완 대상입니다.

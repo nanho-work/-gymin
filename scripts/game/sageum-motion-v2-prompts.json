@@ -1,0 +1,30 @@
+{
+  "asset": "sageum-motion-v2",
+  "entries": [
+    {
+      "id": "nw",
+      "kind": "nw",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper LEFT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-5339199f-956d-4675-8ac0-efd7a22c25ff.png"
+    },
+    {
+      "id": "ne",
+      "kind": "ne",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper RIGHT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-0e153356-d317-47da-af1f-d08c6855c8e8.png"
+    },
+    {
+      "id": "se",
+      "kind": "se",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face front three-quarter facing lower right 5 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f1293512-44e7-47ea-9582-eaa220115f5a.png"
+    },
+    {
+      "id": "sw",
+      "kind": "sw",
+      "prompt": "Animation sprite sheet for EXACT reference character, consistent materials face clothing and prop. 4 columns x 4 rows, exactly16 full-body poses. All face front three-quarter facing lower left 7 o'clock. Row1 four subtle idle phases. Row2 four walking-in-place phases with alternate feet. Row3 four attack phases prepare, swing main prop or fist, contact, recover. Row4 four skill casting phases prepare, raise hand, release, recover. Transparent background, no shadows or floating particles. Each figure occupies only central 60% of equal cell. HUGE transparent gutters between figures. Identical body scale and foot baseline. No text, labels, borders. Hand painted Korean tactical RPG sprite. Never merge neighboring bodies. Keep same face direction in all frames.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-5d70f68d-0f29-493d-8e88-67073239ac18.png"
+    }
+  ],
+  "originalRemoved": "2026-10-25"
+}

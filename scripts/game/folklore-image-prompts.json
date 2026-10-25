@@ -4,52 +4,82 @@
     {
       "id": "mongdang",
       "prompt": "Use case: stylized-concept. Single original character concept for Korean historical fantasy tactical RPG, consistent hand-painted gouache and fine ink illustration, grounded folkloric warmth, muted pine green, ochre, earthen brown, ivory palette. Full body three-quarter view centered with generous margin, square canvas, plain warm parchment background, subtle ground shadow. Readable silhouette, intricate natural materials, no text, no labels, no watermark, no modern clothing, no existing franchise likeness. Not chibi, not photorealistic, not glossy 3D. Concept draft, not an archaeological reconstruction. Subject: Mongdang, small wiry broom dokkaebi. Body made of aged wooden broom handle and straw, worn broom bristles as tousled hair and lower coat, rope belt, expressive mischievous elderly face in wood grain, two arms and legs, holding a humble broom. Entire body visible.",
-      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-5e1442ab-6d11-43ec-ae5e-714b03d9128c.png"
+      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-5e1442ab-6d11-43ec-ae5e-714b03d9128c.png",
+      "originalRemoved": "2026-10-25",
+      "image": "web/public/images/folklore/mongdang-concept-v1.webp",
+      "portrait": "web/public/images/folklore/mongdang-concept-v1-portrait.webp"
     },
     {
       "id": "sageum",
       "prompt": "Use case: stylized-concept. Single original character concept for Korean historical fantasy tactical RPG, consistent hand-painted gouache and fine ink illustration, grounded folkloric warmth, muted pine green, ochre, earthen brown, ivory palette. Full body three-quarter view centered with generous margin, square canvas, plain warm parchment background, subtle ground shadow. Readable silhouette, intricate natural materials, no text, no labels, no watermark, no modern clothing, no existing franchise likeness. Not chibi, not photorealistic, not glossy 3D. Concept draft, not an archaeological reconstruction. Subject: Sageum, kindly protective broken earthenware bowl spirit. Humanoid formed from mismatched reddish clay bowl shards, visible repaired cracks using simple dark bindings (not gold kintsugi), small bowl-like head with gentle eyes, layered shard shoulder mantle, carrying a modest bowl of rice. Whole body including feet.",
-      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-276687e8-fcd7-4552-a08c-d6a5755e5af6.png"
+      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-276687e8-fcd7-4552-a08c-d6a5755e5af6.png",
+      "originalRemoved": "2026-10-25",
+      "image": "web/public/images/folklore/sageum-concept-v1.webp",
+      "portrait": "web/public/images/folklore/sageum-concept-v1-portrait.webp"
     },
     {
       "id": "mangsil",
       "prompt": "Use case: stylized-concept. Single original character concept for Korean historical fantasy tactical RPG, consistent hand-painted gouache and fine ink illustration, grounded folkloric warmth, muted pine green, ochre, earthen brown, ivory palette. Full body three-quarter view centered with generous margin, square canvas, plain warm parchment background, subtle ground shadow. Readable silhouette, intricate natural materials, no text, no labels, no watermark, no modern clothing, no existing franchise likeness. Not chibi, not photorealistic, not glossy 3D. Concept draft, not an archaeological reconstruction. Subject: Mangsil, living old Korean woven straw carrying sack spirit. A woven basket-sack forms rounded torso with an open rim and friendly face, braided rope arms and legs, small keepsakes tied outside, sturdy carrying posture. No human trapped inside. Entire body.",
-      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-9dad5c90-e229-4548-92dd-259521462c0a.png"
+      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-9dad5c90-e229-4548-92dd-259521462c0a.png",
+      "originalRemoved": "2026-10-25",
+      "image": "web/public/images/folklore/mangsil-concept-v1.webp",
+      "portrait": "web/public/images/folklore/mangsil-concept-v1-portrait.webp"
     },
     {
       "id": "bulssi",
       "prompt": "Use case: stylized-concept. Single original character concept for Korean historical fantasy tactical RPG, consistent hand-painted gouache and fine ink illustration, grounded folkloric warmth, muted pine green, ochre, earthen brown, ivory palette. Full body three-quarter view centered with generous margin, square canvas, plain warm parchment background, subtle ground shadow. Readable silhouette, intricate natural materials, no text, no labels, no watermark, no modern clothing, no existing franchise likeness. Not chibi, not photorealistic, not glossy 3D. Concept draft, not an archaeological reconstruction. Subject: Bulssi, hearth-tending fire-poker dokkaebi. Charred wood poker body, warm ember eyes, short smoke-like hair, patched plain hemp apron, small controlled glowing ember in a clay brazier, rugged humanlike limbs. Warmhearted, not a burning demon. Entire body.",
-      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-a6ddd65f-89df-41b4-883c-693137d323ba.png"
+      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-a6ddd65f-89df-41b4-883c-693137d323ba.png",
+      "originalRemoved": "2026-10-25",
+      "image": "web/public/images/folklore/bulssi-concept-v1.webp",
+      "portrait": "web/public/images/folklore/bulssi-concept-v1-portrait.webp"
     },
     {
       "id": "kungdol",
       "prompt": "Use case: stylized-concept. Single original character concept for Korean historical fantasy tactical RPG, consistent hand-painted gouache and fine ink illustration, grounded folkloric warmth, muted pine green, ochre, earthen brown, ivory palette. Full body three-quarter view centered with generous margin, square canvas, plain warm parchment background, subtle ground shadow. Readable silhouette, intricate natural materials, no text, no labels, no watermark, no modern clothing, no existing franchise likeness. Not chibi, not photorealistic, not glossy 3D. Concept draft, not an archaeological reconstruction. Subject: Kungdol, wooden pestle dokkaebi, broad powerful wooden humanoid, old polished pestle shapes in torso and thick arms, grain and wear marks, straw bindings, friendly competitive grin, holds a large wooden grain pestle, no metal club. Entire body.",
-      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-706136cd-9dc6-4b39-9028-8a8a55f62295.png"
+      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-706136cd-9dc6-4b39-9028-8a8a55f62295.png",
+      "originalRemoved": "2026-10-25",
+      "image": "web/public/images/folklore/kungdol-concept-v1.webp",
+      "portrait": "web/public/images/folklore/kungdol-concept-v1-portrait.webp"
     },
     {
       "id": "yeoul",
       "prompt": "Use case: stylized-concept. Single original character concept for Korean historical fantasy tactical RPG, consistent hand-painted gouache and fine ink illustration, grounded folkloric warmth, muted pine green, ochre, earthen brown, ivory palette. Full body three-quarter view centered with generous margin, square canvas, plain warm parchment background, subtle ground shadow. Readable silhouette, intricate natural materials, no text, no labels, no watermark, no modern clothing, no existing franchise likeness. Not chibi, not photorealistic, not glossy 3D. Concept draft, not an archaeological reconstruction. Subject: Yeoul, shapeshifting Korean fox scout, adult androgynous humanoid with russet fox ears and one large clearly visible russet tail, simple layered hemp and muted green travel robes, discreet rope belt and map pouch, alert guarded expression. No seductive pose, no Japanese attire. Entire body.",
-      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-6a8b1f62-8ec9-48fb-b064-8112f1343a6b.png"
+      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-6a8b1f62-8ec9-48fb-b064-8112f1343a6b.png",
+      "originalRemoved": "2026-10-25",
+      "image": "web/public/images/folklore/yeoul-concept-v1.webp",
+      "portrait": "web/public/images/folklore/yeoul-concept-v1-portrait.webp"
     },
     {
       "id": "mulgyeol",
       "prompt": "Use case: stylized-concept. Single original character concept for Korean historical fantasy tactical RPG, consistent hand-painted gouache and fine ink illustration, grounded folkloric warmth, muted pine green, ochre, earthen brown, ivory palette. Full body three-quarter view centered with generous margin, square canvas, plain warm parchment background, subtle ground shadow. Readable silhouette, intricate natural materials, no text, no labels, no watermark, no modern clothing, no existing franchise likeness. Not chibi, not photorealistic, not glossy 3D. Concept draft, not an archaeological reconstruction. Subject: Mulgyeol, benevolent rain imugi, small companion-scale serpentine water creature with coiled jade and river-blue scales, expressive long whiskers, modest mane and tiny limbs, not a huge winged dragon, suspended pearl-like rain droplets, empathetic eyes. Entire coiled creature visible.",
-      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-8bdc1f84-37aa-4e22-8eac-05a2ee15b923.png"
+      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-8bdc1f84-37aa-4e22-8eac-05a2ee15b923.png",
+      "originalRemoved": "2026-10-25",
+      "image": "web/public/images/folklore/mulgyeol-concept-v1.webp",
+      "portrait": "web/public/images/folklore/mulgyeol-concept-v1-portrait.webp"
     },
     {
       "id": "sodam",
       "prompt": "Use case: stylized-concept. Single original character concept for Korean historical fantasy tactical RPG, consistent hand-painted gouache and fine ink illustration, grounded folkloric warmth, muted pine green, ochre, earthen brown, ivory palette. Full body three-quarter view centered with generous margin, square canvas, plain warm parchment background, subtle ground shadow. Readable silhouette, intricate natural materials, no text, no labels, no watermark, no modern clothing, no existing franchise likeness. Not chibi, not photorealistic, not glossy 3D. Concept draft, not an archaeological reconstruction. Subject: Sodam, adult Korean freshwater snail transformation spirit, independent camp healer, practical ivory and moss-green hemp robes, large spiral freshwater snail shell backpack, medicinal herb basket and simple clay cooking bowl, calm firm expression, tied-back dark hair. No royal crown, no modern dress. Entire body.",
-      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-2ea14170-0ade-437f-a514-a9740c94f163.png"
+      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-2ea14170-0ade-437f-a514-a9740c94f163.png",
+      "originalRemoved": "2026-10-25",
+      "image": "web/public/images/folklore/sodam-concept-v1.webp",
+      "portrait": "web/public/images/folklore/sodam-concept-v1-portrait.webp"
     },
     {
       "id": "soedong",
       "prompt": "Use case: stylized-concept. Single original character concept for Korean historical fantasy tactical RPG, consistent hand-painted gouache and fine ink illustration, grounded folkloric warmth, muted pine green, ochre, earthen brown, ivory palette. Full body three-quarter view centered with generous margin, square canvas, plain warm parchment background, subtle ground shadow. Readable silhouette, intricate natural materials, no text, no labels, no watermark, no modern clothing, no existing franchise likeness. Not chibi, not photorealistic, not glossy 3D. Concept draft, not an archaeological reconstruction. Subject: Soedong, small iron-eating bulgasari companion, sturdy quadruped fantasy beast combining bear-like stockiness with a short curious snout, overlapping weathered iron plates and earthy hide, munching a scrap of dull iron, warm intelligent eyes, not aggressive, no weapons in body. Whole creature visible.",
-      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-6edde7ea-7a5f-4ade-bc75-b6153b25a213.png"
+      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-6edde7ea-7a5f-4ade-bc75-b6153b25a213.png",
+      "originalRemoved": "2026-10-25",
+      "image": "web/public/images/folklore/soedong-concept-v1.webp",
+      "portrait": "web/public/images/folklore/soedong-concept-v1-portrait.webp"
     },
     {
       "id": "gilmok",
       "prompt": "Use case: stylized-concept. Single original character concept for Korean historical fantasy tactical RPG, consistent hand-painted gouache and fine ink illustration, grounded folkloric warmth, muted pine green, ochre, earthen brown, ivory palette. Full body three-quarter view centered with generous margin, square canvas, plain warm parchment background, subtle ground shadow. Readable silhouette, intricate natural materials, no text, no labels, no watermark, no modern clothing, no existing franchise likeness. Not chibi, not photorealistic, not glossy 3D. Concept draft, not an archaeological reconstruction. Subject: Gilmok, living Korean wooden village guardian post inspired by jangseung, tall humanoid with a carved weathered wood face, broad expressive mouth, post-shaped trunk, root feet and branchlike arms, simple straw bindings, protective steady stance. No inscriptions or lettering, no samurai imagery. Entire body.",
-      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-20a19505-b9f1-487f-8313-cf09e2c8512a.png"
+      "path": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-20a19505-b9f1-487f-8313-cf09e2c8512a.png",
+      "originalRemoved": "2026-10-25",
+      "image": "web/public/images/folklore/gilmok-concept-v1.webp",
+      "portrait": "web/public/images/folklore/gilmok-concept-v1-portrait.webp"
     }
   ]
 }

@@ -1,0 +1,326 @@
+{
+  "frameSize": 160,
+  "baseline": 148,
+  "frames": [
+    {
+      "file": "nw-0-0.webp",
+      "baseline": 148,
+      "bytes": 5270
+    },
+    {
+      "file": "nw-0-1.webp",
+      "baseline": 148,
+      "bytes": 5216
+    },
+    {
+      "file": "nw-0-2.webp",
+      "baseline": 148,
+      "bytes": 5390
+    },
+    {
+      "file": "nw-0-3.webp",
+      "baseline": 148,
+      "bytes": 5154
+    },
+    {
+      "file": "nw-1-0.webp",
+      "baseline": 148,
+      "bytes": 4720
+    },
+    {
+      "file": "nw-1-1.webp",
+      "baseline": 148,
+      "bytes": 4760
+    },
+    {
+      "file": "nw-1-2.webp",
+      "baseline": 148,
+      "bytes": 4560
+    },
+    {
+      "file": "nw-1-3.webp",
+      "baseline": 148,
+      "bytes": 5570
+    },
+    {
+      "file": "nw-2-0.webp",
+      "baseline": 148,
+      "bytes": 5622
+    },
+    {
+      "file": "nw-2-1.webp",
+      "baseline": 148,
+      "bytes": 5534
+    },
+    {
+      "file": "nw-2-2.webp",
+      "baseline": 148,
+      "bytes": 6022
+    },
+    {
+      "file": "nw-2-3.webp",
+      "baseline": 148,
+      "bytes": 5554
+    },
+    {
+      "file": "nw-3-0.webp",
+      "baseline": 148,
+      "bytes": 6042
+    },
+    {
+      "file": "nw-3-1.webp",
+      "baseline": 148,
+      "bytes": 5920
+    },
+    {
+      "file": "nw-3-2.webp",
+      "baseline": 148,
+      "bytes": 5992
+    },
+    {
+      "file": "nw-3-3.webp",
+      "baseline": 148,
+      "bytes": 5436
+    },
+    {
+      "file": "ne-0-0.webp",
+      "baseline": 148,
+      "bytes": 4954
+    },
+    {
+      "file": "ne-0-1.webp",
+      "baseline": 148,
+      "bytes": 4786
+    },
+    {
+      "file": "ne-0-2.webp",
+      "baseline": 148,
+      "bytes": 4698
+    },
+    {
+      "file": "ne-0-3.webp",
+      "baseline": 148,
+      "bytes": 4868
+    },
+    {
+      "file": "ne-1-0.webp",
+      "baseline": 148,
+      "bytes": 4882
+    },
+    {
+      "file": "ne-1-1.webp",
+      "baseline": 148,
+      "bytes": 4738
+    },
+    {
+      "file": "ne-1-2.webp",
+      "baseline": 148,
+      "bytes": 4824
+    },
+    {
+      "file": "ne-1-3.webp",
+      "baseline": 148,
+      "bytes": 4436
+    },
+    {
+      "file": "ne-2-0.webp",
+      "baseline": 148,
+      "bytes": 5400
+    },
+    {
+      "file": "ne-2-1.webp",
+      "baseline": 148,
+      "bytes": 5498
+    },
+    {
+      "file": "ne-2-2.webp",
+      "baseline": 148,
+      "bytes": 5722
+    },
+    {
+      "file": "ne-2-3.webp",
+      "baseline": 148,
+      "bytes": 5264
+    },
+    {
+      "file": "ne-3-0.webp",
+      "baseline": 148,
+      "bytes": 5390
+    },
+    {
+      "file": "ne-3-1.webp",
+      "baseline": 148,
+      "bytes": 5408
+    },
+    {
+      "file": "ne-3-2.webp",
+      "baseline": 148,
+      "bytes": 5488
+    },
+    {
+      "file": "ne-3-3.webp",
+      "baseline": 148,
+      "bytes": 5324
+    },
+    {
+      "file": "se-0-0.webp",
+      "baseline": 148,
+      "bytes": 4934
+    },
+    {
+      "file": "se-0-1.webp",
+      "baseline": 148,
+      "bytes": 5044
+    },
+    {
+      "file": "se-0-2.webp",
+      "baseline": 148,
+      "bytes": 5206
+    },
+    {
+      "file": "se-0-3.webp",
+      "baseline": 148,
+      "bytes": 5146
+    },
+    {
+      "file": "se-1-0.webp",
+      "baseline": 148,
+      "bytes": 5114
+    },
+    {
+      "file": "se-1-1.webp",
+      "baseline": 148,
+      "bytes": 4762
+    },
+    {
+      "file": "se-1-2.webp",
+      "baseline": 148,
+      "bytes": 5138
+    },
+    {
+      "file": "se-1-3.webp",
+      "baseline": 148,
+      "bytes": 4718
+    },
+    {
+      "file": "se-2-0.webp",
+      "baseline": 148,
+      "bytes": 5042
+    },
+    {
+      "file": "se-2-1.webp",
+      "baseline": 148,
+      "bytes": 5450
+    },
+    {
+      "file": "se-2-2.webp",
+      "baseline": 148,
+      "bytes": 5204
+    },
+    {
+      "file": "se-2-3.webp",
+      "baseline": 148,
+      "bytes": 4836
+    },
+    {
+      "file": "se-3-0.webp",
+      "baseline": 148,
+      "bytes": 5626
+    },
+    {
+      "file": "se-3-1.webp",
+      "baseline": 148,
+      "bytes": 5562
+    },
+    {
+      "file": "se-3-2.webp",
+      "baseline": 148,
+      "bytes": 7074
+    },
+    {
+      "file": "se-3-3.webp",
+      "baseline": 148,
+      "bytes": 5480
+    },
+    {
+      "file": "sw-0-0.webp",
+      "baseline": 148,
+      "bytes": 5726
+    },
+    {
+      "file": "sw-0-1.webp",
+      "baseline": 148,
+      "bytes": 5250
+    },
+    {
+      "file": "sw-0-2.webp",
+      "baseline": 148,
+      "bytes": 5212
+    },
+    {
+      "file": "sw-0-3.webp",
+      "baseline": 148,
+      "bytes": 5470
+    },
+    {
+      "file": "sw-1-0.webp",
+      "baseline": 148,
+      "bytes": 5266
+    },
+    {
+      "file": "sw-1-1.webp",
+      "baseline": 148,
+      "bytes": 5626
+    },
+    {
+      "file": "sw-1-2.webp",
+      "baseline": 148,
+      "bytes": 5554
+    },
+    {
+      "file": "sw-1-3.webp",
+      "baseline": 148,
+      "bytes": 5200
+    },
+    {
+      "file": "sw-2-0.webp",
+      "baseline": 148,
+      "bytes": 5480
+    },
+    {
+      "file": "sw-2-1.webp",
+      "baseline": 148,
+      "bytes": 6510
+    },
+    {
+      "file": "sw-2-2.webp",
+      "baseline": 148,
+      "bytes": 7126
+    },
+    {
+      "file": "sw-2-3.webp",
+      "baseline": 148,
+      "bytes": 5402
+    },
+    {
+      "file": "sw-3-0.webp",
+      "baseline": 148,
+      "bytes": 6712
+    },
+    {
+      "file": "sw-3-1.webp",
+      "baseline": 148,
+      "bytes": 6176
+    },
+    {
+      "file": "sw-3-2.webp",
+      "baseline": 148,
+      "bytes": 7254
+    },
+    {
+      "file": "sw-3-3.webp",
+      "baseline": 148,
+      "bytes": 5698
+    }
+  ]
+}

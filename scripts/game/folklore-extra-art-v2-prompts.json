@@ -1,0 +1,180 @@
+{
+  "tool": "image_gen builtin",
+  "entries": [
+    {
+      "id": "yeoul",
+      "kind": "portrait",
+      "prompt": "New dedicated face portrait of EXACT reference character. Head and shoulders, face occupies60%, no full body, vertical4:5 composition. Retain face, material, costume and distinctive humanoid fox scout, tail intact, walk alternate feet, attack hand swipe, skill hand gesture. Unified Korean hand painted gouache and ink, warm plain parchment backdrop. No text.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-c36f0201-42f2-4fea-bc02-39afa6cdd35e.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "yeoul",
+      "kind": "nw",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing back upper left 11 o'clock. humanoid fox scout, tail intact, walk alternate feet, attack hand swipe, skill hand gesture. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing back upper left 11 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-66cf834a-3814-4e35-bd72-78139be21151.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "yeoul",
+      "kind": "ne",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing back upper right 2 o'clock. humanoid fox scout, tail intact, walk alternate feet, attack hand swipe, skill hand gesture. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing back upper right 2 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-1c9668c4-9289-4409-9cce-7b28f2d253d3.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "yeoul",
+      "kind": "se",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing front lower right 5 o'clock. humanoid fox scout, tail intact, walk alternate feet, attack hand swipe, skill hand gesture. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing front lower right 5 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-66665553-1eec-4249-a33d-f23595f8637d.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "yeoul",
+      "kind": "sw",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing front lower left 7 o'clock. humanoid fox scout, tail intact, walk alternate feet, attack hand swipe, skill hand gesture. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing front lower left 7 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-cee788a8-0542-4e50-9143-f4630eaf9e2d.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mulgyeol",
+      "kind": "portrait",
+      "prompt": "New dedicated face portrait of EXACT reference character. Head and shoulders, face occupies60%, no full body, vertical4:5 composition. Retain face, material, costume and distinctive serpentine imugi. Unified Korean hand painted gouache and ink, warm plain parchment backdrop. No text.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-c8448bdb-7a08-4187-8782-f8e4c7cc2d39.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mulgyeol",
+      "kind": "nw",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing back upper left 11 o'clock. serpentine imugi; move by slithering body coils, no human walking, attack head lunge, skill head lifted for rain summoning; keep all coils as one connected silhouette. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing back upper left 11 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-57b9a50f-7bbf-4087-a3fc-bc55c2f6f286.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mulgyeol",
+      "kind": "ne",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing back upper right 2 o'clock. serpentine imugi; move by slithering body coils, no human walking, attack head lunge, skill head lifted for rain summoning; keep all coils as one connected silhouette. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing back upper right 2 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-0035dc70-518b-4a03-9525-f49ee0a61f35.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mulgyeol",
+      "kind": "se",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing front lower right 5 o'clock. serpentine imugi; move by slithering body coils, no human walking, attack head lunge, skill head lifted for rain summoning; keep all coils as one connected silhouette. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing front lower right 5 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-bfb04dde-7105-4931-afd0-ac20c7cf8295.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mulgyeol",
+      "kind": "sw",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing front lower left 7 o'clock. serpentine imugi; move by slithering body coils, no human walking, attack head lunge, skill head lifted for rain summoning; keep all coils as one connected silhouette. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing front lower left 7 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-a9750c18-0162-4ed9-9409-bafd871f856b.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sodam",
+      "kind": "portrait",
+      "prompt": "New dedicated face portrait of EXACT reference character. Head and shoulders, face occupies60%, no full body, vertical4:5 composition. Retain face, material, costume and distinctive human snail-shell backpack healer, walk alternate feet, attack palm strike, skill present bowl and raise free hand. Unified Korean hand painted gouache and ink, warm plain parchment backdrop. No text.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ea0febb3-b083-431e-9644-5c43050636ad.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sodam",
+      "kind": "nw",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing back upper left 11 o'clock. human snail-shell backpack healer, walk alternate feet, attack palm strike, skill present bowl and raise free hand. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing back upper left 11 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-afbfddb2-c524-430a-ab9a-21555ab56f10.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sodam",
+      "kind": "ne",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing back upper right 2 o'clock. human snail-shell backpack healer, walk alternate feet, attack palm strike, skill present bowl and raise free hand. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing back upper right 2 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-a7377c40-5a6a-4ce6-b44c-2f7610d588f7.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sodam",
+      "kind": "se",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing front lower right 5 o'clock. human snail-shell backpack healer, walk alternate feet, attack palm strike, skill present bowl and raise free hand. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing front lower right 5 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-cb5c0b83-d217-4ad4-9600-44a1ebad5972.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sodam",
+      "kind": "sw",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing front lower left 7 o'clock. human snail-shell backpack healer, walk alternate feet, attack palm strike, skill present bowl and raise free hand. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing front lower left 7 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-2e6a0c11-ee65-43fc-a07d-ebee02166152.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "soedong",
+      "kind": "portrait",
+      "prompt": "New dedicated face portrait of EXACT reference character. Head and shoulders, face occupies60%, no full body, vertical4:5 composition. Retain face, material, costume and distinctive stocky quadruped iron-eating beast. Unified Korean hand painted gouache and ink, warm plain parchment backdrop. No text.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ce00cef8-8a22-4e9b-be6e-0c2f03e9d00e.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "soedong",
+      "kind": "nw",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing back upper left 11 o'clock. stocky quadruped iron-eating beast; four-legged gait, attack bite lunge, skill braced armored stance; never turn humanoid. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing back upper left 11 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-213227a9-0e9e-49ac-931e-46bc2ec10f6e.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "soedong",
+      "kind": "ne",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing back upper right 2 o'clock. stocky quadruped iron-eating beast; four-legged gait, attack bite lunge, skill braced armored stance; never turn humanoid. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing back upper right 2 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ddebc79e-258c-40c8-a4eb-7fdb2d405cc1.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "soedong",
+      "kind": "se",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing front lower right 5 o'clock. stocky quadruped iron-eating beast; four-legged gait, attack bite lunge, skill braced armored stance; never turn humanoid. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing front lower right 5 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-c8c01415-9b73-4029-aa95-4f8f9b80bcbf.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "soedong",
+      "kind": "sw",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing front lower left 7 o'clock. stocky quadruped iron-eating beast; four-legged gait, attack bite lunge, skill braced armored stance; never turn humanoid. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing front lower left 7 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-456d5fd8-7b2f-4aff-a43b-e99401b4e627.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "gilmok",
+      "kind": "portrait",
+      "prompt": "New dedicated face portrait of EXACT reference character. Head and shoulders, face occupies60%, no full body, vertical4:5 composition. Retain face, material, costume and distinctive wooden jangseung humanoid, walk root feet, attack branch arm punch, skill both branches raised. Unified Korean hand painted gouache and ink, warm plain parchment backdrop. No text.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-020b3216-2816-4578-aa72-35b72c6381c5.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "gilmok",
+      "kind": "nw",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing back upper left 11 o'clock. wooden jangseung humanoid, walk root feet, attack branch arm punch, skill both branches raised. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing back upper left 11 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-a7dcde1c-9373-41d8-9108-f04581972e3e.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "gilmok",
+      "kind": "ne",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing back upper right 2 o'clock. wooden jangseung humanoid, walk root feet, attack branch arm punch, skill both branches raised. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing back upper right 2 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-dc704735-7312-40e4-b837-1f184057d1a2.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "gilmok",
+      "kind": "se",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing front lower right 5 o'clock. wooden jangseung humanoid, walk root feet, attack branch arm punch, skill both branches raised. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing front lower right 5 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-667538eb-86ba-4853-8c75-a181bceda9d2.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "gilmok",
+      "kind": "sw",
+      "prompt": "Exact reference character animation sheet, 4 columns by4 rows,16 full body figures, same scale, fixed ground baseline, all facing front lower left 7 o'clock. wooden jangseung humanoid, walk root feet, attack branch arm punch, skill both branches raised. Row1 idle4 phases, row2 movement4 phases, row3 attack prepare/contact/recover4 phases,row4 skill prepare/charge/release/recover4 phases. All poses must remain facing front lower left 7 o'clock. Transparent background, NO floating particles, no shadows. Each figure contained in central60% of cell with HUGE transparent gutters. Separate entire connected silhouettes, no overlaps, no text. Simplified hand painted tactical RPG style matching reference.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-bb2b9057-b296-41c5-84ed-f850482d59ad.png",
+      "originalRemoved": "2026-10-25"
+    }
+  ]
+}

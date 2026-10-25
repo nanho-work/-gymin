@@ -1,0 +1,29 @@
+{
+  "tool": "built-in image_gen",
+  "entries": [
+    {
+      "id": "nw",
+      "prompt": "Create an animation contact sheet of reference broom dokkaebi Mongdang. Exactly 4 columns x 4 rows, 16 separate figures on transparent background. Every figure confined to central 60% of its own equal square cell with LARGE empty gutters all sides, no overlap, no text. All figures SAME direction: 11 o'clock, back facing viewer, facing upper left. Consistent small hand-painted tactical RPG sprite style, straw hair, wooden elderly face, green rags, straw skirt, broom weapon. Fixed camera and scale, identical foot baseline and body center. Row1 idle 4 phases breathing; Row2 walk in place 4 phases left foot forward, passing, right forward, passing; Row3 attack 4 phases windup, broom sweep, contact, return; Row4 magic cast 4 phases prepare, raise free hand, release wind, lower hand. No particles or shadows outside body; no scenery. Entire broom fits within each cell. Never show a neighboring figure inside a cell. Direction must remain 11 o'clock, back facing viewer, facing upper left in every frame, including walking and attacks.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-4586d116-3f16-4429-be00-9a533c43872b.png",
+      "originalRemoved": true
+    },
+    {
+      "id": "ne",
+      "prompt": "Create an animation contact sheet of reference broom dokkaebi Mongdang. Exactly 4 columns x 4 rows, 16 separate figures on transparent background. Every figure confined to central 60% of its own equal square cell with LARGE empty gutters all sides, no overlap, no text. All figures SAME direction: 2 o'clock, back facing viewer, facing upper right. Consistent small hand-painted tactical RPG sprite style, straw hair, wooden elderly face, green rags, straw skirt, broom weapon. Fixed camera and scale, identical foot baseline and body center. Row1 idle 4 phases breathing; Row2 walk in place 4 phases left foot forward, passing, right forward, passing; Row3 attack 4 phases windup, broom sweep, contact, return; Row4 magic cast 4 phases prepare, raise free hand, release wind, lower hand. No particles or shadows outside body; no scenery. Entire broom fits within each cell. Never show a neighboring figure inside a cell. Direction must remain 2 o'clock, back facing viewer, facing upper right in every frame, including walking and attacks.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-a915a6e3-a770-46ab-ba51-c5df29186cbf.png",
+      "originalRemoved": true
+    },
+    {
+      "id": "se",
+      "prompt": "Create an animation contact sheet of reference broom dokkaebi Mongdang. Exactly 4 columns x 4 rows, 16 separate figures on transparent background. Every figure confined to central 60% of its own equal square cell with LARGE empty gutters all sides, no overlap, no text. All figures SAME direction: 5 o'clock, front three-quarter facing lower right. Consistent small hand-painted tactical RPG sprite style, straw hair, wooden elderly face, green rags, straw skirt, broom weapon. Fixed camera and scale, identical foot baseline and body center. Row1 idle 4 phases breathing; Row2 walk in place 4 phases left foot forward, passing, right forward, passing; Row3 attack 4 phases windup, broom sweep, contact, return; Row4 magic cast 4 phases prepare, raise free hand, release wind, lower hand. No particles or shadows outside body; no scenery. Entire broom fits within each cell. Never show a neighboring figure inside a cell. Direction must remain 5 o'clock, front three-quarter facing lower right in every frame, including walking and attacks.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-88cd2c72-589c-456c-be5e-0eff8410cf12.png",
+      "originalRemoved": true
+    },
+    {
+      "id": "sw",
+      "prompt": "Create an animation contact sheet of reference broom dokkaebi Mongdang. Exactly 4 columns x 4 rows, 16 separate figures on transparent background. Every figure confined to central 60% of its own equal square cell with LARGE empty gutters all sides, no overlap, no text. All figures SAME direction: 7 o'clock, front three-quarter facing lower left. Consistent small hand-painted tactical RPG sprite style, straw hair, wooden elderly face, green rags, straw skirt, broom weapon. Fixed camera and scale, identical foot baseline and body center. Row1 idle 4 phases breathing; Row2 walk in place 4 phases left foot forward, passing, right forward, passing; Row3 attack 4 phases windup, broom sweep, contact, return; Row4 magic cast 4 phases prepare, raise free hand, release wind, lower hand. No particles or shadows outside body; no scenery. Entire broom fits within each cell. Never show a neighboring figure inside a cell. Direction must remain 7 o'clock, front three-quarter facing lower left in every frame, including walking and attacks.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-392aa210-b555-41dc-bf19-8ab74d6ffe33.png",
+      "originalRemoved": true
+    }
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "tool": "image_gen builtin",
+  "entries": [
+    {
+      "id": "sageum",
+      "kind": "nw",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper LEFT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-5339199f-956d-4675-8ac0-efd7a22c25ff.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sageum",
+      "kind": "ne",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper RIGHT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-0e153356-d317-47da-af1f-d08c6855c8e8.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mangsil",
+      "kind": "nw",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper LEFT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-436fae70-1f31-4b13-8e77-1bef08400e88.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mangsil",
+      "kind": "ne",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper RIGHT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-10b21f85-17aa-488c-9ae0-e6761c44e331.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "bulssi",
+      "kind": "nw",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper LEFT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-6d01f1c0-073b-4345-9b02-ea00d638baf2.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "bulssi",
+      "kind": "ne",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper RIGHT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-2b587e3f-5297-42cb-bce9-a5deee90d12a.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "kungdol",
+      "kind": "nw",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper LEFT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-15a24bb2-5073-441c-91a2-b905ca9d28b4.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "kungdol",
+      "kind": "ne",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper RIGHT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-0363e189-4c12-4461-84e9-0bfd21eb77a6.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "yeoul",
+      "kind": "nw",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper LEFT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-351e8438-9cad-41ce-8ff8-201a5905228a.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "yeoul",
+      "kind": "ne",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper RIGHT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-13c21be2-7706-43d8-ae49-7ebebd2a0bbd.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mulgyeol",
+      "kind": "nw",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper LEFT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-a0e81ef8-79dc-4b73-8af3-450c119d7f5e.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mulgyeol",
+      "kind": "ne",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper RIGHT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-d6cc70e1-d7c1-468e-9268-559238e04e0a.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sodam",
+      "kind": "nw",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper LEFT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-250d6b65-c7b8-4971-a2ea-afe601385d49.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sodam",
+      "kind": "ne",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper RIGHT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-8d1a6185-e757-46b5-adb2-c7159738f6b7.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "soedong",
+      "kind": "nw",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper LEFT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-bbfe2aec-76b8-43ee-9fdb-92142cfebd66.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "soedong",
+      "kind": "ne",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper RIGHT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-56ab1c41-5885-43ad-90cc-c2df73b44019.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "gilmok",
+      "kind": "nw",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper LEFT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-c4b2108b-5529-4fc8-94a7-02f73f88a268.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "gilmok",
+      "kind": "ne",
+      "prompt": "CRITICAL CAMERA: REAR VIEW ONLY. Show the BACK OF HEAD AND BACK of reference character, NOT face or eyes. Character looks AWAY from camera toward upper RIGHT. Reference is for identity/materials only; rotate the entire character 135 degrees away from reference view. Draw 16 REAR VIEW full-body animation poses in exact4 columns4 rows, transparent background. Row1 idle four phases; row2 walking/slithering four phases, row3 attack four phases, row4 skill gesture four phases. Maintain reference body type (serpent slithers, quadruped walks four legs, humans use two legs). Consistent scale and foot baseline, central60% of cell, large empty gutters, disconnected figures. No text, shadows or floating particles. Every pose shows back of head, back of clothing/armor, heels or rear body. FACE MUST NOT BE VISIBLE. Hand painted Korean tactical RPG matching material identity.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-c5c9303b-e6cb-42cd-ab9c-c0c5ef9e021e.png",
+      "originalRemoved": "2026-10-25"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "tool": "image_gen builtin",
+  "entries": [
+    {
+      "id": "yeoul",
+      "prompt": "Create a NEW CLOSE-UP FACE ICON for this exact reference character. Extremely tight HEADSHOT, from top of head to base of neck ONLY. The head fills 85% of frame. NO HANDS, NO WAIST, NO LEGS, NO torso pose, NO whole body. Show eyes nose mouth clearly. Preserve identity, Korean painted ink/gouache style and head ornament. Warm parchment plain background. Vertical 4:5 composition. This is a tiny RPG dialogue portrait, face must remain readable at128x160.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-673e0bb3-d516-4ac9-9cd1-76209a1a884b.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "mulgyeol",
+      "prompt": "Create a NEW CLOSE-UP FACE ICON for this exact reference character. Extremely tight HEADSHOT, from top of head to base of neck ONLY. The head fills 85% of frame. NO HANDS, NO WAIST, NO LEGS, NO torso pose, NO whole body. Show eyes nose mouth clearly. Preserve identity, Korean painted ink/gouache style and head ornament. Warm parchment plain background. Vertical 4:5 composition. This is a tiny RPG dialogue portrait, face must remain readable at128x160.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-42e439ea-232d-4f93-bdd5-81237fd94e43.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "sodam",
+      "prompt": "Create a NEW CLOSE-UP FACE ICON for this exact reference character. Extremely tight HEADSHOT, from top of head to base of neck ONLY. The head fills 85% of frame. NO HANDS, NO WAIST, NO LEGS, NO torso pose, NO whole body. Show eyes nose mouth clearly. Preserve identity, Korean painted ink/gouache style and head ornament. Warm parchment plain background. Vertical 4:5 composition. This is a tiny RPG dialogue portrait, face must remain readable at128x160.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-7ab53aab-d45e-4309-897d-570f06be854b.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "soedong",
+      "prompt": "Create a NEW CLOSE-UP FACE ICON for this exact reference character. Extremely tight HEADSHOT, from top of head to base of neck ONLY. The head fills 85% of frame. NO HANDS, NO WAIST, NO LEGS, NO torso pose, NO whole body. Show eyes nose mouth clearly. Preserve identity, Korean painted ink/gouache style and head ornament. Warm parchment plain background. Vertical 4:5 composition. This is a tiny RPG dialogue portrait, face must remain readable at128x160.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-730891ef-a347-4eea-91cb-425afc1fda84.png",
+      "originalRemoved": "2026-10-25"
+    },
+    {
+      "id": "gilmok",
+      "prompt": "Create a NEW CLOSE-UP FACE ICON for this exact reference character. Extremely tight HEADSHOT, from top of head to base of neck ONLY. The head fills 85% of frame. NO HANDS, NO WAIST, NO LEGS, NO torso pose, NO whole body. Show eyes nose mouth clearly. Preserve identity, Korean painted ink/gouache style and head ornament. Warm parchment plain background. Vertical 4:5 composition. This is a tiny RPG dialogue portrait, face must remain readable at128x160.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f4a76fa2-6213-416e-957e-4af2baf54728.png",
+      "originalRemoved": "2026-10-25"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Create a production-usable animation sprite sheet based on reference Mongdang broom dokkaebi: aged wood face, straw hair and skirt, muted green rag clothing, rope belt, broom weapon. Hand painted Korean fantasy tactical RPG style simplified for small sprites. EXACT layout: 4 columns by 3 rows, 12 equal square cells, no borders, no labels, transparent background. Each cell full body same size, facing right three-quarter view, feet at same baseline, centered, generous empty margins, no overlap across cells. Row 1 four idle frames: neutral, inhale, settle, exhale, subtle straw motion. Row 2 four walking-in-place cycle frames: left stride, passing pose, right stride, passing pose; visibly alternate legs and arms while holding broom. Row 3 four attack frames: windup broom raised behind, swing forward, full extension sweeping broom to right, recover. Preserve character identity exactly across all 12 frames. No scenery, no text, no ground plane. Four columns three rows perfectly aligned.",
+  "asset": "web/public/images/folklore/mongdang-motion-v1.webp",
+  "columns": 4,
+  "rows": 3,
+  "actions": [
+    "idle",
+    "walk",
+    "attack"
+  ],
+  "framesPerAction": 4,
+  "originalRemoved": true
+}

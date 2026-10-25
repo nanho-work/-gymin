@@ -76,4 +76,4 @@ Next.js + React + TypeScript. 화면 구현은 `web/src/features/game-world/page
 
 ### 설화 캐릭터 콘셉트 v1
 
-인물 페이지의 10명 전신 초안은 `web/public/images/folklore/`에 보관합니다. 내장 이미지 생성 도구로 제작한 창작 외형이며, 전승의 고증 복원도나 최종 게임 스프라이트가 아닙니다. 정확한 생성 프롬프트는 `scripts/game/folklore-image-prompts.json`에 기록했습니다. 화면은 Next Image 최적화 및 지연 로딩을 사용하고, 클릭하면 PNG 원본을 엽니다.
+인물 페이지의 10명 전신 초안은 `web/public/images/folklore/`에 보관합니다. 내장 이미지 생성 도구로 제작한 창작 외형이며, 전승의 고증 복원도나 최종 게임 스프라이트가 아닙니다. 정확한 생성 프롬프트는 `scripts/game/folklore-image-prompts.json`에 기록했습니다. 프로젝트에는 512px WebP 전신과 128×160px WebP 썸네일만 저장합니다. 클릭하면 512px 전신을 엽니다. 기존 대형 PNG의 프로젝트 복사본은 경량본으로 대체했습니다.

@@ -40,7 +40,8 @@
       "caution": "물건의 전승 모티프와 별개로 이름·기억에서 태어나는 기원·왕건과의 만남은 창작.",
       "family": "도깨비",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
-      "image": "/images/folklore/mongdang-concept-v1.png"
+      "image": "/images/folklore/mongdang-concept-v1.webp",
+      "portrait": "/images/folklore/mongdang-concept-v1-portrait.webp"
     },
     {
       "id": 24,
@@ -64,7 +65,8 @@
       "caution": "물건의 전승 모티프와 별개로 이름·기억에서 태어나는 기원·왕건과의 만남은 창작.",
       "family": "도깨비",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
-      "image": "/images/folklore/sageum-concept-v1.png"
+      "image": "/images/folklore/sageum-concept-v1.webp",
+      "portrait": "/images/folklore/sageum-concept-v1-portrait.webp"
     },
     {
       "id": 25,
@@ -88,7 +90,8 @@
       "caution": "망태기 자체의 변신 전승은 직접 확인하지 못함. 출처는 생활도구 도깨비의 일반 모티프만 뒷받침.",
       "family": "도깨비",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
-      "image": "/images/folklore/mangsil-concept-v1.png"
+      "image": "/images/folklore/mangsil-concept-v1.webp",
+      "portrait": "/images/folklore/mangsil-concept-v1-portrait.webp"
     },
     {
       "id": 1001,
@@ -112,7 +115,8 @@
       "caution": "화염술과 취사장 수호 성격은 전승의 고정 능력이 아닌 창작.",
       "source": "https://encykorea.aks.ac.kr/Article/E0015527",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
-      "image": "/images/folklore/bulssi-concept-v1.png"
+      "image": "/images/folklore/bulssi-concept-v1.webp",
+      "portrait": "/images/folklore/bulssi-concept-v1-portrait.webp"
     },
     {
       "id": 1002,
@@ -136,7 +140,8 @@
       "caution": "씨름·파쇄 능력과 인격은 게임용 창작.",
       "source": "https://encykorea.aks.ac.kr/Article/E0015527",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
-      "image": "/images/folklore/kungdol-concept-v1.png"
+      "image": "/images/folklore/kungdol-concept-v1.webp",
+      "portrait": "/images/folklore/kungdol-concept-v1-portrait.webp"
     },
     {
       "id": 1003,
@@ -160,7 +165,8 @@
       "caution": "아홉 꼬리·천 년·간을 먹는 조건을 모든 전승의 공통 규칙으로 묶지 않음. 선한 정찰병 서사는 창작.",
       "source": "https://www.kh.or.kr/brd/board/741/L/menu/740?bbIdx=112290&brdType=R&searchText=finden&thisPage=1",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
-      "image": "/images/folklore/yeoul-concept-v1.png"
+      "image": "/images/folklore/yeoul-concept-v1.webp",
+      "portrait": "/images/folklore/yeoul-concept-v1-portrait.webp"
     },
     {
       "id": 1004,
@@ -184,7 +190,8 @@
       "caution": "모든 이무기가 동일한 벌을 받았다고 일반화하지 않음. 왕건과의 도하 사건은 창작.",
       "source": "https://folkency.nfm.go.kr/topic/비내린이무기",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
-      "image": "/images/folklore/mulgyeol-concept-v1.png"
+      "image": "/images/folklore/mulgyeol-concept-v1.webp",
+      "portrait": "/images/folklore/mulgyeol-concept-v1-portrait.webp"
     },
     {
       "id": 1005,
@@ -208,7 +215,8 @@
       "caution": "우렁각시의 혼인·금기 서사를 전부 동일하게 설명하지 않음. 전쟁 동료 서사는 창작.",
       "source": "https://kdp.aks.ac.kr/inde/gubi?id=POKS.GUBI.GUBI.2_19364",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
-      "image": "/images/folklore/sodam-concept-v1.png"
+      "image": "/images/folklore/sodam-concept-v1.webp",
+      "portrait": "/images/folklore/sodam-concept-v1-portrait.webp"
     },
     {
       "id": 1006,
@@ -232,7 +240,8 @@
       "caution": "고려 말·조선 배경의 전승도 있어 후삼국 배치는 시대 이동 각색. 불과의 관계도 변이별로 검토.",
       "source": "https://encykorea.aks.ac.kr/Article/E0024904",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
-      "image": "/images/folklore/soedong-concept-v1.png"
+      "image": "/images/folklore/soedong-concept-v1.webp",
+      "portrait": "/images/folklore/soedong-concept-v1-portrait.webp"
     },
     {
       "id": 1007,
@@ -256,7 +265,8 @@
       "caution": "후대 장승의 외형과 명문을 후삼국의 확정 고증으로 쓰지 않음. 움직임과 영입담은 창작.",
       "source": "https://encykorea.aks.ac.kr/Article/E0048619",
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
-      "image": "/images/folklore/gilmok-concept-v1.png"
+      "image": "/images/folklore/gilmok-concept-v1.webp",
+      "portrait": "/images/folklore/gilmok-concept-v1-portrait.webp"
     }
   ],
   "learning": [

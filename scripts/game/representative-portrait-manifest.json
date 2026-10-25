@@ -1,0 +1,61 @@
+{
+  "generator": "built-in image_gen",
+  "sourcesRemoved": true,
+  "totalBytes": 31466,
+  "assets": [
+    {
+      "id": "hong-yu",
+      "name": "홍유",
+      "role": "검방패 보병",
+      "prompt": "Create ONE portrait thumbnail for Korean historical fantasy tactical RPG, 홍유, imaginative character design NOT an authentic likeness. broad square face Korean man about 38, short straight black beard, resolute brows, tied black hair, simple brown lamellar shoulder armor, warm rust accents. Face and shoulders only, whole head visible with a little top margin, face occupies 60 percent of portrait. Vertical 4:5 composition. Warm parchment background. Hand-painted detailed illustration, clear dark outlines readable at 128x160, same painterly richness and muted warm palette as reference; human anatomy, NOT goblin features. Distinct recognizable face. No text, frame, weapon, full body. Clothing is fictional period-inspired.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-6252ad71-9e2e-4ba8-b5e6-730bf9a672e6.png",
+      "output": "web/public/images/representatives/hong-yu-portrait-v1.webp",
+      "bytes": 5488
+    },
+    {
+      "id": "bok-jigyeom",
+      "name": "복지겸",
+      "role": "양손 창병",
+      "prompt": "Create ONE portrait thumbnail for Korean historical fantasy tactical RPG, 복지겸, imaginative character design NOT an authentic likeness. lean angular face Korean man about 35, narrow moustache, sharp attentive eyes, high tied black hair, dark teal lamellar shoulder armor. Face and shoulders only, whole head visible with a little top margin, face occupies 60 percent of portrait. Vertical 4:5 composition. Warm parchment background. Hand-painted detailed illustration, clear dark outlines readable at 128x160, same painterly richness and muted warm palette as reference; human anatomy, NOT goblin features. Distinct recognizable face. No text, frame, weapon, full body. Clothing is fictional period-inspired.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-8f834438-b29e-4e69-9b43-3e91c05b2057.png",
+      "output": "web/public/images/representatives/bok-jigyeom-portrait-v1.webp",
+      "bytes": 5998
+    },
+    {
+      "id": "park-sugyeong",
+      "name": "박수경",
+      "role": "궁병",
+      "prompt": "Create ONE portrait thumbnail for Korean historical fantasy tactical RPG, 박수경, imaginative character design NOT an authentic likeness. clean shaven Korean man about 28, alert rounded eyes, athletic slim face, tied hair simple brown headband, light brown leather shoulders green cloth collar. Face and shoulders only, whole head visible with a little top margin, face occupies 60 percent of portrait. Vertical 4:5 composition. Warm parchment background. Hand-painted detailed illustration, clear dark outlines readable at 128x160, same painterly richness and muted warm palette as reference; human anatomy, NOT goblin features. Distinct recognizable face. No text, frame, weapon, full body. Clothing is fictional period-inspired.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-a1004610-9137-4820-a935-47856cd18ea9.png",
+      "output": "web/public/images/representatives/park-sugyeong-portrait-v1.webp",
+      "bytes": 5286
+    },
+    {
+      "id": "choe-eung",
+      "name": "최응",
+      "role": "책사",
+      "prompt": "Create ONE portrait thumbnail for Korean historical fantasy tactical RPG, 최응, imaginative character design NOT an authentic likeness. young clean shaven Korean scholar about 25, thoughtful gentle eyes slender face, visible black hair tied neatly with simple cloth cord NO HAT NO HOOD, indigo robe ivory collar. Face and shoulders only, whole head visible with a little top margin, face occupies 60 percent of portrait. Vertical 4:5 composition. Warm parchment background. Hand-painted detailed illustration, clear dark outlines readable at 128x160, same painterly richness and muted warm palette as reference; human anatomy, NOT goblin features. Distinct recognizable face. No text, frame, weapon, full body. Clothing is fictional period-inspired.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f53ae33b-963e-4276-a3d8-ec9ea423471e.png",
+      "output": "web/public/images/representatives/choe-eung-portrait-v1.webp",
+      "bytes": 4296
+    },
+    {
+      "id": "sin-sunggyeom",
+      "name": "신숭겸",
+      "role": "기마병",
+      "prompt": "Create ONE portrait thumbnail for Korean historical fantasy tactical RPG, 신숭겸, imaginative character design NOT an authentic likeness. powerful Korean man about 42 broad cheekbones thick short black beard confident eyes black hair tied, iron lamellar shoulders dark crimson collar no helmet. Face and shoulders only, whole head visible with a little top margin, face occupies 60 percent of portrait. Vertical 4:5 composition. Warm parchment background. Hand-painted detailed illustration, clear dark outlines readable at 128x160, same painterly richness and muted warm palette as reference; human anatomy, NOT goblin features. Distinct recognizable face. No text, frame, weapon, full body. Clothing is fictional period-inspired.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-5a06e663-049b-43e9-a582-683bff917b3b.png",
+      "output": "web/public/images/representatives/sin-sunggyeom-portrait-v1.webp",
+      "bytes": 5014
+    },
+    {
+      "id": "jang-yeongsil",
+      "name": "장영실",
+      "role": "포병·기술자",
+      "prompt": "Create ONE portrait thumbnail for Korean historical fantasy tactical RPG, 장영실, imaginative character design NOT an authentic likeness. Korean inventor about 45, kindly curious eyes sturdy face neat short moustache and goatee, tied black hair simple linen headband, practical ochre work robe dark leather shoulder strap, NO glasses NO modern objects. Face and shoulders only, whole head visible with a little top margin, face occupies 60 percent of portrait. Vertical 4:5 composition. Warm parchment background. Hand-painted detailed illustration, clear dark outlines readable at 128x160, same painterly richness and muted warm palette as reference; human anatomy, NOT goblin features. Distinct recognizable face. No text, frame, weapon, full body. Clothing is fictional period-inspired.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-b3ae4851-b21f-4ff5-940f-7146f2a7586d.png",
+      "output": "web/public/images/representatives/jang-yeongsil-portrait-v1.webp",
+      "bytes": 5384
+    }
+  ]
+}

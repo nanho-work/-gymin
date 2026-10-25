@@ -1,0 +1,70 @@
+{
+  "generator": "built-in image_gen",
+  "sourcesRemoved": true,
+  "assets": [
+    {
+      "id": "hong-yu",
+      "originalId": 1,
+      "name": "홍유",
+      "prompt": "Game asset stylized-concept. Full body tactical RPG playable sprite, isometric 3/4 view facing southeast lower right 5 o'clock. a sturdy Korean cavalry rider with short square beard on a plain brown horse, short simple spear, plain brown leather lamellar armor; horse has plain saddle and reins ONLY no horse armor. Use attached portrait ONLY for face identity; replace its fancy outfit with specified starting equipment. Compact 3.5-head proportions, crisp bold dark outline, hand-painted limited earthy colors readable on mobile at 128 pixels. Entire body feet and weapon inside frame, 15% transparent margins. No background no shadow no ground no labels. No accessory shield helmet hat gloves or jewelry. One character unit only.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-90cadd60-1ba5-4761-94f0-2f0a0e61f61d.png",
+      "output": "web/public/images/representatives/hong-yu/base-v1.webp",
+      "bytes": 12418
+    },
+    {
+      "id": "bok-jigyeom",
+      "originalId": 5,
+      "name": "복지겸",
+      "prompt": "Game asset stylized-concept. Full body tactical RPG playable sprite, isometric 3/4 view facing southeast lower right 5 o'clock. a lean Korean cavalry rider thin moustache on a plain dark brown horse, short simple spear, plain brown leather lamellar armor; horse plain saddle reins ONLY no barding. Use attached portrait ONLY for face identity; replace its fancy outfit with specified starting equipment. Compact 3.5-head proportions, crisp bold dark outline, hand-painted limited earthy colors readable on mobile at 128 pixels. Entire body feet and weapon inside frame, 15% transparent margins. No background no shadow no ground no labels. No accessory shield helmet hat gloves or jewelry. One character unit only.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-81248006-c10d-47fc-ab97-4875bb196dd1.png",
+      "output": "web/public/images/representatives/bok-jigyeom/base-v1.webp",
+      "bytes": 11200
+    },
+    {
+      "id": "park-sugyeong",
+      "originalId": 13,
+      "name": "박수경",
+      "prompt": "Game asset stylized-concept. Full body tactical RPG playable sprite, isometric 3/4 view facing southeast lower right 5 o'clock. young clean shaven Korean archer standing on foot, simple mulberry wooden bow, plain brown leather lamellar armor. Use attached portrait ONLY for face identity; replace its fancy outfit with specified starting equipment. Compact 3.5-head proportions, crisp bold dark outline, hand-painted limited earthy colors readable on mobile at 128 pixels. Entire body feet and weapon inside frame, 15% transparent margins. No background no shadow no ground no labels. No accessory shield helmet hat gloves or jewelry. One character unit only.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-835a3f06-33e2-410f-80f2-7498608e7e81.png",
+      "output": "web/public/images/representatives/park-sugyeong/base-v1.webp",
+      "bytes": 10582
+    },
+    {
+      "id": "sin-sunggyeom",
+      "originalId": 16,
+      "name": "신숭겸",
+      "prompt": "Game asset stylized-concept. Full body tactical RPG playable sprite, isometric 3/4 view facing southeast lower right 5 o'clock. strong broad Korean martial fighter short full beard standing on foot, simple unreinforced wooden club with hemp grip, plain beige hemp tunic and pants; NO armor NO horse. Use attached portrait ONLY for face identity; replace its fancy outfit with specified starting equipment. Compact 3.5-head proportions, crisp bold dark outline, hand-painted limited earthy colors readable on mobile at 128 pixels. Entire body feet and weapon inside frame, 15% transparent margins. No background no shadow no ground no labels. No accessory shield helmet hat gloves or jewelry. One character unit only.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-5d312006-2ded-414c-af88-a29774c7ff04.png",
+      "output": "web/public/images/representatives/sin-sunggyeom/base-v1.webp",
+      "bytes": 11450
+    },
+    {
+      "id": "choe-eung",
+      "originalId": 20,
+      "name": "최응",
+      "prompt": "Game asset stylized-concept. Full body tactical RPG playable sprite, isometric 3/4 view facing southeast lower right 5 o'clock. slender young clean shaven Korean scholar standing on foot, small simple bamboo folding fan, plain beige hemp robe, tied hair visible simple cord; NO hat NO hood NO armor. Use attached portrait ONLY for face identity; replace its fancy outfit with specified starting equipment. Compact 3.5-head proportions, crisp bold dark outline, hand-painted limited earthy colors readable on mobile at 128 pixels. Entire body feet and weapon inside frame, 15% transparent margins. No background no shadow no ground no labels. No accessory shield helmet hat gloves or jewelry. One character unit only.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ac1dd730-3be6-424b-9260-3f09946a4e01.png",
+      "output": "web/public/images/representatives/choe-eung/base-v1.webp",
+      "bytes": 7796
+    },
+    {
+      "id": "jang-yeongsil",
+      "originalId": 18,
+      "name": "장영실",
+      "prompt": "Game asset stylized-concept. Full body tactical RPG playable sprite, isometric 3/4 view facing southeast lower right 5 o'clock. Korean engineer with short moustache standing BESIDE a small plain wooden traction stone thrower on wheels, simple beige hemp clothes, tied hair visible; whole character AND wooden catapult together, no cannon no metal machinery. Use attached portrait ONLY for face identity; replace its fancy outfit with specified starting equipment. Compact 3.5-head proportions, crisp bold dark outline, hand-painted limited earthy colors readable on mobile at 128 pixels. Entire body feet and weapon inside frame, 15% transparent margins. No background no shadow no ground no labels. No accessory shield helmet hat gloves or jewelry. One character unit only.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-76ee804e-67be-4a43-a93e-8c97f72a989b.png",
+      "output": "web/public/images/representatives/jang-yeongsil/base-v1.webp",
+      "bytes": 12866
+    },
+    {
+      "id": "kungdol",
+      "originalId": 1002,
+      "name": "쿵돌",
+      "prompt": "Game asset stylized-concept. Full body tactical RPG playable sprite, isometric 3/4 view facing southeast lower right 5 o'clock. stout friendly Korean wooden dokkaebi with wooden face and short twig hair matching portrait, simple wooden club NOT pestle, plain beige hemp tunic tied with hemp rope; NO treasure NO metal armor NO foliage costume. Use attached portrait ONLY for face identity; replace its fancy outfit with specified starting equipment. Compact 3.5-head proportions, crisp bold dark outline, hand-painted limited earthy colors readable on mobile at 128 pixels. Entire body feet and weapon inside frame, 15% transparent margins. No background no shadow no ground no labels. No accessory shield helmet hat gloves or jewelry. One character unit only.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-3701b356-dce3-42ec-abfd-e9a493ddc5ae.png",
+      "output": "web/public/images/representatives/kungdol/base-v1.webp",
+      "bytes": 15080
+    }
+  ],
+  "status": "Superseded by playable-seven sprites; unused illustration outputs removed."
+}

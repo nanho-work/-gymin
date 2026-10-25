@@ -1,0 +1,46 @@
+{
+  "records": [
+    {
+      "id": "hong-yu",
+      "name": "홍유",
+      "role": "검방패 보병",
+      "portrait": "/images/representatives/hong-yu-portrait-v1.webp",
+      "note": "실존 인물에서 착안한 창작 외형·게임용 병과 초안. 전신·모션은 미제작."
+    },
+    {
+      "id": "bok-jigyeom",
+      "name": "복지겸",
+      "role": "양손 창병",
+      "portrait": "/images/representatives/bok-jigyeom-portrait-v1.webp",
+      "note": "실존 인물에서 착안한 창작 외형·게임용 병과 초안. 전신·모션은 미제작."
+    },
+    {
+      "id": "park-sugyeong",
+      "name": "박수경",
+      "role": "궁병",
+      "portrait": "/images/representatives/park-sugyeong-portrait-v1.webp",
+      "note": "실존 인물에서 착안한 창작 외형·게임용 병과 초안. 전신·모션은 미제작."
+    },
+    {
+      "id": "choe-eung",
+      "name": "최응",
+      "role": "책사",
+      "portrait": "/images/representatives/choe-eung-portrait-v1.webp",
+      "note": "실존 인물에서 착안한 창작 외형·게임용 병과 초안. 전신·모션은 미제작."
+    },
+    {
+      "id": "sin-sunggyeom",
+      "name": "신숭겸",
+      "role": "기마병",
+      "portrait": "/images/representatives/sin-sunggyeom-portrait-v1.webp",
+      "note": "실존 인물에서 착안한 창작 외형·게임용 병과 초안. 전신·모션은 미제작."
+    },
+    {
+      "id": "jang-yeongsil",
+      "name": "장영실",
+      "role": "포병·기술자",
+      "portrait": "/images/representatives/jang-yeongsil-portrait-v1.webp",
+      "note": "인물 선정 확정. 포병 역할은 창작이며 후삼국 합류 설정은 미정. 전신·모션은 미제작."
+    }
+  ]
+}

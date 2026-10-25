@@ -1,0 +1,3365 @@
+{
+  "generator": "built-in image_gen",
+  "sourcesRemoved": true,
+  "assets": [
+    {
+      "id": "hong-yu",
+      "oid": 1,
+      "name": "홍유",
+      "dir": "se",
+      "prompt": "GAMEPLAY SPRITE SHEET not character illustration. EXACTLY 4 by 4 equal grid, 16 tiny fully separate compact CHIBI sprites. Reference1 is REQUIRED visual style: oversized head, 2.5-head body, bold pixel-like dark contours, simple shaded chunky colors, crisp readable at 72px. Reference2 is ONLY face identity not clothing. a sturdy Korean cavalry rider with short square beard on a plain brown horse, short simple spear, plain brown leather lamellar armor; horse has plain saddle and reins ONLY no horse armor. Plain lowest-tier equipment ONLY. No helmets hats shield jewelry fancy clothes. ALL16 face front three quarter lower right (5 oclock). Rows: 1 idle breathing four frames; 2 four distinct in-place walk cycle frames (mounted horse walks); 3 attack windup, strike, followthrough, return; 4 skill gesture prepare, lift, release, return (small glow only). Horse riders remain mounted. Catapult includes operator and small wooden cart together. Fixed camera and scale, full unit complete in each cell, feet/hooves/wheel baseline identical. Keep 20% empty margins inside EVERY cell. No overlap no cropping. Transparent background no ground no shadows no text no grid lines. This is a production-style tiny tactical sprite atlas, NOT realistic proportions, NOT full-length portrait.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-9be3893a-bc70-4719-9861-e757fd33ea14.png"
+    },
+    {
+      "id": "hong-yu",
+      "oid": 1,
+      "name": "홍유",
+      "dir": "sw",
+      "prompt": "GAMEPLAY SPRITE SHEET not character illustration. EXACTLY 4 by 4 equal grid, 16 tiny fully separate compact CHIBI sprites. Reference1 is REQUIRED visual style: oversized head, 2.5-head body, bold pixel-like dark contours, simple shaded chunky colors, crisp readable at 72px. Reference2 is ONLY face identity not clothing. a sturdy Korean cavalry rider with short square beard on a plain brown horse, short simple spear, plain brown leather lamellar armor; horse has plain saddle and reins ONLY no horse armor. Plain lowest-tier equipment ONLY. No helmets hats shield jewelry fancy clothes. ALL16 face front three quarter lower left (7 oclock). Rows: 1 idle breathing four frames; 2 four distinct in-place walk cycle frames (mounted horse walks); 3 attack windup, strike, followthrough, return; 4 skill gesture prepare, lift, release, return (small glow only). Horse riders remain mounted. Catapult includes operator and small wooden cart together. Fixed camera and scale, full unit complete in each cell, feet/hooves/wheel baseline identical. Keep 20% empty margins inside EVERY cell. No overlap no cropping. Transparent background no ground no shadows no text no grid lines. This is a production-style tiny tactical sprite atlas, NOT realistic proportions, NOT full-length portrait.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-a1b6336f-8a4d-4742-8399-1caae8e71f92.png"
+    },
+    {
+      "id": "hong-yu",
+      "oid": 1,
+      "name": "홍유",
+      "dir": "nw",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. REAR view facing upper LEFT. Camera sees BACK of head, BACK of torso, horse RUMP and tail closest to viewer. NO face, NO eyes visible. This camera rule applies to EVERY sprite, including attack. Unit a sturdy Korean cavalry rider with short square beard on a plain brown horse, short simple spear, plain brown leather lamellar armor; horse has plain saddle and reins ONLY no horse armor. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-82392d5a-cc4f-46ad-8513-6f0ebfd4ee5e.png"
+    },
+    {
+      "id": "hong-yu",
+      "oid": 1,
+      "name": "홍유",
+      "dir": "ne",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. REAR view facing upper RIGHT. Camera sees BACK of head, BACK of torso, horse RUMP and tail closest to viewer. NO face, NO eyes visible. This camera rule applies to EVERY sprite, including attack. Unit a sturdy Korean cavalry rider with short square beard on a plain brown horse, short simple spear, plain brown leather lamellar armor; horse has plain saddle and reins ONLY no horse armor. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-1e54495a-0110-437d-8ca7-2e790a6550cb.png"
+    },
+    {
+      "id": "bok-jigyeom",
+      "oid": 5,
+      "name": "복지겸",
+      "dir": "se",
+      "prompt": "GAMEPLAY SPRITE SHEET not character illustration. EXACTLY 4 by 4 equal grid, 16 tiny fully separate compact CHIBI sprites. Reference1 is REQUIRED visual style: oversized head, 2.5-head body, bold pixel-like dark contours, simple shaded chunky colors, crisp readable at 72px. Reference2 is ONLY face identity not clothing. a lean Korean cavalry rider thin moustache on a plain dark brown horse, short simple spear, plain brown leather lamellar armor; horse plain saddle reins ONLY no barding. Plain lowest-tier equipment ONLY. No helmets hats shield jewelry fancy clothes. ALL16 face front three quarter lower right (5 oclock). Rows: 1 idle breathing four frames; 2 four distinct in-place walk cycle frames (mounted horse walks); 3 attack windup, strike, followthrough, return; 4 skill gesture prepare, lift, release, return (small glow only). Horse riders remain mounted. Catapult includes operator and small wooden cart together. Fixed camera and scale, full unit complete in each cell, feet/hooves/wheel baseline identical. Keep 20% empty margins inside EVERY cell. No overlap no cropping. Transparent background no ground no shadows no text no grid lines. This is a production-style tiny tactical sprite atlas, NOT realistic proportions, NOT full-length portrait.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-c1f70c31-325e-4a65-bdae-d67f7552536d.png"
+    },
+    {
+      "id": "bok-jigyeom",
+      "oid": 5,
+      "name": "복지겸",
+      "dir": "sw",
+      "prompt": "GAMEPLAY SPRITE SHEET not character illustration. EXACTLY 4 by 4 equal grid, 16 tiny fully separate compact CHIBI sprites. Reference1 is REQUIRED visual style: oversized head, 2.5-head body, bold pixel-like dark contours, simple shaded chunky colors, crisp readable at 72px. Reference2 is ONLY face identity not clothing. a lean Korean cavalry rider thin moustache on a plain dark brown horse, short simple spear, plain brown leather lamellar armor; horse plain saddle reins ONLY no barding. Plain lowest-tier equipment ONLY. No helmets hats shield jewelry fancy clothes. ALL16 face front three quarter lower left (7 oclock). Rows: 1 idle breathing four frames; 2 four distinct in-place walk cycle frames (mounted horse walks); 3 attack windup, strike, followthrough, return; 4 skill gesture prepare, lift, release, return (small glow only). Horse riders remain mounted. Catapult includes operator and small wooden cart together. Fixed camera and scale, full unit complete in each cell, feet/hooves/wheel baseline identical. Keep 20% empty margins inside EVERY cell. No overlap no cropping. Transparent background no ground no shadows no text no grid lines. This is a production-style tiny tactical sprite atlas, NOT realistic proportions, NOT full-length portrait.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-867cf7a0-e9fd-4fad-80d2-e12fa4ac6dba.png"
+    },
+    {
+      "id": "bok-jigyeom",
+      "oid": 5,
+      "name": "복지겸",
+      "dir": "nw",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. REAR view facing upper LEFT. Camera sees BACK of head, BACK of torso, horse RUMP and tail closest to viewer. NO face, NO eyes visible. This camera rule applies to EVERY sprite, including attack. Unit a lean Korean cavalry rider thin moustache on a plain dark brown horse, short simple spear, plain brown leather lamellar armor; horse plain saddle reins ONLY no barding. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-20b182ac-02cd-446e-8bf6-253ab0ec36ec.png"
+    },
+    {
+      "id": "bok-jigyeom",
+      "oid": 5,
+      "name": "복지겸",
+      "dir": "ne",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. REAR view facing upper RIGHT. Camera sees BACK of head, BACK of torso, horse RUMP and tail closest to viewer. NO face, NO eyes visible. This camera rule applies to EVERY sprite, including attack. Unit a lean Korean cavalry rider thin moustache on a plain dark brown horse, short simple spear, plain brown leather lamellar armor; horse plain saddle reins ONLY no barding. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-82c9fcea-0d43-4480-ad4c-f8434c158d3c.png"
+    },
+    {
+      "id": "sin-sunggyeom",
+      "oid": 16,
+      "name": "신숭겸",
+      "dir": "se",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. front three-quarter facing lower RIGHT This camera rule applies to EVERY sprite, including attack. Unit strong broad Korean martial fighter short full beard standing on foot, simple unreinforced wooden club with hemp grip, plain beige hemp tunic and pants; NO armor NO horse. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-fb2e5a58-ea21-4d65-b7e5-f8da340fdc43.png"
+    },
+    {
+      "id": "sin-sunggyeom",
+      "oid": 16,
+      "name": "신숭겸",
+      "dir": "sw",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. front three-quarter facing lower LEFT This camera rule applies to EVERY sprite, including attack. Unit strong broad Korean martial fighter short full beard standing on foot, simple unreinforced wooden club with hemp grip, plain beige hemp tunic and pants; NO armor NO horse. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-29a08027-7cb5-4ed1-a504-f476f60d315a.png"
+    },
+    {
+      "id": "sin-sunggyeom",
+      "oid": 16,
+      "name": "신숭겸",
+      "dir": "nw",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. REAR view facing upper LEFT. Camera sees BACK of head, BACK of torso, horse RUMP and tail closest to viewer. NO face, NO eyes visible. This camera rule applies to EVERY sprite, including attack. Unit strong broad Korean martial fighter short full beard standing on foot, simple unreinforced wooden club with hemp grip, plain beige hemp tunic and pants; NO armor NO horse. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-9f71f366-6f0a-4ad7-99c0-4a8eb189777b.png"
+    },
+    {
+      "id": "sin-sunggyeom",
+      "oid": 16,
+      "name": "신숭겸",
+      "dir": "ne",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. REAR view facing upper RIGHT. Camera sees BACK of head, BACK of torso, horse RUMP and tail closest to viewer. NO face, NO eyes visible. This camera rule applies to EVERY sprite, including attack. Unit strong broad Korean martial fighter short full beard standing on foot, simple unreinforced wooden club with hemp grip, plain beige hemp tunic and pants; NO armor NO horse. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-d3949679-0b5e-4094-aaa7-a3ed70e59843.png"
+    },
+    {
+      "id": "choe-eung",
+      "oid": 20,
+      "name": "최응",
+      "dir": "se",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. front three-quarter facing lower RIGHT This camera rule applies to EVERY sprite, including attack. Unit slender young clean shaven Korean scholar standing on foot, small simple bamboo folding fan, plain beige hemp robe, tied hair visible simple cord; NO hat NO hood NO armor. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-9da529ca-89a4-4555-b388-62d4e27a4a59.png"
+    },
+    {
+      "id": "choe-eung",
+      "oid": 20,
+      "name": "최응",
+      "dir": "sw",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. front three-quarter facing lower LEFT This camera rule applies to EVERY sprite, including attack. Unit slender young clean shaven Korean scholar standing on foot, small simple bamboo folding fan, plain beige hemp robe, tied hair visible simple cord; NO hat NO hood NO armor. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-6e28ce4a-9b2a-452e-b7be-096879ebc71e.png"
+    },
+    {
+      "id": "choe-eung",
+      "oid": 20,
+      "name": "최응",
+      "dir": "nw",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. REAR view facing upper LEFT. Camera sees BACK of head, BACK of torso, horse RUMP and tail closest to viewer. NO face, NO eyes visible. This camera rule applies to EVERY sprite, including attack. Unit slender young clean shaven Korean scholar standing on foot, small simple bamboo folding fan, plain beige hemp robe, tied hair visible simple cord; NO hat NO hood NO armor. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-82cc572a-5073-4919-a431-ac658c36005f.png"
+    },
+    {
+      "id": "choe-eung",
+      "oid": 20,
+      "name": "최응",
+      "dir": "ne",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. REAR view facing upper RIGHT. Camera sees BACK of head, BACK of torso, horse RUMP and tail closest to viewer. NO face, NO eyes visible. This camera rule applies to EVERY sprite, including attack. Unit slender young clean shaven Korean scholar standing on foot, small simple bamboo folding fan, plain beige hemp robe, tied hair visible simple cord; NO hat NO hood NO armor. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f2f96bc6-a5c1-484d-80e4-e7f34a499b3a.png"
+    },
+    {
+      "id": "park-sugyeong",
+      "oid": 13,
+      "name": "박수경",
+      "dir": "se",
+      "prompt": "CRITICAL: ONE HUMAN FOOT ARCHER per cell. NO HORSE, NO MOUNT, NO ANIMAL, NO RIDER. Character stands on TWO HUMAN FEET. Pixel-like tactical RPG CHIBI sprite sheet 4x4, 16 tiny units. Young clean shaven black haired Korean archer, plain brown leather lamellar, simple wooden bow. All face lower RIGHT. 2.5-head body bold dark outline muted earthy colors. Rows idle4, walking ON FOOT4, bow shot4, skill gesture4. Each unit small in center HALF of cell leaving enormous gutters. Transparent background no labels no effects no ground. Same scale and feet baseline. Do NOT include any horse. Reference only style.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-b086f109-9d2b-43d4-aac5-1f9a85fe6fc9.png"
+    },
+    {
+      "id": "park-sugyeong",
+      "oid": 13,
+      "name": "박수경",
+      "dir": "sw",
+      "prompt": "CRITICAL: ONE HUMAN FOOT ARCHER per cell. NO HORSE, NO MOUNT, NO ANIMAL, NO RIDER. Character stands on TWO HUMAN FEET. Pixel-like tactical RPG CHIBI sprite sheet 4x4, 16 tiny units. Young clean shaven black haired Korean archer, plain brown leather lamellar, simple wooden bow. All face lower LEFT. 2.5-head body bold dark outline muted earthy colors. Rows idle4, walking ON FOOT4, bow shot4, skill gesture4. Each unit small in center HALF of cell leaving enormous gutters. Transparent background no labels no effects no ground. Same scale and feet baseline. Do NOT include any horse. Reference only style.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-183f9808-e666-4ca9-8224-caf61c0bbcaf.png"
+    },
+    {
+      "id": "park-sugyeong",
+      "oid": 13,
+      "name": "박수경",
+      "dir": "nw",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. REAR view facing upper LEFT. Camera sees BACK of head, BACK of torso, horse RUMP and tail closest to viewer. NO face, NO eyes visible. This camera rule applies to EVERY sprite, including attack. Unit young clean shaven Korean archer standing on foot, simple mulberry wooden bow, plain brown leather lamellar armor. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-73142016-d8b7-400a-b9d0-62cf8e600ff0.png"
+    },
+    {
+      "id": "park-sugyeong",
+      "oid": 13,
+      "name": "박수경",
+      "dir": "ne",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. REAR view facing upper RIGHT. Camera sees BACK of head, BACK of torso, horse RUMP and tail closest to viewer. NO face, NO eyes visible. This camera rule applies to EVERY sprite, including attack. Unit young clean shaven Korean archer standing on foot, simple mulberry wooden bow, plain brown leather lamellar armor. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ffab4594-d7af-45aa-bdaf-c80212dccb97.png"
+    },
+    {
+      "id": "jang-yeongsil",
+      "oid": 18,
+      "name": "장영실",
+      "dir": "se",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. front three-quarter facing lower RIGHT This camera rule applies to EVERY sprite, including attack. Unit Korean engineer with short moustache standing BESIDE a small plain wooden traction stone thrower on wheels, simple beige hemp clothes, tied hair visible; whole character AND wooden catapult together, no cannon no metal machinery. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-2bd922a0-46fe-4daf-a5a8-799664530a36.png"
+    },
+    {
+      "id": "jang-yeongsil",
+      "oid": 18,
+      "name": "장영실",
+      "dir": "sw",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. front three-quarter facing lower LEFT This camera rule applies to EVERY sprite, including attack. Unit Korean engineer with short moustache standing BESIDE a small plain wooden traction stone thrower on wheels, simple beige hemp clothes, tied hair visible; whole character AND wooden catapult together, no cannon no metal machinery. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-0e06c30e-b4c5-4cf6-96f9-ea8c2d8aa201.png"
+    },
+    {
+      "id": "jang-yeongsil",
+      "oid": 18,
+      "name": "장영실",
+      "dir": "nw",
+      "prompt": "Tiny tactical RPG PLAYABLE CHIBI SPRITE atlas. Exactly 16 sprites, four rows four columns. REAR view facing upper LEFT. Camera sees BACK of head, BACK of torso, horse RUMP and tail closest to viewer. NO face, NO eyes visible. This camera rule applies to EVERY sprite, including attack. Unit Korean engineer with short moustache standing BESIDE a small plain wooden traction stone thrower on wheels, simple beige hemp clothes, tied hair visible; whole character AND wooden catapult together, no cannon no metal machinery. 2.5-head chunky miniature proportions, big head, short body, bold black pixel-like outlines, few earthy shaded colors. NOT portrait. Reference is ONLY rendering style. All16 same size. EACH figure occupies MAXIMUM HALF of its cell width and height; huge transparent gutters all around to prevent crossing. Row1 idle4; row2 in-place walk4; row3 attack4; row4 casting gesture4. NO glowing effects NO swoosh NO projectile, only body and equipment. No text no grid no ground no shadow. Plain lowest-tier equipment only. No shield helmet ornaments. Rear unit must NOT turn toward camera.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-4d455829-146b-43e5-ba06-f213e3cdd17c.png"
+    },
+    {
+      "id": "jang-yeongsil",
+      "dir": "ne",
+      "name": "장영실",
+      "prompt": "TINY tactical game SPRITE sheet 4x4 separate16frames. Korean HUMAN engineer, black hair topknot, normal rounded HUMAN ears, short dark moustache, beige linen work clothes; NOT goblin NOT orange hair, operating wooden catapult. REAR view ONLY, BACK of head and torso toward camera, no face facing upper RIGHT. Match character identity from reference. Compact 2.5head chibi thick dark outline earthy shaded sprites, not realistic portrait. Row1idle4,row2walk4,row3attack4,row4skillgesture4. Whole figure SAME scale SAME feet baseline with huge transparent gutters. Each unit occupies HALF cell only. No effects no shadows no labels no grid. Basic equipment only.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-3b89270e-343e-4c81-9b6a-104d6fa108b6.png"
+    },
+    {
+      "id": "kungdol",
+      "dir": "se",
+      "name": "쿵돌",
+      "prompt": "TINY tactical game SPRITE sheet 4x4 separate16frames. SQUAT BROAD MUSCULAR wooden Korean dokkaebi EXACT face and massive broad body from reference, thick trunk limbs and large nose. Simple beige hemp tunic and pants, unreinforced plain wooden club. No leafy costume no jewelry no wrist armor. NOT slender small leaf goblin.. FRONT three-quarter view facing lower RIGHT. Match character identity from reference. Compact 2.5head chibi thick dark outline earthy shaded sprites, not realistic portrait. Row1idle4,row2walk4,row3attack4,row4skillgesture4. Whole figure SAME scale SAME feet baseline with huge transparent gutters. Each unit occupies HALF cell only. No effects no shadows no labels no grid. Basic equipment only.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ca26eb1f-49d3-4474-b98b-ee982893b6e7.png"
+    },
+    {
+      "id": "kungdol",
+      "dir": "sw",
+      "name": "쿵돌",
+      "prompt": "TINY tactical game SPRITE sheet 4x4 separate16frames. SQUAT BROAD MUSCULAR wooden Korean dokkaebi EXACT face and massive broad body from reference, thick trunk limbs and large nose. Simple beige hemp tunic and pants, unreinforced plain wooden club. No leafy costume no jewelry no wrist armor. NOT slender small leaf goblin.. FRONT three-quarter view facing lower LEFT. Match character identity from reference. Compact 2.5head chibi thick dark outline earthy shaded sprites, not realistic portrait. Row1idle4,row2walk4,row3attack4,row4skillgesture4. Whole figure SAME scale SAME feet baseline with huge transparent gutters. Each unit occupies HALF cell only. No effects no shadows no labels no grid. Basic equipment only.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-80ca0077-dd87-4638-b99e-c380b917ce4c.png"
+    },
+    {
+      "id": "kungdol",
+      "dir": "nw",
+      "name": "쿵돌",
+      "prompt": "TINY tactical game SPRITE sheet 4x4 separate16frames. SQUAT BROAD MUSCULAR wooden Korean dokkaebi EXACT face and massive broad body from reference, thick trunk limbs and large nose. Simple beige hemp tunic and pants, unreinforced plain wooden club. No leafy costume no jewelry no wrist armor. NOT slender small leaf goblin.. REAR view ONLY, BACK of head and torso toward camera, no face facing upper LEFT. Match character identity from reference. Compact 2.5head chibi thick dark outline earthy shaded sprites, not realistic portrait. Row1idle4,row2walk4,row3attack4,row4skillgesture4. Whole figure SAME scale SAME feet baseline with huge transparent gutters. Each unit occupies HALF cell only. No effects no shadows no labels no grid. Basic equipment only.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-79f9aab3-5a89-4e58-958b-5de6b2bacde9.png"
+    },
+    {
+      "id": "kungdol",
+      "dir": "ne",
+      "name": "쿵돌",
+      "prompt": "TINY tactical game SPRITE sheet 4x4 separate16frames. SQUAT BROAD MUSCULAR wooden Korean dokkaebi EXACT face and massive broad body from reference, thick trunk limbs and large nose. Simple beige hemp tunic and pants, unreinforced plain wooden club. No leafy costume no jewelry no wrist armor. NOT slender small leaf goblin.. REAR view ONLY, BACK of head and torso toward camera, no face facing upper RIGHT. Match character identity from reference. Compact 2.5head chibi thick dark outline earthy shaded sprites, not realistic portrait. Row1idle4,row2walk4,row3attack4,row4skillgesture4. Whole figure SAME scale SAME feet baseline with huge transparent gutters. Each unit occupies HALF cell only. No effects no shadows no labels no grid. Basic equipment only.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f4948e1e-1b98-4b4f-adf7-8841dae001fe.png"
+    }
+  ],
+  "frames": [
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-0-0.webp",
+      "bytes": 4910,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-0-1.webp",
+      "bytes": 4590,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-0-2.webp",
+      "bytes": 4678,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-0-3.webp",
+      "bytes": 4508,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-1-0.webp",
+      "bytes": 4690,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-1-1.webp",
+      "bytes": 4682,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-1-2.webp",
+      "bytes": 4722,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-1-3.webp",
+      "bytes": 4610,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-2-0.webp",
+      "bytes": 4760,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-2-1.webp",
+      "bytes": 5860,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-2-2.webp",
+      "bytes": 6210,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-2-3.webp",
+      "bytes": 4712,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-3-0.webp",
+      "bytes": 5098,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-3-1.webp",
+      "bytes": 5796,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-3-2.webp",
+      "bytes": 6724,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/se-3-3.webp",
+      "bytes": 4760,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-0-0.webp",
+      "bytes": 4920,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-0-1.webp",
+      "bytes": 5094,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-0-2.webp",
+      "bytes": 4978,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-0-3.webp",
+      "bytes": 5150,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-1-0.webp",
+      "bytes": 5374,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-1-1.webp",
+      "bytes": 5444,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-1-2.webp",
+      "bytes": 5420,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-1-3.webp",
+      "bytes": 5436,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-2-0.webp",
+      "bytes": 5176,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-2-1.webp",
+      "bytes": 6134,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-2-2.webp",
+      "bytes": 5604,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-2-3.webp",
+      "bytes": 5426,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-3-0.webp",
+      "bytes": 5546,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-3-1.webp",
+      "bytes": 6342,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-3-2.webp",
+      "bytes": 7494,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/sw-3-3.webp",
+      "bytes": 5460,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-0-0.webp",
+      "bytes": 3704,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-0-1.webp",
+      "bytes": 3634,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-0-2.webp",
+      "bytes": 3626,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-0-3.webp",
+      "bytes": 3630,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-1-0.webp",
+      "bytes": 3876,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-1-1.webp",
+      "bytes": 3870,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-1-2.webp",
+      "bytes": 3836,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-1-3.webp",
+      "bytes": 3890,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-2-0.webp",
+      "bytes": 4026,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-2-1.webp",
+      "bytes": 4028,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-2-2.webp",
+      "bytes": 3700,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-2-3.webp",
+      "bytes": 3752,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-3-0.webp",
+      "bytes": 3786,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-3-1.webp",
+      "bytes": 4590,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-3-2.webp",
+      "bytes": 4202,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/nw-3-3.webp",
+      "bytes": 3808,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-0-0.webp",
+      "bytes": 4410,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-0-1.webp",
+      "bytes": 4174,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-0-2.webp",
+      "bytes": 4274,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-0-3.webp",
+      "bytes": 4266,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-1-0.webp",
+      "bytes": 4566,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-1-1.webp",
+      "bytes": 4494,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-1-2.webp",
+      "bytes": 4492,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-1-3.webp",
+      "bytes": 4686,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-2-0.webp",
+      "bytes": 4996,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-2-1.webp",
+      "bytes": 4712,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-2-2.webp",
+      "bytes": 4912,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-2-3.webp",
+      "bytes": 4682,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-3-0.webp",
+      "bytes": 3972,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-3-1.webp",
+      "bytes": 4290,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-3-2.webp",
+      "bytes": 4248,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "hong-yu",
+      "file": "web/public/images/playable/hong-yu/ne-3-3.webp",
+      "bytes": 4140,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-0-0.webp",
+      "bytes": 4708,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-0-1.webp",
+      "bytes": 4610,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-0-2.webp",
+      "bytes": 4586,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-0-3.webp",
+      "bytes": 4582,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-1-0.webp",
+      "bytes": 4690,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-1-1.webp",
+      "bytes": 4892,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-1-2.webp",
+      "bytes": 4742,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-1-3.webp",
+      "bytes": 4660,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-2-0.webp",
+      "bytes": 4566,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-2-1.webp",
+      "bytes": 6192,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-2-2.webp",
+      "bytes": 5090,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-2-3.webp",
+      "bytes": 4510,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-3-0.webp",
+      "bytes": 4970,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-3-1.webp",
+      "bytes": 6688,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-3-2.webp",
+      "bytes": 6484,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/se-3-3.webp",
+      "bytes": 4544,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-0-0.webp",
+      "bytes": 4682,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-0-1.webp",
+      "bytes": 4942,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-0-2.webp",
+      "bytes": 4606,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-0-3.webp",
+      "bytes": 4846,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-1-0.webp",
+      "bytes": 4974,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-1-1.webp",
+      "bytes": 5004,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-1-2.webp",
+      "bytes": 4928,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-1-3.webp",
+      "bytes": 5192,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-2-0.webp",
+      "bytes": 5430,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-2-1.webp",
+      "bytes": 5228,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-2-2.webp",
+      "bytes": 5128,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-2-3.webp",
+      "bytes": 4992,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-3-0.webp",
+      "bytes": 4964,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-3-1.webp",
+      "bytes": 6240,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-3-2.webp",
+      "bytes": 6410,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/sw-3-3.webp",
+      "bytes": 5032,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-0-0.webp",
+      "bytes": 3954,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-0-1.webp",
+      "bytes": 3910,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-0-2.webp",
+      "bytes": 3876,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-0-3.webp",
+      "bytes": 4006,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-1-0.webp",
+      "bytes": 4108,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-1-1.webp",
+      "bytes": 3770,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-1-2.webp",
+      "bytes": 3946,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-1-3.webp",
+      "bytes": 4076,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-2-0.webp",
+      "bytes": 4190,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-2-1.webp",
+      "bytes": 4146,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-2-2.webp",
+      "bytes": 4296,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-2-3.webp",
+      "bytes": 4072,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-3-0.webp",
+      "bytes": 3958,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-3-1.webp",
+      "bytes": 3598,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-3-2.webp",
+      "bytes": 3948,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/nw-3-3.webp",
+      "bytes": 3986,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-0-0.webp",
+      "bytes": 3898,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-0-1.webp",
+      "bytes": 3754,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-0-2.webp",
+      "bytes": 3828,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-0-3.webp",
+      "bytes": 3592,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-1-0.webp",
+      "bytes": 3800,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-1-1.webp",
+      "bytes": 3904,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-1-2.webp",
+      "bytes": 4046,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-1-3.webp",
+      "bytes": 3848,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-2-0.webp",
+      "bytes": 3810,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-2-1.webp",
+      "bytes": 4068,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-2-2.webp",
+      "bytes": 4116,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-2-3.webp",
+      "bytes": 3930,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-3-0.webp",
+      "bytes": 4288,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-3-1.webp",
+      "bytes": 3874,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-3-2.webp",
+      "bytes": 4206,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "bok-jigyeom",
+      "file": "web/public/images/playable/bok-jigyeom/ne-3-3.webp",
+      "bytes": 4020,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-0-0.webp",
+      "bytes": 3886,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-0-1.webp",
+      "bytes": 3806,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-0-2.webp",
+      "bytes": 3974,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-0-3.webp",
+      "bytes": 3624,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-1-0.webp",
+      "bytes": 3456,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-1-1.webp",
+      "bytes": 3830,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-1-2.webp",
+      "bytes": 3522,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-1-3.webp",
+      "bytes": 3652,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-2-0.webp",
+      "bytes": 4128,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-2-1.webp",
+      "bytes": 4202,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-2-2.webp",
+      "bytes": 4298,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-2-3.webp",
+      "bytes": 3992,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-3-0.webp",
+      "bytes": 3960,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-3-1.webp",
+      "bytes": 4338,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-3-2.webp",
+      "bytes": 4546,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/se-3-3.webp",
+      "bytes": 3934,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-0-0.webp",
+      "bytes": 4296,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-0-1.webp",
+      "bytes": 4252,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-0-2.webp",
+      "bytes": 4172,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-0-3.webp",
+      "bytes": 4254,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-1-0.webp",
+      "bytes": 4310,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-1-1.webp",
+      "bytes": 4184,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-1-2.webp",
+      "bytes": 4152,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-1-3.webp",
+      "bytes": 3936,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-2-0.webp",
+      "bytes": 3840,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-2-1.webp",
+      "bytes": 4576,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-2-2.webp",
+      "bytes": 4730,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-2-3.webp",
+      "bytes": 4146,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-3-0.webp",
+      "bytes": 4438,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-3-1.webp",
+      "bytes": 4428,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-3-2.webp",
+      "bytes": 4654,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/sw-3-3.webp",
+      "bytes": 3970,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-0-0.webp",
+      "bytes": 3696,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-0-1.webp",
+      "bytes": 3590,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-0-2.webp",
+      "bytes": 3638,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-0-3.webp",
+      "bytes": 3638,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-1-0.webp",
+      "bytes": 3772,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-1-1.webp",
+      "bytes": 3676,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-1-2.webp",
+      "bytes": 3748,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-1-3.webp",
+      "bytes": 3684,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-2-0.webp",
+      "bytes": 4100,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-2-1.webp",
+      "bytes": 4306,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-2-2.webp",
+      "bytes": 4438,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-2-3.webp",
+      "bytes": 3794,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-3-0.webp",
+      "bytes": 4174,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-3-1.webp",
+      "bytes": 4198,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-3-2.webp",
+      "bytes": 3826,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/nw-3-3.webp",
+      "bytes": 3412,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-0-0.webp",
+      "bytes": 3900,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-0-1.webp",
+      "bytes": 3730,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-0-2.webp",
+      "bytes": 3876,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-0-3.webp",
+      "bytes": 3974,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-1-0.webp",
+      "bytes": 3960,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-1-1.webp",
+      "bytes": 4028,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-1-2.webp",
+      "bytes": 4026,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-1-3.webp",
+      "bytes": 4050,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-2-0.webp",
+      "bytes": 4106,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-2-1.webp",
+      "bytes": 4002,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-2-2.webp",
+      "bytes": 4324,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-2-3.webp",
+      "bytes": 4288,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-3-0.webp",
+      "bytes": 3938,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-3-1.webp",
+      "bytes": 3920,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-3-2.webp",
+      "bytes": 3986,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "sin-sunggyeom",
+      "file": "web/public/images/playable/sin-sunggyeom/ne-3-3.webp",
+      "bytes": 3764,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-0-0.webp",
+      "bytes": 3708,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-0-1.webp",
+      "bytes": 3744,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-0-2.webp",
+      "bytes": 3710,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-0-3.webp",
+      "bytes": 3578,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-1-0.webp",
+      "bytes": 3840,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-1-1.webp",
+      "bytes": 3916,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-1-2.webp",
+      "bytes": 3854,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-1-3.webp",
+      "bytes": 3872,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-2-0.webp",
+      "bytes": 3920,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-2-1.webp",
+      "bytes": 4778,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-2-2.webp",
+      "bytes": 4474,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-2-3.webp",
+      "bytes": 3904,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-3-0.webp",
+      "bytes": 3594,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-3-1.webp",
+      "bytes": 4150,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-3-2.webp",
+      "bytes": 4220,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/se-3-3.webp",
+      "bytes": 3566,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-0-0.webp",
+      "bytes": 3524,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-0-1.webp",
+      "bytes": 3512,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-0-2.webp",
+      "bytes": 3546,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-0-3.webp",
+      "bytes": 3620,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-1-0.webp",
+      "bytes": 3874,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-1-1.webp",
+      "bytes": 3786,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-1-2.webp",
+      "bytes": 4088,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-1-3.webp",
+      "bytes": 4024,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-2-0.webp",
+      "bytes": 4078,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-2-1.webp",
+      "bytes": 4618,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-2-2.webp",
+      "bytes": 4760,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-2-3.webp",
+      "bytes": 3910,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-3-0.webp",
+      "bytes": 3590,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-3-1.webp",
+      "bytes": 4160,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-3-2.webp",
+      "bytes": 4648,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/sw-3-3.webp",
+      "bytes": 4160,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-0-0.webp",
+      "bytes": 3338,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-0-1.webp",
+      "bytes": 3380,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-0-2.webp",
+      "bytes": 3410,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-0-3.webp",
+      "bytes": 3420,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-1-0.webp",
+      "bytes": 3506,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-1-1.webp",
+      "bytes": 3586,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-1-2.webp",
+      "bytes": 3678,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-1-3.webp",
+      "bytes": 3650,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-2-0.webp",
+      "bytes": 3676,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-2-1.webp",
+      "bytes": 4450,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-2-2.webp",
+      "bytes": 4386,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-2-3.webp",
+      "bytes": 3696,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-3-0.webp",
+      "bytes": 3420,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-3-1.webp",
+      "bytes": 3958,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-3-2.webp",
+      "bytes": 4208,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/nw-3-3.webp",
+      "bytes": 3678,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-0-0.webp",
+      "bytes": 3758,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-0-1.webp",
+      "bytes": 3568,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-0-2.webp",
+      "bytes": 3898,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-0-3.webp",
+      "bytes": 4024,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-1-0.webp",
+      "bytes": 4076,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-1-1.webp",
+      "bytes": 4086,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-1-2.webp",
+      "bytes": 4052,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-1-3.webp",
+      "bytes": 4084,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-2-0.webp",
+      "bytes": 4356,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-2-1.webp",
+      "bytes": 4872,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-2-2.webp",
+      "bytes": 4910,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-2-3.webp",
+      "bytes": 4358,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-3-0.webp",
+      "bytes": 3890,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-3-1.webp",
+      "bytes": 4196,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-3-2.webp",
+      "bytes": 4366,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "choe-eung",
+      "file": "web/public/images/playable/choe-eung/ne-3-3.webp",
+      "bytes": 4600,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-0-0.webp",
+      "bytes": 3590,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-0-1.webp",
+      "bytes": 3628,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-0-2.webp",
+      "bytes": 3638,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-0-3.webp",
+      "bytes": 3564,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-1-0.webp",
+      "bytes": 3730,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-1-1.webp",
+      "bytes": 3744,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-1-2.webp",
+      "bytes": 3742,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-1-3.webp",
+      "bytes": 3718,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-2-0.webp",
+      "bytes": 3798,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-2-1.webp",
+      "bytes": 4334,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-2-2.webp",
+      "bytes": 4366,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-2-3.webp",
+      "bytes": 3668,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-3-0.webp",
+      "bytes": 4350,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-3-1.webp",
+      "bytes": 4660,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-3-2.webp",
+      "bytes": 4876,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/se-3-3.webp",
+      "bytes": 4800,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-0-0.webp",
+      "bytes": 3448,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-0-1.webp",
+      "bytes": 3238,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-0-2.webp",
+      "bytes": 3330,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-0-3.webp",
+      "bytes": 3396,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-1-0.webp",
+      "bytes": 3772,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-1-1.webp",
+      "bytes": 3680,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-1-2.webp",
+      "bytes": 3820,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-1-3.webp",
+      "bytes": 3832,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-2-0.webp",
+      "bytes": 4248,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-2-1.webp",
+      "bytes": 4708,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-2-2.webp",
+      "bytes": 4396,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-2-3.webp",
+      "bytes": 4240,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-3-0.webp",
+      "bytes": 3828,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-3-1.webp",
+      "bytes": 4694,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-3-2.webp",
+      "bytes": 4204,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/sw-3-3.webp",
+      "bytes": 3660,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-0-0.webp",
+      "bytes": 3592,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-0-1.webp",
+      "bytes": 3568,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-0-2.webp",
+      "bytes": 3694,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-0-3.webp",
+      "bytes": 3554,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-1-0.webp",
+      "bytes": 3436,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-1-1.webp",
+      "bytes": 3556,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-1-2.webp",
+      "bytes": 3492,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-1-3.webp",
+      "bytes": 3576,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-2-0.webp",
+      "bytes": 4208,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-2-1.webp",
+      "bytes": 4432,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-2-2.webp",
+      "bytes": 4482,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-2-3.webp",
+      "bytes": 3858,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-3-0.webp",
+      "bytes": 3768,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-3-1.webp",
+      "bytes": 3912,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-3-2.webp",
+      "bytes": 3716,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/nw-3-3.webp",
+      "bytes": 3414,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-0-0.webp",
+      "bytes": 3446,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-0-1.webp",
+      "bytes": 3334,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-0-2.webp",
+      "bytes": 3360,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-0-3.webp",
+      "bytes": 3416,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-1-0.webp",
+      "bytes": 3542,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-1-1.webp",
+      "bytes": 3512,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-1-2.webp",
+      "bytes": 3374,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-1-3.webp",
+      "bytes": 3426,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-2-0.webp",
+      "bytes": 3518,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-2-1.webp",
+      "bytes": 4222,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-2-2.webp",
+      "bytes": 4350,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-2-3.webp",
+      "bytes": 4270,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-3-0.webp",
+      "bytes": 3294,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-3-1.webp",
+      "bytes": 3384,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-3-2.webp",
+      "bytes": 3330,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "park-sugyeong",
+      "file": "web/public/images/playable/park-sugyeong/ne-3-3.webp",
+      "bytes": 3272,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-0-0.webp",
+      "bytes": 6492,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-0-1.webp",
+      "bytes": 6506,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-0-2.webp",
+      "bytes": 6234,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-0-3.webp",
+      "bytes": 6582,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-1-0.webp",
+      "bytes": 6546,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-1-1.webp",
+      "bytes": 6646,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-1-2.webp",
+      "bytes": 6526,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-1-3.webp",
+      "bytes": 6316,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-2-0.webp",
+      "bytes": 6788,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-2-1.webp",
+      "bytes": 6466,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-2-2.webp",
+      "bytes": 7398,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-2-3.webp",
+      "bytes": 6494,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-3-0.webp",
+      "bytes": 6978,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-3-1.webp",
+      "bytes": 6858,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-3-2.webp",
+      "bytes": 6394,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/se-3-3.webp",
+      "bytes": 6588,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-0-0.webp",
+      "bytes": 4954,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-0-1.webp",
+      "bytes": 4862,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-0-2.webp",
+      "bytes": 4830,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-0-3.webp",
+      "bytes": 4918,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-1-0.webp",
+      "bytes": 4862,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-1-1.webp",
+      "bytes": 4722,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-1-2.webp",
+      "bytes": 4754,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-1-3.webp",
+      "bytes": 4722,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-2-0.webp",
+      "bytes": 5126,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-2-1.webp",
+      "bytes": 4986,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-2-2.webp",
+      "bytes": 4860,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-2-3.webp",
+      "bytes": 4938,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-3-0.webp",
+      "bytes": 5230,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-3-1.webp",
+      "bytes": 5084,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-3-2.webp",
+      "bytes": 5216,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/sw-3-3.webp",
+      "bytes": 4730,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-0-0.webp",
+      "bytes": 5218,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-0-1.webp",
+      "bytes": 5370,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-0-2.webp",
+      "bytes": 5476,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-0-3.webp",
+      "bytes": 5410,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-1-0.webp",
+      "bytes": 5316,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-1-1.webp",
+      "bytes": 5576,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-1-2.webp",
+      "bytes": 5378,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-1-3.webp",
+      "bytes": 5842,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-2-0.webp",
+      "bytes": 5586,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-2-1.webp",
+      "bytes": 6066,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-2-2.webp",
+      "bytes": 6534,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-2-3.webp",
+      "bytes": 5556,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-3-0.webp",
+      "bytes": 5682,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-3-1.webp",
+      "bytes": 5452,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-3-2.webp",
+      "bytes": 5484,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/nw-3-3.webp",
+      "bytes": 5962,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-0-0.webp",
+      "bytes": 4436,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-0-1.webp",
+      "bytes": 4468,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-0-2.webp",
+      "bytes": 4228,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-0-3.webp",
+      "bytes": 4026,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-1-0.webp",
+      "bytes": 4408,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-1-1.webp",
+      "bytes": 4450,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-1-2.webp",
+      "bytes": 4394,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-1-3.webp",
+      "bytes": 4388,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-2-0.webp",
+      "bytes": 4316,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-2-1.webp",
+      "bytes": 4850,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-2-2.webp",
+      "bytes": 5454,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-2-3.webp",
+      "bytes": 4780,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-3-0.webp",
+      "bytes": 4536,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-3-1.webp",
+      "bytes": 4854,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-3-2.webp",
+      "bytes": 4874,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "jang-yeongsil",
+      "file": "web/public/images/playable/jang-yeongsil/ne-3-3.webp",
+      "bytes": 4628,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-0-0.webp",
+      "bytes": 5020,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-0-1.webp",
+      "bytes": 4828,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-0-2.webp",
+      "bytes": 4990,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-0-3.webp",
+      "bytes": 5168,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-1-0.webp",
+      "bytes": 5026,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-1-1.webp",
+      "bytes": 4720,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-1-2.webp",
+      "bytes": 4774,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-1-3.webp",
+      "bytes": 4794,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-2-0.webp",
+      "bytes": 5448,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-2-1.webp",
+      "bytes": 5082,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-2-2.webp",
+      "bytes": 4652,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-2-3.webp",
+      "bytes": 4756,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-3-0.webp",
+      "bytes": 6060,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-3-1.webp",
+      "bytes": 5368,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-3-2.webp",
+      "bytes": 4790,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/se-3-3.webp",
+      "bytes": 5390,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-0-0.webp",
+      "bytes": 5382,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-0-1.webp",
+      "bytes": 5066,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-0-2.webp",
+      "bytes": 4864,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-0-3.webp",
+      "bytes": 4864,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-1-0.webp",
+      "bytes": 5848,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-1-1.webp",
+      "bytes": 5644,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-1-2.webp",
+      "bytes": 5470,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-1-3.webp",
+      "bytes": 4850,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-2-0.webp",
+      "bytes": 5604,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-2-1.webp",
+      "bytes": 5478,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-2-2.webp",
+      "bytes": 5396,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-2-3.webp",
+      "bytes": 5534,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-3-0.webp",
+      "bytes": 5380,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-3-1.webp",
+      "bytes": 5682,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-3-2.webp",
+      "bytes": 5430,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/sw-3-3.webp",
+      "bytes": 6646,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-0-0.webp",
+      "bytes": 4752,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-0-1.webp",
+      "bytes": 4850,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-0-2.webp",
+      "bytes": 4854,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-0-3.webp",
+      "bytes": 4938,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-1-0.webp",
+      "bytes": 4718,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-1-1.webp",
+      "bytes": 4686,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-1-2.webp",
+      "bytes": 4696,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-1-3.webp",
+      "bytes": 4472,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-2-0.webp",
+      "bytes": 5374,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-2-1.webp",
+      "bytes": 5502,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-2-2.webp",
+      "bytes": 5118,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-2-3.webp",
+      "bytes": 4676,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-3-0.webp",
+      "bytes": 5740,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-3-1.webp",
+      "bytes": 5490,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-3-2.webp",
+      "bytes": 5714,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/nw-3-3.webp",
+      "bytes": 5660,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-0-0.webp",
+      "bytes": 4388,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-0-1.webp",
+      "bytes": 4182,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-0-2.webp",
+      "bytes": 4382,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-0-3.webp",
+      "bytes": 4436,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-1-0.webp",
+      "bytes": 4524,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-1-1.webp",
+      "bytes": 4424,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-1-2.webp",
+      "bytes": 4532,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-1-3.webp",
+      "bytes": 4468,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-2-0.webp",
+      "bytes": 4942,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-2-1.webp",
+      "bytes": 4592,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-2-2.webp",
+      "bytes": 4670,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-2-3.webp",
+      "bytes": 4062,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-3-0.webp",
+      "bytes": 4876,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-3-1.webp",
+      "bytes": 5032,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-3-2.webp",
+      "bytes": 3738,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    },
+    {
+      "id": "kungdol",
+      "file": "web/public/images/playable/kungdol/ne-3-3.webp",
+      "bytes": 5212,
+      "cellEdgeMargin": 10,
+      "baseline": 148
+    }
+  ],
+  "totalBytes": 2017138,
+  "validation": "448 160px frames, alpha padding bounds and HTTP paths checked; directional/action contact sheets reviewed. Generated motion draft, not in-game physics validation."
+}

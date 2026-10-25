@@ -1,0 +1,3 @@
+import data from '../data/representative-characters.json';
+import s from './characters.module.css';
+export function RepresentativeCharacters(){return <section className={s.representatives} aria-labelledby="representative-heading"><h2 id="representative-heading">장비 테스트 대표 인물 · 초상화 초안</h2><p>쿵돌의 기존 초상화에 이어 제작한 6명입니다. 실존 인물의 실제 얼굴을 복원한 그림이 아니며, 장비 테스트용 병과는 기존 아군 배역 추천과 별도 검토합니다.</p><div className={s.representativeGrid}>{data.records.map(c=><article key={c.id} className={s.representativeCard}><img src={c.portrait} width={128} height={160} alt={`${c.name} 얼굴·어깨 초상화 초안`}/><div><h3>{c.name}</h3><b>{c.role}</b><p>{c.note}</p></div></article>)}</div></section>}

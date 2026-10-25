@@ -1,0 +1,151 @@
+{
+  "records": [
+    {
+      "id": "hong-yu",
+      "originalId": 1,
+      "name": "홍유",
+      "portrait": "/images/representatives/hong-yu-portrait-v1.webp",
+      "description": "왕건의 결단을 재촉하는 직선적인 동료. 원본 경기병의 이동과 창 공격을 유지하는 창작 배역.",
+      "equipment": [
+        {
+          "id": 3,
+          "name": "짧은창",
+          "image": "/images/weapon-proposals/weapon-3-v2.webp"
+        },
+        {
+          "id": 38,
+          "name": "가죽찰갑",
+          "image": "/images/armor-proposals/armor-38.webp"
+        }
+      ],
+      "job": "경기병",
+      "movement": 6
+    },
+    {
+      "id": "bok-jigyeom",
+      "originalId": 5,
+      "name": "복지겸",
+      "portrait": "/images/representatives/bok-jigyeom-portrait-v1.webp",
+      "description": "작은 징후를 놓치지 않고 전열을 지키는 신중한 동료. 원본 경기병의 병과와 수치를 유지한다.",
+      "equipment": [
+        {
+          "id": 3,
+          "name": "짧은창",
+          "image": "/images/weapon-proposals/weapon-3-v2.webp"
+        },
+        {
+          "id": 38,
+          "name": "가죽찰갑",
+          "image": "/images/armor-proposals/armor-38.webp"
+        }
+      ],
+      "job": "경기병",
+      "movement": 6
+    },
+    {
+      "id": "park-sugyeong",
+      "originalId": 13,
+      "name": "박수경",
+      "portrait": "/images/representatives/park-sugyeong-portrait-v1.webp",
+      "description": "먼 거리에서 아군의 진격을 돕는 궁병 배역. 성격·전투 역할은 게임용 창작이다.",
+      "equipment": [
+        {
+          "id": 6,
+          "name": "산뽕나무활",
+          "image": "/images/weapon-proposals/weapon-6-v2.webp"
+        },
+        {
+          "id": 38,
+          "name": "가죽찰갑",
+          "image": "/images/armor-proposals/armor-38.webp"
+        }
+      ],
+      "job": "궁병",
+      "movement": 4
+    },
+    {
+      "id": "sin-sunggyeom",
+      "originalId": 16,
+      "name": "신숭겸",
+      "portrait": "/images/representatives/sin-sunggyeom-portrait-v1.webp",
+      "description": "동료의 퇴로를 지키는 책임감 강한 호위 역할. 원본 전위의 무도가와 수치를 유지하며 기병으로 바꾸지 않는다.",
+      "equipment": [
+        {
+          "id": 9,
+          "name": "나무몽둥이",
+          "image": "/images/item-proposals/item-9-v1.webp"
+        },
+        {
+          "id": 41,
+          "name": "삼베겹옷",
+          "image": "/images/armor-proposals/armor-41.webp"
+        }
+      ],
+      "job": "무도가",
+      "movement": 5
+    },
+    {
+      "id": "choe-eung",
+      "originalId": 20,
+      "name": "최응",
+      "portrait": "/images/representatives/choe-eung-portrait-v1.webp",
+      "description": "말과 판단으로 왕건을 돕는 책사. 원본 책사 병과와 기본 부채·옷을 유지한다.",
+      "equipment": [
+        {
+          "id": 15,
+          "name": "대나무부채",
+          "image": "/images/weapon-proposals/weapon-15-v2.webp"
+        },
+        {
+          "id": 41,
+          "name": "삼베겹옷",
+          "image": "/images/armor-proposals/armor-41.webp"
+        }
+      ],
+      "job": "책사",
+      "movement": 4
+    },
+    {
+      "id": "jang-yeongsil",
+      "originalId": 18,
+      "name": "장영실",
+      "portrait": "/images/representatives/jang-yeongsil-portrait-v1.webp",
+      "description": "나무돌팔매틀을 조작하는 기술자형 포병. 후삼국 합류와 포병 역할은 창작이며 시대 연결은 아직 미정이다.",
+      "equipment": [
+        {
+          "id": 12,
+          "name": "나무돌팔매틀",
+          "image": "/images/weapon-proposals/weapon-12-v2.webp"
+        },
+        {
+          "id": 41,
+          "name": "삼베겹옷",
+          "image": "/images/armor-proposals/armor-41.webp"
+        }
+      ],
+      "job": "경포차",
+      "movement": 3
+    },
+    {
+      "id": "kungdol",
+      "originalId": 1002,
+      "name": "쿵돌",
+      "portrait": "/images/folklore/kungdol-portrait-v2.webp",
+      "description": "절굿공이에서 태어난 도깨비. 초기 지급 장비는 일반 나무몽둥이와 삼베겹옷이며 고유 절굿공이는 기본 장비가 아니다.",
+      "equipment": [
+        {
+          "id": 9,
+          "name": "나무몽둥이",
+          "image": "/images/item-proposals/item-9-v1.webp"
+        },
+        {
+          "id": 41,
+          "name": "삼베겹옷",
+          "image": "/images/armor-proposals/armor-41.webp"
+        }
+      ],
+      "job": "타격병 · 기획",
+      "movement": null
+    }
+  ]
+}

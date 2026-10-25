@@ -62,3 +62,6 @@ Next.js + React + TypeScript. 화면 구현은 `web/src/features/game-world/page
 ## 전체 캠페인 설계 v0.1
 
 이야기 메뉴에 6막·44개 전투안과 분기 흐름도를 표시합니다. 공통20 + 선택 경로8 + 합류8 = 한 회차36전투입니다. 계획 데이터는 `web/src/features/game-world/data/campaign.json`입니다. 경로 필터와 전투별 목표·패배조건·결과 열람을 지원합니다. 역사적 사실과 창작을 구분한 설계 초안이며 게임 구현 완료를 의미하지 않습니다.
+
+### 인물 비교 도감
+홈의 인물 메뉴에서 원본 512개 슬롯을 이름·추천 이름·병과로 검색합니다. `web/src/features/game-world/data/characters.json`과 `public/images/jojo-reference`는 원본 비교 자료이며 새 게임 외형이 아닙니다. 재생성은 `python3 scripts/game/import-character-reference.py <기존 추출 assets 경로>`로 합니다. 기본 능력값은 전투 최종 수치가 아니며, 창작 이름은 가칭입니다. 교체안은 왕건 외 미확정입니다.

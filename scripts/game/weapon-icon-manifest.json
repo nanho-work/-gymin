@@ -1,0 +1,391 @@
+{
+  "generator": "built-in image_gen",
+  "sourcesRemoved": true,
+  "records": [
+    {
+      "image": "/images/weapon-proposals/weapon-0.webp",
+      "bytes": 6202,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-1.webp",
+      "bytes": 5370,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-2.webp",
+      "bytes": 5184,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-3.webp",
+      "bytes": 4182,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-4.webp",
+      "bytes": 6350,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-5.webp",
+      "bytes": 4334,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-6.webp",
+      "bytes": 6290,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-7.webp",
+      "bytes": 5906,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-8.webp",
+      "bytes": 7284,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/item-proposals/item-9-v1.webp",
+      "bytes": 9110,
+      "size": [
+        256,
+        256
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-10.webp",
+      "bytes": 6264,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-11.webp",
+      "bytes": 5910,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-12.webp",
+      "bytes": 9442,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-13.webp",
+      "bytes": 11284,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-14.webp",
+      "bytes": 9302,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-15.webp",
+      "bytes": 9724,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-16.webp",
+      "bytes": 9468,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-17.webp",
+      "bytes": 8588,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-18.webp",
+      "bytes": 6692,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-19.webp",
+      "bytes": 6498,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-20.webp",
+      "bytes": 6282,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-21.webp",
+      "bytes": 11486,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-22.webp",
+      "bytes": 7634,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-23.webp",
+      "bytes": 6714,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-24.webp",
+      "bytes": 6728,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-25.webp",
+      "bytes": 6980,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-26.webp",
+      "bytes": 4838,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-27.webp",
+      "bytes": 7404,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-28.webp",
+      "bytes": 8114,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-29.webp",
+      "bytes": 9198,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-30.webp",
+      "bytes": 11912,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-31.webp",
+      "bytes": 11462,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-32.webp",
+      "bytes": 10798,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-33.webp",
+      "bytes": 9852,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-34.webp",
+      "bytes": 11766,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-35.webp",
+      "bytes": 8608,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-36.webp",
+      "bytes": 6042,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/weapon-37.webp",
+      "bytes": 8128,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/signature-18.webp",
+      "bytes": 8036,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/signature-24.webp",
+      "bytes": 7878,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/signature-25.webp",
+      "bytes": 14350,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/signature-1001.webp",
+      "bytes": 5506,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/signature-1002.webp",
+      "bytes": 6566,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/signature-1003.webp",
+      "bytes": 10938,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/signature-1004.webp",
+      "bytes": 12584,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/signature-1005.webp",
+      "bytes": 9220,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/signature-1006.webp",
+      "bytes": 10864,
+      "size": [
+        192,
+        192
+      ]
+    },
+    {
+      "image": "/images/weapon-proposals/signature-1007.webp",
+      "bytes": 10458,
+      "size": [
+        192,
+        192
+      ]
+    }
+  ],
+  "totalBytes": 393730
+}

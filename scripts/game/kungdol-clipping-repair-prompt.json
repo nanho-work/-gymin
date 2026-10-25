@@ -1,0 +1,6 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Repair six game sprite frames using the first three input frames as poses, fourth input as club appearance. Output ONE transparent sheet exactly THREE equal columns TWO equal rows. Input1-3 top row, repeat the same three poses bottom row with knobbly club from input4. Each cell is SQUARE. Preserve each character pose, back-facing northeast 2 oclock, warm brown bold outline, green vest, straw basket, pestle in top row and knobbly club bottom row. The golden magical aura in each input was cut off by a rectangle. Reconstruct a complete smooth rounded golden aura with naturally tapered wisps, NO straight rectangular cut edges. Everything including weapon and gold glow fully enclosed within each cell, with at least 15 percent EMPTY TRANSPARENT margin on ALL sides, never touching cell boundaries. Keep body shape/size consistent across six cells and feet on same horizontal baseline within each cell. Head to soles about 45% cell height, feet at75% cellheight. No text, labels, background or grid. All six characters same scale. Do not make character larger to fill frame. Transparent alpha genuine, no checkerboard.",
+  "followup": "Remove diffuse background; preserve crisp gold ribbons and alpha transparency.",
+  "largeOriginalsRemoved": true
+}

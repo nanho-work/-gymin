@@ -1,0 +1,64 @@
+{
+  "frames": [
+    {
+      "file": "pestle-ne-3-0.webp",
+      "bytes": 9494,
+      "baseline": 148,
+      "sourceFoot": [
+        265.5,
+        484
+      ],
+      "scale": 0.28
+    },
+    {
+      "file": "pestle-ne-3-1.webp",
+      "bytes": 9692,
+      "baseline": 148,
+      "sourceFoot": [
+        239.5,
+        484
+      ],
+      "scale": 0.28
+    },
+    {
+      "file": "pestle-ne-3-2.webp",
+      "bytes": 8678,
+      "baseline": 148,
+      "sourceFoot": [
+        176.0,
+        486
+      ],
+      "scale": 0.28
+    },
+    {
+      "file": "club-ne-3-0.webp",
+      "bytes": 9564,
+      "baseline": 148,
+      "sourceFoot": [
+        266.0,
+        453
+      ],
+      "scale": 0.28
+    },
+    {
+      "file": "club-ne-3-1.webp",
+      "bytes": 9560,
+      "baseline": 148,
+      "sourceFoot": [
+        243.5,
+        453
+      ],
+      "scale": 0.28
+    },
+    {
+      "file": "club-ne-3-2.webp",
+      "bytes": 8762,
+      "baseline": 148,
+      "sourceFoot": [
+        177.5,
+        455
+      ],
+      "scale": 0.28
+    }
+  ]
+}

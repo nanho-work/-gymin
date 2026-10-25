@@ -181,7 +181,7 @@
     },
     {
       "file": "pestle-ne-3-2.webp",
-      "bytes": 7434,
+      "bytes": 8678,
       "normalizationScale": 1.0
     },
     {
@@ -236,7 +236,7 @@
     },
     {
       "file": "club-ne-3-2.webp",
-      "bytes": 7310,
+      "bytes": 8762,
       "normalizationScale": 1.0
     },
     {
@@ -266,12 +266,12 @@
     },
     {
       "file": "club-ne-3-1.webp",
-      "bytes": 7550,
+      "bytes": 9560,
       "normalizationScale": 1.0
     },
     {
       "file": "club-ne-3-0.webp",
-      "bytes": 7440,
+      "bytes": 9564,
       "normalizationScale": 1.0
     },
     {
@@ -306,12 +306,12 @@
     },
     {
       "file": "pestle-ne-3-0.webp",
-      "bytes": 7712,
+      "bytes": 9494,
       "normalizationScale": 1.0
     },
     {
       "file": "pestle-ne-3-1.webp",
-      "bytes": 7354,
+      "bytes": 9692,
       "normalizationScale": 1.0
     },
     {
@@ -650,5 +650,5 @@
       "normalizationScale": 0.7688888888888888
     }
   ],
-  "bytes": 670152
+  "bytes": 681102
 }

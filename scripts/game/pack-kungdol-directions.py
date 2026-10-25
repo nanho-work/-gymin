@@ -31,6 +31,8 @@ for direction,path in zip(['nw','ne','sw'],sys.argv[1:]):
    cell=im.crop((column_boundary(col),top,column_boundary(col+1),bottom))
    a=np.array(cell);labels,n=label(a[:,:,3]>80);counts=np.bincount(labels.ravel());counts[0]=0;mask=labels==counts.argmax();a[~mask,3]=0
    yy,xx=np.where(mask)
+   if mask[0].any() or mask[-1].any() or mask[:,0].any() or mask[:,-1].any():
+    raise ValueError(f'{direction} row={row} col={col}: source silhouette crosses crop boundary; regenerate/resegment before exporting')
    foot=mask.copy();foot[:int(cell.height*.62)]=False;foot[:,:int(cell.width*.32)]=False;foot[:,int(cell.width*.75):]=False
    fy,fx=np.where(foot);ground=int(fy.max()) if len(fy) else int(yy.max())
    near=(fy>=ground-5);anchor=float(np.median(fx[near])) if near.any() else cell.width/2
@@ -44,7 +46,11 @@ for direction,path in zip(['nw','ne','sw'],sys.argv[1:]):
   scale=min(scale,76/max(x-xx.min(),xx.max()+1-x,1),144/max(g+1-yy.min(),1))
  for row,col,c,xx,yy,g,anchor in cells:
   x=round(80-anchor*scale);y=round(148-(g+1)*scale)
-  frame=Image.new('RGBA',(160,160));frame.paste(c.resize((round(c.width*scale),round(c.height*scale)),Image.Resampling.LANCZOS),(x,y))
+  small=c.resize((round(c.width*scale),round(c.height*scale)),Image.Resampling.LANCZOS)
+  box=small.getbbox()
+  if not box or x+box[0]<2 or y+box[1]<2 or x+box[2]>158 or y+box[3]>158:
+   raise ValueError(f'{direction} row={row} col={col}: export exceeds safe canvas bounds')
+  frame=Image.new('RGBA',(160,160));frame.paste(small,(x,y))
   item='pestle' if row<4 else 'club';name=f'{item}-{direction}-{row%4}-{col}.webp';frame.save(out/name,'WEBP',quality=72,method=6)
   records.append({'file':name,'bytes':(out/name).stat().st_size,'scale':scale,'footAnchor':[anchor,g],'baseline':148})
  canvas=Image.new('RGB',(640,1280),(69,83,53));draw=ImageDraw.Draw(canvas)

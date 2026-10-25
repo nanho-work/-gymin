@@ -1,123 +1,39 @@
-# GymIn
+# 산하의 맹약 — 게임 기획 기록실
 
-피트니스 업계용 무료 구인 게시판 웹 서비스입니다.
+기존 GymIn 프로젝트를 한국풍 턴제 RPG의 시각적 기획 공간으로 전환하고 있습니다. **게임명과 세계관은 아직 제안 초안**이며 사용자가 확정한 설정이 아닙니다.
 
-새 채팅창이나 다른 작업자가 프로젝트를 이어받을 때는 [AGENTS.md](AGENTS.md)의 작업 규칙을 먼저 확인합니다.
+## 현재 화면
 
-## 기술 스택
+- `/`: 세계관 카드 4개, 클릭 가능한 지역·세력 개념 지도, 미정 항목
+- 이야기 흐름: 서막부터 종막까지의 제안 구조
+- 인물 도감: 준비 공간. 등록된 인물과 제작된 초상화는 아직 없습니다.
+- 변경 기록: 수정 전/후, 수정 이유, 초안/확정 상태
+- 세계관 카드 편집 및 JSON 내보내기
 
-- React 18
-- Next.js 16
-- TypeScript
-- Tailwind CSS
+## 기록 보관 방식
 
-의존성은 안정성과 호환성을 우선해 `latest` 대신 고정 버전을 사용합니다.
+초기 기획은 `web/src/features/game-world/data/world.json`에 있습니다. 화면에서 편집한 내용은 **해당 브라우저의 localStorage**(`gymin-game-world-v1`)에 저장됩니다. 브라우저 데이터를 지우면 이 편집 이력이 사라질 수 있으므로 **기록 내보내기**로 JSON을 보관하세요. 서버 저장, 다른 기기 동기화, JSON 가져오기는 아직 구현하지 않았습니다. 초안 파일과 화면 편집을 합치는 작업은 이후 서버 저장 단계에서 다룹니다.
 
-## 실행
+## 개발
 
-루트에서는 웹 실행을 바로 위임할 수 있습니다.
-
-```bash
-npm run dev
-```
-
-처음 설치하거나 웹만 따로 확인할 때는 `web` 폴더에서 실행합니다.
-
-```bash
-cd web
+```sh
 npm install
 npm run dev
-```
-
-## 서버 실행
-
-```bash
-cd server
-python -m venv .venv
-source .venv/bin/activate
-pip install -r requirements.txt
-vi .env
-uvicorn app.main:app --reload
-```
-
-서버 코드는 기능별로 `server/app/features/*` 아래에 분리한다.
-
-## 빌드
-
-```bash
 npm run build
 ```
 
-운영 배포는 EC2 + Docker + Nginx 기준이다. Vercel은 더 이상 운영 배포 경로로 사용하지 않는다.
+Next.js + React + TypeScript. 화면 구현은 `web/src/features/game-world/pages`, 데이터는 `data`, 홈 진입점은 `web/app/page.tsx`에 있습니다. 모바일에서도 열 수 있는 반응형 화면입니다.
 
-## 운영 메모
+## 다음 작업
 
-- AWS RDS 생성 기록: [docs/aws-rds.md](docs/aws-rds.md)
-- Firebase 로그인 설정: [docs/firebase-auth.md](docs/firebase-auth.md)
-- PostgreSQL 스키마 초안: [docs/database-schema.md](docs/database-schema.md)
-- DB 실행 쿼리 안내: [db/queries-to-run.md](db/queries-to-run.md)
-- 운영 인프라 인벤토리: [docs/infra-inventory.md](docs/infra-inventory.md)
-- EC2 배포 절차: [docs/deploy-server.md](docs/deploy-server.md)
-- 배포 경계: [docs/deployment-boundaries.md](docs/deployment-boundaries.md)
-- S3 이미지 업로드: [docs/s3-upload.md](docs/s3-upload.md)
+1. 시대감, 신령의 비중, 주인공 방식 결정
+2. 세계관 확정 사항을 기준 데이터에 반영
+3. 캐릭터 초상화·설정·관계·병과 기록 UI
+4. 서버 영구 저장과 변경 이력 연결
+5. 기존 서비스 경로 정리 후 도메인 운영 배포
 
-## 페이지
+## 기존 프로젝트와 배포
 
-- 홈: `/`
-- 로그인/회원가입 선택: `/login`
-- 사업자 회원가입: `/signup/business`
-- 일반 회원가입: `/signup/general`
-- 센터 등록: `/gyms/new`
-- 센터 상세보기: `/gyms/[gymId]`
-- 구인글 페이지: `/jobs/hiring`
-- 구인글 상세보기: `/jobs/hiring/[jobId]`
-- 구인글 등록: `/jobs/hiring/new`
-- 센터관리: `/owner`
-- 공고 지원자 목록: `/owner/jobs/[jobId]/applicants`
-- 내 활동 관리: `/trainer`
-- 트레이너 정보 등록: `/trainers/new`
-- 트레이너 상세보기: `/trainers/[trainerId]`
+기존 구인 서비스의 서버·DB·인증·경로는 보존했습니다. 신규 홈에서는 기존 인증/API를 호출하지 않습니다. 운영 도메인과 EC2/Docker/Nginx 배포는 이번 작업으로 변경되지 않았습니다. 검색 색인 제외 설정은 접근 제한이나 로그인 보안을 대신하지 않습니다.
 
-## 구조
-
-```text
-web/
-  app/
-    layout.tsx               # 전역 HTML + 헤더/푸터 프레임
-    (owner)/layout.tsx       # 센터관리 영역 인증 보호
-    (trainer)/layout.tsx     # 트레이너 영역 인증 보호
-    **/page.tsx              # URL 라우트 진입점
-  src/
-    features/
-      auth/                  # 로그인/회원가입 화면
-      centers/               # 센터 등록/상세 UI
-      jobs/                  # 구인글 pages/components/hooks
-      owner/                 # 센터관리/지원자 관리 화면
-      trainers/              # 내 활동 관리/등록/상세 화면
-      uploads/               # S3 이미지 업로드 API와 저장 전 선택 훅
-    shared/
-      api/                   # FastAPI client
-      components/            # 전역 레이아웃과 공용 UI
-      data/                  # 정적 지역 선택 데이터
-      hooks/                 # 도메인에 묶이지 않는 공용 훅
-      types/                 # 공용 도메인 타입
-      utils/                 # 공용 계산 유틸
-    styles/
-
-server/
-  app/
-    main.py
-    api/
-    core/
-    db/
-    features/
-
-db/
-  schema.sql
-  migrations/
-  manual/
-
-docs/
-```
-
-현재 로그인, 로그아웃, 홈 통계/최신 구인글, 이미지 업로드/삭제, 센터 등록/수정/상세, 구인글 목록 검색/URL 쿼리 연동/페이지네이션/등록/상세/요일 선택/본문 이미지 노출, SEO 메타데이터/robots/sitemap/구조화 데이터, 트레이너 프로필 등록/수정/입력값 정규화/내 프로필/상세 노출, 트레이너 구인글 지원/지원 현황, 센터관리, 지원자 목록/확인 신호는 FastAPI와 연결되어 있다. 회원가입 등 일부 미완성 흐름은 아직 임시 입력 컴포넌트를 사용한다.
+이전 안내는 [기존 README](docs/game/legacy-project-readme.md), 이전 작업 규칙은 [기존 AGENTS](docs/game/legacy-agents.md)에 있습니다. 기존 인프라 문서는 참고용이며 게임 서버 연결 완료를 의미하지 않습니다.

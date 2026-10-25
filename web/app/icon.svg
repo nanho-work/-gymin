@@ -1,16 +1,1 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
-  <rect width="64" height="64" rx="12" fill="#121514" />
-  <text
-    x="32"
-    y="34"
-    fill="#43d28c"
-    font-family="Arial Black, Arial, Helvetica, sans-serif"
-    font-size="29"
-    font-weight="900"
-    letter-spacing="0"
-    text-anchor="middle"
-    dominant-baseline="middle"
-  >
-    GI
-  </text>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="12" fill="#192e29"/><rect x="10" y="10" width="44" height="44" fill="none" stroke="#c7ac77"/><path d="M19 26v20h26V26M32 18v28" stroke="#c7ac77" stroke-width="3" fill="none"/></svg>

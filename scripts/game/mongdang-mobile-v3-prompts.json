@@ -1,0 +1,13 @@
+{
+  "asset": "mongdang-mobile-v3",
+  "tool": "built-in image_gen",
+  "entries": [
+    {
+      "id": "se",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-790269fc-fd98-4b43-8e7e-5857579a7540.png",
+      "prompt": "Use case: stylized-concept. Reference image defines Mongdang, Korean old broom dokkaebi, straw hair and beard, wooden face, green cloth headband and ragged vest, straw skirt, broom staff. Redesign for MOBILE tactical RPG readable at48-64px: compact proportions with larger expressive head, thick dark brown silhouette outline, clear ivory highlight and deep shadow, simplified straw clumps, restrained saturated ochre and pine green, 3-tone cel shaded pixel-art-inspired sprite (NOT watercolor texture). Transparent background. Create exact4columns4rows sprite sheet16 separated full-body poses, all facing LOWER RIGHT three-quarter FRONT view (5 o'clock). Row1 idle breathing4frames. Row2 in-place walk4frames alternating legs. Row3 broom sweep attack anticipation/swing/impact/recovery4frames. Row4 skill raising broom4frames. Same size, same feet baseline each cell, generous transparent gutters, no detached magic particles, no shadows, no text. Each pose entirely inside own cell. Broom cannot extend below feet. Strong readable gesture and identity."
+    }
+  ],
+  "originalRemoved": "2026-10-25",
+  "scope": "5시 방향 스타일 시안: 4동작 x 4프레임"
+}

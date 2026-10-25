@@ -1,0 +1,86 @@
+{
+  "frameSize": 160,
+  "baseline": 148,
+  "frames": [
+    {
+      "file": "se-0-0.webp",
+      "baseline": 148,
+      "bytes": 5854
+    },
+    {
+      "file": "se-0-1.webp",
+      "baseline": 148,
+      "bytes": 5858
+    },
+    {
+      "file": "se-0-2.webp",
+      "baseline": 148,
+      "bytes": 6024
+    },
+    {
+      "file": "se-0-3.webp",
+      "baseline": 148,
+      "bytes": 5790
+    },
+    {
+      "file": "se-1-0.webp",
+      "baseline": 148,
+      "bytes": 5612
+    },
+    {
+      "file": "se-1-1.webp",
+      "baseline": 148,
+      "bytes": 5470
+    },
+    {
+      "file": "se-1-2.webp",
+      "baseline": 148,
+      "bytes": 5686
+    },
+    {
+      "file": "se-1-3.webp",
+      "baseline": 148,
+      "bytes": 5532
+    },
+    {
+      "file": "se-2-0.webp",
+      "baseline": 148,
+      "bytes": 5114
+    },
+    {
+      "file": "se-2-1.webp",
+      "baseline": 148,
+      "bytes": 5688
+    },
+    {
+      "file": "se-2-2.webp",
+      "baseline": 148,
+      "bytes": 5258
+    },
+    {
+      "file": "se-2-3.webp",
+      "baseline": 148,
+      "bytes": 5568
+    },
+    {
+      "file": "se-3-0.webp",
+      "baseline": 148,
+      "bytes": 5006
+    },
+    {
+      "file": "se-3-1.webp",
+      "baseline": 148,
+      "bytes": 5898
+    },
+    {
+      "file": "se-3-2.webp",
+      "baseline": 148,
+      "bytes": 5628
+    },
+    {
+      "file": "se-3-3.webp",
+      "baseline": 148,
+      "bytes": 5776
+    }
+  ]
+}

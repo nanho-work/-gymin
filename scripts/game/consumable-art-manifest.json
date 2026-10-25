@@ -1,0 +1,143 @@
+{
+  "generator": "built-in image_gen",
+  "sourcesRemoved": true,
+  "totalBytes": 171916,
+  "assets": [
+    {
+      "id": 100,
+      "name": "굳셈산열매",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. golden round ribbed magical fruit broad leaf. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-2e866ad2-89c7-44e5-8ea8-fce7c03dccb5.png",
+      "output": "web/public/images/consumable-proposals/consumable-100.webp",
+      "bytes": 10594
+    },
+    {
+      "id": 101,
+      "name": "날쌘산열매",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. green elongated magical fruit wing shaped leaves. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-6e375b70-e4f4-43f0-9477-644b57c4a4a9.png",
+      "output": "web/public/images/consumable-proposals/consumable-101.webp",
+      "bytes": 9916
+    },
+    {
+      "id": 102,
+      "name": "복담은산열매",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. purple clustered magical berries clover like leaves red knot. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-4ae9044c-95bf-4ffe-bebb-202ae2133814.png",
+      "output": "web/public/images/consumable-proposals/consumable-102.webp",
+      "bytes": 12252
+    },
+    {
+      "id": 103,
+      "name": "깨달음산열매",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. luminous ivory gold peach shaped magical fruit spiral surface jade leaves. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-fefadbaa-c0a5-446c-8f9e-ba800b5d626a.png",
+      "output": "web/public/images/consumable-proposals/consumable-103.webp",
+      "bytes": 8996
+    },
+    {
+      "id": 87,
+      "name": "볶은약콩",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. small heap roasted brown beans in small Korean cloth pouch. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-707224e2-ef44-4a7e-b850-26bba33ffb28.png",
+      "output": "web/public/images/consumable-proposals/consumable-87.webp",
+      "bytes": 8058
+    },
+    {
+      "id": 88,
+      "name": "기운쌀떡",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. three white rice cakes on small wooden plate Korean rustic. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f53bdfdc-b826-47ff-b8c7-9c41fca81296.png",
+      "output": "web/public/images/consumable-proposals/consumable-88.webp",
+      "bytes": 6494
+    },
+    {
+      "id": 89,
+      "name": "산신복숭아",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. single magical pink peach green leaf subtle gold glow. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f3b7e536-8853-46af-9261-313939bcf258.png",
+      "output": "web/public/images/consumable-proposals/consumable-89.webp",
+      "bytes": 9230
+    },
+    {
+      "id": 90,
+      "name": "맑은샘물",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. small celadon flask clear blue water droplet motif cork. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-737305b6-a293-47ea-a4a5-04933af37450.png",
+      "output": "web/public/images/consumable-proposals/consumable-90.webp",
+      "bytes": 8980
+    },
+    {
+      "id": 91,
+      "name": "솔향기운주",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. ornate green ceramic Korean liquor bottle pine sprig red cord. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-8c9e7a9b-6faa-4a28-9724-116e7d775ca4.png",
+      "output": "web/public/images/consumable-proposals/consumable-91.webp",
+      "bytes": 11488
+    },
+    {
+      "id": 92,
+      "name": "해독풀환",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. green herbal pills in small paper wrap leaves. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-0c2065fb-c219-4885-9229-b059c8a529f1.png",
+      "output": "web/public/images/consumable-proposals/consumable-92.webp",
+      "bytes": 9526
+    },
+    {
+      "id": 93,
+      "name": "맑은정신환",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. pale yellow herbal pills small blue ceramic dish mint leaf. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-471abec8-5600-4c71-ade2-7792f3ffbe16.png",
+      "output": "web/public/images/consumable-proposals/consumable-93.webp",
+      "bytes": 8210
+    },
+    {
+      "id": 94,
+      "name": "발풀림연고",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. small brown ceramic ointment jar open golden balm wooden spatula. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f91d781c-fc50-4e12-82cf-c9e25b56e5b1.png",
+      "output": "web/public/images/consumable-proposals/consumable-94.webp",
+      "bytes": 9864
+    },
+    {
+      "id": 95,
+      "name": "목트임약차",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. small Korean celadon tea cup amber herbal tea root. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-784a1277-f167-44d3-bcd1-c31ce0f7a821.png",
+      "output": "web/public/images/consumable-proposals/consumable-95.webp",
+      "bytes": 11412
+    },
+    {
+      "id": 96,
+      "name": "온몸맑힘환",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. ornate small gold trimmed ceramic medicine box multicolor herbal pills red blue knot. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-b2ea6399-b8e8-4e11-a43f-5a39081e70fa.png",
+      "output": "web/public/images/consumable-proposals/consumable-96.webp",
+      "bytes": 12660
+    },
+    {
+      "id": 97,
+      "name": "승급맹약패",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. Korean fantasy wooden military promotion token jade inset red blue braided cord no text. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-4f1c8ca7-f358-49ce-8972-68b8d139ea3c.png",
+      "output": "web/public/images/consumable-proposals/consumable-97.webp",
+      "bytes": 11398
+    },
+    {
+      "id": 98,
+      "name": "힘돋움산열매",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. red rugged magical berry pair green leaf strong warm glow. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-06e3c83a-34a6-4a26-be9b-3ede7112c255.png",
+      "output": "web/public/images/consumable-proposals/consumable-98.webp",
+      "bytes": 12268
+    },
+    {
+      "id": 99,
+      "name": "슬기산열매",
+      "prompt": "Korean fantasy tactical RPG inventory icon, hand painted 2D bold dark outline warm detailed material. blue pear shaped magical fruit curled leaf soft blue glow. One isolated object arrangement centered, 15 percent padding, legible at 96px. Transparent background. No text, no UI, no ground. Fictional game item.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-966ef434-7c42-448c-95f9-fdec301df67e.png",
+      "output": "web/public/images/consumable-proposals/consumable-99.webp",
+      "bytes": 10570
+    }
+  ]
+}

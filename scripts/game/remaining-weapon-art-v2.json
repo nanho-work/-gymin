@@ -1,0 +1,223 @@
+{
+  "generator": "built-in image_gen",
+  "sourcesRemoved": true,
+  "assets": [
+    {
+      "id": 6,
+      "name": "산뽕나무활",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: small curved mulberry wooden bow, tan cord. Name concept: 산뽕나무활. BASIC ordinary tier. Plain natural materials, simple practical silhouette, no jewelry or gold. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ae056a6f-cf35-4f09-af1a-2bd5cc91c9a3.png",
+      "output": "web/public/images/weapon-proposals/weapon-6-v2.webp",
+      "bytes": 6324
+    },
+    {
+      "id": 7,
+      "name": "쇠뿔겹활",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: strong recurve bow with horn laminated black tips. Name concept: 쇠뿔겹활. MID ordinary tier. Clearly improved metal reinforcement, colored wrapping and one simple cord. Restrained decoration, no gems or gold covered body. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-42eeca5c-89a6-4bec-94ee-7418b3ef37b2.png",
+      "output": "web/public/images/weapon-proposals/weapon-7-v2.webp",
+      "bytes": 6526
+    },
+    {
+      "id": 8,
+      "name": "힘줄각궁",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: compact powerful horn sinew reflex bow, amber grip. Name concept: 힘줄각궁. HIGH ordinary tier. Significantly different silhouette and visible refined fittings: sculpted metal ends or ribs, silver geometric inlay, one prominent jade ornament and short indigo tassel. Obviously better than middle tier but less lavish than a treasure. Not merely recolor. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-481d5993-43a9-41a0-9848-b80ef0395335.png",
+      "output": "web/public/images/weapon-proposals/weapon-8-v2.webp",
+      "bytes": 7854
+    },
+    {
+      "id": 10,
+      "name": "쇠테몽둥이",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: wood cudgel with three iron bands, hemp grip. Name concept: 쇠테몽둥이. MID ordinary tier. Clearly improved metal reinforcement, colored wrapping and one simple cord. Restrained decoration, no gems or gold covered body. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-b18ca24a-4eda-45c6-a18c-79aa721cdc4b.png",
+      "output": "web/public/images/weapon-proposals/weapon-10-v2.webp",
+      "bytes": 6048
+    },
+    {
+      "id": 11,
+      "name": "쇠돌몽둥이",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: heavy iron studded club, thick leather grip. Name concept: 쇠돌몽둥이. HIGH ordinary tier. Significantly different silhouette and visible refined fittings: sculpted metal ends or ribs, silver geometric inlay, one prominent jade ornament and short indigo tassel. Obviously better than middle tier but less lavish than a treasure. Not merely recolor. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-8d409ddf-4e36-4c9f-84b0-bd3cd9eecdc5.png",
+      "output": "web/public/images/weapon-proposals/weapon-11-v2.webp",
+      "bytes": 7836
+    },
+    {
+      "id": 12,
+      "name": "나무돌팔매틀",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: small wooden traction stone catapult, rope basket arm. Name concept: 나무돌팔매틀. BASIC ordinary tier. Plain natural materials, simple practical silhouette, no jewelry or gold. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ee2715c6-7819-4d24-8e28-f2869bc44c94.png",
+      "output": "web/public/images/weapon-proposals/weapon-12-v2.webp",
+      "bytes": 9994
+    },
+    {
+      "id": 13,
+      "name": "쇠테돌팔매틀",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: reinforced wood traction catapult with iron brackets. Name concept: 쇠테돌팔매틀. MID ordinary tier. Clearly improved metal reinforcement, colored wrapping and one simple cord. Restrained decoration, no gems or gold covered body. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-9369aead-760a-4b31-ad28-57c9b5b525bc.png",
+      "output": "web/public/images/weapon-proposals/weapon-13-v2.webp",
+      "bytes": 10056
+    },
+    {
+      "id": 14,
+      "name": "성돌격틀",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: heavy stone catapult, wide timber frame iron straps. Name concept: 성돌격틀. HIGH ordinary tier. Significantly different silhouette and visible refined fittings: sculpted metal ends or ribs, silver geometric inlay, one prominent jade ornament and short indigo tassel. Obviously better than middle tier but less lavish than a treasure. Not merely recolor. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-6e26b789-1eb3-492a-841a-e3bb9dbd5d3d.png",
+      "output": "web/public/images/weapon-proposals/weapon-14-v2.webp",
+      "bytes": 11490
+    },
+    {
+      "id": 15,
+      "name": "대나무부채",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: open bamboo rib folding fan cream paper. Name concept: 대나무부채. BASIC ordinary tier. Plain natural materials, simple practical silhouette, no jewelry or gold. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-650a1c5b-1a8c-42e2-82b1-d2a4250c107e.png",
+      "output": "web/public/images/weapon-proposals/weapon-15-v2.webp",
+      "bytes": 9154
+    },
+    {
+      "id": 16,
+      "name": "진법부채",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: open commanding fan indigo fabric white geometric lines. Name concept: 진법부채. MID ordinary tier. Clearly improved metal reinforcement, colored wrapping and one simple cord. Restrained decoration, no gems or gold covered body. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-052c898b-2b30-4081-8140-884e34d208ce.png",
+      "output": "web/public/images/weapon-proposals/weapon-16-v2.webp",
+      "bytes": 10588
+    },
+    {
+      "id": 17,
+      "name": "쇠살부채",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: folding fan reinforced dark metal ribs and tan paper. Name concept: 쇠살부채. HIGH ordinary tier. Significantly different silhouette and visible refined fittings: sculpted metal ends or ribs, silver geometric inlay, one prominent jade ornament and short indigo tassel. Obviously better than middle tier but less lavish than a treasure. Not merely recolor. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-977a467c-0b9c-4202-9a32-42c142fdd377.png",
+      "output": "web/public/images/weapon-proposals/weapon-17-v2.webp",
+      "bytes": 13028
+    },
+    {
+      "id": 18,
+      "name": "돌울림칼",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: ritual dull stone sword, hemp cord, jade bead. Name concept: 돌울림칼. BASIC ordinary tier. Plain natural materials, simple practical silhouette, no jewelry or gold. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f1779a19-bcf9-4180-9707-2a93eb7168e5.png",
+      "output": "web/public/images/weapon-proposals/weapon-18-v2.webp",
+      "bytes": 6230
+    },
+    {
+      "id": 19,
+      "name": "청동울림칼",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: bronze ritual sword, cloud engraved guard. Name concept: 청동울림칼. MID ordinary tier. Clearly improved metal reinforcement, colored wrapping and one simple cord. Restrained decoration, no gems or gold covered body. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-5c6b2ed7-1221-4548-9d75-e3ee400f7035.png",
+      "output": "web/public/images/weapon-proposals/weapon-19-v2.webp",
+      "bytes": 5764
+    },
+    {
+      "id": 20,
+      "name": "쇠울림칼",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: black iron ritual sword with silver wave engravings. Name concept: 쇠울림칼. HIGH ordinary tier. Significantly different silhouette and visible refined fittings: sculpted metal ends or ribs, silver geometric inlay, one prominent jade ornament and short indigo tassel. Obviously better than middle tier but less lavish than a treasure. Not merely recolor. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f05825ad-5fc2-49bc-b84a-ebe7f19c9ae6.png",
+      "output": "web/public/images/weapon-proposals/weapon-20-v2.webp",
+      "bytes": 7476
+    },
+    {
+      "id": 22,
+      "name": "말굽가름검",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: broad cavalry-breaking sword, horseshoe-shaped guard. Name concept: 말굽가름검. LEGENDARY TREASURE. Lavish unique silhouette, elaborate sculpted gold and silver fittings, prominent jade or red gemstone, silk knot and tassels. Clearly more splendid than high-tier ordinary gear. Motifs may use lotus petals, mountain ridges or phoenix curves as fictional Korean-inspired decoration. Avoid excessive glow. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-03e2c5e2-d57f-400a-a220-7b400d92cb1d.png",
+      "output": "web/public/images/weapon-proposals/weapon-22-v2.webp",
+      "bytes": 11198
+    },
+    {
+      "id": 23,
+      "name": "성문지킴검",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: heavy broad defensive sword, fortress motif crossguard. Name concept: 성문지킴검. LEGENDARY TREASURE. Lavish unique silhouette, elaborate sculpted gold and silver fittings, prominent jade or red gemstone, silk knot and tassels. Clearly more splendid than high-tier ordinary gear. Motifs may use lotus petals, mountain ridges or phoenix curves as fictional Korean-inspired decoration. Avoid excessive glow. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-8aa925e0-91a8-4557-9cbc-6b5a529d59f8.png",
+      "output": "web/public/images/weapon-proposals/weapon-23-v2.webp",
+      "bytes": 10756
+    },
+    {
+      "id": 24,
+      "name": "제비날도",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: light slender curved blade, swallow silhouette pommel. Name concept: 제비날도. LEGENDARY TREASURE. Lavish unique silhouette, elaborate sculpted gold and silver fittings, prominent jade or red gemstone, silk knot and tassels. Clearly more splendid than high-tier ordinary gear. Motifs may use lotus petals, mountain ridges or phoenix curves as fictional Korean-inspired decoration. Avoid excessive glow. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-e44764e4-da2d-4ce4-90a2-84a270390422.png",
+      "output": "web/public/images/weapon-proposals/weapon-24-v2.webp",
+      "bytes": 7714
+    },
+    {
+      "id": 28,
+      "name": "발묶음활",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: dark wooden bow with braided binding cords, blue bead. Name concept: 발묶음활. LEGENDARY TREASURE. Lavish unique silhouette, elaborate sculpted gold and silver fittings, prominent jade or red gemstone, silk knot and tassels. Clearly more splendid than high-tier ordinary gear. Motifs may use lotus petals, mountain ridges or phoenix curves as fictional Korean-inspired decoration. Avoid excessive glow. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-e6a9362f-17ba-4d7e-9d72-3a2daba4a74b.png",
+      "output": "web/public/images/weapon-proposals/weapon-28-v2.webp",
+      "bytes": 9274
+    },
+    {
+      "id": 29,
+      "name": "말막음활",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: pale wood bow with small silent bronze bell charm. Name concept: 말막음활. LEGENDARY TREASURE. Lavish unique silhouette, elaborate sculpted gold and silver fittings, prominent jade or red gemstone, silk knot and tassels. Clearly more splendid than high-tier ordinary gear. Motifs may use lotus petals, mountain ridges or phoenix curves as fictional Korean-inspired decoration. Avoid excessive glow. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-5a52f135-013b-40d3-8ac2-8fe5377e7206.png",
+      "output": "web/public/images/weapon-proposals/weapon-29-v2.webp",
+      "bytes": 11392
+    },
+    {
+      "id": 30,
+      "name": "어지럼쇠추",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: two iron chain-linked weights in looping arrangement. Name concept: 어지럼쇠추. LEGENDARY TREASURE. Lavish unique silhouette, elaborate sculpted gold and silver fittings, prominent jade or red gemstone, silk knot and tassels. Clearly more splendid than high-tier ordinary gear. Motifs may use lotus petals, mountain ridges or phoenix curves as fictional Korean-inspired decoration. Avoid excessive glow. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-0b442a4f-ef72-4fe6-bfba-20faab8e7fa8.png",
+      "output": "web/public/images/weapon-proposals/weapon-30-v2.webp",
+      "bytes": 15286
+    },
+    {
+      "id": 31,
+      "name": "맞받이쌍몽둥이",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: paired short black iron batons, matching red cords. Name concept: 맞받이쌍몽둥이. LEGENDARY TREASURE. Lavish unique silhouette, elaborate sculpted gold and silver fittings, prominent jade or red gemstone, silk knot and tassels. Clearly more splendid than high-tier ordinary gear. Motifs may use lotus petals, mountain ridges or phoenix curves as fictional Korean-inspired decoration. Avoid excessive glow. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f50c4dec-ed9e-427e-bd5a-eadab6abe427.png",
+      "output": "web/public/images/weapon-proposals/weapon-31-v2.webp",
+      "bytes": 14124
+    },
+    {
+      "id": 32,
+      "name": "독안개돌팔매틀",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: wood traction catapult with sealed green poison jars. Name concept: 독안개돌팔매틀. LEGENDARY TREASURE. Lavish unique silhouette, elaborate sculpted gold and silver fittings, prominent jade or red gemstone, silk knot and tassels. Clearly more splendid than high-tier ordinary gear. Motifs may use lotus petals, mountain ridges or phoenix curves as fictional Korean-inspired decoration. Avoid excessive glow. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-784a41f1-b1ab-40b3-b690-243e8c3961cf.png",
+      "output": "web/public/images/weapon-proposals/weapon-32-v2.webp",
+      "bytes": 11980
+    },
+    {
+      "id": 33,
+      "name": "솔바람부채",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: open pine green fan, pine needles spiral wind carving. Name concept: 솔바람부채. LEGENDARY TREASURE. Lavish unique silhouette, elaborate sculpted gold and silver fittings, prominent jade or red gemstone, silk knot and tassels. Clearly more splendid than high-tier ordinary gear. Motifs may use lotus petals, mountain ridges or phoenix curves as fictional Korean-inspired decoration. Avoid excessive glow. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-03f64e1d-40aa-4d65-a374-50dd4b6b9916.png",
+      "output": "web/public/images/weapon-proposals/weapon-33-v2.webp",
+      "bytes": 15676
+    },
+    {
+      "id": 34,
+      "name": "화롯불부채",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: warm red fan with ember shaped ribs, bronze fittings. Name concept: 화롯불부채. LEGENDARY TREASURE. Lavish unique silhouette, elaborate sculpted gold and silver fittings, prominent jade or red gemstone, silk knot and tassels. Clearly more splendid than high-tier ordinary gear. Motifs may use lotus petals, mountain ridges or phoenix curves as fictional Korean-inspired decoration. Avoid excessive glow. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-a6135626-8d44-4a04-89aa-3a2b25de9b4f.png",
+      "output": "web/public/images/weapon-proposals/weapon-34-v2.webp",
+      "bytes": 14360
+    },
+    {
+      "id": 35,
+      "name": "흰학깃부채",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: white crane feather fan, pale jade handle. Name concept: 흰학깃부채. LEGENDARY TREASURE. Lavish unique silhouette, elaborate sculpted gold and silver fittings, prominent jade or red gemstone, silk knot and tassels. Clearly more splendid than high-tier ordinary gear. Motifs may use lotus petals, mountain ridges or phoenix curves as fictional Korean-inspired decoration. Avoid excessive glow. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-1a6f3a74-1870-461b-90c0-4d28a5d188e6.png",
+      "output": "web/public/images/weapon-proposals/weapon-35-v2.webp",
+      "bytes": 12098
+    },
+    {
+      "id": 36,
+      "name": "별자리울림칼",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: ritual sword with seven tiny silver star inlays. Name concept: 별자리울림칼. LEGENDARY TREASURE. Lavish unique silhouette, elaborate sculpted gold and silver fittings, prominent jade or red gemstone, silk knot and tassels. Clearly more splendid than high-tier ordinary gear. Motifs may use lotus petals, mountain ridges or phoenix curves as fictional Korean-inspired decoration. Avoid excessive glow. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-c074e543-e8be-4991-8e44-73167006f761.png",
+      "output": "web/public/images/weapon-proposals/weapon-36-v2.webp",
+      "bytes": 11658
+    },
+    {
+      "id": 37,
+      "name": "샘빛울림칼",
+      "prompt": "Create ONE isolated Korean historical-fantasy RPG inventory weapon icon: ritual short sword, blue-green jade hilt, waterdrop charm. Name concept: 샘빛울림칼. LEGENDARY TREASURE. Lavish unique silhouette, elaborate sculpted gold and silver fittings, prominent jade or red gemstone, silk knot and tassels. Clearly more splendid than high-tier ordinary gear. Motifs may use lotus petals, mountain ridges or phoenix curves as fictional Korean-inspired decoration. Avoid excessive glow. Match references' hand-painted bold warm brown outlines, readable at 96px. First reference is treasure ceiling, second is high ordinary quality. Depict ONLY requested weapon, not reference swords. Entire object including strings/tassels within 15 percent transparent padding, transparent background, no labels/text, no frame. Functional silhouette, no modern weapons, no Chinese writing. For paired weapons show exactly two; siege machines show one whole machine with all wheels/arm visible.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-71698479-1281-47ba-b2d5-31f9a7d26fe6.png",
+      "output": "web/public/images/weapon-proposals/weapon-37-v2.webp",
+      "bytes": 11802
+    }
+  ],
+  "totalBytes": 275686
+}

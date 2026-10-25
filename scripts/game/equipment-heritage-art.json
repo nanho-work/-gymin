@@ -1,0 +1,31 @@
+{
+  "paths": [
+    "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-1b8a3dc1-9809-4127-9ddc-0042ce29ac2c.png",
+    "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-d7ec951c-c0c4-4dda-9c7b-72ee5cb1f716.png",
+    "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-9e64d46e-42c1-4e2a-98e0-2e68bb945d1b.png"
+  ],
+  "prompts": [
+    "Create one Korean historical fantasy RPG inventory icon of a mid-tier broad iron sword, diagonal tip upper right. Practical broad blade with restrained bronze guard, small incised geometric border, deep indigo leather grip and one simple cord. No gemstones, no tassel clusters, no glow. Clearly upgraded over plain iron dagger but not a treasure. Hand painted warm brown crisp bold contour consistent with reference, isolated transparent background, entire object with 15% padding. No text.",
+    "Create one Korean historical fantasy RPG inventory icon of high-tier forged longsword, diagonal tip upper right. Elegant polished steel fullered blade, restrained silver inlaid thin line on blade base, bronze decorated guard, indigo wrapped grip and one SMALL jade bead on short red cord. Ornament concentrated on hilt; blade mostly plain functional steel. More refined than mid tier but far less ornate than legendary paired swords. Warm brown bold contour handpainted game icon consistent with reference. Transparent background, 15% safe padding, no text.",
+    "Redesign referenced paired swords as a magnificent Korean historical fantasy treasure named Oath Twin Swords. Preserve TWO swords, one slightly golden blade and one silver blade, and prominent intricately INTERTWINED RED AND BLUE SILK KNOT connecting hilts. Rich sculpted golden guards with lotus and phoenix curves, tiny gold granulation bead borders and red gemstone inlay on hilts inspired by the decorative techniques of the Gyerim-ro excavated dagger (not an exact replica). Deep jade pommel drops, flowing red and blue tassels, slim engraved blade bases, distinctly treasured unique silhouette. Both full swords and cords entirely visible, no clipped ends. Small restrained magical glints only, not neon halo. Warm brown strong contour painterly game inventory icon, transparent background, 15% padding. No text, no background."
+  ],
+  "outputs": [
+    {
+      "id": 1,
+      "path": "web/public/images/weapon-proposals/weapon-1-v2.webp",
+      "bytes": 5166
+    },
+    {
+      "id": 2,
+      "path": "web/public/images/weapon-proposals/weapon-2-v2.webp",
+      "bytes": 5472
+    },
+    {
+      "id": 21,
+      "path": "web/public/images/weapon-proposals/weapon-21-v2.webp",
+      "bytes": 12676
+    }
+  ],
+  "generator": "built-in image_gen",
+  "sourcesRemoved": true
+}

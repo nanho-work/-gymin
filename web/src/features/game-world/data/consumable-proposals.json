@@ -1,0 +1,157 @@
+{
+  "records": [
+    {
+      "originalId": 87,
+      "name": "볶은약콩",
+      "description": "볶아 휴대하기 좋게 만든 창작 회복식. 게임용 창작 설정.",
+      "effect": "HP 회복 · 원본 효과 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-87.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 88,
+      "name": "기운쌀떡",
+      "description": "쌀을 찧어 빚은 든든한 창작 회복식. 게임용 창작 설정.",
+      "effect": "HP 회복 · 원본 상위 효과 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-88.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 89,
+      "name": "산신복숭아",
+      "description": "산의 기운을 품었다는 창작 복숭아. 게임용 창작 설정.",
+      "effect": "HP 회복 · 원본 최상위 효과 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-89.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 90,
+      "name": "맑은샘물",
+      "description": "술법의 기운을 보충하는 창작 샘물. 게임용 창작 설정.",
+      "effect": "MP 회복 · 원본 type 64 기준. 원본 설명의 HP 표기는 불일치로 보존",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-90.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 91,
+      "name": "솔향기운주",
+      "description": "솔향을 머금어 기운을 돋우는 창작 술. 게임용 창작 설정.",
+      "effect": "MP 회복 · 원본 상위 효과 유지. 원본 설명의 HP 표기는 불일치로 보존",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-91.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 92,
+      "name": "해독풀환",
+      "description": "독기를 풀어내는 약초로 빚었다는 창작 약환. 게임용 창작 설정.",
+      "effect": "독 상태 해제 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-92.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 93,
+      "name": "맑은정신환",
+      "description": "흐트러진 정신을 깨우는 창작 약환. 게임용 창작 설정.",
+      "effect": "혼란 상태 해제 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-93.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 94,
+      "name": "발풀림연고",
+      "description": "굳은 발을 풀어주는 창작 연고. 게임용 창작 설정.",
+      "effect": "부동 상태 해제 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-94.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 95,
+      "name": "목트임약차",
+      "description": "막힌 목소리를 되찾는 창작 약차. 게임용 창작 설정.",
+      "effect": "금책 상태 해제 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-95.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 96,
+      "name": "온몸맑힘환",
+      "description": "몸과 마음의 흐트러짐을 다스리는 창작 약환. 게임용 창작 설정.",
+      "effect": "독·혼란·부동·금책 해제 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-96.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 97,
+      "name": "승급맹약패",
+      "description": "새 역할을 맡았음을 증명하는 창작 패. 게임용 창작 설정.",
+      "effect": "승급 조건과 HP·MP 회복 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-97.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 98,
+      "name": "힘돋움산열매",
+      "description": "힘을 돋우는 붉은 창작 산열매. 게임용 창작 설정.",
+      "effect": "무력 증가·공격력 상승 상태 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-98.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 99,
+      "name": "슬기산열매",
+      "description": "생각을 맑히는 푸른 창작 산열매. 게임용 창작 설정.",
+      "effect": "지력 증가·정신력 상승 상태 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-99.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 100,
+      "name": "굳셈산열매",
+      "description": "흔들리지 않는 기운을 주는 황금빛 창작 산열매. 게임용 창작 설정.",
+      "effect": "통솔력 증가·방어력 상승 상태 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-100.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 101,
+      "name": "날쌘산열매",
+      "description": "몸놀림을 가볍게 하는 초록빛 창작 산열매. 게임용 창작 설정.",
+      "effect": "민첩성 증가·순발력 상승 상태 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-101.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 102,
+      "name": "복담은산열매",
+      "description": "좋은 기운을 담았다는 자줏빛 창작 산열매. 게임용 창작 설정.",
+      "effect": "운 증가·사기 상승 상태 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-102.webp",
+      "folklore": []
+    },
+    {
+      "originalId": 103,
+      "name": "깨달음산열매",
+      "description": "지난 경험을 깨달음으로 엮는 창작 산열매. 게임용 창작 설정.",
+      "effect": "경험치 증가·HP·MP 회복 유지",
+      "jobProposal": "소모품 · 장착 대상이 아닙니다. 사용 대상·조건·소모 처리와 효과량은 기존 규칙을 유지합니다.",
+      "image": "/images/consumable-proposals/consumable-103.webp",
+      "folklore": []
+    }
+  ]
+}

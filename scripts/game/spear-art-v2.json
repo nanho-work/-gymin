@@ -1,0 +1,48 @@
+{
+  "generator": "built-in image_gen",
+  "sourcesRemoved": true,
+  "assets": [
+    {
+      "id": 3,
+      "prompt": "Single isolated Korean historical fantasy RPG weapon inventory icon. Basic short spear, small simple leaf iron tip and rough brown wooden shaft hemp binding. Plain practical no ornament. Entire weapon diagonal bottom left to top right, readable strong silhouette at 96px. Match reference warm brown bold contour hand painted style. Genuine transparent background, safe 15% margin ALL sides, no clipping, no text, no glow cloud. New fictional design, not historical reconstruction.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-803d9855-4c8f-4138-b492-c0eb586bc0cf.png",
+      "output": "web/public/images/weapon-proposals/weapon-3-v2.webp",
+      "bytes": 3960
+    },
+    {
+      "id": 4,
+      "prompt": "Single isolated Korean historical fantasy RPG weapon inventory icon. Mid tier long spear. Broad leaf steel head, bronze reinforced socket, red short horsehair tuft and dark wood shaft with two iron bands. Clear improvement over plain basic spear, modest ornament. Entire weapon diagonal bottom left to top right, readable strong silhouette at 96px. Match reference warm brown bold contour hand painted style. Genuine transparent background, safe 15% margin ALL sides, no clipping, no text, no glow cloud. New fictional design, not historical reconstruction.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-facc2bf6-4872-4080-bbef-6d7722e0793b.png",
+      "output": "web/public/images/weapon-proposals/weapon-4-v2.webp",
+      "bytes": 4474
+    },
+    {
+      "id": 5,
+      "prompt": "Single isolated Korean historical fantasy RPG weapon inventory icon. High tier elite iron-backed spear. Dramatic long diamond steel blade, swept small wing-shaped silver blade base, engraved silver reinforced socket with jade oval centerpiece, short deep indigo tassel, dark lacquer shaft with three broad metal reinforcing bands. Clearly different silhouette from basic leaf spears, restrained and functional, not golden treasure. Entire weapon diagonal bottom left to top right, readable strong silhouette at 96px. Match reference warm brown bold contour hand painted style. Genuine transparent background, safe 15% margin ALL sides, no clipping, no text, no glow cloud. New fictional design, not historical reconstruction.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-8c4ee15b-412c-4ae9-8bfa-e850260f05d8.png",
+      "output": "web/public/images/weapon-proposals/weapon-5-v2.webp",
+      "bytes": 4808
+    },
+    {
+      "id": 25,
+      "prompt": "Single isolated Korean historical fantasy RPG weapon inventory icon. Legendary mountain-resonance crescent poleblade. Large moon-shaped steel blade with gold mountain ridge engraving inspired by the layered mountain silhouettes of Baekje gilt bronze incense burner, lotus sculpted gold socket, jade pendant and thick red blue braided silk ties. Dark carved shaft, distinct imposing silhouette. No dragon copied from Chinese guandao. Most ornate treasure tier. Entire weapon diagonal bottom left to top right, readable strong silhouette at 96px. Match reference warm brown bold contour hand painted style. Genuine transparent background, safe 15% margin ALL sides, no clipping, no text, no glow cloud. New fictional design, not historical reconstruction.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-78d10da5-1666-4b91-8ff5-eb44bfc90c95.png",
+      "output": "web/public/images/weapon-proposals/weapon-25-v2.webp",
+      "bytes": 6596
+    },
+    {
+      "id": 26,
+      "prompt": "Single isolated Korean historical fantasy RPG weapon inventory icon. Legendary piercing long spear. Very long narrow fluted silver point with gold inlaid linear channels, ornate gilded lotus socket inspired by Baekje lotus ornament, pale jade drop and rich deep blue silk tassel, lacquer shaft with golden bands. Exceptional refined treasure silhouette, visibly more luxurious than ordinary spear, NO side blades. Entire weapon diagonal bottom left to top right, readable strong silhouette at 96px. Match reference warm brown bold contour hand painted style. Genuine transparent background, safe 15% margin ALL sides, no clipping, no text, no glow cloud. New fictional design, not historical reconstruction.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-7525dea3-7a52-40cb-8074-0c6f6ca5ff4d.png",
+      "output": "web/public/images/weapon-proposals/weapon-26-v2.webp",
+      "bytes": 4762
+    },
+    {
+      "id": 27,
+      "prompt": "Single isolated Korean historical fantasy RPG weapon inventory icon. Legendary chained-victory forked spear. Main central spear point with TWO asymmetric sweeping hook blades, sculpted golden phoenix curved socket inspired by Baekje incense burner phoenix motifs, red gemstone inset, intertwined red blue silk knot and rich short tassels, dark shaft gold bindings. Unique forked silhouette, lavish treasure tier. Entire weapon diagonal bottom left to top right, readable strong silhouette at 96px. Match reference warm brown bold contour hand painted style. Genuine transparent background, safe 15% margin ALL sides, no clipping, no text, no glow cloud. New fictional design, not historical reconstruction.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-95fb8ca9-31c6-47cc-86fb-fd299869960a.png",
+      "output": "web/public/images/weapon-proposals/weapon-27-v2.webp",
+      "bytes": 7346
+    }
+  ]
+}

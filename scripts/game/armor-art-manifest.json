@@ -1,0 +1,119 @@
+{
+  "generator": "built-in image_gen",
+  "sourcesRemoved": true,
+  "assets": [
+    {
+      "id": 38,
+      "name": "가죽찰갑",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: basic practical brown leather lamellar vest with plain hemp ties, no jewelry. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f1a782c4-3344-42cd-a199-f81c60817ce1.png",
+      "output": "web/public/images/armor-proposals/armor-38.webp",
+      "bytes": 8674
+    },
+    {
+      "id": 40,
+      "name": "쇠비늘찰갑",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: high ordinary iron lamellar cuirass with broad articulated shoulders, engraved silver edging, deep indigo ties and one modest jade clasp, less ornate than treasure. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-e56ea336-67c1-4f68-8b29-774e58317482.png",
+      "output": "web/public/images/armor-proposals/armor-40.webp",
+      "bytes": 8546
+    },
+    {
+      "id": 41,
+      "name": "삼베겹옷",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: basic plain undyed hemp layered tunic with cloth sash no ornaments. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-dd984183-c338-42ae-a55e-3a87b9865785.png",
+      "output": "web/public/images/armor-proposals/armor-41.webp",
+      "bytes": 8208
+    },
+    {
+      "id": 42,
+      "name": "가죽덧옷",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: mid ordinary earth-colored cloth tunic with reinforced leather shoulders chest and belt, restrained red stitching. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ec308ca2-e910-4fc8-869c-eab44894ec76.png",
+      "output": "web/public/images/armor-proposals/armor-42.webp",
+      "bytes": 8326
+    },
+    {
+      "id": 43,
+      "name": "누비전투옷",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: high ordinary padded indigo battle coat, geometric silver thread seams, reinforced cuffs, short jade belt toggle, more refined than leather tunic but not treasure. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-b3e437fa-6b77-4177-bc9b-8634b0f4e872.png",
+      "output": "web/public/images/armor-proposals/armor-43.webp",
+      "bytes": 9110
+    },
+    {
+      "id": 44,
+      "name": "해비춤찰갑",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: legendary bronze mirror breastplate on lamellar armor, large polished round chest disk with radiating engraved border, ornate gold fittings jade and red blue cords. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ed08f646-1966-48ad-b4d5-000b2078a159.png",
+      "output": "web/public/images/armor-proposals/armor-44.webp",
+      "bytes": 10602
+    },
+    {
+      "id": 45,
+      "name": "금빛수호찰갑",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: legendary gilded lamellar armor, magnificent lotus relief shoulder plates, red gem clasp, woven red blue protective knot, rich yet practical silhouette. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-df3f5538-f8c2-480a-84cd-68e5df1fbc1d.png",
+      "output": "web/public/images/armor-proposals/armor-45.webp",
+      "bytes": 11230
+    },
+    {
+      "id": 46,
+      "name": "고리엮음찰갑",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: legendary interlinked chain armor with visible silver rings, ornate golden edge plates, jade belt and deep blue silk ties, flexible structure. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-3f8341b0-b5fa-45fa-af3b-4fa9af3dff7e.png",
+      "output": "web/public/images/armor-proposals/armor-46.webp",
+      "bytes": 11178
+    },
+    {
+      "id": 47,
+      "name": "은빛결계찰갑",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: legendary luminous silver plated armor with carved cloud and wave borders, pale jade centerpiece blue silk knots, no glow cloud. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-173d3db0-49fe-4782-92a9-175043cab73e.png",
+      "output": "web/public/images/armor-proposals/armor-47.webp",
+      "bytes": 11122
+    },
+    {
+      "id": 48,
+      "name": "비늘숨찰갑",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: legendary blue-green overlapping scale armor, gold scale edges, prominent waterdrop jade chest fitting, red blue braided cords, fictional mystical scales. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-afc77323-7e23-4a98-9f71-d78464892905.png",
+      "output": "web/public/images/armor-proposals/armor-48.webp",
+      "bytes": 10218
+    },
+    {
+      "id": 49,
+      "name": "제비춤도포",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: legendary agile short battle robe with swept swallow-tail hems, embroidered gold swallow feather motifs, red blue sash knots and jade clasp. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-6f454a60-f036-488f-8b9c-f4b1a49ebda9.png",
+      "output": "web/public/images/armor-proposals/armor-49.webp",
+      "bytes": 10596
+    },
+    {
+      "id": 50,
+      "name": "흰학마음도포",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: legendary white scholar robe with black edging, refined crane feather embroidery gold thread and jade pendants, graceful layered silhouette. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-50f0e388-1b9d-4378-959c-d09945702db0.png",
+      "output": "web/public/images/armor-proposals/armor-50.webp",
+      "bytes": 11466
+    },
+    {
+      "id": 51,
+      "name": "밤하늘도포",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: legendary midnight black-indigo robe, silver star and cloud embroidery, jade belt golden clasp blue silk knots, readable dark fabric. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-fec03062-a50a-4c10-b435-3919528a2918.png",
+      "output": "web/public/images/armor-proposals/armor-51.webp",
+      "bytes": 9752
+    },
+    {
+      "id": 52,
+      "name": "봉황숨깃옷",
+      "prompt": "One standalone Korean historical-fantasy RPG ARMOR inventory icon: legendary magnificent phoenix feather mantle over robe, warm red gold feather-shaped shoulders and flowing hems, jade clasp red blue knots, no human. Front three quarter view empty garment torso, no head/person/mannequin. Match reference painterly warm brown bold outlines, legible at 96px. Entire garment centered with 15% transparent padding. True transparent background. No text, no weapon. Fictional Korean-inspired equipment, not a historical reconstruction. Treasure ornamental motifs lotus/cloud/feather, ordinary tiers restrained.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-d0581b79-2deb-4000-9fdb-1a48d1116b49.png",
+      "output": "web/public/images/armor-proposals/armor-52.webp",
+      "bytes": 14818
+    }
+  ],
+  "totalBytes": 143846
+}

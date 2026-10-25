@@ -1,0 +1,279 @@
+{
+  "generator": "built-in image_gen",
+  "sourcesRemoved": true,
+  "totalBytes": 351448,
+  "assets": [
+    {
+      "id": 53,
+      "name": "가죽덧방패",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: plain round brown leather wooden shield hemp stitching. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-07abf223-a00e-47f5-bd88-2159253fd1b2.png",
+      "output": "web/public/images/accessory-proposals/accessory-53.webp",
+      "bytes": 9382
+    },
+    {
+      "id": 54,
+      "name": "쇠테방패",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: reinforced round wooden shield broad steel rim bronze central boss. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-59abdc48-ca7f-40d0-a3c9-738de4fd7691.png",
+      "output": "web/public/images/accessory-proposals/accessory-54.webp",
+      "bytes": 11044
+    },
+    {
+      "id": 55,
+      "name": "은달막이",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure silver crescent moon shield jade fittings blue red braided tassel. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-434de97a-8c24-44cf-a4bf-e609b18ddf79.png",
+      "output": "web/public/images/accessory-proposals/accessory-55.webp",
+      "bytes": 10762
+    },
+    {
+      "id": 56,
+      "name": "바람매듭방패",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure ornate swirling cloud shield gold silver wind motifs five color Korean knot. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-dbace83a-3dda-4a2e-a933-793edab656e5.png",
+      "output": "web/public/images/accessory-proposals/accessory-56.webp",
+      "bytes": 9516
+    },
+    {
+      "id": 57,
+      "name": "가죽말갑",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: brown leather horse barding displayed alone empty draped horse shaped armor no horse. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-45403521-d49c-45dc-9b40-8429aff47954.png",
+      "output": "web/public/images/accessory-proposals/accessory-57.webp",
+      "bytes": 10008
+    },
+    {
+      "id": 58,
+      "name": "쇠편말갑",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: steel lamellar horse barding displayed alone empty draped horse shaped armor no horse. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-1f0ab02c-79cf-4cf2-b016-b59ba1f95f38.png",
+      "output": "web/public/images/accessory-proposals/accessory-58.webp",
+      "bytes": 10294
+    },
+    {
+      "id": 59,
+      "name": "가벼운수레바퀴",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: sturdy light wooden spoked cart wheel iron outer rim. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-5728e330-2263-4900-b4ff-773555a7d536.png",
+      "output": "web/public/images/accessory-proposals/accessory-59.webp",
+      "bytes": 12890
+    },
+    {
+      "id": 60,
+      "name": "새벽갈기",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure pale golden horse full body side three quarter ornate Korean red blue saddle. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-0a606a21-f5bb-4219-8622-9f47eb66d808.png",
+      "output": "web/public/images/accessory-proposals/accessory-60.webp",
+      "bytes": 13768
+    },
+    {
+      "id": 61,
+      "name": "그늘발",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure black horse full body silver Korean saddle purple cloth. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-96036304-69ad-4376-907e-70ccd81a3627.png",
+      "output": "web/public/images/accessory-proposals/accessory-61.webp",
+      "bytes": 12070
+    },
+    {
+      "id": 62,
+      "name": "불꽃굽",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure red chestnut horse full body golden Korean saddle fiery mane no literal flames. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-07e6bf3c-10dc-4474-a466-d86a52707e76.png",
+      "output": "web/public/images/accessory-proposals/accessory-62.webp",
+      "bytes": 13326
+    },
+    {
+      "id": 63,
+      "name": "물안개",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure white horse full body jade Korean saddle mist colored mane. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-03af7106-fcc3-4e16-9759-16f0d31f29ad.png",
+      "output": "web/public/images/accessory-proposals/accessory-63.webp",
+      "bytes": 12794
+    },
+    {
+      "id": 64,
+      "name": "가죽머리갑",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: simple brown leather helmet ear flaps no horns. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-452fe8a2-1ea7-4133-b433-faf94533f471.png",
+      "output": "web/public/images/accessory-proposals/accessory-64.webp",
+      "bytes": 6592
+    },
+    {
+      "id": 65,
+      "name": "쇠테머리갑",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: reinforced leather helmet broad bronze bands ear flaps. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-b9bc1938-af75-4f47-a6a5-d4936c4b4b55.png",
+      "output": "web/public/images/accessory-proposals/accessory-65.webp",
+      "bytes": 8394
+    },
+    {
+      "id": 66,
+      "name": "쇠비늘투구",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: Korean fantasy steel lamellar helmet neck guard restrained red knot no treasure jewels. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-0e46a48b-8101-4b91-9e56-7ba9a0a08a81.png",
+      "output": "web/public/images/accessory-proposals/accessory-66.webp",
+      "bytes": 8672
+    },
+    {
+      "id": 67,
+      "name": "삼베두건",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: simple folded beige hemp hood headwrap empty no head. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-463e5cb5-8fad-4451-acdf-35b8918a8f60.png",
+      "output": "web/public/images/accessory-proposals/accessory-67.webp",
+      "bytes": 6556
+    },
+    {
+      "id": 68,
+      "name": "푸른매듭건",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: indigo folded Korean headwrap silver small clasp restrained blue knot empty no head. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-26ac1454-97c2-475c-a784-8051c587a47a.png",
+      "output": "web/public/images/accessory-proposals/accessory-68.webp",
+      "bytes": 6456
+    },
+    {
+      "id": 69,
+      "name": "별헤아림건",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure midnight blue Korean ceremonial headwrap embroidered gold stars jade clasp long braided tassels no head. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ea8fac9b-16ee-4f18-84ea-b22f2fac6276.png",
+      "output": "web/public/images/accessory-proposals/accessory-69.webp",
+      "bytes": 11108
+    },
+    {
+      "id": 70,
+      "name": "삼베손싸개",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: pair plain beige hemp hand wraps gloves no hands. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ba5618c7-2033-4a92-93ed-dcba70fba524.png",
+      "output": "web/public/images/accessory-proposals/accessory-70.webp",
+      "bytes": 9822
+    },
+    {
+      "id": 71,
+      "name": "가죽손싸개",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: pair brown leather combat gloves reinforced wrist ties. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-125bc685-9933-4af9-b2a4-4a456f46a366.png",
+      "output": "web/public/images/accessory-proposals/accessory-71.webp",
+      "bytes": 10034
+    },
+    {
+      "id": 72,
+      "name": "별쏘는돌",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure polished pointed dark throwing stone silver meteor vein red blue knot pouch small. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-6a5b7d78-1728-4326-93d3-2a37d787fc66.png",
+      "output": "web/public/images/accessory-proposals/accessory-72.webp",
+      "bytes": 8922
+    },
+    {
+      "id": 73,
+      "name": "진법익힘첩",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure Korean stitched navy book gold formation diagram motif jade clasp no letters. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-bcbf2c8e-677f-4d38-9e17-b3a4f1dc783b.png",
+      "output": "web/public/images/accessory-proposals/accessory-73.webp",
+      "bytes": 9904
+    },
+    {
+      "id": 74,
+      "name": "삼한전략첩",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure burgundy Korean stitched military book gold mountain emblem red blue braid no letters. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-467c130d-cd72-476b-af8f-b40520f5b345.png",
+      "output": "web/public/images/accessory-proposals/accessory-74.webp",
+      "bytes": 11558
+    },
+    {
+      "id": 75,
+      "name": "산야약초첩",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure green Korean stitched herb book gold leaf emblem medicinal leaves jade clasp no letters. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-95ce24d2-5454-45c4-b209-3419a7e12c4e.png",
+      "output": "web/public/images/accessory-proposals/accessory-75.webp",
+      "bytes": 10580
+    },
+    {
+      "id": 76,
+      "name": "맑은숨비결",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure white teal Korean stitched book silver lotus emblem five color knot no letters. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-c1876a82-13b6-41e7-9e8b-dcea1ce7242b.png",
+      "output": "web/public/images/accessory-proposals/accessory-76.webp",
+      "bytes": 10040
+    },
+    {
+      "id": 77,
+      "name": "별숨술법첩",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure midnight blue Korean stitched spellbook gold constellation circular emblem teal jewel no letters. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ab9c6dea-5530-48cb-a8af-35d533f9dee9.png",
+      "output": "web/public/images/accessory-proposals/accessory-77.webp",
+      "bytes": 9926
+    },
+    {
+      "id": 78,
+      "name": "그림자따름첩",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure violet Korean accordion scroll silver mirrored cloud pattern jade clasp no letters. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-d79a0456-c6fa-4f63-9232-1d85d3574e29.png",
+      "output": "web/public/images/accessory-proposals/accessory-78.webp",
+      "bytes": 9364
+    },
+    {
+      "id": 79,
+      "name": "무예익힘첩",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure ochre Korean stitched manual gold crossed swords emblem restrained red knot no letters. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f5b36b94-4a75-4c57-9984-d4651ac11499.png",
+      "output": "web/public/images/accessory-proposals/accessory-79.webp",
+      "bytes": 10306
+    },
+    {
+      "id": 80,
+      "name": "수비익힘첩",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure dark green Korean stitched manual silver shield emblem blue red knot no letters. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-57094afc-60ee-4b8c-8a4f-5ba765eb9210.png",
+      "output": "web/public/images/accessory-proposals/accessory-80.webp",
+      "bytes": 8218
+    },
+    {
+      "id": 81,
+      "name": "약콩매듭주머니",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure embroidered Korean small drawstring pouch red blue braided knot gold bean motif. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-9634f726-def5-4029-92ed-952022b54eb7.png",
+      "output": "web/public/images/accessory-proposals/accessory-81.webp",
+      "bytes": 9318
+    },
+    {
+      "id": 82,
+      "name": "삼한맹약인",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure jade royal square seal golden intertwined dragon handle red blue knot no letters no readable stamping. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-69105020-7680-4c90-b85f-a4047ed35755.png",
+      "output": "web/public/images/accessory-proposals/accessory-82.webp",
+      "bytes": 11440
+    },
+    {
+      "id": 83,
+      "name": "푸른용맹약옥",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure blue jade orb encircled ornate Korean gold dragon blue red tassel. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-7766b202-bf6a-440e-b51a-a92fcac8062b.png",
+      "output": "web/public/images/accessory-proposals/accessory-83.webp",
+      "bytes": 13218
+    },
+    {
+      "id": 84,
+      "name": "붉은새맹약옥",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure red orb encircled ornate gold phoenix wings Korean red blue tassel. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-293c96fd-da44-4cf1-8b44-468eeb8db078.png",
+      "output": "web/public/images/accessory-proposals/accessory-84.webp",
+      "bytes": 11972
+    },
+    {
+      "id": 85,
+      "name": "검은거북맹약옥",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure dark obsidian orb ornate silver tortoise serpent frame Korean blue red tassel. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-b222dc68-1cec-46f8-9e39-4a5bb72ab34d.png",
+      "output": "web/public/images/accessory-proposals/accessory-85.webp",
+      "bytes": 10632
+    },
+    {
+      "id": 86,
+      "name": "흰범맹약옥",
+      "prompt": "Stylized-concept Korean historical fantasy tactical RPG inventory icon. Single asset: treasure white jade orb ornate gold white tiger frame Korean red blue tassel. Consistent hand painted 2D illustration, bold dark contour, warm detailed materials, clear silhouette at 96px. Center entire object with 15% empty padding. True transparent background, no ground, no interface, no text or letters. Korean-inspired fictional design, not an actual historical artifact. Ordinary items restrained; treasures ornate but readable.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-fe1f3726-a3a4-4b54-80fd-3d84cf67bcc9.png",
+      "output": "web/public/images/accessory-proposals/accessory-86.webp",
+      "bytes": 12562
+    }
+  ]
+}

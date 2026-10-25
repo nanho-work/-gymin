@@ -65,3 +65,7 @@ Next.js + React + TypeScript. 화면 구현은 `web/src/features/game-world/page
 
 ### 인물 비교 도감
 홈의 인물 메뉴에서 원본 512개 슬롯을 이름·추천 이름·병과로 검색합니다. `web/src/features/game-world/data/characters.json`과 `public/images/jojo-reference`는 원본 비교 자료이며 새 게임 외형이 아닙니다. 재생성은 `python3 scripts/game/import-character-reference.py <기존 추출 assets 경로>`로 합니다. 기본 능력값은 전투 최종 수치가 아니며, 창작 이름은 가칭입니다. 교체안은 왕건 외 미확정입니다.
+
+주요 아군 8인의 상세 추천은 `web/src/features/game-world/data/ally-proposals.json`에서 관리합니다. 원본 재추출 데이터와 분리하여 가져오기를 다시 실행해도 보존됩니다. 화면과 검색에는 상세 추천이 우선 적용됩니다. 역사 근거·창작 성격·제안 병과·합류 및 퇴장 제약을 구분하며 모든 후보는 미확정입니다.
+
+메뉴별 주소: `/world` 세계관, `/story` 이야기, `/characters` 인물, `/history` 개발 기록. `/`는 기존 세계관 진입점입니다. 각 경로는 새로고침·직접 접속을 지원하며 기존 구인 서비스 레이아웃과 인증을 적용하지 않습니다.

@@ -1,16 +1,15 @@
 "use client";
-import { useState } from "react";
+import Link from "next/link";
 import { CharacterAtlas } from "../components/CharacterAtlas";
 import { CampaignPlan } from "../components/CampaignPlan";
 import seed from "../data/world.json";
 import styles from "./world.module.css";
 const world = seed;
 const statusName = (value: string) => value === "confirmed" ? "확정" : "초안";
-export function WorldPage() {
- const [tab,setTab]=useState("world");
+export function WorldPage({tab = "world"}: {tab?: "world" | "story" | "characters" | "history"}) {
 
     return <div className={styles.app}>
- <header className={styles.sidebar}><a href="/" className={styles.brand}><span className={styles.seal}>山</span><span>산하의 맹약<small>THE OATH OF MOUNTAINS</small></span></a><nav aria-label="게임 소개">{[["world","세계관"],["story","이야기"],["characters","인물"],["history","개발 기록"]].map(([id,label])=><button key={id} aria-current={tab===id?"page":undefined} className={tab===id?styles.active:""} onClick={()=>{setTab(id);window.scrollTo({top:0,behavior:"smooth"})}}>{label}</button>)}</nav><span className={styles.headerNote}>후삼국 · 왕건 · 역사 판타지</span></header>
+ <header className={styles.sidebar}><a href="/" className={styles.brand}><span className={styles.seal}>山</span><span>산하의 맹약<small>THE OATH OF MOUNTAINS</small></span></a><nav aria-label="게임 소개">{[["world","세계관"],["story","이야기"],["characters","인물"],["history","개발 기록"]].map(([id,label])=><Link key={id} href={`/${id}`} aria-current={tab===id?"page":undefined} className={tab===id?styles.active:""}>{label}</Link>)}</nav><span className={styles.headerNote}>후삼국 · 왕건 · 역사 판타지</span></header>
  <main className={styles.main}>
  {tab === "world" && <><section className={styles.hero}><div className={styles.heroArt} aria-hidden="true" /><div className={styles.heroCopy}><span className={styles.eyebrow}>KOREAN FANTASY · TACTICAL RPG</span><span className={styles.heroKicker}>신라 말의 혼란에서, 새로운 나라의 시작까지</span><h1>{world.title}</h1><h2>{world.subtitle}</h2><p>{world.premise}</p><a className={styles.heroLink} href="#world-foundation">세계관 살펴보기 <span>↓</span></a></div><div className={styles.heroBottom}><span>ORIGINAL WORLD <b>01</b></span><span>후삼국 역사 판타지 · 가칭 / 이미지는 고증 전 콘셉트</span></div></section>
  <section id="world-foundation" className={styles.section}><div className={styles.heading}><div><span>THE FOUNDATION</span><h2>확정한 세계의 뼈대</h2></div><p>확정한 방향과 아직 논의할 세부 설정을 구분합니다.</p></div><div className={styles.cards}>{world.sections.map(s => <article key={s.id} className={styles.card}><div className={styles.cardTop}><span>{s.label}</span><b className={s.status === "confirmed" ? styles.confirmed : styles.draft}>{statusName(s.status)}</b></div><h3>{s.title}</h3><p>{s.body}</p></article>)}</div></section>

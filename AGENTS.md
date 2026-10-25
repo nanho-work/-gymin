@@ -15,6 +15,8 @@
 - 커밋·푸시·실제 배포는 사용자가 직접 진행한다. 별도 요청 없이 수행하지 않는다.
 - 이전 프로젝트 안내와 규칙은 `docs/game/legacy-project-readme.md`, `docs/game/legacy-agents.md`를 참고한다.
 
+- 전체 캠페인 설계는 `web/src/features/game-world/data/campaign.json`에서 관리한다. 현재 6막·44개 고유 전투·한 회차36개는 제안이며 사용자 확정으로 간주하지 않는다. 역사적 패배와 임무 실패를 구분하고 두 분기 모두 역사적 통일을 유지한다.
+
 ## 파일 구조 원칙
 
 - 서버는 기능 단위로 `server/app/features/{domain}/` 아래에 둔다.

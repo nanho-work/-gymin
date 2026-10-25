@@ -1,0 +1,654 @@
+{
+  "frameSize": 160,
+  "baseline": 148,
+  "idleHeightTarget": 86.5,
+  "directionIdleHeightsBefore": {
+    "nw": 86.5,
+    "ne": 86.5,
+    "se": 117.0,
+    "sw": 112.5
+  },
+  "frames": [
+    {
+      "file": "pestle-nw-0-1.webp",
+      "bytes": 4580,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-2-0.webp",
+      "bytes": 4944,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-1-2.webp",
+      "bytes": 4636,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-3-3.webp",
+      "bytes": 4846,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-3-2.webp",
+      "bytes": 6520,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-1-3.webp",
+      "bytes": 4682,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-2-1.webp",
+      "bytes": 6160,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-0-0.webp",
+      "bytes": 4484,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-0-0.webp",
+      "bytes": 4678,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-2-1.webp",
+      "bytes": 6144,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-1-3.webp",
+      "bytes": 4670,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-3-2.webp",
+      "bytes": 6656,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-3-3.webp",
+      "bytes": 4462,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-1-2.webp",
+      "bytes": 4504,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-2-0.webp",
+      "bytes": 5190,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-0-1.webp",
+      "bytes": 4682,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-2-3.webp",
+      "bytes": 4840,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-0-2.webp",
+      "bytes": 4726,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-3-0.webp",
+      "bytes": 6118,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-1-1.webp",
+      "bytes": 4620,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-1-0.webp",
+      "bytes": 4552,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-3-1.webp",
+      "bytes": 7240,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-0-3.webp",
+      "bytes": 4648,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-2-2.webp",
+      "bytes": 4770,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-2-2.webp",
+      "bytes": 4672,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-0-3.webp",
+      "bytes": 4532,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-3-1.webp",
+      "bytes": 6950,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-1-0.webp",
+      "bytes": 4580,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-1-1.webp",
+      "bytes": 4790,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-nw-3-0.webp",
+      "bytes": 6338,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-0-2.webp",
+      "bytes": 4552,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-nw-2-3.webp",
+      "bytes": 4586,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-2-1.webp",
+      "bytes": 6298,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-0-0.webp",
+      "bytes": 5056,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-3-2.webp",
+      "bytes": 7434,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-1-3.webp",
+      "bytes": 4994,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-1-2.webp",
+      "bytes": 5186,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-3-3.webp",
+      "bytes": 5230,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-0-1.webp",
+      "bytes": 5084,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-2-0.webp",
+      "bytes": 4992,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-2-0.webp",
+      "bytes": 4764,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-0-1.webp",
+      "bytes": 5006,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-3-3.webp",
+      "bytes": 5162,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-1-2.webp",
+      "bytes": 5330,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-1-3.webp",
+      "bytes": 5130,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-3-2.webp",
+      "bytes": 7310,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-0-0.webp",
+      "bytes": 5072,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-2-1.webp",
+      "bytes": 6198,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-0-3.webp",
+      "bytes": 5012,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-2-2.webp",
+      "bytes": 6340,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-1-0.webp",
+      "bytes": 5360,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-3-1.webp",
+      "bytes": 7550,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-3-0.webp",
+      "bytes": 7440,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-1-1.webp",
+      "bytes": 5452,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-2-3.webp",
+      "bytes": 5090,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-0-2.webp",
+      "bytes": 5086,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-0-2.webp",
+      "bytes": 5046,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-2-3.webp",
+      "bytes": 5218,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-1-1.webp",
+      "bytes": 5276,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-3-0.webp",
+      "bytes": 7712,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-3-1.webp",
+      "bytes": 7354,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "pestle-ne-1-0.webp",
+      "bytes": 5298,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-2-2.webp",
+      "bytes": 6370,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-ne-0-3.webp",
+      "bytes": 5060,
+      "normalizationScale": 1.0
+    },
+    {
+      "file": "club-se-0-3.webp",
+      "bytes": 4800,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-2-2.webp",
+      "bytes": 4466,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-1-0.webp",
+      "bytes": 5138,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-3-1.webp",
+      "bytes": 5384,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-3-0.webp",
+      "bytes": 5296,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-1-1.webp",
+      "bytes": 5030,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-2-3.webp",
+      "bytes": 5164,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-0-2.webp",
+      "bytes": 5046,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-0-2.webp",
+      "bytes": 5184,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-2-3.webp",
+      "bytes": 5308,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-1-1.webp",
+      "bytes": 4888,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-3-0.webp",
+      "bytes": 5144,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-3-1.webp",
+      "bytes": 5322,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-1-0.webp",
+      "bytes": 4816,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-2-2.webp",
+      "bytes": 4524,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-0-3.webp",
+      "bytes": 5136,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-2-1.webp",
+      "bytes": 5108,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-0-0.webp",
+      "bytes": 5154,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-3-2.webp",
+      "bytes": 5382,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-1-3.webp",
+      "bytes": 4680,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-1-2.webp",
+      "bytes": 4726,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-3-3.webp",
+      "bytes": 4956,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-0-1.webp",
+      "bytes": 5196,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-2-0.webp",
+      "bytes": 5348,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-2-0.webp",
+      "bytes": 5228,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-0-1.webp",
+      "bytes": 4916,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-3-3.webp",
+      "bytes": 5134,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-1-2.webp",
+      "bytes": 5010,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-1-3.webp",
+      "bytes": 4910,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-se-3-2.webp",
+      "bytes": 5536,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-0-0.webp",
+      "bytes": 5048,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "club-se-2-1.webp",
+      "bytes": 4850,
+      "normalizationScale": 0.7393162393162394
+    },
+    {
+      "file": "pestle-sw-2-3.webp",
+      "bytes": 4692,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-0-2.webp",
+      "bytes": 4552,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-3-0.webp",
+      "bytes": 4958,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-1-1.webp",
+      "bytes": 4780,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-1-0.webp",
+      "bytes": 4688,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-3-1.webp",
+      "bytes": 6072,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-0-3.webp",
+      "bytes": 4398,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-2-2.webp",
+      "bytes": 5702,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-2-2.webp",
+      "bytes": 5896,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-0-3.webp",
+      "bytes": 4656,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-3-1.webp",
+      "bytes": 6040,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-1-0.webp",
+      "bytes": 4610,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-1-1.webp",
+      "bytes": 4564,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-3-0.webp",
+      "bytes": 4730,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-0-2.webp",
+      "bytes": 4782,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-2-3.webp",
+      "bytes": 4784,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-0-1.webp",
+      "bytes": 4668,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-2-0.webp",
+      "bytes": 4988,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-1-2.webp",
+      "bytes": 4700,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-3-3.webp",
+      "bytes": 4654,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-3-2.webp",
+      "bytes": 6930,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-1-3.webp",
+      "bytes": 4620,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-2-1.webp",
+      "bytes": 5498,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-0-0.webp",
+      "bytes": 4644,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-0-0.webp",
+      "bytes": 4604,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-2-1.webp",
+      "bytes": 5460,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-1-3.webp",
+      "bytes": 4764,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-3-2.webp",
+      "bytes": 6710,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-3-3.webp",
+      "bytes": 4648,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "club-sw-1-2.webp",
+      "bytes": 4888,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-2-0.webp",
+      "bytes": 4686,
+      "normalizationScale": 0.7688888888888888
+    },
+    {
+      "file": "pestle-sw-0-1.webp",
+      "bytes": 4696,
+      "normalizationScale": 0.7688888888888888
+    }
+  ],
+  "bytes": 670152
+}

@@ -1,0 +1,11 @@
+{
+  "references": [
+    "web/public/images/folklore/kungdol-concept-v1.webp",
+    "web/public/images/item-proposals/item-9-v1.webp"
+  ],
+  "output": "web/public/images/folklore/kungdol-club-v1.webp",
+  "bytes": 33902,
+  "prompt": "Preserve exact Kungdol wooden body, smiling face, clothes, sash, grain basket, pose and cream background. Replace only double-ended pestle with referenced knotted wooden cudgel. Single thick head above gripping hand, straw-wrapped narrow handle below. All feet visible, no text.",
+  "largeOriginalRemoved": true,
+  "scope": "static full-body preview only"
+}

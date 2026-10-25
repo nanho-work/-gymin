@@ -1,0 +1,20 @@
+[
+  {
+    "id": 9,
+    "file": "web/public/images/item-proposals/item-9-v1.webp",
+    "bytes": 9110,
+    "source": "exec-773a8cf8-e4c3-4649-a409-4accd2fb4052.png",
+    "prompt": "Korean-inspired fantasy inventory icon; transparent, bold brown outline, readable at 64px. Plain wooden cudgel with straw handle, no metal; or leather torso armor with dark iron plates and ochre lacing. No text or character.",
+    "status": "draft",
+    "largeOriginalRemoved": true
+  },
+  {
+    "id": 39,
+    "file": "web/public/images/item-proposals/item-39-v1.webp",
+    "bytes": 13228,
+    "source": "exec-fef23896-d0b5-49d5-a586-93cd2f776d6b.png",
+    "prompt": "Korean-inspired fantasy inventory icon; transparent, bold brown outline, readable at 64px. Plain wooden cudgel with straw handle, no metal; or leather torso armor with dark iron plates and ochre lacing. No text or character.",
+    "status": "draft",
+    "largeOriginalRemoved": true
+  }
+]

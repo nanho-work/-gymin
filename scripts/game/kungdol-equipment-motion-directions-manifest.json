@@ -1,0 +1,967 @@
+{
+  "frameSize": 160,
+  "baseline": 148,
+  "frames": [
+    {
+      "file": "pestle-nw-0-0.webp",
+      "bytes": 4552,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        104.0,
+        210
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-0-1.webp",
+      "bytes": 4652,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        105.0,
+        210
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-0-2.webp",
+      "bytes": 4618,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        104.0,
+        210
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-0-3.webp",
+      "bytes": 4622,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        105.5,
+        210
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-1-0.webp",
+      "bytes": 4616,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        139.0,
+        213
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-1-1.webp",
+      "bytes": 4700,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        106.0,
+        212
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-1-2.webp",
+      "bytes": 4578,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        138.0,
+        213
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-1-3.webp",
+      "bytes": 4762,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        107.0,
+        212
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-2-0.webp",
+      "bytes": 5026,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        146.0,
+        212
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-2-1.webp",
+      "bytes": 6278,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        160.0,
+        211
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-2-2.webp",
+      "bytes": 4786,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        107.0,
+        209
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-2-3.webp",
+      "bytes": 4666,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        104.0,
+        209
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-3-0.webp",
+      "bytes": 6236,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        105.0,
+        222
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-3-1.webp",
+      "bytes": 7390,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        105.0,
+        222
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-3-2.webp",
+      "bytes": 6800,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        125.5,
+        224
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-nw-3-3.webp",
+      "bytes": 4534,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        106.0,
+        222
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-0-0.webp",
+      "bytes": 4734,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        105.0,
+        209
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-0-1.webp",
+      "bytes": 4760,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        105.0,
+        209
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-0-2.webp",
+      "bytes": 4810,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        104.0,
+        207
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-0-3.webp",
+      "bytes": 4716,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        105.0,
+        209
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-1-0.webp",
+      "bytes": 4644,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        140.0,
+        213
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-1-1.webp",
+      "bytes": 4880,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        105.5,
+        212
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-1-2.webp",
+      "bytes": 4702,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        139.0,
+        213
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-1-3.webp",
+      "bytes": 4748,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        108.0,
+        212
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-2-0.webp",
+      "bytes": 5298,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        147.0,
+        213
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-2-1.webp",
+      "bytes": 6264,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        161.0,
+        212
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-2-2.webp",
+      "bytes": 4868,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        107.0,
+        209
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-2-3.webp",
+      "bytes": 4914,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        104.0,
+        210
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-3-0.webp",
+      "bytes": 6500,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        106.5,
+        220
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-3-1.webp",
+      "bytes": 7090,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        106.0,
+        223
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-3-2.webp",
+      "bytes": 6682,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        111.0,
+        221
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-nw-3-3.webp",
+      "bytes": 4950,
+      "scale": 0.5170068027210885,
+      "footAnchor": [
+        104.5,
+        219
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-0-0.webp",
+      "bytes": 5152,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        126.0,
+        197
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-0-1.webp",
+      "bytes": 5078,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        127.0,
+        197
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-0-2.webp",
+      "bytes": 5168,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        125.0,
+        197
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-0-3.webp",
+      "bytes": 5128,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        127.0,
+        197
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-1-0.webp",
+      "bytes": 5380,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        115.0,
+        185
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-1-1.webp",
+      "bytes": 5366,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        131.0,
+        185
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-1-2.webp",
+      "bytes": 5310,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        79.0,
+        185
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-1-3.webp",
+      "bytes": 5088,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        90.0,
+        185
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-2-0.webp",
+      "bytes": 4868,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        103.0,
+        191
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-2-1.webp",
+      "bytes": 6324,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        148.0,
+        179
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-2-2.webp",
+      "bytes": 6472,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        141.0,
+        180
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-2-3.webp",
+      "bytes": 5204,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        109.0,
+        181
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-3-0.webp",
+      "bytes": 7894,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        141.0,
+        217
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-3-1.webp",
+      "bytes": 7514,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        142.0,
+        218
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-3-2.webp",
+      "bytes": 7568,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        148.0,
+        198
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-ne-3-3.webp",
+      "bytes": 5312,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        105.0,
+        200
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-0-0.webp",
+      "bytes": 5152,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        121.0,
+        181
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-0-1.webp",
+      "bytes": 5168,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        125.0,
+        181
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-0-2.webp",
+      "bytes": 5124,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        125.0,
+        181
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-0-3.webp",
+      "bytes": 5160,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        124.0,
+        181
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-1-0.webp",
+      "bytes": 5438,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        115.0,
+        172
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-1-1.webp",
+      "bytes": 5510,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        130.0,
+        172
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-1-2.webp",
+      "bytes": 5446,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        77.0,
+        172
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-1-3.webp",
+      "bytes": 5206,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        87.0,
+        172
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-2-0.webp",
+      "bytes": 5114,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        101.0,
+        192
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-2-1.webp",
+      "bytes": 6416,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        149.0,
+        165
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-2-2.webp",
+      "bytes": 6498,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        141.0,
+        165
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-2-3.webp",
+      "bytes": 5314,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        112.0,
+        165
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-3-0.webp",
+      "bytes": 7574,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        141.0,
+        216
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-3-1.webp",
+      "bytes": 7696,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        142.0,
+        221
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-3-2.webp",
+      "bytes": 7468,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        147.0,
+        180
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-ne-3-3.webp",
+      "bytes": 5268,
+      "scale": 0.5467625899280576,
+      "footAnchor": [
+        105.0,
+        183
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-0-0.webp",
+      "bytes": 6450,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        124.5,
+        224
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-0-1.webp",
+      "bytes": 6624,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        127.0,
+        223
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-0-2.webp",
+      "bytes": 6600,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        124.0,
+        224
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-0-3.webp",
+      "bytes": 6380,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        121.0,
+        224
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-1-0.webp",
+      "bytes": 6572,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        87.0,
+        213
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-1-1.webp",
+      "bytes": 6552,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        132.5,
+        210
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-1-2.webp",
+      "bytes": 6608,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        129.0,
+        210
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-1-3.webp",
+      "bytes": 6624,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        130.0,
+        210
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-2-0.webp",
+      "bytes": 6750,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        101.5,
+        219
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-2-1.webp",
+      "bytes": 7848,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        125.0,
+        227
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-2-2.webp",
+      "bytes": 8188,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        126.0,
+        226
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-2-3.webp",
+      "bytes": 6744,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        124.0,
+        215
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-3-0.webp",
+      "bytes": 6716,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        97.0,
+        234
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-3-1.webp",
+      "bytes": 8566,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        100.0,
+        228
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-3-2.webp",
+      "bytes": 10052,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        139.0,
+        228
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-sw-3-3.webp",
+      "bytes": 6668,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        133.0,
+        236
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-0-0.webp",
+      "bytes": 6594,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        130.0,
+        215
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-0-1.webp",
+      "bytes": 6702,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        129.0,
+        215
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-0-2.webp",
+      "bytes": 6862,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        128.5,
+        216
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-0-3.webp",
+      "bytes": 6668,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        130.0,
+        214
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-1-0.webp",
+      "bytes": 6732,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        130.0,
+        211
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-1-1.webp",
+      "bytes": 6830,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        130.0,
+        209
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-1-2.webp",
+      "bytes": 6998,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        89.0,
+        210
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-1-3.webp",
+      "bytes": 6832,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        131.0,
+        214
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-2-0.webp",
+      "bytes": 7132,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        133.0,
+        222
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-2-1.webp",
+      "bytes": 7874,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        129.0,
+        222
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-2-2.webp",
+      "bytes": 8272,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        128.0,
+        224
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-2-3.webp",
+      "bytes": 6770,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        129.0,
+        220
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-3-0.webp",
+      "bytes": 7188,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        131.0,
+        211
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-3-1.webp",
+      "bytes": 8704,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        103.0,
+        217
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-3-2.webp",
+      "bytes": 9776,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        132.5,
+        215
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-sw-3-3.webp",
+      "bytes": 6742,
+      "scale": 0.5757575757575758,
+      "footAnchor": [
+        127.5,
+        212
+      ],
+      "baseline": 148
+    }
+  ],
+  "bytes": 584372
+}

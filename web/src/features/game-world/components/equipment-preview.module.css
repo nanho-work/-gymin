@@ -1,0 +1,3 @@
+.preview{min-width:0}.controls{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px}.controls button{min-height:44px;border:1px solid #817553;border-radius:4px;background:#14271f;color:#eee1c0;padding:8px 10px;font:inherit;font-size:12px;cursor:pointer}.controls button[aria-pressed=true]{background:#d7bb7e;color:#18281f}.controls button:focus-visible,.preview a:focus-visible{outline:2px solid #e6c880;outline-offset:3px}.preview a{display:block}.preview small{display:block;line-height:1.6;margin:6px 0;color:#adbaa8;font-size:11px}
+
+.preview{padding:14px;margin:16px 0;background:#14271f;border:1px solid #52614c;border-radius:6px}.preview img{display:block;width:100%;max-width:320px;height:auto;margin:auto}.controls{justify-content:center}.preview small{text-align:center}

@@ -1,0 +1,455 @@
+{
+  "frameSize": 160,
+  "baseline": 148,
+  "frames": [
+    {
+      "file": "pestle-se-0-0.webp",
+      "bytes": 7998,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        295
+      ],
+      "offset": [
+        14,
+        24
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-0-1.webp",
+      "bytes": 7988,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        156.5,
+        296
+      ],
+      "offset": [
+        14,
+        23
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-0-2.webp",
+      "bytes": 7970,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        156.5,
+        295
+      ],
+      "offset": [
+        14,
+        24
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-0-3.webp",
+      "bytes": 7938,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        295
+      ],
+      "offset": [
+        14,
+        24
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-1-0.webp",
+      "bytes": 8064,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        291
+      ],
+      "offset": [
+        14,
+        25
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-1-1.webp",
+      "bytes": 7908,
+      "scale": 0.4217252396166134,
+      "footAnchor": [
+        156.5,
+        295
+      ],
+      "offset": [
+        14,
+        23
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-1-2.webp",
+      "bytes": 7772,
+      "scale": 0.4217252396166134,
+      "footAnchor": [
+        156.5,
+        288
+      ],
+      "offset": [
+        14,
+        26
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-1-3.webp",
+      "bytes": 7782,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        291
+      ],
+      "offset": [
+        14,
+        25
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-2-0.webp",
+      "bytes": 8384,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        293
+      ],
+      "offset": [
+        14,
+        24
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-2-1.webp",
+      "bytes": 7990,
+      "scale": 0.4217252396166134,
+      "footAnchor": [
+        156.5,
+        295
+      ],
+      "offset": [
+        14,
+        23
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-2-2.webp",
+      "bytes": 6934,
+      "scale": 0.4217252396166134,
+      "footAnchor": [
+        156.5,
+        295
+      ],
+      "offset": [
+        14,
+        23
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-2-3.webp",
+      "bytes": 8468,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        295
+      ],
+      "offset": [
+        14,
+        24
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-3-0.webp",
+      "bytes": 8334,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        284
+      ],
+      "offset": [
+        14,
+        28
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-3-1.webp",
+      "bytes": 8318,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        156.5,
+        284
+      ],
+      "offset": [
+        14,
+        28
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-3-2.webp",
+      "bytes": 8652,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        156.5,
+        287
+      ],
+      "offset": [
+        14,
+        27
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "pestle-se-3-3.webp",
+      "bytes": 8150,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        287
+      ],
+      "offset": [
+        14,
+        27
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-0-0.webp",
+      "bytes": 7772,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        297
+      ],
+      "offset": [
+        14,
+        23
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-0-1.webp",
+      "bytes": 7704,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        156.5,
+        298
+      ],
+      "offset": [
+        14,
+        22
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-0-2.webp",
+      "bytes": 7722,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        156.5,
+        297
+      ],
+      "offset": [
+        14,
+        23
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-0-3.webp",
+      "bytes": 7506,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        297
+      ],
+      "offset": [
+        14,
+        23
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-1-0.webp",
+      "bytes": 7586,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        293
+      ],
+      "offset": [
+        14,
+        24
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-1-1.webp",
+      "bytes": 7514,
+      "scale": 0.4217252396166134,
+      "footAnchor": [
+        156.5,
+        297
+      ],
+      "offset": [
+        14,
+        22
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-1-2.webp",
+      "bytes": 7466,
+      "scale": 0.4217252396166134,
+      "footAnchor": [
+        156.5,
+        290
+      ],
+      "offset": [
+        14,
+        25
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-1-3.webp",
+      "bytes": 7318,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        293
+      ],
+      "offset": [
+        14,
+        24
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-2-0.webp",
+      "bytes": 8130,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        296
+      ],
+      "offset": [
+        14,
+        23
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-2-1.webp",
+      "bytes": 7540,
+      "scale": 0.4217252396166134,
+      "footAnchor": [
+        156.5,
+        296
+      ],
+      "offset": [
+        14,
+        23
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-2-2.webp",
+      "bytes": 6882,
+      "scale": 0.4217252396166134,
+      "footAnchor": [
+        156.5,
+        296
+      ],
+      "offset": [
+        14,
+        23
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-2-3.webp",
+      "bytes": 8004,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        297
+      ],
+      "offset": [
+        14,
+        23
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-3-0.webp",
+      "bytes": 7976,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        286
+      ],
+      "offset": [
+        14,
+        27
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-3-1.webp",
+      "bytes": 8256,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        156.5,
+        286
+      ],
+      "offset": [
+        14,
+        27
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-3-2.webp",
+      "bytes": 8380,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        156.5,
+        289
+      ],
+      "offset": [
+        14,
+        26
+      ],
+      "baseline": 148
+    },
+    {
+      "file": "club-se-3-3.webp",
+      "bytes": 7750,
+      "scale": 0.42038216560509556,
+      "footAnchor": [
+        157.0,
+        286
+      ],
+      "offset": [
+        14,
+        27
+      ],
+      "baseline": 148
+    }
+  ],
+  "bytes": 252156
+}

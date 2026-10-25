@@ -1,0 +1,5 @@
+Tool: built-in image_gen, 2026-10-25
+Asset: web/public/images/world/sanha-key-art.png
+Purpose: original fictional Korean fantasy website concept art, not a game screenshot.
+Prompt:
+Create a cinematic wide landscape concept art background for an original Korean fantasy tactical RPG website, 1536x1024 or wider landscape. No text no logo. Vast rugged Korean granite mountains and layered blue-green mist, a ruined Korean mountain fortress with traditional tiled pavilion and unlit beacon tower on the right, very small lone cloaked commander seen from behind near lower right foreground, faded red banner, subtle warm amber light on distant horizon, moon behind clouds. Left half spacious dark atmospheric mist suitable for white typography overlay. Painterly premium game key art, detailed natural stone and pine trees, restrained desaturated jade charcoal antique gold palette, solemn mysterious epic mood. No Japanese torii, no European castles. Original fictional setting. Save generated image for website use.

@@ -1,3 +1,5 @@
+> 과거 EC2 운영 참고 문서입니다. 2026-10-25부터 EC2는 사용하지 않으며, 현재 배포 기준은 [Vercel 배포 안내](deployment-boundaries.md)입니다. 아래 EC2 절차를 현재 배포에 실행하지 마세요.
+
 # GymIn EC2 배포 절차
 
 프론트와 FastAPI 서버를 모두 EC2 + Docker + Nginx로 배포한다.

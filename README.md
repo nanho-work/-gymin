@@ -34,6 +34,17 @@ Next.js + React + TypeScript. 화면 구현은 `web/src/features/game-world/page
 
 ## 기존 프로젝트와 배포
 
-기존 구인 서비스의 서버·DB·인증·경로는 보존했습니다. 신규 홈에서는 기존 인증/API를 호출하지 않습니다. 운영 도메인과 EC2/Docker/Nginx 배포는 이번 작업으로 변경되지 않았습니다. 검색 색인 제외 설정은 접근 제한이나 로그인 보안을 대신하지 않습니다.
+기존 구인 서비스의 서버·DB·인증·경로는 보존했습니다. 신규 홈에서는 기존 인증/API를 호출하지 않습니다. EC2는 사용을 종료했으며 자동 배포 워크플로와 Vercel 빌드 생략 설정을 제거했습니다. 현재 배포 대상은 Vercel의 `web` 프로젝트입니다. 커밋·푸시·실제 배포는 사용자가 직접 진행합니다. 검색 색인 제외 설정은 접근 제한이나 로그인 보안을 대신하지 않습니다.
 
 이전 안내는 [기존 README](docs/game/legacy-project-readme.md), 이전 작업 규칙은 [기존 AGENTS](docs/game/legacy-agents.md)에 있습니다. 기존 인프라 문서는 참고용이며 게임 서버 연결 완료를 의미하지 않습니다.
+
+## Vercel 배포 설정
+
+- Root Directory: `web`
+- Framework Preset: Next.js
+- Build Command: `npm run build`
+- Output Directory / Install Command: 기본값 (Override 끄기)
+- Ignored Build Step: Automatic
+- Node.js: 22.x (프로젝트의 `engines.node` 요구 범위 내)
+
+현재 게임 기획 홈은 EC2 API 없이 동작합니다. 남겨 둔 기존 구인 서비스의 API 기능은 Vercel로 이식한 상태가 아닙니다. 설정 정리만으로 배포 완료를 의미하지 않으며, 푸시 이후 Vercel의 배포 결과를 확인해야 합니다. 자세한 경계는 [배포 안내](docs/deployment-boundaries.md)를 참고하세요.

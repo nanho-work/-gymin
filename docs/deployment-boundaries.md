@@ -1,68 +1,29 @@
-# GymIn 배포 경계
+# 게임 기획 기록실 배포 경계
 
-현재 운영 배포는 Vercel을 사용하지 않고 EC2 한 대에서 웹과 서버를 같이 관리한다.
+2026-10-25 기준 배포 대상은 Vercel이다. EC2 사용은 종료했다.
 
-## 운영 구조
+## 배포 흐름
 
-```txt
-GitHub main push
--> GitHub Actions
-   -> Docker image build
-   -> gymin-web image
-   -> gymin-api image
--> EC2 /opt/gymin
--> Docker Compose
-   -> gymin-web  : Next.js, 127.0.0.1:3000
-   -> gymin-api  : FastAPI, 127.0.0.1:8000
--> Nginx
-   -> /      : gymin-web
-   -> /api   : gymin-api
-   -> /health: gymin-api
-```
+사용자가 GitHub main에 커밋·푸시 → 연결된 Vercel 프로젝트가 web을 빌드 → 배포 결과와 도메인 확인.
+커밋·푸시·실제 배포는 사용자가 직접 수행한다. 로컬 빌드 성공은 Vercel 배포 성공을 뜻하지 않는다.
 
-## 배포 실행 조건
+## 프로젝트 설정
 
-아래 파일이 바뀌면 EC2 배포가 실행된다.
+- Root Directory: web
+- Framework: Next.js
+- Build Command: npm run build
+- Output Directory, Install Command: Next.js / 패키지 관리자 기본값
+- Ignored Build Step: Automatic
+- Node.js: 22.x
 
-```txt
-web/**
-server/**
-infra/**
-docker-compose.prod.yml
-.github/workflows/deploy-server.yml
-```
+기존 루트 vercel.json의 ignoreCommand, scripts/vercel-ignore.mjs, package.json의 vercel:ignore 명령을 제거했다. web에는 별도의 빌드 생략 설정을 두지 않는다.
 
-## Vercel 처리
+## EC2 종료 범위
 
-Vercel 프로젝트가 아직 GitHub에 연결되어 있어도 빌드를 진행하지 않도록 한다.
+.github/workflows/deploy-server.yml을 제거하여 push 및 수동 실행으로 EC2에 접속하는 작업을 없앴다. 과거 워크플로는 Git 기록에 남는다. Docker·Nginx·서버 파일은 참고 자료로 유지하며 자동 실행하지 않는다. GitHub의 기존 시크릿과 외부 클라우드 리소스는 이번 로컬 변경에서 조작하지 않는다.
 
-```txt
-vercel.json
--> ignoreCommand
--> npm run vercel:ignore
--> 항상 exit 0
-```
+## 기능과 데이터 범위
 
-즉 Vercel은 더 이상 실제 배포 경로가 아니다.
+신규 게임 기획 홈은 원본 JSON과 브라우저 localStorage를 사용하며 EC2, RDS, S3 없이 표시된다. 브라우저 편집 기록은 Vercel 서버나 GitHub에 저장되지 않는다. 기존 구인 서비스의 서버 API와 DB는 이번 배포 대상이 아니며, 남아 있는 구인 경로가 완전히 동작한다는 의미가 아니다.
 
-## EC2에서 필요한 비공개 파일
-
-GitHub에는 올리지 않고 EC2에만 둔다.
-
-```txt
-/opt/gymin/web/.env
-/opt/gymin/server/.env
-/opt/gymin/secrets/firebase-service-account.json
-```
-
-## 웹 환경변수
-
-Next.js의 `NEXT_PUBLIC_*` 값은 빌드 시점에 필요하다.
-그래서 GitHub Actions가 EC2의 `/opt/gymin/web/.env`를 읽은 뒤 GitHub Actions 러너에서 `gymin-web` Docker 이미지를 빌드한다.
-
-EC2는 Next.js 빌드를 하지 않고 이미 빌드된 이미지를 받아 실행만 한다.
-
-## 서버 환경변수
-
-FastAPI는 런타임에 `/opt/gymin/server/.env`를 읽는다.
-Firebase Admin SDK JSON은 Docker 볼륨으로 `/run/secrets/firebase-service-account.json`에 연결된다.
+기존 인프라 문서는 과거 운영 참고용이다. 종료된 EC2에서 환경변수나 인증 파일을 가져오는 절차는 실행하지 않는다.

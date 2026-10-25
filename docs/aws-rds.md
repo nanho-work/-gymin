@@ -1,3 +1,5 @@
+> 과거 EC2 운영 참고 문서입니다. 2026-10-25부터 EC2는 사용하지 않으며, 현재 배포 기준은 [Vercel 배포 안내](deployment-boundaries.md)입니다. 아래 EC2 절차를 현재 배포에 실행하지 마세요.
+
 # GymIn AWS 운영 메모
 
 이 문서는 GymIn의 초기 AWS 인프라 생성 설정을 기록한다. 비밀번호, 실제 endpoint, AWS 계정 ID, 고정 IP 같은 민감 정보는 레포에 남기지 않는다.

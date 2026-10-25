@@ -9,7 +9,8 @@
 - 초기 세계관은 `web/src/features/game-world/data/world.json`이 기준이다. 화면 편집은 현재 브라우저 localStorage에만 저장되므로 서버나 Git에 저장했다고 표현하지 않는다.
 - 세계관 → 캐릭터와 이미지 → 병과·스킬 → 시나리오 순서로 확장한다. 수정 이유와 이전/이후 내용을 기록한다.
 - 기존 구인 서비스 코드, DB, 운영 인프라는 전환 참고 자료로 보존 중이다. 기존 서비스 관련 아래 규칙은 해당 코드를 수정할 때만 적용한다.
-- 운영 배포 기준은 EC2 + Docker + Nginx다. 이번 전환에서 운영 배포는 수행하지 않았다.
+- 운영 배포 기준은 Vercel이다. EC2는 사용을 종료했으며 EC2 배포 워크플로는 제거했다. Vercel Root Directory는 `web`이다.
+- 커밋·푸시·실제 배포는 사용자가 직접 진행한다. 별도 요청 없이 수행하지 않는다.
 - 이전 프로젝트 안내와 규칙은 `docs/game/legacy-project-readme.md`, `docs/game/legacy-agents.md`를 참고한다.
 
 ## 파일 구조 원칙

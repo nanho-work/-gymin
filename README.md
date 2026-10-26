@@ -276,3 +276,8 @@ Next.js + React + TypeScript. 화면 구현은 `web/src/features/game-world/page
 
 
 나머지 이름 있는 기마 계열 55명 초상화와 동일 인물 5개 공유: [전체 제작표·프롬프트](docs/game/remaining-mounted-portraits-v1.md). 캐릭터의 가칭과 병과를 유지하고 얼굴·나이·군장으로 구분한다.
+
+미제작 초상화는 [전체 설계안](docs/game/unmade-character-portrait-plan.md)을 먼저 검토한다. 86명 디자인과 일반 슬롯338개 목록이다. 후속 제작 요청으로 86명 초상화·설화 연결2개·변형7개 적용을 완료했다.
+
+
+문서 기반 86명 초상화 제작 완료: [프롬프트·결과](docs/game/planned-portraits86-v1.md). 인물 설정은 제안, 초상화는 적용 상태로 구분한다.

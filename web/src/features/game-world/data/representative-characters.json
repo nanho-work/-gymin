@@ -3,44 +3,44 @@
     {
       "id": "hong-yu",
       "name": "홍유",
-      "role": "검방패 보병",
-      "portrait": "/images/representatives/hong-yu-portrait-v1.webp",
-      "note": "실존 인물에서 착안한 창작 외형·게임용 병과 초안. 전신·모션은 미제작."
+      "role": "경기병",
+      "portrait": "/images/representatives/hong-yu-portrait-v3.webp",
+      "note": "붉은 술 투구·흑철 군장의 기병 장군 — 투구와 찰갑이라는 군장 요소를 참고한 창작이다. 홍유 개인의 실제 투구 형태·색상은 확인되지 않았다."
     },
     {
       "id": "bok-jigyeom",
       "name": "복지겸",
-      "role": "양손 창병",
-      "portrait": "/images/representatives/bok-jigyeom-portrait-v1.webp",
-      "note": "실존 인물에서 착안한 창작 외형·게임용 병과 초안. 전신·모션은 미제작."
+      "role": "경기병",
+      "portrait": "/images/representatives/bok-jigyeom-portrait-v3.webp",
+      "note": "각진 투구·녹색 끈으로 정돈한 기병 장군 — 찰갑과 투구 유형을 참고한 창작 군장이다. 녹색은 품계의 고증 표시가 아니다."
     },
     {
       "id": "park-sugyeong",
       "name": "박수경",
       "role": "궁병",
-      "portrait": "/images/representatives/park-sugyeong-portrait-v1.webp",
-      "note": "실존 인물에서 착안한 창작 외형·게임용 병과 초안. 전신·모션은 미제작."
+      "portrait": "/images/representatives/park-sugyeong-portrait-v3.webp",
+      "note": "두건·화살통·가벼운 군장의 궁수 — 궁병은 유지하는 게임 병과다. 실제 인물이 이 모습으로 활을 쏘았다는 복원은 아니다."
     },
     {
       "id": "choe-eung",
       "name": "최응",
       "role": "책사",
-      "portrait": "/images/representatives/choe-eung-portrait-v1.webp",
-      "note": "실존 인물에서 착안한 창작 외형·게임용 병과 초안. 전신·모션은 미제작."
+      "portrait": "/images/representatives/choe-eung-portrait-v3.webp",
+      "note": "검은 관모·붉은 관복의 문신 — 복두·관복 전통을 참고했다. 관모 각은 썸네일 가독성을 위해 단순화했고 색상은 정확한 품계 복원이 아니다."
     },
     {
       "id": "sin-sunggyeom",
       "name": "신숭겸",
-      "role": "기마병",
-      "portrait": "/images/representatives/sin-sunggyeom-portrait-v1.webp",
-      "note": "실존 인물에서 착안한 창작 외형·게임용 병과 초안. 전신·모션은 미제작."
+      "role": "무도가",
+      "portrait": "/images/representatives/sin-sunggyeom-portrait-v3.webp",
+      "note": "붉은 머리띠·넓은 군포의 무장 — 실제 장군의 위엄과 게임 무도가 역할을 조합한 창작이다. 금속 갑옷 없는 모습은 역사적 복식 확정이 아니다."
     },
     {
       "id": "jang-yeongsil",
       "name": "장영실",
-      "role": "포병·기술자",
-      "portrait": "/images/representatives/jang-yeongsil-portrait-v1.webp",
-      "note": "인물 선정 확정. 포병 역할은 창작이며 후삼국 합류 설정은 미정. 전신·모션은 미제작."
+      "role": "경포차",
+      "portrait": "/images/representatives/jang-yeongsil-portrait-v3.webp",
+      "note": "작업모·앞치마·측정 도구의 기술자 — 조선 세종대 기술자를 후삼국에 배치한 판타지 인물이다. 도구와 작업 복식은 창작이며 당대 초상의 복원이 아니다."
     }
   ]
 }

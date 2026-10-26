@@ -1,3 +1,4 @@
+import {equipmentRestriction,restrictedEquipmentJobs} from './equipmentPermissions';
 import data from '../data/items.json';
 import weapons from '../data/weapon-proposals.json';
 import armor from '../data/armor-proposals.json';
@@ -25,7 +26,7 @@ export const catalog:CatalogItem[]=data.records.map(i=>{
  if(labels[i.id])stats.push([labels[i.id],String(i.base)]);
  }
  const family='family' in p?String(p.family):i.family==='곤봉'?'몽둥이':i.family;
- return {id:`item-${i.id}`,menu,name:p.name,family,image:p.image,description:clean(p.description),effect:clean(p.effect),stats,jobs:i.allowedJobs,wearers:p.folklore.filter(f=>/배정 제안|착용 제안/.test(f.status)&&!f.status.includes('비배정')).map(f=>f.name),price:i.purchasePrice,draft:false};
+ return {id:`item-${i.id}`,menu,name:p.name,family,image:p.image,description:[clean(p.description),equipmentRestriction(i.id)].filter(Boolean).join(' · '),effect:clean(p.effect),stats,jobs:restrictedEquipmentJobs(i.id)??i.allowedJobs,wearers:p.folklore.filter(f=>/배정 제안|착용 제안/.test(f.status)&&!f.status.includes('비배정')).map(f=>f.name),price:i.purchasePrice,draft:false};
 });
 for(const c of companions.records){catalog.push({id:`companion-${c.characterId}`,menu:'treasures',name:c.treasureName,family:`${c.family} · 고유 무기`,image:c.image,description:weapons.signatures.find(s=>s.characterId===c.characterId)?.description||c.role,effect:c.option,stats:[['기본 능력값',String(c.base)],['강화당 증가',String(c.growth)],['강화 한도',`${c.maxUpgrade}강`]],jobs:[],wearers:[c.name],price:null,draft:true});}
 

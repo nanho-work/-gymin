@@ -4,7 +4,7 @@
       "id": "hong-yu",
       "originalId": 1,
       "name": "홍유",
-      "portrait": "/images/representatives/hong-yu-portrait-v1.webp",
+      "portrait": "/images/representatives/hong-yu-portrait-v3.webp",
       "description": "왕건의 결단을 재촉하는 직선적인 동료. 원본 경기병의 이동과 창 공격을 유지하는 창작 배역.",
       "equipment": [
         {
@@ -25,7 +25,7 @@
       "id": "bok-jigyeom",
       "originalId": 5,
       "name": "복지겸",
-      "portrait": "/images/representatives/bok-jigyeom-portrait-v1.webp",
+      "portrait": "/images/representatives/bok-jigyeom-portrait-v3.webp",
       "description": "작은 징후를 놓치지 않고 전열을 지키는 신중한 동료. 원본 경기병의 병과와 수치를 유지한다.",
       "equipment": [
         {
@@ -46,7 +46,7 @@
       "id": "park-sugyeong",
       "originalId": 13,
       "name": "박수경",
-      "portrait": "/images/representatives/park-sugyeong-portrait-v1.webp",
+      "portrait": "/images/representatives/park-sugyeong-portrait-v3.webp",
       "description": "먼 거리에서 아군의 진격을 돕는 궁병 배역. 성격·전투 역할은 게임용 창작이다.",
       "equipment": [
         {
@@ -67,7 +67,7 @@
       "id": "sin-sunggyeom",
       "originalId": 16,
       "name": "신숭겸",
-      "portrait": "/images/representatives/sin-sunggyeom-portrait-v1.webp",
+      "portrait": "/images/representatives/sin-sunggyeom-portrait-v3.webp",
       "description": "동료의 퇴로를 지키는 책임감 강한 호위 역할. 원본 전위의 무도가와 수치를 유지하며 기병으로 바꾸지 않는다.",
       "equipment": [
         {
@@ -88,7 +88,7 @@
       "id": "choe-eung",
       "originalId": 20,
       "name": "최응",
-      "portrait": "/images/representatives/choe-eung-portrait-v1.webp",
+      "portrait": "/images/representatives/choe-eung-portrait-v3.webp",
       "description": "말과 판단으로 왕건을 돕는 책사. 원본 책사 병과와 기본 부채·옷을 유지한다.",
       "equipment": [
         {
@@ -109,7 +109,7 @@
       "id": "jang-yeongsil",
       "originalId": 18,
       "name": "장영실",
-      "portrait": "/images/representatives/jang-yeongsil-portrait-v1.webp",
+      "portrait": "/images/representatives/jang-yeongsil-portrait-v3.webp",
       "description": "나무돌팔매틀을 조작하는 기술자형 포병. 후삼국 합류와 포병 역할은 창작이며 시대 연결은 아직 미정이다.",
       "equipment": [
         {

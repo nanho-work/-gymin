@@ -1,0 +1,851 @@
+{
+  "records": [
+    {
+      "originalId": 0,
+      "id": "wang-geon",
+      "name": "왕건",
+      "design": "A founding sovereign, calm broad oval face and rounded black beard, confident compassionate eyes. A tall compact GOLD TONGCHEONGWAN-inspired crown with vertical ribs and small round sun/moon discs along its upper rim, inspired by the posthumous Goryeo Taejo bronze statue; NOT a flat tasselled crown. Deep indigo silk royal robe with restrained gold geometric collar embroidery and ivory inner collar. Upright stately near-frontal shoulders. Crown visibly unlike every military helmet. Historical inspiration, not exact reconstruction.",
+      "portrait": "/images/representatives/wang-geon-portrait-v3.webp",
+      "appearance": "금빛 세로 관·남색 예복의 건국 군주",
+      "referenceNote": "사후 태조 동상의 통천관 추정 형태와 원형 장식을 참고했다. 생전 착용 복식의 복원이 아니며 예복 색·문양·용모는 창작이다.",
+      "source": {
+        "title": "우리역사넷 — 태조 왕건 동상",
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?code=kc_age_20&levelId=kc_r200390"
+      }
+    },
+    {
+      "originalId": 1,
+      "id": "hong-yu",
+      "name": "홍유",
+      "design": "Rugged angular face and dense black beard retained. Senior cavalry GENERAL: open-faced dark iron segmented helmet with small red plume, visible ears and cheek silhouette, short lamellar nape guard. Black iron lamellar shoulders with burgundy cords and red cloak edge. Strong authoritative shoulders, red accent. No oversized fantasy horns.",
+      "portrait": "/images/representatives/hong-yu-portrait-v3.webp",
+      "appearance": "붉은 술 투구·흑철 군장의 기병 장군",
+      "referenceNote": "투구와 찰갑이라는 군장 요소를 참고한 창작이다. 홍유 개인의 실제 투구 형태·색상은 확인되지 않았다.",
+      "source": {
+        "title": "우리역사넷 — 기마전투·마구·갑옷",
+        "url": "https://contents.history.go.kr/front/km/view.do?levelId=km_014_0030_0020"
+      }
+    },
+    {
+      "originalId": 2,
+      "id": "yu-geumpil",
+      "name": "유금필",
+      "design": "Rugged tan asymmetrical face, healed cheek scar, broad moustache and confident grin retained. Veteran assault cavalry GENERAL: low bronze-trim iron helmet with broad open brow, dark russet cape, heavy weathered lamellar cuirass visible at shoulders, cream padded collar. Broad muscular neck, scar face clearly visible. Helmet silhouette squat and broad, NOT tall red plume.",
+      "portrait": "/images/representatives/yu-geumpil-portrait-v3.webp",
+      "appearance": "낮은 투구·거친 군장과 망토의 돌격 장군",
+      "referenceNote": "군장 유형을 참고하되 투구와 흉터·표정은 인물 구분을 위한 창작이다.",
+      "source": {
+        "title": "우리역사넷 — 기마전투·마구·갑옷",
+        "url": "https://contents.history.go.kr/front/km/view.do?levelId=km_014_0030_0020"
+      }
+    },
+    {
+      "originalId": 3,
+      "id": "park-yeonggyu",
+      "name": "박영규",
+      "design": "Long refined face, fine moustache and pointed goatee retained. Mature regional commander and noble: compact black cloth military cap, high folded crown and short tied ends, plum silk outer coat over discreet lamellar chest, bronze clasp at shoulder. Composed diplomatic eyes, upright narrow shoulders. Silhouette distinct from iron-helmeted generals. No Joseon rank badge.",
+      "portrait": "/images/representatives/park-yeonggyu-portrait-v3.webp",
+      "appearance": "관모·자주색 겉옷을 갖춘 지역 지휘관",
+      "referenceNote": "장군과 지역 유력자의 성격을 함께 보이는 창작 복식이다. 개인 착용 기록을 재현한 것은 아니다.",
+      "source": {
+        "title": "한국민족문화대백과사전 — 복두",
+        "url": "https://encykorea.aks.ac.kr/Article/E0023658"
+      }
+    },
+    {
+      "originalId": 5,
+      "id": "bok-jigyeom",
+      "name": "복지겸",
+      "design": "Long rectangular face, narrow watchful eyes, neat thin moustache and small beard retained. Disciplined cavalry GENERAL: angular iron helmet with a LOW central ridge and dark green tied tassel, compact leather-lined neck plates, grey metal lamellar shoulders with forest-green lacing. Restrained watchful gaze; helmet unlike Hong Yu dome.",
+      "portrait": "/images/representatives/bok-jigyeom-portrait-v3.webp",
+      "appearance": "각진 투구·녹색 끈으로 정돈한 기병 장군",
+      "referenceNote": "찰갑과 투구 유형을 참고한 창작 군장이다. 녹색은 품계의 고증 표시가 아니다.",
+      "source": {
+        "title": "우리역사넷 — 기마전투·마구·갑옷",
+        "url": "https://contents.history.go.kr/front/km/view.do?levelId=km_014_0030_0020"
+      }
+    },
+    {
+      "originalId": 6,
+      "id": "bae-hyeongyeong",
+      "name": "배현경",
+      "design": "Broad flat nose, broad compact tan face, short horizontal moustache and clean jaw retained. Mounted ARCHER: close-fitting low leather-and-iron skull helmet, open ears and no large crest; slate-green fitted collar, compact shoulder armor, clear SHORT QUIVER with three white-fletched arrows rising behind one shoulder. Sturdy but mobile shoulders. Quiver visible without covering face.",
+      "portrait": "/images/representatives/bae-hyeongyeong-portrait-v3.webp",
+      "appearance": "작은 투구·화살통을 갖춘 궁기병",
+      "referenceNote": "궁기병은 유지하는 게임 병과다. 화살통과 간결한 보호구는 게임 역할 표현이며 실제 전용 병과의 단정이 아니다.",
+      "source": {
+        "title": "우리역사넷 — 기마전투·마구·갑옷",
+        "url": "https://contents.history.go.kr/front/km/view.do?levelId=km_014_0030_0020"
+      }
+    },
+    {
+      "originalId": 13,
+      "id": "park-sugyeong",
+      "name": "박수경",
+      "design": "Lean youthful clean-shaven diamond face retained. Specialist ARCHER: narrow ochre wrapped headband with neat tied-back hair, NOT metal helmet, dark olive fitted padded archer coat with small leather shoulder protection, distinctive bowstring diagonal and short quiver with three dark-feathered arrows behind shoulder. Focused eyes and lean trained neck. Headband and quiver read clearly at thumbnail size.",
+      "portrait": "/images/representatives/park-sugyeong-portrait-v3.webp",
+      "appearance": "두건·화살통·가벼운 군장의 궁수",
+      "referenceNote": "궁병은 유지하는 게임 병과다. 실제 인물이 이 모습으로 활을 쏘았다는 복원은 아니다.",
+      "source": {
+        "title": "우리역사넷 — 기마전투·마구·갑옷",
+        "url": "https://contents.history.go.kr/front/km/view.do?levelId=km_014_0030_0020"
+      }
+    },
+    {
+      "originalId": 15,
+      "id": "park-sulhui",
+      "name": "박술희",
+      "design": "Round-square massive face, wide nose, unruly black-and-gray full beard and crooked smile retained. Experienced close-combat guard/general represented in game as club infantry: dark brown folded cloth war cap, heavy ochre quilted padded coat with broad black leather shoulder straps and red knot, thick neck. Robust cloth and leather, NOT ornate plate armor; no common soldier uniform.",
+      "portrait": "/images/representatives/park-sulhui-portrait-v3.webp",
+      "appearance": "두툼한 천옷·가죽띠의 근접 호위 장수",
+      "referenceNote": "원본 적병 역할을 표현한 창작 군복이다. 실제 인물을 산적이나 하급 병졸로 설명하지 않는다.",
+      "source": {
+        "title": "우리역사넷 — 기마전투·마구·갑옷",
+        "url": "https://contents.history.go.kr/front/km/view.do?levelId=km_014_0030_0020"
+      }
+    },
+    {
+      "originalId": 16,
+      "id": "sin-sunggyeom",
+      "name": "신숭겸",
+      "design": "Broad square face and dense short beard, protective warm eyes retained. Loyal martial GENERAL with game martial-artist role: broad layered burgundy headwrap over high tied hair, dignified dark red military overrobe with ivory crossed inner collar and dark leather shoulder binding, powerful neck and broad shoulders. No metal armor, no helmet. Rich structured martial cloth makes him a commander rather than a peasant.",
+      "portrait": "/images/representatives/sin-sunggyeom-portrait-v3.webp",
+      "appearance": "붉은 머리띠·넓은 군포의 무장",
+      "referenceNote": "실제 장군의 위엄과 게임 무도가 역할을 조합한 창작이다. 금속 갑옷 없는 모습은 역사적 복식 확정이 아니다.",
+      "source": {
+        "title": "우리역사넷 — 기마전투·마구·갑옷",
+        "url": "https://contents.history.go.kr/front/km/view.do?levelId=km_014_0030_0020"
+      }
+    },
+    {
+      "originalId": 18,
+      "id": "jang-yeongsil",
+      "name": "장영실",
+      "design": "Friendly older round face, short moustache and chin beard retained. Joseon royal ENGINEER appearing as a fantasy guest: practical ochre folded work cap with tied cloth sides, indigo work robe with tan leather apron shoulder straps, a small wooden ruler and bronze divider tucked at breast edge. Inquisitive slightly smiling eyes, average build. Not a military general, no crown, no armor, no modern goggles. Exact work costume is fictional.",
+      "portrait": "/images/representatives/jang-yeongsil-portrait-v3.webp",
+      "appearance": "작업모·앞치마·측정 도구의 기술자",
+      "referenceNote": "조선 세종대 기술자를 후삼국에 배치한 판타지 인물이다. 도구와 작업 복식은 창작이며 당대 초상의 복원이 아니다.",
+      "source": {
+        "title": "우리역사넷 — 장영실",
+        "url": "https://contents.history.go.kr/mobile/kc/view.do?levelId=kc_n310300"
+      }
+    },
+    {
+      "originalId": 20,
+      "id": "choe-eung",
+      "name": "최응",
+      "design": "Young clean-shaven fine oval face, intelligent calm eyes and slender neck retained. Civil adviser in FORMAL OFFICIAL ROBE: black early-Goryeo-inspired BOKDU with compact folded top and SHORT side ties, deep muted crimson round-neck official robe with ivory inner collar. Unarmored narrow shoulders. No Joseon embroidered rank square, no long Song wings. Distinct court scholar silhouette.",
+      "portrait": "/images/representatives/choe-eung-portrait-v3.webp",
+      "appearance": "검은 관모·붉은 관복의 문신",
+      "referenceNote": "복두·관복 전통을 참고했다. 관모 각은 썸네일 가독성을 위해 단순화했고 색상은 정확한 품계 복원이 아니다.",
+      "source": {
+        "title": "한국민족문화대백과사전 — 복두",
+        "url": "https://encykorea.aks.ac.kr/Article/E0023658"
+      }
+    },
+    {
+      "originalId": 22,
+      "id": "choe-jimong",
+      "name": "최지몽",
+      "design": "Long fine-boned youthful face, high forehead, thoughtful narrow eyes, clean-shaven retained. Astronomical court ADVISER: tall soft dark charcoal folded scholar cap, dark teal layered robe with pale blue crossed collar and a tiny bronze circular astronomical clasp. Slender sloping shoulders. No wizard pointed hat, no supernatural glow, no martial armor. Cloth cap distinct from Choe Eung bokdu.",
+      "portrait": "/images/representatives/choe-jimong-portrait-v3.webp",
+      "appearance": "접은 관모·청록색 겉옷의 천문 조언자",
+      "referenceNote": "학자 복식 모티프와 게임 도사 역할을 조합했다. 별을 연상시키는 장식과 관모 세부는 창작이다.",
+      "source": {
+        "title": "한국민족문화대백과사전 — 복두",
+        "url": "https://encykorea.aks.ac.kr/Article/E0023658"
+      }
+    },
+    {
+      "originalId": 32,
+      "id": "gyeon-hwon",
+      "name": "견훤",
+      "design": "Powerful older rectangular face, thick salt-and-pepper beard, deep forehead lines retained. Rival warrior KING: dark iron-and-gold low royal military crown with three short broad upright ornaments, deep oxblood silk mantle over black lamellar shoulders and wide bronze-gold border. Fierce authoritative eyes, massive neck. Crown low and martial, entirely different from Wang Geon tall cylindrical gold crown. Invented Later Baekje design, not claimed excavated crown.",
+      "portrait": "/images/representatives/gyeon-hwon-portrait-v3.webp",
+      "appearance": "낮은 금장 관·붉은 군왕 예복",
+      "referenceNote": "후백제 군주의 군사적 위엄을 표현한 창작이다. 출토된 견훤의 관을 복원한 것이 아니다.",
+      "source": {
+        "title": "복식 유형 참고 — 실제 개인 관모의 근거가 아님",
+        "url": "https://encykorea.aks.ac.kr/Article/E0023658"
+      }
+    },
+    {
+      "originalId": 76,
+      "id": "singeom",
+      "name": "신검",
+      "design": "Narrow youthful heart-shaped face, pale clean-shaven sharp chin and proud expression retained. Ambitious royal successor: slim black-gold formal coronet with two short upright leaf-shaped tips, dark plum noble robe and discreet gold-edged dark shoulder armor, ivory collar. Elegant rather than bulky, not duplicate father crown or Wang Geon crown. Costume fictional Later Baekje royal interpretation.",
+      "portrait": "/images/representatives/singeom-portrait-v3.webp",
+      "appearance": "작은 금장 관·자주색 왕족 복식",
+      "referenceNote": "후백제 왕족의 이미지와 젊고 날카로운 인상을 조합했다. 관·색상·용모는 창작이다.",
+      "source": {
+        "title": "복식 유형 참고 — 실제 개인 관모의 근거가 아님",
+        "url": "https://encykorea.aks.ac.kr/Article/E0023658"
+      }
+    },
+    {
+      "originalId": 127,
+      "id": "gung-ye",
+      "name": "궁예",
+      "design": "Shaved head, elongated mature face, one healed closed eye and piercing other eye retained. Buddhist-associated sovereign: BARE BALD HEAD, broad ochre ceremonial sash crossing charcoal-black robe, a restrained strand of dark wooden beads at chest and bronze round clasp. Sinewy strong neck and commanding severe presence. No armor, no TV actor likeness, no modern eyepatch. Religiously inspired creative costume, not verified portrait.",
+      "portrait": "/images/representatives/gung-ye-portrait-v3.webp",
+      "appearance": "삭발·황토색 가사풍 장식의 군주",
+      "referenceNote": "불교적 군주 이미지를 반영한 창작 복식이다. 후대 드라마 배우나 현존 진영의 실제 용모 복원이 아니다.",
+      "source": {
+        "title": "복식 유형 참고 — 실제 개인 관모의 근거가 아님",
+        "url": "https://encykorea.aks.ac.kr/Article/E0023658"
+      }
+    },
+    {
+      "originalId": 149,
+      "id": "gyeongsun",
+      "name": "경순왕",
+      "design": "Refined clean-shaven small oval young royal face, worried thoughtful eyes retained. Last Silla KING: modest narrow gold openwork crown with a few delicate tree-branch uprights inspired by earlier Silla crowns, deep blue-violet silk royal robe, ivory inner collar, restrained gold trim. Slim shoulders and solemn noble dignity. Not a huge Christmas-tree crown; acknowledge earlier-period motif not exact tenth-century reconstruction.",
+      "portrait": "/images/representatives/gyeongsun-portrait-v3.webp",
+      "appearance": "신라 금관 모티프·보랏빛 예복",
+      "referenceNote": "5~6세기 신라 금관의 세움 장식에서 영감을 얻었다. 10세기 경순왕의 실제 착용 관이라는 뜻은 아니다.",
+      "source": {
+        "title": "국립경주박물관 — 신라 황금 문화유산",
+        "url": "https://gyeongju.museum.go.kr/kor/html/sub04/0403.html?mode=V&no=5048"
+      }
+    },
+    {
+      "originalId": 158,
+      "id": "wang-ryung",
+      "name": "왕륭",
+      "design": "Older gentle broad face, gray eyebrows and long narrow salt-and-pepper beard retained. Wealthy regional patriarch and merchant leader: rounded dark brown cloth cap with folded rim, fine warm brown silk outer robe with cream collar and restrained woven geometric edge, one jade fastener. Relaxed average shoulders, perceptive warm eyes. No armor, no royal crown, no poor peasant ragged clothing.",
+      "portrait": "/images/representatives/wang-ryung-portrait-v3.webp",
+      "appearance": "갈색 관모·고운 겉옷의 호족 가문 어른",
+      "referenceNote": "지역 유력자의 인상을 표현한 창작이다. 관모·옷·수염은 실제 개인 용모나 복식 기록을 복원한 것이 아니다.",
+      "source": {
+        "title": "한국민족문화대백과사전 — 복두",
+        "url": "https://encykorea.aks.ac.kr/Article/E0023658"
+      }
+    },
+    {
+      "originalId": 4,
+      "id": "yun-mu",
+      "name": "윤무",
+      "design": "Adult Korean woman cavalry spear commander about 38. Broad angular face, strong straight eyebrows, sun-weathered warm skin, firm focused expression, athletic thick neck and strong shoulders. Open-faced low iron lamellar helmet with short burgundy plume and visible face, dark iron and brown leather lamellar cuirass, burgundy shoulder cord. Powerful practical frontline officer, not glamorous princess. Three-quarter facing right.",
+      "portrait": "/images/representatives/yun-mu-portrait-v1.webp",
+      "appearance": "창 기병 여장부 · 넓은 얼굴과 강한 눈매, 개방형 투구·찰갑",
+      "referenceNote": "후삼국 역사 판타지를 위한 창작 여성 장수 초안. 인물·성별·용모·군장은 역사 기록의 복원이 아니다. 원본 인물의 혈연과 일대기를 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 7,
+      "id": "yeon-jin",
+      "name": "연진",
+      "design": "Adult Korean woman mounted archer about 27. Narrow oval face with high cheekbones, alert slender eyes, subtly asymmetric eyebrow, clean unscarred face, lean athletic shoulders. Black hair tightly braided and tied up with narrow indigo headband, no helmet. Muted teal padded military tunic under light brown leather lamellar vest, practical ivory collar. Quiver feather tips and the curved upper limb of a Korean-inspired composite bow visible beside shoulder. Calm precise marksman, no makeup. Three-quarter facing left. Visually distinct from broad helmeted spear commander.",
+      "portrait": "/images/representatives/yeon-jin-portrait-v1.webp",
+      "appearance": "여성 궁기병 · 날렵한 얼굴과 묶은 머리, 활·화살통",
+      "referenceNote": "후삼국 역사 판타지를 위한 창작 여성 장수 초안. 인물·성별·용모·군장은 역사 기록의 복원이 아니다. 원본 인물의 혈연과 일대기를 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 8,
+      "id": "mounted-008",
+      "name": "도진",
+      "design": "24-year-old male, round youthful face, clean shaven, straight thin eyebrows, fair skin, composed proud expression. Short black folded cloth cap, plum silk collar over light russet leather armor, slim shoulders; bow upper limb and tidy quiver behind right shoulder.",
+      "portrait": "/images/representatives/mounted-008-portrait-v1.webp",
+      "appearance": "24세의 둥근 얼굴·수염 없는 귀족 궁기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 19,
+      "id": "mounted-019",
+      "name": "연해",
+      "design": "58-year-old male strategist, gaunt long face, fine crowfeet, sparse gray goatee and thin moustache, high forehead. Black folded scholar cap with short side folds, muted midnight-blue layered robe and ivory collar, no plate armor. Narrow scholarly shoulders, shrewd sidelong eyes.",
+      "portrait": "/images/representatives/mounted-019-portrait-v1.webp",
+      "appearance": "마른 얼굴·회색 염소수염의 기마책사",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 26,
+      "id": "mounted-026",
+      "name": "도결",
+      "design": "29-year-old male, wide forehead, square jaw, short neat black beard, warm tan skin, intense level eyes. Low conical iron helmet with no plume, narrow brass brow band, brown lamellar collar and olive shoulder padding; athletic medium shoulders.",
+      "portrait": "/images/representatives/mounted-026-portrait-v1.webp",
+      "appearance": "넓은 이마·짧은 수염의 청년 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 27,
+      "id": "mounted-027",
+      "name": "하결",
+      "design": "47-year-old male, heavy square jaw and low thick brows, broad straight nose, close-cropped salt-and-pepper beard. Squat open bronze-edged helmet, layered dark iron neck guard, ochre padded collar, broad sturdy defensive commander shoulders.",
+      "portrait": "/images/representatives/mounted-027-portrait-v1.webp",
+      "appearance": "낮은 눈썹·큰 턱의 중년 수비 장수",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 28,
+      "id": "mounted-028",
+      "name": "윤결",
+      "design": "22-year-old male, tapered chin, very thick angled eyebrows, short swept black hair under indigo tied headcloth, no beard. Slim tough neck and light leather lamellar shoulders, dark red collar and simple round iron clasp. Alert earnest gaze.",
+      "portrait": "/images/representatives/mounted-028-portrait-v1.webp",
+      "appearance": "가는 턱·굵은 눈썹의 젊은 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 30,
+      "id": "mounted-030",
+      "name": "서휘",
+      "design": "34-year-old male mounted scout archer, elongated face, narrow eyes, fine straight moustache, weathered tan complexion. Tight brown headwrap and small rear hair knot, moss-green tunic with russet leather shoulder guard; curved bow beside shoulder, a few quiver fletchings. Lean athletic posture.",
+      "portrait": "/images/representatives/mounted-030-portrait-v1.webp",
+      "appearance": "길쭉한 얼굴·얇은 콧수염의 정찰 궁기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 31,
+      "id": "mounted-031",
+      "name": "연휘",
+      "design": "26-year-old male, round chin, full lips, dark straight brows and clean shaven face, compact topknot with deep red tie. Silver-gray lamellar shoulders and navy padded collar, short wine cloak edge. Upright calm confident expression, moderate strong build.",
+      "portrait": "/images/representatives/mounted-031-portrait-v1.webp",
+      "appearance": "둥근 턱·단정한 상투의 젊은 지휘관",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 33,
+      "id": "mounted-033",
+      "name": "하휘",
+      "design": "42-year-old male, very broad cheekbones, heavy curly black beard, thick arched brows, deep-set eyes, warm weathered skin. Short black iron helmet with blunt brass ridge, rust-red shoulder cloak over practical heavy lamellar. Very strong neck and shoulders, resolute expression rather than shouting.",
+      "portrait": "/images/representatives/mounted-033-portrait-v1.webp",
+      "appearance": "넓은 얼굴·곱슬 턱수염의 돌격 장수",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 34,
+      "id": "mounted-034",
+      "name": "윤휘",
+      "design": "28-year-old male, clean shaven long oval face, narrow sharp eyes, smooth tan skin, straight nose. Small open silver helmet with short dark blue plume, indigo collar and clean silver lamellar shoulder plates. Lean athletic build, quiet focused dignity.",
+      "portrait": "/images/representatives/mounted-034-portrait-v1.webp",
+      "appearance": "긴 눈매·수염 없는 날렵한 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 36,
+      "id": "mounted-036",
+      "name": "서담",
+      "design": "67-year-old male mounted archer, deep smile lines, white thick eyebrows, short square white beard, slightly hooked nose. Gray hair gathered under low dark green cloth cap, warm brown leather lamellar over teal padded collar. Quiver feathers visible; powerful but lean veteran shoulders, patient eyes.",
+      "portrait": "/images/representatives/mounted-036-portrait-v1.webp",
+      "appearance": "백발·흰 턱수염의 노장 궁기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 37,
+      "id": "mounted-037",
+      "name": "연담",
+      "design": "39-year-old male, rectangular face, wide nose, dense squared black beard, left eyebrow has a small gap. Maroon tied headband under segmented dark iron open helmet; dark olive padding and copper-edged lamellar shoulders. Skeptical concentrated expression, broad build.",
+      "portrait": "/images/representatives/mounted-037-portrait-v1.webp",
+      "appearance": "짙은 눈썹·사각 수염의 숙련 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 41,
+      "id": "mounted-041",
+      "name": "설담",
+      "design": "45-year-old male, refined oval face, narrow tidy moustache and short pointed beard, gentle lined eyes. Navy folded cap with short trailing tie, muted plum coat over light leather chest protection. Slender bow and neat quiver tips at shoulder; average build, diplomatic composed expression.",
+      "portrait": "/images/representatives/mounted-041-portrait-v1.webp",
+      "appearance": "고운 얼굴·가느다란 수염의 궁기 지휘관",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 42,
+      "id": "mounted-042",
+      "name": "서율",
+      "design": "32-year-old male, broad round nose, clean shaven slightly round face, close-set intent eyes, tanned freckled skin. Dark brown fitted archery headwrap, slate-blue tunic and small overlapping leather shoulder scales, bow curve and quiver. Compact muscular neck.",
+      "portrait": "/images/representatives/mounted-042-portrait-v1.webp",
+      "appearance": "둥근 코·수염 없는 실전 궁기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 46,
+      "id": "mounted-046",
+      "name": "윤율",
+      "design": "31-year-old male, angular jaw, thick black sideburns joining a short chin beard but almost no moustache, strong straight nose. Black topknot with narrow ochre tie, dark steel lamellar and muted green cloak clasp. Athletic shoulders and steadfast forward gaze.",
+      "portrait": "/images/representatives/mounted-046-portrait-v1.webp",
+      "appearance": "굵은 구레나룻·짧은 머리끈의 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 48,
+      "id": "mounted-048",
+      "name": "서무온",
+      "design": "62-year-old male, broad lined forehead, downward sweeping gray moustache, short gray boxed beard, deeply set calm eyes. Weathered open iron helmet with plain brow, faded burgundy padded neckcloth, brown iron lamellar shoulders. Upright heavy veteran build.",
+      "portrait": "/images/representatives/mounted-048-portrait-v1.webp",
+      "appearance": "넓은 이마·회색 수염의 노장",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 52,
+      "id": "mounted-052",
+      "name": "윤무온",
+      "design": "38-year-old male frontier horseman, broad flat cheekbones, cropped black beard, rough tan skin, shallow healed chin scar. Simple brown leather skullcap, dark fur-trim winter collar over iron lamellar, olive woven cord. Stocky powerful shoulders, wary steady eyes; Korean appearance, no exotic caricature.",
+      "portrait": "/images/representatives/mounted-052-portrait-v1.webp",
+      "appearance": "짧은 머리·거친 턱선의 산악 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 53,
+      "id": "mounted-053",
+      "name": "설무온",
+      "design": "23-year-old male, slim triangular face, upswept brows, clean shaven, dark lively eyes. Compact topknot under small blue-black cloth cap, pale steel shoulder guards and deep green collar, short red neck tie. Light athletic build and ambitious gaze.",
+      "portrait": "/images/representatives/mounted-053-portrait-v1.webp",
+      "appearance": "눈꼬리가 올라간 청년 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 54,
+      "id": "mounted-054",
+      "name": "서진온",
+      "design": "25-year-old male, round broad face, short spiky moustache, thick neck, close cropped black hair under simple iron helmet with short brown plume. Weathered ochre collar, dark iron lamellar shoulders, crimson cords. Strong barrel-shouldered build, direct brave expression.",
+      "portrait": "/images/representatives/mounted-054-portrait-v1.webp",
+      "appearance": "둥근 얼굴·굵은 목의 청년 돌격병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 57,
+      "id": "mounted-057",
+      "name": "하진온",
+      "design": "30-year-old male frontier heavy cavalry, narrow angular face, long steady eyes, small tidy moustache. Bright iron conical helmet with short white horsehair crest, dark teal cloth beneath, silver-gray lamellar and brown fur edge. Tall athletic shoulders, cool controlled expression; Korean fantasy not Chinese costume.",
+      "portrait": "/images/representatives/mounted-057-portrait-v1.webp",
+      "appearance": "밝은 철색 투구·긴 눈매의 서량기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 58,
+      "id": "mounted-058",
+      "name": "윤진온",
+      "design": "37-year-old male, broad oval face, thick dark-brown beard cropped close, slightly crooked nose, warm tan skin. Low black iron dome helmet, rust orange scarf, dark leather and iron lamellar with muted brass fittings. Strong mobile cavalry build, watchful expression.",
+      "portrait": "/images/representatives/mounted-058-portrait-v1.webp",
+      "appearance": "낮은 투구·갈색 수염의 서량기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 64,
+      "id": "mounted-064",
+      "name": "윤솔온",
+      "design": "21-year-old male, long delicate face but trained athletic neck, clean shaven, fine straight eyebrows, serious wide eyes. Small charcoal headcloth with high tidy hair knot, muted blue tunic under narrow leather vest, ivory collar; small bow limb and pale feather quiver behind shoulder.",
+      "portrait": "/images/representatives/mounted-064-portrait-v1.webp",
+      "appearance": "얇은 눈썹·단정한 머리의 젊은 궁기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 66,
+      "id": "mounted-066",
+      "name": "서해온",
+      "design": "27-year-old male, diamond shaped face, pointed chin, black brows, short neat moustache and no chin beard. Maroon headcloth beneath open iron cheek-free helmet, dark blue lamellar straps and brown shoulder armor. Lean strong build, restrained confident half smile.",
+      "portrait": "/images/representatives/mounted-066-portrait-v1.webp",
+      "appearance": "짙은 눈매·한쪽 입꼬리의 청년 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 83,
+      "id": "mounted-083",
+      "name": "설휘온",
+      "design": "44-year-old male, wide cheekbones, short gray-flecked stubble, sunburnt skin and firm lips. Tight olive archery headband, black hair tied low, tan leather shoulder armor over indigo tunic. Quiver and recurved bow visible; lean tough neck, patient observant gaze.",
+      "portrait": "/images/representatives/mounted-083-portrait-v1.webp",
+      "appearance": "넓은 광대·짧은 수염의 궁기 노련병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 85,
+      "id": "mounted-085",
+      "name": "연담온",
+      "design": "29-year-old male, narrow square face, clean shaven, healed notch in right eyebrow, long nose. Black topknot with teal ribbon, compact steel forehead protector, dark russet lamellar and blue-green padded collar. Athletic shoulders, energetic focused gaze.",
+      "portrait": "/images/representatives/mounted-085-portrait-v1.webp",
+      "appearance": "상처 난 눈썹·단정한 상투의 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 91,
+      "id": "mounted-091",
+      "name": "연율온",
+      "design": "64-year-old male, sun-darkened broad face, white sideburns and thick white moustache with bare chin, heavy brow wrinkles. Open dark iron helmet with battered copper rim, deep red winter collar and dark lamellar shoulder plates. Robust veteran build, tough steady eyes.",
+      "portrait": "/images/representatives/mounted-091-portrait-v1.webp",
+      "appearance": "흰 구레나룻·거친 피부의 노장",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 94,
+      "id": "mounted-094",
+      "name": "윤율온",
+      "design": "56-year-old male mounted archer, long weathered face, drooping salt-and-pepper moustache and short goatee, prominent cheekbones. Brown folded cloth cap, muted olive padded tunic, dark leather shoulder harness and blue scarf. Bow and black-feather quiver; lean firm shoulders.",
+      "portrait": "/images/representatives/mounted-094-portrait-v1.webp",
+      "appearance": "길게 내려온 콧수염의 노장 궁기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 95,
+      "id": "mounted-095",
+      "name": "설율온",
+      "design": "40-year-old male, large straight nose, square wide face, short full black beard, bushy level brows. Silver open helmet with narrow burgundy crest, charcoal lamellar with strong indigo shoulder cloth. Broad athletic neck, bold composed expression.",
+      "portrait": "/images/representatives/mounted-095-portrait-v1.webp",
+      "appearance": "짧은 턱수염·큰 코의 힘있는 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 98,
+      "id": "mounted-098",
+      "name": "도무운",
+      "design": "53-year-old male, narrow long face, receding temples visible under low iron brow guard, sparse gray chin beard and fine moustache. Dark brown cloth cap beneath armor band, faded teal padded collar, charcoal lamellar and simple bronze shoulder clasp. Reserved experienced gaze.",
+      "portrait": "/images/representatives/mounted-098-portrait-v1.webp",
+      "appearance": "옅은 수염·좁은 얼굴의 중년 지휘관",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 99,
+      "id": "mounted-099",
+      "name": "하무운",
+      "design": "49-year-old male regional ruler, broad pentagonal face, heavy sideburns and medium boxed beard, strong arched brows. Compact bronze-trim black military crown with low upright center ridge, maroon silk robe over discreet iron shoulder armor, small gold geometric collar pattern. Commanding broad shoulders; no imperial tassel crown or dragon robe.",
+      "portrait": "/images/representatives/mounted-099-portrait-v1.webp",
+      "appearance": "청동 관모·구레나룻의 군웅",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 100,
+      "id": "mounted-100",
+      "name": "윤무운",
+      "design": "25-year-old male young regional ruler, clean shaven broad handsome but distinctive face, rounded nose, thick upturned eyebrows, relaxed confident half smile. Tall tidy topknot with wide red silk headband, blue-black military robe and gold-edged leather shoulder vest. Athletic broad shoulders, no royal tassel crown.",
+      "portrait": "/images/representatives/mounted-100-portrait-v1.webp",
+      "appearance": "붉은 머리띠·젊고 호방한 군웅",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 101,
+      "id": "mounted-101",
+      "name": "설무운",
+      "design": "54-year-old male aristocratic regional ruler, long oval pale face, refined long thin moustache and forked gray-flecked beard, hooded eyes. Black folded ceremonial military cap with short horizontal tabs, purple brocade robe, restrained bronze clasp and cream collar; upright average shoulders. No Joseon rank patch or imperial dragons.",
+      "portrait": "/images/representatives/mounted-101-portrait-v1.webp",
+      "appearance": "짧은 검은 관·가는 수염의 귀족 군웅",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 107,
+      "id": "mounted-107",
+      "name": "설진운",
+      "design": "36-year-old male mounted archer, broad square face, small concentrated eyes, close cut beard and thick moustache, tan skin. Burgundy archery headcloth with folded side knot, moss-green and russet leather armor, a curved bow and quiver at shoulder. Sturdy trained shoulders.",
+      "portrait": "/images/representatives/mounted-107-portrait-v1.webp",
+      "appearance": "작은 눈·짧은 턱수염의 궁기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 108,
+      "id": "mounted-108",
+      "name": "서솔운",
+      "design": "43-year-old male vanguard commander, very wide jaw, heavy black beard with squared bottom, thick brows, flat broad nose. High segmented dark iron helmet with short ochre plume, silver-edged shoulder lamellar and indigo scarf. Massive strong neck, stern calm authority.",
+      "portrait": "/images/representatives/mounted-108-portrait-v1.webp",
+      "appearance": "넓적한 턱·굵은 수염의 선봉 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 109,
+      "id": "mounted-109",
+      "name": "연솔운",
+      "design": "41-year-old male cavalry officer, tall narrow face, hooked nose, close-trimmed moustache and thin pointed beard, pronounced cheekbones. Low angular iron helmet without plume, rust-red padded collar, dark bronze-edged armor. Tall lean strong shoulders, piercing gaze.",
+      "portrait": "/images/representatives/mounted-109-portrait-v1.webp",
+      "appearance": "매부리코·짧은 수염의 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 113,
+      "id": "mounted-113",
+      "name": "설솔운",
+      "design": "28-year-old male, soft oval face, fine moustache, smooth fair skin, gently arched brows. Dark plum cloth military cap, brown leather lamellar under muted blue silk shoulder mantle, bronze fastener. Average athletic build, cautious thoughtful expression.",
+      "portrait": "/images/representatives/mounted-113-portrait-v1.webp",
+      "appearance": "완만한 눈매·가느다란 수염의 청년 귀족",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 114,
+      "id": "mounted-114",
+      "name": "서해운",
+      "design": "24-year-old male, narrow chin, wide dark eyes, straight delicate nose, no beard. Low rounded silver helmet with exposed ears and short blue plume, teal padded collar and leather lamellar with ivory trim. Lean shoulders, serious nervous determination.",
+      "portrait": "/images/representatives/mounted-114-portrait-v1.webp",
+      "appearance": "큰 눈·수염 없는 청년 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 115,
+      "id": "mounted-115",
+      "name": "연해운",
+      "design": "20-year-old male, wide forehead and round cheeks, clean shaven, short thick brows, firm closed mouth. Tall black topknot with narrow gold-brown cord, small forehead iron plate, navy padded tunic and dark brown scale shoulders. Compact athletic build, intent youthful gaze.",
+      "portrait": "/images/representatives/mounted-115-portrait-v1.webp",
+      "appearance": "짧은 눈썹·넓은 이마의 청년 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 116,
+      "id": "mounted-116",
+      "name": "도해운",
+      "design": "33-year-old male mounted archer, hollow cheekbones, long straight nose, thin moustache, dark tan skin. Charcoal tight cap with small back knot, dusty red tunic under lean leather archery armor, bow top limb and quiver. Narrow athletic shoulders, vigilant sideward gaze.",
+      "portrait": "/images/representatives/mounted-116-portrait-v1.webp",
+      "appearance": "마른 광대·가느다란 콧수염의 궁기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 119,
+      "id": "mounted-119",
+      "name": "설해운",
+      "design": "35-year-old male elite frontier cavalry, long angular face, clean shaven powerful jaw, thick straight eyebrows, sharp deep eyes. Tall but practical black iron open helmet with short dark-red crest, black lamellar with restrained bronze edges and deep red cloth. Strong athletic neck, proud controlled expression; no oversized horns.",
+      "portrait": "/images/representatives/mounted-119-portrait-v1.webp",
+      "appearance": "긴 얼굴·검은 투구의 강인한 서량기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 120,
+      "id": "mounted-120",
+      "name": "서결운",
+      "design": "39-year-old male, broad nose and round square face, thin sideburns and short moustache, tanned wind-weathered cheeks. Low russet leather helmet with iron brow reinforcement, slate-blue scarf and fur-edged dark lamellar. Stocky seasoned cavalry build, practical calm gaze.",
+      "portrait": "/images/representatives/mounted-120-portrait-v1.webp",
+      "appearance": "넓은 코·얇은 구레나룻의 서량기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 121,
+      "id": "mounted-121",
+      "name": "연결운",
+      "design": "37-year-old male, asymmetrical eyebrows, oval face, small chin scar, short rough beard. Dark green headwrap under open steel helmet, muted brown padded collar and small bronze shoulder rivets. Medium wiry shoulders, watchful reserved expression.",
+      "portrait": "/images/representatives/mounted-121-portrait-v1.webp",
+      "appearance": "비대칭 눈썹·짧은 수염의 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 122,
+      "id": "mounted-122",
+      "name": "도결운",
+      "design": "46-year-old male frontier captain, rectangular jaw, deep-set narrow eyes, short flat black moustache and bare chin. Iron forehead band over tight indigo headwrap, layered dark leather and steel shoulder armor, muted gray fur neck edge. Broad disciplined shoulders, unwavering stern gaze.",
+      "portrait": "/images/representatives/mounted-122-portrait-v1.webp",
+      "appearance": "각진 턱·철제 이마띠의 서량기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 123,
+      "id": "mounted-123",
+      "name": "하결운",
+      "design": "42-year-old male, round face, sparse black-and-gray beard, prominent rounded ears, gently hooded eyes. Plain dark iron helmet with short side neck guards, ochre scarf, olive-brown lamellar. Sturdy average build, mild but firm expression.",
+      "portrait": "/images/representatives/mounted-123-portrait-v1.webp",
+      "appearance": "수염이 옅은 둥근 얼굴의 중년 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 124,
+      "id": "mounted-124",
+      "name": "윤결운",
+      "design": "31-year-old male archer, high wide cheekbones and small chin, narrow intent eyes, fine short moustache. Burgundy slim headband and tightly tied black braid behind head, navy tunic and dark leather shoulder plates, quiver with brown feathers and curved bow. Slim trained neck.",
+      "portrait": "/images/representatives/mounted-124-portrait-v1.webp",
+      "appearance": "큰 광대·좁은 눈매의 궁기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 128,
+      "id": "mounted-128",
+      "name": "도휘운",
+      "design": "57-year-old male, deep forehead lines, wide jaw, gray tapered beard, thick dark-gray brows. Broad open bronze-banded iron helmet, dark green padded collar and black lamellar with simple red cords. Heavy seasoned shoulders, measured serious gaze.",
+      "portrait": "/images/representatives/mounted-128-portrait-v1.webp",
+      "appearance": "깊은 주름·회색 턱수염의 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 130,
+      "id": "mounted-130",
+      "name": "윤휘운",
+      "design": "45-year-old male, long face with narrow jaw, sweeping black moustache and short square goatee, strong nose. Tight blue cloth cap and low iron forehead guard, brown and steel shoulder armor over pale gray collar. Lean veteran neck, sharp attentive gaze.",
+      "portrait": "/images/representatives/mounted-130-portrait-v1.webp",
+      "appearance": "옆으로 빗은 수염·긴 얼굴의 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 133,
+      "id": "mounted-133",
+      "name": "연담운",
+      "design": "40-year-old male, blunt broad nose, coarse short beard, small pale cheek scar, thick brow. Iron dome helmet with short dark hair tuft, weathered red-brown leather and black steel lamellar, ochre neckcloth. Strong compact shoulders, blunt determined expression.",
+      "portrait": "/images/representatives/mounted-133-portrait-v1.webp",
+      "appearance": "뭉툭한 코·거친 수염의 돌격 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 134,
+      "id": "mounted-134",
+      "name": "도담운",
+      "design": "44-year-old male heavy frontier cavalry, broad high cheekbones, dense long black beard cropped at chest, deep dark eyes. Black conical iron helmet with silver brow strip and no plume, muted green fur-edged mantle over heavy dark lamellar. Very broad neck and shoulders, solid unhurried strength.",
+      "portrait": "/images/representatives/mounted-134-portrait-v1.webp",
+      "appearance": "넓은 광대·검은 수염의 서량기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 136,
+      "id": "mounted-136",
+      "name": "윤담운",
+      "design": "52-year-old male, full cheeks and round jaw, carefully groomed thin moustache and medium pointed beard, high arch eyebrows. Folded dark blue military cap, restrained purple silk collar over polished brown lamellar, small brass knot clasp. Broad but not obese shoulders, self-assured gaze.",
+      "portrait": "/images/representatives/mounted-136-portrait-v1.webp",
+      "appearance": "살집 있는 얼굴·정돈한 수염의 기병 지휘관",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 137,
+      "id": "mounted-137",
+      "name": "설담운",
+      "design": "38-year-old male, long square jaw, strong straight brows, short neatly edged black beard, warm tan skin. Open silver-gray helmet with short olive plume, indigo padded tunic and dark iron shoulder plates with brown leather straps. Strong athletic build and candid confident gaze.",
+      "portrait": "/images/representatives/mounted-137-portrait-v1.webp",
+      "appearance": "단단한 턱·짧은 수염의 중년 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 138,
+      "id": "mounted-138",
+      "name": "서율운",
+      "design": "63-year-old male frontier cavalry elder, high prominent cheekbones, long narrow white beard, deeply lined forehead, heavy gray brows. Low dark iron helmet with brown leather side ties, pale fur collar over black lamellar, faded indigo cloak. Weathered lean powerful shoulders, wise stern eyes.",
+      "portrait": "/images/representatives/mounted-138-portrait-v1.webp",
+      "appearance": "흰 수염·높은 광대의 서량 노장",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 139,
+      "id": "mounted-139",
+      "name": "연율운",
+      "design": "59-year-old male, broad oval face, close salt-and-pepper beard, thick white-flecked moustache, slightly drooping left eyelid. Dark red headwrap beneath plain bronze brow cap, olive padded collar and weathered iron lamellar shoulders. Sturdy cavalry build, patient calculating gaze.",
+      "portrait": "/images/representatives/mounted-139-portrait-v1.webp",
+      "appearance": "수염이 짧은 넓은 얼굴의 서량 노장",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 141,
+      "id": "mounted-141",
+      "name": "하율운",
+      "design": "48-year-old male, wide high forehead, small mouth, fine long moustache and short narrow beard, tan skin. Simple black folded military cap with short rear ties, steel shoulder scales and muted red silk neckcloth. Medium upright shoulders, restrained serious expression.",
+      "portrait": "/images/representatives/mounted-141-portrait-v1.webp",
+      "appearance": "넓은 이마·가늘고 긴 수염의 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 143,
+      "id": "mounted-143",
+      "name": "설율운",
+      "design": "34-year-old male, angular diamond face, tiny healed cheek scar, short black chin beard and clean upper lip, wide dark brows. Open dark steel helmet with slender blue crest, brown lamellar armor with navy shoulder cloth. Lean athletic shoulders, determined forward gaze.",
+      "portrait": "/images/representatives/mounted-143-portrait-v1.webp",
+      "appearance": "작은 흉터·각진 얼굴의 기병",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 145,
+      "id": "mounted-145",
+      "name": "연무겸",
+      "design": "70-year-old male cavalry elder, long soft face with deep wrinkles, long fine white moustache and narrow white beard, sparse gray hair visible at temple. Low dark brown cloth cap, muted blue-green military robe over small leather shoulder guards, cream collar. Slight slender shoulders, calm experienced dignified eyes.",
+      "portrait": "/images/representatives/mounted-145-portrait-v1.webp",
+      "appearance": "백발·온화한 눈매의 노장 지휘관",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다.",
+      "source": null
+    },
+    {
+      "originalId": 163,
+      "id": "gyeon-hwon-variant",
+      "name": "견훤",
+      "design": "Powerful older rectangular face, thick salt-and-pepper beard, deep forehead lines retained. Rival warrior KING: dark iron-and-gold low royal military crown with three short broad upright ornaments, deep oxblood silk mantle over black lamellar shoulders and wide bronze-gold border. Fierce authoritative eyes, massive neck. Crown low and martial, entirely different from Wang Geon tall cylindrical gold crown. Invented Later Baekje design, not claimed excavated crown.",
+      "portrait": "/images/representatives/gyeon-hwon-portrait-v3.webp",
+      "appearance": "낮은 금장 관·붉은 군왕 예복",
+      "referenceNote": "후백제 군주의 군사적 위엄을 표현한 창작이다. 출토된 견훤의 관을 복원한 것이 아니다. 동일 인물의 시나리오 변형 슬롯은 본체와 초상화를 공유한다.",
+      "source": {
+        "title": "복식 유형 참고 — 실제 개인 관모의 근거가 아님",
+        "url": "https://encykorea.aks.ac.kr/Article/E0023658"
+      }
+    },
+    {
+      "originalId": 164,
+      "id": "mounted-033-variant",
+      "name": "하휘",
+      "design": "42-year-old male, very broad cheekbones, heavy curly black beard, thick arched brows, deep-set eyes, warm weathered skin. Short black iron helmet with blunt brass ridge, rust-red shoulder cloak over practical heavy lamellar. Very strong neck and shoulders, resolute expression rather than shouting.",
+      "portrait": "/images/representatives/mounted-033-portrait-v1.webp",
+      "appearance": "넓은 얼굴·곱슬 턱수염의 돌격 장수",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다. 동일 인물의 시나리오 변형 슬롯은 본체와 초상화를 공유한다.",
+      "source": null
+    },
+    {
+      "originalId": 166,
+      "id": "mounted-099-variant",
+      "name": "하무운",
+      "design": "49-year-old male regional ruler, broad pentagonal face, heavy sideburns and medium boxed beard, strong arched brows. Compact bronze-trim black military crown with low upright center ridge, maroon silk robe over discreet iron shoulder armor, small gold geometric collar pattern. Commanding broad shoulders; no imperial tassel crown or dragon robe.",
+      "portrait": "/images/representatives/mounted-099-portrait-v1.webp",
+      "appearance": "청동 관모·구레나룻의 군웅",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다. 동일 인물의 시나리오 변형 슬롯은 본체와 초상화를 공유한다.",
+      "source": null
+    },
+    {
+      "originalId": 167,
+      "id": "mounted-100-variant",
+      "name": "윤무운",
+      "design": "25-year-old male young regional ruler, clean shaven broad handsome but distinctive face, rounded nose, thick upturned eyebrows, relaxed confident half smile. Tall tidy topknot with wide red silk headband, blue-black military robe and gold-edged leather shoulder vest. Athletic broad shoulders, no royal tassel crown.",
+      "portrait": "/images/representatives/mounted-100-portrait-v1.webp",
+      "appearance": "붉은 머리띠·젊고 호방한 군웅",
+      "referenceNote": "후삼국 역사 판타지의 창작 인물 가칭에 맞춘 초상화. 나이·용모·수염·복식과 지휘관 인상은 디자인 제안이며 실제 역사 인물의 외모나 군장 복원이 아니다. 원본 인물의 가족관계·행적은 계승하지 않는다. 동일 인물의 시나리오 변형 슬롯은 본체와 초상화를 공유한다.",
+      "source": null
+    },
+    {
+      "originalId": 168,
+      "id": "singeom-variant",
+      "name": "신검",
+      "design": "Narrow youthful heart-shaped face, pale clean-shaven sharp chin and proud expression retained. Ambitious royal successor: slim black-gold formal coronet with two short upright leaf-shaped tips, dark plum noble robe and discreet gold-edged dark shoulder armor, ivory collar. Elegant rather than bulky, not duplicate father crown or Wang Geon crown. Costume fictional Later Baekje royal interpretation.",
+      "portrait": "/images/representatives/singeom-portrait-v3.webp",
+      "appearance": "작은 금장 관·자주색 왕족 복식",
+      "referenceNote": "후백제 왕족의 이미지와 젊고 날카로운 인상을 조합했다. 관·색상·용모는 창작이다. 동일 인물의 시나리오 변형 슬롯은 본체와 초상화를 공유한다.",
+      "source": {
+        "title": "복식 유형 참고 — 실제 개인 관모의 근거가 아님",
+        "url": "https://encykorea.aks.ac.kr/Article/E0023658"
+      }
+    }
+  ]
+}

@@ -1,0 +1,543 @@
+{
+  "assets": [
+    {
+      "direction": "se",
+      "prompt": "Use case: precise-object-edit. Edit target image1 is a 1024x1024 transparent 4x4 sprite animation sheet. Keep exactly its 16 figures, their positions, pixel scale, horse and rider identity, leather armor, faces, pose and motion row ordering unchanged. Change ONLY each short spear into the long ash wood spear in image2: longer brown shaft, wider leaf-shaped steel tip, modest bronze collar and visible dark red tassel. No other equipment. Keep all weapons fully within their 256x256 cells, transparent background, no text or grid. The four rows are idle, walk, attack, skill and four columns consecutive frames. Keep horse feet positions EXACTLY as input. Direction se, retain input view including rear-facing back of head in rear views. Small outlined tactical RPG game sprites, not illustrations. Preserve generous empty cell margins.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-d8c3e455-32c0-42d5-8091-d58836aeacea.png"
+    },
+    {
+      "direction": "sw",
+      "prompt": "Use case: precise-object-edit. Edit target image1 is a 1024x1024 transparent 4x4 sprite animation sheet. Keep exactly its 16 figures, their positions, pixel scale, horse and rider identity, leather armor, faces, pose and motion row ordering unchanged. Change ONLY each short spear into the long ash wood spear in image2: longer brown shaft, wider leaf-shaped steel tip, modest bronze collar and visible dark red tassel. No other equipment. Keep all weapons fully within their 256x256 cells, transparent background, no text or grid. The four rows are idle, walk, attack, skill and four columns consecutive frames. Keep horse feet positions EXACTLY as input. Direction sw, retain input view including rear-facing back of head in rear views. Small outlined tactical RPG game sprites, not illustrations. Preserve generous empty cell margins.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ab8baa46-a216-477f-9bac-a622d1f799a7.png"
+    },
+    {
+      "direction": "nw",
+      "prompt": "Use case: precise-object-edit. Edit target image1 is a 1024x1024 transparent 4x4 sprite animation sheet. Keep exactly its 16 figures, their positions, pixel scale, horse and rider identity, leather armor, faces, pose and motion row ordering unchanged. Change ONLY each short spear into the long ash wood spear in image2: longer brown shaft, wider leaf-shaped steel tip, modest bronze collar and visible dark red tassel. No other equipment. Keep all weapons fully within their 256x256 cells, transparent background, no text or grid. The four rows are idle, walk, attack, skill and four columns consecutive frames. Keep horse feet positions EXACTLY as input. Direction nw, retain input view including rear-facing back of head in rear views. Small outlined tactical RPG game sprites, not illustrations. Preserve generous empty cell margins.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-d45dc4c2-dfb9-479a-af92-9aa202687504.png"
+    },
+    {
+      "direction": "ne",
+      "prompt": "Use case: precise-object-edit. Edit target image1 is a 1024x1024 transparent 4x4 sprite animation sheet. Keep exactly its 16 figures, their positions, pixel scale, horse and rider identity, leather armor, faces, pose and motion row ordering unchanged. Change ONLY each short spear into the long ash wood spear in image2: longer brown shaft, wider leaf-shaped steel tip, modest bronze collar and visible dark red tassel. No other equipment. Keep all weapons fully within their 256x256 cells, transparent background, no text or grid. The four rows are idle, walk, attack, skill and four columns consecutive frames. Keep horse feet positions EXACTLY as input. Direction ne, retain input view including rear-facing back of head in rear views. Small outlined tactical RPG game sprites, not illustrations. Preserve generous empty cell margins.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-8d378aa7-05a2-42e7-9d30-2af9ad4bb345.png"
+    }
+  ],
+  "frames": [
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-0-0.webp",
+      "bytes": 5026,
+      "offset": [
+        -1,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-0-1.webp",
+      "bytes": 4938,
+      "offset": [
+        -3,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-0-2.webp",
+      "bytes": 5006,
+      "offset": [
+        3,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-0-3.webp",
+      "bytes": 5030,
+      "offset": [
+        -6,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-1-0.webp",
+      "bytes": 5068,
+      "offset": [
+        2,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-1-1.webp",
+      "bytes": 5068,
+      "offset": [
+        0,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-1-2.webp",
+      "bytes": 5092,
+      "offset": [
+        2,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-1-3.webp",
+      "bytes": 5000,
+      "offset": [
+        0,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-2-0.webp",
+      "bytes": 4850,
+      "offset": [
+        0,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-2-1.webp",
+      "bytes": 5360,
+      "offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-2-2.webp",
+      "bytes": 5372,
+      "offset": [
+        7,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-2-3.webp",
+      "bytes": 4676,
+      "offset": [
+        1,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-3-0.webp",
+      "bytes": 5084,
+      "offset": [
+        2,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-3-1.webp",
+      "bytes": 5138,
+      "offset": [
+        3,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-3-2.webp",
+      "bytes": 5472,
+      "offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/se-3-3.webp",
+      "bytes": 5270,
+      "offset": [
+        3,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-0-0.webp",
+      "bytes": 4798,
+      "offset": [
+        -2,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-0-1.webp",
+      "bytes": 4894,
+      "offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-0-2.webp",
+      "bytes": 5006,
+      "offset": [
+        0,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-0-3.webp",
+      "bytes": 4920,
+      "offset": [
+        0,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-1-0.webp",
+      "bytes": 5264,
+      "offset": [
+        -1,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-1-1.webp",
+      "bytes": 5304,
+      "offset": [
+        2,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-1-2.webp",
+      "bytes": 5214,
+      "offset": [
+        -2,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-1-3.webp",
+      "bytes": 5306,
+      "offset": [
+        -2,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-2-0.webp",
+      "bytes": 5064,
+      "offset": [
+        -1,
+        1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-2-1.webp",
+      "bytes": 5928,
+      "offset": [
+        1,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-2-2.webp",
+      "bytes": 5612,
+      "offset": [
+        0,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-2-3.webp",
+      "bytes": 5148,
+      "offset": [
+        0,
+        -1
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-3-0.webp",
+      "bytes": 5182,
+      "offset": [
+        -1,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-3-1.webp",
+      "bytes": 5690,
+      "offset": [
+        2,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-3-2.webp",
+      "bytes": 7724,
+      "offset": [
+        -1,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/sw-3-3.webp",
+      "bytes": 5208,
+      "offset": [
+        0,
+        0
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-0-0.webp",
+      "bytes": 4646,
+      "offset": [
+        -8,
+        -8
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-0-1.webp",
+      "bytes": 4654,
+      "offset": [
+        -6,
+        -8
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-0-2.webp",
+      "bytes": 4778,
+      "offset": [
+        -5,
+        -8
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-0-3.webp",
+      "bytes": 4694,
+      "offset": [
+        -8,
+        -8
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-1-0.webp",
+      "bytes": 4794,
+      "offset": [
+        -6,
+        -6
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-1-1.webp",
+      "bytes": 4850,
+      "offset": [
+        -5,
+        -6
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-1-2.webp",
+      "bytes": 4860,
+      "offset": [
+        -2,
+        -6
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-1-3.webp",
+      "bytes": 4852,
+      "offset": [
+        -4,
+        -6
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-2-0.webp",
+      "bytes": 5046,
+      "offset": [
+        -5,
+        -5
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-2-1.webp",
+      "bytes": 5056,
+      "offset": [
+        -3,
+        -5
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-2-2.webp",
+      "bytes": 4850,
+      "offset": [
+        -5,
+        -5
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-2-3.webp",
+      "bytes": 4820,
+      "offset": [
+        -5,
+        -5
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-3-0.webp",
+      "bytes": 4932,
+      "offset": [
+        -4,
+        -5
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-3-1.webp",
+      "bytes": 5156,
+      "offset": [
+        -4,
+        -5
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-3-2.webp",
+      "bytes": 5338,
+      "offset": [
+        -5,
+        -5
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/nw-3-3.webp",
+      "bytes": 4862,
+      "offset": [
+        -6,
+        -5
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-0-0.webp",
+      "bytes": 4736,
+      "offset": [
+        -1,
+        -2
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-0-1.webp",
+      "bytes": 4690,
+      "offset": [
+        0,
+        -2
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-0-2.webp",
+      "bytes": 4934,
+      "offset": [
+        -1,
+        -2
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-0-3.webp",
+      "bytes": 5056,
+      "offset": [
+        -1,
+        -2
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-1-0.webp",
+      "bytes": 5064,
+      "offset": [
+        4,
+        -3
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-1-1.webp",
+      "bytes": 5104,
+      "offset": [
+        1,
+        -3
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-1-2.webp",
+      "bytes": 5214,
+      "offset": [
+        2,
+        -3
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-1-3.webp",
+      "bytes": 5194,
+      "offset": [
+        3,
+        -3
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-2-0.webp",
+      "bytes": 5204,
+      "offset": [
+        0,
+        -2
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-2-1.webp",
+      "bytes": 5396,
+      "offset": [
+        1,
+        -2
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-2-2.webp",
+      "bytes": 5532,
+      "offset": [
+        0,
+        -2
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-2-3.webp",
+      "bytes": 5264,
+      "offset": [
+        -2,
+        -2
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-3-0.webp",
+      "bytes": 4956,
+      "offset": [
+        0,
+        -2
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-3-1.webp",
+      "bytes": 5230,
+      "offset": [
+        0,
+        -2
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-3-2.webp",
+      "bytes": 4874,
+      "offset": [
+        0,
+        -2
+      ]
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/long-spear-v1/ne-3-3.webp",
+      "bytes": 4620,
+      "offset": [
+        0,
+        -2
+      ]
+    }
+  ],
+  "totalBytes": 326968,
+  "sourcesRemoved": true,
+  "generator": "built-in image_gen",
+  "itemId": 4,
+  "baseItemId": 3
+}

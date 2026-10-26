@@ -1,30 +1,44 @@
 "use client";
-import {useState} from 'react';
-import {CompanionEquipmentPlan} from './CompanionEquipmentPlan';
-import {EquipmentArtGuide} from './EquipmentArtGuide';
+import {useRef,useState} from 'react';
 import Link from 'next/link';
 import {usePathname} from 'next/navigation';
-import data from '../data/items.json';
-import weapons from '../data/weapon-proposals.json';
-import pilots from '../data/item-proposals.json';
-import armor from '../data/armor-proposals.json';
-import accessories from '../data/accessory-proposals.json';
-import consumables from '../data/consumable-proposals.json';
+import {catalog,itemMenus,itemFamily,itemEffects,type ItemMenu} from '../model/itemCatalog';
 import s from './items.module.css';
-const menus=[['weapons','무기'],['armor','방어구'],['accessories','보조'],['treasures','보물'],['consumables','소모품'],['all','전체 원본']];
-// Curated display index; the original equipment slot/category is never changed.
-const treasureIds=new Set([...Array.from({length:17},(_,i)=>21+i),...Array.from({length:9},(_,i)=>44+i),55,56,60,61,62,63,69,...Array.from({length:15},(_,i)=>72+i)]);
-function inMenu(i:typeof data.records[number],menu:string){return menu==='all'||(menu==='treasures'?treasureIds.has(i.id):i.category===({weapons:'무기',armor:'방어구',accessories:'보조구',consumables:'소모품'} as Record<string,string>)[menu]);}
 export function ItemAtlas(){
- const path=usePathname();const menu=path.split('/')[2]||'weapons';
- const [query,setQuery]=useState(''),[job,setJob]=useState('전체');
- const jobs=Array.from(new Set(data.records.flatMap(i=>i.allowedJobs)));
- const proposal=(id:number)=>weapons.records.find(p=>p.originalId===id)||armor.records.find(p=>p.originalId===id)||accessories.records.find(p=>p.originalId===id)||consumables.records.find(p=>p.originalId===id)||pilots.records.find(p=>p.originalId===id);
- const matches=(text:string)=>text.toLowerCase().includes(query.trim().toLowerCase());
- const shown=data.records.filter(i=>inMenu(i,menu)&&(job==='전체'||i.allowedJobs.includes(job))&&matches(`${i.id} ${i.name} ${i.family} ${i.description} ${proposal(i.id)?.name||''} ${proposal(i.id)?.description||''}`));
- const signatures=(menu==='weapons'||menu==='treasures'||menu==='all')&&job==='전체'?weapons.signatures.filter(i=>matches(`${i.name} ${i.owner} ${i.description}`)):[];
- return <section className={s.atlas}><span className={s.eyebrow}>EQUIPMENT · ORIGINAL → OUR WORLD</span><h1>무기와 보물의 기록</h1><p>무기 38개·방어구 15개·보조구 34개·소모품 17개의 한국풍 교체안과 설화 인물 고유 보물 후보 10개를 비교합니다. 이름·외형은 검토용 초안이며 원본 기능과 수치는 유지합니다.</p><div className={s.catalogLayout}><aside className={s.catalogSidebar}><nav aria-label="아이템 종류">{menus.map(([id,label])=><Link key={id} href={`/items/${id}`} aria-current={menu===id?'page':undefined}>{label}<span>{data.records.filter(i=>inMenu(i,id)).length}{id==='weapons'?' + 10':''}</span></Link>)}</nav><small>보물은 희귀·특수 장비를 모은 열람용 분류로, 무기·방어구·보조와 중복됩니다.</small></aside><div className={s.catalogBody}><h2>{menus.find(([id])=>id===menu)?.[1]}</h2><div className={s.notice}>{weapons.boundary}</div>{(menu==='weapons'||menu==='treasures')&&<CompanionEquipmentPlan/>}{(menu==='weapons'||menu==='treasures')&&<EquipmentArtGuide/>}{menu==='armor'&&<section className={s.artGuide}><h2>방어구의 성장과 체형</h2><p>일반 갑옷·옷은 각 3단계 외형과 최대 3강, 보물 9종은 최대 9강 기준입니다. 화려한 외형이 방어력 우위를 뜻하지 않습니다. 원본 수치·옵션은 그대로 유지합니다.</p><h3>동물형 공통 방어구 · 설계 제안</h3><p>가죽 몸통띠 → 누비 덮개 → 비늘 등갑을 공통 외형 후보로 둡니다. 기존 갑옷·옷과 같은 방어구 슬롯을 사용하며 몸통·관절·꼬리의 움직임을 보장하도록 제작합니다. 여울·물결·쇠동의 최종 체형 확정 후 연결할 계획이며, 새 아이템 수치·아이콘·착용 모션은 아직 만들지 않았습니다.</p><p>동료 공용 방어구는 기본 외형 유지, 고유 보물은 별도 외형·이펙트 제작 기준입니다.</p></section>}{menu==='accessories'&&<section className={s.artGuide}><h2>보조 장비 · 기능과 착용 조건</h2><p>방패·마갑·탈것·투구·두건·장갑·서책·보옥 등 34종을 한국풍 창작안으로 비교합니다. 일반 장비는 재질 차이로, 보물은 매듭과 상징 장식으로 구분합니다. 보물 분류에서도 같은 교체안을 표시합니다.</p><p>보조구에 무기·방어구의 3강·9강 규칙을 일괄 적용하지 않습니다. 원본 기능·수치·가격은 보존하며 성장값의 의미와 강화 가능 여부는 별도 확인 대상입니다.</p><p>마갑·투구·수레·보옥은 원본 설명의 병과 조건과 실제 효과 발동 조건을 구분합니다. 동료 10명의 배정은 기획 제안이며, 장착 모습·이펙트·실제 게임 규칙 변경은 이번 작업에 포함하지 않습니다.</p></section>}{menu==='consumables'&&<section className={s.artGuide}><h2>회복·상태 해제·승급·성장</h2><p>회복식과 약, 승급패, 능력치 열매까지 17종의 창작 교체안입니다. 원본 회복량·능력치 증가·가격·사용 조건은 그대로 두며, 장비 강화나 착용 제안은 적용하지 않습니다.</p><p>맑은샘물·솔향기운주는 기존 구현의 MP 회복을 기준으로 설명합니다. 원본 설명의 HP 표기는 아래 원본 자료에 그대로 보존했습니다.</p></section>}<div className={s.filters}><label>아이템 검색<input value={query} onChange={e=>setQuery(e.target.value)} placeholder="원본·교체 이름·설명"/></label><label>원본 착용 가능 병과<select value={job} onChange={e=>setJob(e.target.value)}><option>전체</option>{jobs.map(j=><option key={j}>{j}</option>)}</select></label><button onClick={()=>{setQuery('');setJob('전체')}}>필터 초기화</button></div><p role="status">원본 {shown.length}개{signatures.length>0?` · 고유 보물 제안 ${signatures.length}개`:''}</p>
- <div className={s.grid}>{shown.map(i=>{const p=proposal(i.id);return <article className={s.card} key={i.id}><header><img src={i.image} width={48} height={48} alt={`${i.name} 원본 아이콘`} loading="lazy"/><div><small>원본 #{String(i.id).padStart(3,'0')} · {i.category} / {i.family}</small><h3>{i.name}</h3></div></header>{p?<><div className={s.weaponArt}><a href={p.image} target="_blank" rel="noreferrer" aria-label={`${p.name} 이미지 크게 보기`}><img src={p.image} width={192} height={192} alt={`${p.name} 한국풍 디자인 초안`} loading="lazy"/></a></div><small>변경 후 · 창작 교체안</small><h2>{p.name}</h2><p className={s.description}>{p.description}</p><div className={s.invariant}><b>유지할 기능</b><p>{p.effect}</p></div><p>{p.jobProposal}</p>{p.folklore.length>0&&<details><summary>설화 10명 착용 제안</summary>{p.folklore.map(f=><p key={f.id}><b>{f.name} · {f.status}</b><br/>{f.reason}</p>)}</details>}</>:<><h2>{i.name}</h2><p className={s.description}>{i.description}</p><p>한국풍 교체안 · 다음 제작 대상</p></>}<details><summary>{i.category==='소모품'?'원본 효과·가격 확인':'원본 기능·병과·가격 확인'}</summary><p>{i.description}</p>{(i.category==='무기'||i.category==='방어구')&&<p>강화 한도: {(i.category==='무기'?i.id>=21:i.id>=44)?9:3}강 · 기획 기준</p>}<h3>{i.category==='소모품'?'사용 구분':'원본 착용 허용표'}</h3><p>{i.allowedJobs.length?i.allowedJobs.join(' · '):i.permissionNote}</p><small>{i.permissionNote}</small>{i.category==='보조구'&&<p>강화 가능 여부·한도: 미확정 · 무기·방어구 규칙 자동 적용 안 함</p>}<p>기본값 {i.base} · 성장값 {i.growth} · 효과값 {i.value}</p><p>구매가 {i.purchasePrice===null?'없음':`${i.purchasePrice.toLocaleString()}금`} · 특수효과 {i.special===255?'없음':i.special}</p><small>종류별 의미가 다른 원본 수치입니다. 장비 레벨·전투 중 최종 보정값은 아닙니다.</small><h3>원본 상점 시나리오 ID</h3><p>{i.shopScenarios.length?i.shopScenarios.join(' · '):'상점표에 없음 · 이벤트 입수는 별도 정리 대상'}</p></details></article>})}</div>
- {signatures.length>0&&<section className={s.signatureSection}><h2>설화 동료의 고유 보물 초안</h2><p>원본 38개와 별도의 외형 제안입니다. 기존 물건 이미지는 보물화 전 초안입니다. 상세 능력치·옵션·공용 계열은 위 설계표에서 비교합니다.</p><div className={s.grid}>{signatures.map(i=><article className={s.card} key={i.id}><div className={s.weaponArt}><a href={i.image} target="_blank" rel="noreferrer"><img src={i.image} width={192} height={192} alt={`${i.name} 전용 무기 초안`} loading="lazy"/></a></div><small>{i.owner} · {i.status}</small><h2>{i.name}</h2><p>{i.description}</p><p>{i.effect}</p><small>원본 연결 후보 #{i.referenceId} · {data.records.find(o=>o.id===i.referenceId)?.name}. 장착 모션은 이후 순차 제작.</small></article>)}</div></section>}
- {!shown.length&&!signatures.length&&<p>조건에 맞는 항목이 없습니다. 필터를 초기화해 주세요.</p>}<p className={s.source}>원본 104개: ITEM.E5·IMSG.E5 및 기존 병과 허용표·상점표. 무기 교체안 38개와 설화 전용 외형 10개는 게임용 창작이며, 아이콘과 캐릭터 장착 모션은 별도 자산입니다.</p></div></div></section>
+ const path=usePathname(),key=path.split('/')[2];
+ const menu:ItemMenu=itemMenus.some(([id])=>id===key)?key as ItemMenu:'weapons';
+ return <ItemBrowser key={menu} menu={menu}/>;
+}
+function ItemBrowser({menu}:{menu:ItemMenu}){
+ const [query,setQuery]=useState(''),[family,setFamily]=useState('전체'),[effect,setEffect]=useState('전체');
+ const input=useRef<HTMLInputElement>(null);
+ const items=catalog.filter(i=>i.menu===menu);
+ const families=Array.from(new Set(items.map(itemFamily)));
+ const effects=Array.from(new Set(items.flatMap(itemEffects)));
+ const showKinds=menu==='weapons'||menu==='armor'||menu==='treasures';
+ const showEffects=menu==='accessories'||menu==='consumables'||menu==='treasures';
+ const matchesQuery=(i:typeof items[number])=>`${i.name} ${i.description} ${i.effect}`.toLowerCase().includes(query.trim().toLowerCase());
+ const shown=items.filter(i=>(family==='전체'||itemFamily(i)===family)&&(effect==='전체'||itemEffects(i).includes(effect))&&matchesQuery(i));
+ function group(title:string,values:string[],selected:string,choose:(value:string)=>void,kind:boolean){
+  return <fieldset className={s.filterGroup}><legend>{title}</legend>{['전체',...values].map(value=>{
+   const count=items.filter(i=>matchesQuery(i)&&(kind?(effect==='전체'||itemEffects(i).includes(effect)):(family==='전체'||itemFamily(i)===family))&&(value==='전체'||(kind?itemFamily(i)===value:itemEffects(i).includes(value)))).length;
+   return <button type="button" key={value} aria-pressed={selected===value} onClick={()=>choose(value)}><span>{value}</span><small>{count}</small></button>;
+  })}</fieldset>;
+ }
+ return <section className={s.atlas} aria-label="아이템 목록">
+  <div className={s.itemToolbar}>
+   <nav className={s.itemTabs} aria-label="아이템 분류">{itemMenus.map(([id,title])=><Link key={id} href={`/items/${id}`} aria-current={menu===id?'page':undefined}>{title}</Link>)}</nav>
+   <form className={s.itemSearch} role="search" onSubmit={e=>{e.preventDefault();input.current?.focus()}}>
+    <input ref={input} aria-label="아이템 검색" placeholder="이름 또는 효과 검색" value={query} onChange={e=>setQuery(e.target.value)}/>
+    {query&&<button type="button" aria-label="검색어 지우기" onClick={()=>{setQuery('');input.current?.focus()}}>×</button>}
+    <button type="submit" aria-label="검색"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" aria-hidden="true"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg></button>
+   </form>
+  </div>
+  <div className={s.browseLayout}>
+   <aside className={s.browseSidebar} aria-label="아이템 필터"><div className={s.filterPanel}>
+    {showKinds&&group('장비 종류',families,family,setFamily,true)}
+    {showEffects&&group(menu==='consumables'?'사용 효과':'장비 효과',effects,effect,setEffect,false)}
+   </div></aside>
+   <div className={s.catalogBody}>
+<div className={s.grid}>{shown.map(i=><article className={`${s.card} ${i.menu==='treasures'?s.treasureCard:''}`} key={i.id}><div className={s.itemSummary}><div className={s.itemVisual}><div className={s.itemTop}><span>{i.menu==='treasures'?'보물':i.menu==='consumables'?'소모품':'일반'}</span><small>{i.family}</small></div><a className={s.itemImage} href={i.image} target="_blank" rel="noreferrer" aria-label={`${i.name} 이미지 크게 보기`}><img src={i.image} alt={i.name} width={96} height={96} loading="lazy"/></a></div><div className={s.itemCopy}><h3 className={s.itemName}>{i.name}</h3>{i.draft&&<small className={s.draft}>신규 보물 · 능력치 검토 중</small>}<p className={s.itemDescription}>{i.description}</p></div></div><div className={s.itemDetails}><dl className={s.itemStats}>{i.stats.map(([label,value])=><div key={label}><dt>{label}</dt><dd>{value}</dd></div>)}</dl><div className={s.itemEffect}><h4>효과</h4><p>{i.effect||'추가 효과 없음'}</p></div></div>{i.menu!=='consumables'&&<details className={s.itemWearers}><summary>착용 대상</summary><p>{i.jobs.length?i.jobs.join(' · '):i.draft?`${i.wearers.join(' · ')} 전용`:'병과별 착용 조건 확인 중'}</p>{!i.draft&&i.wearers.length>0&&<p>설화 동료 후보: {i.wearers.join(' · ')}</p>}</details>}<footer className={s.itemPrice}><span>구매 가격</span><b>{i.price===null?'비매품':`${i.price.toLocaleString()}금`}</b></footer></article>)}</div>{shown.length===0&&<div className={s.empty}><h3>찾는 아이템이 없습니다</h3><p>검색어 또는 종류를 변경해 주세요.</p></div>}<p className={s.source}>능력치는 장비의 기본값 기준입니다. 신규 고유 보물의 수치와 착용 대상은 검토 중입니다.</p></div></div></section>;
 }

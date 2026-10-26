@@ -1,0 +1,769 @@
+{
+  "character": "hong-yu",
+  "status": "layer-rig-draft",
+  "canvas": [
+    320,
+    320
+  ],
+  "displayScale": 0.8,
+  "defaultEquipment": {
+    "weapon": 3,
+    "armor": 38,
+    "accessory": -1
+  },
+  "slots": [
+    "weapon",
+    "armor",
+    "accessory"
+  ],
+  "mutuallyExclusiveAccessoryGroups": [
+    "mount",
+    "mountArmor"
+  ],
+  "requiredLayers": [
+    "mountBack",
+    "weaponBack",
+    "mount",
+    "mountArmor",
+    "riderBody",
+    "torsoArmor",
+    "armBack",
+    "weaponFront",
+    "armFront",
+    "effect"
+  ],
+  "firstValidationItems": {
+    "weapons": [
+      3,
+      4
+    ],
+    "armor": [
+      38,
+      39
+    ],
+    "mount": [
+      null,
+      60
+    ],
+    "mountArmor": [
+      57
+    ]
+  },
+  "frames": [
+    {
+      "direction": "se",
+      "action": "idle",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "idle",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "idle",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "idle",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "walk",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "walk",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "walk",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "walk",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "attack",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "attack",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "attack",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "attack",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "skill",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "skill",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "skill",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "se",
+      "action": "skill",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "idle",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "idle",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "idle",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "idle",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "walk",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "walk",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "walk",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "walk",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "attack",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "attack",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "attack",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "attack",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "skill",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "skill",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "skill",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "sw",
+      "action": "skill",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "idle",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "idle",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "idle",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "idle",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "walk",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "walk",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "walk",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "walk",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "attack",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "attack",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "attack",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "attack",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "skill",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "skill",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "skill",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "nw",
+      "action": "skill",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "idle",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "idle",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "idle",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "idle",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "walk",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "walk",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "walk",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "walk",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "attack",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "attack",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "attack",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "attack",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "skill",
+      "frame": 0,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "skill",
+      "frame": 1,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "skill",
+      "frame": 2,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    },
+    {
+      "direction": "ne",
+      "action": "skill",
+      "frame": 3,
+      "handFront": null,
+      "handBack": null,
+      "saddle": null,
+      "ground": null,
+      "layerOrderOverride": null,
+      "status": "anchor-review-needed"
+    }
+  ],
+  "implementation": "model/hongRig.ts",
+  "animationStatus": "joint-transform-draft-not-hand-painted-frames",
+  "frameAnchorTemplateStatus": "unmeasured-future-hand-painted-frames",
+  "renderableAppearanceCombinations": 336,
+  "assetCount": 136,
+  "stances": {
+    "mounted": "joint-motion-draft",
+    "dismounted": "standing-idle-only"
+  },
+  "activeAssetCount": 132,
+  "dismountedBody": "complete-clothed-armor-suit"
+}

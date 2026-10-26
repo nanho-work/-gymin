@@ -1,0 +1,24 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case stylized-concept. REAR VIEW correction sprites. Transparent atlas EXACTLY 2 rows x 4 columns of 8 HEADLESS ARMLESS complete standing armor bodies neck to heels. EVERY figure faces AWAY from viewer toward upper LEFT, northwest 11 o'clock, back-left three-quarter. We see BACK PLATES, rear seam, rear belt plain leather, back skirt, CALVES AND HEELS not toes. NO breast ornament visible, no front buckle, no front collar opening. Neck base back high collar. All eight must face identical northwest like walking away up-left, not front or side. Style bold dark outlined chibi tactical RPG, compact stocky same body proportions, sleeves empty, trousers and boots. Input1 reference armor styles left-to-right row1 leather38, ironleather39, bluesteel40, redgold sun44; input2 row2 gold45, chainmail46, silver47, turquoise scales48. Only carry materials and colors to backs; chest mirrors do NOT appear on backs. Same size aligned soles, generous gutters, no text, no head weapons hands horse. 8 distinct sprites only.",
+  "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f404a303-9171-4f8b-80f0-c3fe3121b251.png",
+  "sourceRemoved": true,
+  "files": [
+    "web/public/images/playable/hong-yu/layers-v1/standing-rear-v2-38-nw.webp",
+    "web/public/images/playable/hong-yu/layers-v1/standing-rear-v2-39-nw.webp",
+    "web/public/images/playable/hong-yu/layers-v1/standing-rear-v2-40-nw.webp",
+    "web/public/images/playable/hong-yu/layers-v1/standing-rear-v2-44-nw.webp",
+    "web/public/images/playable/hong-yu/layers-v1/standing-rear-v2-45-nw.webp",
+    "web/public/images/playable/hong-yu/layers-v1/standing-rear-v2-46-nw.webp",
+    "web/public/images/playable/hong-yu/layers-v1/standing-rear-v2-47-nw.webp",
+    "web/public/images/playable/hong-yu/layers-v1/standing-rear-v2-48-nw.webp"
+  ],
+  "bytes": 44248,
+  "mapping": {
+    "se": "original verified front se",
+    "sw": "front se reflected",
+    "nw": "rear v2 nw",
+    "ne": "rear v2 nw reflected"
+  },
+  "scope": "dismounted armor only"
+}

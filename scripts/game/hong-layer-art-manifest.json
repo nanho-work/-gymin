@@ -1,0 +1,1141 @@
+{
+  "assets": [
+    {
+      "key": "core",
+      "refs": [
+        "/Users/choenamho/Documents/GitHub/-gymin/web/public/images/playable/hong-yu/se-0-0.webp"
+      ],
+      "prompt": "Use case stylized-concept. Production modular sprite parts atlas for the same Korean cavalry rider Hong Yu in reference, compact 2.5D outlined chibi tactical RPG pixels, not a portrait. TRANSPARENT. Exactly 4 columns and 3 rows, 12 separate parts centered in equal spacious grid cells, no labels. Columns consistently directions: southeast front-right, southwest front-left, northwest back-left, northeast back-right. Row1: detached HEAD ONLY including ponytail black/red hair, beard and face matching reference, rear columns show back of head no face. Row2: detached riding LOWER BODY ONLY waist, spread thighs astride invisible horse, brown trousers and dark boots; NO torso/head/horse. Row3: detached bent forward weapon-holding ARM and closed hand ONLY, skin and simple dark wrist wrap, elbow bent, same directions. No weapons, armor or horses anywhere. Each row's parts consistent scale across directions. Opaque clean dark outlines and clear warm highlight, no shadows background. This is a paper doll rig parts sheet.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-9832cd75-1f6d-43b6-9f2f-2565ab0c6966.png"
+    },
+    {
+      "key": "armor-a",
+      "refs": [
+        "/tmp/hong-armor-a-refs.png",
+        "/Users/choenamho/Documents/GitHub/-gymin/web/public/images/playable/hong-yu/se-0-0.webp"
+      ],
+      "prompt": "Use case stylized-concept. Transparent modular equipment sprite sheet. EXACT 4 columns and 4 rows of DETACHED HEADLESS ARMLESS TORSO ARMOR for small chibi cavalry character in image2. These are wearable torso sprites, NOT full characters or catalogue icons. Columns views SE front-right, SW front-left, NW rear-left, NE rear-right. Row1 leather lamellar armor image1 item38, row2 reinforced iron/leather item39, row3 dark blue steel lamellar item40, row4 ornate mirror sun-disc red/gold treasure armor item44. Match referenced materials and decorations. Torso cropped from neck to waist with small skirt tassets, NO head, NO arms hands legs horse weapons. Torso upright in seated riding posture, shoulder sockets, all rows same body dimensions and neck/waist position. Strong dark sprite outlines, muted earthy palette with treasure highlights. Exactly16 separate centered pieces with huge transparent gutters, no text. Symmetric grid 4x4.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-cdcdbe03-a8e6-4554-b83a-3445270d6522.png"
+    },
+    {
+      "key": "armor-b",
+      "refs": [
+        "/tmp/hong-armor-b-refs.png",
+        "/Users/choenamho/Documents/GitHub/-gymin/web/public/images/playable/hong-yu/se-0-0.webp"
+      ],
+      "prompt": "Use case stylized-concept. Transparent modular equipment sprite sheet. EXACT 4 columns and 4 rows DETACHED HEADLESS ARMLESS TORSO ARMOR fitting small chibi cavalry rider image2. Columns directions SE front-right, SW front-left, NW back-left, NE back-right. Row1 treasure gold guardian lamellar item45, row2 chainmail ring armor item46, row3 bright silver ward lamellar item47, row4 turquoise green dragon-scale treasure armor item48, based on image1. Short squat wearable torso only neck to waist with short tassets. NO head arms hands legs horse weapons. Identical neck and waist dimensions across all designs. Gold braid, Korean knots, restrained bright treasure gems. Strong dark outlined tactical RPG sprite style. Exactly16 centered separate pieces uniform4x4grid generous transparent margins. No text.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-61d71299-1357-4444-810c-4ca7fe40d652.png"
+    },
+    {
+      "key": "weapons",
+      "refs": [
+        "/tmp/hong-weapons-refs.png",
+        "/Users/choenamho/Documents/GitHub/-gymin/web/public/images/playable/hong-yu/se-0-0.webp"
+      ],
+      "prompt": "Use case stylized-concept. Transparent modular HELD WEAPON sprite atlas for chibi cavalry rider reference2. EXACT 4 columns and 6 rows, 24 separate long weapons, no hands no character. Column1 SE front right weapon angles from lower-left to upper-right; col2 SW points upper-left; col3 NW back-left points upper-left showing reverse weapon face; col4 NE back-right points upper-right reverse face. Row1 short iron spear item3 simple brown shaft. Row2 long ash spear item4 bronze collar red tassel. Row3 reinforced dark steel spear item5 blue tassel jade small gem. Row4 ornate golden crescent guandao item25 red-blue Korean braided tassels. Row5 long piercing narrow golden spear item26 blue tassel. Row6 ornate hooked branching halberd item27 red tassel. Keep distinctive designs image1. Whole shaft including grip and butt visible, no clipping. All separate centered equal grid cells with wide gutters, four column and six row exact. Dark outlined miniature tactical game art, restrained metallic shines, NO floor/background/text/glow clouds. Standard idle grip axis diagonal 45deg, shafts straight.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ab8715f3-cb22-4191-b2cb-6cde4d45d80c.png"
+    },
+    {
+      "key": "mounts",
+      "refs": [
+        "/tmp/hong-mounts-refs.png",
+        "/Users/choenamho/Documents/GitHub/-gymin/web/public/images/playable/hong-yu/se-0-0.webp"
+      ],
+      "prompt": "Use case stylized-concept. Transparent tactical RPG MOUNT sprite atlas, compact chibi horses matching proportion/style of rider image2. EXACT4columns,5rows (20 horses) with even spacious cells. Directions by column SE front-right, SW front-left, NW back-left, NE back-right. Row1 BASIC plain brown horse simple leather saddle and bridle NO armor NO ornament. Row2 pale cream gold-maned ornate dawn horse item60 reference1 third horse. Row3 dark black violet silver-trim shadow horse item61. Row4 red copper fire-maned red/gold horse item62. Row5 white silver pale turquoise mist horse item63. All horses riderless with exposed empty saddle, same torso dimensions, saddle placement and grounded hoof baseline, compact pony proportion. Four legs clearly visible, standing idle stance. Dark outlines crisp warm painterly pixel sprite style, not photoreal, no characters weapons background shadows text. Exactly20 isolated horses in4x5regulargrid.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-10a0a7a7-47e1-4e96-bac1-dc80ff7cedb8.png"
+    },
+    {
+      "key": "barding",
+      "refs": [
+        "/tmp/hong-mounts-refs.png",
+        "/Users/choenamho/Documents/GitHub/-gymin/web/public/images/playable/hong-yu/se-0-0.webp"
+      ],
+      "prompt": "Use case stylized-concept. Transparent game sprite atlas, exactly4columns2rows eight compact chibi brown horses, NO rider, same plain brown base horse in reference2, complete horse wearing barding. Column views SE front-right, SW front-left, NW back-left, NE back-right. Row1 brown leather horse armor item57 image1 first design; row2 iron plated horse armor item58 image1 second design. Exposed empty saddle with space for rider. Same brown horse identity and size across both armor levels, identical stance and hoof baseline. Only armor changes. Dense dark outlined tactical RPG miniature sprites, no realism, no text no background no cast shadow. Each entire armored horse centered in equal cell with large transparent gutters, no overlap.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-87a986a1-384b-40cc-8309-c06692562f7a.png"
+    },
+    {
+      "key": "armor-a-clean",
+      "prompt": "Use case background-extraction. Remove ALL brown and black background and shadows from this armor atlas. Preserve exactly all16 armor pieces at same positions and size. Return truly transparent RGBA pixels between the pieces, no backdrop, no gradients. Keep all armor outlines, no other changes.",
+      "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f3bded6b-00de-4d50-a71b-b5a49fef27f2.png",
+      "discarded": true
+    }
+  ],
+  "files": [
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/core-head-se.webp",
+      "bytes": 10264,
+      "size": [
+        196,
+        170
+      ],
+      "sheet": "core",
+      "row": 0,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/core-head-sw.webp",
+      "bytes": 10470,
+      "size": [
+        196,
+        171
+      ],
+      "sheet": "core",
+      "row": 0,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/core-head-nw.webp",
+      "bytes": 10216,
+      "size": [
+        196,
+        178
+      ],
+      "sheet": "core",
+      "row": 0,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/core-head-ne.webp",
+      "bytes": 10300,
+      "size": [
+        196,
+        178
+      ],
+      "sheet": "core",
+      "row": 0,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/core-legs-se.webp",
+      "bytes": 8178,
+      "size": [
+        196,
+        150
+      ],
+      "sheet": "core",
+      "row": 1,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/core-legs-sw.webp",
+      "bytes": 8062,
+      "size": [
+        196,
+        147
+      ],
+      "sheet": "core",
+      "row": 1,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/core-legs-nw.webp",
+      "bytes": 7922,
+      "size": [
+        196,
+        144
+      ],
+      "sheet": "core",
+      "row": 1,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/core-legs-ne.webp",
+      "bytes": 7948,
+      "size": [
+        196,
+        144
+      ],
+      "sheet": "core",
+      "row": 1,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/core-arm-se.webp",
+      "bytes": 9830,
+      "size": [
+        190,
+        196
+      ],
+      "sheet": "core",
+      "row": 2,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/core-arm-sw.webp",
+      "bytes": 9898,
+      "size": [
+        190,
+        196
+      ],
+      "sheet": "core",
+      "row": 2,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/core-arm-nw.webp",
+      "bytes": 8204,
+      "size": [
+        196,
+        178
+      ],
+      "sheet": "core",
+      "row": 2,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/core-arm-ne.webp",
+      "bytes": 8476,
+      "size": [
+        196,
+        178
+      ],
+      "sheet": "core",
+      "row": 2,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-38-se.webp",
+      "bytes": 14080,
+      "size": [
+        193,
+        196
+      ],
+      "sheet": "armor-a",
+      "row": 0,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-38-sw.webp",
+      "bytes": 13942,
+      "size": [
+        196,
+        193
+      ],
+      "sheet": "armor-a",
+      "row": 0,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-38-nw.webp",
+      "bytes": 13406,
+      "size": [
+        196,
+        193
+      ],
+      "sheet": "armor-a",
+      "row": 0,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-38-ne.webp",
+      "bytes": 13898,
+      "size": [
+        196,
+        193
+      ],
+      "sheet": "armor-a",
+      "row": 0,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-39-se.webp",
+      "bytes": 13310,
+      "size": [
+        196,
+        191
+      ],
+      "sheet": "armor-a",
+      "row": 1,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-39-sw.webp",
+      "bytes": 14170,
+      "size": [
+        196,
+        190
+      ],
+      "sheet": "armor-a",
+      "row": 1,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-39-nw.webp",
+      "bytes": 14116,
+      "size": [
+        196,
+        194
+      ],
+      "sheet": "armor-a",
+      "row": 1,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-39-ne.webp",
+      "bytes": 14406,
+      "size": [
+        196,
+        190
+      ],
+      "sheet": "armor-a",
+      "row": 1,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-40-se.webp",
+      "bytes": 13222,
+      "size": [
+        196,
+        187
+      ],
+      "sheet": "armor-a",
+      "row": 2,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-40-sw.webp",
+      "bytes": 13506,
+      "size": [
+        196,
+        189
+      ],
+      "sheet": "armor-a",
+      "row": 2,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-40-nw.webp",
+      "bytes": 12940,
+      "size": [
+        196,
+        190
+      ],
+      "sheet": "armor-a",
+      "row": 2,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-40-ne.webp",
+      "bytes": 13398,
+      "size": [
+        196,
+        186
+      ],
+      "sheet": "armor-a",
+      "row": 2,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-44-se.webp",
+      "bytes": 17060,
+      "size": [
+        196,
+        190
+      ],
+      "sheet": "armor-a",
+      "row": 3,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-44-sw.webp",
+      "bytes": 16870,
+      "size": [
+        196,
+        188
+      ],
+      "sheet": "armor-a",
+      "row": 3,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-44-nw.webp",
+      "bytes": 16738,
+      "size": [
+        196,
+        195
+      ],
+      "sheet": "armor-a",
+      "row": 3,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-44-ne.webp",
+      "bytes": 16572,
+      "size": [
+        196,
+        192
+      ],
+      "sheet": "armor-a",
+      "row": 3,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-45-se.webp",
+      "bytes": 16864,
+      "size": [
+        196,
+        184
+      ],
+      "sheet": "armor-b",
+      "row": 0,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-45-sw.webp",
+      "bytes": 17586,
+      "size": [
+        196,
+        193
+      ],
+      "sheet": "armor-b",
+      "row": 0,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-45-nw.webp",
+      "bytes": 16238,
+      "size": [
+        196,
+        182
+      ],
+      "sheet": "armor-b",
+      "row": 0,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-45-ne.webp",
+      "bytes": 16112,
+      "size": [
+        196,
+        182
+      ],
+      "sheet": "armor-b",
+      "row": 0,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-46-se.webp",
+      "bytes": 17800,
+      "size": [
+        196,
+        191
+      ],
+      "sheet": "armor-b",
+      "row": 1,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-46-sw.webp",
+      "bytes": 18032,
+      "size": [
+        194,
+        196
+      ],
+      "sheet": "armor-b",
+      "row": 1,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-46-nw.webp",
+      "bytes": 17582,
+      "size": [
+        196,
+        189
+      ],
+      "sheet": "armor-b",
+      "row": 1,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-46-ne.webp",
+      "bytes": 17452,
+      "size": [
+        196,
+        190
+      ],
+      "sheet": "armor-b",
+      "row": 1,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-47-se.webp",
+      "bytes": 16034,
+      "size": [
+        196,
+        184
+      ],
+      "sheet": "armor-b",
+      "row": 2,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-47-sw.webp",
+      "bytes": 16570,
+      "size": [
+        196,
+        189
+      ],
+      "sheet": "armor-b",
+      "row": 2,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-47-nw.webp",
+      "bytes": 16128,
+      "size": [
+        196,
+        186
+      ],
+      "sheet": "armor-b",
+      "row": 2,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-47-ne.webp",
+      "bytes": 16138,
+      "size": [
+        196,
+        188
+      ],
+      "sheet": "armor-b",
+      "row": 2,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-48-se.webp",
+      "bytes": 17576,
+      "size": [
+        196,
+        192
+      ],
+      "sheet": "armor-b",
+      "row": 3,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-48-sw.webp",
+      "bytes": 17530,
+      "size": [
+        196,
+        194
+      ],
+      "sheet": "armor-b",
+      "row": 3,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-48-nw.webp",
+      "bytes": 16604,
+      "size": [
+        196,
+        192
+      ],
+      "sheet": "armor-b",
+      "row": 3,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/armor-48-ne.webp",
+      "bytes": 16800,
+      "size": [
+        196,
+        193
+      ],
+      "sheet": "armor-b",
+      "row": 3,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-3-se.webp",
+      "bytes": 6282,
+      "size": [
+        196,
+        192
+      ],
+      "sheet": "weapons",
+      "row": 0,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-3-sw.webp",
+      "bytes": 5772,
+      "size": [
+        195,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 0,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-3-nw.webp",
+      "bytes": 5826,
+      "size": [
+        196,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 0,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-3-ne.webp",
+      "bytes": 6354,
+      "size": [
+        193,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 0,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-4-se.webp",
+      "bytes": 7030,
+      "size": [
+        194,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 1,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-4-sw.webp",
+      "bytes": 6596,
+      "size": [
+        188,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 1,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-4-nw.webp",
+      "bytes": 6806,
+      "size": [
+        189,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 1,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-4-ne.webp",
+      "bytes": 6932,
+      "size": [
+        191,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 1,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-5-se.webp",
+      "bytes": 6748,
+      "size": [
+        189,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 2,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-5-sw.webp",
+      "bytes": 6502,
+      "size": [
+        188,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 2,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-5-nw.webp",
+      "bytes": 6630,
+      "size": [
+        176,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 2,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-5-ne.webp",
+      "bytes": 6940,
+      "size": [
+        183,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 2,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-25-se.webp",
+      "bytes": 9284,
+      "size": [
+        183,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 3,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-25-sw.webp",
+      "bytes": 9274,
+      "size": [
+        183,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 3,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-25-nw.webp",
+      "bytes": 8640,
+      "size": [
+        171,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 3,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-25-ne.webp",
+      "bytes": 8742,
+      "size": [
+        180,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 3,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-26-se.webp",
+      "bytes": 7346,
+      "size": [
+        180,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 4,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-26-sw.webp",
+      "bytes": 7016,
+      "size": [
+        179,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 4,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-26-nw.webp",
+      "bytes": 6682,
+      "size": [
+        168,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 4,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-26-ne.webp",
+      "bytes": 7602,
+      "size": [
+        180,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 4,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-27-se.webp",
+      "bytes": 10930,
+      "size": [
+        170,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 5,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-27-sw.webp",
+      "bytes": 10828,
+      "size": [
+        164,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 5,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-27-nw.webp",
+      "bytes": 10248,
+      "size": [
+        147,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 5,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/weapon-27-ne.webp",
+      "bytes": 11114,
+      "size": [
+        162,
+        196
+      ],
+      "sheet": "weapons",
+      "row": 5,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount--1-se.webp",
+      "bytes": 14700,
+      "size": [
+        196,
+        194
+      ],
+      "sheet": "mounts",
+      "row": 0,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount--1-sw.webp",
+      "bytes": 14634,
+      "size": [
+        189,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 0,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount--1-nw.webp",
+      "bytes": 13948,
+      "size": [
+        189,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 0,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount--1-ne.webp",
+      "bytes": 14022,
+      "size": [
+        187,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 0,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-60-se.webp",
+      "bytes": 18538,
+      "size": [
+        183,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 1,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-60-sw.webp",
+      "bytes": 18866,
+      "size": [
+        195,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 1,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-60-nw.webp",
+      "bytes": 18670,
+      "size": [
+        188,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 1,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-60-ne.webp",
+      "bytes": 18264,
+      "size": [
+        176,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 1,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-61-se.webp",
+      "bytes": 15858,
+      "size": [
+        176,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 2,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-61-sw.webp",
+      "bytes": 16204,
+      "size": [
+        190,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 2,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-61-nw.webp",
+      "bytes": 15124,
+      "size": [
+        175,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 2,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-61-ne.webp",
+      "bytes": 14398,
+      "size": [
+        168,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 2,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-62-se.webp",
+      "bytes": 18972,
+      "size": [
+        186,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 3,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-62-sw.webp",
+      "bytes": 19016,
+      "size": [
+        187,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 3,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-62-nw.webp",
+      "bytes": 18802,
+      "size": [
+        184,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 3,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-62-ne.webp",
+      "bytes": 18062,
+      "size": [
+        176,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 3,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-63-se.webp",
+      "bytes": 18284,
+      "size": [
+        183,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 4,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-63-sw.webp",
+      "bytes": 17370,
+      "size": [
+        177,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 4,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-63-nw.webp",
+      "bytes": 17448,
+      "size": [
+        176,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 4,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-63-ne.webp",
+      "bytes": 17350,
+      "size": [
+        168,
+        196
+      ],
+      "sheet": "mounts",
+      "row": 4,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-57-se.webp",
+      "bytes": 13468,
+      "size": [
+        176,
+        196
+      ],
+      "sheet": "barding",
+      "row": 0,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-57-sw.webp",
+      "bytes": 13276,
+      "size": [
+        176,
+        196
+      ],
+      "sheet": "barding",
+      "row": 0,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-57-nw.webp",
+      "bytes": 13578,
+      "size": [
+        184,
+        196
+      ],
+      "sheet": "barding",
+      "row": 0,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-57-ne.webp",
+      "bytes": 14608,
+      "size": [
+        185,
+        196
+      ],
+      "sheet": "barding",
+      "row": 0,
+      "column": 3
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-58-se.webp",
+      "bytes": 14824,
+      "size": [
+        178,
+        196
+      ],
+      "sheet": "barding",
+      "row": 1,
+      "column": 0
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-58-sw.webp",
+      "bytes": 13824,
+      "size": [
+        177,
+        196
+      ],
+      "sheet": "barding",
+      "row": 1,
+      "column": 1
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-58-nw.webp",
+      "bytes": 15070,
+      "size": [
+        184,
+        196
+      ],
+      "sheet": "barding",
+      "row": 1,
+      "column": 2
+    },
+    {
+      "path": "web/public/images/playable/hong-yu/layers-v1/mount-58-ne.webp",
+      "bytes": 15608,
+      "size": [
+        188,
+        196
+      ],
+      "sheet": "barding",
+      "row": 1,
+      "column": 3
+    }
+  ],
+  "totalBytes": 1251358,
+  "generator": "built-in image_gen",
+  "sourcesRemoved": true,
+  "animation": "shared-joint-transform-draft-not-hand-drawn-frames",
+  "removedSources": [
+    "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-ab8715f3-cb22-4191-b2cb-6cde4d45d80c.png",
+    "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-9832cd75-1f6d-43b6-9f2f-2565ab0c6966.png",
+    "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-87a986a1-384b-40cc-8309-c06692562f7a.png",
+    "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-cdcdbe03-a8e6-4554-b83a-3445270d6522.png",
+    "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-61d71299-1357-4444-810c-4ca7fe40d652.png",
+    "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-10a0a7a7-47e1-4e96-bac1-dc80ff7cedb8.png",
+    "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-f3bded6b-00de-4d50-a71b-b5a49fef27f2.png"
+  ],
+  "validation": {
+    "states": 21504,
+    "missingAssets": 0,
+    "outsideCanvas": 0,
+    "build": "passed",
+    "browser": "equipment direction action comparison verified"
+  }
+}

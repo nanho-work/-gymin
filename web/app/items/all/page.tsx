@@ -1,3 +1,2 @@
-import { WorldPage } from "@/features/game-world/pages/WorldPage";
-export const metadata = { title: "전체 아이템 · 산하의 맹약" };
-export default function Page(){return <WorldPage tab="items"/>;}
+import {redirect} from 'next/navigation';
+export default function Page(){redirect('/items/weapons');}

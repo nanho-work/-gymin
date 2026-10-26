@@ -1,0 +1,15 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case stylized-concept. Transparent modular tactical RPG sprite atlas of STANDING LOWER BODY ONLY for same Korean male warrior as reference. Reference is riding legs; change to upright standing legs for dismounted soldier. EXACTLY four separate sprites in a single horizontal row, equal generous cells. In left to right order: southeast front right, southwest front left, northwest rear left, northeast rear right. Brown trousers, dark brown boots, waist sash same as reference. Compact chibi proportions, bold dark outlines, warm earthy pixel-like shading. Each lower body runs from waist to soles, knees relaxed, feet on same baseline, legs straight downward and feet slightly apart naturally standing, NOT straddling or seated. NO head torso arms weapons horse, no letters, no floor or shadows. All four identical scale. Transparent background, large gutters; complete boot soles visible.",
+  "files": [
+    "web/public/images/playable/hong-yu/layers-v1/standing-legs-ne.webp",
+    "web/public/images/playable/hong-yu/layers-v1/standing-legs-nw.webp",
+    "web/public/images/playable/hong-yu/layers-v1/standing-legs-se.webp",
+    "web/public/images/playable/hong-yu/layers-v1/standing-legs-sw.webp"
+  ],
+  "totalBytes": 16256,
+  "source": "/Users/choenamho/.codex/generated_images/01a15a51-88fd-74e2-b95d-1ed30431dd0e/exec-fc093321-90c0-46fe-be27-6b02e559cc59.png",
+  "sourceRemoved": true,
+  "scope": "four-direction standing idle; on-foot walk attack skill not produced",
+  "scenarioIntegration": "stance parameter available; game scenario engine not connected"
+}

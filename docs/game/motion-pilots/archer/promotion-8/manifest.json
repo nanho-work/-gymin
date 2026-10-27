@@ -1,0 +1,1322 @@
+{
+  "jobId": 8,
+  "jobName": "연노병",
+  "baseJobId": 6,
+  "stage": 2,
+  "status": "visual-draft-static-qa-passed-awaiting-integration-review",
+  "modes": {
+    "combat": {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1",
+      "totalFrames": 64,
+      "bytes": 318926
+    },
+    "scenario": {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1",
+      "totalFrames": 16,
+      "bytes": 64176
+    }
+  },
+  "frameSize": [
+    160,
+    160
+  ],
+  "directions": [
+    "nw",
+    "ne",
+    "se",
+    "sw"
+  ],
+  "framesPerAction": 4,
+  "totalFrames": 80,
+  "totalFrameBytes": 383102,
+  "totalBytes": 710206,
+  "anchor": {
+    "x": 80,
+    "footY": 150,
+    "bodyHeightApprox": 112
+  },
+  "ms": {
+    "idle": 320,
+    "move": 170,
+    "attack": 190,
+    "skill": 240,
+    "scenario": 360
+  },
+  "scales": {
+    "ne": 0.4686192468619247,
+    "sw": 0.4418145956607495,
+    "nw": 0.48484848484848486,
+    "se": 0.4043321299638989,
+    "scenario": 0.40875912408759124
+  },
+  "sources": {
+    "ne": "exec-8900a110-4eda-4c3e-ab8f-6963e4d7fb10.png",
+    "sw": "exec-1eead66b-87ce-43ce-aebc-13c21c755239.png",
+    "nw": "exec-b4d94e95-b6be-47df-8fce-b8050f64b83e.png",
+    "se": "exec-b3a59e23-b816-4c7f-b93e-35dc0c9485ea.png",
+    "scenario": "exec-39fc9288-0133-433b-9798-6954ee08d92f.png"
+  },
+  "prompts": {
+    "sw": "undefined\nALL face SOUTHWEST7 o'clock FRONT lower-left. Preserve near LEFT arm crossing IN FRONT of chest from screen-right shoulder to bow at screen-left, far RIGHT hand at cheek and far bent elbow partly hidden. At rest left hand screen-right bow, right empty. Skill raises empty right palm while left holds bow low. Never mirror.",
+    "nw": "Use case: identity-preserve. Transparent 4 columns x4 rows tactical RPG animation sheet. Image1 is APPROVED JOB8 FINAL PROMOTION COSTUME and character identity; image2 POSE/ANATOMY only. Redraw every whole connected pose wearing exact image1 fixed set: same youthful face and slim body, black ponytail; GOLD/BRONZE metal brow circlet with small raised central crown around ponytail base; olive-green and bronze reinforced lamellar armor with GOLD edged shoulder guards, ivory sleeve cuffs, long olive-green gold-trimmed coat panels over ivory/navy inner layers, red belt cords, dark reinforced boots. This is a substantially more armored final rank than leather job7. Approved ornate brown-gold recurved sinew horn bow with jade-green ornament and short DARK BLUE tassel. Back quiver. No crossbow, sword, horse. Do NOT keep base brown vest or bare green cloth shoulders.\nKeep exactly image2's sixteen connected body poses, same body/head scale and handedness. Rows idle/walk/attack/skill. Columns four time frames. LEFT hand always holds ONE bow, RIGHT draws string or empty. Attack nock/draw/release/recover; release has no arrow. Final attack/skill matches first idle. Walk alternating feet, not whole-image sliding. Complete body no parts. Wide transparent gutters15% per cell, figure including bow max65% cell height. Identical foot baseline and body size all16. True transparent (remove gray background), no text grid floor shadow glow.\nALL face NORTHWEST11 o'clock BACK upper-left. Anatomical LEFT arm holds bow at screen-left, RIGHT arm draws at screen-right; preserve all pose-reference geometry.",
+    "se": "Use case: identity-preserve. Transparent 4 columns x4 rows tactical RPG animation sheet. Image1 is APPROVED JOB8 FINAL PROMOTION COSTUME and character identity; image2 POSE/ANATOMY only. Redraw every whole connected pose wearing exact image1 fixed set: same youthful face and slim body, black ponytail; GOLD/BRONZE metal brow circlet with small raised central crown around ponytail base; olive-green and bronze reinforced lamellar armor with GOLD edged shoulder guards, ivory sleeve cuffs, long olive-green gold-trimmed coat panels over ivory/navy inner layers, red belt cords, dark reinforced boots. This is a substantially more armored final rank than leather job7. Approved ornate brown-gold recurved sinew horn bow with jade-green ornament and short DARK BLUE tassel. Back quiver. No crossbow, sword, horse. Do NOT keep base brown vest or bare green cloth shoulders.\nKeep exactly image2's sixteen connected body poses, same body/head scale and handedness. Rows idle/walk/attack/skill. Columns four time frames. LEFT hand always holds ONE bow, RIGHT draws string or empty. Attack nock/draw/release/recover; release has no arrow. Final attack/skill matches first idle. Walk alternating feet, not whole-image sliding. Complete body no parts. Wide transparent gutters15% per cell, figure including bow max65% cell height. Identical foot baseline and body size all16. True transparent (remove gray background), no text grid floor shadow glow.\nALL face SOUTHEAST5 o'clock FRONT lower-right. Anatomical LEFT arm holds bow at screen-right, RIGHT arm draws at screen-left. Preserve exact pose-reference geometry.",
+    "scenario": "Use case: identity-preserve. Transparent 4x4 scenario idle sprite sheet of approved JOB8 final promotion archer. Same slim youthful face/gender black ponytail. GOLD/BRONZE brow circlet with small raised metal central crown; OLIVE-GREEN reinforced lamellar armor and gold/bronze shoulder guards, ivory sleeve cuffs and underskirt, green long coat panels with GOLD edges, red belt cords, dark reinforced boots. Match approved identity and complete costume. NO WEAPONS, no bow, arrows, quiver, weapon harness, scabbards. Both hands EMPTY naturally beside body. Four rows: NW11 BACK upper-left, NE2 BACK upper-right, SE5 FRONT lower-right, SW7 FRONT lower-left. Four columns breathing idle, feet planted, last returns to first. Constant human body/head size and foot baseline all16. Full connected figures only60% each cell height with15% clear transparent margins all sides. No grid text shadows effects. True transparent.",
+    "seOrnament": "Edit ONLY bow ornament continuity in this 4x4 sprite sheet. Every bow in ALL sixteen cells must retain the SAME approved ornate golden-brown horn bow with small JADE GREEN bead and short DARK BLUE tassel. In rows3 and4 columns1,2,3 the raised bows lost that ornament; ADD jade and blue tassel hanging just below the handgrip, attached to bow, following gravity. Match the idle bow decoration, no enlargement. Keep all poses, exactly same arms/hands, crown armor clothes directions sizes, 4x4 layout and transparency unchanged. Do not add another bow, projectile, effects, text, floor, or move any figure. Whole characters remain connected.",
+    "neOrnament": "Edit ONLY bow decoration continuity. In this back-facing NE 4x4 archer sheet, every raised bow in row3 columns1,2,3 needs the SAME small jade-green bead and short dark-blue tassel attached to bow below handgrip as the idle bow. Add them without changing any body or hand anatomy. LEFT far arm remains holding bow upper-right, RIGHT near low-bent arm draws/releases. Preserve all sixteen poses, armor and crown, full connected bodies, exact layout and sizes, transparent background. No extra bow, no effects or labels. Do not change any other cell.",
+    "nwOrnament": "Edit only BOW ORNAMENTS in this 4x4 NW archer sheet. Rows3 and4 columns1,2,3 raised bows must retain the SAME golden-brown ornate bow and a small JADE GREEN bead with short DARK BLUE tassel attached BELOW GRIP. Currently these decorations disappear during attack/skill. Add them clearly but modestly, same size as idle. Preserve every single pose, LEFT bow hand and RIGHT draw hand, back upper-left direction, costume crown body sizes, transparency and grid layout. No extra bow, effects or text."
+  },
+  "reference": "web/public/images/job-models/promotion-se-v1/job-8.webp",
+  "frames": [
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-0-0.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 0,
+      "frame": 0,
+      "bbox": [
+        45,
+        38,
+        109,
+        150
+      ],
+      "bytes": 4606,
+      "sha256": "1d199defe17a1f7cd1ac8c346f38ef1f0cb4a7c91f3897fe6dfa96cf2ceaa574"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-0-1.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 0,
+      "frame": 1,
+      "bbox": [
+        44,
+        38,
+        108,
+        150
+      ],
+      "bytes": 4634,
+      "sha256": "0a353aa237c0cdeb724df2d62077dfb4c05e0304a9017630f989d78fb254d75e"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-0-2.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 0,
+      "frame": 2,
+      "bbox": [
+        44,
+        38,
+        108,
+        150
+      ],
+      "bytes": 4650,
+      "sha256": "e946839d97c12562fa657025d4e9bffe8331710d805b427e69b6f70f35478afb"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-0-3.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 0,
+      "frame": 3,
+      "bbox": [
+        45,
+        38,
+        109,
+        150
+      ],
+      "bytes": 4606,
+      "sha256": "1d199defe17a1f7cd1ac8c346f38ef1f0cb4a7c91f3897fe6dfa96cf2ceaa574"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-1-0.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 1,
+      "frame": 0,
+      "bbox": [
+        42,
+        39,
+        109,
+        150
+      ],
+      "bytes": 4850,
+      "sha256": "cc26c026527cb8fd2550b225af107cc5bc039faec1c13d8ecbd3e964536f9f39"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-1-1.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 1,
+      "frame": 1,
+      "bbox": [
+        43,
+        38,
+        110,
+        150
+      ],
+      "bytes": 4948,
+      "sha256": "a2759eddf48e5006d312e9bc24d7a348065a1a202af99d3f4ff8652770c3105b"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-1-2.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 1,
+      "frame": 2,
+      "bbox": [
+        42,
+        39,
+        109,
+        150
+      ],
+      "bytes": 4742,
+      "sha256": "bd6c28cb1bf9a5b2adbafacb92026d2aa22d017500181d4aa41e2d7f701091ba"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-1-3.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 1,
+      "frame": 3,
+      "bbox": [
+        44,
+        39,
+        113,
+        150
+      ],
+      "bytes": 4812,
+      "sha256": "f86d36a2eb9f896c3cc0156c96ef1dc607f7e02fb55c88dd27115dc246c4ea33"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-2-0.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 2,
+      "frame": 0,
+      "bbox": [
+        28,
+        44,
+        108,
+        150
+      ],
+      "bytes": 5074,
+      "sha256": "457d959d1b7e10d5dcf75cb4f8f307e06172aea35194846d8e015c40bf48f500"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-2-1.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 2,
+      "frame": 1,
+      "bbox": [
+        19,
+        32,
+        110,
+        150
+      ],
+      "bytes": 5524,
+      "sha256": "cee18251dee3a1eb5dbf830fed157fa2f842c7956bcfd9238a1653a081f2d9ff"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-2-2.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 2,
+      "frame": 2,
+      "bbox": [
+        24,
+        40,
+        123,
+        150
+      ],
+      "bytes": 5630,
+      "sha256": "1e7248dec3a3448a1aa60e6e3c862f2e3508ce643b8449c99a3e9c096c9050df"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-2-3.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 2,
+      "frame": 3,
+      "bbox": [
+        45,
+        38,
+        109,
+        150
+      ],
+      "bytes": 4606,
+      "sha256": "1d199defe17a1f7cd1ac8c346f38ef1f0cb4a7c91f3897fe6dfa96cf2ceaa574"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-3-0.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 3,
+      "frame": 0,
+      "bbox": [
+        39,
+        29,
+        109,
+        150
+      ],
+      "bytes": 4906,
+      "sha256": "34530f3cd099c21db4d71ea98efb540bc0d6f92e8bf4c4fa46947f514a646ac9"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-3-1.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 3,
+      "frame": 1,
+      "bbox": [
+        39,
+        28,
+        108,
+        150
+      ],
+      "bytes": 5142,
+      "sha256": "8acd2ae4764950021d3402c3b52eece465889ed0e16a087eb89723765706b1c9"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-3-2.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 3,
+      "frame": 2,
+      "bbox": [
+        35,
+        26,
+        111,
+        150
+      ],
+      "bytes": 5332,
+      "sha256": "02d1b5c83f6dc10ab9f105327c49d25d862f7698a7eaa7a529f5a443f58c4b41"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/nw-3-3.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 3,
+      "frame": 3,
+      "bbox": [
+        45,
+        38,
+        109,
+        150
+      ],
+      "bytes": 4606,
+      "sha256": "1d199defe17a1f7cd1ac8c346f38ef1f0cb4a7c91f3897fe6dfa96cf2ceaa574"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-0-0.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 0,
+      "frame": 0,
+      "bbox": [
+        44,
+        38,
+        109,
+        150
+      ],
+      "bytes": 4488,
+      "sha256": "115c99b7f8a6870f85c98b5bb864091854dc4e46bc20af56b28017d9188b8a57"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-0-1.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 0,
+      "frame": 1,
+      "bbox": [
+        43,
+        38,
+        109,
+        150
+      ],
+      "bytes": 4432,
+      "sha256": "caca57a50c96b2948de63b880fad3e85a22444a4fe85a2254b2d614efb5bde9c"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-0-2.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 0,
+      "frame": 2,
+      "bbox": [
+        44,
+        38,
+        109,
+        150
+      ],
+      "bytes": 4508,
+      "sha256": "16f50b5abdac17f03fee16d3858918ceeec9dd588d98f0909a500383c549dedf"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-0-3.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 0,
+      "frame": 3,
+      "bbox": [
+        44,
+        38,
+        109,
+        150
+      ],
+      "bytes": 4488,
+      "sha256": "115c99b7f8a6870f85c98b5bb864091854dc4e46bc20af56b28017d9188b8a57"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-1-0.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 1,
+      "frame": 0,
+      "bbox": [
+        44,
+        37,
+        116,
+        150
+      ],
+      "bytes": 4538,
+      "sha256": "06d7473a20b68cf212bdd0c0a8b4912eb67042917665b326fd34f9ee0a8a8fc3"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-1-1.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 1,
+      "frame": 1,
+      "bbox": [
+        44,
+        37,
+        116,
+        150
+      ],
+      "bytes": 4684,
+      "sha256": "686a83bb6e1aa06fd27355c838f5bb8211e8afa6eec98bc512c5381e791b9821"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-1-2.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 1,
+      "frame": 2,
+      "bbox": [
+        45,
+        37,
+        112,
+        150
+      ],
+      "bytes": 4542,
+      "sha256": "14dc0cb9746864ed20b4f6e0ac84996749953314e75dea84744cc9e24316c448"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-1-3.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 1,
+      "frame": 3,
+      "bbox": [
+        43,
+        37,
+        116,
+        150
+      ],
+      "bytes": 4646,
+      "sha256": "c95be3675e2fdc55b325338f99c5c915d0464b3e72c173a124a73776228de3bc"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-2-0.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 2,
+      "frame": 0,
+      "bbox": [
+        50,
+        31,
+        126,
+        150
+      ],
+      "bytes": 4882,
+      "sha256": "9555bbdb62c082e8ec050dcad6761e701a71dda9995ce8c4bf83b75901b444a2"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-2-1.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 2,
+      "frame": 1,
+      "bbox": [
+        51,
+        29,
+        136,
+        150
+      ],
+      "bytes": 5468,
+      "sha256": "60a1940287ee88565378d721dcb1d27d6e41aa5de8311006e842bf7e276eb1af"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-2-2.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 2,
+      "frame": 2,
+      "bbox": [
+        49,
+        22,
+        129,
+        150
+      ],
+      "bytes": 5436,
+      "sha256": "bccfe4c2450eaaf95fa4bed6179a3750ccd4f0ff479b5af16bb1bb69c3a940d6"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-2-3.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 2,
+      "frame": 3,
+      "bbox": [
+        44,
+        38,
+        109,
+        150
+      ],
+      "bytes": 4488,
+      "sha256": "115c99b7f8a6870f85c98b5bb864091854dc4e46bc20af56b28017d9188b8a57"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-3-0.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 3,
+      "frame": 0,
+      "bbox": [
+        42,
+        42,
+        118,
+        150
+      ],
+      "bytes": 4684,
+      "sha256": "820a0627ac4c81f2c7b3fd38998a1d237f7b83f8fa1f4f50b64d541ee22db175"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-3-1.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 3,
+      "frame": 1,
+      "bbox": [
+        39,
+        38,
+        120,
+        150
+      ],
+      "bytes": 5174,
+      "sha256": "13f7fa6c339626da9b65310aae979dba7708479424540cb8cd66694b679f67ec"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-3-2.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 3,
+      "frame": 2,
+      "bbox": [
+        41,
+        35,
+        118,
+        150
+      ],
+      "bytes": 5012,
+      "sha256": "3a0345980c19a209773143e64c9ca110d7a1ba66e7eb0aefb8a7afe13ac5ad66"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/ne-3-3.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 3,
+      "frame": 3,
+      "bbox": [
+        44,
+        38,
+        109,
+        150
+      ],
+      "bytes": 4488,
+      "sha256": "115c99b7f8a6870f85c98b5bb864091854dc4e46bc20af56b28017d9188b8a57"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-0-0.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 0,
+      "frame": 0,
+      "bbox": [
+        52,
+        38,
+        125,
+        150
+      ],
+      "bytes": 4574,
+      "sha256": "3f2fd07ae96c81430f7ec742712c048d235b0dc4ac8fb0380b77fb754a66b35e"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-0-1.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 0,
+      "frame": 1,
+      "bbox": [
+        53,
+        38,
+        125,
+        150
+      ],
+      "bytes": 4662,
+      "sha256": "290277ca068c17db97b5af2255ba8f93513b77b00611c0920ed319d098cd2e80"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-0-2.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 0,
+      "frame": 2,
+      "bbox": [
+        53,
+        38,
+        125,
+        150
+      ],
+      "bytes": 4618,
+      "sha256": "eb9d1307e4630843dfa1cd9423ac0a840702db7743e320aba15b6139217eb9f4"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-0-3.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 0,
+      "frame": 3,
+      "bbox": [
+        52,
+        38,
+        125,
+        150
+      ],
+      "bytes": 4574,
+      "sha256": "3f2fd07ae96c81430f7ec742712c048d235b0dc4ac8fb0380b77fb754a66b35e"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-1-0.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 1,
+      "frame": 0,
+      "bbox": [
+        53,
+        47,
+        124,
+        150
+      ],
+      "bytes": 4548,
+      "sha256": "40bf068b548e890968a4afa0e4e445af07c7ca5be6cdf208e911d43a8c60561d"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-1-1.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 1,
+      "frame": 1,
+      "bbox": [
+        51,
+        47,
+        124,
+        150
+      ],
+      "bytes": 4384,
+      "sha256": "a9f10d11cdec4436781fe2147874241d410f7470bcefaeb9dc7f01d2f13a8baf"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-1-2.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 1,
+      "frame": 2,
+      "bbox": [
+        54,
+        46,
+        124,
+        150
+      ],
+      "bytes": 4576,
+      "sha256": "250eda43ecb831ee5662af543ca4ab61a28f7befb25bca55144e8f9a6c446f19"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-1-3.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 1,
+      "frame": 3,
+      "bbox": [
+        50,
+        47,
+        120,
+        150
+      ],
+      "bytes": 4258,
+      "sha256": "9ecf77a0fa0ca727ea0d6dee3693a5b97da25c10bd9219edc5fe1fcef7b91ef9"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-2-0.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 2,
+      "frame": 0,
+      "bbox": [
+        50,
+        50,
+        123,
+        150
+      ],
+      "bytes": 4874,
+      "sha256": "48c79d0097aa7339fcbbb49bacdd637c87210b4ea193305bdf92bafd160d52a3"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-2-1.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 2,
+      "frame": 1,
+      "bbox": [
+        44,
+        45,
+        124,
+        150
+      ],
+      "bytes": 5034,
+      "sha256": "a62dfd9ea1d8405a0cdf772c5464de471b5a7cf5d8c807ef5e10d7f5203ad81a"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-2-2.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 2,
+      "frame": 2,
+      "bbox": [
+        33,
+        46,
+        121,
+        150
+      ],
+      "bytes": 5136,
+      "sha256": "838e5ace12c5e07e18e4cfe92529084fd1e23dee6577877306f3aeac8b60336b"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-2-3.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 2,
+      "frame": 3,
+      "bbox": [
+        52,
+        38,
+        125,
+        150
+      ],
+      "bytes": 4574,
+      "sha256": "3f2fd07ae96c81430f7ec742712c048d235b0dc4ac8fb0380b77fb754a66b35e"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-3-0.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 3,
+      "frame": 0,
+      "bbox": [
+        50,
+        41,
+        116,
+        150
+      ],
+      "bytes": 4628,
+      "sha256": "353b708f7a658d01171a45e0d2d8449b57a3d6b0710cfea835c8f975415afa44"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-3-1.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 3,
+      "frame": 1,
+      "bbox": [
+        48,
+        43,
+        120,
+        150
+      ],
+      "bytes": 4772,
+      "sha256": "af5388115937af3515e7013ccbd29f367883b138edbc608eb97ff07c166f3247"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-3-2.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 3,
+      "frame": 2,
+      "bbox": [
+        48,
+        40,
+        119,
+        150
+      ],
+      "bytes": 4688,
+      "sha256": "bc3af97ca83cc573c5f56a7507b57cffe5a33150676bb80022f4fddee052603c"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/se-3-3.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 3,
+      "frame": 3,
+      "bbox": [
+        52,
+        38,
+        125,
+        150
+      ],
+      "bytes": 4574,
+      "sha256": "3f2fd07ae96c81430f7ec742712c048d235b0dc4ac8fb0380b77fb754a66b35e"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-0-0.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 0,
+      "frame": 0,
+      "bbox": [
+        55,
+        38,
+        129,
+        150
+      ],
+      "bytes": 5244,
+      "sha256": "f9aec9f93ba29ac82375b245b95f7f72e4352248c8a6f775fee92d44eaa5f478"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-0-1.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 0,
+      "frame": 1,
+      "bbox": [
+        53,
+        38,
+        129,
+        150
+      ],
+      "bytes": 5246,
+      "sha256": "1c30a80de21734b82983df58efa2ce1fd540453cde26f57b16c43f1ee4a2c06b"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-0-2.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 0,
+      "frame": 2,
+      "bbox": [
+        53,
+        38,
+        129,
+        150
+      ],
+      "bytes": 5294,
+      "sha256": "5d615980a7854200776e8fcf311d72ff49fb94bb119c1855ca81e965771ed44c"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-0-3.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 0,
+      "frame": 3,
+      "bbox": [
+        55,
+        38,
+        129,
+        150
+      ],
+      "bytes": 5244,
+      "sha256": "f9aec9f93ba29ac82375b245b95f7f72e4352248c8a6f775fee92d44eaa5f478"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-1-0.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 1,
+      "frame": 0,
+      "bbox": [
+        55,
+        40,
+        132,
+        150
+      ],
+      "bytes": 5392,
+      "sha256": "efc7cf7e26cfa6e4e01caf447138f55c144df22cdb4080a9a49c43ab937981ea"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-1-1.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 1,
+      "frame": 1,
+      "bbox": [
+        51,
+        39,
+        127,
+        150
+      ],
+      "bytes": 5538,
+      "sha256": "827f18e1f932b4eaec328369173ec7b48437a38ee59a7b9fa5190e7ba19213d4"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-1-2.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 1,
+      "frame": 2,
+      "bbox": [
+        50,
+        40,
+        131,
+        150
+      ],
+      "bytes": 5632,
+      "sha256": "6f531495fbc2707cc5ca22601249e5afe6212867b8f04de77bc56236bd8a41f3"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-1-3.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 1,
+      "frame": 3,
+      "bbox": [
+        55,
+        40,
+        133,
+        150
+      ],
+      "bytes": 5446,
+      "sha256": "33113e1cadc3e3490cabb080731359d993f4671609fd7ccc99a0e3b420ac6182"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-2-0.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 2,
+      "frame": 0,
+      "bbox": [
+        37,
+        36,
+        124,
+        150
+      ],
+      "bytes": 6074,
+      "sha256": "61f46e2f7a5a3f788d30e58e7131966dedfe4de0fd4c1e86c2ea13576c5654f0"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-2-1.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 2,
+      "frame": 1,
+      "bbox": [
+        28,
+        30,
+        123,
+        150
+      ],
+      "bytes": 6378,
+      "sha256": "a4ed8849d4edcb47b7f105b27f7676d497798dbcdcad4c90855146d186cb8c01"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-2-2.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 2,
+      "frame": 2,
+      "bbox": [
+        28,
+        33,
+        128,
+        150
+      ],
+      "bytes": 6758,
+      "sha256": "cab204df5a6bf2353330ea2c78170c7d1fb19cc8b8f0e4cf571531a85625f290"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-2-3.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 2,
+      "frame": 3,
+      "bbox": [
+        55,
+        38,
+        129,
+        150
+      ],
+      "bytes": 5244,
+      "sha256": "f9aec9f93ba29ac82375b245b95f7f72e4352248c8a6f775fee92d44eaa5f478"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-3-0.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 3,
+      "frame": 0,
+      "bbox": [
+        44,
+        45,
+        133,
+        150
+      ],
+      "bytes": 5420,
+      "sha256": "923893a95b4164d253f728cfc51a7eb5b89db9945f417f8387bf1743b708630a"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-3-1.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 3,
+      "frame": 1,
+      "bbox": [
+        44,
+        44,
+        134,
+        150
+      ],
+      "bytes": 5790,
+      "sha256": "2e40b8d71cea01150e643cbe125ba192691083f1e3aed08e4f29f37fd9f28b33"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-3-2.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 3,
+      "frame": 2,
+      "bbox": [
+        43,
+        44,
+        134,
+        150
+      ],
+      "bytes": 5882,
+      "sha256": "4fd90025ba03bfd9986799c0fdb3aaca4acf8ca2bce5e314dab85c2848a8eeed"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/combat-v1/sw-3-3.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 3,
+      "frame": 3,
+      "bbox": [
+        55,
+        38,
+        129,
+        150
+      ],
+      "bytes": 5244,
+      "sha256": "f9aec9f93ba29ac82375b245b95f7f72e4352248c8a6f775fee92d44eaa5f478"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/nw-0-0.webp",
+      "mode": "scenario",
+      "direction": "nw",
+      "action": 0,
+      "frame": 0,
+      "bbox": [
+        60,
+        39,
+        112,
+        150
+      ],
+      "bytes": 3880,
+      "sha256": "6f18d7c1585a78a527ac8821f4f868bbe7e2987ff692beb5686043784b94b705"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/nw-0-1.webp",
+      "mode": "scenario",
+      "direction": "nw",
+      "action": 0,
+      "frame": 1,
+      "bbox": [
+        61,
+        39,
+        112,
+        150
+      ],
+      "bytes": 3820,
+      "sha256": "71f6cbbdf182e479f637a55de73f4f17bc227b0cfb4e803fd4c0fd78b116b0be"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/nw-0-2.webp",
+      "mode": "scenario",
+      "direction": "nw",
+      "action": 0,
+      "frame": 2,
+      "bbox": [
+        60,
+        39,
+        112,
+        150
+      ],
+      "bytes": 3824,
+      "sha256": "193adf01f966074bf189e7e61fe11ce9af25448238846c9b017387654a19c2d4"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/nw-0-3.webp",
+      "mode": "scenario",
+      "direction": "nw",
+      "action": 0,
+      "frame": 3,
+      "bbox": [
+        60,
+        39,
+        112,
+        150
+      ],
+      "bytes": 3880,
+      "sha256": "6f18d7c1585a78a527ac8821f4f868bbe7e2987ff692beb5686043784b94b705"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/ne-0-0.webp",
+      "mode": "scenario",
+      "direction": "ne",
+      "action": 0,
+      "frame": 0,
+      "bbox": [
+        47,
+        38,
+        99,
+        150
+      ],
+      "bytes": 3878,
+      "sha256": "a1ccf99704eb26d2ded6b5015b9166d0d9d4277a559c114c83e5e8c54fcf4d9e"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/ne-0-1.webp",
+      "mode": "scenario",
+      "direction": "ne",
+      "action": 0,
+      "frame": 1,
+      "bbox": [
+        50,
+        39,
+        100,
+        150
+      ],
+      "bytes": 3768,
+      "sha256": "1b2de425d80bb550352de44ee64f47e17f7950dd0d854bf5a8c8e44ac9f86a98"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/ne-0-2.webp",
+      "mode": "scenario",
+      "direction": "ne",
+      "action": 0,
+      "frame": 2,
+      "bbox": [
+        48,
+        39,
+        100,
+        150
+      ],
+      "bytes": 3820,
+      "sha256": "5d97dab7875fa10eb275a845817043b3cd0e536ef09d6dab53e57c99c70b22d0"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/ne-0-3.webp",
+      "mode": "scenario",
+      "direction": "ne",
+      "action": 0,
+      "frame": 3,
+      "bbox": [
+        47,
+        38,
+        99,
+        150
+      ],
+      "bytes": 3878,
+      "sha256": "a1ccf99704eb26d2ded6b5015b9166d0d9d4277a559c114c83e5e8c54fcf4d9e"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/se-0-0.webp",
+      "mode": "scenario",
+      "direction": "se",
+      "action": 0,
+      "frame": 0,
+      "bbox": [
+        49,
+        38,
+        104,
+        150
+      ],
+      "bytes": 4228,
+      "sha256": "53e8277580ad4c3023f5b78a94ca35d3eacaf547648c7b12efed280a5e78d8bf"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/se-0-1.webp",
+      "mode": "scenario",
+      "direction": "se",
+      "action": 0,
+      "frame": 1,
+      "bbox": [
+        50,
+        38,
+        103,
+        150
+      ],
+      "bytes": 4112,
+      "sha256": "67dc2832f98452a58f701da609b7ed35cd4ae494c4464c7541b544fda648da5c"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/se-0-2.webp",
+      "mode": "scenario",
+      "direction": "se",
+      "action": 0,
+      "frame": 2,
+      "bbox": [
+        49,
+        37,
+        103,
+        150
+      ],
+      "bytes": 4216,
+      "sha256": "30a5b8eb0c927cfe8b49265d513e08248ce845017243a1ffa649c81fef47d637"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/se-0-3.webp",
+      "mode": "scenario",
+      "direction": "se",
+      "action": 0,
+      "frame": 3,
+      "bbox": [
+        49,
+        38,
+        104,
+        150
+      ],
+      "bytes": 4228,
+      "sha256": "53e8277580ad4c3023f5b78a94ca35d3eacaf547648c7b12efed280a5e78d8bf"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/sw-0-0.webp",
+      "mode": "scenario",
+      "direction": "sw",
+      "action": 0,
+      "frame": 0,
+      "bbox": [
+        57,
+        38,
+        111,
+        150
+      ],
+      "bytes": 4124,
+      "sha256": "f849a5955fa90a83bbcb8a9acdb10126410899e133591c673b3fdb6e84148998"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/sw-0-1.webp",
+      "mode": "scenario",
+      "direction": "sw",
+      "action": 0,
+      "frame": 1,
+      "bbox": [
+        57,
+        38,
+        111,
+        150
+      ],
+      "bytes": 4192,
+      "sha256": "18f1b816c38ad54eba5a0b027ed8d8326897a5aed66ec832b5e2549bae260bce"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/sw-0-2.webp",
+      "mode": "scenario",
+      "direction": "sw",
+      "action": 0,
+      "frame": 2,
+      "bbox": [
+        57,
+        38,
+        111,
+        150
+      ],
+      "bytes": 4204,
+      "sha256": "53a9e35b3f125bd0c6e770dfb92a83f5a343772567f9e5e5d7f246bcd28ee2e8"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/archer/job-8/scenario-v1/sw-0-3.webp",
+      "mode": "scenario",
+      "direction": "sw",
+      "action": 0,
+      "frame": 3,
+      "bbox": [
+        57,
+        38,
+        111,
+        150
+      ],
+      "bytes": 4124,
+      "sha256": "f849a5955fa90a83bbcb8a9acdb10126410899e133591c673b3fdb6e84148998"
+    }
+  ],
+  "limitations": [
+    "완성 프레임 시각 초안으로 사용자 최종 승인 및 실제 게임 동작 재현 완료가 아니다.",
+    "실제 사이트 연속 재생 및 모바일 실기기 검수 미진행. 정적 시간순 비교와 WebP 디코딩/시간 검사를 구분한다.",
+    "머리카락·자락·활 곡률·장식의 미세한 프레임 변화가 남는다. 동일 손·대표 무기·복식 세트의 큰 형태를 검수했으며 픽셀 단위 동일성은 보장하지 않는다.",
+    "4프레임의 release(2)→recover(3) 자세 변화는 크다. recover→idle/prepare 연결을 검사했으며 보간 프레임을 추가한 것은 아니다.",
+    "SW 공격은 대기보다 측면으로 상체가 회전한다. NE/SW 스킬은 빈 오른손 명령, NW/SE는 활을 드는 시각 동작이며 실제 스킬 판정과 무관하다.",
+    "사이트 UI/공통 데이터/전투 판정/수치/빌드는 수정하지 않았다. 포차·쇠약·다른 병과는 범위 밖이다."
+  ],
+  "validation": {
+    "sizeAlphaEdgesBaseline": "80/80 pass",
+    "exactIdleScenarioLoop": "8/8 pass",
+    "exactAttackSkillRecovery": "8/8 pass",
+    "sourceAndFinalContactSheets": "5/5 reviewed; all80 frames",
+    "directionAndHands": "NW/NE back,SE/SW front; left bow/right draw inspected; no mirroring",
+    "bodyWeaponConnectivity": "complete generated frames; no limb compositing; no extra bow or adjacent-cell fragment observed",
+    "scenario": "16 empty-hand frames; no bow/quiver/scabbard",
+    "walkLoop3to0": "static temporal inspection; alternating leg poses, fixed baseline",
+    "animations": "5x4 frames decoded;320/170/190/240/360ms verified",
+    "fileIntegrity": "80 sizes and SHA256 verified",
+    "runtimePlayback": "not performed; prior local-file browser policy block, not bypassed"
+  },
+  "largeOriginalsRemoved": true,
+  "generatedAt": "2026-10-27",
+  "weapon": "힘줄각궁",
+  "referenceSha256": "10d6e34e2ffde7abc73385b0254fc87cfbb6d17dbe8dca55d31fde9a02cec2fe",
+  "unresolvedIssues": [],
+  "resolvedIssues": [
+    "SW 최초 생성에서 이동·공격 행과 관모가 누락되어 채택하지 않았다. 검수된 노병 SW 시트의 전체 자세를 유지하며 승인 연노병 복식·관모·활로 재생성했다.",
+    "NE 공격0~2 및 NW/SE 공격·스킬0~2의 옥 장식과 푸른 술 누락을 image_gen 편집으로 복원했다.",
+    "시나리오 원화의 첫 행은NE,둘째 행은NW였으므로 실제 방향으로 파일명을 배정했다. 이미지 좌우반전 없음.",
+    "NW 원화 action3-frame3의 발끝 경계 접촉을 검사에서 발견했다. 그 칸은 분리 대상에서 제외하고 같은 방향의 완전한 대기0 전체 프레임을 사용했다. 최종 nw-3-3.webp는 nw-0-0.webp와 바이트 동일하다."
+  ],
+  "scenarioSourceRowDirections": [
+    "ne",
+    "nw",
+    "se",
+    "sw"
+  ],
+  "removedOriginalCount": 9,
+  "removedOriginalBytes": 10931027,
+  "removedOriginals": [
+    "exec-27050b7a-9187-4678-8450-a3fbe088c019.png",
+    "exec-680a1112-8fae-414a-bfda-1b4dc16719a7.png",
+    "exec-47db5687-0c90-40a4-a4e2-3c3c5ecdc733.png",
+    "exec-045878fd-b024-4307-92ba-bb0bc627b500.png",
+    "exec-1eead66b-87ce-43ce-aebc-13c21c755239.png",
+    "exec-39fc9288-0133-433b-9798-6954ee08d92f.png",
+    "exec-b3a59e23-b816-4c7f-b93e-35dc0c9485ea.png",
+    "exec-8900a110-4eda-4c3e-ab8f-6963e4d7fb10.png",
+    "exec-b4d94e95-b6be-47df-8fce-b8050f64b83e.png"
+  ]
+}

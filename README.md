@@ -281,3 +281,23 @@ Next.js + React + TypeScript. 화면 구현은 `web/src/features/game-world/page
 
 
 문서 기반 86명 초상화 제작 완료: [프롬프트·결과](docs/game/planned-portraits86-v1.md). 인물 설정은 제안, 초상화는 적용 상태로 구분한다.
+
+왕건 기본 장비 모션: [제작 범위·접점·프롬프트](docs/game/wang-geon-motion-v1.md). 4방향 탑승/하마 관절 초안, 승급·장비 교체는 후속.
+
+왕건 기본 모션은 색면 단순화 base-v2를 사용합니다. 기존 자세·동작과 공통 말은 유지합니다.
+
+[병과별 5시 방향 완성 모델](docs/game/job-models-se-v1.md): 27 / 160px WebP.
+
+[설화10명 정지 모델 및 특수병과4종 외형 연결](docs/game/folklore-se-models-v1.md).
+
+승급 13계열·26장 완성 정지 모델: [제작 기록](docs/game/promotion-models-se-v1.md) — 개별 장비 외형 교체 대신 승급 고정 세트를 사용한다.
+
+왕건 기본 탑승 완성 프레임64장 및 병과별 모션 제작 전달 규격: [제작 문서](docs/game/wang-geon-full-frame-v1.md). 사용자 검토 전 기준 초안이며 승급·하마 모션은 미제작.
+
+[Wang scenario and weakened motion](docs/game/wang-scenario-weakened-v1.md)
+
+Class motion pilots: /characters, ClassMotionGallery. Cavalry96 + infantry80 + archer80 + caster80 = 336 WebP frames (1,408,472 bytes). Review limitations from docs/game/motion-pilots/*/manifest.json are displayed alongside previews. Drafts only; promotion and battle logic unchanged.
+
+2026-10-27: Four pilot classes now use corrected combat-v2. Caster retains unchanged scenario-v1; other scenario sets use v2, cavalry weakened-v2. Manifest limitations remain visible. Eight promotion stages dispatched to four production chats; not integrated until reviewed.
+
+2026-10-27: /characters motion comparison includes three ranks for cavalry, infantry, archer and caster. 672 promotion frames (3,090,972 bytes), plus336 base frames. Known limitations displayed per rank; visual drafts, not battle logic implementation.

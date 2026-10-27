@@ -42,7 +42,8 @@
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/mongdang-concept-v1.webp",
       "portrait": "/images/folklore/mongdang-portrait-v2.webp",
-      "motion": "mongdang-motion-v2"
+      "motion": "mongdang-motion-v2",
+      "staticModel": "/images/folklore/se-model-v1/spirit-18.webp"
     },
     {
       "id": 24,
@@ -68,7 +69,9 @@
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/sageum-concept-v1.webp",
       "portrait": "/images/folklore/sageum-portrait-v2.webp",
-      "motion": "sageum-motion-v2"
+      "motion": "sageum-motion-v2",
+      "staticModel": "/images/folklore/se-model-v1/spirit-24.webp",
+      "replacementModelJobId": 50
     },
     {
       "id": 25,
@@ -94,7 +97,8 @@
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/mangsil-concept-v1.webp",
       "portrait": "/images/folklore/mangsil-portrait-v2.webp",
-      "motion": "mangsil-motion-v2"
+      "motion": "mangsil-motion-v2",
+      "staticModel": "/images/folklore/se-model-v1/spirit-25.webp"
     },
     {
       "id": 1001,
@@ -120,7 +124,8 @@
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/bulssi-concept-v1.webp",
       "portrait": "/images/folklore/bulssi-portrait-v2.webp",
-      "motion": "bulssi-motion-v2"
+      "motion": "bulssi-motion-v2",
+      "staticModel": "/images/folklore/se-model-v1/spirit-1001.webp"
     },
     {
       "id": 1002,
@@ -146,7 +151,9 @@
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/kungdol-concept-v1.webp",
       "portrait": "/images/folklore/kungdol-portrait-v2.webp",
-      "motion": "kungdol-motion-v2"
+      "motion": "kungdol-motion-v2",
+      "staticModel": "/images/folklore/se-model-v1/spirit-1002.webp",
+      "replacementModelJobId": 43
     },
     {
       "id": 1003,
@@ -172,7 +179,8 @@
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/yeoul-concept-v1.webp",
       "portrait": "/images/folklore/yeoul-portrait-v2.webp",
-      "motion": "yeoul-motion-v2"
+      "motion": "yeoul-motion-v2",
+      "staticModel": "/images/folklore/se-model-v1/spirit-1003.webp"
     },
     {
       "id": 1004,
@@ -198,7 +206,8 @@
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/mulgyeol-concept-v1.webp",
       "portrait": "/images/folklore/mulgyeol-portrait-v2.webp",
-      "motion": "mulgyeol-motion-v2"
+      "motion": "mulgyeol-motion-v2",
+      "staticModel": "/images/folklore/se-model-v1/spirit-1004.webp"
     },
     {
       "id": 1005,
@@ -224,7 +233,8 @@
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/sodam-concept-v1.webp",
       "portrait": "/images/folklore/sodam-portrait-v2.webp",
-      "motion": "sodam-motion-v2"
+      "motion": "sodam-motion-v2",
+      "staticModel": "/images/folklore/se-model-v1/spirit-1005.webp"
     },
     {
       "id": 1006,
@@ -250,7 +260,9 @@
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/soedong-concept-v1.webp",
       "portrait": "/images/folklore/soedong-portrait-v2.webp",
-      "motion": "soedong-motion-v2"
+      "motion": "soedong-motion-v2",
+      "staticModel": "/images/folklore/se-model-v1/spirit-1006.webp",
+      "replacementModelJobId": 42
     },
     {
       "id": 1007,
@@ -276,7 +288,9 @@
       "join": "개인 임무를 통한 선택 영입 · 구체적인 장·연도 미정",
       "image": "/images/folklore/gilmok-concept-v1.webp",
       "portrait": "/images/folklore/gilmok-portrait-v2.webp",
-      "motion": "gilmok-motion-v2"
+      "motion": "gilmok-motion-v2",
+      "staticModel": "/images/folklore/se-model-v1/spirit-1007.webp",
+      "replacementModelJobId": 49
     }
   ],
   "learning": [

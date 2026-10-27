@@ -1,0 +1,2079 @@
+{
+  "jobId": 10,
+  "jobName": "중기병",
+  "baseJobId": 9,
+  "stage": 1,
+  "status": "draft-with-known-limitations",
+  "modes": {
+    "combat": {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1",
+      "frames": 64,
+      "publicUrl": "/images/class-motion-pilot/cavalry/job-10/combat-v1",
+      "bytes": 364336,
+      "filenamePattern": "{direction}-{action}-{frame}.webp"
+    },
+    "scenario": {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1",
+      "frames": 16,
+      "publicUrl": "/images/class-motion-pilot/cavalry/job-10/scenario-v1",
+      "bytes": 50590,
+      "filenamePattern": "{direction}-{action}-{frame}.webp"
+    },
+    "weakened": {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1",
+      "frames": 16,
+      "publicUrl": "/images/class-motion-pilot/cavalry/job-10/weakened-v1",
+      "bytes": 83062,
+      "filenamePattern": "{direction}-{action}-{frame}.webp"
+    }
+  },
+  "frameSize": [
+    160,
+    160
+  ],
+  "directions": [
+    "nw",
+    "ne",
+    "se",
+    "sw"
+  ],
+  "framesPerAction": 4,
+  "totalFrames": 96,
+  "totalBytes": 497988,
+  "previewBytes": 722334,
+  "groundY": 150,
+  "technical": {
+    "combat:se": {
+      "scale": 0.4413793103448276,
+      "fitAdjustment": 1,
+      "idleHeight": [
+        128,
+        128,
+        130,
+        128
+      ]
+    },
+    "combat:nw": {
+      "scale": 0.45016077170418006,
+      "fitAdjustment": 0.9882435691318329,
+      "idleHeight": [
+        126,
+        127,
+        128,
+        125
+      ]
+    },
+    "combat:ne": {
+      "scale": 0.46204620462046203,
+      "fitAdjustment": 0.9601897689768977,
+      "idleHeight": [
+        127,
+        126,
+        126,
+        127
+      ],
+      "finalWholeFrameScale": 1.0406504065040652
+    },
+    "combat:sw": {
+      "scale": 0.43389830508474575,
+      "fitAdjustment": 1,
+      "idleHeight": [
+        128,
+        128,
+        128,
+        128
+      ]
+    },
+    "scenario:ne": {
+      "scale": 0.398576512455516,
+      "fitAdjustment": 1,
+      "idleHeight": [
+        112,
+        112,
+        112,
+        112
+      ]
+    },
+    "scenario:nw": {
+      "scale": 0.4014336917562724,
+      "fitAdjustment": 1,
+      "idleHeight": [
+        112,
+        112,
+        112,
+        112
+      ]
+    },
+    "scenario:se": {
+      "scale": 0.3957597173144876,
+      "fitAdjustment": 1,
+      "idleHeight": [
+        112,
+        112,
+        112,
+        112
+      ]
+    },
+    "scenario:sw": {
+      "scale": 0.3957597173144876,
+      "fitAdjustment": 1,
+      "idleHeight": [
+        112,
+        112,
+        112,
+        112
+      ]
+    },
+    "weakened:nw": {
+      "scale": 0.43636363636363634,
+      "fitAdjustment": 1,
+      "idleHeight": [
+        119,
+        121,
+        121,
+        119
+      ]
+    },
+    "weakened:ne": {
+      "scale": 0.425531914893617,
+      "fitAdjustment": 1,
+      "idleHeight": [
+        119,
+        121,
+        122,
+        119
+      ]
+    },
+    "weakened:se": {
+      "scale": 0.4195804195804196,
+      "fitAdjustment": 1,
+      "idleHeight": [
+        120,
+        120,
+        121,
+        120
+      ]
+    },
+    "weakened:sw": {
+      "scale": 0.4181184668989547,
+      "fitAdjustment": 1,
+      "idleHeight": [
+        119,
+        120,
+        121,
+        120
+      ]
+    }
+  },
+  "loopDiagnostics": [
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 0,
+      "seamXorRatio": 0.0761
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 0,
+      "seamXorRatio": 0.0
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 0,
+      "seamXorRatio": 0.0413
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 0,
+      "seamXorRatio": 0.0962
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 1,
+      "seamXorRatio": 0.2465
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 1,
+      "seamXorRatio": 0.1057
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 1,
+      "seamXorRatio": 0.1842
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 1,
+      "seamXorRatio": 0.1662
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 2,
+      "seamXorRatio": 0.1095
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 2,
+      "seamXorRatio": 0.0
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 2,
+      "seamXorRatio": 0.0384
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 2,
+      "seamXorRatio": 0.1309
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 3,
+      "seamXorRatio": 0.0
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 3,
+      "seamXorRatio": 0.0
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 3,
+      "seamXorRatio": 0.0499
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 3,
+      "seamXorRatio": 0.0961
+    },
+    {
+      "mode": "scenario",
+      "direction": "nw",
+      "action": 0,
+      "seamXorRatio": 0.0696
+    },
+    {
+      "mode": "scenario",
+      "direction": "ne",
+      "action": 0,
+      "seamXorRatio": 0.0564
+    },
+    {
+      "mode": "scenario",
+      "direction": "se",
+      "action": 0,
+      "seamXorRatio": 0.0363
+    },
+    {
+      "mode": "scenario",
+      "direction": "sw",
+      "action": 0,
+      "seamXorRatio": 0.0413
+    },
+    {
+      "mode": "weakened",
+      "direction": "nw",
+      "action": 0,
+      "seamXorRatio": 0.0652
+    },
+    {
+      "mode": "weakened",
+      "direction": "ne",
+      "action": 0,
+      "seamXorRatio": 0.0207
+    },
+    {
+      "mode": "weakened",
+      "direction": "se",
+      "action": 0,
+      "seamXorRatio": 0.0224
+    },
+    {
+      "mode": "weakened",
+      "direction": "sw",
+      "action": 0,
+      "seamXorRatio": 0.0416
+    }
+  ],
+  "sources": {
+    "se": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-3895b3e2-3e96-48de-bc02-82344cc65362.png",
+    "nw": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-05c08568-7f50-4a7a-90cc-69e725ec9ac9.png",
+    "ne": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-6706d674-7145-421a-ba79-43f12394b86b.png",
+    "sw": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-b605ae7d-5457-462f-a279-1df179992ad5.png",
+    "scenario": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-ffdc7c15-76df-4e8f-959e-92a035e81bc3.png",
+    "weakened": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-260a168d-1f75-46be-a01e-145e78cc345c.png"
+  },
+  "wholeFrameOverrides": {},
+  "files": [
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-0-0.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 0,
+      "frame": 0,
+      "alignX": 0,
+      "bytes": 5472,
+      "bbox": [
+        17,
+        24,
+        137,
+        150
+      ],
+      "sha256": "7c5dc8c2cd9fffa1b9777cf5bbc13b62c5c9a7867518c518fff33ba75174aa5b"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-0-1.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 0,
+      "frame": 1,
+      "alignX": 0,
+      "bytes": 5546,
+      "bbox": [
+        16,
+        23,
+        138,
+        150
+      ],
+      "sha256": "3e753badeb69a267a630bbf2e92a22ad9037d141e88ef23340efef6261c590e5"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-0-2.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 0,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 5596,
+      "bbox": [
+        16,
+        22,
+        140,
+        150
+      ],
+      "sha256": "6eb4b17efe33f285aba9c356ed575ea901ab8dd6b0ebae38b33c08298a7ee50d"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-0-3.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 0,
+      "frame": 3,
+      "alignX": 0,
+      "bytes": 5530,
+      "bbox": [
+        16,
+        24,
+        138,
+        150
+      ],
+      "sha256": "c01519bbf0c7bfbf73019170dc850e21b08e345d26dbd4e73da70d81fa4110dc"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-1-0.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 1,
+      "frame": 0,
+      "bytes": 5258,
+      "bbox": [
+        18,
+        23,
+        142,
+        150
+      ],
+      "sha256": "fd5e7de1ddff34d1ee856df087a640998656f6538d2cd127fb5efb71863f5c06"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-1-1.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 1,
+      "frame": 1,
+      "bytes": 5432,
+      "bbox": [
+        16,
+        26,
+        142,
+        150
+      ],
+      "sha256": "771366fc1c4e3b381b1d38bfbea1bd3ab93cd7f45cb5504a3ee31a5f29f8713a"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-1-2.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 1,
+      "frame": 2,
+      "bytes": 5594,
+      "bbox": [
+        15,
+        24,
+        140,
+        150
+      ],
+      "sha256": "df6965c0605725c1be287fdeaf1fea2f79d3a72e846a458fd17da96b39f12b4c"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-1-3.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 1,
+      "frame": 3,
+      "bytes": 5618,
+      "bbox": [
+        15,
+        24,
+        141,
+        150
+      ],
+      "sha256": "a48ca7a6c4426cde21ee6873a5a14a6aad8d878baac6984102b96c827f9ee377"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-2-0.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 2,
+      "frame": 0,
+      "alignX": 0,
+      "bytes": 5368,
+      "bbox": [
+        17,
+        26,
+        137,
+        150
+      ],
+      "sha256": "880d7d83aa4731c524c8607aa5397697201ca98cc3926b2a26733f5c622bce5f"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-2-1.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 2,
+      "frame": 1,
+      "alignX": 0,
+      "bytes": 5786,
+      "bbox": [
+        17,
+        32,
+        153,
+        150
+      ],
+      "sha256": "dad02a7295faecc934f81cbd130490e76e7b918df42fbcae7e0a31fbc41f1673"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-2-2.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 2,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 5842,
+      "bbox": [
+        31,
+        26,
+        144,
+        150
+      ],
+      "sha256": "4d9587b0b0e4fa4668909737c3f05dc9099ee7d42dd51c9f572992206f4856d8"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-2-3.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 2,
+      "frame": 3,
+      "alignX": -1,
+      "bytes": 5240,
+      "bbox": [
+        16,
+        25,
+        138,
+        150
+      ],
+      "sha256": "9e8476a70f9052bd438fd5d178fa5c70f63ff70831c30e9be448cc1d287fbd25"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-3-0.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 3,
+      "frame": 0,
+      "alignX": 0,
+      "bytes": 5382,
+      "bbox": [
+        17,
+        27,
+        137,
+        150
+      ],
+      "sha256": "12ac45301d801f811871afd16cb938752ace3f91afb29aba9adcbf1dc40aca37"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-3-1.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 3,
+      "frame": 1,
+      "alignX": 1,
+      "bytes": 5894,
+      "bbox": [
+        33,
+        15,
+        135,
+        150
+      ],
+      "sha256": "f5e3cb595e649c87017f1b80937219718f9371362289a71900fde5502d78edc6"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-3-2.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 3,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 5648,
+      "bbox": [
+        33,
+        28,
+        139,
+        150
+      ],
+      "sha256": "d394c3e6b3fe427295626f51c2b7d94d5c44ae42670bed42d83c5b466c45fb56"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/se-3-3.webp",
+      "mode": "combat",
+      "direction": "se",
+      "action": 3,
+      "frame": 3,
+      "alignX": -1,
+      "bytes": 5286,
+      "bbox": [
+        16,
+        28,
+        138,
+        150
+      ],
+      "sha256": "ca31f4fb13e7c188a32ae1f787bd2be16248b72eac32d8a6b29cf42447ec99f3"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-0-0.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 0,
+      "frame": 0,
+      "alignX": 0,
+      "bytes": 5520,
+      "bbox": [
+        19,
+        26,
+        143,
+        150
+      ],
+      "sha256": "e58fd609b2259f06e3ad746058e840946a6741307578fbb0940aca97e6cab4c9"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-0-1.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 0,
+      "frame": 1,
+      "alignX": 0,
+      "bytes": 5578,
+      "bbox": [
+        20,
+        25,
+        142,
+        150
+      ],
+      "sha256": "2e6ac072bbd59e488a81ff07ab8fb4982e6b1928c1c8e810af843e42a7c302d7"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-0-2.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 0,
+      "frame": 2,
+      "alignX": 1,
+      "bytes": 5462,
+      "bbox": [
+        19,
+        23,
+        141,
+        150
+      ],
+      "sha256": "27810f26a73cc7eff8778c0ac74dfbf180fcd6ac76dc9f4f13ded8f62e2be924"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-0-3.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 0,
+      "frame": 3,
+      "alignX": 1,
+      "bytes": 5346,
+      "bbox": [
+        20,
+        27,
+        141,
+        150
+      ],
+      "sha256": "fc4f04acf068acae553a58368fa67b32e25a40cc37577f6fe335da0a2174a852"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-1-0.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 1,
+      "frame": 0,
+      "bytes": 5770,
+      "bbox": [
+        18,
+        27,
+        145,
+        150
+      ],
+      "sha256": "33e97da688ebde0f012e4a72eef14aa049c281745846bf3e0b4ca7334770c835"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-1-1.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 1,
+      "frame": 1,
+      "bytes": 5896,
+      "bbox": [
+        17,
+        24,
+        143,
+        150
+      ],
+      "sha256": "f2dc864aa9e600d0d2027b15b398450eed79a641231e9a8ec3442998ac49343b"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-1-2.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 1,
+      "frame": 2,
+      "bytes": 5816,
+      "bbox": [
+        14,
+        26,
+        143,
+        150
+      ],
+      "sha256": "5da154eb8b3d09680d1f2dd6969e29c97abf3e8015aa7556d4c7d79331eb797f"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-1-3.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 1,
+      "frame": 3,
+      "bytes": 5704,
+      "bbox": [
+        18,
+        24,
+        139,
+        150
+      ],
+      "sha256": "825202db5da80a214622c884bbfbc25a05412f7d8aed0a4d33f8fa359a5e2a4c"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-2-0.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 2,
+      "frame": 0,
+      "alignX": 0,
+      "bytes": 5554,
+      "bbox": [
+        18,
+        26,
+        141,
+        150
+      ],
+      "sha256": "56468f098e5a4c7cf93c340373244c04bf1e59509a7c007760cb87533995798c"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-2-1.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 2,
+      "frame": 1,
+      "alignX": 1,
+      "bytes": 5286,
+      "bbox": [
+        8,
+        31,
+        124,
+        150
+      ],
+      "sha256": "85ef1fd21ef067aaab0c40727bc752c63851c3763ab16c89964d41e55609d67f"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-2-2.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 2,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 5536,
+      "bbox": [
+        7,
+        27,
+        126,
+        150
+      ],
+      "sha256": "20d925688183f89419aa67721105b0dff7b10158494a587a1982ff5ce4dab8ec"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-2-3.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 2,
+      "frame": 3,
+      "alignX": 1,
+      "bytes": 5260,
+      "bbox": [
+        20,
+        29,
+        140,
+        150
+      ],
+      "sha256": "3b0d827f98e17a0eb35db953b284438d09fabac426968ea739b6fcb8c29ff922"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-3-0.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 3,
+      "frame": 0,
+      "alignX": 1,
+      "bytes": 5274,
+      "bbox": [
+        18,
+        27,
+        142,
+        150
+      ],
+      "sha256": "3efcdfafe9cb59159c8ee3994eb6d8d528f97f2357e53d6c81f7c5b97671b4af"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-3-1.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 3,
+      "frame": 1,
+      "alignX": 1,
+      "bytes": 5246,
+      "bbox": [
+        21,
+        18,
+        127,
+        150
+      ],
+      "sha256": "ebaeda9f8321646abb70818c9d36aa0690951589d865eb0aa32136b59fe907a6"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-3-2.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 3,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 5946,
+      "bbox": [
+        17,
+        28,
+        141,
+        150
+      ],
+      "sha256": "364bb902ca0005440bda0e3f2365aa9b81c4eaaf0b2f50fc44fdd8cc4875f4d5"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/nw-3-3.webp",
+      "mode": "combat",
+      "direction": "nw",
+      "action": 3,
+      "frame": 3,
+      "alignX": 1,
+      "bytes": 5274,
+      "bbox": [
+        18,
+        27,
+        142,
+        150
+      ],
+      "sha256": "3efcdfafe9cb59159c8ee3994eb6d8d528f97f2357e53d6c81f7c5b97671b4af",
+      "wholeFrameReuse": "nw-3-0.webp"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-0-0.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 0,
+      "frame": 0,
+      "alignX": 0,
+      "bytes": 5710,
+      "bbox": [
+        27,
+        23,
+        153,
+        150
+      ],
+      "sha256": "1119b0e42f2281d94c3b58e3447038dead476fd65e94a206f1cee6a7fc77e2cd"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-0-1.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 0,
+      "frame": 1,
+      "alignX": -1,
+      "bytes": 5716,
+      "bbox": [
+        27,
+        24,
+        152,
+        150
+      ],
+      "sha256": "1b1fd31a192c7bff47fd59c162be89ffef2f3036a6c35ff334d7647b436ba61a"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-0-2.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 0,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 5802,
+      "bbox": [
+        26,
+        24,
+        153,
+        150
+      ],
+      "sha256": "f233a82a7365bf6a01fe4e291d470563eb8e72910ac52f820f3cc96157ace2f7"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-0-3.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 0,
+      "frame": 3,
+      "alignX": 0,
+      "bytes": 5710,
+      "bbox": [
+        27,
+        23,
+        153,
+        150
+      ],
+      "sha256": "1119b0e42f2281d94c3b58e3447038dead476fd65e94a206f1cee6a7fc77e2cd",
+      "wholeFrameReuse": "ne-0-0.webp"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-1-0.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 1,
+      "frame": 0,
+      "bytes": 5662,
+      "bbox": [
+        25,
+        22,
+        153,
+        150
+      ],
+      "sha256": "184d274ec3e08dd60ecf575d32fb6f440f9c3e6c0e0fa346625baabbd86dba91"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-1-1.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 1,
+      "frame": 1,
+      "bytes": 5888,
+      "bbox": [
+        26,
+        22,
+        153,
+        150
+      ],
+      "sha256": "92edbcd28b0d8a02e40ba51538f05d66ea58b94fc01bde4d76264438069c66e9"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-1-2.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 1,
+      "frame": 2,
+      "bytes": 5810,
+      "bbox": [
+        24,
+        22,
+        153,
+        150
+      ],
+      "sha256": "95ae31c718b7324f15229b46562b905f829d4f3a2c7d8a61ab07dbd15fa32ab3"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-1-3.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 1,
+      "frame": 3,
+      "bytes": 5888,
+      "bbox": [
+        26,
+        22,
+        153,
+        150
+      ],
+      "sha256": "92edbcd28b0d8a02e40ba51538f05d66ea58b94fc01bde4d76264438069c66e9",
+      "wholeFrameReuse": "ne-1-1.webp"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-2-0.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 2,
+      "frame": 0,
+      "alignX": 0,
+      "bytes": 6032,
+      "bbox": [
+        24,
+        24,
+        153,
+        150
+      ],
+      "sha256": "2caf1dc66dc834b7cb21f5ed63b6ab6bd0d88d4d7b8245a0b5eab3067c56fd19"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-2-1.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 2,
+      "frame": 1,
+      "alignX": -3,
+      "bytes": 5704,
+      "bbox": [
+        25,
+        25,
+        150,
+        150
+      ],
+      "sha256": "0830e64b6621850c7ec312d5eb2e1f6dd7eac4bd080c4783b99a54973f43478b"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-2-2.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 2,
+      "frame": 2,
+      "alignX": -6,
+      "bytes": 5674,
+      "bbox": [
+        26,
+        24,
+        146,
+        150
+      ],
+      "sha256": "ddb3a8ab573305609758ef4726a9aa30054faa789bdf86661ef97a0ea5566fab"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-2-3.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 2,
+      "frame": 3,
+      "alignX": 0,
+      "bytes": 6032,
+      "bbox": [
+        24,
+        24,
+        153,
+        150
+      ],
+      "sha256": "2caf1dc66dc834b7cb21f5ed63b6ab6bd0d88d4d7b8245a0b5eab3067c56fd19",
+      "wholeFrameReuse": "ne-2-0.webp"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-3-0.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 3,
+      "frame": 0,
+      "alignX": -1,
+      "bytes": 5652,
+      "bbox": [
+        26,
+        25,
+        152,
+        150
+      ],
+      "sha256": "e4ded0ebf091e561e4757460d0224d1fa1b792ff5b137d3db83adcfcc4704e05"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-3-1.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 3,
+      "frame": 1,
+      "alignX": -2,
+      "bytes": 5858,
+      "bbox": [
+        26,
+        19,
+        151,
+        150
+      ],
+      "sha256": "3026772679cee2ffc1a3ac534c3fa10831c4085509aff83e927c31a0c5c68811"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-3-2.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 3,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 5994,
+      "bbox": [
+        17,
+        23,
+        153,
+        150
+      ],
+      "sha256": "ad3d5714c46f76ea24dd89efc45fc8859c2a5bf48490b5c4664da76a87a7c2d3"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/ne-3-3.webp",
+      "mode": "combat",
+      "direction": "ne",
+      "action": 3,
+      "frame": 3,
+      "alignX": 0,
+      "bytes": 5652,
+      "bbox": [
+        26,
+        25,
+        152,
+        150
+      ],
+      "sha256": "e4ded0ebf091e561e4757460d0224d1fa1b792ff5b137d3db83adcfcc4704e05",
+      "wholeFrameReuse": "ne-3-0.webp"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-0-0.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 0,
+      "frame": 0,
+      "alignX": 0,
+      "bytes": 5926,
+      "bbox": [
+        7,
+        22,
+        135,
+        150
+      ],
+      "sha256": "0c58930d235609ca818c5863e011949e4ba1f39ad7e75c0c3c94bb1b407910b2"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-0-1.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 0,
+      "frame": 1,
+      "alignX": 2,
+      "bytes": 5728,
+      "bbox": [
+        10,
+        23,
+        135,
+        150
+      ],
+      "sha256": "a39711642abb177ba57eb561be53d0514a3cbe2bcc64f9887d0bbaa61ba204bc"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-0-2.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 0,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 5872,
+      "bbox": [
+        7,
+        23,
+        135,
+        150
+      ],
+      "sha256": "c403d96eb3b6a3008907b8a38277ec1a2a0206933c75af340f23f26b000b1d34"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-0-3.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 0,
+      "frame": 3,
+      "alignX": 0,
+      "bytes": 5810,
+      "bbox": [
+        7,
+        24,
+        134,
+        150
+      ],
+      "sha256": "e45097f50a93575365ce40b12f3430d42137f6aa9a15e940fc21183e41cc2d25"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-1-0.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 1,
+      "frame": 0,
+      "bytes": 5868,
+      "bbox": [
+        7,
+        22,
+        137,
+        150
+      ],
+      "sha256": "bdb0fa82181b036c47cccf75bb6c3d2eb8a4b799573a7e2f6736c03e2022a512"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-1-1.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 1,
+      "frame": 1,
+      "bytes": 6010,
+      "bbox": [
+        8,
+        21,
+        136,
+        150
+      ],
+      "sha256": "9804c7eef8f0787acb73dcdd73ee8b04f108603cc08f3370164519b6e693aae2"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-1-2.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 1,
+      "frame": 2,
+      "bytes": 6162,
+      "bbox": [
+        7,
+        21,
+        140,
+        150
+      ],
+      "sha256": "e7928ac016c9cf5a9f9861d1e83bb9306d2838d85a8329db70330a9c9739920b"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-1-3.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 1,
+      "frame": 3,
+      "bytes": 5880,
+      "bbox": [
+        7,
+        21,
+        136,
+        150
+      ],
+      "sha256": "0ed19cfebacabc2e42738c9d8b7e3a221e38886dcb07ec7d3b71ec4ff62e554d"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-2-0.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 2,
+      "frame": 0,
+      "wholeFrameReuse": "sw-0-0.webp",
+      "alignX": 0,
+      "bytes": 5926,
+      "bbox": [
+        7,
+        22,
+        135,
+        150
+      ],
+      "sha256": "0c58930d235609ca818c5863e011949e4ba1f39ad7e75c0c3c94bb1b407910b2"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-2-1.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 2,
+      "frame": 1,
+      "alignX": 0,
+      "bytes": 6082,
+      "bbox": [
+        7,
+        24,
+        142,
+        150
+      ],
+      "sha256": "4b447f4c5442640829deab0720561132403beeb66bc98f283b6bcf7a339e8975"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-2-2.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 2,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 5920,
+      "bbox": [
+        7,
+        23,
+        133,
+        150
+      ],
+      "sha256": "12debe6132cf374822681a86039769b222d4f1aac6ba7ad01e2cbc572b342c6f"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-2-3.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 2,
+      "frame": 3,
+      "alignX": 0,
+      "bytes": 5954,
+      "bbox": [
+        7,
+        24,
+        136,
+        150
+      ],
+      "sha256": "c42d6948837b331012a91e8692edf071fc84400be5f9c38f7aabcc7cf3233b4c"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-3-0.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 3,
+      "frame": 0,
+      "wholeFrameReuse": "sw-0-0.webp",
+      "alignX": 0,
+      "bytes": 5926,
+      "bbox": [
+        7,
+        22,
+        135,
+        150
+      ],
+      "sha256": "0c58930d235609ca818c5863e011949e4ba1f39ad7e75c0c3c94bb1b407910b2"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-3-1.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 3,
+      "frame": 1,
+      "alignX": 0,
+      "bytes": 5934,
+      "bbox": [
+        7,
+        24,
+        135,
+        150
+      ],
+      "sha256": "738357c6612a21479316f9f0f3d37a3360ef797044933c63ee6a4f505e3058f5"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-3-2.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 3,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 5806,
+      "bbox": [
+        7,
+        22,
+        133,
+        150
+      ],
+      "sha256": "4adf17485c77032c2c789b58db54664ce4bab2bb5c5d50b351537d697e792f64"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/combat-v1/sw-3-3.webp",
+      "mode": "combat",
+      "direction": "sw",
+      "action": 3,
+      "frame": 3,
+      "alignX": 1,
+      "bytes": 5788,
+      "bbox": [
+        8,
+        22,
+        136,
+        150
+      ],
+      "sha256": "11c4abb82dc5f8204e37353fc96f9922a5f1014daffb5c43e5281bd3443a61b9"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/ne-0-0.webp",
+      "mode": "scenario",
+      "direction": "ne",
+      "action": 0,
+      "frame": 0,
+      "alignX": 0,
+      "bytes": 2980,
+      "bbox": [
+        57,
+        38,
+        105,
+        150
+      ],
+      "sha256": "ebbad208e57c5f7c61f7bd89a32b3bee065e71b2055970f3d0e9babe43a5cf1a"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/ne-0-1.webp",
+      "mode": "scenario",
+      "direction": "ne",
+      "action": 0,
+      "frame": 1,
+      "alignX": 1,
+      "bytes": 2944,
+      "bbox": [
+        55,
+        39,
+        106,
+        150
+      ],
+      "sha256": "c546d57a1329bdcd1b34996f56edca09244897b01449df671f631cdf6427499e"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/ne-0-2.webp",
+      "mode": "scenario",
+      "direction": "ne",
+      "action": 0,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 3072,
+      "bbox": [
+        54,
+        39,
+        105,
+        150
+      ],
+      "sha256": "4f33ed432a790e4edeead5a1aa26ea46eb26e10c9a34aebc0cdf8276d06abb3f"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/ne-0-3.webp",
+      "mode": "scenario",
+      "direction": "ne",
+      "action": 0,
+      "frame": 3,
+      "alignX": 0,
+      "bytes": 3002,
+      "bbox": [
+        56,
+        39,
+        104,
+        150
+      ],
+      "sha256": "f9acdb89cbb0f9e438cf2dcc2f61d4b9ef14591d63a8604d80fae1151f1b9a16"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/nw-0-0.webp",
+      "mode": "scenario",
+      "direction": "nw",
+      "action": 0,
+      "frame": 0,
+      "alignX": 0,
+      "bytes": 3226,
+      "bbox": [
+        56,
+        40,
+        111,
+        150
+      ],
+      "sha256": "eb3cc81e31a7ad0960f97aeb4fad73daecdd793209d6dbad4e9362c796416d11"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/nw-0-1.webp",
+      "mode": "scenario",
+      "direction": "nw",
+      "action": 0,
+      "frame": 1,
+      "alignX": 0,
+      "bytes": 3128,
+      "bbox": [
+        55,
+        40,
+        111,
+        150
+      ],
+      "sha256": "60e16a22b2dd0bb8660231145fd7b7e43e7b8219c63f12e68418cd884e0898dd"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/nw-0-2.webp",
+      "mode": "scenario",
+      "direction": "nw",
+      "action": 0,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 3188,
+      "bbox": [
+        56,
+        39,
+        110,
+        150
+      ],
+      "sha256": "07f9043306ce7d85ee4a3666efa41319b5183eab380e449739e89421a6ee9f3c"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/nw-0-3.webp",
+      "mode": "scenario",
+      "direction": "nw",
+      "action": 0,
+      "frame": 3,
+      "alignX": 0,
+      "bytes": 3154,
+      "bbox": [
+        56,
+        39,
+        110,
+        150
+      ],
+      "sha256": "46d01a4fc6a49a32d5ec9a3761c9f1c03820b4f416052897eea64deb13101d07"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/se-0-0.webp",
+      "mode": "scenario",
+      "direction": "se",
+      "action": 0,
+      "frame": 0,
+      "alignX": 0,
+      "bytes": 3132,
+      "bbox": [
+        54,
+        39,
+        104,
+        150
+      ],
+      "sha256": "abd0a4e147ee23e7da97ddbedbd2f4c51f2d0a34ef665577260995b285645478"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/se-0-1.webp",
+      "mode": "scenario",
+      "direction": "se",
+      "action": 0,
+      "frame": 1,
+      "alignX": 0,
+      "bytes": 3204,
+      "bbox": [
+        54,
+        39,
+        105,
+        150
+      ],
+      "sha256": "bb62a0c3482062acec1aa2d062341a00eb53ea6fec0a5376bf3e4e74909466af"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/se-0-2.webp",
+      "mode": "scenario",
+      "direction": "se",
+      "action": 0,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 3092,
+      "bbox": [
+        54,
+        39,
+        104,
+        150
+      ],
+      "sha256": "818ee2aa3240aeb41f165295c6c509e91e2b48aab817c69bae9f237769bc9a3d"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/se-0-3.webp",
+      "mode": "scenario",
+      "direction": "se",
+      "action": 0,
+      "frame": 3,
+      "alignX": -1,
+      "bytes": 3080,
+      "bbox": [
+        53,
+        39,
+        104,
+        150
+      ],
+      "sha256": "239423ebec69b0d502f79ccbd05e60783755fe7e404d4185f540085f1eb4be84"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/sw-0-0.webp",
+      "mode": "scenario",
+      "direction": "sw",
+      "action": 0,
+      "frame": 0,
+      "alignX": 0,
+      "bytes": 3348,
+      "bbox": [
+        55,
+        39,
+        110,
+        150
+      ],
+      "sha256": "84cec4b52a14266afab163879ed553bf3c2bf5aa9290b20ae6def297181d72b3"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/sw-0-1.webp",
+      "mode": "scenario",
+      "direction": "sw",
+      "action": 0,
+      "frame": 1,
+      "alignX": 0,
+      "bytes": 3376,
+      "bbox": [
+        54,
+        39,
+        110,
+        150
+      ],
+      "sha256": "61cf1cacfdd3895ee1273701d8e40f2f77b94d570af1a64be0c2c02b539639ac"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/sw-0-2.webp",
+      "mode": "scenario",
+      "direction": "sw",
+      "action": 0,
+      "frame": 2,
+      "alignX": 0,
+      "bytes": 3342,
+      "bbox": [
+        55,
+        39,
+        111,
+        150
+      ],
+      "sha256": "fa74777e88e626f361b421e7fbcb151e834ae272720128de0dc0598271e3bd97"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/scenario-v1/sw-0-3.webp",
+      "mode": "scenario",
+      "direction": "sw",
+      "action": 0,
+      "frame": 3,
+      "alignX": 0,
+      "bytes": 3322,
+      "bbox": [
+        54,
+        38,
+        109,
+        150
+      ],
+      "sha256": "689354f863c55f91328712f85ad63cc0b1ab80c2bd5b35f94faa86e31d0df780"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/nw-0-0.webp",
+      "mode": "weakened",
+      "direction": "nw",
+      "action": 0,
+      "frame": 0,
+      "alignX": 2,
+      "bytes": 5134,
+      "bbox": [
+        27,
+        32,
+        136,
+        150
+      ],
+      "sha256": "b70fc867b7a849dc4f80b9fae7915d2884e834fd4c68eeafc5304031c4866a82"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/nw-0-1.webp",
+      "mode": "weakened",
+      "direction": "nw",
+      "action": 0,
+      "frame": 1,
+      "alignX": 1,
+      "bytes": 5208,
+      "bbox": [
+        27,
+        30,
+        136,
+        150
+      ],
+      "sha256": "d23ede320627d8704b8ecc5740b40f8fa0be0db8237d731b7cde4ac09036483b"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/nw-0-2.webp",
+      "mode": "weakened",
+      "direction": "nw",
+      "action": 0,
+      "frame": 2,
+      "alignX": 2,
+      "bytes": 5158,
+      "bbox": [
+        28,
+        30,
+        136,
+        150
+      ],
+      "sha256": "14445dedf3f184137a80e96e9e2e331447e898247538d44b836722ce7a57eff1"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/nw-0-3.webp",
+      "mode": "weakened",
+      "direction": "nw",
+      "action": 0,
+      "frame": 3,
+      "alignX": 1,
+      "bytes": 5112,
+      "bbox": [
+        27,
+        32,
+        136,
+        150
+      ],
+      "sha256": "ed0da32b5e1ea47d5a2c08cff1001a4b63d7b72fd635074a6a447261d84f29d8"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/ne-0-0.webp",
+      "mode": "weakened",
+      "direction": "ne",
+      "action": 0,
+      "frame": 0,
+      "alignX": -7,
+      "bytes": 4946,
+      "bbox": [
+        28,
+        32,
+        143,
+        150
+      ],
+      "sha256": "026d66781c3c98cd5a9e6d6af3ba0156647a4b4e4ef038e12bc2c2115203ee12"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/ne-0-1.webp",
+      "mode": "weakened",
+      "direction": "ne",
+      "action": 0,
+      "frame": 1,
+      "alignX": -6,
+      "bytes": 4892,
+      "bbox": [
+        28,
+        30,
+        144,
+        150
+      ],
+      "sha256": "7b6a8cee59a50979b85d34daf9f07e43f57dbbeccf07422f23c88da8a566158a"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/ne-0-2.webp",
+      "mode": "weakened",
+      "direction": "ne",
+      "action": 0,
+      "frame": 2,
+      "alignX": -7,
+      "bytes": 5074,
+      "bbox": [
+        27,
+        29,
+        143,
+        150
+      ],
+      "sha256": "e871566b5b7f38f06f57955c5086d25745b0bc52faf89d74314ab1581083b70e"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/ne-0-3.webp",
+      "mode": "weakened",
+      "direction": "ne",
+      "action": 0,
+      "frame": 3,
+      "alignX": -7,
+      "bytes": 4902,
+      "bbox": [
+        28,
+        32,
+        143,
+        150
+      ],
+      "sha256": "804317f08ca64489df34ec981c56e5b67c62c5d137ebc67dc022d30b36837a7b"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/se-0-0.webp",
+      "mode": "weakened",
+      "direction": "se",
+      "action": 0,
+      "frame": 0,
+      "alignX": -2,
+      "bytes": 5366,
+      "bbox": [
+        21,
+        32,
+        135,
+        150
+      ],
+      "sha256": "eb9c1c58870e2ff93c6f09da1e57e13865f7244dd88b553e0037c59fd0e72d97"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/se-0-1.webp",
+      "mode": "weakened",
+      "direction": "se",
+      "action": 0,
+      "frame": 1,
+      "alignX": -1,
+      "bytes": 5370,
+      "bbox": [
+        21,
+        32,
+        136,
+        150
+      ],
+      "sha256": "9e487f57d653c8a504da065c7e4a034ee128cb655a28c9f8a8e3a235710eb6e0"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/se-0-2.webp",
+      "mode": "weakened",
+      "direction": "se",
+      "action": 0,
+      "frame": 2,
+      "alignX": -2,
+      "bytes": 5434,
+      "bbox": [
+        20,
+        31,
+        135,
+        150
+      ],
+      "sha256": "d035829ea24f30e7e424e993ea0eb84516e11ab2795c43f44d5cff1086e1031f"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/se-0-3.webp",
+      "mode": "weakened",
+      "direction": "se",
+      "action": 0,
+      "frame": 3,
+      "alignX": -2,
+      "bytes": 5406,
+      "bbox": [
+        21,
+        32,
+        135,
+        150
+      ],
+      "sha256": "99c1eb68d58a0c76019a80fe5b5f9ef233918e859820a8c581ebdb7c46a11217"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/sw-0-0.webp",
+      "mode": "weakened",
+      "direction": "sw",
+      "action": 0,
+      "frame": 0,
+      "alignX": 3,
+      "bytes": 5306,
+      "bbox": [
+        29,
+        31,
+        135,
+        150
+      ],
+      "sha256": "9639bcaf1a1b88197a2d19d06a0b8ec4d1ecfadfb67f59ddaecdf8b9d956c76e"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/sw-0-1.webp",
+      "mode": "weakened",
+      "direction": "sw",
+      "action": 0,
+      "frame": 1,
+      "alignX": 3,
+      "bytes": 5276,
+      "bbox": [
+        29,
+        32,
+        136,
+        150
+      ],
+      "sha256": "73d088ad1ab785984c56b2cdf8e17c7cfc89d4853eb1f1118c77aadd14b598ea"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/sw-0-2.webp",
+      "mode": "weakened",
+      "direction": "sw",
+      "action": 0,
+      "frame": 2,
+      "alignX": 3,
+      "bytes": 5212,
+      "bbox": [
+        29,
+        31,
+        135,
+        150
+      ],
+      "sha256": "f81233163ca7aff0be1f4483dce44a4a8162e0e54df8b737623ca27585ee5158"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/cavalry/job-10/weakened-v1/sw-0-3.webp",
+      "mode": "weakened",
+      "direction": "sw",
+      "action": 0,
+      "frame": 3,
+      "alignX": 3,
+      "bytes": 5266,
+      "bbox": [
+        28,
+        31,
+        135,
+        150
+      ],
+      "sha256": "503e98c039e79251cbbcdfc653c7bf1f53b7912d1d6082dee4ed49fba612c828"
+    }
+  ],
+  "limitations": [
+    {
+      "frames": [
+        "combat-v1/nw-2-1.webp",
+        "combat-v1/nw-2-2.webp"
+      ],
+      "issue": "몸 뒤 오른손이 일부 가려져 작은 찌르기의 손 연결·가독성을 완전히 확정하기 어렵다."
+    },
+    {
+      "frames": [
+        "combat-v1/sw-2-1.webp",
+        "combat-v1/sw-2-2.webp",
+        "weakened-v1/sw-0-0.webp",
+        "weakened-v1/sw-0-1.webp",
+        "weakened-v1/sw-0-2.webp",
+        "weakened-v1/sw-0-3.webp"
+      ],
+      "issue": "왼손 고삐와 창대가 겹쳐 보이는 부분이 남아 있다. 고삐 손 분리 표현은 추가 작화 검토 대상."
+    },
+    {
+      "frames": [
+        "combat-v1/ne-2-0.webp",
+        "combat-v1/ne-2-1.webp",
+        "combat-v1/ne-2-2.webp",
+        "combat-v1/ne-2-3.webp"
+      ],
+      "issue": "창 길이를 원근으로 줄인 뒤 공격 진폭이 작아졌다. 게임 표시 크기에서 타격 가독성 보완 필요."
+    },
+    {
+      "frames": [
+        "combat-v1/se-2-0.webp",
+        "combat-v1/se-2-1.webp",
+        "combat-v1/nw-2-0.webp",
+        "combat-v1/nw-2-1.webp"
+      ],
+      "issue": "준비에서 찌르기로 전환할 때 창의 각도 변화가 크다. 4프레임 사이 중간 동작은 미제작."
+    },
+    {
+      "frames": [
+        "combat-v1/nw-0-0.webp",
+        "combat-v1/nw-0-1.webp",
+        "combat-v1/nw-0-2.webp",
+        "combat-v1/nw-0-3.webp",
+        "combat-v1/ne-0-0.webp",
+        "combat-v1/ne-0-1.webp",
+        "combat-v1/ne-0-2.webp",
+        "combat-v1/ne-0-3.webp",
+        "combat-v1/se-0-0.webp",
+        "combat-v1/se-0-1.webp",
+        "combat-v1/se-0-2.webp",
+        "combat-v1/se-0-3.webp",
+        "combat-v1/sw-0-0.webp",
+        "combat-v1/sw-0-1.webp",
+        "combat-v1/sw-0-2.webp",
+        "combat-v1/sw-0-3.webp"
+      ],
+      "issue": "대기 실루엣은 대략125~130px이며 방향별 체격·세부 갑주가 픽셀 수준으로 완전히 같지는 않다."
+    }
+  ],
+  "validation": {
+    "sizeAlphaBounds": "192 total files checked:160x160 alpha; all feet alpha bottom exclusive150; no canvas edge clipping",
+    "visual": "All six contact sheets per promotion reviewed;12 browser animations opened and sampled, not continuous every-frame capture",
+    "frameCount": 96,
+    "animationDecode": "six animations per promotion, exactly4 frames and specified durations",
+    "loopReview": "3→0 compared in contact sheets and alpha diagnostics; known limitations remain",
+    "gameIntegration": "not performed; integration chat owns common UI",
+    "mobileDevice": "not tested",
+    "maxSilhouette": [
+      136,
+      135
+    ]
+  },
+  "prompts": [
+    {
+      "key": "p10se",
+      "prompt": "Use case: identity-preserve. Tactical RPG production animation sheet of the EXACT approved HEAVY CAVALRY in reference1: same young male face and build, dark open-faced helmet with red plume, charcoal metal lamellar with bronze edging, blue-gray sleeves, red waist sash and red hanging cloth. SAME chestnut brown horse, black mane/tail, white short socks, brown bridle and red saddle cloth, no full horse armor. Long dark wooden SPEAR with ONE silver leaf-shaped blade and red tassel at ONE end; plain wooden butt. Preserve approved costume, face and gear, do not invent another promotion. Crisp outlined detailed but mobile-readable reference style.\nExactly FOUR columns FOUR rows=16 equal square cells on square transparent sheet. Each complete connected horse+rider within central64% cell width AND height including spear. At least18% empty transparent margin on ALL sides. Same horse body/rider scale and same saddle center and ground baseline across every cell, no shadows/text/grid/effects. No detached parts, no mirroring.\nRows:1 IDLE four gentle breathing frames all hooves planted.2 WALK four distinct coherent alternating leg phases, rider follows saddle, IN PLACE.3 ATTACK spear ready low, forward compact foreshortened thrust, halfway retract, ready low almost identical to first.4 COMMAND SKILL spear low, hand raised toward shoulder, halfway lower, spear low almost identical to first. Rows1/3/4 horse stands still same four grounded hooves, NEVER rear or lunge. Weapon's physical length stays same; use perspective to contain silhouette, NOT huge overhead sweep. One blade only; blade direction changes smoothly without flipping ends. RIGHT anatomical hand grips shaft visibly; LEFT hand holds reins visibly. Both arms connected to shoulders, no duplicated hands. Pose3 to0 must loop smoothly.\nAll16 face SOUTHEAST5 o'clock, horse nose screen RIGHT and toward viewer, front three-quarter. Right weapon arm on screen-left of chest, left rein hand on other side. Reference1 matches this direction.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-0ac451bf-1a06-4fed-85b2-16846db90e71.png",
+      "sourceSha256": "95c4d4303629746b3aae3e9d6d666d2e2c820951351b1881c982d449671dcc19",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10nw",
+      "prompt": "Use case: identity-preserve. Tactical RPG production animation sheet of the EXACT approved HEAVY CAVALRY in reference1: same young male face and build, dark open-faced helmet with red plume, charcoal metal lamellar with bronze edging, blue-gray sleeves, red waist sash and red hanging cloth. SAME chestnut brown horse, black mane/tail, white short socks, brown bridle and red saddle cloth, no full horse armor. Long dark wooden SPEAR with ONE silver leaf-shaped blade and red tassel at ONE end; plain wooden butt. Preserve approved costume, face and gear, do not invent another promotion. Crisp outlined detailed but mobile-readable reference style.\nExactly FOUR columns FOUR rows=16 equal square cells on square transparent sheet. Each complete connected horse+rider within central64% cell width AND height including spear. At least18% empty transparent margin on ALL sides. Same horse body/rider scale and same saddle center and ground baseline across every cell, no shadows/text/grid/effects. No detached parts, no mirroring.\nRows:1 IDLE four gentle breathing frames all hooves planted.2 WALK four distinct coherent alternating leg phases, rider follows saddle, IN PLACE.3 ATTACK spear ready low, forward compact foreshortened thrust, halfway retract, ready low almost identical to first.4 COMMAND SKILL spear low, hand raised toward shoulder, halfway lower, spear low almost identical to first. Rows1/3/4 horse stands still same four grounded hooves, NEVER rear or lunge. Weapon's physical length stays same; use perspective to contain silhouette, NOT huge overhead sweep. One blade only; blade direction changes smoothly without flipping ends. RIGHT anatomical hand grips shaft visibly; LEFT hand holds reins visibly. Both arms connected to shoulders, no duplicated hands. Pose3 to0 must loop smoothly.\nAll16 face NORTHWEST11 o'clock, horse head screen upper LEFT and rump lower right, rider BACK visible. Independently draw back-left view, never mirror. The far right weapon arm may be partly occluded by torso but show hand gripping shaft at right hip, near left hand down at reins.\nKeep spear blade on the forward upper-left side during attacks. Left hand stays on reins, never grips spear. Ensure wide empty gutters.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-e3bc3350-e6d5-4a33-9e43-356129631220.png",
+      "sourceSha256": "ae67d69a729c034f536bff0ca2f15131a00bc10a7a0aa0dd1a6cf26ce218388e",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10ne",
+      "prompt": "Use case: identity-preserve. Tactical RPG production animation sheet of the EXACT approved HEAVY CAVALRY in reference1: same young male face and build, dark open-faced helmet with red plume, charcoal metal lamellar with bronze edging, blue-gray sleeves, red waist sash and red hanging cloth. SAME chestnut brown horse, black mane/tail, white short socks, brown bridle and red saddle cloth, no full horse armor. Long dark wooden SPEAR with ONE silver leaf-shaped blade and red tassel at ONE end; plain wooden butt. Preserve approved costume, face and gear, do not invent another promotion. Crisp outlined detailed but mobile-readable reference style.\nExactly FOUR columns FOUR rows=16 equal square cells on square transparent sheet. Each complete connected horse+rider within central64% cell width AND height including spear. At least18% empty transparent margin on ALL sides. Same horse body/rider scale and same saddle center and ground baseline across every cell, no shadows/text/grid/effects. No detached parts, no mirroring.\nRows:1 IDLE four gentle breathing frames all hooves planted.2 WALK four distinct coherent alternating leg phases, rider follows saddle, IN PLACE.3 ATTACK spear ready low, forward compact foreshortened thrust, halfway retract, ready low almost identical to first.4 COMMAND SKILL spear low, hand raised toward shoulder, halfway lower, spear low almost identical to first. Rows1/3/4 horse stands still same four grounded hooves, NEVER rear or lunge. Weapon's physical length stays same; use perspective to contain silhouette, NOT huge overhead sweep. One blade only; blade direction changes smoothly without flipping ends. RIGHT anatomical hand grips shaft visibly; LEFT hand holds reins visibly. Both arms connected to shoulders, no duplicated hands. Pose3 to0 must loop smoothly.\nAll16 face NORTHEAST2 o'clock, horse head screen upper RIGHT and rump lower left, rider BACK visible. Independently draw back-right view, never mirror. Right weapon arm visible on screen-right side, left rein arm reaches forward on opposite side, distinct gripping hands.\nFor attack keep right hand at right hip, extend RIGHT elbow slightly forward while left rein hand NEVER changes. Both hands must not hold spear.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-1f65f846-4109-48db-925c-e2dd8540170b.png",
+      "sourceSha256": "be3b32eadd8f43a17b3c50461e298f7ab881395dceb43b8fb9b0ba79dbf71df0",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10sw",
+      "prompt": "Use case: identity-preserve. Tactical RPG production animation sheet of the EXACT approved HEAVY CAVALRY in reference1: same young male face and build, dark open-faced helmet with red plume, charcoal metal lamellar with bronze edging, blue-gray sleeves, red waist sash and red hanging cloth. SAME chestnut brown horse, black mane/tail, white short socks, brown bridle and red saddle cloth, no full horse armor. Long dark wooden SPEAR with ONE silver leaf-shaped blade and red tassel at ONE end; plain wooden butt. Preserve approved costume, face and gear, do not invent another promotion. Crisp outlined detailed but mobile-readable reference style.\nExactly FOUR columns FOUR rows=16 equal square cells on square transparent sheet. Each complete connected horse+rider within central64% cell width AND height including spear. At least18% empty transparent margin on ALL sides. Same horse body/rider scale and same saddle center and ground baseline across every cell, no shadows/text/grid/effects. No detached parts, no mirroring.\nRows:1 IDLE four gentle breathing frames all hooves planted.2 WALK four distinct coherent alternating leg phases, rider follows saddle, IN PLACE.3 ATTACK spear ready low, forward compact foreshortened thrust, halfway retract, ready low almost identical to first.4 COMMAND SKILL spear low, hand raised toward shoulder, halfway lower, spear low almost identical to first. Rows1/3/4 horse stands still same four grounded hooves, NEVER rear or lunge. Weapon's physical length stays same; use perspective to contain silhouette, NOT huge overhead sweep. One blade only; blade direction changes smoothly without flipping ends. RIGHT anatomical hand grips shaft visibly; LEFT hand holds reins visibly. Both arms connected to shoulders, no duplicated hands. Pose3 to0 must loop smoothly.\nAll16 face SOUTHWEST7 o'clock, horse nose screen LEFT and toward viewer, rider FRONT visible. Independently draw front-left view, never mirror. Right weapon hand on far screen-left side gripping shaft, near left hand on reins at screen-right side. Do not switch weapon into left hand.\nFor attacks far RIGHT hand pushes spear from right hip across far side of horse neck. Visible near LEFT arm must remain bent down on reins. No raised near arm. Same hand grips same shaft in all16.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-c93f36da-bcb9-4daa-b779-6cd190a77072.png",
+      "sourceSha256": "4441dd1538c2f559bf16186e2aa57911640ace1297da5bdcb8d1571e7c9f90b1",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10swFix",
+      "prompt": "EDIT this16-sprite sheet. CRITICAL WRONG DIRECTION: every horse currently looks screen RIGHT. REDRAW EVERY horse and rider so they face SCREEN LEFT and slightly TOWARD CAMERA, SOUTHWEST7 o'clock. Horse muzzle on LEFT, horse tail on RIGHT. Show rider FRONT, never back. Do NOT leave any right-facing horse. Preserve same approved male face, dark helmet red plume, charcoal bronze-edge armor red sash blue-gray sleeves, chestnut horse red saddlecloth and spear. DO NOT horizontally mirror the finished image: redraw anatomy with RIGHT weapon hand on FAR screen-left side, LEFT near hand at screen-right holds reins. Same4x4 layout, rows idle/walk/attack/command and columns0~3. Idle stance same planted feet in rows1/3/4, only row2 walking. Attack right hand pushes spear forward LEFT from right hip, third cell half retract, fourth neutral identical first. Command right forearm raises spear to shoulder then halfway lower, fourth neutral. Spear blade always LEFT side of grip, blunt butt to RIGHT, no double blades. Same body size all16. Reduce whole sprites inside cells to CENTRAL64%, generous18% empty gutters including spear, true transparent background. No text/effects.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-d02fca43-56ce-46fb-b538-a61372171e58.png",
+      "sourceSha256": "f11ecf64a8a9fdd22f26fb3c16476d249a3097af60cc641b846caf705c8489cb",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10swHands",
+      "prompt": "Precise edit this4x4 LEFT-FACING horse rider sheet. Keep all16 whole characters and direction, horse shape, size, costume, weapon identical. Fix LEFT REIN HAND only: the hand on SCREEN RIGHT of rider is LEFT hand and must release spear in EVERY cell. Bend that screen-right forearm downward, place EMPTY hand on reins at horse withers in FRONT of rider, around horse mane center. This hand NEVER grips brown spear shaft at screen-right hip. The other hand on screen LEFT is RIGHT weapon hand and keeps spear. In attack row3 both hands currently on shaft: remove screen-right hand from shaft and put it low on reins. In skill row4 likewise. NO extra third arm/hand. Additionally row3 col1 and row4 col1 must be neutral ready poses almost same as row1 col1 so frame4→1 loop is gentle. Preserve all other pose progression and all feet. True transparent background, no text.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-b605ae7d-5457-462f-a279-1df179992ad5.png",
+      "sourceSha256": "8bed21a5931a272c490cf3589d34887a93a2f0870131e58390163a2287f88ba4",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10neHands",
+      "prompt": "Edit this16-sprite BACK-RIGHT horse rider sheet to fix weapon handedness. Keep all horses/poses/direction/costume/size. The arm on SCREEN RIGHT of rider is RIGHT WEAPON arm in this BACK view. In idle row1, walk row2, and col1/4 of attack/skill, redraw spear shaft so visible RIGHT hand on screen-right side of rider grips shaft at hip. Blade end extends diagonally FORWARD to SCREEN RIGHT beside horse head, never behind on screen-left. Left arm on screen-left stays bent forward down and holds reins. In attack/skill middle frames right arm already extends forward screen-right, preserve it, but make left hand clearly on reins. In ALL16 the blade must remain forward RIGHT of grip, no end-flip between idle and attack. Put tip around horse ear height in idle, shoulder height command, NEVER above rider plume. ONE blade, red tassel, blunt butt back-left. Full connected rider+horse, same grounded horse in rows1/3/4, no rear. Wide transparent gutters, no text.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-125c20b3-a402-45a8-9b7c-7e5c8e0d11e3.png",
+      "sourceSha256": "25c819a4afb3fccad291c56628c9391316dd25f85cc9004ca00e9efade521cab",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10neBlade",
+      "prompt": "Fix spear and layout ONLY. This4x4 sheet has an erroneous SILVER BLADE at BACK LEFT end of every spear. REMOVE ALL16 back-left silver tips; replace with plain rounded BROWN WOOD butt. Keep ONE silver blade at FORWARD RIGHT end with red tassel. No metal at butt. Also redraw complete sprites SMALLER inside same16 square cells with at least15% empty margin all sides; some forward spear tips touch right canvas edge, restore complete tips. Keep long spear proportions but foreshorten forward segment slightly when necessary. Horse+rider SAME size across16. Keep all poses/handedness/direction exactly, no body changes. Transparent background.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-1a8b066d-28da-49b0-8ce4-03a6257293cb.png",
+      "sourceSha256": "b89d01b36685084fff87e7e1136e5120dc5dfdf715de1d5a3f7d6d670c1d6744",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10nwFix",
+      "prompt": "Edit ONLY ROW THREE COLUMN TWO in this4x4 NW back-left sheet. Near LEFT ARM is incorrectly extended forward holding spear. Put that near left forearm DOWN with hand on reins, exactly like row3col3. Weapon belongs to FAR RIGHT hand at screen-right waist; show right shoulder connected to bent elbow and gripping spear behind torso. Spear passes BEHIND torso toward upper-left, blade beyond horse ear. For stronger thrust than col3 lean rider forward5degrees and straighten far right arm modestly, keep near left hand down. No extra limbs, no second blade. Horse/feet/costume/size unchanged. Other15 sprites unchanged. Transparent background.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-05c08568-7f50-4a7a-90cc-69e725ec9ac9.png",
+      "sourceSha256": "9559d15fb4b77a421d0d0708e1fe16615d41d9de6bfd5b008d260d117fd1987f",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10scenario",
+      "prompt": "Use case identity-preserve. Create SCENARIO unarmed dismounted idle sheet of EXACT young male heavy cavalry rider reference. Same face/build, dark open-face helmet red plume, charcoal lamellar bronze edging, blue-gray sleeves, red sash, long armored skirt and boots. NO HORSE. NO weapon, spear, sword, scabbard, shield or invisible handle. Both EMPTY hands relaxed naturally near thighs. Whole connected standing man.\n4 columns4 rows=16 sprites, equal square cells. Rows directions:1 NW11 o'clock BACK upper LEFT;2 NE2 o'clock BACK upper RIGHT;3 SE5 o'clock FRONT lower RIGHT;4 SW7 o'clock FRONT lower LEFT. Each row4 tiny breathing frames, planted feet and same body size, last nearly matches first. At least18% transparent gutters all sides, same baseline and scale, central64% ofcell. Same crisp outlined reference art, no text/grid/shadow/effects, true transparency. Do not mirror asymmetric costume.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-ffdc7c15-76df-4e8f-959e-92a035e81bc3.png",
+      "sourceSha256": "26f8d6ab5330da372ba34344be0da47b710849ee0d8836a481c06891baf2e03b",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10weakened",
+      "prompt": "Use case identity-preserve. Transparent4x4 sprite sheet of exact heavy cavalry male and chestnut horse reference. Same charcoal bronze-edged armor blue-gray sleeves red sash, dark helmet red plume, chestnut horse black mane white socks red saddlecloth, ONE silver-headed long spear red tassel plain wooden butt. Complete connected rider+horse eachcell.\nRows:1 NW11 o'clock BACK upperLEFT;2 NE2 o'clock BACK upperRIGHT;3 SE5 o'clock FRONT lowerRIGHT;4 SW7 o'clock FRONT lowerLEFT. Horse AND rider face same requested direction. Four columns are WEAKENED breathing: bowed head and slumped shoulders, tiny down/up breath, fourth veryclose first. Horse stays STILL all four hooves planted, same horse body/scale/saddle position all16; do not enlarge or rear. RIGHT weapon hand safely holds spear low, LEFT hand reins, no swapped hands. Spear tip stays above hooves, foreshorten to fit, single blade only. Clearly tired seated rider, no falling, no stars/blood/effects. All16 within central64% ofequal square cells,18% transparent margins, same baseline, crisp outlined approved style.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-183fa88f-5254-4972-bfcd-eb14a9593e15.png",
+      "sourceSha256": "a376947c5af723dc5b63d4d0e96f1b7c15e10617b8d71363296ca4954876f8cf",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10weakFix",
+      "prompt": "Fix wrong weapon hand in ONLY ROW TWO and ROW FOUR of this4x4 tired cavalry sheet. Keep horse/rider/direction/size/tired pose all16.\nROW TWO back-right: visible SCREEN RIGHT hand is anatomical RIGHT hand and MUST grip spear at right hip, blade extending forward toward SCREEN RIGHT beside horse head, blunt brown butt behind screenleft. Other screenleft hand holds reins.\nROW FOUR front-left: far SCREEN LEFT hand is RIGHT weapon hand, grip spear at far right hip beside horse neck, blade extending forward DOWN LEFT near horse muzzle, NOT behind screenright. Near SCREEN RIGHT arm is LEFT arm, bend down placing empty hand on reins at mane center, no spear in this hand.\nRows1 and3 unchanged. Spear has ONE blade red tassel, blunt wooden butt. All16 horses planted feet, true transparent, all complete sprites comfortably inside canvas with15% margins; no clipped tips.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-260a168d-1f75-46be-a01e-145e78cc345c.png",
+      "sourceSha256": "116d8796a6c06c4461953bf96e38bdb1642a615859c227391bdeee7dd8e522a5",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10seFix",
+      "prompt": "Fix ONLY row3 col3 and row4 col3 of this4x4 southeast cavalry sheet. Left rein hand (screen RIGHT side of chest) incorrectly grips spear in row3 col3. Lower that LEFT hand onto reins at horse mane exactly as idle row1col1, clearly separate it from spear shaft. Right hand on screen LEFT side retains spear at waist. In both targetcells keep spear blade pointing RIGHT as existing, halfway recovered from previous frame. Do not change body/horse/feet/scale. All other14 unchanged. No extra limbs, transparent background.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-3895b3e2-3e96-48de-bc02-82344cc65362.png",
+      "sourceSha256": "723d9255497d3624b40d4ba470269d6d58c92824fd75e8542af013d0b8ce8ff4",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10neReach",
+      "prompt": "Technical reach edit ONLY. Preserve this4x4 NE horse+rider sheet's bodies absolutely. In ROW3 COL2 and COL3, foreshorten spear exposed shaft toward right by30%, drawing thrust more toward depth, so total sprite width is no greater than idle row1 sprite width. Keep ONE same silver blade at right tip and red tassel, no rear metal blade. Bend right elbow slightly to contain rightward reach if needed. Do not shrink horse or rider; keep all other14 sprites exactly. Ensure COMPLETE spear tip inside canvas allcells. Transparent background.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-6706d674-7145-421a-ba79-43f12394b86b.png",
+      "sourceSha256": "10a8f93a93c8136a5e6f7ac5018f7e1aca29664b72d1d12baa80964e91889c25",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10nwLayout",
+      "prompt": "LAYOUT ONLY: keep exact16 NW cavalry characters/poses in same4x4square sheet but each complete sprite at HALF current width/height centered its cell. Huge empty transparent gutters, do not crop canvas tight. Restore complete spear tips at rightmost column, no clipped blade. Preserve every armor detail horse body hand pose gait and spear motion. No new content, true transparent.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-4eb4066b-e989-4450-8df0-c5c356b9b850.png",
+      "sourceSha256": "b3c82043101a0696a7c013fbbf007aa9eaadb2c04cdaa24d59ff4b113b4a4217",
+      "sourceDeleted": true
+    },
+    {
+      "key": "p10neLayout",
+      "prompt": "LAYOUT ONLY. Keep exact16 back-right heavy cavalry poses in4x4 square sheet. Make EACH WHOLE sprite HALF current width and height inside its cell, centered. Huge transparent empty gutters, do not crop canvas tight afterward. Restore all rightmost spear tips fully, no clipping. Preserve horse sizes proportional, costume, handedness, movement and all16 pose order. True transparent, no effects/text.",
+      "path": "/Users/choenamho/.codex/generated_images/01a17855-8b79-7661-9ff9-52c25fcc8209/exec-1786e24f-287a-4bc8-8072-bd9bb9dd3fbe.png",
+      "sourceSha256": "a256f491957b191238655297936e1b353cd64fe376cfaef798c4ee75b4bf6f90",
+      "sourceDeleted": true
+    }
+  ],
+  "wholeFrameReuse": {
+    "ne-0-3.webp": "ne-0-0.webp",
+    "ne-1-3.webp": "ne-1-1.webp",
+    "ne-2-3.webp": "ne-2-0.webp",
+    "ne-3-3.webp": "ne-3-0.webp",
+    "nw-3-3.webp": "nw-3-0.webp",
+    "sw-2-0.webp": "sw-0-0.webp",
+    "sw-3-0.webp": "sw-0-0.webp"
+  },
+  "generator": "built-in image_gen",
+  "createdDate": "2026-10-27",
+  "reference": {
+    "path": "web/public/images/job-models/promotion-se-v1/job-10.webp",
+    "sha256": "16ea92115380d70eef17a579e065c72afdb96adbb9513fd65899dabb0882df55",
+    "data": "web/src/features/game-world/data/promotion-models.json",
+    "weapon": "긴창"
+  },
+  "timingsMs": {
+    "idle": 320,
+    "move": 170,
+    "attack": 190,
+    "skill": 240,
+    "scenario": 360,
+    "weakened": 300
+  },
+  "scenarioRowAssignment": {
+    "sourceRows": [
+      "ne",
+      "nw",
+      "se",
+      "sw"
+    ],
+    "method": "whole frame reassignment, no horizontal flip"
+  },
+  "rawSourceCleanup": {
+    "status": "completed",
+    "deletedCount": 16,
+    "scope": "only this turn promotion PNGs after lightweight/browser QA"
+  },
+  "drawingMethod": "Whole connected horse+rider images; no body-part compositing or mirroring. PIL only alpha component extraction, resampling, translation and encoding.",
+  "totalArtifactBytes": 1220322
+}

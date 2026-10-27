@@ -1,0 +1,272 @@
+{
+  "status": "기본·승급 5시 정지 모델 제작 · 애니메이션 미제작",
+  "records": [
+    {
+      "id": 0,
+      "name": "군웅 · 왕건",
+      "group": "기본 병과",
+      "image": "/images/job-models/se-v1/job-0-v2.webp",
+      "note": "주인공 전용 · 관모와 긴 포"
+    },
+    {
+      "id": 3,
+      "name": "경보병",
+      "group": "기본 병과",
+      "image": "/images/job-models/se-v1/job-3.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 6,
+      "name": "궁병",
+      "group": "기본 병과",
+      "image": "/images/job-models/se-v1/job-6.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 9,
+      "name": "경기병",
+      "group": "기본 병과",
+      "image": "/images/job-models/se-v1/job-9.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 12,
+      "name": "궁기병",
+      "group": "기본 병과",
+      "image": "/images/job-models/se-v1/job-12.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 15,
+      "name": "경포차",
+      "group": "기본 병과",
+      "image": "/images/job-models/se-v1/job-15.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 18,
+      "name": "무도가",
+      "group": "기본 병과",
+      "image": "/images/job-models/se-v1/job-18.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 21,
+      "name": "적병",
+      "group": "기본 병과",
+      "image": "/images/job-models/se-v1/job-21.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 24,
+      "name": "책사",
+      "group": "기본 병과",
+      "image": "/images/job-models/se-v1/job-24.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 27,
+      "name": "풍수사",
+      "group": "기본 병과",
+      "image": "/images/job-models/se-v1/job-27.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 30,
+      "name": "도사",
+      "group": "기본 병과",
+      "image": "/images/job-models/se-v1/job-30.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 33,
+      "name": "기마책사",
+      "group": "기본 병과",
+      "image": "/images/job-models/se-v1/job-33.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 36,
+      "name": "무용수",
+      "group": "기본 병과",
+      "image": "/images/job-models/se-v1/job-36.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 39,
+      "name": "서량기병",
+      "group": "특수 유형",
+      "image": "/images/job-models/se-v1/job-39.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 40,
+      "name": "황건적",
+      "group": "특수 유형",
+      "image": "/images/job-models/se-v1/job-40.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 41,
+      "name": "해적",
+      "group": "특수 유형",
+      "image": "/images/job-models/se-v1/job-41.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 42,
+      "name": "곰부대 → 쇠동",
+      "group": "특수 유형",
+      "image": "/images/folklore/se-model-v1/spirit-1006.webp",
+      "note": "기존 설화 동료 외형 · 원본 병과 기능 유지",
+      "originalName": "곰부대",
+      "companionId": 1006
+    },
+    {
+      "id": 43,
+      "name": "맹호대 → 쿵돌",
+      "group": "특수 유형",
+      "image": "/images/folklore/se-model-v1/spirit-1002.webp",
+      "note": "기존 설화 동료 외형 · 원본 병과 기능 유지",
+      "originalName": "맹호대",
+      "companionId": 1002
+    },
+    {
+      "id": 44,
+      "name": "제독",
+      "group": "특수 유형",
+      "image": "/images/job-models/se-v1/job-44.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 45,
+      "name": "주술사",
+      "group": "특수 유형",
+      "image": "/images/job-models/se-v1/job-45.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 46,
+      "name": "선인",
+      "group": "특수 유형",
+      "image": "/images/job-models/se-v1/job-46.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 47,
+      "name": "물자대",
+      "group": "특수 유형",
+      "image": "/images/job-models/se-v1/job-47.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 48,
+      "name": "식량대",
+      "group": "특수 유형",
+      "image": "/images/job-models/se-v1/job-48.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 49,
+      "name": "나무인형 → 길목",
+      "group": "특수 유형",
+      "image": "/images/folklore/se-model-v1/spirit-1007.webp",
+      "note": "기존 설화 동료 외형 · 원본 병과 기능 유지",
+      "originalName": "나무인형",
+      "companionId": 1007
+    },
+    {
+      "id": 50,
+      "name": "흙인형 → 사금",
+      "group": "특수 유형",
+      "image": "/images/folklore/se-model-v1/spirit-24.webp",
+      "note": "기존 설화 동료 외형 · 원본 병과 기능 유지",
+      "originalName": "흙인형",
+      "companionId": 24
+    },
+    {
+      "id": 51,
+      "name": "황제",
+      "group": "특수 유형",
+      "image": "/images/job-models/se-v1/job-51.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 52,
+      "name": "민중",
+      "group": "특수 유형",
+      "image": "/images/job-models/se-v1/job-52.webp",
+      "note": "병과 공통 외형 제안"
+    },
+    {
+      "id": 2018,
+      "name": "몽당",
+      "group": "설화 동료",
+      "image": "/images/folklore/se-model-v1/spirit-18.webp",
+      "note": "기존 설화 동료 · 5시 정지 모델"
+    },
+    {
+      "id": 2024,
+      "name": "사금",
+      "group": "설화 동료",
+      "image": "/images/folklore/se-model-v1/spirit-24.webp",
+      "note": "기존 설화 동료 · 5시 정지 모델"
+    },
+    {
+      "id": 2025,
+      "name": "망실",
+      "group": "설화 동료",
+      "image": "/images/folklore/se-model-v1/spirit-25.webp",
+      "note": "기존 설화 동료 · 5시 정지 모델"
+    },
+    {
+      "id": 3001,
+      "name": "불씨",
+      "group": "설화 동료",
+      "image": "/images/folklore/se-model-v1/spirit-1001.webp",
+      "note": "기존 설화 동료 · 5시 정지 모델"
+    },
+    {
+      "id": 3002,
+      "name": "쿵돌",
+      "group": "설화 동료",
+      "image": "/images/folklore/se-model-v1/spirit-1002.webp",
+      "note": "기존 설화 동료 · 5시 정지 모델"
+    },
+    {
+      "id": 3003,
+      "name": "여울",
+      "group": "설화 동료",
+      "image": "/images/folklore/se-model-v1/spirit-1003.webp",
+      "note": "기존 설화 동료 · 5시 정지 모델"
+    },
+    {
+      "id": 3004,
+      "name": "물결",
+      "group": "설화 동료",
+      "image": "/images/folklore/se-model-v1/spirit-1004.webp",
+      "note": "기존 설화 동료 · 5시 정지 모델"
+    },
+    {
+      "id": 3005,
+      "name": "소담",
+      "group": "설화 동료",
+      "image": "/images/folklore/se-model-v1/spirit-1005.webp",
+      "note": "기존 설화 동료 · 5시 정지 모델"
+    },
+    {
+      "id": 3006,
+      "name": "쇠동",
+      "group": "설화 동료",
+      "image": "/images/folklore/se-model-v1/spirit-1006.webp",
+      "note": "기존 설화 동료 · 5시 정지 모델"
+    },
+    {
+      "id": 3007,
+      "name": "길목",
+      "group": "설화 동료",
+      "image": "/images/folklore/se-model-v1/spirit-1007.webp",
+      "note": "기존 설화 동료 · 5시 정지 모델"
+    }
+  ]
+}

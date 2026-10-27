@@ -1,0 +1,316 @@
+{
+  "groups": [
+    {
+      "id": 0,
+      "name": "군웅 · 왕건",
+      "stages": [
+        {
+          "id": 0,
+          "name": "군웅 · 왕건",
+          "image": "/images/job-models/se-v1/job-0-v2.webp",
+          "weapon": "기존 기본 모델"
+        },
+        {
+          "id": 1,
+          "name": "영웅",
+          "image": "/images/job-models/promotion-se-v1/job-1.webp",
+          "weapon": "넓은날검"
+        },
+        {
+          "id": 2,
+          "name": "패왕",
+          "image": "/images/job-models/promotion-se-v1/job-2.webp",
+          "weapon": "벼림장검"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "경보병",
+      "stages": [
+        {
+          "id": 3,
+          "name": "경보병",
+          "image": "/images/job-models/se-v1/job-3.webp",
+          "weapon": "기존 기본 모델"
+        },
+        {
+          "id": 4,
+          "name": "중보병",
+          "image": "/images/job-models/promotion-se-v1/job-4.webp",
+          "weapon": "넓은날검"
+        },
+        {
+          "id": 5,
+          "name": "근위병",
+          "image": "/images/job-models/promotion-se-v1/job-5.webp",
+          "weapon": "벼림장검"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "궁병",
+      "stages": [
+        {
+          "id": 6,
+          "name": "궁병",
+          "image": "/images/job-models/se-v1/job-6.webp",
+          "weapon": "기존 기본 모델"
+        },
+        {
+          "id": 7,
+          "name": "노병",
+          "image": "/images/job-models/promotion-se-v1/job-7.webp",
+          "weapon": "쇠뿔겹활"
+        },
+        {
+          "id": 8,
+          "name": "연노병",
+          "image": "/images/job-models/promotion-se-v1/job-8.webp",
+          "weapon": "힘줄각궁"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "경기병",
+      "stages": [
+        {
+          "id": 9,
+          "name": "경기병",
+          "image": "/images/job-models/se-v1/job-9.webp",
+          "weapon": "기존 기본 모델"
+        },
+        {
+          "id": 10,
+          "name": "중기병",
+          "image": "/images/job-models/promotion-se-v1/job-10.webp",
+          "weapon": "긴창"
+        },
+        {
+          "id": 11,
+          "name": "친위대",
+          "image": "/images/job-models/promotion-se-v1/job-11.webp",
+          "weapon": "쇠등창"
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "궁기병",
+      "stages": [
+        {
+          "id": 12,
+          "name": "궁기병",
+          "image": "/images/job-models/se-v1/job-12.webp",
+          "weapon": "기존 기본 모델"
+        },
+        {
+          "id": 13,
+          "name": "노기병",
+          "image": "/images/job-models/promotion-se-v1/job-13.webp",
+          "weapon": "쇠뿔겹활"
+        },
+        {
+          "id": 14,
+          "name": "연노기병",
+          "image": "/images/job-models/promotion-se-v1/job-14.webp",
+          "weapon": "힘줄각궁"
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "경포차",
+      "stages": [
+        {
+          "id": 15,
+          "name": "경포차",
+          "image": "/images/job-models/se-v1/job-15.webp",
+          "weapon": "기존 기본 모델"
+        },
+        {
+          "id": 16,
+          "name": "중포차",
+          "image": "/images/job-models/promotion-se-v1/job-16.webp",
+          "weapon": "쇠테돌팔매틀"
+        },
+        {
+          "id": 17,
+          "name": "벽력차",
+          "image": "/images/job-models/promotion-se-v1/job-17.webp",
+          "weapon": "성돌격틀"
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "무도가",
+      "stages": [
+        {
+          "id": 18,
+          "name": "무도가",
+          "image": "/images/job-models/se-v1/job-18.webp",
+          "weapon": "기존 기본 모델"
+        },
+        {
+          "id": 19,
+          "name": "권사",
+          "image": "/images/job-models/promotion-se-v1/job-19.webp",
+          "weapon": "쇠테몽둥이"
+        },
+        {
+          "id": 20,
+          "name": "권성",
+          "image": "/images/job-models/promotion-se-v1/job-20.webp",
+          "weapon": "쇠돌몽둥이"
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "적병",
+      "stages": [
+        {
+          "id": 21,
+          "name": "적병",
+          "image": "/images/job-models/se-v1/job-21.webp",
+          "weapon": "기존 기본 모델"
+        },
+        {
+          "id": 22,
+          "name": "의적",
+          "image": "/images/job-models/promotion-se-v1/job-22.webp",
+          "weapon": "넓은날검"
+        },
+        {
+          "id": 23,
+          "name": "호걸",
+          "image": "/images/job-models/promotion-se-v1/job-23.webp",
+          "weapon": "벼림장검"
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "책사",
+      "stages": [
+        {
+          "id": 24,
+          "name": "책사",
+          "image": "/images/job-models/se-v1/job-24.webp",
+          "weapon": "기존 기본 모델"
+        },
+        {
+          "id": 25,
+          "name": "참모",
+          "image": "/images/job-models/promotion-se-v1/job-25.webp",
+          "weapon": "진법부채"
+        },
+        {
+          "id": 26,
+          "name": "군사",
+          "image": "/images/job-models/promotion-se-v1/job-26.webp",
+          "weapon": "쇠살부채"
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "풍수사",
+      "stages": [
+        {
+          "id": 27,
+          "name": "풍수사",
+          "image": "/images/job-models/se-v1/job-27.webp",
+          "weapon": "기존 기본 모델"
+        },
+        {
+          "id": 28,
+          "name": "방술사",
+          "image": "/images/job-models/promotion-se-v1/job-28.webp",
+          "weapon": "청동울림칼"
+        },
+        {
+          "id": 29,
+          "name": "선술사",
+          "image": "/images/job-models/promotion-se-v1/job-29.webp",
+          "weapon": "쇠울림칼"
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "도사",
+      "stages": [
+        {
+          "id": 30,
+          "name": "도사",
+          "image": "/images/job-models/se-v1/job-30.webp",
+          "weapon": "기존 기본 모델"
+        },
+        {
+          "id": 31,
+          "name": "환술사",
+          "image": "/images/job-models/promotion-se-v1/job-31.webp",
+          "weapon": "청동울림칼"
+        },
+        {
+          "id": 32,
+          "name": "요술사",
+          "image": "/images/job-models/promotion-se-v1/job-32.webp",
+          "weapon": "쇠울림칼"
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "기마책사",
+      "stages": [
+        {
+          "id": 33,
+          "name": "기마책사",
+          "image": "/images/job-models/se-v1/job-33.webp",
+          "weapon": "기존 기본 모델"
+        },
+        {
+          "id": 34,
+          "name": "기마참모",
+          "image": "/images/job-models/promotion-se-v1/job-34.webp",
+          "weapon": "진법부채"
+        },
+        {
+          "id": 35,
+          "name": "기마군사",
+          "image": "/images/job-models/promotion-se-v1/job-35.webp",
+          "weapon": "쇠살부채"
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "무용수",
+      "stages": [
+        {
+          "id": 36,
+          "name": "무용수",
+          "image": "/images/job-models/se-v1/job-36.webp",
+          "weapon": "기존 기본 모델"
+        },
+        {
+          "id": 37,
+          "name": "무희",
+          "image": "/images/job-models/promotion-se-v1/job-37.webp",
+          "weapon": "쇠테몽둥이"
+        },
+        {
+          "id": 38,
+          "name": "무녀",
+          "image": "/images/job-models/promotion-se-v1/job-38.webp",
+          "weapon": "쇠돌몽둥이"
+        }
+      ]
+    }
+  ]
+}

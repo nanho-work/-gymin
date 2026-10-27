@@ -1,0 +1,5 @@
+"use client";
+import {useState} from 'react';
+import data from '../data/promotion-models.json';
+import s from './job-models.module.css';
+export function PromotionModelGallery(){const [family,setFamily]=useState(-1);return <div><p>복식·대표 무기·기병의 말과 마구를 승급 세트로 비교합니다. 개별 아이템 착용은 이 외형을 바꾸지 않습니다. 5시 방향 정지 초안이며 새 이동·공격 프레임은 아직 없습니다.</p><label className={s.family}>병과 계열 <select value={family} onChange={e=>setFamily(Number(e.target.value))}><option value={-1}>전체 13계열</option>{data.groups.map(g=><option value={g.id} key={g.id}>{g.name}</option>)}</select></label>{data.groups.filter(g=>family===-1||g.id===family).map(g=><section key={g.id} className={s.familyRow}><h3>{g.name}</h3><div className={s.rankGrid}>{g.stages.map((c,i)=><figure key={c.id}><small>{i===0?'기본':i===1?'1차 승급':'최종 승급'}</small><a href={c.image} target="_blank" rel="noreferrer"><img src={c.image} width={160} height={160} alt={`${c.name} 5시 방향 정지 모델`} loading="lazy"/></a><figcaption><strong>{c.name}</strong><small>{c.weapon}</small></figcaption></figure>)}</div></section>)}<p>복식은 한국풍 역사 판타지 디자인입니다. 원본 병과 이름과 능력치는 유지하며, 특수 병과·설화 동료에 새 승급을 추가하지 않았습니다.</p></div>}

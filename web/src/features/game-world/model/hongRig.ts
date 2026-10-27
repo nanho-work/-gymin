@@ -32,12 +32,12 @@ export function fitHongArm(id:string,src:string,shoulder:Point,grip:Point,back:b
  return{id,src,x:0,y:0,width:32,height:32,matrix:fitted,shoulder,grip};
 }
 /** Appearance rig draft, not hand-painted gameplay animation. */
-export function composeHongRig(loadout:Loadout,dir:Direction,action:number,frame:number,stance:HongStance='mounted',rank:HongRank='light',style:HongStyle='mobile'):RigPart[]{
+export function composeHongRig(loadout:Loadout,dir:Direction,action:number,frame:number,stance:HongStance='mounted',rank:HongRank='light',style:HongStyle='mobile',skin?:{root:string;weapon:string}):RigPart[]{
  const onFoot=stance==='dismounted',back=dir==='nw'||dir==='ne';
  const mirror=dir==='sw'||dir==='ne',side=dir==='se'||dir==='ne'?1:-1;
  const sourceDir=back?'nw':'se';
  const mobile=style==='mobile';
- const rankRoot=`/images/playable/hong-yu/${mobile?'mobile-rig-v1':'promotion-rig'}/${rank}`;
+ const rankRoot=skin?.root??`/images/playable/hong-yu/${mobile?'mobile-rig-v1':'promotion-rig'}/${rank}`;
  const mountPose=cavalryMountPose(loadout.accessory,dir,!onFoot&&action===1,frame);
  const t=frame%4,wave=[0,1,0,-1][t],bob=!onFoot&&action===1?mountPose.riderOffsetY:action===1?-Math.abs(wave)*2:action===0?wave*.5:0;
  const cx=160-side*7,top=(onFoot?175:145)+bob;
@@ -74,18 +74,26 @@ export function composeHongRig(loadout:Loadout,dir:Direction,action:number,frame
  const sleeveSrc=`${rankRoot}/sleeve-${sourceDir}.webp`;
  // Sleeve chirality is explicit per view; front/back art cannot share one mirror rule.
  const rightArm=fitHongArm('arm-right',sleeveSrc,shoulder,hand,back,dir==='nw'?true:mirror);
- const leftShoulder=point(pose.l[0],pose.l[1]);
- const leftHand=point(pose.l[2],onFoot?pose.l[3]+3:pose.l[3]);
- const leftArm=fitHongArm('arm-left',sleeveSrc,leftShoulder,leftHand,back,dir!=='se',.55);
+ // Mounted free arm stays outside the torso silhouette, with its hand beside the saddle.
+ const leftSide=Math.sign(pose.l[0]);
+ const leftShoulder=point(onFoot?pose.l[0]:leftSide*24,pose.l[1]);
+ const restingHand=point(onFoot?pose.l[2]:leftSide*29,onFoot?pose.l[3]+3:pose.l[3]);
+ // Lower the mounted free elbow 15 degrees about its shoulder; mirror the turn by side.
+ const leftHand=onFoot?restingHand:rotate(restingHand,leftShoulder,leftSide*15);
+ const leftArm=fitHongArm('arm-left',sleeveSrc,leftShoulder,leftHand,back,dir!=='se',onFoot?.55:.75);
  const nearArm=rightNear?rightArm:leftArm,farArm=rightNear?leftArm:rightArm;
  const w=loadout.weapon===3?87:loadout.weapon===4?112:124;
  const weapon=part('weapon',`weapon-${loadout.weapon}`,hand.x-w*(side===1?.32:.68),hand.y-w*.68,w,w);
  // Weapon art has its own front orientation: mirror from SE for both left-facing views.
  weapon.src=`${root}/weapon-${loadout.weapon}-se.webp`;weapon.flipX=side===-1;
  weapon.angle=(action===2?[0,-12,30,8][t]:action===3?[0,-15,-30,0][t]:0)*side+lean;weapon.px=hand.x;weapon.py=hand.y;weapon.grip=hand;
+ if(skin){weapon.src=skin.weapon;weapon.width=52;weapon.height=52;weapon.x=hand.x-(side===1?13:39);weapon.y=hand.y-39;}
  // The far leg is occluded by the horse. Arms stay on their own side of the torso.
  const body=back?[weapon,farArm,nearArm,torso,head]:rightNear?[farArm,torso,head,weapon,nearArm]:[weapon,farArm,torso,head,nearArm];
- return onFoot?[footFar,footLeg,...body]:[farLeg,mount,nearLeg,...body];
+ // Do not bury the mounted free hand beneath the opaque torso in back/SE views.
+ const mountedBody=body.filter(p=>p.id!=='arm-left');
+ mountedBody.splice(mountedBody.findIndex(p=>p.id==='head'),0,leftArm);
+ return onFoot?[footFar,footLeg,...body]:[farLeg,mount,nearLeg,...mountedBody];
 }
 export function hongPartTransform(p:RigPart){
  if(p.matrix)return `matrix(${p.matrix.join(' ')})`;

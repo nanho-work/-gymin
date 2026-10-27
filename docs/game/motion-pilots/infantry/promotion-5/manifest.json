@@ -1,0 +1,1745 @@
+{
+  "jobId": 5,
+  "jobName": "근위병",
+  "baseJobId": 3,
+  "stage": 2,
+  "status": "draft-needs-gait-refinement",
+  "modes": {
+    "combat": {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1",
+      "frameCount": 64
+    },
+    "scenario": {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1",
+      "frameCount": 16
+    }
+  },
+  "frameSize": [
+    160,
+    160
+  ],
+  "directions": [
+    "nw",
+    "ne",
+    "se",
+    "sw"
+  ],
+  "framesPerAction": 4,
+  "totalFrames": 80,
+  "totalFrameBytes": 404304,
+  "totalBytes": 1270932,
+  "anchor": {
+    "x": 80,
+    "footY": 150,
+    "method": "red-waist-sash median, not support-foot median"
+  },
+  "ms": {
+    "idle": 320,
+    "move": 170,
+    "attack": 190,
+    "skill": 240,
+    "scenario": 360
+  },
+  "files": [
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 0,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-0-0.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 5330,
+      "alphaBounds": [
+        40,
+        32,
+        134,
+        152
+      ],
+      "footY": 150,
+      "sha256": "e30c5d76caddfcd5666f40a3701f2b97f7af0e8698c66f81d6406846cc6dfd67"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 0,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-0-1.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 5334,
+      "alphaBounds": [
+        41,
+        32,
+        135,
+        152
+      ],
+      "footY": 150,
+      "sha256": "24bbe7cd65fea4a89493ad61e5246c4107b41a3843e58b6e45ae5a6681a3600a"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 0,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-0-2.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 5416,
+      "alphaBounds": [
+        40,
+        32,
+        134,
+        152
+      ],
+      "footY": 150,
+      "sha256": "6312bf7bb2620c6da4d226784df1bb9796372a14de72dab57ba65c480a7a14b8"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 0,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-0-3.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 5354,
+      "alphaBounds": [
+        40,
+        32,
+        135,
+        152
+      ],
+      "footY": 150,
+      "sha256": "d093d9a523f8193bb698adc681b74299b671e736e89216fac4b70e2c265e6423"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 1,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-1-0.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 5492,
+      "alphaBounds": [
+        35,
+        30,
+        141,
+        152
+      ],
+      "footY": 150,
+      "sha256": "17ec163212380fe6b796c305b53e570b68f7e48708c85075eb3d7880a0692022"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 1,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-1-1.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 5216,
+      "alphaBounds": [
+        35,
+        30,
+        140,
+        152
+      ],
+      "footY": 150,
+      "sha256": "45237f259690740660b7dcd520817fca35869ec0ae9809ff3b36d4c8890737ea"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 1,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-1-2.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 5726,
+      "alphaBounds": [
+        35,
+        30,
+        140,
+        152
+      ],
+      "footY": 150,
+      "sha256": "e4ae280aef7fca3d9c7fccb216f71ac85469247019bba889fb582185a86aac96"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 1,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-1-3.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 5610,
+      "alphaBounds": [
+        35,
+        29,
+        141,
+        152
+      ],
+      "footY": 150,
+      "sha256": "1ab4e9a7548ac1649d4526013fbd3701b9b22d14ab7a889767b0c572653f6432"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 2,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-2-0.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 5836,
+      "alphaBounds": [
+        30,
+        18,
+        122,
+        152
+      ],
+      "footY": 150,
+      "sha256": "a6648d681d7166de4ec32a5d2a1f8b75147baac3041a57b8f5812984952fafc0"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 2,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-2-1.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 5942,
+      "alphaBounds": [
+        9,
+        27,
+        124,
+        152
+      ],
+      "footY": 150,
+      "sha256": "1b67c180afe9ae24e6f585c7185c8853ae693112d861b388418c136eb99bb20e"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 2,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-2-2.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 6156,
+      "alphaBounds": [
+        31,
+        20,
+        123,
+        152
+      ],
+      "footY": 150,
+      "sha256": "44380045b48e97bfd85262f2a53b84af78c331345de82ed838b9f1d5f58cbdc4"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 2,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-2-3.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "reuseFrame": 0,
+      "bytes": 5836,
+      "alphaBounds": [
+        30,
+        18,
+        122,
+        152
+      ],
+      "footY": 150,
+      "sha256": "a6648d681d7166de4ec32a5d2a1f8b75147baac3041a57b8f5812984952fafc0"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 3,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-3-0.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 6096,
+      "alphaBounds": [
+        30,
+        25,
+        124,
+        152
+      ],
+      "footY": 150,
+      "sha256": "003021444f01845a8bc4c676011ebca03c050b9a7667efb62436ae976c9549fd"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 3,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-3-1.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 6166,
+      "alphaBounds": [
+        32,
+        14,
+        125,
+        152
+      ],
+      "footY": 150,
+      "sha256": "f2cca1c5aae83f4bbd7dea1ada19909fbbec95e783354293e6a5c0d20244b591"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 3,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-3-2.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "bytes": 6308,
+      "alphaBounds": [
+        31,
+        14,
+        124,
+        152
+      ],
+      "footY": 150,
+      "sha256": "f1e8f7dfc36382c5ced963426de7bb965fa16e4b6cb481ab72777d866dac7e77"
+    },
+    {
+      "mode": "combat",
+      "direction": "nw",
+      "action": 3,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/nw-3-3.webp",
+      "scale": 0.6779661016949152,
+      "source": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+      "anchorX": 80.0,
+      "reuseFrame": 0,
+      "bytes": 6096,
+      "alphaBounds": [
+        30,
+        25,
+        124,
+        152
+      ],
+      "footY": 150,
+      "sha256": "003021444f01845a8bc4c676011ebca03c050b9a7667efb62436ae976c9549fd"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 0,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-0-0.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 5092,
+      "alphaBounds": [
+        50,
+        32,
+        142,
+        152
+      ],
+      "footY": 150,
+      "sha256": "50381664bb03df2c7b973f02c07b47b3427a3fee49348641a0bea39812237854"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 0,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-0-1.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 5042,
+      "alphaBounds": [
+        50,
+        33,
+        142,
+        152
+      ],
+      "footY": 150,
+      "sha256": "fc338f94e2cf39c1b6ecbe2f8eacd4425a16f2295ee0349903066338d96f9198"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 0,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-0-2.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 5060,
+      "alphaBounds": [
+        51,
+        32,
+        143,
+        152
+      ],
+      "footY": 150,
+      "sha256": "4723b1c7bdf7a6498f1c5ff737a414064b4452c42a9792090631ab43c981334b"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 0,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-0-3.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 5016,
+      "alphaBounds": [
+        50,
+        32,
+        142,
+        152
+      ],
+      "footY": 150,
+      "sha256": "4c3a66133f3fd3c8f70286789a82925f6a567fd422408441d26593f4c49baec3"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 1,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-1-0.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 5324,
+      "alphaBounds": [
+        50,
+        27,
+        143,
+        152
+      ],
+      "footY": 150,
+      "sha256": "38e34ab3f5fa6f90b94f42ae45d3698fba2fc68ec7cec2ba0c70b4a25d52bdf5"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 1,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-1-1.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 5264,
+      "alphaBounds": [
+        54,
+        27,
+        146,
+        152
+      ],
+      "footY": 150,
+      "sha256": "9fb811da13aa64e2570e441d0973673831d2955549b1348f7455b26e5e205f07"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 1,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-1-2.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 5364,
+      "alphaBounds": [
+        49,
+        27,
+        141,
+        152
+      ],
+      "footY": 150,
+      "sha256": "b2697e17f7acb655993cf80f36fa149ba56c317615feb70c7764217e6a0f9af1"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 1,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-1-3.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 5272,
+      "alphaBounds": [
+        52,
+        27,
+        144,
+        152
+      ],
+      "footY": 150,
+      "sha256": "d2fb36536885b69c93cf4a09bf48a6b25240da3930c6edd9035aa98e1c6734cc"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 2,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-2-0.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 5186,
+      "alphaBounds": [
+        45,
+        29,
+        124,
+        152
+      ],
+      "footY": 150,
+      "sha256": "2b707814aada2a36d61e3bfd79bede01833bf6384e6fae8791f0986003b6cdf2"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 2,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-2-1.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 5542,
+      "alphaBounds": [
+        40,
+        19,
+        156,
+        152
+      ],
+      "footY": 150,
+      "sha256": "b0c842f0f633bcddc1f8887eb8afb9a9a3845fb84df5d74e6cf39a3d14559a26"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 2,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-2-2.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 5352,
+      "alphaBounds": [
+        43,
+        33,
+        129,
+        152
+      ],
+      "footY": 150,
+      "sha256": "7b3bf29756e65742227b95dc5573dd1f1fd727006c0871ca606ac6c83e409310"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 2,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-2-3.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "reuseFrame": 0,
+      "bytes": 5186,
+      "alphaBounds": [
+        45,
+        29,
+        124,
+        152
+      ],
+      "footY": 150,
+      "sha256": "2b707814aada2a36d61e3bfd79bede01833bf6384e6fae8791f0986003b6cdf2"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 3,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-3-0.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 4874,
+      "alphaBounds": [
+        51,
+        34,
+        118,
+        152
+      ],
+      "footY": 150,
+      "sha256": "91f67e04bedc5335c6ac3c1594d494a197d52ca7907cb12c09329c4e8bc48d02"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 3,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-3-1.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 5396,
+      "alphaBounds": [
+        48,
+        1,
+        119,
+        153
+      ],
+      "footY": 150,
+      "sha256": "63a70806edf8280826812897726ae9a156b1142214c279f1486072e684d72af9"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 3,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-3-2.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "bytes": 5212,
+      "alphaBounds": [
+        51,
+        14,
+        119,
+        152
+      ],
+      "footY": 150,
+      "sha256": "872434713681a6d457e39a821e4ea5adaba5914ca550faedbfe9f724200213a2"
+    },
+    {
+      "mode": "combat",
+      "direction": "ne",
+      "action": 3,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/ne-3-3.webp",
+      "scale": 0.7058823529411765,
+      "source": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+      "anchorX": 80.0,
+      "reuseFrame": 0,
+      "bytes": 4874,
+      "alphaBounds": [
+        51,
+        34,
+        118,
+        152
+      ],
+      "footY": 150,
+      "sha256": "91f67e04bedc5335c6ac3c1594d494a197d52ca7907cb12c09329c4e8bc48d02"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 0,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-0-0.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "bytes": 4896,
+      "alphaBounds": [
+        52,
+        32,
+        123,
+        152
+      ],
+      "footY": 150,
+      "sha256": "e090334b7c0d9d7ab96050f150e55489f805f28a14a61f3797a53a06d6149f35"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 0,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-0-1.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "bytes": 4972,
+      "alphaBounds": [
+        51,
+        32,
+        116,
+        152
+      ],
+      "footY": 150,
+      "sha256": "20c4b1534d80883cf236bf904e1cb5544f4e0d7e6d6bfcad0d040e59cec847b4"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 0,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-0-2.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "bytes": 4890,
+      "alphaBounds": [
+        52,
+        32,
+        120,
+        152
+      ],
+      "footY": 150,
+      "sha256": "8d30e40b732e1b884067c74aaa164fe8a955bcf329906cc663761f1336c32323"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 0,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-0-3.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "bytes": 4872,
+      "alphaBounds": [
+        52,
+        32,
+        120,
+        152
+      ],
+      "footY": 150,
+      "sha256": "8510939435bc5834c892962e3aa6c16c52f69f2528936a12a3c07f0459716b8b"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 1,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-1-0.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "bytes": 5022,
+      "alphaBounds": [
+        48,
+        32,
+        117,
+        152
+      ],
+      "footY": 150,
+      "sha256": "407bb5b28c7dff35d7c5da88de97b5b59bd21b9a574646fea711e7bbeec8faf5"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 1,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-1-1.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "bytes": 4826,
+      "alphaBounds": [
+        48,
+        31,
+        119,
+        152
+      ],
+      "footY": 150,
+      "sha256": "2200fd8825005462a435db8ee83b743843424d513edfdf5bc050407cdee82819"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 1,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-1-2.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "bytes": 4856,
+      "alphaBounds": [
+        47,
+        32,
+        118,
+        152
+      ],
+      "footY": 150,
+      "sha256": "3d84496bbe134731f5cf7b77355424078c92f44339dc49ecd376fa7182c41ae1"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 1,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-1-3.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "bytes": 4858,
+      "alphaBounds": [
+        48,
+        32,
+        117,
+        152
+      ],
+      "footY": 150,
+      "sha256": "2a4df7eb342f7f21bbd5aa332ac3d0c28193eb6c39a5f8eb5ad210ad71c21242"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 2,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-2-0.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "bytes": 4850,
+      "alphaBounds": [
+        50,
+        41,
+        121,
+        152
+      ],
+      "footY": 150,
+      "sha256": "53b209a47fcc641c88b54fb82326a9004620789aeb6b461a9ad05b0d06bb1681"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 2,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-2-1.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "bytes": 4646,
+      "alphaBounds": [
+        40,
+        47,
+        134,
+        152
+      ],
+      "footY": 150,
+      "sha256": "a4da5255bd6b6d0f1dc9ff375101b92fe3790f04d34a9d0029880b4cc2bc8c79"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 2,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-2-2.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "bytes": 4850,
+      "alphaBounds": [
+        49,
+        42,
+        120,
+        152
+      ],
+      "footY": 150,
+      "sha256": "3b9699d3a6b07047f43114b9d69d792d750391f7b04dca66575d983efee3d896"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 2,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-2-3.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "reuseFrame": 0,
+      "bytes": 4850,
+      "alphaBounds": [
+        50,
+        41,
+        121,
+        152
+      ],
+      "footY": 150,
+      "sha256": "53b209a47fcc641c88b54fb82326a9004620789aeb6b461a9ad05b0d06bb1681"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 3,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-3-0.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "bytes": 4452,
+      "alphaBounds": [
+        46,
+        38,
+        115,
+        152
+      ],
+      "footY": 150,
+      "sha256": "8532a98bdfc827b970b222c1ef40970fe13e9e038e694f5e24a4f7a3b871d29b"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 3,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-3-1.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 79.5,
+      "bytes": 4476,
+      "alphaBounds": [
+        48,
+        36,
+        114,
+        152
+      ],
+      "footY": 150,
+      "sha256": "d731fdf1605c71fb8a8a316dafd29f88a2951510074bc10e95fcef4576dcd538"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 3,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-3-2.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "bytes": 4374,
+      "alphaBounds": [
+        49,
+        41,
+        118,
+        152
+      ],
+      "footY": 150,
+      "sha256": "982e0f4344f7f36b0e982477c0aefa238dc75ed7b9bde596ad510de47171efe1"
+    },
+    {
+      "mode": "combat",
+      "direction": "se",
+      "action": 3,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/se-3-3.webp",
+      "scale": 0.631578947368421,
+      "source": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+      "anchorX": 80.0,
+      "reuseFrame": 0,
+      "bytes": 4452,
+      "alphaBounds": [
+        46,
+        38,
+        115,
+        152
+      ],
+      "footY": 150,
+      "sha256": "8532a98bdfc827b970b222c1ef40970fe13e9e038e694f5e24a4f7a3b871d29b"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 0,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-0-0.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 5294,
+      "alphaBounds": [
+        19,
+        32,
+        112,
+        152
+      ],
+      "footY": 150,
+      "sha256": "af3a8dbab3e9c07dc5ceb7599d1aa62ccce5aa1e1ada7912afc33e8f12d75345"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 0,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-0-1.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 5248,
+      "alphaBounds": [
+        19,
+        32,
+        111,
+        152
+      ],
+      "footY": 150,
+      "sha256": "f74b00af39864c7336766afa258cb1f71e6cc6ae26bac3510b41c6649f36c1cd"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 0,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-0-2.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 5252,
+      "alphaBounds": [
+        17,
+        32,
+        110,
+        152
+      ],
+      "footY": 150,
+      "sha256": "860359b87a16d9fb7569a9ad7016d94cfd9a96bf04b0a9cc05d12534783ce163"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 0,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-0-3.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 5326,
+      "alphaBounds": [
+        19,
+        32,
+        111,
+        152
+      ],
+      "footY": 150,
+      "sha256": "137a3deec0a79eb8edd47834c8f280c4859d25843ba58a399d405c69ba4b2783"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 1,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-1-0.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 5544,
+      "alphaBounds": [
+        15,
+        31,
+        113,
+        152
+      ],
+      "footY": 150,
+      "sha256": "43c7ad274d4d1487a5d11f1a4d80011e51fb8d18eaf41de842c3c19a57dedcf6"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 1,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-1-1.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 5368,
+      "alphaBounds": [
+        19,
+        30,
+        111,
+        152
+      ],
+      "footY": 150,
+      "sha256": "4310181f51a76979a5b564f63d350aae5b7ebe372bac506eab919aa1a0631d5e"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 1,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-1-2.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 5616,
+      "alphaBounds": [
+        15,
+        30,
+        112,
+        152
+      ],
+      "footY": 150,
+      "sha256": "047cafe50f6beab448ced60a0aa51c1575144b1f1e96cb3fab9568e1849b9dae"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 1,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-1-3.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 5500,
+      "alphaBounds": [
+        14,
+        30,
+        113,
+        152
+      ],
+      "footY": 150,
+      "sha256": "eb4ab087e3c5bd39977dd9fe1f28cc76caadea1383d73fd2e6c3d59c12335a07"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 2,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-2-0.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 6000,
+      "alphaBounds": [
+        29,
+        22,
+        114,
+        152
+      ],
+      "footY": 150,
+      "sha256": "f0dd8c7c21b24dd4c4d22d94a8dc5b41d7345826cc3616059a0037ccd857fe62"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 2,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-2-1.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 5236,
+      "alphaBounds": [
+        18,
+        42,
+        107,
+        152
+      ],
+      "footY": 150,
+      "sha256": "37fe578c0789e44eec412eceff080914262547dc5f62d3e8b5a39e7015529c24"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 2,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-2-2.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 5672,
+      "alphaBounds": [
+        13,
+        38,
+        117,
+        152
+      ],
+      "footY": 150,
+      "sha256": "b32fe41ab7a28b13795e54e26f03c581274c33c2603b01f6502d3b2307122830"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 2,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-2-3.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "reuseFrame": 0,
+      "bytes": 6000,
+      "alphaBounds": [
+        29,
+        22,
+        114,
+        152
+      ],
+      "footY": 150,
+      "sha256": "f0dd8c7c21b24dd4c4d22d94a8dc5b41d7345826cc3616059a0037ccd857fe62"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 3,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-3-0.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 5610,
+      "alphaBounds": [
+        30,
+        19,
+        110,
+        152
+      ],
+      "footY": 150,
+      "sha256": "887264c5e4a9831cc823c9f0896d93541206868bf0742e99abc8eac2fec9331d"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 3,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-3-1.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 5660,
+      "alphaBounds": [
+        30,
+        19,
+        109,
+        152
+      ],
+      "footY": 150,
+      "sha256": "abb6d9872181ce31c0b4180fe6720f1b1bffb1acd54cbdf7c76a81c2dd4e9a7a"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 3,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-3-2.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "bytes": 5514,
+      "alphaBounds": [
+        29,
+        34,
+        114,
+        152
+      ],
+      "footY": 150,
+      "sha256": "b7237f83060a3d34a31e88d81242c07bca0750fc5bfa5162be1044f6a6c0a47b"
+    },
+    {
+      "mode": "combat",
+      "direction": "sw",
+      "action": 3,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/sw-3-3.webp",
+      "scale": 0.6557377049180327,
+      "source": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+      "anchorX": 80.0,
+      "reuseFrame": 0,
+      "bytes": 5610,
+      "alphaBounds": [
+        30,
+        19,
+        110,
+        152
+      ],
+      "footY": 150,
+      "sha256": "887264c5e4a9831cc823c9f0896d93541206868bf0742e99abc8eac2fec9331d"
+    },
+    {
+      "mode": "scenario",
+      "direction": "nw",
+      "action": 0,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/nw-0-0.webp",
+      "scale": 0.532150776053215,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 3970,
+      "alphaBounds": [
+        48,
+        32,
+        104,
+        152
+      ],
+      "footY": 150,
+      "sha256": "beca762006a7eb02f7536923dc1e610aeaeb6f750832c89d71239bf7e6d5386b"
+    },
+    {
+      "mode": "scenario",
+      "direction": "nw",
+      "action": 0,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/nw-0-1.webp",
+      "scale": 0.532150776053215,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 4024,
+      "alphaBounds": [
+        48,
+        32,
+        104,
+        152
+      ],
+      "footY": 150,
+      "sha256": "8171ce10296b474188ec7b90a8e461104c2e4c1bbf3c0e0b9af8ae6201ab2e6c"
+    },
+    {
+      "mode": "scenario",
+      "direction": "nw",
+      "action": 0,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/nw-0-2.webp",
+      "scale": 0.532150776053215,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 4000,
+      "alphaBounds": [
+        48,
+        32,
+        104,
+        152
+      ],
+      "footY": 150,
+      "sha256": "db07a7072accc794ca621b34662e6181001fa66110e5e597b29a3f5b5bda5c38"
+    },
+    {
+      "mode": "scenario",
+      "direction": "nw",
+      "action": 0,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/nw-0-3.webp",
+      "scale": 0.532150776053215,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 3942,
+      "alphaBounds": [
+        48,
+        32,
+        104,
+        152
+      ],
+      "footY": 150,
+      "sha256": "588510fa09a21a7f4a17204093ab67acf44e47c6dbc1668f7213f7467fd1a241"
+    },
+    {
+      "mode": "scenario",
+      "direction": "ne",
+      "action": 0,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/ne-0-0.webp",
+      "scale": 0.5240174672489083,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 3850,
+      "alphaBounds": [
+        57,
+        33,
+        112,
+        152
+      ],
+      "footY": 150,
+      "sha256": "8a24146a1f68ff631c695870d5eb877e57500a941cc0ec48c6f8daaee1821f17"
+    },
+    {
+      "mode": "scenario",
+      "direction": "ne",
+      "action": 0,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/ne-0-1.webp",
+      "scale": 0.5240174672489083,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 3850,
+      "alphaBounds": [
+        57,
+        32,
+        112,
+        152
+      ],
+      "footY": 150,
+      "sha256": "b3b952845cb8f7d16ceab4bea79d8baef26ae1f61dc511aff39891d086ed171d"
+    },
+    {
+      "mode": "scenario",
+      "direction": "ne",
+      "action": 0,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/ne-0-2.webp",
+      "scale": 0.5240174672489083,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 3878,
+      "alphaBounds": [
+        57,
+        32,
+        112,
+        152
+      ],
+      "footY": 150,
+      "sha256": "3c85f3816f8281010d177482e0cf564ad40601b1814b8d4420bdcffe9e0ab471"
+    },
+    {
+      "mode": "scenario",
+      "direction": "ne",
+      "action": 0,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/ne-0-3.webp",
+      "scale": 0.5240174672489083,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 3910,
+      "alphaBounds": [
+        57,
+        32,
+        112,
+        152
+      ],
+      "footY": 150,
+      "sha256": "815fb1f119e22260f3355d079a885f76e192062c9d9ea0fdb70ef1e75ee449cf"
+    },
+    {
+      "mode": "scenario",
+      "direction": "se",
+      "action": 0,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/se-0-0.webp",
+      "scale": 0.532150776053215,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 4164,
+      "alphaBounds": [
+        45,
+        32,
+        102,
+        152
+      ],
+      "footY": 150,
+      "sha256": "9d636eb5c059e8ad4261eb6f8ed4c5157024aaa3df5d63da7df924a16306c0d1"
+    },
+    {
+      "mode": "scenario",
+      "direction": "se",
+      "action": 0,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/se-0-1.webp",
+      "scale": 0.532150776053215,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 4156,
+      "alphaBounds": [
+        45,
+        32,
+        102,
+        152
+      ],
+      "footY": 150,
+      "sha256": "eebd9c0b8312ff59f3ab9215803f26e99dd7f3ba5a720a1484ebf0af46697052"
+    },
+    {
+      "mode": "scenario",
+      "direction": "se",
+      "action": 0,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/se-0-2.webp",
+      "scale": 0.532150776053215,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 4148,
+      "alphaBounds": [
+        45,
+        32,
+        102,
+        152
+      ],
+      "footY": 150,
+      "sha256": "8bdff7a18a612d105f67c288cc2a63d55c69721149b14f44ac9f851618cfa7d5"
+    },
+    {
+      "mode": "scenario",
+      "direction": "se",
+      "action": 0,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/se-0-3.webp",
+      "scale": 0.532150776053215,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 4058,
+      "alphaBounds": [
+        45,
+        32,
+        102,
+        152
+      ],
+      "footY": 150,
+      "sha256": "07f77babb1b27b3ee2f456958927ea173228f98a37d98ef9e41d27449a1a4138"
+    },
+    {
+      "mode": "scenario",
+      "direction": "sw",
+      "action": 0,
+      "frame": 0,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/sw-0-0.webp",
+      "scale": 0.5333333333333333,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 4132,
+      "alphaBounds": [
+        58,
+        32,
+        117,
+        152
+      ],
+      "footY": 150,
+      "sha256": "339699732c09b277c6405f166bd6371624cd627c718f59cace0c9afccbc25011"
+    },
+    {
+      "mode": "scenario",
+      "direction": "sw",
+      "action": 0,
+      "frame": 1,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/sw-0-1.webp",
+      "scale": 0.5333333333333333,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 4234,
+      "alphaBounds": [
+        58,
+        32,
+        118,
+        152
+      ],
+      "footY": 150,
+      "sha256": "dcef7fcb5af029c41b73bbe44f42a108d940206f81c710c4cf16f8ff934bf6ac"
+    },
+    {
+      "mode": "scenario",
+      "direction": "sw",
+      "action": 0,
+      "frame": 2,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/sw-0-2.webp",
+      "scale": 0.5333333333333333,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 4254,
+      "alphaBounds": [
+        57,
+        32,
+        117,
+        152
+      ],
+      "footY": 150,
+      "sha256": "bb0e2230375bebb266a31566fcf88ef07f6582758ab80cbe2371de871c38c8de"
+    },
+    {
+      "mode": "scenario",
+      "direction": "sw",
+      "action": 0,
+      "frame": 3,
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/sw-0-3.webp",
+      "scale": 0.5333333333333333,
+      "source": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png",
+      "anchorX": 80.0,
+      "bytes": 4172,
+      "alphaBounds": [
+        58,
+        33,
+        118,
+        152
+      ],
+      "footY": 150,
+      "sha256": "b9acb99811d7d1a3df549c42538891230c8401c3303634b5da2315c5707bd91b"
+    }
+  ],
+  "reviewFiles": [
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-ne-0-loop.webp",
+      "bytes": 20522
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-ne-1-loop.webp",
+      "bytes": 21518
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-ne-2-loop.webp",
+      "bytes": 21224
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-ne-3-loop.webp",
+      "bytes": 20714
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-ne-sequence.webp",
+      "bytes": 82076
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-nw-0-loop.webp",
+      "bytes": 21356
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-nw-1-loop.webp",
+      "bytes": 22010
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-nw-2-loop.webp",
+      "bytes": 23728
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-nw-3-loop.webp",
+      "bytes": 24744
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-nw-sequence.webp",
+      "bytes": 91184
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-se-0-loop.webp",
+      "bytes": 19272
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-se-1-loop.webp",
+      "bytes": 19548
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-se-2-loop.webp",
+      "bytes": 19174
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-se-3-loop.webp",
+      "bytes": 17466
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-se-sequence.webp",
+      "bytes": 75306
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-sw-0-loop.webp",
+      "bytes": 20976
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-sw-1-loop.webp",
+      "bytes": 22206
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-sw-2-loop.webp",
+      "bytes": 22748
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-sw-3-loop.webp",
+      "bytes": 22318
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/combat-v1/review-sw-sequence.webp",
+      "bytes": 88202
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/review-all.webp",
+      "bytes": 59488
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/review-ne-0-loop.webp",
+      "bytes": 15126
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/review-ne-sequence.webp",
+      "bytes": 15948
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/review-nw-0-loop.webp",
+      "bytes": 15578
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/review-nw-sequence.webp",
+      "bytes": 16530
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/review-se-0-loop.webp",
+      "bytes": 16228
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/review-se-sequence.webp",
+      "bytes": 17296
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/review-sw-0-loop.webp",
+      "bytes": 16620
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/infantry/job-5/scenario-v1/review-sw-sequence.webp",
+      "bytes": 17522
+    }
+  ],
+  "prompts": {
+    "nw": "ALL16 must face NORTHWEST BACK-LEFT, show back and LEFT cheek. Retain image1 correct RIGHT arm: sword in hand screenRIGHT of spine; strike forward UPPER LEFT with right arm partly occluded by chest, never transfer to screenLEFT arm. Image1 is4x4 complete sprite POSE/DIRECTION reference. Image2 is APPROVED final promotion job5 GUARD infantry outfit/identity. Repaint EVERY complete character from image1 into EXACT outfit of image2: dark reinforced iron lamellar armor with pale brass/silver edging and larger angular shoulder plates, dark helmet with short RED PLUME trailing back, red waist accents, dark gray sleeves pants boots, refined long straight forged sword. Same male face and body proportions; don't make bulkier or larger. Preserve BACK-LEFT northwest11 direction and anatomical RIGHT sword hand, LEFT empty, pose order rows idle/walk/attack/skill columns0..3. Improve walk feet contacts, no tangled knees. Attack strike frame1 points UPPER LEFT ahead, not sideways, compact guard frame0/3. Skill small upright sword lift. Complete connected humans NO part compositing and NO mirroring. 4x4 exactly, same body and head scale all16, fixed pelvis and ground, body60% eachcell and all weapons within central70%, wide15% transparent gutters. True transparency no text grid effects shadows. Red plume consistent size every cell. Use image2 for costume only, not direction.",
+    "ne": "ALL16 face NORTHEAST BACK-RIGHT2 o'clock showing back not chest. RIGHT weapon arm attached screenRIGHT of spine, left arm screenLEFT empty. Image1 is4x4 complete sprite POSE/DIRECTION reference. Image2 is APPROVED final promotion job5 GUARD infantry outfit/identity. Repaint EVERY complete character from image1 into EXACT outfit of image2: dark reinforced iron lamellar armor with pale brass/silver edging and larger angular shoulder plates, dark helmet with short RED PLUME trailing back, red waist accents, dark gray sleeves pants boots, refined long straight forged sword. Same male face and body proportions; don't make bulkier or larger. Preserve BACK-RIGHT northeast2 direction and anatomical RIGHT sword hand, LEFT empty, pose order rows idle/walk/attack/skill columns0..3. Improve walk feet contacts, no tangled knees. Attack strike frame1 points UPPER RIGHT ahead, not sideways, compact guard frame0/3. Skill small upright sword lift. Complete connected humans NO part compositing and NO mirroring. 4x4 exactly, same body and head scale all16, fixed pelvis and ground, body60% eachcell and all weapons within central70%, wide15% transparent gutters. True transparency no text grid effects shadows. Red plume consistent size every cell. Use image2 for costume only, not direction. IMPORTANT skill row4: frame0 visible sword upright by right shoulder; frame1 raise sword with FULL BLADE VISIBLE; frame2 settle upright FULL BLADE VISIBLE; frame3 shoulder guard. Do not copy hidden/missing blade pose from reference row4col2.",
+    "se": "Image1 is4x4 complete sprite POSE/DIRECTION reference. Image2 is APPROVED final promotion job5 GUARD infantry outfit/identity. Repaint EVERY complete character from image1 into EXACT outfit of image2: dark reinforced iron lamellar armor with pale brass/silver edging and larger angular shoulder plates, dark helmet with short RED PLUME trailing back, red waist accents, dark gray sleeves pants boots, refined long straight forged sword. Same male face and body proportions; don't make bulkier or larger. Preserve FRONT-RIGHT southeast5 direction and anatomical RIGHT sword hand, LEFT empty, pose order rows idle/walk/attack/skill columns0..3. Improve walk feet contacts, no tangled knees. Attack strike frame1 points LOWER RIGHT ahead, not sideways, compact guard frame0/3. Skill small upright sword lift. Complete connected humans NO part compositing and NO mirroring. 4x4 exactly, same body and head scale all16, fixed pelvis and ground, body60% eachcell and all weapons within central70%, wide15% transparent gutters. True transparency no text grid effects shadows. Red plume consistent size every cell. Use image2 for costume only, not direction.",
+    "sw": "ALL16 must face SOUTHWEST FRONT-LEFT, never turn right. Image1 is4x4 complete sprite POSE/DIRECTION reference. Image2 is APPROVED final promotion job5 GUARD infantry outfit/identity. Repaint EVERY complete character from image1 into EXACT outfit of image2: dark reinforced iron lamellar armor with pale brass/silver edging and larger angular shoulder plates, dark helmet with short RED PLUME trailing back, red waist accents, dark gray sleeves pants boots, refined long straight forged sword. Same male face and body proportions; don't make bulkier or larger. Preserve FRONT-LEFT southwest7 direction and anatomical RIGHT sword hand, LEFT empty, pose order rows idle/walk/attack/skill columns0..3. Improve walk feet contacts, no tangled knees. Attack strike frame1 points LOWER LEFT ahead, not sideways, compact guard frame0/3. Skill small upright sword lift. Complete connected humans NO part compositing and NO mirroring. 4x4 exactly, same body and head scale all16, fixed pelvis and ground, body60% eachcell and all weapons within central70%, wide15% transparent gutters. True transparency no text grid effects shadows. Red plume consistent size every cell. Use image2 for costume only, not direction.",
+    "scenario": "Approved reference job5 GUARD infantry male, dark helmet with short RED PLUME trailing back, dark reinforced iron lamellar armor broad angular shoulder plates and skirt with pale silver/brass edging red waist sash dark gray sleeves trousers boots, same face/proportions. Generate true transparent4x4 scenario standing sheet. NO WEAPON, NO SCABBARD, NO SHIELD, empty hands relaxed naturally. Complete connected full figures. Row1 NW11 BACK faces LEFT; row2 NE2 BACK faces RIGHT; row3 SE5 FRONT faces RIGHT; row4 SW7 FRONT faces LEFT. All4 columns subtle breathing cycle, feet planted, pelvis centered, identical body scale and baseline. Frame3 nearly0. Exactly16 figures separated by15% transparent gutters each side, figure body60% cell height. No grid text effects shadows. Do not copy reference direction to other rows. No detached parts, crisp outlined game style. Match attached approved final promotion armor exactly; no reverting to lower tier. Plume size consistent and does not change body/face scale.",
+    "nwWalkAttempt": "Create EXACTLY TWO ROWS by FOUR COLUMNS transparent tactical RPG walk-cycle sheet. Row1 is approved reference1 job4 heavy infantry (dark gold-trim armor, pointed helmet NO plume, broad sword). Row2 approved reference2 job5 guard (dark pale-edged armor, short RED helmet plume, forged sword). Both same male size and identity. EVERY figure faces NORTHWEST upper LEFT11 o'clock, show BACK and LEFT cheek. RIGHT hand screenRIGHT of spine holds sword LOW safely angled right; LEFT hand empty. No weapon hand swaps. FOUR chronological walking phases: column0 LEFT foot forward/contact with straight left knee and right heel just lifted behind; column1 RIGHT knee raised forward, left leg supports, visible GAP between calves; column2 RIGHT foot forward/contact, left heel lifted behind; column3 LEFT knee raised forward, right leg supports, gap between calves. Shallow stepping in place, feet do not cross midline, NEVER crossed ankles or tangled overlapping knees. Two legs anatomically connected to pelvis. Fixed pelvis and head position, uniform scale across4, small vertical bob only, each supported sole same ground baseline. Clear alternating LEFT/RIGHT leg cycle, col3 leads naturally into col0. Full integrated characters not paper cutout. Minimal arm motion sword remains right hand low. Keep promotion outfits separate exact reference. Each figure in central60% cell, generous15% gutters including sword, no contact between cells. True alpha transparency no text grid effects shadows.",
+    "nwWalkEdit": "Correct this TWO ROWS FOUR COLUMNS infantry walking sheet. REMOVE background entirely to true transparent alpha, no shadows or glow. In FOURTH COLUMN of BOTH ROWS the sword blade is missing: restore full straight blade attached to right-hand hilt, same blade as other columns. All 8 complete characters smaller within cells, including blade occupies at most70% cell width and height with15% clear margins. Preserve exact costume, right hand weapon, back LEFT orientation and two-row4column order. Fix walking phase col3: LEFT knee forward lifted with RIGHT supporting straight leg, not a duplicate of col1. Col1 RIGHT knee lifted LEFT supports. Anatomical LEFT and RIGHT from character's perspective. Keep fixed pelvis center and ground baseline. No added props text grid. Existing figures otherwise remain same."
+  },
+  "sources": {
+    "nw": "exec-c46b5ae0-256c-4031-87dc-66de124df360.png",
+    "ne": "exec-5ba597f9-ea3a-46db-9dd6-b2b1f5f8259a.png",
+    "se": "exec-3cd39a39-7299-4122-9f13-1058218e5e9b.png",
+    "sw": "exec-ddbe4a81-3359-4b91-9318-7e7cb79de3fc.png",
+    "scenario": "exec-7950fb8a-6285-4259-b643-4af3d9958d0a.png"
+  },
+  "limitations": [
+    "시각 초안이며 전투 판정/사이트 연결 미구현",
+    "공격·스킬 frame3은 frame0 완성 자세 재사용: 3개 고유 자세와 복귀 홀드, 4개 모두 독립 생성인 것처럼 표시하지 않음",
+    "일부 보행/회수 연결 미완: unresolvedFrames 참조",
+    "승급별 원화 디테일과4방향 얼굴/체격은 생성 특성상 미세 차이가 남음; 실제 모바일·사이트전환 미검수"
+  ],
+  "checks": {
+    "sizeAlphaMarginsAndFoot": "80/80 pass",
+    "staticAndPlayback": "80/80 static frames inspected; 0,1,2,3,0 sequences checked; local browser20 loops sampled at idle320 move170 attack190 skill240 scenario360ms",
+    "handDirection": "4directions, right-hand sword, front/back and blade directions inspected. No whole-frame mirroring.",
+    "loopBoundary": "combat attack/skill frame3 SHA256 equals frame0 by intentional complete-pose hold",
+    "mobileAndIntegratedSite": "not tested; integration assigned elsewhere"
+  },
+  "reference": "web/public/images/job-models/promotion-se-v1/job-5.webp",
+  "allQualityIssuesResolved": false,
+  "unresolvedFrames": [
+    {
+      "mode": "combat",
+      "frames": [
+        "nw-1-0",
+        "nw-1-1",
+        "nw-1-2",
+        "nw-1-3"
+      ],
+      "issue": "NW 보행 다리 교차 및 지지발 단계 연결감 미흡. 추가 생성/수정2회는 배경·무기·보행위상 문제로 미채택. 완성 보행으로 승인하지 않음."
+    },
+    {
+      "mode": "combat",
+      "frames": [
+        "sw-2-2",
+        "sw-2-3"
+      ],
+      "issue": "타격 회수에서 준비 자세로 돌아갈 때 팔 높이 변화가 큼.3→0은 동일프레임 홀드로 경계 튐을 없앴으나2→3 자연스러운 보간은 추가 검토."
+    }
+  ],
+  "bodyScaleNote": "plume-inclusive idle silhouette120px, body approx112px, direction-wide fixed scale",
+  "referenceSha256": "cbd8ec0a57a9606cbcef83bd999649cc645572f2874a502ae54df92303e02fd9",
+  "cleanup": "2026-10-27 this promotion batch14 generatedPNG originals deleted after lightweight QA; existing base and other agents assets untouched"
+}

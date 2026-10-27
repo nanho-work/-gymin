@@ -1,0 +1,2635 @@
+{
+  "jobId": 24,
+  "jobName": "책사",
+  "status": "visual-draft-sw-attack-recovery-corrected-static-review",
+  "outputRoot": "web/public/images/class-motion-pilot/caster/job-24",
+  "directions": [
+    "nw",
+    "ne",
+    "se",
+    "sw"
+  ],
+  "combatActions": {
+    "0": "대기",
+    "1": "이동",
+    "2": "공격 술법",
+    "3": "스킬 술법"
+  },
+  "framesPerAction": 4,
+  "combatFrameCount": 64,
+  "scenarioFrameCount": 16,
+  "totalFrames": 80,
+  "frameSize": [
+    160,
+    160
+  ],
+  "anchor": {
+    "x": 80,
+    "groundY": 150,
+    "nominalBodyHeight": 112
+  },
+  "ms": {
+    "idle": 320,
+    "walk": 170,
+    "attack": 190,
+    "skill": 240,
+    "scenario": 360,
+    "weakened": 300
+  },
+  "totalBytes": 275146,
+  "reviewBytes": 72664,
+  "files": [
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-0-0.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 0,
+      "bytes": 3004,
+      "bbox": [
+        55,
+        38,
+        111,
+        150
+      ],
+      "sha256": "061f62c289ab8e9dc01c93b2c10e0a9ddaea064c29f9f27963a3dd521c76754a",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-0-1.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 1,
+      "bytes": 3050,
+      "bbox": [
+        56,
+        38,
+        112,
+        150
+      ],
+      "sha256": "6ed103010b274cf4afa8d0d387d39eaaf6348d1a756de5492ae12521d5c94e09",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-0-2.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 2,
+      "bytes": 2986,
+      "bbox": [
+        59,
+        38,
+        116,
+        150
+      ],
+      "sha256": "36067b73f95fe3b1664fc0a11348de24a9fc47ec699307ecfc290a0dd70b4b39",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-0-3.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 3,
+      "bytes": 3070,
+      "bbox": [
+        55,
+        38,
+        112,
+        150
+      ],
+      "sha256": "5674d4ce7aec155114ea49b1d055387d0e6b8ebf7bd648fa7c43537ed8627a7c",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-1-0.webp",
+      "direction": "nw",
+      "action": 1,
+      "frame": 0,
+      "bytes": 3214,
+      "bbox": [
+        51,
+        42,
+        118,
+        150
+      ],
+      "sha256": "005762301c07d6679dbe0fa39a91558c0181478b538252b81a84d9fecdedcec2",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-1-1.webp",
+      "direction": "nw",
+      "action": 1,
+      "frame": 1,
+      "bytes": 3042,
+      "bbox": [
+        51,
+        41,
+        116,
+        150
+      ],
+      "sha256": "d8bb632caeb30cb7bbbe1562b0bb3a52aea91fd7e8947776c5ab04ba981398a5",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-1-2.webp",
+      "direction": "nw",
+      "action": 1,
+      "frame": 2,
+      "bytes": 3146,
+      "bbox": [
+        53,
+        41,
+        120,
+        150
+      ],
+      "sha256": "82139ecbb0289c6d11387221112aadb960504136d3e1f7cb55cb4b1613ebb3f6",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-1-3.webp",
+      "direction": "nw",
+      "action": 1,
+      "frame": 3,
+      "bytes": 3180,
+      "bbox": [
+        53,
+        41,
+        117,
+        150
+      ],
+      "sha256": "bc743d42ba8c5c47619e2d554abadc0361fcc6f14ae3b1b7b279b37010aa598a",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-2-0.webp",
+      "direction": "nw",
+      "action": 2,
+      "frame": 0,
+      "bytes": 3032,
+      "bbox": [
+        56,
+        46,
+        115,
+        150
+      ],
+      "sha256": "427dcfb4026b6b35f7e27d9656e7982f3ed9f9175c7d87fe165dfa25bf039c97",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-2-1.webp",
+      "direction": "nw",
+      "action": 2,
+      "frame": 1,
+      "bytes": 3588,
+      "bbox": [
+        22,
+        48,
+        112,
+        150
+      ],
+      "sha256": "ad1e627d6e9e3f18b12afa5e7087379576b7f79de7ea33c5ed4f90391f484743",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-2-2.webp",
+      "direction": "nw",
+      "action": 2,
+      "frame": 2,
+      "bytes": 3928,
+      "bbox": [
+        16,
+        48,
+        117,
+        150
+      ],
+      "sha256": "1c6bc9789d47d39b09754a18e727df2a9cb09701c45949012058aba888a4dcc0",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-2-3.webp",
+      "direction": "nw",
+      "action": 2,
+      "frame": 3,
+      "bytes": 3026,
+      "bbox": [
+        49,
+        49,
+        113,
+        150
+      ],
+      "sha256": "6cd373c9179c00b26873608775b6e520699dce74996675f4454c8cf352f57f04",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-3-0.webp",
+      "direction": "nw",
+      "action": 3,
+      "frame": 0,
+      "bytes": 3034,
+      "bbox": [
+        57,
+        45,
+        114,
+        150
+      ],
+      "sha256": "76a7929a03c66ee63427f97b144e1cecfeaa133c358947e1ea4c03adfdd44386",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-3-1.webp",
+      "direction": "nw",
+      "action": 3,
+      "frame": 1,
+      "bytes": 3202,
+      "bbox": [
+        52,
+        37,
+        116,
+        150
+      ],
+      "sha256": "b7e2457a455c7f6e609182676bca11a215892893bf1ef2c4d13f11a9c7147007",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-3-2.webp",
+      "direction": "nw",
+      "action": 3,
+      "frame": 2,
+      "bytes": 4004,
+      "bbox": [
+        47,
+        38,
+        114,
+        150
+      ],
+      "sha256": "092c3dc818830dedcd681101b4cebd6d4235be3e71fe333ba78ad79011555afa",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/nw-3-3.webp",
+      "direction": "nw",
+      "action": 3,
+      "frame": 3,
+      "bytes": 2858,
+      "bbox": [
+        57,
+        44,
+        113,
+        150
+      ],
+      "sha256": "71513080d09c941bb536805c1ce290661ccf6069b7bc307a0349905f76b1199e",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-0-0.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 0,
+      "bytes": 2910,
+      "bbox": [
+        54,
+        38,
+        103,
+        150
+      ],
+      "sha256": "237c80e3e86066898e19995f8936afd8324b9622c878b8b66a8a118be1763dce",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-0-1.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 1,
+      "bytes": 2858,
+      "bbox": [
+        55,
+        38,
+        101,
+        150
+      ],
+      "sha256": "063351a20e1b88d88452be28eff8b78e227abccb63d9696ab401f9fc274ad8da",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-0-2.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 2,
+      "bytes": 2938,
+      "bbox": [
+        57,
+        38,
+        105,
+        150
+      ],
+      "sha256": "1715432cf673b8535f21e986dc9009fe573e4a7501c1613750b579bbc995a889",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-0-3.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 3,
+      "bytes": 2966,
+      "bbox": [
+        53,
+        38,
+        103,
+        150
+      ],
+      "sha256": "8fbffbeba823cb1b318833aeb0bf0613868016298ae2ac3cbb7f71ab83fec939",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-1-0.webp",
+      "direction": "ne",
+      "action": 1,
+      "frame": 0,
+      "bytes": 3194,
+      "bbox": [
+        57,
+        36,
+        112,
+        150
+      ],
+      "sha256": "28889fb89eb54e0ecf224911f91119cc70f87792bc8f5f41e7c08edcc5fcccff",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-1-1.webp",
+      "direction": "ne",
+      "action": 1,
+      "frame": 1,
+      "bytes": 3538,
+      "bbox": [
+        48,
+        38,
+        109,
+        150
+      ],
+      "sha256": "f2b0848553dc1bfb051be8e144e83ade2261821e63ee797565906aa2d9a80662",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-1-2.webp",
+      "direction": "ne",
+      "action": 1,
+      "frame": 2,
+      "bytes": 3664,
+      "bbox": [
+        51,
+        38,
+        109,
+        150
+      ],
+      "sha256": "ac297ee9f32832a218213b3fbe1e9d2e3b886e7a21fb436fd077f0efa82bde9b",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-1-3.webp",
+      "direction": "ne",
+      "action": 1,
+      "frame": 3,
+      "bytes": 3514,
+      "bbox": [
+        53,
+        37,
+        115,
+        150
+      ],
+      "sha256": "d62eba1f288e63589e716801158cf92e986b9e25f919087b12dea241b4277128",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-2-0.webp",
+      "direction": "ne",
+      "action": 2,
+      "frame": 0,
+      "bytes": 3122,
+      "bbox": [
+        49,
+        41,
+        105,
+        150
+      ],
+      "sha256": "2085e4fd34aa1a063007d13ea495e8e46128bdf2db400eb97308aa86a2d56416",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-2-1.webp",
+      "direction": "ne",
+      "action": 2,
+      "frame": 1,
+      "bytes": 3664,
+      "bbox": [
+        57,
+        41,
+        145,
+        150
+      ],
+      "sha256": "82d616e3fbda2ee612fe560eb257350103e0b6fcf3f9e7211c3a776a1dbe3ccf",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-2-2.webp",
+      "direction": "ne",
+      "action": 2,
+      "frame": 2,
+      "bytes": 4226,
+      "bbox": [
+        55,
+        42,
+        156,
+        150
+      ],
+      "sha256": "976f87af6b7aa3917c427dedce4b7c861497b066f4eb6daa12aa3ac218ecb929",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-2-3.webp",
+      "direction": "ne",
+      "action": 2,
+      "frame": 3,
+      "bytes": 2994,
+      "bbox": [
+        51,
+        41,
+        106,
+        150
+      ],
+      "sha256": "8487a84d734ac316cd0c6fa9c461cef4fca3997248ba096d8b1c31dd38ef5ab9",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-3-0.webp",
+      "direction": "ne",
+      "action": 3,
+      "frame": 0,
+      "bytes": 3312,
+      "bbox": [
+        51,
+        41,
+        106,
+        150
+      ],
+      "sha256": "debc308fcd984b4bea82457d82402779fe3f2f1e61493e495653113b9e12bc90",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-3-1.webp",
+      "direction": "ne",
+      "action": 3,
+      "frame": 1,
+      "bytes": 3762,
+      "bbox": [
+        51,
+        38,
+        114,
+        150
+      ],
+      "sha256": "b36298f7a3cb0bf80ae41531da68093991785c1e715a5452b54f622dba706e4a",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-3-2.webp",
+      "direction": "ne",
+      "action": 3,
+      "frame": 2,
+      "bytes": 4186,
+      "bbox": [
+        49,
+        30,
+        122,
+        150
+      ],
+      "sha256": "4671eb493708be80eabd11f87f12847eb23f6c190415c7ee736b0553a16ad17e",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/ne-3-3.webp",
+      "direction": "ne",
+      "action": 3,
+      "frame": 3,
+      "bytes": 3302,
+      "bbox": [
+        49,
+        43,
+        114,
+        150
+      ],
+      "sha256": "053087e8452956a9f5ea5fbc35f085a094026ced62134c4a34d3fbb64755ff3a",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-0-0.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 0,
+      "bytes": 3276,
+      "bbox": [
+        52,
+        38,
+        104,
+        150
+      ],
+      "sha256": "b37e035a1314f7cfc17483a8e17172dbe62486c3b62323875caf8d1dd8d29512",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-0-1.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 1,
+      "bytes": 3310,
+      "bbox": [
+        53,
+        37,
+        103,
+        150
+      ],
+      "sha256": "1aebd04e9ec4a4c65b0564077e8e1c241b54e80f6d4391e6da8498f3ba7fd953",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-0-2.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 2,
+      "bytes": 3314,
+      "bbox": [
+        52,
+        38,
+        103,
+        150
+      ],
+      "sha256": "ed68aba2504e03e7d72976c66cf052e7030cc31d940ba622bf7a7d9bafd446ce",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-0-3.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 3,
+      "bytes": 3312,
+      "bbox": [
+        53,
+        38,
+        104,
+        150
+      ],
+      "sha256": "4d988e4e81b4aa86c3379b0a86761488edca89b45c6332ffaac66ab96af63ac6",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-1-0.webp",
+      "direction": "se",
+      "action": 1,
+      "frame": 0,
+      "bytes": 3464,
+      "bbox": [
+        46,
+        35,
+        102,
+        150
+      ],
+      "sha256": "2f47c42b592fe50c54e5cded42e8e574e8825e00b0ebf65c360c6e97f59f6bb6",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-1-1.webp",
+      "direction": "se",
+      "action": 1,
+      "frame": 1,
+      "bytes": 3534,
+      "bbox": [
+        46,
+        36,
+        108,
+        150
+      ],
+      "sha256": "548cdb131870419604cdeb2db59c690fb3f9ef1eec1c4533ec26b85d261f6220",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-1-2.webp",
+      "direction": "se",
+      "action": 1,
+      "frame": 2,
+      "bytes": 3592,
+      "bbox": [
+        48,
+        35,
+        106,
+        150
+      ],
+      "sha256": "cead6b3e755e0679a49afc680962a7d0a2d2d6e1194cadde6e8ebfceda816ddc",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-1-3.webp",
+      "direction": "se",
+      "action": 1,
+      "frame": 3,
+      "bytes": 3448,
+      "bbox": [
+        49,
+        35,
+        105,
+        150
+      ],
+      "sha256": "3bac6e31c3520ad6a5af2f5c8e8a933cbfd43f7331d5432628c94194094ab859",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-2-0.webp",
+      "direction": "se",
+      "action": 2,
+      "frame": 0,
+      "bytes": 3650,
+      "bbox": [
+        44,
+        43,
+        111,
+        150
+      ],
+      "sha256": "1846de9b938e8f3abb12ccc6a148b0d85702c69f11a2601298ecccca7aef4828",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-2-1.webp",
+      "direction": "se",
+      "action": 2,
+      "frame": 1,
+      "bytes": 3936,
+      "bbox": [
+        46,
+        42,
+        124,
+        150
+      ],
+      "sha256": "3adc2c1f1ff38e8d0d75c2760ea55a9bdac68000455ca2566166023c0d525783",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-2-2.webp",
+      "direction": "se",
+      "action": 2,
+      "frame": 2,
+      "bytes": 4160,
+      "bbox": [
+        38,
+        43,
+        127,
+        150
+      ],
+      "sha256": "560e3a8f3ec2920e2061d106c438d66332fc27ddbd0a702fd7aa48537ff8082e",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-2-3.webp",
+      "direction": "se",
+      "action": 2,
+      "frame": 3,
+      "bytes": 3644,
+      "bbox": [
+        46,
+        43,
+        113,
+        150
+      ],
+      "sha256": "8340b7133374427d7f9ef00e9a8ea419ff049ee3a679ac994c0fa41d00b76ee8",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-3-0.webp",
+      "direction": "se",
+      "action": 3,
+      "frame": 0,
+      "bytes": 3260,
+      "bbox": [
+        52,
+        41,
+        105,
+        150
+      ],
+      "sha256": "eb074e47ccb61aa007cad9d22ba8deaf16cbfa0cb17ba7b07f1dc51d6d74c53c",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-3-1.webp",
+      "direction": "se",
+      "action": 3,
+      "frame": 1,
+      "bytes": 4160,
+      "bbox": [
+        46,
+        40,
+        109,
+        150
+      ],
+      "sha256": "c750af5eeec7275f76b99173836bd55e46038f5a9eb942b84c48246dd4e248b1",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-3-2.webp",
+      "direction": "se",
+      "action": 3,
+      "frame": 2,
+      "bytes": 4850,
+      "bbox": [
+        43,
+        34,
+        119,
+        150
+      ],
+      "sha256": "ce3c6defbde8da4009a33333ba48b00f2b79b47c0c4145e947a99d44024785bc",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/se-3-3.webp",
+      "direction": "se",
+      "action": 3,
+      "frame": 3,
+      "bytes": 3348,
+      "bbox": [
+        51,
+        40,
+        105,
+        150
+      ],
+      "sha256": "ea8cc71b722ef19ff85fd5b88176723b283b13d5f447be4fb329bba124f6cf06",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-0-0.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 0,
+      "bytes": 3542,
+      "bbox": [
+        46,
+        38,
+        112,
+        150
+      ],
+      "sha256": "6dbfe2d9dea2ea255595e1dc4c773ea9a67a465950a4c5d848dae5fe9b7b55ef",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-0-1.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 1,
+      "bytes": 3442,
+      "bbox": [
+        46,
+        38,
+        113,
+        150
+      ],
+      "sha256": "0c3011b74ae6661fa2a4c480184c5705b0ab27c42a1ab03775e1497dd88782fb",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-0-2.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 2,
+      "bytes": 3500,
+      "bbox": [
+        46,
+        38,
+        112,
+        150
+      ],
+      "sha256": "a9fcee8aae86ac727e00f2e0577d78ee37e4f2a15ff2f39d846ff529899523cb",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-0-3.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 3,
+      "bytes": 3474,
+      "bbox": [
+        45,
+        38,
+        112,
+        150
+      ],
+      "sha256": "54011aad046e6e87e3965a9d84c8d155b94b27c8a97d7c89a58b9978fd0573e2",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-1-0.webp",
+      "direction": "sw",
+      "action": 1,
+      "frame": 0,
+      "bytes": 3968,
+      "bbox": [
+        44,
+        36,
+        123,
+        150
+      ],
+      "sha256": "907407c68dc65abe8eeb0fbc2c6448a1bd658b9721f8baa47702de0ac7bcf1db",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-1-1.webp",
+      "direction": "sw",
+      "action": 1,
+      "frame": 1,
+      "bytes": 4020,
+      "bbox": [
+        42,
+        37,
+        125,
+        150
+      ],
+      "sha256": "bb0034efb8b461229ad5d6215ff03b5c71a4cfd21b484ba506063a422ab7f374",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-1-2.webp",
+      "direction": "sw",
+      "action": 1,
+      "frame": 2,
+      "bytes": 3956,
+      "bbox": [
+        42,
+        37,
+        124,
+        150
+      ],
+      "sha256": "3b12ccb9c18fae6e68e118767fc91ed2ea7abc5771a0d287cec058b4b124c382",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-1-3.webp",
+      "direction": "sw",
+      "action": 1,
+      "frame": 3,
+      "bytes": 3768,
+      "bbox": [
+        46,
+        38,
+        123,
+        150
+      ],
+      "sha256": "67e8c67f77c8c5f4783cd8fe8b593d47a6b8b0659f6ef5acdce5a962ee1a85a1",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-2-0.webp",
+      "direction": "sw",
+      "action": 2,
+      "frame": 0,
+      "bytes": 3214,
+      "bbox": [
+        46,
+        38,
+        112,
+        150
+      ],
+      "sha256": "b92db05c4c8b39a90404c32fe8b7506a195fdad6ac872103cb0a69cc20289599",
+      "changed": true
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-2-1.webp",
+      "direction": "sw",
+      "action": 2,
+      "frame": 1,
+      "bytes": 4254,
+      "bbox": [
+        13,
+        44,
+        118,
+        150
+      ],
+      "sha256": "2b46b2f2bb2799e5866ef90691ff96677346c22d3d67b8265b8b261006050db2",
+      "changed": true
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-2-2.webp",
+      "direction": "sw",
+      "action": 2,
+      "frame": 2,
+      "bytes": 4960,
+      "bbox": [
+        5,
+        49,
+        126,
+        150
+      ],
+      "sha256": "8391301b985f1cccc17bd52781d8699197015700a46747dedffdcd9636411580",
+      "changed": true
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-2-3.webp",
+      "direction": "sw",
+      "action": 2,
+      "frame": 3,
+      "bytes": 3212,
+      "bbox": [
+        46,
+        38,
+        112,
+        150
+      ],
+      "sha256": "55db95fd7975fc575440a4bba68d0f20211e40ce53438bf3faf942d18c24c026",
+      "changed": true
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-3-0.webp",
+      "direction": "sw",
+      "action": 3,
+      "frame": 0,
+      "bytes": 3518,
+      "bbox": [
+        48,
+        39,
+        111,
+        150
+      ],
+      "sha256": "ce3aa4a78c83193d656f9c659381777ad86d3be4aeb13fda27d34601744fe552",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-3-1.webp",
+      "direction": "sw",
+      "action": 3,
+      "frame": 1,
+      "bytes": 4340,
+      "bbox": [
+        43,
+        32,
+        120,
+        150
+      ],
+      "sha256": "17eb40712a48ef46a3e0a7460a8864459598873796ff42dd8a608b3fa0bacf4a",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-3-2.webp",
+      "direction": "sw",
+      "action": 3,
+      "frame": 2,
+      "bytes": 4958,
+      "bbox": [
+        44,
+        31,
+        120,
+        150
+      ],
+      "sha256": "a2de71e8d40ec09961e5fd392e00cda98b4de8d2984f2c6be8e1b67b6134bc0c",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/sw-3-3.webp",
+      "direction": "sw",
+      "action": 3,
+      "frame": 3,
+      "bytes": 3486,
+      "bbox": [
+        46,
+        39,
+        112,
+        150
+      ],
+      "sha256": "043376bb1e3e0e6c988d892b8275e862dc5d51cc2294f82b3234d78499d45c74",
+      "changed": false
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/nw-0-0.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 0,
+      "bytes": 2812,
+      "bbox": [
+        56,
+        38,
+        106,
+        150
+      ],
+      "sha256": "a3ae8c105610f6b05b5173c184fa05014ec4975378064f2a12c6ef399ae6f774"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/nw-0-1.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 1,
+      "bytes": 2894,
+      "bbox": [
+        54,
+        38,
+        107,
+        150
+      ],
+      "sha256": "df68cdc1ad1a0536f6392ec864783f5055e7250c63432840200d49f735b30344"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/nw-0-2.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 2,
+      "bytes": 2958,
+      "bbox": [
+        57,
+        38,
+        109,
+        150
+      ],
+      "sha256": "30ee5901c5416842fb941c0f20f6521d82c8bd5d34588aaf9fa389383e1a01f5"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/nw-0-3.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 3,
+      "bytes": 2992,
+      "bbox": [
+        54,
+        37,
+        108,
+        150
+      ],
+      "sha256": "7df8d458d173a3c3600b9574ca89146eac90eb7e0a67ab190d7d98c7daa394ea"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/ne-0-0.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 0,
+      "bytes": 2986,
+      "bbox": [
+        55,
+        38,
+        107,
+        150
+      ],
+      "sha256": "55f222b4462ad4aec63baef187fac6f2754e6e332441dbe3bf2c112ed7a88ef2"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/ne-0-1.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 1,
+      "bytes": 2956,
+      "bbox": [
+        52,
+        38,
+        105,
+        150
+      ],
+      "sha256": "b3b8b5b5f06a55bad942842e0331bebcdd714961c90c214e5eee1887845f0f9c"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/ne-0-2.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 2,
+      "bytes": 3106,
+      "bbox": [
+        53,
+        38,
+        107,
+        150
+      ],
+      "sha256": "af557cba2f8563df25579b0e709272167a6b76bd9959692252a156b0945ce6e7"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/ne-0-3.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 3,
+      "bytes": 2956,
+      "bbox": [
+        53,
+        38,
+        106,
+        150
+      ],
+      "sha256": "302db710c7eed6926e80bdd63bffe89a62ef735d5412e22b0796b49aefa29072"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/se-0-0.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 0,
+      "bytes": 3128,
+      "bbox": [
+        52,
+        38,
+        103,
+        150
+      ],
+      "sha256": "a914f4985d954e3b9780a3fe49a233e3d430a9ea8ce2449ada6b2cd953af96a9"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/se-0-1.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 1,
+      "bytes": 3268,
+      "bbox": [
+        50,
+        38,
+        103,
+        150
+      ],
+      "sha256": "d63ebadf52e364aa5846276e2e5cf8c50899be45750668001a23dd4666a30235"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/se-0-2.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 2,
+      "bytes": 3186,
+      "bbox": [
+        49,
+        38,
+        101,
+        150
+      ],
+      "sha256": "6c323347b403901d6c930128b311b2d93da319cf6631a56a5e0aff0e77351ea0"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/se-0-3.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 3,
+      "bytes": 3238,
+      "bbox": [
+        51,
+        38,
+        103,
+        150
+      ],
+      "sha256": "376cbc3259e368aaee92500672fa0d71cf2b1d87cf05f70718a665fa8addf5c3"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/sw-0-0.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 0,
+      "bytes": 3398,
+      "bbox": [
+        55,
+        37,
+        110,
+        150
+      ],
+      "sha256": "c0f78a122f0011c62d4adc39510534b373c3df87c3943974ec429092039aaadf"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/sw-0-1.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 1,
+      "bytes": 3348,
+      "bbox": [
+        55,
+        37,
+        112,
+        150
+      ],
+      "sha256": "d80249d5563188947eb92ca24683be7e50218afe9c0fc75f48bb6d77b22ec6d2"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/sw-0-2.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 2,
+      "bytes": 3274,
+      "bbox": [
+        55,
+        39,
+        110,
+        150
+      ],
+      "sha256": "4aec269a74f64666a46228705d6360990f8169ff66b3181edd4f74dc560ba4e7"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/sw-0-3.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 3,
+      "bytes": 3262,
+      "bbox": [
+        55,
+        39,
+        113,
+        150
+      ],
+      "sha256": "857301c02751d56f57bc9fa762ca3237adfebe22406e9dbdb30f0d8f7080934b"
+    }
+  ],
+  "reviews": [
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/review-sw-attack-loop.webp",
+      "bytes": 16076
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/source-sw-attack.webp",
+      "bytes": 38094
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/review-sw-attack-v1-v2.webp",
+      "bytes": 18494
+    }
+  ],
+  "conversion": {
+    "se": {
+      "scales": {
+        "0": 0.4890829694323144,
+        "1": 0.4890829694323144,
+        "2": 0.4890829694323144,
+        "3": 0.4890829694323144
+      },
+      "sourceSha256": "712db0360a06fce8ae76beb3d50b592a71cf8581c844731aebed5a2ff8fe3a52"
+    },
+    "sw": {
+      "scales": {
+        "0": 0.4392156862745098,
+        "1": 0.4392156862745098,
+        "2": 0.4392156862745098,
+        "3": 0.4392156862745098
+      },
+      "sourceSha256": "71a9775dbf00432273cc05da21864a7eb182433d9b95219ec11c38a2954430bd"
+    },
+    "nw": {
+      "scales": {
+        "0": 0.41869158878504675,
+        "1": 0.41869158878504675,
+        "2": 0.41869158878504675,
+        "3": 0.41869158878504675
+      },
+      "sourceSha256": "d4e52eb82aa82ac9bc14d4ba64d798e1980ed528c100c3fd1816f5ae875bf7d6"
+    },
+    "ne": {
+      "scales": {
+        "0": 0.4307692307692308,
+        "1": 0.4307692307692308,
+        "2": 0.4307692307692308,
+        "3": 0.4307692307692308
+      },
+      "sourceSha256": "b6042c1227f22bab163718826ec6e9e5c7cbe4ca987d0795a7311268b7085f5a"
+    },
+    "scenario": {
+      "scales": {
+        "0": 0.42748091603053434,
+        "1": 0.4226415094339623,
+        "2": 0.4148148148148148,
+        "3": 0.42344045368620037
+      },
+      "sourceSha256": "483951343bfc31eae7a75459f90c9943add38e5b42a64089eb46e54d977cb77f"
+    }
+  },
+  "limitations": [
+    "최우선 SW 공격 복귀 자세는 정적 검수에서 수정 확인; 실제 재생 품질 승인 아님",
+    "관모·소매·부채의 기존 방향별 편차는 유지, 보행 최종 승인 아님",
+    "브라우저 실제 재생 미검수; 190ms 4프레임 정확한 비교 루프 파일 제공",
+    "승급·다른 병과·무용수·쇠약·게임 판정·사이트 연결 미작업"
+  ],
+  "largeOriginalsDeleted": true,
+  "validation": {
+    "dimensionsAndAlpha": "80/80 pass",
+    "groundY": "80/80 y150",
+    "v1Preserved": "all80 historical hashes pass",
+    "unchangedCombat": "60/60 byte-identical",
+    "changedFrames": "sw-2-0..3 only",
+    "staticSequence": "0,1,2,3,0 inspected at160px; complete bodies, right-hand fan, front-left direction, no edge clipping",
+    "changedFrameBounds": [
+      [
+        46,
+        38,
+        112,
+        150
+      ],
+      [
+        13,
+        44,
+        118,
+        150
+      ],
+      [
+        5,
+        49,
+        126,
+        150
+      ],
+      [
+        46,
+        38,
+        112,
+        150
+      ]
+    ],
+    "playback": "animated WebP verified4 frames loop0 with190ms per frame; not visually played in browser",
+    "build": "not run; integration owner scope"
+  },
+  "totalBytesIncludingReviews": 347810,
+  "deletedOriginalCount": 8,
+  "versions": {
+    "v1": {
+      "jobId": 24,
+      "jobName": "책사",
+      "status": "visual-draft-review-required",
+      "outputRoot": "web/public/images/class-motion-pilot/caster/job-24",
+      "directions": [
+        "nw",
+        "ne",
+        "se",
+        "sw"
+      ],
+      "combatActions": {
+        "0": "대기",
+        "1": "이동",
+        "2": "공격 술법",
+        "3": "스킬 술법"
+      },
+      "framesPerAction": 4,
+      "combatFrameCount": 64,
+      "scenarioFrameCount": 16,
+      "totalFrames": 80,
+      "frameSize": [
+        160,
+        160
+      ],
+      "anchor": {
+        "x": 80,
+        "groundY": 150,
+        "nominalBodyHeight": 112
+      },
+      "ms": {
+        "idle": 320,
+        "walk": 170,
+        "attack": 190,
+        "skill": 240,
+        "scenario": 360,
+        "weakened": 300
+      },
+      "totalBytes": 277718,
+      "reviewBytes": 848184,
+      "files": [
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-0-0.webp",
+          "direction": "se",
+          "action": 0,
+          "frame": 0,
+          "bytes": 3276,
+          "bbox": [
+            52,
+            38,
+            104,
+            150
+          ],
+          "sha256": "b37e035a1314f7cfc17483a8e17172dbe62486c3b62323875caf8d1dd8d29512"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-0-1.webp",
+          "direction": "se",
+          "action": 0,
+          "frame": 1,
+          "bytes": 3310,
+          "bbox": [
+            53,
+            37,
+            103,
+            150
+          ],
+          "sha256": "1aebd04e9ec4a4c65b0564077e8e1c241b54e80f6d4391e6da8498f3ba7fd953"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-0-2.webp",
+          "direction": "se",
+          "action": 0,
+          "frame": 2,
+          "bytes": 3314,
+          "bbox": [
+            52,
+            38,
+            103,
+            150
+          ],
+          "sha256": "ed68aba2504e03e7d72976c66cf052e7030cc31d940ba622bf7a7d9bafd446ce"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-0-3.webp",
+          "direction": "se",
+          "action": 0,
+          "frame": 3,
+          "bytes": 3312,
+          "bbox": [
+            53,
+            38,
+            104,
+            150
+          ],
+          "sha256": "4d988e4e81b4aa86c3379b0a86761488edca89b45c6332ffaac66ab96af63ac6"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-1-0.webp",
+          "direction": "se",
+          "action": 1,
+          "frame": 0,
+          "bytes": 3464,
+          "bbox": [
+            46,
+            35,
+            102,
+            150
+          ],
+          "sha256": "2f47c42b592fe50c54e5cded42e8e574e8825e00b0ebf65c360c6e97f59f6bb6"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-1-1.webp",
+          "direction": "se",
+          "action": 1,
+          "frame": 1,
+          "bytes": 3534,
+          "bbox": [
+            46,
+            36,
+            108,
+            150
+          ],
+          "sha256": "548cdb131870419604cdeb2db59c690fb3f9ef1eec1c4533ec26b85d261f6220"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-1-2.webp",
+          "direction": "se",
+          "action": 1,
+          "frame": 2,
+          "bytes": 3592,
+          "bbox": [
+            48,
+            35,
+            106,
+            150
+          ],
+          "sha256": "cead6b3e755e0679a49afc680962a7d0a2d2d6e1194cadde6e8ebfceda816ddc"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-1-3.webp",
+          "direction": "se",
+          "action": 1,
+          "frame": 3,
+          "bytes": 3448,
+          "bbox": [
+            49,
+            35,
+            105,
+            150
+          ],
+          "sha256": "3bac6e31c3520ad6a5af2f5c8e8a933cbfd43f7331d5432628c94194094ab859"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-2-0.webp",
+          "direction": "se",
+          "action": 2,
+          "frame": 0,
+          "bytes": 3650,
+          "bbox": [
+            44,
+            43,
+            111,
+            150
+          ],
+          "sha256": "1846de9b938e8f3abb12ccc6a148b0d85702c69f11a2601298ecccca7aef4828"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-2-1.webp",
+          "direction": "se",
+          "action": 2,
+          "frame": 1,
+          "bytes": 3936,
+          "bbox": [
+            46,
+            42,
+            124,
+            150
+          ],
+          "sha256": "3adc2c1f1ff38e8d0d75c2760ea55a9bdac68000455ca2566166023c0d525783"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-2-2.webp",
+          "direction": "se",
+          "action": 2,
+          "frame": 2,
+          "bytes": 4160,
+          "bbox": [
+            38,
+            43,
+            127,
+            150
+          ],
+          "sha256": "560e3a8f3ec2920e2061d106c438d66332fc27ddbd0a702fd7aa48537ff8082e"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-2-3.webp",
+          "direction": "se",
+          "action": 2,
+          "frame": 3,
+          "bytes": 3644,
+          "bbox": [
+            46,
+            43,
+            113,
+            150
+          ],
+          "sha256": "8340b7133374427d7f9ef00e9a8ea419ff049ee3a679ac994c0fa41d00b76ee8"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-3-0.webp",
+          "direction": "se",
+          "action": 3,
+          "frame": 0,
+          "bytes": 3260,
+          "bbox": [
+            52,
+            41,
+            105,
+            150
+          ],
+          "sha256": "eb074e47ccb61aa007cad9d22ba8deaf16cbfa0cb17ba7b07f1dc51d6d74c53c"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-3-1.webp",
+          "direction": "se",
+          "action": 3,
+          "frame": 1,
+          "bytes": 4160,
+          "bbox": [
+            46,
+            40,
+            109,
+            150
+          ],
+          "sha256": "c750af5eeec7275f76b99173836bd55e46038f5a9eb942b84c48246dd4e248b1"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-3-2.webp",
+          "direction": "se",
+          "action": 3,
+          "frame": 2,
+          "bytes": 4850,
+          "bbox": [
+            43,
+            34,
+            119,
+            150
+          ],
+          "sha256": "ce3c6defbde8da4009a33333ba48b00f2b79b47c0c4145e947a99d44024785bc"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/se-3-3.webp",
+          "direction": "se",
+          "action": 3,
+          "frame": 3,
+          "bytes": 3348,
+          "bbox": [
+            51,
+            40,
+            105,
+            150
+          ],
+          "sha256": "ea8cc71b722ef19ff85fd5b88176723b283b13d5f447be4fb329bba124f6cf06"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-0-0.webp",
+          "direction": "sw",
+          "action": 0,
+          "frame": 0,
+          "bytes": 3542,
+          "bbox": [
+            46,
+            38,
+            112,
+            150
+          ],
+          "sha256": "6dbfe2d9dea2ea255595e1dc4c773ea9a67a465950a4c5d848dae5fe9b7b55ef"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-0-1.webp",
+          "direction": "sw",
+          "action": 0,
+          "frame": 1,
+          "bytes": 3442,
+          "bbox": [
+            46,
+            38,
+            113,
+            150
+          ],
+          "sha256": "0c3011b74ae6661fa2a4c480184c5705b0ab27c42a1ab03775e1497dd88782fb"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-0-2.webp",
+          "direction": "sw",
+          "action": 0,
+          "frame": 2,
+          "bytes": 3500,
+          "bbox": [
+            46,
+            38,
+            112,
+            150
+          ],
+          "sha256": "a9fcee8aae86ac727e00f2e0577d78ee37e4f2a15ff2f39d846ff529899523cb"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-0-3.webp",
+          "direction": "sw",
+          "action": 0,
+          "frame": 3,
+          "bytes": 3474,
+          "bbox": [
+            45,
+            38,
+            112,
+            150
+          ],
+          "sha256": "54011aad046e6e87e3965a9d84c8d155b94b27c8a97d7c89a58b9978fd0573e2"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-1-0.webp",
+          "direction": "sw",
+          "action": 1,
+          "frame": 0,
+          "bytes": 3968,
+          "bbox": [
+            44,
+            36,
+            123,
+            150
+          ],
+          "sha256": "907407c68dc65abe8eeb0fbc2c6448a1bd658b9721f8baa47702de0ac7bcf1db"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-1-1.webp",
+          "direction": "sw",
+          "action": 1,
+          "frame": 1,
+          "bytes": 4020,
+          "bbox": [
+            42,
+            37,
+            125,
+            150
+          ],
+          "sha256": "bb0034efb8b461229ad5d6215ff03b5c71a4cfd21b484ba506063a422ab7f374"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-1-2.webp",
+          "direction": "sw",
+          "action": 1,
+          "frame": 2,
+          "bytes": 3956,
+          "bbox": [
+            42,
+            37,
+            124,
+            150
+          ],
+          "sha256": "3b12ccb9c18fae6e68e118767fc91ed2ea7abc5771a0d287cec058b4b124c382"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-1-3.webp",
+          "direction": "sw",
+          "action": 1,
+          "frame": 3,
+          "bytes": 3768,
+          "bbox": [
+            46,
+            38,
+            123,
+            150
+          ],
+          "sha256": "67e8c67f77c8c5f4783cd8fe8b593d47a6b8b0659f6ef5acdce5a962ee1a85a1"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-2-0.webp",
+          "direction": "sw",
+          "action": 2,
+          "frame": 0,
+          "bytes": 4406,
+          "bbox": [
+            21,
+            51,
+            126,
+            150
+          ],
+          "sha256": "2a44d7cf169d48171eed8a7fbee29f411a350e399a255dd387cadddce05798e2"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-2-1.webp",
+          "direction": "sw",
+          "action": 2,
+          "frame": 1,
+          "bytes": 4520,
+          "bbox": [
+            15,
+            49,
+            124,
+            150
+          ],
+          "sha256": "f20e21654250ea91688f19862e9a5a996b4eeaa84d35cc7d1ac8351f32899982"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-2-2.webp",
+          "direction": "sw",
+          "action": 2,
+          "frame": 2,
+          "bytes": 4956,
+          "bbox": [
+            8,
+            51,
+            125,
+            150
+          ],
+          "sha256": "82de6cc77d34bfabace601d327d352de4e1976baccbf340ededaddd626ddb259"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-2-3.webp",
+          "direction": "sw",
+          "action": 2,
+          "frame": 3,
+          "bytes": 4330,
+          "bbox": [
+            21,
+            50,
+            122,
+            150
+          ],
+          "sha256": "53c9c25991319d86af019ef76e850e90194d305bdbc410e2569908c1ad25fea2"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-3-0.webp",
+          "direction": "sw",
+          "action": 3,
+          "frame": 0,
+          "bytes": 3518,
+          "bbox": [
+            48,
+            39,
+            111,
+            150
+          ],
+          "sha256": "ce3aa4a78c83193d656f9c659381777ad86d3be4aeb13fda27d34601744fe552"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-3-1.webp",
+          "direction": "sw",
+          "action": 3,
+          "frame": 1,
+          "bytes": 4340,
+          "bbox": [
+            43,
+            32,
+            120,
+            150
+          ],
+          "sha256": "17eb40712a48ef46a3e0a7460a8864459598873796ff42dd8a608b3fa0bacf4a"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-3-2.webp",
+          "direction": "sw",
+          "action": 3,
+          "frame": 2,
+          "bytes": 4958,
+          "bbox": [
+            44,
+            31,
+            120,
+            150
+          ],
+          "sha256": "a2de71e8d40ec09961e5fd392e00cda98b4de8d2984f2c6be8e1b67b6134bc0c"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/sw-3-3.webp",
+          "direction": "sw",
+          "action": 3,
+          "frame": 3,
+          "bytes": 3486,
+          "bbox": [
+            46,
+            39,
+            112,
+            150
+          ],
+          "sha256": "043376bb1e3e0e6c988d892b8275e862dc5d51cc2294f82b3234d78499d45c74"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-0-0.webp",
+          "direction": "nw",
+          "action": 0,
+          "frame": 0,
+          "bytes": 3004,
+          "bbox": [
+            55,
+            38,
+            111,
+            150
+          ],
+          "sha256": "061f62c289ab8e9dc01c93b2c10e0a9ddaea064c29f9f27963a3dd521c76754a"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-0-1.webp",
+          "direction": "nw",
+          "action": 0,
+          "frame": 1,
+          "bytes": 3050,
+          "bbox": [
+            56,
+            38,
+            112,
+            150
+          ],
+          "sha256": "6ed103010b274cf4afa8d0d387d39eaaf6348d1a756de5492ae12521d5c94e09"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-0-2.webp",
+          "direction": "nw",
+          "action": 0,
+          "frame": 2,
+          "bytes": 2986,
+          "bbox": [
+            59,
+            38,
+            116,
+            150
+          ],
+          "sha256": "36067b73f95fe3b1664fc0a11348de24a9fc47ec699307ecfc290a0dd70b4b39"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-0-3.webp",
+          "direction": "nw",
+          "action": 0,
+          "frame": 3,
+          "bytes": 3070,
+          "bbox": [
+            55,
+            38,
+            112,
+            150
+          ],
+          "sha256": "5674d4ce7aec155114ea49b1d055387d0e6b8ebf7bd648fa7c43537ed8627a7c"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-1-0.webp",
+          "direction": "nw",
+          "action": 1,
+          "frame": 0,
+          "bytes": 3214,
+          "bbox": [
+            51,
+            42,
+            118,
+            150
+          ],
+          "sha256": "005762301c07d6679dbe0fa39a91558c0181478b538252b81a84d9fecdedcec2"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-1-1.webp",
+          "direction": "nw",
+          "action": 1,
+          "frame": 1,
+          "bytes": 3042,
+          "bbox": [
+            51,
+            41,
+            116,
+            150
+          ],
+          "sha256": "d8bb632caeb30cb7bbbe1562b0bb3a52aea91fd7e8947776c5ab04ba981398a5"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-1-2.webp",
+          "direction": "nw",
+          "action": 1,
+          "frame": 2,
+          "bytes": 3146,
+          "bbox": [
+            53,
+            41,
+            120,
+            150
+          ],
+          "sha256": "82139ecbb0289c6d11387221112aadb960504136d3e1f7cb55cb4b1613ebb3f6"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-1-3.webp",
+          "direction": "nw",
+          "action": 1,
+          "frame": 3,
+          "bytes": 3180,
+          "bbox": [
+            53,
+            41,
+            117,
+            150
+          ],
+          "sha256": "bc743d42ba8c5c47619e2d554abadc0361fcc6f14ae3b1b7b279b37010aa598a"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-2-0.webp",
+          "direction": "nw",
+          "action": 2,
+          "frame": 0,
+          "bytes": 3032,
+          "bbox": [
+            56,
+            46,
+            115,
+            150
+          ],
+          "sha256": "427dcfb4026b6b35f7e27d9656e7982f3ed9f9175c7d87fe165dfa25bf039c97"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-2-1.webp",
+          "direction": "nw",
+          "action": 2,
+          "frame": 1,
+          "bytes": 3588,
+          "bbox": [
+            22,
+            48,
+            112,
+            150
+          ],
+          "sha256": "ad1e627d6e9e3f18b12afa5e7087379576b7f79de7ea33c5ed4f90391f484743"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-2-2.webp",
+          "direction": "nw",
+          "action": 2,
+          "frame": 2,
+          "bytes": 3928,
+          "bbox": [
+            16,
+            48,
+            117,
+            150
+          ],
+          "sha256": "1c6bc9789d47d39b09754a18e727df2a9cb09701c45949012058aba888a4dcc0"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-2-3.webp",
+          "direction": "nw",
+          "action": 2,
+          "frame": 3,
+          "bytes": 3026,
+          "bbox": [
+            49,
+            49,
+            113,
+            150
+          ],
+          "sha256": "6cd373c9179c00b26873608775b6e520699dce74996675f4454c8cf352f57f04"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-3-0.webp",
+          "direction": "nw",
+          "action": 3,
+          "frame": 0,
+          "bytes": 3034,
+          "bbox": [
+            57,
+            45,
+            114,
+            150
+          ],
+          "sha256": "76a7929a03c66ee63427f97b144e1cecfeaa133c358947e1ea4c03adfdd44386"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-3-1.webp",
+          "direction": "nw",
+          "action": 3,
+          "frame": 1,
+          "bytes": 3202,
+          "bbox": [
+            52,
+            37,
+            116,
+            150
+          ],
+          "sha256": "b7e2457a455c7f6e609182676bca11a215892893bf1ef2c4d13f11a9c7147007"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-3-2.webp",
+          "direction": "nw",
+          "action": 3,
+          "frame": 2,
+          "bytes": 4004,
+          "bbox": [
+            47,
+            38,
+            114,
+            150
+          ],
+          "sha256": "092c3dc818830dedcd681101b4cebd6d4235be3e71fe333ba78ad79011555afa"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/nw-3-3.webp",
+          "direction": "nw",
+          "action": 3,
+          "frame": 3,
+          "bytes": 2858,
+          "bbox": [
+            57,
+            44,
+            113,
+            150
+          ],
+          "sha256": "71513080d09c941bb536805c1ce290661ccf6069b7bc307a0349905f76b1199e"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-0-0.webp",
+          "direction": "ne",
+          "action": 0,
+          "frame": 0,
+          "bytes": 2910,
+          "bbox": [
+            54,
+            38,
+            103,
+            150
+          ],
+          "sha256": "237c80e3e86066898e19995f8936afd8324b9622c878b8b66a8a118be1763dce"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-0-1.webp",
+          "direction": "ne",
+          "action": 0,
+          "frame": 1,
+          "bytes": 2858,
+          "bbox": [
+            55,
+            38,
+            101,
+            150
+          ],
+          "sha256": "063351a20e1b88d88452be28eff8b78e227abccb63d9696ab401f9fc274ad8da"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-0-2.webp",
+          "direction": "ne",
+          "action": 0,
+          "frame": 2,
+          "bytes": 2938,
+          "bbox": [
+            57,
+            38,
+            105,
+            150
+          ],
+          "sha256": "1715432cf673b8535f21e986dc9009fe573e4a7501c1613750b579bbc995a889"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-0-3.webp",
+          "direction": "ne",
+          "action": 0,
+          "frame": 3,
+          "bytes": 2966,
+          "bbox": [
+            53,
+            38,
+            103,
+            150
+          ],
+          "sha256": "8fbffbeba823cb1b318833aeb0bf0613868016298ae2ac3cbb7f71ab83fec939"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-1-0.webp",
+          "direction": "ne",
+          "action": 1,
+          "frame": 0,
+          "bytes": 3194,
+          "bbox": [
+            57,
+            36,
+            112,
+            150
+          ],
+          "sha256": "28889fb89eb54e0ecf224911f91119cc70f87792bc8f5f41e7c08edcc5fcccff"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-1-1.webp",
+          "direction": "ne",
+          "action": 1,
+          "frame": 1,
+          "bytes": 3538,
+          "bbox": [
+            48,
+            38,
+            109,
+            150
+          ],
+          "sha256": "f2b0848553dc1bfb051be8e144e83ade2261821e63ee797565906aa2d9a80662"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-1-2.webp",
+          "direction": "ne",
+          "action": 1,
+          "frame": 2,
+          "bytes": 3664,
+          "bbox": [
+            51,
+            38,
+            109,
+            150
+          ],
+          "sha256": "ac297ee9f32832a218213b3fbe1e9d2e3b886e7a21fb436fd077f0efa82bde9b"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-1-3.webp",
+          "direction": "ne",
+          "action": 1,
+          "frame": 3,
+          "bytes": 3514,
+          "bbox": [
+            53,
+            37,
+            115,
+            150
+          ],
+          "sha256": "d62eba1f288e63589e716801158cf92e986b9e25f919087b12dea241b4277128"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-2-0.webp",
+          "direction": "ne",
+          "action": 2,
+          "frame": 0,
+          "bytes": 3122,
+          "bbox": [
+            49,
+            41,
+            105,
+            150
+          ],
+          "sha256": "2085e4fd34aa1a063007d13ea495e8e46128bdf2db400eb97308aa86a2d56416"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-2-1.webp",
+          "direction": "ne",
+          "action": 2,
+          "frame": 1,
+          "bytes": 3664,
+          "bbox": [
+            57,
+            41,
+            145,
+            150
+          ],
+          "sha256": "82d616e3fbda2ee612fe560eb257350103e0b6fcf3f9e7211c3a776a1dbe3ccf"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-2-2.webp",
+          "direction": "ne",
+          "action": 2,
+          "frame": 2,
+          "bytes": 4226,
+          "bbox": [
+            55,
+            42,
+            156,
+            150
+          ],
+          "sha256": "976f87af6b7aa3917c427dedce4b7c861497b066f4eb6daa12aa3ac218ecb929"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-2-3.webp",
+          "direction": "ne",
+          "action": 2,
+          "frame": 3,
+          "bytes": 2994,
+          "bbox": [
+            51,
+            41,
+            106,
+            150
+          ],
+          "sha256": "8487a84d734ac316cd0c6fa9c461cef4fca3997248ba096d8b1c31dd38ef5ab9"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-3-0.webp",
+          "direction": "ne",
+          "action": 3,
+          "frame": 0,
+          "bytes": 3312,
+          "bbox": [
+            51,
+            41,
+            106,
+            150
+          ],
+          "sha256": "debc308fcd984b4bea82457d82402779fe3f2f1e61493e495653113b9e12bc90"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-3-1.webp",
+          "direction": "ne",
+          "action": 3,
+          "frame": 1,
+          "bytes": 3762,
+          "bbox": [
+            51,
+            38,
+            114,
+            150
+          ],
+          "sha256": "b36298f7a3cb0bf80ae41531da68093991785c1e715a5452b54f622dba706e4a"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-3-2.webp",
+          "direction": "ne",
+          "action": 3,
+          "frame": 2,
+          "bytes": 4186,
+          "bbox": [
+            49,
+            30,
+            122,
+            150
+          ],
+          "sha256": "4671eb493708be80eabd11f87f12847eb23f6c190415c7ee736b0553a16ad17e"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/ne-3-3.webp",
+          "direction": "ne",
+          "action": 3,
+          "frame": 3,
+          "bytes": 3302,
+          "bbox": [
+            49,
+            43,
+            114,
+            150
+          ],
+          "sha256": "053087e8452956a9f5ea5fbc35f085a094026ced62134c4a34d3fbb64755ff3a"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/nw-0-0.webp",
+          "direction": "nw",
+          "action": 0,
+          "frame": 0,
+          "bytes": 2812,
+          "bbox": [
+            56,
+            38,
+            106,
+            150
+          ],
+          "sha256": "a3ae8c105610f6b05b5173c184fa05014ec4975378064f2a12c6ef399ae6f774"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/nw-0-1.webp",
+          "direction": "nw",
+          "action": 0,
+          "frame": 1,
+          "bytes": 2894,
+          "bbox": [
+            54,
+            38,
+            107,
+            150
+          ],
+          "sha256": "df68cdc1ad1a0536f6392ec864783f5055e7250c63432840200d49f735b30344"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/nw-0-2.webp",
+          "direction": "nw",
+          "action": 0,
+          "frame": 2,
+          "bytes": 2958,
+          "bbox": [
+            57,
+            38,
+            109,
+            150
+          ],
+          "sha256": "30ee5901c5416842fb941c0f20f6521d82c8bd5d34588aaf9fa389383e1a01f5"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/nw-0-3.webp",
+          "direction": "nw",
+          "action": 0,
+          "frame": 3,
+          "bytes": 2992,
+          "bbox": [
+            54,
+            37,
+            108,
+            150
+          ],
+          "sha256": "7df8d458d173a3c3600b9574ca89146eac90eb7e0a67ab190d7d98c7daa394ea"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/ne-0-0.webp",
+          "direction": "ne",
+          "action": 0,
+          "frame": 0,
+          "bytes": 2986,
+          "bbox": [
+            55,
+            38,
+            107,
+            150
+          ],
+          "sha256": "55f222b4462ad4aec63baef187fac6f2754e6e332441dbe3bf2c112ed7a88ef2"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/ne-0-1.webp",
+          "direction": "ne",
+          "action": 0,
+          "frame": 1,
+          "bytes": 2956,
+          "bbox": [
+            52,
+            38,
+            105,
+            150
+          ],
+          "sha256": "b3b8b5b5f06a55bad942842e0331bebcdd714961c90c214e5eee1887845f0f9c"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/ne-0-2.webp",
+          "direction": "ne",
+          "action": 0,
+          "frame": 2,
+          "bytes": 3106,
+          "bbox": [
+            53,
+            38,
+            107,
+            150
+          ],
+          "sha256": "af557cba2f8563df25579b0e709272167a6b76bd9959692252a156b0945ce6e7"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/ne-0-3.webp",
+          "direction": "ne",
+          "action": 0,
+          "frame": 3,
+          "bytes": 2956,
+          "bbox": [
+            53,
+            38,
+            106,
+            150
+          ],
+          "sha256": "302db710c7eed6926e80bdd63bffe89a62ef735d5412e22b0796b49aefa29072"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/se-0-0.webp",
+          "direction": "se",
+          "action": 0,
+          "frame": 0,
+          "bytes": 3128,
+          "bbox": [
+            52,
+            38,
+            103,
+            150
+          ],
+          "sha256": "a914f4985d954e3b9780a3fe49a233e3d430a9ea8ce2449ada6b2cd953af96a9"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/se-0-1.webp",
+          "direction": "se",
+          "action": 0,
+          "frame": 1,
+          "bytes": 3268,
+          "bbox": [
+            50,
+            38,
+            103,
+            150
+          ],
+          "sha256": "d63ebadf52e364aa5846276e2e5cf8c50899be45750668001a23dd4666a30235"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/se-0-2.webp",
+          "direction": "se",
+          "action": 0,
+          "frame": 2,
+          "bytes": 3186,
+          "bbox": [
+            49,
+            38,
+            101,
+            150
+          ],
+          "sha256": "6c323347b403901d6c930128b311b2d93da319cf6631a56a5e0aff0e77351ea0"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/se-0-3.webp",
+          "direction": "se",
+          "action": 0,
+          "frame": 3,
+          "bytes": 3238,
+          "bbox": [
+            51,
+            38,
+            103,
+            150
+          ],
+          "sha256": "376cbc3259e368aaee92500672fa0d71cf2b1d87cf05f70718a665fa8addf5c3"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/sw-0-0.webp",
+          "direction": "sw",
+          "action": 0,
+          "frame": 0,
+          "bytes": 3398,
+          "bbox": [
+            55,
+            37,
+            110,
+            150
+          ],
+          "sha256": "c0f78a122f0011c62d4adc39510534b373c3df87c3943974ec429092039aaadf"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/sw-0-1.webp",
+          "direction": "sw",
+          "action": 0,
+          "frame": 1,
+          "bytes": 3348,
+          "bbox": [
+            55,
+            37,
+            112,
+            150
+          ],
+          "sha256": "d80249d5563188947eb92ca24683be7e50218afe9c0fc75f48bb6d77b22ec6d2"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/sw-0-2.webp",
+          "direction": "sw",
+          "action": 0,
+          "frame": 2,
+          "bytes": 3274,
+          "bbox": [
+            55,
+            39,
+            110,
+            150
+          ],
+          "sha256": "4aec269a74f64666a46228705d6360990f8169ff66b3181edd4f74dc560ba4e7"
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/sw-0-3.webp",
+          "direction": "sw",
+          "action": 0,
+          "frame": 3,
+          "bytes": 3262,
+          "bbox": [
+            55,
+            39,
+            113,
+            150
+          ],
+          "sha256": "857301c02751d56f57bc9fa762ca3237adfebe22406e9dbdb30f0d8f7080934b"
+        }
+      ],
+      "reviews": [
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/review-nw.webp",
+          "bytes": 47338
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/review-ne.webp",
+          "bytes": 50464
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/review-se.webp",
+          "bytes": 53274
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/review-sw.webp",
+          "bytes": 59268
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1/review-scenario.webp",
+          "bytes": 46260
+        },
+        {
+          "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v1/review-animation.webp",
+          "bytes": 591580
+        }
+      ],
+      "conversion": {
+        "se": {
+          "scales": {
+            "0": 0.4890829694323144,
+            "1": 0.4890829694323144,
+            "2": 0.4890829694323144,
+            "3": 0.4890829694323144
+          },
+          "sourceSha256": "712db0360a06fce8ae76beb3d50b592a71cf8581c844731aebed5a2ff8fe3a52"
+        },
+        "sw": {
+          "scales": {
+            "0": 0.4392156862745098,
+            "1": 0.4392156862745098,
+            "2": 0.4392156862745098,
+            "3": 0.4392156862745098
+          },
+          "sourceSha256": "71a9775dbf00432273cc05da21864a7eb182433d9b95219ec11c38a2954430bd"
+        },
+        "nw": {
+          "scales": {
+            "0": 0.41869158878504675,
+            "1": 0.41869158878504675,
+            "2": 0.41869158878504675,
+            "3": 0.41869158878504675
+          },
+          "sourceSha256": "d4e52eb82aa82ac9bc14d4ba64d798e1980ed528c100c3fd1816f5ae875bf7d6"
+        },
+        "ne": {
+          "scales": {
+            "0": 0.4307692307692308,
+            "1": 0.4307692307692308,
+            "2": 0.4307692307692308,
+            "3": 0.4307692307692308
+          },
+          "sourceSha256": "b6042c1227f22bab163718826ec6e9e5c7cbe4ca987d0795a7311268b7085f5a"
+        },
+        "scenario": {
+          "scales": {
+            "0": 0.42748091603053434,
+            "1": 0.4226415094339623,
+            "2": 0.4148148148148148,
+            "3": 0.42344045368620037
+          },
+          "sourceSha256": "483951343bfc31eae7a75459f90c9943add38e5b42a64089eb46e54d977cb77f"
+        }
+      },
+      "limitations": [
+        "시각 초안이며 사용자 승인·사이트 UI 연결·전투 판정 미완료",
+        "승급·다른 병과·무용수·쇠약 미제작",
+        "AI 생성에 따른 의복·부채 형상과 보행/복귀 연결의 미세한 차이는 후속 검수 필요",
+        "SW 공격 frame3이 충분히 몸쪽으로 복귀하지 않아 반복 시 부채/팔 전환이 급함",
+        "방향별 관모 폭·부채 펼침·소매와 자락에 생성 편차 있음",
+        "브라우저 file URL 정책 차단으로 실제 연속 재생 육안 검수 미완료; 정적 시간순 비교와 재생용 WebP 제공"
+      ],
+      "largeOriginalsDeleted": true,
+      "validation": {
+        "dimensionsAndAlpha": "80/80 pass",
+        "groundY": "80/80 y150",
+        "visualSheets": "5 sheets / 80 frames inspected",
+        "bodyConnection": "no obvious detached limbs or neighboring fragments seen",
+        "direction": "NW back-left, NE back-right, SE front-right, SW front-left checked",
+        "fanHand": "SW revised to far right hand; no programmatic mirroring",
+        "playback": "not browser-verified; static frame sequence reviewed",
+        "build": "not run; integration owner scope"
+      },
+      "totalBytesIncludingReviews": 1125902,
+      "deletedOriginalCount": 8
+    }
+  },
+  "activeVersion": "v2",
+  "modes": {
+    "combat": {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/combat-v2",
+      "frameCount": 64,
+      "bytes": 225384
+    },
+    "scenario": {
+      "path": "web/public/images/class-motion-pilot/caster/job-24/scenario-v1",
+      "frameCount": 16,
+      "bytes": 49762,
+      "unchanged": true
+    }
+  },
+  "resolvedIssues": [
+    {
+      "location": "sw action2 frames0-3",
+      "change": "four-frame redraw: preparation close to chest, partial extension, full release, elbow bent recovery; frame3 close to frame0",
+      "evidence": "static 0/1/2/3/0 before-after sheet; frame3->0 silhouette IoU 0.9979 vs v1 0.8710 (not a playback quality proof)"
+    }
+  ],
+  "unresolvedIssues": [
+    {
+      "location": "nw/ne/se/sw actions0,1,3 across directions",
+      "issue": "existing differences in cap profile, robe folds and fan spread remain; no new scale drift found in static sheets; unchanged"
+    },
+    {
+      "location": "nw action1 frames0-3; all directions action1 frame3->0",
+      "issue": "NW walk height108-109px vs112px idle; gait/hem transition remains a visual draft, actual playback not inspected"
+    },
+    {
+      "location": "sw action2 frame2->3",
+      "issue": "full release to recovery occurs in one190ms step; four-frame cadence needs integration playback review"
+    }
+  ],
+  "v2Generation": {
+    "tool": "built-in image_gen",
+    "prompt": "Use case identity-preserve. Create corrected FOUR FRAME fan attack animation of this exact male strategist. Image1 is idle identity/scale/clothes reference; image2 is extended attack pose reference. Render ONE ROW FOUR COLUMNS, equal square cells on transparent wide sheet. All face SOUTHWEST front LEFT 7 o'clock. Same youthful face, black scholar cap, navy robe cream cuffs, brown belt/pouch, black boots. Fan ALWAYS anatomical right hand on far screen-left arm; near left arm is empty. No mirroring. Entire connected character every frame, no body parts collage. Frame0: upright preparation matching image1, right elbow bent, fan held CLOSE TO CHEST vertically. Frame1: modest forward casting windup, right forearm extends halfway left at waist, torso leans slightly. Frame2: full forward release matching image2, fan extended LEFT, left palm outward. Frame3 IMPORTANT: RECOVER, torso upright, right elbow firmly BENT and tucked toward ribs, fan RETURNED CLOSE TO CHEST vertical, empty left hand LOWERED by waist, feet and head return almost exactly to frame0 position. Frame3 must NOT retain extended right arm. Loop3->0 should have minimal changes. All figures same body and head scale, planted boots same anchor, no camera drift. Fixed cap width across4 frames. Each whole figure fits middle65% cell with at least15% transparent margins. Crisp hand-painted outlined tactical RPG style matching references, no glow shadows text grid. Real alpha transparency.",
+    "scaleAllFour": 0.21497120921305182,
+    "sourceSha256": "0b47c10b123028ebdc1a9df39917c1ba2e566345c65021bc0b3f91bf0c373ecd",
+    "lightweightSource": "web/public/images/class-motion-pilot/caster/job-24/combat-v2/source-sw-attack.webp",
+    "largeOriginalDeleted": true
+  }
+}

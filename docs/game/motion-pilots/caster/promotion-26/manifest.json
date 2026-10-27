@@ -1,0 +1,1362 @@
+{
+  "jobId": 26,
+  "jobName": "군사",
+  "baseJobId": 24,
+  "stage": 2,
+  "status": "generated-awaiting-visual-review",
+  "modes": {
+    "combat": {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1",
+      "frameCount": 64
+    },
+    "scenario": {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1",
+      "frameCount": 16
+    }
+  },
+  "frameSize": [
+    160,
+    160
+  ],
+  "directions": [
+    "nw",
+    "ne",
+    "se",
+    "sw"
+  ],
+  "framesPerAction": 4,
+  "totalFrames": 80,
+  "anchor": {
+    "x": 80,
+    "groundY": 150,
+    "bodyHeight": 106
+  },
+  "ms": {
+    "idle": 320,
+    "walk": 170,
+    "attack": 190,
+    "skill": 240,
+    "scenario": 360
+  },
+  "totalBytes": 298258,
+  "reviewBytes": 406136,
+  "files": [
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-0-0.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 0,
+      "bytes": 3568,
+      "bbox": [
+        52,
+        44,
+        109,
+        150
+      ],
+      "sha256": "eeeae2046c54498499f9555b4c226f8fd75487d12cb6c84745427e9a125a1b9d"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-0-1.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 1,
+      "bytes": 3482,
+      "bbox": [
+        52,
+        44,
+        108,
+        150
+      ],
+      "sha256": "8a22a416f01593b13d06100f74f13547aca1df4b9c4f03b28e6aca49d7a22144"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-0-2.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 2,
+      "bytes": 3514,
+      "bbox": [
+        53,
+        44,
+        108,
+        150
+      ],
+      "sha256": "5f52a4aff35a3dae9a8f178e24a82b909b223d09ebc48ef32da3c4a7ec12cfbe"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-0-3.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 3,
+      "bytes": 3532,
+      "bbox": [
+        52,
+        44,
+        107,
+        150
+      ],
+      "sha256": "283946b36f63a4f1e4ae829a55e28d7d2ec55589e02740667fffc5c145a90efd"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-1-0.webp",
+      "direction": "se",
+      "action": 1,
+      "frame": 0,
+      "bytes": 3674,
+      "bbox": [
+        50,
+        43,
+        108,
+        150
+      ],
+      "sha256": "dd8335f61ad643730bceae171fcdacc725a0ec900a2e52d9fe6d2446adafadcb"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-1-1.webp",
+      "direction": "se",
+      "action": 1,
+      "frame": 1,
+      "bytes": 3656,
+      "bbox": [
+        46,
+        42,
+        104,
+        150
+      ],
+      "sha256": "dc8ed7b6ef2b0df5f511d1621e2694dbc74015c53e634a22423b17a328922878"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-1-2.webp",
+      "direction": "se",
+      "action": 1,
+      "frame": 2,
+      "bytes": 3632,
+      "bbox": [
+        50,
+        44,
+        108,
+        150
+      ],
+      "sha256": "983e3f3532fb7fe6df52ea757c021ef4e450387e89cf575cb22fe43005e840fa"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-1-3.webp",
+      "direction": "se",
+      "action": 1,
+      "frame": 3,
+      "bytes": 3656,
+      "bbox": [
+        50,
+        43,
+        107,
+        150
+      ],
+      "sha256": "2b9c7e49b03f3b6f6404da913a2b8f7258d918dc0cd1aff1f30396b8c5eb2cfd"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-2-0.webp",
+      "direction": "se",
+      "action": 2,
+      "frame": 0,
+      "bytes": 3520,
+      "bbox": [
+        51,
+        45,
+        108,
+        150
+      ],
+      "sha256": "9b3f4adc8369a2ac283d917b67c70c751bc1990c7c9a7f3adea778e813f6d043"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-2-1.webp",
+      "direction": "se",
+      "action": 2,
+      "frame": 1,
+      "bytes": 4258,
+      "bbox": [
+        46,
+        47,
+        129,
+        150
+      ],
+      "sha256": "1664860e4773763743934c647f6c5e63588bf37b431219cf4b1cc6d34e03534f"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-2-2.webp",
+      "direction": "se",
+      "action": 2,
+      "frame": 2,
+      "bytes": 4532,
+      "bbox": [
+        36,
+        48,
+        137,
+        150
+      ],
+      "sha256": "62a982d57ba03c0549f3437be33683c22c734d8d9f37913c69097f5f078676fe"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-2-3.webp",
+      "direction": "se",
+      "action": 2,
+      "frame": 3,
+      "bytes": 3498,
+      "bbox": [
+        51,
+        44,
+        107,
+        150
+      ],
+      "sha256": "0285bec1306b5a17b51c86a3a468fe6a3ce8bea958d4ffeee592ad83bd668b79"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-3-0.webp",
+      "direction": "se",
+      "action": 3,
+      "frame": 0,
+      "bytes": 3558,
+      "bbox": [
+        51,
+        44,
+        108,
+        150
+      ],
+      "sha256": "77b126f0eaabc118a44cb8d48a99b36a0161d839b77e46763a5d3f5c567395d3"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-3-1.webp",
+      "direction": "se",
+      "action": 3,
+      "frame": 1,
+      "bytes": 4634,
+      "bbox": [
+        45,
+        33,
+        122,
+        150
+      ],
+      "sha256": "cbd1954a43bad58a2f6ea22af5e8c178007d865dd910125d65445661f9aa6d34"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-3-2.webp",
+      "direction": "se",
+      "action": 3,
+      "frame": 2,
+      "bytes": 4728,
+      "bbox": [
+        47,
+        28,
+        123,
+        150
+      ],
+      "sha256": "821fb5dfa0d5b86d9e348969a5d9750b93cc88382e01e604a9b2e1917cf36105"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/se-3-3.webp",
+      "direction": "se",
+      "action": 3,
+      "frame": 3,
+      "bytes": 3486,
+      "bbox": [
+        52,
+        44,
+        108,
+        150
+      ],
+      "sha256": "d138d9688c875de52aeb8f5dedd5589f272bfab44b4f1a83b510bc76e44e2cd7"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-0-0.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 0,
+      "bytes": 3480,
+      "bbox": [
+        46,
+        44,
+        110,
+        150
+      ],
+      "sha256": "4ba09d0365c73a8ada5e1e9637ff4a1e4f056937008b3306e97221b66d1d4e60"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-0-1.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 1,
+      "bytes": 3516,
+      "bbox": [
+        46,
+        44,
+        111,
+        150
+      ],
+      "sha256": "cb5a189f4e2974b627957ef3f2826be41cf16ee87c402293f626edfcd55f1adf"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-0-2.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 2,
+      "bytes": 3626,
+      "bbox": [
+        47,
+        44,
+        112,
+        150
+      ],
+      "sha256": "a40a12f0223aad2f981c5464f6e1d7ec88d6ebe06d29d579d2807299e7a4c7c4"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-0-3.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 3,
+      "bytes": 3554,
+      "bbox": [
+        47,
+        44,
+        112,
+        150
+      ],
+      "sha256": "80fd49605947c3908e30cb832518f7541e4d037818b6fad97c35648a7683ec22"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-1-0.webp",
+      "direction": "sw",
+      "action": 1,
+      "frame": 0,
+      "bytes": 3796,
+      "bbox": [
+        41,
+        45,
+        114,
+        150
+      ],
+      "sha256": "46c47a72817765dbdf1a29802a57cd6b75ac318eb12215ce8e96f782e48a1436"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-1-1.webp",
+      "direction": "sw",
+      "action": 1,
+      "frame": 1,
+      "bytes": 3780,
+      "bbox": [
+        40,
+        43,
+        115,
+        150
+      ],
+      "sha256": "c0179566951a73ba2f7b3d80b755983f6910ae91dae220a28ebf337ed2eea1b8"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-1-2.webp",
+      "direction": "sw",
+      "action": 1,
+      "frame": 2,
+      "bytes": 3766,
+      "bbox": [
+        42,
+        43,
+        117,
+        150
+      ],
+      "sha256": "b68e7c21b15919312a496bd37c82a1e44ada21f5bf71740fc6e0d13a435ce7fe"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-1-3.webp",
+      "direction": "sw",
+      "action": 1,
+      "frame": 3,
+      "bytes": 3938,
+      "bbox": [
+        42,
+        44,
+        115,
+        150
+      ],
+      "sha256": "e1e6bb7e452ac2f81e015896961bb0d98639402d106850b6e57207f7bc2a6fb6"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-2-0.webp",
+      "direction": "sw",
+      "action": 2,
+      "frame": 0,
+      "bytes": 3582,
+      "bbox": [
+        45,
+        45,
+        112,
+        150
+      ],
+      "sha256": "974cc8d7034b8cf5746d8ca470aafe1492eb30b5ad625cbb81af86772c63c1a8"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-2-1.webp",
+      "direction": "sw",
+      "action": 2,
+      "frame": 1,
+      "bytes": 4088,
+      "bbox": [
+        39,
+        53,
+        121,
+        150
+      ],
+      "sha256": "52f0c78a69e686e36389cdca67c002a9bf605b62f3900d74fa33e2aad2c7c356"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-2-2.webp",
+      "direction": "sw",
+      "action": 2,
+      "frame": 2,
+      "bytes": 5410,
+      "bbox": [
+        11,
+        49,
+        139,
+        150
+      ],
+      "sha256": "e7c780449e03f864d4030b465d0cd48446d7ac4218b4f24953318c4962e55ff8"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-2-3.webp",
+      "direction": "sw",
+      "action": 2,
+      "frame": 3,
+      "bytes": 3614,
+      "bbox": [
+        46,
+        46,
+        113,
+        150
+      ],
+      "sha256": "c4cfecbdb103eae2ffb2c318f9bb840021d1e134715890d137a1224e9b32fa40"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-3-0.webp",
+      "direction": "sw",
+      "action": 3,
+      "frame": 0,
+      "bytes": 3556,
+      "bbox": [
+        47,
+        45,
+        113,
+        150
+      ],
+      "sha256": "76ae52f78e5933d0e910e6376859b5e6787f5eb12b3477bedf48ed8ac0d86ebb"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-3-1.webp",
+      "direction": "sw",
+      "action": 3,
+      "frame": 1,
+      "bytes": 5122,
+      "bbox": [
+        29,
+        34,
+        128,
+        150
+      ],
+      "sha256": "575feeb656820079e43edc1c97bbbf1e061292701fd247a7829bb8eb35b7d49e"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-3-2.webp",
+      "direction": "sw",
+      "action": 3,
+      "frame": 2,
+      "bytes": 5352,
+      "bbox": [
+        35,
+        36,
+        138,
+        150
+      ],
+      "sha256": "ae7f073466c99edb7b591fee9350ebb2d575fd75b30ba8e9d0b6ff447750bdcf"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/sw-3-3.webp",
+      "direction": "sw",
+      "action": 3,
+      "frame": 3,
+      "bytes": 3688,
+      "bbox": [
+        45,
+        45,
+        113,
+        150
+      ],
+      "sha256": "e462d9fd485b45e490159e573f30e4729dd5f94b223546f6051fcbeb429669e4"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-0-0.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 0,
+      "bytes": 3342,
+      "bbox": [
+        51,
+        44,
+        111,
+        150
+      ],
+      "sha256": "36c86656083fa378a2e81644900636121daca9a83164d9eb42036af8cd54474a"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-0-1.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 1,
+      "bytes": 3306,
+      "bbox": [
+        52,
+        44,
+        113,
+        150
+      ],
+      "sha256": "ca59e837c3e02f69ec8e623ebdf707f41e7629f9c6fe482700f68a2235cad2d5"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-0-2.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 2,
+      "bytes": 3314,
+      "bbox": [
+        51,
+        44,
+        112,
+        150
+      ],
+      "sha256": "738020840d3bb46570cdfc8e1497bce3c41b3ab3c5249e6c71a8ae356502007b"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-0-3.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 3,
+      "bytes": 3472,
+      "bbox": [
+        51,
+        44,
+        113,
+        150
+      ],
+      "sha256": "f668a1fa55f4cb106c9e4b1d1d934bf10c4cda5a7ecaeef948ace416f3b36b18"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-1-0.webp",
+      "direction": "nw",
+      "action": 1,
+      "frame": 0,
+      "bytes": 3430,
+      "bbox": [
+        47,
+        42,
+        112,
+        150
+      ],
+      "sha256": "a7fd24af7565c75695c7e83ad5d7ee39c77f7ec1970f7c457e144f1aed6800b1"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-1-1.webp",
+      "direction": "nw",
+      "action": 1,
+      "frame": 1,
+      "bytes": 3572,
+      "bbox": [
+        41,
+        42,
+        109,
+        150
+      ],
+      "sha256": "b02ae340ee31d0fd492c63b954e6596a944ebf511e6172796fd72aad79e1c8f0"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-1-2.webp",
+      "direction": "nw",
+      "action": 1,
+      "frame": 2,
+      "bytes": 3452,
+      "bbox": [
+        46,
+        42,
+        114,
+        150
+      ],
+      "sha256": "be7fb2e80102bc4f93cd1bbda33a3eef8187bbcd0e92cd1db25760a1c8b0f5c9"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-1-3.webp",
+      "direction": "nw",
+      "action": 1,
+      "frame": 3,
+      "bytes": 3538,
+      "bbox": [
+        46,
+        41,
+        113,
+        150
+      ],
+      "sha256": "cece647efd84f276aea5e9ba399508051313b5e1ed6eebc669b75d56c19a0e08"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-2-0.webp",
+      "direction": "nw",
+      "action": 2,
+      "frame": 0,
+      "bytes": 3516,
+      "bbox": [
+        51,
+        43,
+        113,
+        150
+      ],
+      "sha256": "a04d660e0ffd3c40938dc22377744005bbc5f42108234f2cdc77589dc38f2832"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-2-1.webp",
+      "direction": "nw",
+      "action": 2,
+      "frame": 1,
+      "bytes": 4318,
+      "bbox": [
+        23,
+        44,
+        119,
+        150
+      ],
+      "sha256": "a307cc94aa5e162d041e50d4ab303ba9d8384423c425a1414935716217908bc6"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-2-2.webp",
+      "direction": "nw",
+      "action": 2,
+      "frame": 2,
+      "bytes": 4500,
+      "bbox": [
+        15,
+        44,
+        122,
+        150
+      ],
+      "sha256": "38a74cb2d14ac8748e1700e68d60c84e6ef23b2f842253478ffb946131aa9c88"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-2-3.webp",
+      "direction": "nw",
+      "action": 2,
+      "frame": 3,
+      "bytes": 3522,
+      "bbox": [
+        51,
+        42,
+        113,
+        150
+      ],
+      "sha256": "6733c0b6f4327a69ba8de80b31740c31eafa13f14b2bf62e598a94927cf5bf23"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-3-0.webp",
+      "direction": "nw",
+      "action": 3,
+      "frame": 0,
+      "bytes": 3512,
+      "bbox": [
+        50,
+        42,
+        114,
+        150
+      ],
+      "sha256": "636b84b245874e5d109c1e2d14ada947732221fde29b5d75e3ce2a01dff96594"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-3-1.webp",
+      "direction": "nw",
+      "action": 3,
+      "frame": 1,
+      "bytes": 4248,
+      "bbox": [
+        47,
+        38,
+        121,
+        150
+      ],
+      "sha256": "820ed889cc9cd479d6ca6c1a718c1ac0bb58d3c6420cd58cb66a43ae7cdf8bf6"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-3-2.webp",
+      "direction": "nw",
+      "action": 3,
+      "frame": 2,
+      "bytes": 4666,
+      "bbox": [
+        40,
+        37,
+        120,
+        150
+      ],
+      "sha256": "cf9d9b98b497d8d6e4db7cfdaf54b4e80adf6771c46e193c522fff4b05cd32cc"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/nw-3-3.webp",
+      "direction": "nw",
+      "action": 3,
+      "frame": 3,
+      "bytes": 3456,
+      "bbox": [
+        50,
+        42,
+        112,
+        150
+      ],
+      "sha256": "238e84657efc78f4140d6f3af56c64fcf50e5ca11c37ece2f2f09591f98719bf"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-0-0.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 0,
+      "bytes": 3484,
+      "bbox": [
+        54,
+        44,
+        113,
+        150
+      ],
+      "sha256": "14628caef8ab625f0e2cd1d67537d25e723a34554e4e512cfd3fc58328134fbe"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-0-1.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 1,
+      "bytes": 3564,
+      "bbox": [
+        54,
+        44,
+        113,
+        150
+      ],
+      "sha256": "4f3669515e40bef328fda1b282091cfd2ff384f9ce8e0d04a1783426ea4e957b"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-0-2.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 2,
+      "bytes": 3508,
+      "bbox": [
+        53,
+        44,
+        113,
+        150
+      ],
+      "sha256": "51a4ff9af976079b679617489f16ce1976e6c81ccaa7fc8baa41d5332cf35360"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-0-3.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 3,
+      "bytes": 3550,
+      "bbox": [
+        54,
+        44,
+        114,
+        150
+      ],
+      "sha256": "b4415d55c1a150fcb45f7023bbc93af04fa604e8423357234cc7a80a342c6ab7"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-1-0.webp",
+      "direction": "ne",
+      "action": 1,
+      "frame": 0,
+      "bytes": 3942,
+      "bbox": [
+        51,
+        42,
+        115,
+        150
+      ],
+      "sha256": "0f56b292312db08f6aaadfb03966a8a43b9347691aec5fbf0127f415ad737d4d"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-1-1.webp",
+      "direction": "ne",
+      "action": 1,
+      "frame": 1,
+      "bytes": 3790,
+      "bbox": [
+        52,
+        42,
+        116,
+        150
+      ],
+      "sha256": "3c7927bf140753ace590743483dd694fd51f50c20afc924c69d0027650d82ff1"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-1-2.webp",
+      "direction": "ne",
+      "action": 1,
+      "frame": 2,
+      "bytes": 3908,
+      "bbox": [
+        49,
+        43,
+        114,
+        150
+      ],
+      "sha256": "d5e19d4d39eb6ef2dfedb17c7bdb242c0999bcbc80a93728ee7413ca8c81d633"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-1-3.webp",
+      "direction": "ne",
+      "action": 1,
+      "frame": 3,
+      "bytes": 3830,
+      "bbox": [
+        53,
+        42,
+        118,
+        150
+      ],
+      "sha256": "c12cdd25711b8b1893c5771161a90bf717946b1e7bed900d72041924f55b182c"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-2-0.webp",
+      "direction": "ne",
+      "action": 2,
+      "frame": 0,
+      "bytes": 3530,
+      "bbox": [
+        53,
+        45,
+        114,
+        150
+      ],
+      "sha256": "87a8d5b718785ed49dc932bf843f21dce75157e809a2b564da37ddfa388095d5"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-2-2.webp",
+      "direction": "ne",
+      "action": 2,
+      "frame": 2,
+      "bytes": 5122,
+      "bbox": [
+        44,
+        44,
+        151,
+        150
+      ],
+      "sha256": "175d2b1911e431617dcde14a1c5acf824426e34fab5fdbdb7ac4a5a8338e3c66"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-2-1.webp",
+      "direction": "ne",
+      "action": 2,
+      "frame": 1,
+      "bytes": 4384,
+      "bbox": [
+        49,
+        44,
+        134,
+        150
+      ],
+      "sha256": "610bd180e741393852ecb428b1c65e2f6c0258116df5fb8df45fd04200d6a592"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-2-3.webp",
+      "direction": "ne",
+      "action": 2,
+      "frame": 3,
+      "bytes": 3538,
+      "bbox": [
+        52,
+        44,
+        113,
+        150
+      ],
+      "sha256": "b3829bff3e07885c5a5d62b93573c27a62674234536b86cfe0357020f03977a6"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-3-0.webp",
+      "direction": "ne",
+      "action": 3,
+      "frame": 0,
+      "bytes": 3596,
+      "bbox": [
+        53,
+        45,
+        114,
+        150
+      ],
+      "sha256": "6553da64035caafa24cfd47043612e03ed58dfa82eb7453e24e963ec7f2842d6"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-3-1.webp",
+      "direction": "ne",
+      "action": 3,
+      "frame": 1,
+      "bytes": 4486,
+      "bbox": [
+        50,
+        37,
+        114,
+        150
+      ],
+      "sha256": "89a7a414c08db00606b4668f9ada7553d902a6f2664a7ae785fac454488d0755"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-3-2.webp",
+      "direction": "ne",
+      "action": 3,
+      "frame": 2,
+      "bytes": 5124,
+      "bbox": [
+        48,
+        31,
+        128,
+        150
+      ],
+      "sha256": "b25b86f8a30bbf112e7c486526e9d5fbe394d8c3b123efc04dc49546a5aa9454"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/ne-3-3.webp",
+      "direction": "ne",
+      "action": 3,
+      "frame": 3,
+      "bytes": 3508,
+      "bbox": [
+        52,
+        45,
+        113,
+        150
+      ],
+      "sha256": "9430dfdb0e6a4dfb47a404a85ca3262bcae0361ad37f5a740bdc7dab920eead1"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/nw-0-0.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 0,
+      "bytes": 3108,
+      "bbox": [
+        55,
+        44,
+        108,
+        150
+      ],
+      "sha256": "39fdfffffba343f00e117fe98db626705b083054f44c7626628e611a11f070c7"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/nw-0-1.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 1,
+      "bytes": 3086,
+      "bbox": [
+        56,
+        44,
+        108,
+        150
+      ],
+      "sha256": "aa04c7bd228cd92e2077f842e337f90fbd0596f28dae4f99e43b8a423698d283"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/nw-0-2.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 2,
+      "bytes": 3032,
+      "bbox": [
+        54,
+        44,
+        109,
+        150
+      ],
+      "sha256": "a274e10594578fce6d213e76f7abc2bd7ae04a7c1d3f76768cdbe5f4af0b0b44"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/nw-0-3.webp",
+      "direction": "nw",
+      "action": 0,
+      "frame": 3,
+      "bytes": 3024,
+      "bbox": [
+        54,
+        44,
+        108,
+        150
+      ],
+      "sha256": "2498f40a82c2f50d3c46acfb8d1de718d33fb4bf43adbaf491e7364a69334888"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/ne-0-0.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 0,
+      "bytes": 3074,
+      "bbox": [
+        51,
+        44,
+        106,
+        150
+      ],
+      "sha256": "db701b376c4a919438ff08746dca0eca768b45ea4cc428a465badd94760c36d8"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/ne-0-1.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 1,
+      "bytes": 3136,
+      "bbox": [
+        52,
+        44,
+        108,
+        150
+      ],
+      "sha256": "853ab686512f30c107b57a14941efe0c6c190cd0978a8940825bf3c31d56a714"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/ne-0-2.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 2,
+      "bytes": 3114,
+      "bbox": [
+        50,
+        44,
+        107,
+        150
+      ],
+      "sha256": "f77e2ceca3568dc2df589d90f6f1498e185764e0de7b822986191e4b5ac0af7d"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/ne-0-3.webp",
+      "direction": "ne",
+      "action": 0,
+      "frame": 3,
+      "bytes": 3076,
+      "bbox": [
+        50,
+        44,
+        106,
+        150
+      ],
+      "sha256": "ffd44c5edf3aeb6f7faa43912d12869cf872cd92fdd6b7740f01dcb526defb5e"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/se-0-0.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 0,
+      "bytes": 3294,
+      "bbox": [
+        50,
+        44,
+        104,
+        150
+      ],
+      "sha256": "27e760bd6cd638392db7abc5580087c8ef627b6b1440a8f6574344b26d18884f"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/se-0-1.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 1,
+      "bytes": 3396,
+      "bbox": [
+        50,
+        44,
+        106,
+        150
+      ],
+      "sha256": "8d6ede3a1321768eacd49f2ec503586c6e2c529dc03d1e13b264baf81a6f3a89"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/se-0-2.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 2,
+      "bytes": 3256,
+      "bbox": [
+        49,
+        44,
+        105,
+        150
+      ],
+      "sha256": "d2ba626aa1a7e64787e8077e508e388d46fdbf8de43cbcd5754515c935ce4cdb"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/se-0-3.webp",
+      "direction": "se",
+      "action": 0,
+      "frame": 3,
+      "bytes": 3322,
+      "bbox": [
+        49,
+        44,
+        105,
+        150
+      ],
+      "sha256": "19afc58a96002351bbb8759e81496aa2bfc33fa6fa5191097e12dae82d7039d6"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/sw-0-0.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 0,
+      "bytes": 3310,
+      "bbox": [
+        54,
+        44,
+        111,
+        150
+      ],
+      "sha256": "6509a6a2610c331e0a52c2caae96dd237795ff45a24fdacdc6fdbb86e2bbe248"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/sw-0-1.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 1,
+      "bytes": 3420,
+      "bbox": [
+        54,
+        44,
+        112,
+        150
+      ],
+      "sha256": "1aeff819445b83ef2452661611e0d96590e6ddf50530ee40828272dd72e54c79"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/sw-0-2.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 2,
+      "bytes": 3428,
+      "bbox": [
+        54,
+        43,
+        113,
+        150
+      ],
+      "sha256": "0e2808dda70f0d9e50a7e8711af553d491a0afa37abb44732c82e658b34109c6"
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/sw-0-3.webp",
+      "direction": "sw",
+      "action": 0,
+      "frame": 3,
+      "bytes": 3358,
+      "bbox": [
+        53,
+        44,
+        112,
+        150
+      ],
+      "sha256": "7be672dab940110a17383f165ab4f5c098f73f08212d85cbbac28ef264e9a599"
+    }
+  ],
+  "reviews": [
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/review-nw.webp",
+      "bytes": 53828
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/review-ne.webp",
+      "bytes": 57818
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/review-se.webp",
+      "bytes": 55764
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/review-sw.webp",
+      "bytes": 58508
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/review-scenario.webp",
+      "bytes": 46918
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/review-loop-0.webp",
+      "bytes": 25438
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/review-loop-1.webp",
+      "bytes": 26424
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/review-loop-2.webp",
+      "bytes": 29038
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/combat-v1/review-loop-3.webp",
+      "bytes": 29228
+    },
+    {
+      "path": "web/public/images/class-motion-pilot/caster/job-26/scenario-v1/review-loop-4.webp",
+      "bytes": 23172
+    }
+  ],
+  "conversion": {
+    "se": {
+      "scales": {
+        "0": 0.37857142857142856,
+        "1": 0.37857142857142856,
+        "2": 0.37857142857142856,
+        "3": 0.37857142857142856
+      },
+      "sourceSha256": "ab337fcc45fd3d0b175f3d0c46e153e9e65cc082f6246ba576f4a0d6d854af14"
+    },
+    "sw": {
+      "scales": {
+        "0": 0.39332096474953615,
+        "1": 0.39332096474953615,
+        "2": 0.39332096474953615,
+        "3": 0.39332096474953615
+      },
+      "sourceSha256": "11bbf71551d25c82597750ecc2c90585931549ec377feb674ae66c0ce0b51b03"
+    },
+    "nw": {
+      "scales": {
+        "0": 0.37857142857142856,
+        "1": 0.37857142857142856,
+        "2": 0.37857142857142856,
+        "3": 0.37857142857142856
+      },
+      "sourceSha256": "6284d061aae847713c84ace90989c94320549adb767e1d451200c807d2fdbc4b"
+    },
+    "ne": {
+      "scales": {
+        "0": 0.4140625,
+        "1": 0.4140625,
+        "2": 0.4140625,
+        "3": 0.4140625
+      },
+      "sourceSha256": "77fde48d02ac3ddcafa3f36f28bb38933ac97ea8269203dd487d4d1c4d51d53b"
+    },
+    "scenario": {
+      "scales": {
+        "0": 0.381294964028777,
+        "1": 0.375886524822695,
+        "2": 0.375886524822695,
+        "3": 0.3745583038869258
+      },
+      "sourceSha256": "7d7886a6a04765e20bdf55c8918338aa159bf518075b9445ffeceefe95518656"
+    }
+  },
+  "loopMetrics": [
+    {
+      "direction": "nw",
+      "action": 0,
+      "silhouetteIoU3to0": 0.9628
+    },
+    {
+      "direction": "nw",
+      "action": 1,
+      "silhouetteIoU3to0": 0.9293
+    },
+    {
+      "direction": "nw",
+      "action": 2,
+      "silhouetteIoU3to0": 0.9623
+    },
+    {
+      "direction": "nw",
+      "action": 3,
+      "silhouetteIoU3to0": 0.9433
+    },
+    {
+      "direction": "ne",
+      "action": 0,
+      "silhouetteIoU3to0": 0.9667
+    },
+    {
+      "direction": "ne",
+      "action": 1,
+      "silhouetteIoU3to0": 0.8904
+    },
+    {
+      "direction": "ne",
+      "action": 2,
+      "silhouetteIoU3to0": 0.9283
+    },
+    {
+      "direction": "ne",
+      "action": 3,
+      "silhouetteIoU3to0": 0.9555
+    },
+    {
+      "direction": "se",
+      "action": 0,
+      "silhouetteIoU3to0": 0.9054
+    },
+    {
+      "direction": "se",
+      "action": 1,
+      "silhouetteIoU3to0": 0.9011
+    },
+    {
+      "direction": "se",
+      "action": 2,
+      "silhouetteIoU3to0": 0.9526
+    },
+    {
+      "direction": "se",
+      "action": 3,
+      "silhouetteIoU3to0": 0.9772
+    },
+    {
+      "direction": "sw",
+      "action": 0,
+      "silhouetteIoU3to0": 0.9558
+    },
+    {
+      "direction": "sw",
+      "action": 1,
+      "silhouetteIoU3to0": 0.923
+    },
+    {
+      "direction": "sw",
+      "action": 2,
+      "silhouetteIoU3to0": 0.9685
+    },
+    {
+      "direction": "sw",
+      "action": 3,
+      "silhouetteIoU3to0": 0.9358
+    }
+  ],
+  "prompts": {
+    "se": "Use case identity-preserve. Image1 is the APPROVED FINAL PROMOTION job26 군사 character design. Image2 is a16-cell animation layout/pose reference. Redraw all sixteen complete connected characters in image2 wearing EXACT approved job26 appearance from image1: same youthful slim male face/body, tall black scholar cap, dark navy ornate robe with rich gold/cream embroidered lapel and front panels, cream inner sleeves, ornate dark waist sash, black boots. Replace the purple patterned fan with job26's pale ivory silver-ribbed folding fan with dark inner semicircle, exactly image1 (쇠살부채). No purple fan remains. No new props. No copying intermediate tier embroidery. Entire body/arms/hands/fan connected, no part collage.\nPreserve image2's precise16 pose sequence and direction. All four frames same cap/head/body size. Anatomical RIGHT hand always holds fan, LEFT empty; do not mirror. Row1 idle close-chest fan; row2 small-stride genuine alternating walking4 phases; row3 low forward fan casting with0 close chest,1 partial extension,2 full release,3 chest-return bent elbow; row4 high fan ritual with0 chest,1 raising,2 high fan and empty palm,3 back to chest. Loop3->0 smooth: no extended arm in final frame. No glow or effects.\nExactly4x4 equal cells, same scale and ground anchor, each complete figure INCLUDING fan within central60% of cell, at least15% empty transparent gutters on all sides. No text/grid/shadow. True transparent background. Crisp restrained tactical RPG sprite rendering.\nALL16 face FRONT RIGHT southeast5 o'clock. Preserve approved final-tier fan cream/silver dark base; no purple.",
+    "seFix": "Correct COSTUME ONLY in sheet image1 using approved costume image2. The sheet mistakenly retained intermediate promotion's LONG GEOMETRIC DIAMOND/CIRCLE embroidered vertical panels. REMOVE all those long patterned hanging panels and huge geometric motifs. Correct final-tier robe is mostly PLAIN DEEP NAVY fabric with slim CREAM LAPEL/FRONT EDGES, delicate PALE GOLD SCROLL embroidery along BOTTOM HEM, sleeve cuffs and shoulders; modest brown waist tassel. No broad patterned vertical strips on front or back. Keep original black cap, exact same youthful face/body scale, pale ivory metal-ribbed fan with DARK inner semicircle. Change clothing decoration only, preserve ALL16 poses, direction, hand assignment, ground anchor,4x4 ordering and loop-return poses. Complete connected bodies, no collage/mirroring. True transparency, no glow or text. Increase clear transparent cell gutters to15% by uniformly shrinking figures if necessary, never vary scale by action.\nPreserve southeast FRONT RIGHT5 o'clock ALL16.",
+    "sw": "Use case identity-preserve. Image1 is the APPROVED FINAL PROMOTION job26 군사 character design. Image2 is a16-cell animation layout/pose reference. Redraw all sixteen complete connected characters in image2 wearing EXACT approved job26 appearance from image1: same youthful slim male face/body, tall black scholar cap, dark navy ornate robe with rich gold/cream embroidered lapel and front panels, cream inner sleeves, ornate dark waist sash, black boots. Replace the purple patterned fan with job26's pale ivory silver-ribbed folding fan with dark inner semicircle, exactly image1 (쇠살부채). No purple fan remains. No new props. No copying intermediate tier embroidery. Entire body/arms/hands/fan connected, no part collage.\nPreserve image2's precise16 pose sequence and direction. All four frames same cap/head/body size. Anatomical RIGHT hand always holds fan, LEFT empty; do not mirror. Row1 idle close-chest fan; row2 small-stride genuine alternating walking4 phases; row3 low forward fan casting with0 close chest,1 partial extension,2 full release,3 chest-return bent elbow; row4 high fan ritual with0 chest,1 raising,2 high fan and empty palm,3 back to chest. Loop3->0 smooth: no extended arm in final frame. No glow or effects.\nExactly4x4 equal cells, same scale and ground anchor, each complete figure INCLUDING fan within central60% of cell, at least15% empty transparent gutters on all sides. No text/grid/shadow. True transparent background. Crisp restrained tactical RPG sprite rendering.\nALL16 face FRONT LEFT southwest7 o'clock exactly image2, not image1's right direction. Fan in FAR anatomical RIGHT hand on screen LEFT. Near LEFT hand empty. Nose/toes LEFT in every cell. Attack1 should only HALF extend,2 full extend,3 returns to chest.",
+    "swFix": "Correct COSTUME ONLY in sheet image1 using approved costume image2. The sheet mistakenly retained intermediate promotion's LONG GEOMETRIC DIAMOND/CIRCLE embroidered vertical panels. REMOVE all those long patterned hanging panels and huge geometric motifs. Correct final-tier robe is mostly PLAIN DEEP NAVY fabric with slim CREAM LAPEL/FRONT EDGES, delicate PALE GOLD SCROLL embroidery along BOTTOM HEM, sleeve cuffs and shoulders; modest brown waist tassel. No broad patterned vertical strips on front or back. Keep original black cap, exact same youthful face/body scale, pale ivory metal-ribbed fan with DARK inner semicircle. Change clothing decoration only, preserve ALL16 poses, direction, hand assignment, ground anchor,4x4 ordering and loop-return poses. Complete connected bodies, no collage/mirroring. True transparency, no glow or text. Increase clear transparent cell gutters to15% by uniformly shrinking figures if necessary, never vary scale by action.\nPreserve southwest FRONT LEFT7 o'clock ALL16. Fan in FAR RIGHT hand, near left hand empty. Do not turn faces to right.",
+    "nw": "Use case identity-preserve. Image1 is the APPROVED FINAL PROMOTION job26 군사 character design. Image2 is a16-cell animation layout/pose reference. Redraw all sixteen complete connected characters in image2 wearing EXACT approved job26 appearance from image1: same youthful slim male face/body, tall black scholar cap, dark navy ornate robe with rich gold/cream embroidered lapel and front panels, cream inner sleeves, ornate dark waist sash, black boots. Replace the purple patterned fan with job26's pale ivory silver-ribbed folding fan with dark inner semicircle, exactly image1 (쇠살부채). No purple fan remains. No new props. No copying intermediate tier embroidery. Entire body/arms/hands/fan connected, no part collage.\nPreserve image2's precise16 pose sequence and direction. All four frames same cap/head/body size. Anatomical RIGHT hand always holds fan, LEFT empty; do not mirror. Row1 idle close-chest fan; row2 small-stride genuine alternating walking4 phases; row3 low forward fan casting with0 close chest,1 partial extension,2 full release,3 chest-return bent elbow; row4 high fan ritual with0 chest,1 raising,2 high fan and empty palm,3 back to chest. Loop3->0 smooth: no extended arm in final frame. No glow or effects.\nExactly4x4 equal cells, same scale and ground anchor, each complete figure INCLUDING fan within central60% of cell, at least15% empty transparent gutters on all sides. No text/grid/shadow. True transparent background. Crisp restrained tactical RPG sprite rendering.\nALL16 face BACK LEFT northwest11 o'clock exactly image2. Back of cap/head/robe visible, nose/toes point LEFT, fan extends LEFT. Do not rotate to reference1's front right. No mirror.",
+    "nwFix": "Correct COSTUME ONLY in sheet image1 using approved costume image2. The sheet mistakenly retained intermediate promotion's LONG GEOMETRIC DIAMOND/CIRCLE embroidered vertical panels. REMOVE all those long patterned hanging panels and huge geometric motifs. Correct final-tier robe is mostly PLAIN DEEP NAVY fabric with slim CREAM LAPEL/FRONT EDGES, delicate PALE GOLD SCROLL embroidery along BOTTOM HEM, sleeve cuffs and shoulders; modest brown waist tassel. No broad patterned vertical strips on front or back. Keep original black cap, exact same youthful face/body scale, pale ivory metal-ribbed fan with DARK inner semicircle. Change clothing decoration only, preserve ALL16 poses, direction, hand assignment, ground anchor,4x4 ordering and loop-return poses. Complete connected bodies, no collage/mirroring. True transparency, no glow or text. Increase clear transparent cell gutters to15% by uniformly shrinking figures if necessary, never vary scale by action.\nPreserve northwest BACK LEFT11 o'clock ALL16. No decorated vertical back strips, plain navy back with embroidery along hem and cuffs.",
+    "ne": "Use case identity-preserve. Image1 is the APPROVED FINAL PROMOTION job26 군사 character design. Image2 is a16-cell animation layout/pose reference. Redraw all sixteen complete connected characters in image2 wearing EXACT approved job26 appearance from image1: same youthful slim male face/body, tall black scholar cap, dark navy ornate robe with rich gold/cream embroidered lapel and front panels, cream inner sleeves, ornate dark waist sash, black boots. Replace the purple patterned fan with job26's pale ivory silver-ribbed folding fan with dark inner semicircle, exactly image1 (쇠살부채). No purple fan remains. No new props. No copying intermediate tier embroidery. Entire body/arms/hands/fan connected, no part collage.\nPreserve image2's precise16 pose sequence and direction. All four frames same cap/head/body size. Anatomical RIGHT hand always holds fan, LEFT empty; do not mirror. Row1 idle close-chest fan; row2 small-stride genuine alternating walking4 phases; row3 low forward fan casting with0 close chest,1 partial extension,2 full release,3 chest-return bent elbow; row4 high fan ritual with0 chest,1 raising,2 high fan and empty palm,3 back to chest. Loop3->0 smooth: no extended arm in final frame. No glow or effects.\nExactly4x4 equal cells, same scale and ground anchor, each complete figure INCLUDING fan within central60% of cell, at least15% empty transparent gutters on all sides. No text/grid/shadow. True transparent background. Crisp restrained tactical RPG sprite rendering.\nALL16 face BACK RIGHT northeast2 o'clock exactly image2. Back of cap/head/robe visible, nose/toes point RIGHT, fan extends RIGHT. No front-facing chest. No mirror.",
+    "neFix": "Correct COSTUME ONLY in sheet image1 using approved costume image2. The sheet mistakenly retained intermediate promotion's LONG GEOMETRIC DIAMOND/CIRCLE embroidered vertical panels. REMOVE all those long patterned hanging panels and huge geometric motifs. Correct final-tier robe is mostly PLAIN DEEP NAVY fabric with slim CREAM LAPEL/FRONT EDGES, delicate PALE GOLD SCROLL embroidery along BOTTOM HEM, sleeve cuffs and shoulders; modest brown waist tassel. No broad patterned vertical strips on front or back. Keep original black cap, exact same youthful face/body scale, pale ivory metal-ribbed fan with DARK inner semicircle. Change clothing decoration only, preserve ALL16 poses, direction, hand assignment, ground anchor,4x4 ordering and loop-return poses. Complete connected bodies, no collage/mirroring. True transparency, no glow or text. Increase clear transparent cell gutters to15% by uniformly shrinking figures if necessary, never vary scale by action.\nPreserve northeast BACK RIGHT2 o'clock ALL16. No decorated vertical back strips, plain navy back with embroidery along hem and cuffs.",
+    "scenario": "Use case identity-preserve. Transparent tactical RPG sheet of SAME approved male strategist, exact face, slim body, black cap, ornate indigo robe, cream sleeves/lapels, sash, boots and approved embroidery. Peaceful scenario standing, BOTH HANDS EMPTY naturally relaxed, NO FAN, weapon, scabbard or battle prop. Complete connected bodies, no part collage.\nExactly4 rows x4 columns,16 equal cells. Row1 NW BACK LEFT11 o'clock; row2 NE BACK RIGHT2 o'clock; row3 SE FRONT RIGHT5 o'clock; row4 SW FRONT LEFT7 o'clock. Four columns subtle breathing idle with planted feet, frame3 nearly same as0; constant head/cap/body scale. All figures occupy middle60% cell, at least15% clear transparent margin, same foot baseline. Restrained outlined game style matching reference. No text/grid/shadow/glow, true transparency. No new accessories.\nImage1 is approved FINAL tier job26 군사 costume: navy robe rich cream/gold embroidered lapel/front panels, dark ornate waist sash, black cap and boots; same slim youthful male. Image2 ONLY supplies exact4x4 layout and directions/poses. Replace intermediate embroidery with image1's final tier. Do NOT carry fan into this scenario image: all16 empty hands, no weapons/scabbards. Row1 BACK LEFT11; row2 BACK RIGHT2; row3 FRONT RIGHT5; row4 FRONT LEFT7. Preserve4 subtle breathing frames and smooth3->0 for every direction.",
+    "scenarioFix": "Correct COSTUME ONLY in sheet image1 using approved costume image2. The sheet mistakenly retained intermediate promotion's LONG GEOMETRIC DIAMOND/CIRCLE embroidered vertical panels. REMOVE all those long patterned hanging panels and huge geometric motifs. Correct final-tier robe is mostly PLAIN DEEP NAVY fabric with slim CREAM LAPEL/FRONT EDGES, delicate PALE GOLD SCROLL embroidery along BOTTOM HEM, sleeve cuffs and shoulders; modest brown waist tassel. No broad patterned vertical strips on front or back. Keep original black cap, exact same youthful face/body scale, EMPTY HANDS, no fan or weapon. Change clothing decoration only, preserve ALL16 poses, direction, hand assignment, ground anchor,4x4 ordering and loop-return poses. Complete connected bodies, no collage/mirroring. True transparency, no glow or text. Increase clear transparent cell gutters to15% by uniformly shrinking figures if necessary, never vary scale by action.\nThis is scenario sheet: NO FAN in any cell. Rows BACK LEFT11 / BACK RIGHT2 / FRONT RIGHT5 / FRONT LEFT7, four subtle breathing frames per row. Preserve directions and peaceful empty-handed poses. Plain navy back without patterned back strip or rectangular patch.",
+    "seReach": "Edit ONLY THIRD ROW THIRD COLUMN (attack frame2) of this4x4 sheet. Its extended fan reaches too far right for160px frame. Bend its right elbow slightly so the right hand and ENTIRE fan are about20% closer to torso; shorten horizontal reach, keep fan same size and connected grip. Keep offensive casting pose facing FRONT RIGHT southeast5 o'clock. Feet, head, body size and all clothing identical. Preserve other15 sprites exactly, including recovery frame3 fan at chest. Correct final-tier plain navy robe with gold hem/cuff embroidery; no geometric front panels. True transparency. Keep every sprite separate; ensure generous gutters, no touching adjacent cells. No text or glow.",
+    "swWindup": "Edit ONLY THIRD ROW SECOND COLUMN (attack frame1) in this4x4 southwest front-LEFT strategist sheet. It currently fully extends fan almost same as frame2. Change frame1 to a clear HALF-EXTENSION windup: anatomical RIGHT elbow bent about90 degrees close to waist, right hand/fan midway between chest and the fully extended LEFT position in column3. Keep fan same size. Near left hand relaxed near waist, torso just beginning to lean. Column3 remains full release; columns0/3 fan at chest. Preserve all other15 poses exactly, same LEFT-facing direction, face, cap, body/foot anchors, correct plain navy robe with gold hem/cuff embroidery. Whole connected figure no collage/mirroring. True transparency, no glow/grid/text.",
+    "neReach": "Edit ONLY THIRD ROW THIRD COLUMN (attack frame2) of this4x4 northeast BACK RIGHT strategist sheet. Fan reaches too far right. Slightly bend anatomical right elbow and bring hand+fan20% closer to torso horizontally, preserving fan size and grip. Keep attack clearly extended compared to frame1. Same BACK RIGHT2 o'clock direction, back of head/robe, same feet/head/body scale. Preserve all other15 poses exactly. Correct final-tier plain navy robe with gold embroidery on hem/cuffs, pale fan with dark inner semicircle. All bodies connected. True transparent gutters, no glow/grid/text."
+  },
+  "reference": "web/public/images/job-models/promotion-se-v1/job-26.webp",
+  "limitations": [
+    "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
+    "브라우저 실제 연속재생 육안 검수 미완료"
+  ],
+  "validation": {
+    "sizeAlphaGround": "80/80 pass",
+    "visual": "pending",
+    "playbackFiles": "five exact4-frame loops"
+  },
+  "largeOriginalsDeleted": false
+}

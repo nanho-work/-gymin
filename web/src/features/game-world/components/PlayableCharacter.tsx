@@ -1,11 +1,11 @@
 "use client";
 import {WangGeonMotion} from './WangGeonMotion';
-import {HongEquipmentPreview} from './HongEquipmentPreview';
+import {HongCompleteMotion} from './HongCompleteMotion';
 import {useEffect,useState} from 'react';
 import data from '../data/playable-characters.json';
 import s from './playable.module.css';
 const dirs=[['se','5시 ↘'],['sw','7시 ↙'],['nw','11시 ↖'],['ne','2시 ↗']];const acts=['대기','이동','공격','스킬'];
-export function PlayableCharacter({id}:{id:string}){return id==='wang-geon'?<WangGeonMotion/>:id==='hong-yu'?<HongEquipmentPreview/>:<BasePlayableCharacter id={id}/>;}
+export function PlayableCharacter({id}:{id:string}){return id==='wang-geon'?<WangGeonMotion/>:id==='hong-yu'?<HongCompleteMotion/>:<BasePlayableCharacter id={id}/>;}
 function BasePlayableCharacter({id}:{id:string}){const c=data.records.find(c=>c.id===id)!;const [dir,setDir]=useState('se'),[act,setAct]=useState(0),[frame,setFrame]=useState(0),[playing,setPlaying]=useState(false),[panel,setPanel]=useState('motion'),[weapon,setWeapon]=useState('base');
 const variant=id==='hong-yu'&&weapon==='long-spear';
 const spriteRoot=variant?`${id}/long-spear-v1`:id;

@@ -70,6 +70,13 @@
   ],
   "history": [
     {
+      "id": "hong-complete-motion",
+      "date": "2026-10-27",
+      "title": "홍유 완성 프레임 적용",
+      "reason": "홍유부터 신규 모션과 하마 서 있기 연결 요청",
+      "changes": "기존 분할 모션 대신 경기병·중기병·친위대 완성 프레임 연결. 탑승·빈손 시나리오·쇠약 선택. 다른 장수는 유지."
+    },
+    {
       "id": "promotion-motion-integrated",
       "date": "2026-10-27",
       "title": "4계열 8개 승급 모션 연결",

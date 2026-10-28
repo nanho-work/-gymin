@@ -301,3 +301,5 @@ Class motion pilots: /characters, ClassMotionGallery. Cavalry96 + infantry80 + a
 2026-10-27: Four pilot classes now use corrected combat-v2. Caster retains unchanged scenario-v1; other scenario sets use v2, cavalry weakened-v2. Manifest limitations remain visible. Eight promotion stages dispatched to four production chats; not integrated until reviewed.
 
 2026-10-27: /characters motion comparison includes three ranks for cavalry, infantry, archer and caster. 672 promotion frames (3,090,972 bytes), plus336 base frames. Known limitations displayed per rank; visual drafts, not battle logic implementation.
+
+Hong Yu card uses HongCompleteMotion: three cavalry ranks, mounted combat, unarmed scenario standing, mounted weakened. Legacy rig files preserved but no longer rendered in Hong card. Other character cards unchanged.

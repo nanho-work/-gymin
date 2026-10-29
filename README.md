@@ -303,3 +303,13 @@ Class motion pilots: /characters, ClassMotionGallery. Cavalry96 + infantry80 + a
 2026-10-27: /characters motion comparison includes three ranks for cavalry, infantry, archer and caster. 672 promotion frames (3,090,972 bytes), plus336 base frames. Known limitations displayed per rank; visual drafts, not battle logic implementation.
 
 Hong Yu card uses HongCompleteMotion: three cavalry ranks, mounted combat, unarmed scenario standing, mounted weakened. Legacy rig files preserved but no longer rendered in Hong card. Other character cards unchanged.
+
+### 인물 카드 정리 (2026-10-28)
+
+`/characters`는 초상화 → 원본/교체 이름 → 미리보기 공통 배치입니다. 왕건은 전용 기본 모션, 경기병·보병·궁병·책사 계열은 병과 공통 3단계 모션을 사용합니다. 미제작 병과는 정지 이미지로 구분하며, 개별 장수 고유 모션 제작 완료를 의미하지 않습니다. 제작 검토와 프레임 이동은 접힌 상세 정보에 있습니다.
+
+인물 도감은 설화 동료 10명을 동일 카드 목록에 통합합니다. 상단 인물 유형·검색과 왼쪽 병과/설화 종류 필터를 사용하며, 원본 연결 3명은 중복 노출하지 않습니다. 설화 카드는 승인된 5시 정지 모델을 표시합니다.
+
+2026-10-28: 영웅·패왕, 기마책사 3단계, 기본 무용수 모션을 검수 초안으로 연결했습니다. 최종 승인된 모션이 아니며 카드의 모션 정보에 담당자 검수 한계를 유지합니다. 다른 잔여 병과는 아직 미연결입니다.
+
+풍수사27·도사30·무희37의 기존240프레임을 규격 확인 후 검수 초안으로 연결했습니다. 방향·연속 동작 검수 및 잔여 제작은 진행 중입니다.

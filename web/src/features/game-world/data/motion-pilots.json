@@ -1,67 +1,55 @@
 [
   {
-    "id": 9,
-    "name": "경기병",
-    "root": "/images/class-motion-pilot/cavalry/job-9",
+    "id": 0,
+    "name": "군웅 · 왕건",
+    "root": "/images/playable/wang-geon/full-frame-v1",
     "cavalry": true,
-    "notes": [
-      "nw-2-1.webp, nw-2-2.webp: Far weapon hand occluded; compact thrust readability needs review",
-      "ne-2-1.webp, ne-2-2.webp, ne-3-1.webp, ne-3-2.webp: Occluded rein hand contact anatomy not fully verifiable at160px",
-      "se-3-1.webp, se-3-2.webp: Small head armor horse contour variation remains",
-      "sw-0-0.webp, sw-0-1.webp, sw-0-2.webp, sw-0-3.webp: Tired pose is subtle"
-    ],
-    "combat": "/images/class-motion-pilot/cavalry/job-9/combat-v2",
-    "scenario": "/images/class-motion-pilot/cavalry/job-9/scenario-v2",
-    "weakened": "/images/class-motion-pilot/cavalry/job-9/weakened-v2",
-    "version": 2,
+    "notes": [],
+    "combat": "/images/playable/wang-geon/full-frame-v1",
+    "scenario": "/images/playable/wang-geon/scenario-standing-v2",
+    "weakened": "/images/playable/wang-geon/weakened-v1",
+    "version": "integrated-20261029",
     "stages": [
       {
-        "id": 9,
-        "name": "경기병",
-        "combat": "/images/class-motion-pilot/cavalry/job-9/combat-v2",
-        "scenario": "/images/class-motion-pilot/cavalry/job-9/scenario-v2",
-        "weakened": "/images/class-motion-pilot/cavalry/job-9/weakened-v2",
-        "notes": [
-          "nw-2-1.webp, nw-2-2.webp: Far weapon hand occluded; compact thrust readability needs review",
-          "ne-2-1.webp, ne-2-2.webp, ne-3-1.webp, ne-3-2.webp: Occluded rein hand contact anatomy not fully verifiable at160px",
-          "se-3-1.webp, se-3-2.webp: Small head armor horse contour variation remains",
-          "sw-0-0.webp, sw-0-1.webp, sw-0-2.webp, sw-0-3.webp: Tired pose is subtle"
-        ]
+        "id": 0,
+        "name": "군웅 · 왕건",
+        "notes": [],
+        "combat": "/images/playable/wang-geon/full-frame-v1",
+        "scenario": "/images/playable/wang-geon/scenario-standing-v2",
+        "weakened": "/images/playable/wang-geon/weakened-v1"
       },
       {
-        "id": 10,
-        "name": "중기병",
-        "combat": "/images/class-motion-pilot/cavalry/job-10/combat-v1",
-        "scenario": "/images/class-motion-pilot/cavalry/job-10/scenario-v1",
-        "weakened": "/images/class-motion-pilot/cavalry/job-10/weakened-v1",
+        "id": 1,
+        "name": "영웅",
         "notes": [
-          "combat-v1/nw-2-1.webp, combat-v1/nw-2-2.webp: 몸 뒤 오른손이 일부 가려져 작은 찌르기의 손 연결·가독성을 완전히 확정하기 어렵다.",
-          "combat-v1/sw-2-1.webp, combat-v1/sw-2-2.webp, weakened-v1/sw-0-0.webp, weakened-v1/sw-0-1.webp, weakened-v1/sw-0-2.webp, weakened-v1/sw-0-3.webp: 왼손 고삐와 창대가 겹쳐 보이는 부분이 남아 있다. 고삐 손 분리 표현은 추가 작화 검토 대상.",
-          "combat-v1/ne-2-0.webp, combat-v1/ne-2-1.webp, combat-v1/ne-2-2.webp, combat-v1/ne-2-3.webp: 창 길이를 원근으로 줄인 뒤 공격 진폭이 작아졌다. 게임 표시 크기에서 타격 가독성 보완 필요.",
-          "combat-v1/se-2-0.webp, combat-v1/se-2-1.webp, combat-v1/nw-2-0.webp, combat-v1/nw-2-1.webp: 준비에서 찌르기로 전환할 때 창의 각도 변화가 크다. 4프레임 사이 중간 동작은 미제작.",
-          "combat-v1/nw-0-0.webp, combat-v1/nw-0-1.webp, combat-v1/nw-0-2.webp, combat-v1/nw-0-3.webp, combat-v1/ne-0-0.webp, combat-v1/ne-0-1.webp, combat-v1/ne-0-2.webp, combat-v1/ne-0-3.webp, combat-v1/se-0-0.webp, combat-v1/se-0-1.webp, combat-v1/se-0-2.webp, combat-v1/se-0-3.webp, combat-v1/sw-0-0.webp, combat-v1/sw-0-1.webp, combat-v1/sw-0-2.webp, combat-v1/sw-0-3.webp: 대기 실루엣은 대략125~130px이며 방향별 체격·세부 갑주가 픽셀 수준으로 완전히 같지는 않다."
-        ]
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "방향별 얼굴·머리·복식·말의 세부 형태 편차, 4프레임 동작의 중간 보간 부족. 실제 게임·모바일 최종 검수 전.",
+          "NE 준비 동작 검날이 원근으로 매우 짧게 보임; SW 공격 진폭은 작음.",
+          "수정 방향은 손 배치를 유지하지만 고개 숙임 진폭과 말·복식 크기의 방향별 차이는 최종 연속 재생 검토 필요."
+        ],
+        "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-1/combat-v1",
+        "scenario": "/images/class-motion-pilot/cavalry/remaining-20261028/job-1/scenario-v1",
+        "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-1/weakened-v2"
       },
       {
-        "id": 11,
-        "name": "친위대",
-        "combat": "/images/class-motion-pilot/cavalry/job-11/combat-v1",
-        "scenario": "/images/class-motion-pilot/cavalry/job-11/scenario-v1",
-        "weakened": "/images/class-motion-pilot/cavalry/job-11/weakened-v1",
+        "id": 2,
+        "name": "패왕",
         "notes": [
-          "combat-v1/sw-0-0.webp, combat-v1/sw-0-1.webp, combat-v1/sw-0-2.webp, combat-v1/sw-0-3.webp, combat-v1/sw-1-0.webp, combat-v1/sw-1-1.webp, combat-v1/sw-1-2.webp, combat-v1/sw-1-3.webp, combat-v1/sw-2-0.webp, combat-v1/sw-2-1.webp, combat-v1/sw-2-2.webp, combat-v1/sw-2-3.webp, combat-v1/sw-3-0.webp, combat-v1/sw-3-1.webp, combat-v1/sw-3-2.webp, combat-v1/sw-3-3.webp: 남서 대기 높이121px로 다른 방향 약127~129px보다 작다. 최대 외곽140px를 지키기 위한 방향 공통 축소. 추가 창 원근 보정 생성은 서비스 안전 필터에 거절되어 미해결.",
-          "combat-v1/ne-3-1.webp, combat-v1/ne-3-2.webp: 여백 보정 뒤 지휘 동작이 공격 자세와 비슷해 동작 구분이 약하다.",
-          "combat-v1/sw-2-1.webp, combat-v1/sw-2-2.webp, combat-v1/sw-3-1.webp, combat-v1/sw-3-2.webp: 왼손 고삐와 창대가 가까워 160px에서 손 접점이 모호하다. 완전한 해부학 검증으로 표시하지 않는다.",
-          "weakened-v1/nw-0-0.webp, weakened-v1/nw-0-1.webp, weakened-v1/nw-0-2.webp, weakened-v1/nw-0-3.webp, weakened-v1/ne-0-0.webp, weakened-v1/ne-0-1.webp, weakened-v1/ne-0-2.webp, weakened-v1/ne-0-3.webp: 전투 대기보다 더 뒤쪽을 보는 시점이다. 대기→쇠약 전환 시 말 방향·마갑 윤곽 변화가 남아 있다.",
-          "combat-v1/se-2-1.webp, combat-v1/se-2-2.webp: 찌르기 원근 단축으로 창의 화면상 길이 변화가 크다. 무기 길이 일관성 추가 검토 필요."
-        ]
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "방향별 얼굴·머리·복식·말의 세부 형태 편차, 4프레임 동작의 중간 보간 부족. 실제 게임·모바일 최종 검수 전.",
+          "SW 준비→뻗기 상체 회전이 크며 검 길이 변화가 남음. NE 대기 높이125~126px로 다른 방향보다 작음.",
+          "수정 방향은 손 배치를 유지하지만 고개 숙임 진폭과 말·복식 크기의 방향별 차이는 최종 연속 재생 검토 필요."
+        ],
+        "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-2/combat-v1",
+        "scenario": "/images/class-motion-pilot/cavalry/remaining-20261028/job-2/scenario-v1",
+        "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-2/weakened-v2"
       }
     ]
   },
   {
     "id": 3,
     "name": "경보병",
-    "root": "/images/class-motion-pilot/infantry/job-3",
+    "root": "/images/class-motion-pilot/infantry/job-3/combat-v2",
     "cavalry": false,
     "notes": [
       "승급·쇠약·타병과 미제작",
@@ -75,7 +63,7 @@
     "combat": "/images/class-motion-pilot/infantry/job-3/combat-v2",
     "scenario": "/images/class-motion-pilot/infantry/job-3/scenario-v2",
     "weakened": "",
-    "version": 2,
+    "version": "integrated-20261029",
     "stages": [
       {
         "id": 3,
@@ -129,7 +117,7 @@
   {
     "id": 6,
     "name": "궁병",
-    "root": "/images/class-motion-pilot/archer/job-6",
+    "root": "/images/class-motion-pilot/archer/job-6/combat-v2",
     "cavalry": false,
     "notes": [
       "시각 초안. 사용자 최종 승인 및 실제 사이트 연속 재생 검수 전이다.",
@@ -143,7 +131,7 @@
     "combat": "/images/class-motion-pilot/archer/job-6/combat-v2",
     "scenario": "/images/class-motion-pilot/archer/job-6/scenario-v2",
     "weakened": "",
-    "version": 2,
+    "version": "integrated-20261029",
     "stages": [
       {
         "id": 6,
@@ -194,9 +182,286 @@
     ]
   },
   {
+    "id": 9,
+    "name": "경기병",
+    "root": "/images/class-motion-pilot/cavalry/job-9/combat-v2",
+    "cavalry": true,
+    "notes": [
+      "nw-2-1.webp, nw-2-2.webp: Far weapon hand occluded; compact thrust readability needs review",
+      "ne-2-1.webp, ne-2-2.webp, ne-3-1.webp, ne-3-2.webp: Occluded rein hand contact anatomy not fully verifiable at160px",
+      "se-3-1.webp, se-3-2.webp: Small head armor horse contour variation remains",
+      "sw-0-0.webp, sw-0-1.webp, sw-0-2.webp, sw-0-3.webp: Tired pose is subtle"
+    ],
+    "combat": "/images/class-motion-pilot/cavalry/job-9/combat-v2",
+    "scenario": "/images/class-motion-pilot/cavalry/job-9/scenario-v2",
+    "weakened": "/images/class-motion-pilot/cavalry/job-9/weakened-v2",
+    "version": "integrated-20261029",
+    "stages": [
+      {
+        "id": 9,
+        "name": "경기병",
+        "combat": "/images/class-motion-pilot/cavalry/job-9/combat-v2",
+        "scenario": "/images/class-motion-pilot/cavalry/job-9/scenario-v2",
+        "weakened": "/images/class-motion-pilot/cavalry/job-9/weakened-v2",
+        "notes": [
+          "nw-2-1.webp, nw-2-2.webp: Far weapon hand occluded; compact thrust readability needs review",
+          "ne-2-1.webp, ne-2-2.webp, ne-3-1.webp, ne-3-2.webp: Occluded rein hand contact anatomy not fully verifiable at160px",
+          "se-3-1.webp, se-3-2.webp: Small head armor horse contour variation remains",
+          "sw-0-0.webp, sw-0-1.webp, sw-0-2.webp, sw-0-3.webp: Tired pose is subtle"
+        ]
+      },
+      {
+        "id": 10,
+        "name": "중기병",
+        "combat": "/images/class-motion-pilot/cavalry/job-10/combat-v1",
+        "scenario": "/images/class-motion-pilot/cavalry/job-10/scenario-v1",
+        "weakened": "/images/class-motion-pilot/cavalry/job-10/weakened-v1",
+        "notes": [
+          "combat-v1/nw-2-1.webp, combat-v1/nw-2-2.webp: 몸 뒤 오른손이 일부 가려져 작은 찌르기의 손 연결·가독성을 완전히 확정하기 어렵다.",
+          "combat-v1/sw-2-1.webp, combat-v1/sw-2-2.webp, weakened-v1/sw-0-0.webp, weakened-v1/sw-0-1.webp, weakened-v1/sw-0-2.webp, weakened-v1/sw-0-3.webp: 왼손 고삐와 창대가 겹쳐 보이는 부분이 남아 있다. 고삐 손 분리 표현은 추가 작화 검토 대상.",
+          "combat-v1/ne-2-0.webp, combat-v1/ne-2-1.webp, combat-v1/ne-2-2.webp, combat-v1/ne-2-3.webp: 창 길이를 원근으로 줄인 뒤 공격 진폭이 작아졌다. 게임 표시 크기에서 타격 가독성 보완 필요.",
+          "combat-v1/se-2-0.webp, combat-v1/se-2-1.webp, combat-v1/nw-2-0.webp, combat-v1/nw-2-1.webp: 준비에서 찌르기로 전환할 때 창의 각도 변화가 크다. 4프레임 사이 중간 동작은 미제작.",
+          "combat-v1/nw-0-0.webp, combat-v1/nw-0-1.webp, combat-v1/nw-0-2.webp, combat-v1/nw-0-3.webp, combat-v1/ne-0-0.webp, combat-v1/ne-0-1.webp, combat-v1/ne-0-2.webp, combat-v1/ne-0-3.webp, combat-v1/se-0-0.webp, combat-v1/se-0-1.webp, combat-v1/se-0-2.webp, combat-v1/se-0-3.webp, combat-v1/sw-0-0.webp, combat-v1/sw-0-1.webp, combat-v1/sw-0-2.webp, combat-v1/sw-0-3.webp: 대기 실루엣은 대략125~130px이며 방향별 체격·세부 갑주가 픽셀 수준으로 완전히 같지는 않다."
+        ]
+      },
+      {
+        "id": 11,
+        "name": "친위대",
+        "combat": "/images/class-motion-pilot/cavalry/job-11/combat-v1",
+        "scenario": "/images/class-motion-pilot/cavalry/job-11/scenario-v1",
+        "weakened": "/images/class-motion-pilot/cavalry/job-11/weakened-v1",
+        "notes": [
+          "combat-v1/sw-0-0.webp, combat-v1/sw-0-1.webp, combat-v1/sw-0-2.webp, combat-v1/sw-0-3.webp, combat-v1/sw-1-0.webp, combat-v1/sw-1-1.webp, combat-v1/sw-1-2.webp, combat-v1/sw-1-3.webp, combat-v1/sw-2-0.webp, combat-v1/sw-2-1.webp, combat-v1/sw-2-2.webp, combat-v1/sw-2-3.webp, combat-v1/sw-3-0.webp, combat-v1/sw-3-1.webp, combat-v1/sw-3-2.webp, combat-v1/sw-3-3.webp: 남서 대기 높이121px로 다른 방향 약127~129px보다 작다. 최대 외곽140px를 지키기 위한 방향 공통 축소. 추가 창 원근 보정 생성은 서비스 안전 필터에 거절되어 미해결.",
+          "combat-v1/ne-3-1.webp, combat-v1/ne-3-2.webp: 여백 보정 뒤 지휘 동작이 공격 자세와 비슷해 동작 구분이 약하다.",
+          "combat-v1/sw-2-1.webp, combat-v1/sw-2-2.webp, combat-v1/sw-3-1.webp, combat-v1/sw-3-2.webp: 왼손 고삐와 창대가 가까워 160px에서 손 접점이 모호하다. 완전한 해부학 검증으로 표시하지 않는다.",
+          "weakened-v1/nw-0-0.webp, weakened-v1/nw-0-1.webp, weakened-v1/nw-0-2.webp, weakened-v1/nw-0-3.webp, weakened-v1/ne-0-0.webp, weakened-v1/ne-0-1.webp, weakened-v1/ne-0-2.webp, weakened-v1/ne-0-3.webp: 전투 대기보다 더 뒤쪽을 보는 시점이다. 대기→쇠약 전환 시 말 방향·마갑 윤곽 변화가 남아 있다.",
+          "combat-v1/se-2-1.webp, combat-v1/se-2-2.webp: 찌르기 원근 단축으로 창의 화면상 길이 변화가 크다. 무기 길이 일관성 추가 검토 필요."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "name": "궁기병",
+    "cavalry": true,
+    "stages": [
+      {
+        "id": 12,
+        "name": "궁기병",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상."
+        ],
+        "combat": "/images/class-motion-pilot/archer/job-12/combat-v1",
+        "scenario": "/images/class-motion-pilot/archer/job-12/scenario-v1",
+        "weakened": "/images/class-motion-pilot/archer/job-12/weakened-v1"
+      },
+      {
+        "id": 13,
+        "name": "노기병",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상."
+        ],
+        "combat": "/images/class-motion-pilot/archer/job-13/combat-v1",
+        "scenario": "/images/class-motion-pilot/archer/job-13/scenario-v1",
+        "weakened": "/images/class-motion-pilot/archer/job-13/weakened-v1"
+      },
+      {
+        "id": 14,
+        "name": "연노기병",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상."
+        ],
+        "combat": "/images/class-motion-pilot/archer/job-14/combat-v1",
+        "scenario": "/images/class-motion-pilot/archer/job-14/scenario-v1",
+        "weakened": "/images/class-motion-pilot/archer/job-14/weakened-v1"
+      }
+    ],
+    "combat": "/images/class-motion-pilot/archer/job-12/combat-v1",
+    "scenario": "/images/class-motion-pilot/archer/job-12/scenario-v1",
+    "weakened": "/images/class-motion-pilot/archer/job-12/weakened-v1",
+    "notes": [
+      "검수 초안 · 실제 재생 및 작화 확인 대상."
+    ],
+    "root": "/images/class-motion-pilot/archer/job-12/combat-v1",
+    "version": "integrated-20261029"
+  },
+  {
+    "id": 15,
+    "name": "경포차",
+    "cavalry": false,
+    "stages": [
+      {
+        "id": 15,
+        "name": "경포차",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상."
+        ],
+        "combat": "/images/class-motion-pilot/archer/job-15/combat-v1",
+        "scenario": "/images/class-motion-pilot/archer/job-15/scenario-v1",
+        "weakened": ""
+      },
+      {
+        "id": 16,
+        "name": "중포차",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상."
+        ],
+        "combat": "/images/class-motion-pilot/archer/job-16/combat-v1",
+        "scenario": "/images/class-motion-pilot/archer/job-16/scenario-v1",
+        "weakened": ""
+      },
+      {
+        "id": 17,
+        "name": "벽력차",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상."
+        ],
+        "combat": "/images/class-motion-pilot/archer/job-17/combat-v1",
+        "scenario": "/images/class-motion-pilot/archer/job-17/scenario-v1",
+        "weakened": ""
+      }
+    ],
+    "combat": "/images/class-motion-pilot/archer/job-15/combat-v1",
+    "scenario": "/images/class-motion-pilot/archer/job-15/scenario-v1",
+    "weakened": "",
+    "notes": [
+      "검수 초안 · 실제 재생 및 작화 확인 대상."
+    ],
+    "root": "/images/class-motion-pilot/archer/job-15/combat-v1",
+    "version": "integrated-20261029"
+  },
+  {
+    "id": 18,
+    "name": "무도가",
+    "cavalry": false,
+    "stages": [
+      {
+        "id": 18,
+        "name": "무도가",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "보행 action1의0/2와1/3에서 좌우 다리 교대가 충분히 구별되지 않거나 한쪽 보폭 반복처럼 보임. 실제 자연스러운 보행 완성으로 선언하지 않음.",
+          "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
+          "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
+          "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
+          "SW 전투에서 머리 매듭이 작거나 거의 보이지 않으며 후면/다른 방향과 머리 인상이 다름."
+        ],
+        "combat": "/images/class-motion-pilot/infantry/job-18/combat-v1",
+        "scenario": "/images/class-motion-pilot/infantry/job-18/scenario-v1",
+        "weakened": ""
+      },
+      {
+        "id": 19,
+        "name": "권사",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "보행 action1의0/2와1/3에서 좌우 다리 교대가 충분히 구별되지 않거나 한쪽 보폭 반복처럼 보임. 실제 자연스러운 보행 완성으로 선언하지 않음.",
+          "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
+          "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
+          "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
+          "일부 방향/공격에서 소매 길이와 승급 복식 세부가 달라짐. 승인 정지 모델과 완전한 외형 일치 검수 필요."
+        ],
+        "combat": "/images/class-motion-pilot/infantry/job-19/combat-v1",
+        "scenario": "/images/class-motion-pilot/infantry/job-19/scenario-v1",
+        "weakened": ""
+      },
+      {
+        "id": 20,
+        "name": "권성",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "보행 action1의0/2와1/3에서 좌우 다리 교대가 충분히 구별되지 않거나 한쪽 보폭 반복처럼 보임. 실제 자연스러운 보행 완성으로 선언하지 않음.",
+          "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
+          "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
+          "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
+          "일부 방향/공격에서 소매 길이와 승급 복식 세부가 달라짐. 승인 정지 모델과 완전한 외형 일치 검수 필요."
+        ],
+        "combat": "/images/class-motion-pilot/infantry/job-20/combat-v1",
+        "scenario": "/images/class-motion-pilot/infantry/job-20/scenario-v1",
+        "weakened": ""
+      }
+    ],
+    "combat": "/images/class-motion-pilot/infantry/job-18/combat-v1",
+    "scenario": "/images/class-motion-pilot/infantry/job-18/scenario-v1",
+    "weakened": "",
+    "notes": [
+      "검수 초안 · 실제 재생 및 작화 확인 대상.",
+      "보행 action1의0/2와1/3에서 좌우 다리 교대가 충분히 구별되지 않거나 한쪽 보폭 반복처럼 보임. 실제 자연스러운 보행 완성으로 선언하지 않음.",
+      "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
+      "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
+      "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
+      "SW 전투에서 머리 매듭이 작거나 거의 보이지 않으며 후면/다른 방향과 머리 인상이 다름."
+    ],
+    "root": "/images/class-motion-pilot/infantry/job-18/combat-v1",
+    "version": "integrated-20261029"
+  },
+  {
+    "id": 21,
+    "name": "적병",
+    "cavalry": false,
+    "stages": [
+      {
+        "id": 21,
+        "name": "적병",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "보행 action1의0/2와1/3에서 좌우 다리 교대가 충분히 구별되지 않거나 한쪽 보폭 반복처럼 보임. 실제 자연스러운 보행 완성으로 선언하지 않음.",
+          "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
+          "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
+          "사이트/전투 판정 연결은 이 작업에서 수행하지 않음."
+        ],
+        "combat": "/images/class-motion-pilot/infantry/job-21/combat-v1",
+        "scenario": "/images/class-motion-pilot/infantry/job-21/scenario-v1",
+        "weakened": ""
+      },
+      {
+        "id": 22,
+        "name": "의적",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "보행 action1의0/2와1/3에서 좌우 다리 교대가 충분히 구별되지 않거나 한쪽 보폭 반복처럼 보임. 실제 자연스러운 보행 완성으로 선언하지 않음.",
+          "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
+          "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
+          "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
+          "전투와 시나리오에서 머리 길이·코트 기장 차이, 일부 검 길이 변화가 있음."
+        ],
+        "combat": "/images/class-motion-pilot/infantry/job-22/combat-v1",
+        "scenario": "/images/class-motion-pilot/infantry/job-22/scenario-v1",
+        "weakened": ""
+      },
+      {
+        "id": 23,
+        "name": "호걸",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "보행 action1의0/2와1/3에서 좌우 다리 교대가 충분히 구별되지 않거나 한쪽 보폭 반복처럼 보임. 실제 자연스러운 보행 완성으로 선언하지 않음.",
+          "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
+          "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
+          "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
+          "전투와 시나리오에서 머리 길이·코트 기장 차이, 일부 검 길이 변화가 있음."
+        ],
+        "combat": "/images/class-motion-pilot/infantry/job-23/combat-v1",
+        "scenario": "/images/class-motion-pilot/infantry/job-23/scenario-v1",
+        "weakened": ""
+      }
+    ],
+    "combat": "/images/class-motion-pilot/infantry/job-21/combat-v1",
+    "scenario": "/images/class-motion-pilot/infantry/job-21/scenario-v1",
+    "weakened": "",
+    "notes": [
+      "검수 초안 · 실제 재생 및 작화 확인 대상.",
+      "보행 action1의0/2와1/3에서 좌우 다리 교대가 충분히 구별되지 않거나 한쪽 보폭 반복처럼 보임. 실제 자연스러운 보행 완성으로 선언하지 않음.",
+      "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
+      "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
+      "사이트/전투 판정 연결은 이 작업에서 수행하지 않음."
+    ],
+    "root": "/images/class-motion-pilot/infantry/job-21/combat-v1",
+    "version": "integrated-20261029"
+  },
+  {
     "id": 24,
     "name": "책사",
-    "root": "/images/class-motion-pilot/caster/job-24",
+    "root": "/images/class-motion-pilot/caster/job-24/combat-v2",
     "cavalry": false,
     "notes": [
       "최우선 SW 공격 복귀 자세는 정적 검수에서 수정 확인; 실제 재생 품질 승인 아님",
@@ -210,7 +475,7 @@
     "combat": "/images/class-motion-pilot/caster/job-24/combat-v2",
     "scenario": "/images/class-motion-pilot/caster/job-24/scenario-v1",
     "weakened": "",
-    "version": 2,
+    "version": "integrated-20261029",
     "stages": [
       {
         "id": 24,
@@ -257,180 +522,62 @@
     ]
   },
   {
-    "id": 0,
-    "name": "군웅 · 왕건",
-    "root": "/images/playable/wang-geon/full-frame-v1",
-    "cavalry": true,
-    "notes": [],
-    "combat": "/images/playable/wang-geon/full-frame-v1",
-    "scenario": "/images/playable/wang-geon/scenario-standing-v2",
-    "weakened": "/images/playable/wang-geon/weakened-v1",
-    "version": "review-20261028",
-    "stages": [
-      {
-        "id": 0,
-        "name": "군웅 · 왕건",
-        "notes": [],
-        "combat": "/images/playable/wang-geon/full-frame-v1",
-        "scenario": "/images/playable/wang-geon/scenario-standing-v2",
-        "weakened": "/images/playable/wang-geon/weakened-v1"
-      },
-      {
-        "id": 1,
-        "name": "영웅",
-        "notes": [
-          "검수 초안 · 최종 승인 전. 팔·손 배치와 연속 동작은 추가 검토가 필요합니다.",
-          "무기/부채가 전투 대기와 반대쪽 손에 놓여 보이는 문제가 재수정 후에도 남음. 오른손 소품·왼손 고삐 규격 충족으로 승인하지 않음.",
-          "방향별 얼굴·머리·복식·말의 세부 형태 편차, 4프레임 동작의 중간 보간 부족. 실제 게임·모바일 최종 검수 전.",
-          "NE 준비 동작 검날이 원근으로 매우 짧게 보임; SW 공격 진폭은 작음."
-        ],
-        "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-1/combat-v1",
-        "scenario": "/images/class-motion-pilot/cavalry/remaining-20261028/job-1/scenario-v1",
-        "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-1/weakened-v1"
-      },
-      {
-        "id": 2,
-        "name": "패왕",
-        "notes": [
-          "검수 초안 · 최종 승인 전. 팔·손 배치와 연속 동작은 추가 검토가 필요합니다.",
-          "무기/부채가 전투 대기와 반대쪽 손에 놓여 보이는 문제가 재수정 후에도 남음. 오른손 소품·왼손 고삐 규격 충족으로 승인하지 않음.",
-          "방향별 얼굴·머리·복식·말의 세부 형태 편차, 4프레임 동작의 중간 보간 부족. 실제 게임·모바일 최종 검수 전.",
-          "SW 준비→뻗기 상체 회전이 크며 검 길이 변화가 남음. NE 대기 높이125~126px로 다른 방향보다 작음."
-        ],
-        "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-2/combat-v1",
-        "scenario": "/images/class-motion-pilot/cavalry/remaining-20261028/job-2/scenario-v1",
-        "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-2/weakened-v1"
-      }
-    ]
-  },
-  {
-    "id": 33,
-    "name": "기마책사",
-    "root": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/combat-v1",
-    "cavalry": true,
-    "notes": [
-      "검수 초안 · 최종 승인 전. 팔·손 배치와 연속 동작은 추가 검토가 필요합니다.",
-      "무기/부채가 전투 대기와 반대쪽 손에 놓여 보이는 문제가 재수정 후에도 남음. 오른손 소품·왼손 고삐 규격 충족으로 승인하지 않음.",
-      "방향별 얼굴·머리·복식·말의 세부 형태 편차, 4프레임 동작의 중간 보간 부족. 실제 게임·모바일 최종 검수 전.",
-      "NW 부채 팔이 등/머리카락에 가리거나 대기와 뻗기 사이 좌우가 모호함. 양팔 연결과 오른손 일관성 추가 작화 검수 필요.",
-      "NE 공격 중간 두 자세 구분이 약함. SW 여백 수정으로 옷자락/머리 및 말 윤곽이 다른 방향과 조금 달라짐."
-    ],
-    "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/combat-v1",
-    "scenario": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/scenario-v1",
-    "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/weakened-v1",
-    "version": "review-20261028",
-    "stages": [
-      {
-        "id": 33,
-        "name": "기마책사",
-        "notes": [
-          "검수 초안 · 최종 승인 전. 팔·손 배치와 연속 동작은 추가 검토가 필요합니다.",
-          "무기/부채가 전투 대기와 반대쪽 손에 놓여 보이는 문제가 재수정 후에도 남음. 오른손 소품·왼손 고삐 규격 충족으로 승인하지 않음.",
-          "방향별 얼굴·머리·복식·말의 세부 형태 편차, 4프레임 동작의 중간 보간 부족. 실제 게임·모바일 최종 검수 전.",
-          "NW 부채 팔이 등/머리카락에 가리거나 대기와 뻗기 사이 좌우가 모호함. 양팔 연결과 오른손 일관성 추가 작화 검수 필요.",
-          "NE 공격 중간 두 자세 구분이 약함. SW 여백 수정으로 옷자락/머리 및 말 윤곽이 다른 방향과 조금 달라짐."
-        ],
-        "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/combat-v1",
-        "scenario": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/scenario-v1",
-        "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/weakened-v1"
-      },
-      {
-        "id": 34,
-        "name": "기마참모",
-        "notes": [
-          "검수 초안 · 최종 승인 전. 팔·손 배치와 연속 동작은 추가 검토가 필요합니다.",
-          "무기/부채가 전투 대기와 반대쪽 손에 놓여 보이는 문제가 재수정 후에도 남음. 오른손 소품·왼손 고삐 규격 충족으로 승인하지 않음.",
-          "방향별 얼굴·머리·복식·말의 세부 형태 편차, 4프레임 동작의 중간 보간 부족. 실제 게임·모바일 최종 검수 전.",
-          "NW 부채 팔이 등/머리카락에 가리거나 대기와 뻗기 사이 좌우가 모호함. 양팔 연결과 오른손 일관성 추가 작화 검수 필요.",
-          "대기에서 말 앞발을 든 자세가 섞여 안정된 정지와 이동의 구분이 약함."
-        ],
-        "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-34/combat-v2",
-        "scenario": "/images/class-motion-pilot/cavalry/remaining-20261028/job-34/scenario-v2",
-        "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-34/weakened-v2"
-      },
-      {
-        "id": 35,
-        "name": "기마군사",
-        "notes": [
-          "검수 초안 · 최종 승인 전. 팔·손 배치와 연속 동작은 추가 검토가 필요합니다.",
-          "무기/부채가 전투 대기와 반대쪽 손에 놓여 보이는 문제가 재수정 후에도 남음. 오른손 소품·왼손 고삐 규격 충족으로 승인하지 않음.",
-          "방향별 얼굴·머리·복식·말의 세부 형태 편차, 4프레임 동작의 중간 보간 부족. 실제 게임·모바일 최종 검수 전.",
-          "NW 부채 팔이 등/머리카락에 가리거나 대기와 뻗기 사이 좌우가 모호함. 양팔 연결과 오른손 일관성 추가 작화 검수 필요.",
-          "대기에서 말 앞발을 든 자세가 섞여 안정된 정지와 이동의 구분이 약함."
-        ],
-        "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-35/combat-v1",
-        "scenario": "/images/class-motion-pilot/cavalry/remaining-20261028/job-35/scenario-v1",
-        "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-35/weakened-v1"
-      }
-    ]
-  },
-  {
-    "id": 36,
-    "name": "무용수",
-    "root": "/images/class-motion-pilot/caster/job-36/remaining-20261028/combat-v1",
-    "cavalry": false,
-    "notes": [
-      "검수 초안 · 최종 승인 전. 팔·손 배치와 연속 동작은 추가 검토가 필요합니다.",
-      "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
-      "브라우저 실제 연속재생 육안 검수 미완료",
-      "NW 공격/스킬의 몸 회전에 따라 무기 손 가림이 커짐. 손가락과 어깨 연결의 세밀한 재생 확인 필요.",
-      "SW 이동1/3의 보폭 차이가 작고 긴 치마가 무릎을 가려 교대보행 가독성 제한.",
-      "시나리오 원본 앞2행 실제NE/NW여서 완성 프레임 행 순서만 교체."
-    ],
-    "combat": "/images/class-motion-pilot/caster/job-36/remaining-20261028/combat-v1",
-    "scenario": "/images/class-motion-pilot/caster/job-36/remaining-20261028/scenario-v1",
-    "weakened": "",
-    "version": "review-20261028",
-    "stages": [
-      {
-        "id": 36,
-        "name": "무용수",
-        "notes": [
-          "검수 초안 · 최종 승인 전. 팔·손 배치와 연속 동작은 추가 검토가 필요합니다.",
-          "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
-          "브라우저 실제 연속재생 육안 검수 미완료",
-          "NW 공격/스킬의 몸 회전에 따라 무기 손 가림이 커짐. 손가락과 어깨 연결의 세밀한 재생 확인 필요.",
-          "SW 이동1/3의 보폭 차이가 작고 긴 치마가 무릎을 가려 교대보행 가독성 제한.",
-          "시나리오 원본 앞2행 실제NE/NW여서 완성 프레임 행 순서만 교체."
-        ],
-        "combat": "/images/class-motion-pilot/caster/job-36/remaining-20261028/combat-v1",
-        "scenario": "/images/class-motion-pilot/caster/job-36/remaining-20261028/scenario-v1",
-        "weakened": ""
-      },
-      {
-        "id": 37,
-        "name": "무희",
-        "weakened": "",
-        "notes": [
-          "검수 초안 · 파일 규격 확인 완료, 담당자 연속 동작·방향·손 배치 검수 진행 중."
-        ],
-        "combat": "/images/class-motion-pilot/caster/job-37/remaining-20261028/combat-v1",
-        "scenario": "/images/class-motion-pilot/caster/job-37/remaining-20261028/scenario-v1"
-      }
-    ]
-  },
-  {
     "id": 27,
     "name": "풍수사",
     "root": "/images/class-motion-pilot/caster/job-27/remaining-20261028/combat-v1",
     "cavalry": false,
     "notes": [
-      "검수 초안 · 파일 규격 확인 완료, 담당자 연속 동작·방향·손 배치 검수 진행 중."
+      "검수 초안 · 실제 재생 및 작화 확인 대상.",
+      "정적 시간순 검수 완료, 실제 브라우저 연속재생 미검수. 사용자 최종 승인 전 초안.",
+      "긴 치마/도포가 무릎을 가려 이동1/3 교대보행 가독성이 제한됨.",
+      "공격2→3 회복이 한 프레임이고 머리카락/옷자락이 변해 실제 타이밍 검수 필요.",
+      "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차."
     ],
     "combat": "/images/class-motion-pilot/caster/job-27/remaining-20261028/combat-v1",
     "scenario": "/images/class-motion-pilot/caster/job-27/remaining-20261028/scenario-v1",
     "weakened": "",
-    "version": "review-20261028",
+    "version": "integrated-20261029",
     "stages": [
       {
         "id": 27,
         "name": "풍수사",
-        "weakened": "",
         "notes": [
-          "검수 초안 · 파일 규격 확인 완료, 담당자 연속 동작·방향·손 배치 검수 진행 중."
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "정적 시간순 검수 완료, 실제 브라우저 연속재생 미검수. 사용자 최종 승인 전 초안.",
+          "긴 치마/도포가 무릎을 가려 이동1/3 교대보행 가독성이 제한됨.",
+          "공격2→3 회복이 한 프레임이고 머리카락/옷자락이 변해 실제 타이밍 검수 필요.",
+          "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차."
         ],
         "combat": "/images/class-motion-pilot/caster/job-27/remaining-20261028/combat-v1",
-        "scenario": "/images/class-motion-pilot/caster/job-27/remaining-20261028/scenario-v1"
+        "scenario": "/images/class-motion-pilot/caster/job-27/remaining-20261028/scenario-v1",
+        "weakened": ""
+      },
+      {
+        "id": 28,
+        "name": "방술사",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
+          "브라우저 실제 연속재생 육안 검수 미완료",
+          "SW 공격2 왼쪽 여백3px: 잘림 없음, 고정 접지점과 크기를 유지함.",
+          "긴 옷의 교대보행 가독성 제한. 공격 회복1프레임과 장식 편차 실제 재생 검수 필요."
+        ],
+        "combat": "/images/class-motion-pilot/caster/job-28/remaining-20261028/combat-v1",
+        "scenario": "/images/class-motion-pilot/caster/job-28/remaining-20261028/scenario-v1",
+        "weakened": ""
+      },
+      {
+        "id": 29,
+        "name": "선술사",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
+          "브라우저 실제 연속재생 육안 검수 미완료",
+          "긴 옷으로 교대보행 가독성 제한. 공격2→3 회복1프레임과 장식·무기 원근 편차의 실제 재생 검수 필요."
+        ],
+        "combat": "/images/class-motion-pilot/caster/job-29/remaining-20261028/combat-v1",
+        "scenario": "/images/class-motion-pilot/caster/job-29/remaining-20261028/scenario-v1",
+        "weakened": ""
       }
     ]
   },
@@ -440,22 +587,170 @@
     "root": "/images/class-motion-pilot/caster/job-30/remaining-20261028/combat-v1",
     "cavalry": false,
     "notes": [
-      "검수 초안 · 파일 규격 확인 완료, 담당자 연속 동작·방향·손 배치 검수 진행 중."
+      "검수 초안 · 실제 재생 및 작화 확인 대상.",
+      "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
+      "브라우저 실제 연속재생 육안 검수 미완료",
+      "긴 도포로 보행 무릎 교대 가독성 제한; 공격 회복1프레임과 장식 편차의 실재생 검수 필요"
     ],
     "combat": "/images/class-motion-pilot/caster/job-30/remaining-20261028/combat-v1",
     "scenario": "/images/class-motion-pilot/caster/job-30/remaining-20261028/scenario-v1",
     "weakened": "",
-    "version": "review-20261028",
+    "version": "integrated-20261029",
     "stages": [
       {
         "id": 30,
         "name": "도사",
-        "weakened": "",
         "notes": [
-          "검수 초안 · 파일 규격 확인 완료, 담당자 연속 동작·방향·손 배치 검수 진행 중."
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
+          "브라우저 실제 연속재생 육안 검수 미완료",
+          "긴 도포로 보행 무릎 교대 가독성 제한; 공격 회복1프레임과 장식 편차의 실재생 검수 필요"
         ],
         "combat": "/images/class-motion-pilot/caster/job-30/remaining-20261028/combat-v1",
-        "scenario": "/images/class-motion-pilot/caster/job-30/remaining-20261028/scenario-v1"
+        "scenario": "/images/class-motion-pilot/caster/job-30/remaining-20261028/scenario-v1",
+        "weakened": ""
+      },
+      {
+        "id": 31,
+        "name": "환술사",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
+          "브라우저 실제 연속재생 육안 검수 미완료",
+          "긴 옷으로 교대보행 가독성 제한. 공격2→3 회복1프레임과 장식·무기 원근 편차의 실제 재생 검수 필요."
+        ],
+        "combat": "/images/class-motion-pilot/caster/job-31/remaining-20261028/combat-v1",
+        "scenario": "/images/class-motion-pilot/caster/job-31/remaining-20261028/scenario-v1",
+        "weakened": ""
+      },
+      {
+        "id": 32,
+        "name": "요술사",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
+          "브라우저 실제 연속재생 육안 검수 미완료",
+          "긴 옷으로 교대보행 가독성 제한. 공격2→3 회복1프레임과 장식·무기 원근 편차의 실제 재생 검수 필요."
+        ],
+        "combat": "/images/class-motion-pilot/caster/job-32/remaining-20261028/combat-v1",
+        "scenario": "/images/class-motion-pilot/caster/job-32/remaining-20261028/scenario-v1",
+        "weakened": ""
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "name": "기마책사",
+    "root": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/combat-v2",
+    "cavalry": true,
+    "notes": [
+      "검수 초안 · 실제 재생 및 작화 확인 대상.",
+      "방향별 얼굴·머리·복식·말의 세부 형태 편차, 4프레임 동작의 중간 보간 부족. 실제 게임·모바일 최종 검수 전.",
+      "NE 공격 중간 두 자세 구분이 약함. SW 여백 수정으로 옷자락/머리 및 말 윤곽이 다른 방향과 조금 달라짐.",
+      "수정 방향은 손 배치를 유지하지만 고개 숙임 진폭과 말·복식 크기의 방향별 차이는 최종 연속 재생 검토 필요."
+    ],
+    "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/combat-v2",
+    "scenario": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/scenario-v1",
+    "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/weakened-v2",
+    "version": "integrated-20261029",
+    "stages": [
+      {
+        "id": 33,
+        "name": "기마책사",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "방향별 얼굴·머리·복식·말의 세부 형태 편차, 4프레임 동작의 중간 보간 부족. 실제 게임·모바일 최종 검수 전.",
+          "NE 공격 중간 두 자세 구분이 약함. SW 여백 수정으로 옷자락/머리 및 말 윤곽이 다른 방향과 조금 달라짐.",
+          "수정 방향은 손 배치를 유지하지만 고개 숙임 진폭과 말·복식 크기의 방향별 차이는 최종 연속 재생 검토 필요."
+        ],
+        "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/combat-v2",
+        "scenario": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/scenario-v1",
+        "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/weakened-v2"
+      },
+      {
+        "id": 34,
+        "name": "기마참모",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "방향별 얼굴·머리·복식·말의 세부 형태 편차, 4프레임 동작의 중간 보간 부족. 실제 게임·모바일 최종 검수 전.",
+          "대기에서 말 앞발을 든 자세가 섞여 안정된 정지와 이동의 구분이 약함.",
+          "수정 방향은 손 배치를 유지하지만 고개 숙임 진폭과 말·복식 크기의 방향별 차이는 최종 연속 재생 검토 필요."
+        ],
+        "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-34/combat-v3",
+        "scenario": "/images/class-motion-pilot/cavalry/remaining-20261028/job-34/scenario-v2",
+        "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-34/weakened-v3"
+      },
+      {
+        "id": 35,
+        "name": "기마군사",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "방향별 얼굴·머리·복식·말의 세부 형태 편차, 4프레임 동작의 중간 보간 부족. 실제 게임·모바일 최종 검수 전.",
+          "대기에서 말 앞발을 든 자세가 섞여 안정된 정지와 이동의 구분이 약함.",
+          "수정 방향은 손 배치를 유지하지만 고개 숙임 진폭과 말·복식 크기의 방향별 차이는 최종 연속 재생 검토 필요."
+        ],
+        "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-35/combat-v2",
+        "scenario": "/images/class-motion-pilot/cavalry/remaining-20261028/job-35/scenario-v1",
+        "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-35/weakened-v2"
+      }
+    ]
+  },
+  {
+    "id": 36,
+    "name": "무용수",
+    "root": "/images/class-motion-pilot/caster/job-36/remaining-20261028/combat-v1",
+    "cavalry": false,
+    "notes": [
+      "검수 초안 · 실제 재생 및 작화 확인 대상.",
+      "정적 시간순 검수 완료, 실제 브라우저 연속재생 미검수. 사용자 최종 승인 전 초안.",
+      "긴 치마/도포가 무릎을 가려 이동1/3 교대보행 가독성이 제한됨.",
+      "공격2→3 회복이 한 프레임이고 머리카락/옷자락이 변해 실제 타이밍 검수 필요.",
+      "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차."
+    ],
+    "combat": "/images/class-motion-pilot/caster/job-36/remaining-20261028/combat-v1",
+    "scenario": "/images/class-motion-pilot/caster/job-36/remaining-20261028/scenario-v1",
+    "weakened": "",
+    "version": "integrated-20261029",
+    "stages": [
+      {
+        "id": 36,
+        "name": "무용수",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "정적 시간순 검수 완료, 실제 브라우저 연속재생 미검수. 사용자 최종 승인 전 초안.",
+          "긴 치마/도포가 무릎을 가려 이동1/3 교대보행 가독성이 제한됨.",
+          "공격2→3 회복이 한 프레임이고 머리카락/옷자락이 변해 실제 타이밍 검수 필요.",
+          "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차."
+        ],
+        "combat": "/images/class-motion-pilot/caster/job-36/remaining-20261028/combat-v1",
+        "scenario": "/images/class-motion-pilot/caster/job-36/remaining-20261028/scenario-v1",
+        "weakened": ""
+      },
+      {
+        "id": 37,
+        "name": "무희",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "정적 시간순 검수 완료, 실제 브라우저 연속재생 미검수. 사용자 최종 승인 전 초안.",
+          "긴 치마/도포가 무릎을 가려 이동1/3 교대보행 가독성이 제한됨.",
+          "공격2→3 회복이 한 프레임이고 머리카락/옷자락이 변해 실제 타이밍 검수 필요.",
+          "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차."
+        ],
+        "combat": "/images/class-motion-pilot/caster/job-37/remaining-20261028/combat-v1",
+        "scenario": "/images/class-motion-pilot/caster/job-37/remaining-20261028/scenario-v1",
+        "weakened": ""
+      },
+      {
+        "id": 38,
+        "name": "무녀",
+        "notes": [
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
+          "브라우저 실제 연속재생 육안 검수 미완료"
+        ],
+        "combat": "/images/class-motion-pilot/caster/job-38/remaining-20261028/combat-v1",
+        "scenario": "/images/class-motion-pilot/caster/job-38/remaining-20261028/scenario-v1",
+        "weakened": ""
       }
     ]
   }

@@ -1,0 +1,409 @@
+[
+  {
+    "spec": {
+      "id": 39,
+      "name": "서량기병",
+      "desc": "dark armored Korean cavalry lancer, dark pointed helmet, navy and bronze lamellar armor, brown horse. Horse and rider one intact figure",
+      "ref": "job-models/se-v1/job-39.webp"
+    },
+    "prompt": "Use case: stylized-concept. Asset type: transparent game sprite sheet. Reproduce the attached approved character dark armored Korean cavalry lancer, dark pointed helmet, navy and bronze lamellar armor, brown horse. Horse and rider one intact figure as 64 COMPLETE connected body animation frames, consistent Korean tactical RPG sprite drawing, dark clear outlines, limited colors, mobile readable. Exact 8 columns by 8 rows regular grid, all cells isolated with large transparent gutters. No labels, no ground, no shadows, no cut off parts. Each sprite same body size. ROWS1-2 facing NW11 o'clock BACK LEFT; ROWS3-4 NE2 o'clock BACK RIGHT; ROWS5-6 SE5 o'clock FRONT RIGHT; ROWS7-8 SW7 o'clock FRONT LEFT. In each direction's first row columns1-4 subtle idle breathing, columns5-8 four WALK cycle poses (horse legs and rider move together if cavalry). Second row columns1-4 four attack windup-strike-followthrough-recover poses; columns5-8 four restrained skill cast poses. All 64 individual sprites whole and contained in own cell, no flipped heads or detached arms. Perspective and costume match reference, no new equipment. Transparent background.",
+    "sha256": "42d0fcc1292d1582aaa406a080cf00079165548424a0166dc55dccbd341caed8",
+    "bytes": 2080237,
+    "generatedFile": "exec-bfaed639-176a-4cda-addd-03a0c7dcc2a1.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 40,
+      "name": "유민군",
+      "desc": "Korean peasant militiaman, white short jeogori, brown trousers, black headband, wooden club",
+      "ref": "job-models/se-v1/job-40.webp"
+    },
+    "prompt": "Use case: stylized-concept. Asset type: transparent game sprite sheet. Reproduce the attached approved character Korean peasant militiaman, white short jeogori, brown trousers, black headband, wooden club as 64 COMPLETE connected body animation frames, consistent Korean tactical RPG sprite drawing, dark clear outlines, limited colors, mobile readable. Exact 8 columns by 8 rows regular grid, all cells isolated with large transparent gutters. No labels, no ground, no shadows, no cut off parts. Each sprite same body size. ROWS1-2 facing NW11 o'clock BACK LEFT; ROWS3-4 NE2 o'clock BACK RIGHT; ROWS5-6 SE5 o'clock FRONT RIGHT; ROWS7-8 SW7 o'clock FRONT LEFT. In each direction's first row columns1-4 subtle idle breathing, columns5-8 four WALK cycle poses (horse legs and rider move together if cavalry). Second row columns1-4 four attack windup-strike-followthrough-recover poses; columns5-8 four restrained skill cast poses. All 64 individual sprites whole and contained in own cell, no flipped heads or detached arms. Perspective and costume match reference, no new equipment. Transparent background.",
+    "sha256": "3b4c751314fc757f7873a6e840736e82d59d9165f56a5e206db4d563062380f0",
+    "bytes": 1854053,
+    "generatedFile": "exec-4b7192bd-1af3-413e-964d-53cdd29f4259.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 41,
+      "name": "해적",
+      "desc": "Korean coastal female pirate swordswoman, black ponytail, dark teal wrap tunic, brown trousers, curved short sword",
+      "ref": "job-models/se-v1/job-41.webp"
+    },
+    "prompt": "Use case: stylized-concept. Transparent game animation sprite sheet matching reference exactly: Korean coastal female pirate swordswoman, black ponytail, dark teal wrap tunic, brown trousers, curved short sword. 64 complete connected character poses, NO body part layers. Exact 8 columns x 8 rows regular grid, generous EMPTY transparent gutters and equal cell sizes. Rows1-2 NW back left (11o'clock); rows3-4 NE back right (2o'clock); rows5-6 SE front right (5o'clock); rows7-8 SW front left (7o'clock). Each direction uses TWO rows: odd row first4 frames idle breathing then4 WALK steps; even row first4 frames sword attack windup strike followthrough recover then4 skill gesture frames. Limited palette, crisp dark outlines, hand-drawn Korean tactical RPG miniature sprite. Keep identical costume proportions weapon and face across all frames. Whole silhouettes contained without touching adjacent cells. True transparent background; no ground, shadow, gridlines or text. 64 sprites exactly.",
+    "sha256": "c8380899e5e2f91f147a0d378bc5cb11d1372bb68528a39916af136eca8afe75",
+    "bytes": 1801323,
+    "generatedFile": "exec-7b3d20d6-67a0-442d-8c22-f3e8cd0b6c7c.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 44,
+      "name": "제독",
+      "desc": "Korean naval commander in dark navy long coat and segmented bronze armor, black topknot cap, straight sword",
+      "ref": "job-models/se-v1/job-44.webp"
+    },
+    "prompt": "Use case: stylized-concept. Transparent game animation sprite sheet matching reference exactly: Korean naval commander in dark navy long coat and segmented bronze armor, black topknot cap, straight sword. 64 complete connected character poses, NO body part layers. Exact 8 columns x 8 rows regular grid, generous EMPTY transparent gutters and equal cell sizes. Rows1-2 NW back left (11o'clock); rows3-4 NE back right (2o'clock); rows5-6 SE front right (5o'clock); rows7-8 SW front left (7o'clock). Each direction uses TWO rows: odd row first4 frames idle breathing then4 WALK steps; even row first4 frames sword attack windup strike followthrough recover then4 skill gesture frames. Limited palette, crisp dark outlines, hand-drawn Korean tactical RPG miniature sprite. Keep identical costume proportions weapon and face across all frames. Whole silhouettes contained without touching adjacent cells. True transparent background; no ground, shadow, gridlines or text. 64 sprites exactly.",
+    "sha256": "e7c16acc275220c4762b145957f597a5d29d4df038579ab9fb12c21c6c3fc6f6",
+    "bytes": 2051569,
+    "generatedFile": "exec-7f56d183-bd05-4c39-b528-1c1dad3a968e.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 45,
+      "name": "주술사",
+      "desc": "Korean female sorceress with burgundy ritual robes, black updo red ties, ritual straight sword. Restrained pale turquoise magic in skill only",
+      "ref": "job-models/se-v1/job-45.webp"
+    },
+    "prompt": "Use case: stylized-concept. Transparent game sprite sheet: Korean female sorceress with burgundy ritual robes, black updo red ties, ritual straight sword. Restrained pale turquoise magic in skill only, exactly like reference, Korean tactical RPG miniature, restrained palette sharp dark outlines. Make 8columns x8rows =64 complete character frames. Row pairs:1-2 BACK LEFT NW11oclock;3-4 BACK RIGHT NE2oclock;5-6 FRONT RIGHT SE5oclock;7-8 FRONT LEFT SW7oclock. Odd rows:4 idle breathing poses followed by4 walking steps. Even rows:4 attack preparation release recover poses followed by4 spellcasting poses with small turquoise magical gesture. Identical identity costume proportions, each complete connected body. Evenly spaced isolated sprites with broad transparent gutters, same scale and floorbaseline. No clipping or overlap. No text labels ground shadow or gridlines. Genuine transparent background.",
+    "sha256": "1987616d65538f909a4b367f74e6219eb6961c73a19323969069b15e77d9b368",
+    "bytes": 2095927,
+    "generatedFile": "exec-f5e7e6ad-8784-4569-87f0-5425807fab45.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 46,
+      "name": "선인",
+      "desc": "elderly Korean immortal sage, white beard white robe black sash and white topknot, white folding fan. Restrained pale cyan magic for skill only",
+      "ref": "job-models/se-v1/job-46.webp"
+    },
+    "prompt": "Use case: stylized-concept. Transparent game sprite sheet: elderly Korean immortal sage, white beard white robe black sash and white topknot, white folding fan. Restrained pale cyan magic for skill only, exactly like reference, Korean tactical RPG miniature, restrained palette sharp dark outlines. Make 8columns x8rows =64 complete character frames. Row pairs:1-2 BACK LEFT NW11oclock;3-4 BACK RIGHT NE2oclock;5-6 FRONT RIGHT SE5oclock;7-8 FRONT LEFT SW7oclock. Odd rows:4 idle breathing poses followed by4 walking steps. Even rows:4 attack preparation release recover poses followed by4 spellcasting poses with small turquoise magical gesture. Identical identity costume proportions, each complete connected body. Evenly spaced isolated sprites with broad transparent gutters, same scale and floorbaseline. No clipping or overlap. No text labels ground shadow or gridlines. Genuine transparent background.",
+    "sha256": "5f1c806d639995d671eb98b9e1e97dd9ecb81f3c593b60f4c04e20c030bfc4c8",
+    "bytes": 2594643,
+    "generatedFile": "exec-9ad2d365-fff0-4c8d-9a3a-c3ea3d5e7283.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 1006,
+      "name": "쇠동",
+      "desc": "Korean iron-eating mythical bulgasari monster, stocky quadruped, rusty iron armored back, bronze claws, expressive tusked face. Four feet, no human rider",
+      "ref": "folklore/se-model-v1/spirit-1006.webp"
+    },
+    "prompt": "Use case: stylized-concept. Transparent tactical game sprite sheet matching reference: Korean iron-eating mythical bulgasari monster, stocky quadruped, rusty iron armored back, bronze claws, expressive tusked face. Four feet, no human rider. Exactly 8columns 8rows, 64 whole connected character poses. Each pair rows is one direction: rows1-2 NW11 back left;3-4 NE2 back right;5-6 SE5 front right;7-8 SW7 front left. Odd rows columns1-4 subtle idle,5-8 walking steps. Even rows columns1-4 attack windup strike recover,5-8 skill with small gold aura. Match anatomy and design faithfully, same scale everywhere, clear dark outline and limited warm colors. Wide transparent gutters around each complete sprite. No bodyparts, no clipping, no ground or labels.",
+    "sha256": "7658bb50ef6e64513696f385e50b0fd850822ad98cf8d58ba460e850919295f9",
+    "bytes": 3290461,
+    "generatedFile": "exec-f7178bec-42fa-403e-986a-83180ee0a419.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 25,
+      "name": "망실",
+      "desc": "Korean straw carrying-basket dokkaebi, large woven basket cylindrical torso, small face under basket rim, short wooden legs, thick straw rope arms, twigs and leaves on top",
+      "ref": "folklore/se-model-v1/spirit-25.webp"
+    },
+    "prompt": "Use case: stylized-concept. Transparent tactical game sprite sheet matching reference: Korean straw carrying-basket dokkaebi, large woven basket cylindrical torso, small face under basket rim, short wooden legs, thick straw rope arms, twigs and leaves on top. Exactly 8columns 8rows, 64 whole connected character poses. Each pair rows is one direction: rows1-2 NW11 back left;3-4 NE2 back right;5-6 SE5 front right;7-8 SW7 front left. Odd rows columns1-4 subtle idle,5-8 walking steps. Even rows columns1-4 attack windup strike recover,5-8 skill with small gold aura. Match anatomy and design faithfully, same scale everywhere, clear dark outline and limited warm colors. Wide transparent gutters around each complete sprite. No bodyparts, no clipping, no ground or labels.",
+    "sha256": "c036e0933eab7373bf941caec7167c1691b0b67990a5cd2ff54c4aedca6b8048",
+    "bytes": 3543062,
+    "generatedFile": "exec-e9f62147-fae5-43cb-a21d-6b2b5f1d1da1.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 47,
+      "name": "물자대",
+      "mode": "civil",
+      "ref": "job-models/se-v1/job-47.webp"
+    },
+    "prompt": "Use case: stylized-concept. Transparent Korean tactical RPG sprite sheet, identical wooden supply crate cart and brown dressed male porter from reference. Exact 8 columns by4 rows,32 connected complete sprites. Rows NW back left, NE back right, SE front right, SW front left. Each row first4 frames waiting breathing, last4 pushing cart walking (feet step, wheels rotate). Same scale, center and baseline, cart+porter always connected whole image. No combat weapons. Clear dark outlines limited colors like reference, wide transparent gutters, each sprite fully inside its cell. No text ground shadows or grid lines.",
+    "sha256": "7f1d6b8812004c00deae8d9cd29e363beb33d3750f14e07833bf2c498eefff32",
+    "bytes": 2314016,
+    "generatedFile": "exec-927f62ce-cff6-46e8-b293-c3ad11032bb6.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 48,
+      "name": "식량대",
+      "mode": "civil",
+      "ref": "job-models/se-v1/job-48.webp"
+    },
+    "prompt": "Use case: stylized-concept. Transparent Korean tactical RPG sprite sheet, identical straw grain sack cart and gray dressed male porter from reference. Exact 8 columns by4 rows,32 connected complete sprites. Rows NW back left, NE back right, SE front right, SW front left. Each row first4 frames waiting breathing, last4 pushing cart walking (feet step, wheels rotate). Same scale, center and baseline, cart+porter always connected whole image. No combat weapons. Clear dark outlines limited colors like reference, wide transparent gutters, each sprite fully inside its cell. No text ground shadows or grid lines.",
+    "sha256": "165c318b626ba13aa1c3da0ae063c3e7a5bfabeab3e14f3bc8508104e9fda072",
+    "bytes": 2348913,
+    "generatedFile": "exec-c2c32803-78e0-4422-973e-ccd0eeb6cbcb.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 51,
+      "name": "황제",
+      "mode": "civil",
+      "ref": "job-models/se-v1/job-51.webp"
+    },
+    "prompt": "Use case: stylized-concept. Transparent Korean tactical RPG sprite sheet: Korean king in burgundy royal robe and small gold crown, exactly reference. Exact8columns x4rows,32 whole connected sprites. Rows1 NW back left11;2 NE back right2;3 SE front right5;4 SW front left7. Every row first4 idle breathing, last4 slow WALK cycle with clear leg steps and slight robe movement. Empty hands no weapons, consistent face clothing size, crisp dark outlines limited colors. Same baseline, wide transparent empty gutters between all sprites, no text gridlines ground or shadows.",
+    "sha256": "c226972fcd545c85607853f5e5b4a0e85bdecd189373cd65405fd6fd679bc4cd",
+    "bytes": 1317636,
+    "generatedFile": "exec-4c891867-2aca-4619-8bac-88543add7bb9.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 52,
+      "name": "민중 여성",
+      "mode": "civil",
+      "ref": "job-models/se-v1/job-52.webp"
+    },
+    "prompt": "Use case: stylized-concept. Transparent Korean tactical RPG sprite sheet: Korean civilian woman cream jeogori muted brown long skirt, brown bun hair, exactly reference. Exact8columns x4rows,32 whole connected sprites. Rows1 NW back left11;2 NE back right2;3 SE front right5;4 SW front left7. Every row first4 idle breathing, last4 slow WALK cycle with clear leg steps and slight robe movement. Empty hands no weapons, consistent face clothing size, crisp dark outlines limited colors. Same baseline, wide transparent empty gutters between all sprites, no text gridlines ground or shadows.",
+    "sha256": "e7416672e08317abd629b1f94476c0818532636f318cdeeca746c907b1f707bd",
+    "bytes": 1147726,
+    "generatedFile": "exec-d39cea81-38c9-4710-b6e2-1b5a09f6e8dc.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 1052,
+      "name": "민중 남성",
+      "mode": "civil",
+      "ref": "job-models/se-v1/job-52.webp"
+    },
+    "prompt": "Use case: stylized-concept. Transparent Korean tactical RPG sprite sheet: Korean middle aged male civilian in muted gray long po coat, dark belt, dark simple headcloth, gray trousers, brown shoes. Upright dignified modest design, matching drawing style of reference woman but clearly man and no skirt. Exact8columns x4rows,32 whole connected sprites. Rows1 NW back left11;2 NE back right2;3 SE front right5;4 SW front left7. Every row first4 idle breathing, last4 slow WALK cycle with clear leg steps and slight robe movement. Empty hands no weapons, consistent face clothing size, crisp dark outlines limited colors. Same baseline, wide transparent empty gutters between all sprites, no text gridlines ground or shadows.",
+    "sha256": "ce3b265eb180f6dbc49db059263c79f440471b52b16c62646688d2218825c4b1",
+    "bytes": 1151031,
+    "generatedFile": "exec-ef397be6-14ce-4d88-950e-702ed5c06799.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 39,
+      "name": "서량기병",
+      "mode": "support",
+      "ref": "job-models/se-v1/job-39.webp"
+    },
+    "prompt": "Use case: stylized-concept. Transparent game sprite sheet same dark armored Korean cavalryman and brown horse as reference. Exact8columns x4rows=32whole sprites. Row1 facing NW backleft11, row2 NE backright2, row3 SE frontright5, row4 SW frontleft7. Each row first4: cavalryman DISMOUNTED standing empty handed with arms relaxed, no weapon/no scabbard/no horse, subtle breath cycle. Last4: same man MOUNTED horse+rider complete connected image, fatigued weakened loop with drooping shoulders head and slight sway, horse stays standing on four feet, lance held safely. Same costume helmet identity and proportions. Crisp dark outlines restrained palette, match reference. Wide transparent gutters, complete silhouettes, no clipping text gridlines or ground shadows.",
+    "sha256": "67e09bcd6c641f04356965302050b5951dfa7060e34e6792ed2a7ee7c2a84163",
+    "bytes": 1705471,
+    "generatedFile": "exec-e3162149-a8fc-4c26-9fe5-10a5410cc9f0.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 44,
+      "name": "제독",
+      "desc": "Korean naval commander in dark navy long coat and segmented bronze armor, black topknot cap, straight sword",
+      "ref": "job-models/se-v1/job-44.webp",
+      "mode": "patch",
+      "dir": "nw"
+    },
+    "prompt": "Use case: stylized-concept. Make ONE DIRECTION ONLY game animation sheet for Korean naval commander in dark navy long coat and segmented bronze armor, black topknot cap, straight sword. All16sprites face screen UPPER LEFT, 11o'clock, northwest, rear three-quarter view. Viewer sees BACK of head and BACK of clothes; nose, toes, fan/sword and gestures all point LEFT and slightly away. NEVER face right, NEVER show full front chest. 4columns x4rows: row1 idle4 frames, row2 walking4 steps, row3 attack4 stages, row4 restrained skill4 stages. Match reference clothing design size and dark outlined limitedpalette style. Complete body in each cell, broad transparent gutters, no text shadows floor grid. Transparent background.",
+    "sha256": "93cc38772b91d062f920f5152e359139524727c8bcf0d7545438624a6cbb8b82",
+    "bytes": 1462048,
+    "generatedFile": "exec-01c7d225-a591-44ab-9ac3-add7c207c277.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 45,
+      "name": "주술사",
+      "desc": "Korean female sorceress with burgundy ritual robes, black updo red ties, ritual straight sword. Restrained pale turquoise magic in skill only",
+      "ref": "job-models/se-v1/job-45.webp",
+      "mode": "patch",
+      "dir": "nw"
+    },
+    "prompt": "Use case: stylized-concept. Make ONE DIRECTION ONLY game animation sheet for Korean female sorceress with burgundy ritual robes, black updo red ties, ritual straight sword. Restrained pale turquoise magic in skill only. All16sprites face screen UPPER LEFT, 11o'clock, northwest, rear three-quarter view. Viewer sees BACK of head and BACK of clothes; nose, toes, fan/sword and gestures all point LEFT and slightly away. NEVER face right, NEVER show full front chest. 4columns x4rows: row1 idle4 frames, row2 walking4 steps, row3 attack4 stages, row4 restrained skill4 stages. Match reference clothing design size and dark outlined limitedpalette style. Complete body in each cell, broad transparent gutters, no text shadows floor grid. Transparent background.",
+    "sha256": "d7ab0a2856f19e04b55548d1c4c62931214def2c1d289066547dff56718eb49c",
+    "bytes": 1552989,
+    "generatedFile": "exec-fae4357d-a501-4fed-9433-906d81a3a1ee.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 46,
+      "name": "선인",
+      "desc": "elderly Korean immortal sage, white beard white robe black sash and white topknot, white folding fan. Restrained pale cyan magic for skill only",
+      "ref": "job-models/se-v1/job-46.webp",
+      "mode": "patch",
+      "dir": "nw"
+    },
+    "prompt": "Use case: stylized-concept. Make ONE DIRECTION ONLY game animation sheet for elderly Korean immortal sage, white beard white robe black sash and white topknot, white folding fan. Restrained pale cyan magic for skill only. All16sprites face screen UPPER LEFT, 11o'clock, northwest, rear three-quarter view. Viewer sees BACK of head and BACK of clothes; nose, toes, fan/sword and gestures all point LEFT and slightly away. NEVER face right, NEVER show full front chest. 4columns x4rows: row1 idle4 frames, row2 walking4 steps, row3 attack4 stages, row4 restrained skill4 stages. Match reference clothing design size and dark outlined limitedpalette style. Complete body in each cell, broad transparent gutters, no text shadows floor grid. Transparent background.",
+    "sha256": "0e018261ab8c3c361be94d6367c2624935abb057f327d98afb0848d090c62961",
+    "bytes": 1978573,
+    "generatedFile": "exec-7ac36d50-7c21-4a24-8ad1-885c377a38f7.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 39,
+      "name": "서량기병",
+      "desc": "dark armored Korean cavalry lancer, dark pointed helmet, navy and bronze lamellar armor, brown horse. Horse and rider one intact figure",
+      "ref": "job-models/se-v1/job-39.webp",
+      "mode": "patch",
+      "dir": "se"
+    },
+    "prompt": "Use case: stylized-concept. One-direction animation for dark armored Korean cavalry lancer, dark pointed helmet, navy and bronze lamellar armor, brown horse. Horse and rider one intact figure. Every sprite faces LOWER RIGHT5oclock FRONT RIGHT: face and chest visible, nose toes horse head and weapon point RIGHT. 4columns x4rows exactly16sprites: row1 idle4 frames;row2 walk4 stages;row3 attack4 stages;row4 skill4 stages. Face and torso remain in same direction during action, no turnarounds. Reference costume proportions colors preserved. Whole connected body horse and rider together, strong dark outline limited colors, transparent background. LARGE transparent margins ALL sides including bottom; all feet and weapons fully visible. No labels, floor, shadows or grid.",
+    "sha256": "e71986f1465fc419487b873310236cb95ead053a38ce41bcfd697a99920d30da",
+    "bytes": 2349685,
+    "generatedFile": "exec-7ea2cb86-5d8d-4f0e-bab9-57bba8b45058.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 40,
+      "name": "유민군",
+      "desc": "Korean peasant militiaman, white short jeogori, brown trousers, black headband, wooden club",
+      "ref": "job-models/se-v1/job-40.webp",
+      "mode": "patch",
+      "dir": "sw"
+    },
+    "prompt": "Use case: stylized-concept. One-direction animation for Korean peasant militiaman, white short jeogori, brown trousers, black headband, wooden club. Every sprite faces LOWER LEFT7oclock FRONT LEFT: face and chest visible, nose toes weapon point LEFT. 4columns x4rows exactly16sprites: row1 idle4 frames;row2 walk4 stages;row3 attack4 stages;row4 skill4 stages. Face and torso remain in same direction during action, no turnarounds. Reference costume proportions colors preserved. Whole connected body, strong dark outline limited colors, transparent background. LARGE transparent margins ALL sides including bottom; all feet and weapons fully visible. No labels, floor, shadows or grid.",
+    "sha256": "67a78a22d29e4af85e64b394533b73f0762e87f5b0bc9ce0f6f5bf67a19fc038",
+    "bytes": 1141760,
+    "generatedFile": "exec-6c08a74a-ab1c-4e68-88ea-348e47ca49ff.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 41,
+      "name": "해적",
+      "desc": "Korean coastal female pirate swordswoman, black ponytail, dark teal wrap tunic, brown trousers, curved short sword",
+      "ref": "job-models/se-v1/job-41.webp",
+      "mode": "patch",
+      "dir": "nw"
+    },
+    "prompt": "Use case: stylized-concept. One-direction animation for Korean coastal female pirate swordswoman, black ponytail, dark teal wrap tunic, brown trousers, curved short sword. Every sprite faces UPPER LEFT11oclock BACK LEFT: back of head and clothes, nose toes weapon point left and away. 4columns x4rows exactly16sprites: row1 idle4 frames;row2 walk4 stages;row3 attack4 stages;row4 skill4 stages. Face and torso remain in same direction during action, no turnarounds. Reference costume proportions colors preserved. Whole connected body, strong dark outline limited colors, transparent background. LARGE transparent margins ALL sides including bottom; all feet and weapons fully visible. No labels, floor, shadows or grid.",
+    "sha256": "9f1f89ba68961e43537e8f802c147d707392012cb4255c9db09de5e3cdae4c94",
+    "bytes": 1328488,
+    "generatedFile": "exec-ee2e2ba4-ba48-4114-9067-27c9ea1dc974.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 44,
+      "name": "제독",
+      "desc": "Korean naval commander in dark navy long coat and segmented bronze armor, black topknot cap, straight sword",
+      "ref": "job-models/se-v1/job-44.webp",
+      "mode": "patch",
+      "dir": "sw"
+    },
+    "prompt": "Use case: stylized-concept. Korean naval commander in dark navy long coat and segmented bronze armor, black topknot cap, straight sword. ONE DIRECTION ONLY all face LOWER LEFT7oclock front three-quarter, face/chest visible, all gestures and nose point LEFT. 4columns x4rows16 full-body sprites: idle row1, walk row2, attack row3, restrained skill row4. 4poses per action. Use reference costume colors proportions, clear outline miniature RPG style. Each sprite small inside large transparent cell with generous empty gutter on all sides. NO clipped feet or weapon or effects; all full silhouettes safely inside canvas margins INCLUDING bottomrow. No ground shadow text. Transparent background.",
+    "sha256": "fa7f07692d8a9a1d4f0ecd8cf802a0f47c650d1928dcf07dc36f8ac0c70cc1a1",
+    "bytes": 1328272,
+    "generatedFile": "exec-2ebf0f13-8c5e-4410-a0af-badd04da9c12.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 45,
+      "name": "주술사",
+      "desc": "Korean female sorceress with burgundy ritual robes, black updo red ties, ritual straight sword. Restrained pale turquoise magic in skill only",
+      "ref": "job-models/se-v1/job-45.webp",
+      "mode": "patch",
+      "dir": "sw"
+    },
+    "prompt": "Use case: stylized-concept. Korean female sorceress with burgundy ritual robes, black updo red ties, ritual straight sword. Restrained pale turquoise magic in skill only. ONE DIRECTION ONLY all face LOWER LEFT7oclock front three-quarter, face/chest visible, all gestures and nose point LEFT. 4columns x4rows16 full-body sprites: idle row1, walk row2, attack row3, restrained skill row4. 4poses per action. Use reference costume colors proportions, clear outline miniature RPG style. Each sprite small inside large transparent cell with generous empty gutter on all sides. NO clipped feet or weapon or effects; all full silhouettes safely inside canvas margins INCLUDING bottomrow. No ground shadow text. Transparent background.",
+    "sha256": "ec12691e5e4ca682b1bfb7f3058a7185f869c3884df9fb0b3982a2a5ee9ca10d",
+    "bytes": 1702925,
+    "generatedFile": "exec-83ebe9e6-58ca-4226-8c8c-ccb4115578b7.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 46,
+      "name": "선인",
+      "desc": "elderly Korean immortal sage, white beard white robe black sash and white topknot, white folding fan. Restrained pale cyan magic for skill only",
+      "ref": "job-models/se-v1/job-46.webp",
+      "mode": "patch",
+      "dir": "sw"
+    },
+    "prompt": "Use case: stylized-concept. elderly Korean immortal sage, white beard white robe black sash and white topknot, white folding fan. Restrained pale cyan magic for skill only. ONE DIRECTION ONLY all face LOWER LEFT7oclock front three-quarter, face/chest visible, all gestures and nose point LEFT. 4columns x4rows16 full-body sprites: idle row1, walk row2, attack row3, restrained skill row4. 4poses per action. Use reference costume colors proportions, clear outline miniature RPG style. Each sprite small inside large transparent cell with generous empty gutter on all sides. NO clipped feet or weapon or effects; all full silhouettes safely inside canvas margins INCLUDING bottomrow. No ground shadow text. Transparent background.",
+    "sha256": "12c8ceb9844b51fd2e4ff14017c1ab17677767079cb1e0cf4b2c94379cc76a43",
+    "bytes": 2191687,
+    "generatedFile": "exec-6264a519-48f1-4a80-88be-ad758ff28fda.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 48,
+      "name": "식량대",
+      "mode": "patch",
+      "dir": "nw",
+      "rows": 2,
+      "ref": "job-models/se-v1/job-48.webp"
+    },
+    "prompt": "Use case: stylized-concept.8sprites 4columns2rows all facing UPPER LEFT11oclock BACK LEFT northwest. Same gray clothed Korean male porter pulling straw grain cart as reference. Porter stands LEFT of cart, his nose and toes point LEFT and away, see back of his tunic and headcloth. Cart trails to his LOWER RIGHT. Row1 four idle breath poses; row2 four walking steps. Whole porter+cart connected intact. Preserve reference costume cart and sacks. Crisp outlined miniature tactical RPG, large transparent gutters and canvas margin no clipped feet, no text shadow ground or grid. Transparent background.",
+    "sha256": "e0cc0e8e660601fdb44efd40780322bc14615614ad255c0475ff163a3d945bca",
+    "bytes": 1642216,
+    "generatedFile": "exec-2da505bf-23ec-4266-913e-0c1c654f3240.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 46,
+      "name": "선인",
+      "desc": "elderly Korean immortal sage, white beard white robe black sash and white topknot, white folding fan. Restrained pale cyan magic for skill only",
+      "ref": "job-models/se-v1/job-46.webp",
+      "mode": "patch",
+      "dir": "ne"
+    },
+    "prompt": "Use case: stylized-concept. Same white bearded white robed Korean immortal with fan from reference. EXACT16 complete sprites in4columns4rows. ALL face UPPER RIGHT2oclock back right, back visible. Firstrow4idle,secondrow4walking,thirdrow4fanattack,fourthrow4spellcasting. Magic is a TINY cyan glow immediately above hand ONLY, NO arcs, NO trails, NO sweeping effects. Every sprite fits comfortably inside its cell with very wide transparent margins around its entire fullbody and fan. Same size and style. No cropping, no adjacent fragments, no text floor grid or shadow. True transparent background.",
+    "sha256": "0c6ba06a57221218f01176ff0f5b6c7ccf587798eb833ea9f77de7e77b7f3a1c",
+    "bytes": 1415264,
+    "generatedFile": "exec-3063dcef-7afc-4f7c-bd59-629630fe1e5f.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 46,
+      "name": "선인",
+      "desc": "elderly Korean immortal sage, white beard white robe black sash and white topknot, white folding fan. Restrained pale cyan magic for skill only",
+      "ref": "job-models/se-v1/job-46.webp",
+      "mode": "patch",
+      "dir": "se"
+    },
+    "prompt": "Use case: stylized-concept. Same white bearded white robed Korean immortal with fan from reference. EXACT16 complete sprites in4columns4rows. ALL face LOWER RIGHT5oclock front right, face visible. Firstrow4idle,secondrow4walking,thirdrow4fanattack,fourthrow4spellcasting. Magic is a TINY cyan glow immediately above hand ONLY, NO arcs, NO trails, NO sweeping effects. Every sprite fits comfortably inside its cell with very wide transparent margins around its entire fullbody and fan. Same size and style. No cropping, no adjacent fragments, no text floor grid or shadow. True transparent background.",
+    "sha256": "21ab6e49ec24dee62b0fa990236e2ab2af778da8b71173bff8e80eb19dcf53f5",
+    "bytes": 1490320,
+    "generatedFile": "exec-c4767741-b79e-4475-8cb1-7f467713eae7.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 39,
+      "name": "서량기병",
+      "desc": "dark armored Korean cavalry lancer, dark pointed helmet, navy and bronze lamellar armor, brown horse. Horse and rider one intact figure",
+      "ref": "job-models/se-v1/job-39.webp",
+      "mode": "patch",
+      "dir": "se"
+    },
+    "prompt": "Use case: stylized-concept. dark armored Korean cavalry lancer, dark pointed helmet, navy and bronze lamellar armor, brown horse. Horse and rider one intact figure. Horse+rider LARGE, lance SHORT and held CLOSE to body; never long horizontal lance; ATTACK is small forward jab, NOT horse leap. Horse height and body constant, feet stay baseline. All16sprites face LOWER RIGHT5oclock front right, face visible, nose weapon toes to RIGHT.4columns4rows:4idle,4walk,4attack,4skill. Keep near identical anatomy size outfit from reference. Complete connected sprites, compact silhouettes, generous transparent margins includingbottom, no floor shadow text. Transparent background.",
+    "sha256": "173e8148794ab3d01678b06dab6b7cae04bc89bbe8365b202f8314e2630db62d",
+    "bytes": 2349474,
+    "generatedFile": "exec-3d9e1ac8-0095-48e7-ae39-bff7b5ea1bde.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 44,
+      "name": "제독",
+      "desc": "Korean naval commander in dark navy long coat and segmented bronze armor, black topknot cap, straight sword",
+      "ref": "job-models/se-v1/job-44.webp",
+      "mode": "patch",
+      "dir": "ne"
+    },
+    "prompt": "Use case: stylized-concept. Korean naval commander in dark navy long coat and segmented bronze armor, black topknot cap, straight sword. No magic swooshes or large effects. Skill gesture is a small blue glow in hand only. All16sprites face UPPER RIGHT2oclock back right, back visible, nose weapon toes to RIGHT.4columns4rows:4idle,4walk,4attack,4skill. Keep near identical anatomy size outfit from reference. Complete connected sprites, compact silhouettes, generous transparent margins includingbottom, no floor shadow text. Transparent background.",
+    "sha256": "c6426e4bbed4482822973e43a91b967a643bc3b64a3e9f8d9558937fda7887dd",
+    "bytes": 1361794,
+    "generatedFile": "exec-7bab02b9-7ee6-43bb-86e8-a9368405cda2.png",
+    "cleanup": "removed after WebP validation"
+  },
+  {
+    "spec": {
+      "id": 44,
+      "name": "제독",
+      "desc": "Korean naval commander in dark navy long coat and segmented bronze armor, black topknot cap, straight sword",
+      "ref": "job-models/se-v1/job-44.webp",
+      "mode": "patch",
+      "dir": "se"
+    },
+    "prompt": "Use case: stylized-concept. Korean naval commander in dark navy long coat and segmented bronze armor, black topknot cap, straight sword. No magic swooshes or large effects. Skill gesture is a small blue glow in hand only. All16sprites face LOWER RIGHT5oclock front right, face visible, nose weapon toes to RIGHT.4columns4rows:4idle,4walk,4attack,4skill. Keep near identical anatomy size outfit from reference. Complete connected sprites, compact silhouettes, generous transparent margins includingbottom, no floor shadow text. Transparent background.",
+    "sha256": "060c849d647fa87a7095db38d7104cbf1cc0190c81e7fdbeb5359380292fedad",
+    "bytes": 1295413,
+    "generatedFile": "exec-62df3f6b-f48b-40ad-9d66-eabbb27c6328.png",
+    "cleanup": "removed after WebP validation"
+  }
+]

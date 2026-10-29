@@ -1,0 +1,242 @@
+[
+  {
+    "companionId": 18,
+    "id": 2018,
+    "name": "몽당",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 2018,
+        "name": "몽당",
+        "combat": "/images/folklore/mongdang-motion-v2",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+        ]
+      }
+    ]
+  },
+  {
+    "companionId": 24,
+    "id": 2024,
+    "name": "사금",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 2024,
+        "name": "사금",
+        "combat": "/images/folklore/sageum-motion-v2",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+        ]
+      }
+    ]
+  },
+  {
+    "companionId": 25,
+    "id": 2025,
+    "name": "망실",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 2025,
+        "name": "망실",
+        "combat": "/images/special-motion-v1/25/combat",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+        ]
+      }
+    ]
+  },
+  {
+    "companionId": 1001,
+    "id": 3001,
+    "name": "불씨",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 3001,
+        "name": "불씨",
+        "combat": "/images/folklore/bulssi-motion-v2",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+        ]
+      }
+    ]
+  },
+  {
+    "companionId": 1002,
+    "id": 3002,
+    "name": "쿵돌",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 3002,
+        "name": "쿵돌",
+        "combat": "/images/folklore/kungdol-motion-v2",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+        ]
+      }
+    ]
+  },
+  {
+    "companionId": 1003,
+    "id": 3003,
+    "name": "여울",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 3003,
+        "name": "여울",
+        "combat": "/images/folklore/yeoul-motion-v2",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+        ]
+      }
+    ]
+  },
+  {
+    "companionId": 1004,
+    "id": 3004,
+    "name": "물결",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 3004,
+        "name": "물결",
+        "combat": "/images/folklore/mulgyeol-motion-v2",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+        ]
+      }
+    ]
+  },
+  {
+    "companionId": 1005,
+    "id": 3005,
+    "name": "소담",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 3005,
+        "name": "소담",
+        "combat": "/images/folklore/sodam-motion-v2",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+        ]
+      }
+    ]
+  },
+  {
+    "companionId": 1006,
+    "id": 3006,
+    "name": "쇠동",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 3006,
+        "name": "쇠동",
+        "combat": "/images/special-motion-v1/1006/combat",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+        ]
+      }
+    ]
+  },
+  {
+    "companionId": 1007,
+    "id": 3007,
+    "name": "길목",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 3007,
+        "name": "길목",
+        "combat": "/images/folklore/gilmok-motion-v2",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+        ]
+      }
+    ]
+  }
+]

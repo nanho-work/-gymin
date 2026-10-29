@@ -1,0 +1,337 @@
+[
+  {
+    "id": 39,
+    "name": "서량기병",
+    "cavalry": true,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 39,
+        "name": "서량기병",
+        "combat": "/images/special-motion-v1/39/combat",
+        "scenario": "/images/special-motion-v1/39/scenario",
+        "weakened": "/images/special-motion-v1/39/weakened",
+        "notes": [
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "name": "유민군",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 40,
+        "name": "유민군",
+        "combat": "/images/special-motion-v1/40/combat",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 41,
+    "name": "해적",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 41,
+        "name": "해적",
+        "combat": "/images/special-motion-v1/41/combat",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 44,
+    "name": "제독",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 44,
+        "name": "제독",
+        "combat": "/images/special-motion-v1/44/combat",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "name": "주술사",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 45,
+        "name": "주술사",
+        "combat": "/images/special-motion-v1/45/combat",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 46,
+    "name": "선인",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 46,
+        "name": "선인",
+        "combat": "/images/special-motion-v1/46/combat",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 47,
+    "name": "물자대",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동"
+    ],
+    "stages": [
+      {
+        "id": 47,
+        "name": "물자대",
+        "combat": "/images/special-motion-v1/47/combat",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "name": "식량대",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동"
+    ],
+    "stages": [
+      {
+        "id": 48,
+        "name": "식량대",
+        "combat": "/images/special-motion-v1/48/combat",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 51,
+    "name": "황제",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동"
+    ],
+    "stages": [
+      {
+        "id": 51,
+        "name": "황제",
+        "combat": "/images/special-motion-v1/51/combat",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 52,
+    "name": "민중 · 여성",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동"
+    ],
+    "stages": [
+      {
+        "id": 52,
+        "name": "민중 · 여성",
+        "combat": "/images/special-motion-v1/52/combat",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 1052,
+    "name": "민중 · 남성",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동"
+    ],
+    "stages": [
+      {
+        "id": 1052,
+        "name": "민중 · 남성",
+        "combat": "/images/special-motion-v1/1052/combat",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 42,
+    "name": "쇠동 부대",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 42,
+        "name": "쇠동 부대",
+        "combat": "/images/special-motion-v1/1006/combat",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "원본 병과 #42의 수치·이동은 유지. 외형은 쇠동 설화 동료 모델로 대체."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "name": "쿵돌 부대",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 43,
+        "name": "쿵돌 부대",
+        "combat": "/images/folklore/kungdol-motion-v2",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "원본 병과 #43의 수치·이동은 유지. 외형은 쿵돌 설화 동료 모델로 대체."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 49,
+    "name": "길목 부대",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 49,
+        "name": "길목 부대",
+        "combat": "/images/folklore/gilmok-motion-v2",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "원본 병과 #49의 수치·이동은 유지. 외형은 길목 설화 동료 모델로 대체."
+        ]
+      }
+    ]
+  },
+  {
+    "id": 50,
+    "name": "사금 부대",
+    "cavalry": false,
+    "actions": [
+      "대기",
+      "이동",
+      "공격",
+      "스킬"
+    ],
+    "stages": [
+      {
+        "id": 50,
+        "name": "사금 부대",
+        "combat": "/images/folklore/sageum-motion-v2",
+        "scenario": "",
+        "weakened": "",
+        "notes": [
+          "원본 병과 #50의 수치·이동은 유지. 외형은 사금 설화 동료 모델로 대체."
+        ]
+      }
+    ]
+  }
+]

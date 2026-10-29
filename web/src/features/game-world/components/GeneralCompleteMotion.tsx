@@ -1,16 +1,18 @@
 "use client";
 import {useEffect,useState} from 'react';
 import data from '../data/motion-pilots.json';
+import monarchs from '../data/monarch-motions.json';
 
 import s from './playable.module.css';
 const dirs=[['nw','11시'],['ne','2시'],['se','5시'],['sw','7시']];
 const actions=['대기','이동','공격','스킬'];
-type Props={name:string;originalName:string;portrait:string;jobId:number};
-export function GeneralCompleteMotion({name,originalName,portrait,jobId}:Props){
- const family=data.find(x=>x.stages.some(stage=>stage.id===jobId));
+type Props={name:string;originalName:string;portrait:string;jobId:number;originalId?:number};
+export function GeneralCompleteMotion({name,originalName,portrait,jobId,originalId}:Props){
+ const monarch=monarchs.find(x=>originalId!==undefined&&x.originalIds.includes(originalId));
+ const family=monarch??data.find(x=>x.stages.some(stage=>stage.id===jobId));
  const ranks=family!.stages;
  const cavalry=jobId===0||!!family?.cavalry;
- const [rank,setRank]=useState(Math.max(0,ranks.findIndex(x=>x.id===jobId))),[mode,setMode]=useState('combat'),[dir,setDir]=useState('se'),[action,setAction]=useState(0),[frame,setFrame]=useState(0),[playing,setPlaying]=useState(false);
+ const [rank,setRank]=useState(monarch?0:Math.max(0,ranks.findIndex(x=>x.id===jobId))),[mode,setMode]=useState('combat'),[dir,setDir]=useState('se'),[action,setAction]=useState(0),[frame,setFrame]=useState(0),[playing,setPlaying]=useState(false);
  const current=ranks[rank],a=mode==='combat'?action:0;
  const root=mode==='scenario'?current.scenario:mode==='weak'?current.weakened:current.combat;
  const ms=mode==='scenario'?360:mode==='weak'?300:[320,170,190,240][a];
@@ -24,7 +26,7 @@ export function GeneralCompleteMotion({name,originalName,portrait,jobId}:Props){
  <div className={s.controls} role="group" aria-label="승급">{ranks.map((x,i)=><button key={x.id} aria-pressed={rank===i} onClick={()=>{setRank(i);reset()}}>{x.name}</button>)}</div>
  <details><summary>모션 정보 · 프레임 확인</summary>
  <div className={s.controls}><button onClick={()=>{setPlaying(false);setFrame(f=>(f+3)%4)}}>이전 프레임</button><button onClick={()=>{setPlaying(false);setFrame(f=>(f+1)%4)}}>다음 프레임</button><small>{frame+1} / 4</small></div>
- <p>{jobId===0?'왕건 전용 모델':'병과 공통 대표 모델'} · 승급별 고정 외형. 개별 장비는 외형에 반영하지 않습니다. 서 있기는 무기 없는 시나리오 모습이며, 쇠약은 실제 상태 판정과 별개인 시각 미리보기입니다.</p>
+ <p>{monarch?`${monarch.name} 전용 모델`:'병과 공통 대표 모델'} · 승급별 고정 외형. 개별 장비는 외형에 반영하지 않습니다. 서 있기는 무기 없는 시나리오 모습이며, 쇠약은 실제 상태 판정과 별개인 시각 미리보기입니다.</p>
  <ul>{current.notes.map(note=><li key={note}>{note}</li>)}</ul></details>
  </section>;
 }

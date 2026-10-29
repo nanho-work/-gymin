@@ -1,0 +1,129 @@
+[
+  {
+    "name": "왕건",
+    "originalIds": [
+      0
+    ],
+    "cavalry": true,
+    "stages": [
+      {
+        "id": 0,
+        "name": "군웅 · 왕건",
+        "combat": "/images/playable/monarch-motion-v1/wang-geon/0/combat",
+        "scenario": "/images/playable/monarch-motion-v1/wang-geon/0/scenario",
+        "weakened": "/images/playable/monarch-motion-v1/wang-geon/0/weakened",
+        "notes": [
+          "승인된 군주 외형 기반 완성 프레임 모션 초안.",
+          "개별 장비가 아닌 승급 고정 외형 세트. 하마는 빈손, 쇠약은 탑승 전용."
+        ]
+      },
+      {
+        "id": 1,
+        "name": "영웅 · 왕건",
+        "combat": "/images/playable/monarch-motion-v1/wang-geon/1/combat",
+        "scenario": "/images/playable/monarch-motion-v1/wang-geon/1/scenario",
+        "weakened": "/images/playable/monarch-motion-v1/wang-geon/1/weakened",
+        "notes": [
+          "승인된 군주 외형 기반 완성 프레임 모션 초안.",
+          "개별 장비가 아닌 승급 고정 외형 세트. 하마는 빈손, 쇠약은 탑승 전용."
+        ]
+      },
+      {
+        "id": 2,
+        "name": "패왕 · 왕건",
+        "combat": "/images/playable/monarch-motion-v1/wang-geon/2/combat",
+        "scenario": "/images/playable/monarch-motion-v1/wang-geon/2/scenario",
+        "weakened": "/images/playable/monarch-motion-v1/wang-geon/2/weakened",
+        "notes": [
+          "승인된 군주 외형 기반 완성 프레임 모션 초안.",
+          "개별 장비가 아닌 승급 고정 외형 세트. 하마는 빈손, 쇠약은 탑승 전용."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "궁예",
+    "originalIds": [
+      127
+    ],
+    "cavalry": true,
+    "stages": [
+      {
+        "id": 0,
+        "name": "군웅 · 궁예",
+        "combat": "/images/playable/monarch-motion-v1/gung-ye/0/combat",
+        "scenario": "/images/playable/monarch-motion-v1/gung-ye/0/scenario",
+        "weakened": "/images/playable/monarch-motion-v1/gung-ye/0/weakened",
+        "notes": [
+          "승인된 군주 외형 기반 완성 프레임 모션 초안.",
+          "개별 장비가 아닌 승급 고정 외형 세트. 하마는 빈손, 쇠약은 탑승 전용."
+        ]
+      },
+      {
+        "id": 1,
+        "name": "영웅 · 궁예",
+        "combat": "/images/playable/monarch-motion-v1/gung-ye/1/combat",
+        "scenario": "/images/playable/monarch-motion-v1/gung-ye/1/scenario",
+        "weakened": "/images/playable/monarch-motion-v1/gung-ye/1/weakened",
+        "notes": [
+          "승인된 군주 외형 기반 완성 프레임 모션 초안.",
+          "개별 장비가 아닌 승급 고정 외형 세트. 하마는 빈손, 쇠약은 탑승 전용."
+        ]
+      },
+      {
+        "id": 2,
+        "name": "패왕 · 궁예",
+        "combat": "/images/playable/monarch-motion-v1/gung-ye/2/combat",
+        "scenario": "/images/playable/monarch-motion-v1/gung-ye/2/scenario",
+        "weakened": "/images/playable/monarch-motion-v1/gung-ye/2/weakened",
+        "notes": [
+          "승인된 군주 외형 기반 완성 프레임 모션 초안.",
+          "개별 장비가 아닌 승급 고정 외형 세트. 하마는 빈손, 쇠약은 탑승 전용."
+        ]
+      }
+    ]
+  },
+  {
+    "name": "견훤",
+    "originalIds": [
+      32,
+      163
+    ],
+    "cavalry": true,
+    "stages": [
+      {
+        "id": 0,
+        "name": "군웅 · 견훤",
+        "combat": "/images/playable/monarch-motion-v1/gyeon-hwon/0/combat",
+        "scenario": "/images/playable/monarch-motion-v1/gyeon-hwon/0/scenario",
+        "weakened": "/images/playable/monarch-motion-v1/gyeon-hwon/0/weakened",
+        "notes": [
+          "승인된 군주 외형 기반 완성 프레임 모션 초안.",
+          "개별 장비가 아닌 승급 고정 외형 세트. 하마는 빈손, 쇠약은 탑승 전용."
+        ]
+      },
+      {
+        "id": 1,
+        "name": "영웅 · 견훤",
+        "combat": "/images/playable/monarch-motion-v1/gyeon-hwon/1/combat",
+        "scenario": "/images/playable/monarch-motion-v1/gyeon-hwon/1/scenario",
+        "weakened": "/images/playable/monarch-motion-v1/gyeon-hwon/1/weakened",
+        "notes": [
+          "승인된 군주 외형 기반 완성 프레임 모션 초안.",
+          "개별 장비가 아닌 승급 고정 외형 세트. 하마는 빈손, 쇠약은 탑승 전용."
+        ]
+      },
+      {
+        "id": 2,
+        "name": "패왕 · 견훤",
+        "combat": "/images/playable/monarch-motion-v1/gyeon-hwon/2/combat",
+        "scenario": "/images/playable/monarch-motion-v1/gyeon-hwon/2/scenario",
+        "weakened": "/images/playable/monarch-motion-v1/gyeon-hwon/2/weakened",
+        "notes": [
+          "승인된 군주 외형 기반 완성 프레임 모션 초안.",
+          "개별 장비가 아닌 승급 고정 외형 세트. 하마는 빈손, 쇠약은 탑승 전용."
+        ]
+      }
+    ]
+  }
+]

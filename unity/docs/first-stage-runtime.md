@@ -25,11 +25,12 @@ node scripts/game/export-unity-board.mjs
 node scripts/game/export-unity-units.mjs
 node scripts/game/export-unity-motion.mjs
 node scripts/game/export-unity-effects.mjs
+node scripts/game/export-unity-actions.mjs
 node scripts/game/build-unity-native.mjs
 node scripts/game/unity/check.mjs --compile-unity
 ```
 
-그다음 Game.unity에서 Play → 새 게임 → 도입 → 출진 준비 → 전장 진입. 전투교본 질문에서 아니오를 선택하면 일반 전투로 진행한다. 기본 조작은 왼쪽 보드의 아군과 파란 칸을 선택하고 오른쪽 공격/대기/취소/턴 종료를 사용하는 방식이다.
+그다음 Game.unity에서 Play → 새 게임 → 도입 → 출진 준비 → 전장 진입. 전투교본 질문에서 아니오를 선택하면 일반 전투로 진행한다. 전장은 전체 화면이다. 부대를 선택하고 지도 위 공격/스킬/도구/대기 버튼을 사용한다. 스킬/도구는 목록 선택 → 지도 대상 선택 → 사용 확정으로 진행한다.
 
 네이티브 실행파일과 복사한 원본 데이터/음원은 StreamingAssets/SanhaNative에 생성하며 Git에서 제외한다. Library/Temp도 커밋하지 않는다. 새 환경은 위 생성 명령이 필요하다. 기존 원본 Swift 앱·안정본·사용자 저장은 수정하지 않는다.
 
@@ -44,5 +45,13 @@ node scripts/game/unity/check.mjs --compile-unity
 
 - 기존 엔진의 원본 명령90·92는 승리 뒤 미복원 명령으로 남는다. 결과 화면과 기록에 그대로 노출한다. 전체 원본 복원이 완료됐다고 표시하지 않는다.
 - 전투교본의 일부 상세 창은 안내 텍스트로 연결했다. 원본 Windows 메뉴/UI를 그대로 재현한 상태가 아니다. 새 프로필의 보상 없는 교본 흐름만 현재 어댑터 범위다.
-- 수동 책략/도구 선택 UI, 상세 상태 아이콘·쇠약 포즈, 편성/장비, 세이브, 후일담/다음 스테이지 전이는 후속이다. 캐릭터의 장비/병과 수치 판정은 기존 엔진을 사용한다.
+- 상세 상태 아이콘·쇠약 포즈, 편성/장비, 세이브, 후일담/다음 스테이지 전이는 후속이다. 캐릭터의 장비/병과 수치 판정은 기존 엔진을 사용한다.
 - 현재 실행 백엔드는 macOS 전용이다. 모바일/Windows 배포에는 C# 이식 또는 해당 플랫폼용 백엔드가 필요하다. 기존 MovementRange/ManualMoveState는 C# 이동 규칙의 기반이며 현재 실전 판정은 네이티브 엔진이다. 독립 앱 빌드는 아직 검증하지 않았다.
+
+## 2026-10-31 화면 변경
+
+전체 화면 전장·반응형 HUD·터치 입력·포함 한글 폰트·UTF-8 통신으로 변경했다. 기존 메뉴/마우스 안내와 아래 과거 실행 기록은 당시 상태이며, 현재 검사 범위는 [mobile-battle-hud.md](mobile-battle-hud.md) 참조. 이번 변경에서 Unity 실행은 사용자에게 맡기고 코드 검사/컴파일만 진행했다.
+
+## 스킬·도구 선택 연결
+
+지도 위 스킬/도구 버튼·현재 이름/설명·MP/수량·대상 및 범위 미리보기·사용 확정이 연결됐다. [조작과 검사 범위](battle-actions.md) 참조. 이 변경은 Unity 실행 검증과 구분하며, 위 과거 batch Play 기록을 현재 UI의 실행 증거로 사용하지 않는다.

@@ -1,0 +1,19 @@
+{
+  "date": "2026-10-31",
+  "scope": "code and compile verification only; Unity Editor/Play/device tests reserved for user",
+  "checks": [
+    "Node 5",
+    "pure camera/gesture and existing core checks",
+    "Korean UTF-8 process round trip with parent default codepage 20127",
+    "Runtime/Editor compilation against installed Unity DLLs",
+    "CoreText Hangul glyph coverage 11172/11172"
+  ],
+  "fontBytes": 2054744,
+  "sha256": {
+    "unity/Assets/Game/Features/Battle/Presentation/BattleBoardView.cs": "a4a6bb0862141854b4198fb182b02ee21a3906f039517197ba175a7fd31eef92",
+    "unity/Assets/Game/Features/Battle/Presentation/BattleHud.cs": "6dd826cf064748f18390962d56e7b7f1f1728e312a9bf130ddd299c4e0fba03c",
+    "unity/Assets/Game/Features/Battle/Infrastructure/BattleProcess.cs": "a1c655229f86cefa6a8d3bebb048be3d16a4a8c5ad2938122037e7ae602c01e5",
+    "unity/Assets/Game/Shared/UI/GameFont.cs": "2e7891a28a0d0a4d9ac58b169e4ecb048c3576f8c19a693dab093f4fe9c86c8c",
+    "unity/Assets/Resources/Fonts/NanumGothic-Regular.ttf": "76f45ef4a6bcff344c837c95a7dcc26e017e38b5846d5ae0cdcb5b86be2e2d31"
+  }
+}

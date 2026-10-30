@@ -21,10 +21,10 @@ namespace Sanha.Scenario
             var initial=Array.Find(loaded.stages,x=>x.id==settings.initialStageId);
             if(initial==null) throw new InvalidOperationException("Unknown initialStageId: "+settings.initialStageId);
             cursor.Load(initial);
-            font=Font.CreateDynamicFontFromOSFont(settings.fontNames,settings.fontSize);
+            font=GameFont.Load(settings.fontResource);
             data=loaded;
         }
-        void OnDestroy() { if(font!=null) Destroy(font); }
+
         void OnGUI()
         {
             if(data==null) return;

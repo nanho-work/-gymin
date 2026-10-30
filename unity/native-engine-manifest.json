@@ -273,6 +273,10 @@
     {
       "file": "SpellPresentation.swift",
       "sha256": "c5f9b633348c3fb180faf2f40747a6da26144f06a3612b9532edcd4f7ac8fbfd"
+    },
+    {
+      "file": "scripts/game/unity/native/BattleFeedback.swift",
+      "sha256": "e0e6c9c74039e43c081e983b9e5f5c6ddf81f663657bf34ef7f2ebd328da5420"
     }
   ],
   "cinemaDataExtraction": "CampaignCinemaActor/Scene definitions only; no Cocoa UI",

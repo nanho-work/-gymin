@@ -89,7 +89,7 @@ node scripts/game/unity/editor-check.mjs
 
 상대 경로 환경변수는 명령 실행 디렉터리를 기준으로 해석한다. 개인 환경 파일은 Git에 넣지 않는다. 게임에 번들되는 Resources JSON은 비밀 저장소가 아니다. 현재 서버/API가 없으므로 빈 API URL·가짜 키·미사용 환경별 프로필을 만들지 않는다. 이후 서버가 생기면 공개 endpoint 설정과 서버 비밀을 분리하고, 런타임 로더 한 곳에서 프로필을 검증한다.
 
-runtime.json은 개발용 1280×800 좌표계이며 큰 캔버스에도 기존 고정 영역을 유지한다. 모바일용 반응형 게임 UI와 배포용 한글 폰트는 후속 작업이다. OS 폰트에 의존하는 현재 검토 화면을 모바일 배포 완료로 보지 않는다.
+runtime.json의1280×800 좌표계는 도입/준비 화면에 사용한다. 전투는 전체 화면 카메라와 Safe Area 기준 BattleHud를 사용한다. GameFont는 포함된 나눔고딕을 공유한다. 모바일 백엔드 이식/실기기 검증은 별도다. 상세: mobile-battle-hud.md.
 
 ## 새 기능을 만드는 순서
 
@@ -121,3 +121,7 @@ Features/Battle의 Core(BoardData/BoardState), Infrastructure(ResourcesBoardRepo
 AppBootstrap이 IBattleSession 공급 함수를 주입한다. Battle.Core는 Unity/Swift/파일 경로를 모른다. NativeBattleSession은 프로세스와 JSON, BattleController/CombatUnitView는 입력·렌더링·완료 응답을 담당한다. 원본 실행 상태는 네이티브 엔진, 표시 상태는 Unity에 있다.
 
 hasPending과 고유 token으로 완료 경계를 명시한다. JsonUtility는 누락 객체를 빈 객체로 복원할 수 있으므로 hasPending=false는 Infrastructure에서 null로 정규화한다. 재생 성공 전에 ack를 보내지 않는다. 승인된 미보유 자료는 미적용으로 기록하며 디코딩/재생 오류는 대기를 유지한다. C# 이식 시 IBattleSession 구현을 교체하며, 현재 macOS 백엔드를 모바일 대응 완료로 취급하지 않는다.
+
+## 2026-10-31 전장 UI
+
+BoardCameraState/MapGesture의 순수 화면 기하와 입력 상태를 BattleBoardView가 사용한다. MobileScreen이 UI배율/안전 영역을 계산하고 BattleHud가 지도 위 정보/버튼/대사를 표시한다. HUD의 입력 차단 영역을 보드에 주입하며 UI를 누를 때 전투 명령이 동시에 실행되지 않도록 한다. 전투 중 고정 개발 헤더/푸터/사이드바는 사용하지 않는다.

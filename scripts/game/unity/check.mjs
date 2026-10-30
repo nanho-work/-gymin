@@ -9,13 +9,16 @@ const mono=path.join(contents,'MonoBleedingEdge/bin/mono');
 const compiler=path.join(contents,'MonoBleedingEdge/lib/mono/4.5/csc.exe');
 const output=path.join(os.tmpdir(),'sanha-unity-check'); await mkdir(output,{recursive:true});
 async function files(root){const result=[];for(const e of await readdir(root,{withFileTypes:true})){const f=path.join(root,e.name);if(e.isDirectory())result.push(...await files(f));else if(f.endsWith('.cs'))result.push(f);}return result;}
-function run(command,args){const p=spawnSync(command,args,{stdio:'inherit'});if(p.error)throw p.error;if(p.status!==0)throw Error('Check failed: '+command+' ('+p.status+')');}
+function run(command,args,env){const p=spawnSync(command,args,{stdio:'inherit',...(env?{env:{...process.env,...env}}:{})});if(p.error)throw p.error;if(p.status!==0)throw Error('Check failed: '+command+' ('+p.status+')');}
 const core=(await files(path.join(project,'Assets/Game/Features'))).filter(f=>f.includes('/Core/'));
 for(const file of core) if(/UnityEngine|UnityEditor|Resources\.Load|Environment\.GetEnvironmentVariable/.test(await readFile(file,'utf8')))throw Error('Core dependency violation: '+file);
 run(process.execPath,['--test',path.join(repo,'scripts/game/unity/tests/campaign.test.mjs'),path.join(repo,'scripts/game/unity/tests/deployment.test.mjs')]);
 const exe=path.join(output,'ScenarioCoreTests.exe');
 run(mono,[compiler,'/nologo','/out:'+exe,...core,...await files(path.join(project,'Tests'))]);
 run(mono,[exe]);
+const wire=path.join(output,'WireEncodingTest.exe');
+run(mono,[compiler,'/nologo','/out:'+wire,path.join(project,'Assets/Game/Features/Battle/Infrastructure/BattleProcess.cs'),path.join(repo,'scripts/game/unity/tests/wire-encoding.cs')]);
+run(mono,[wire,mono],{LANG:'C',LC_ALL:'C'});
 console.log('Pure C# engine and exporter tests passed. This is NOT Unity Play/build verification.');
 
 if(process.argv.includes('--compile-unity')){

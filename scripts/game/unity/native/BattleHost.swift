@@ -3,9 +3,8 @@ import Foundation
 struct Request:Decodable {var command:String;var id:Int?;var x:Int?;var y:Int?;var target:Int?;var spell:Int?;var item:Int?;var token:String?;var choice:Int?;var disposition:String?}
 struct Cell:Encodable {var x:Int;var y:Int}
 struct HostUnit:Encodable {var id:Int;var x:Int;var y:Int;var hp:Int;var maxHP:Int;var mp:Int;var maxMP:Int;var level:Int;var job:Int;var side:Int;var facing:Int;var hidden:Bool;var acted:Bool;var moved:Bool;var canAct:Bool;var attack:Int;var defense:Int}
-struct HostSpell:Encodable {var id:Int;var name:String;var mp:Int}
-struct HostPending:Encodable {var token=UUID().uuidString;var kind:String;var id:Int = -1;var x:Int = 0;var y:Int = 0;var pose:Int = 0;var duration:Double = 0.05;var text:String = "";var target:Int = -1;var sound:Int = -1;var impact:Int = -1;var targetIDs:[Int] = []}
-struct Reply:Encodable {var ok:Bool;var error:String;var round:Int;var side:Int;var outcome:String;var units:[HostUnit];var range:[Cell];var targets:[Int];var spells:[HostSpell];var log:[String];var money:Int;var inventory:[Int];var unsupported:[Int];var pendingMove:Int;var hasPending:Bool;var pending:HostPending?;var stateVersion:Int=1}
+struct HostPending:Encodable {var token=UUID().uuidString;var kind:String;var id:Int = -1;var x:Int = 0;var y:Int = 0;var pose:Int = 0;var duration:Double = 0.05;var text:String = "";var target:Int = -1;var sound:Int = -1;var impact:Int = -1;var targetIDs:[Int] = [];var resultHints:[HostResultHint] = [];var results:[HostFeedback] = []}
+struct Reply:Encodable {var ok:Bool;var error:String;var round:Int;var side:Int;var outcome:String;var units:[HostUnit];var range:[Cell];var targets:[Int];var spells:[HostAction];var items:[HostAction];var hasAim:Bool;var aim:HostAim?;var recoverable:Bool;var log:[String];var money:Int;var inventory:[Int];var unsupported:[Int];var pendingMove:Int;var hasPending:Bool;var pending:HostPending?;var stateVersion:Int=3}
 
 @main struct BattleHost {
  enum HostError:Error {case blocked(String)}
@@ -14,6 +13,7 @@ struct Reply:Encodable {var ok:Bool;var error:String;var round:Int;var side:Int;
   let data=try decoder.decode(CampaignData.self,from:Data(contentsOf:root.appendingPathComponent("first-battle.json")))
   let spells=try decoder.decode([OriginalSpell].self,from:Data(contentsOf:root.appendingPathComponent("original-spells.json")))
   let tutorialText=try decoder.decode(OriginalTutorialText.self,from:Data(contentsOf:root.appendingPathComponent("original-tutorial-text.json")))
+  let labels=try decoder.decode(ActionLabels.self,from:Data(contentsOf:root.appendingPathComponent("action-labels.json")))
   var state=CampaignState(data:data);state.randomState=1
   var pending:HostPending?
   var completion:(()throws->Void)?
@@ -37,7 +37,7 @@ struct Reply:Encodable {var ok:Bool;var error:String;var round:Int;var side:Int;
       case .attack(let source,let target,let damage,let mpDamage,_,let critical):
        let group=state.index(source).map{OriginalCombat.group(state.units[$0].job)} ?? 0
        action=HostPending(kind:"attack",id:source,pose:6,duration:0.65,target:target,sound:[0,1,7,9,10,14,15,18].contains(group) ? 34:[2,4].contains(group) ? 37:32,impact:damage+mpDamage==0 ? 30+(critical ? 1:0):35+(critical ? 1:0))
-      case .numberPanel:action=HostPending(kind:"panel",duration:0.4)
+      case .numberPanel:action=HostPending(kind:"panel",duration:0.025,resultHints:BattleFeedback.physical(e,state:state))
       case .growth(_,let sound):action=HostPending(kind:"sound",id:sound)
      }}
      hold(action){
@@ -48,8 +48,8 @@ struct Reply:Encodable {var ok:Bool;var error:String;var round:Int;var side:Int;
      var action=HostPending(kind:"delay",duration:0.025)
      if let visual=e.presentation(in:state) {switch visual {
       case .animation(let source,let targets,let spell):action=HostPending(kind:"spell",id:source,pose:spell,duration:0.8,target:targets.first ?? -1,targetIDs:targets)
-      case .effect(let person,let spell):action=HostPending(kind:"spellStatus",id:person,pose:spell,duration:0.4,text:spells[spell].name)
-      case .numbers:action=HostPending(kind:"panel",duration:0.4)
+      case .effect(let person,let spell):action=HostPending(kind:"spellStatus",id:person,pose:spell,duration:0.4,text:spells[spell].name,resultHints:BattleFeedback.spell(e,state:state))
+      case .numbers:action=HostPending(kind:"panel",duration:0.025,resultHints:BattleFeedback.spell(e,state:state))
       case .growth(_,let sound):action=HostPending(kind:"sound",id:sound)
      }}
      hold(action){
@@ -112,35 +112,52 @@ struct Reply:Encodable {var ok:Bool;var error:String;var round:Int;var side:Int;
    };throw HostError.blocked("Engine pump did not settle; no event skipped")
   }
   while let line=readLine(){
-   var ok=true,message="",range:[Cell]=[],targets:[Int]=[],available:[HostSpell]=[]
+   var ok=true,message="",range:[Cell]=[],targets:[Int]=[],available:[HostAction]=[],items:[HostAction]=[],aim:HostAim?;var recoverable=false,requested=""
    do {
-    let q=try decoder.decode(Request.self,from:Data(line.utf8)),index=q.id.flatMap{state.index($0)}
+    let before=state.units
+    var resultHints:[HostResultHint]=[]
+    let q=try decoder.decode(Request.self,from:Data(line.utf8));requested=q.command;let index=q.id.flatMap{state.index($0)}
     if q.command=="ack" {
      guard let action=pending,q.token==action.token else{throw HostError.blocked("stale completion receipt")}
      if action.kind=="tutorial" {guard let c=q.choice,state.answerTutorial(yes:c==1,data:data) else{throw HostError.blocked("tutorial choice")}}
      else if action.kind=="choice" {guard let c=q.choice,state.answerScenarioChoice(c,data:data) else{throw HostError.blocked("scenario choice")}}
      else {try completion?()}
+     resultHints=action.resultHints
      pending=nil;completion=nil
     }else{
      guard pending==nil||q.command=="new" else{throw HostError.blocked("Presentation completion required")}
      switch q.command {
      case "new":pending=nil;completion=nil;state=CampaignState(data:data);state.randomState=1
      case "select":if let i=index,state.canAct(i){if !state.units[i].moved{range=state.movement(i,data:data).costs.keys.sorted{$0.y == $1.y ? $0.x<$1.x:$0.y<$1.y}.map{Cell(x:$0.x,y:$0.y)}};targets=state.units.indices.filter{state.units[$0].alive && (state.units[$0].side==1) != (state.units[i].side==1) && PhysicalForecast(state.fighter(i,data:data),state.fighter($0,data:data)) != nil}.map{state.units[$0].id}}
+     case "actions":guard let i=index else{throw HostError.blocked("부대를 선택하세요")};(available,items)=BattleActionQuery.options(source:i,state:state,data:data,spells:spells,labels:labels)
+     case "aim":guard let i=index else{throw HostError.blocked("부대를 선택하세요")};let skill=(q.spell ?? -1)>=0;aim=BattleActionQuery.aim(kind:skill ? "skill":"item",id:skill ? q.spell!:q.item ?? -1,source:i,target:q.target.flatMap{state.index($0)} ?? -1,state:state,data:data,spells:spells)
      case "move":guard let i=index,let x=q.x,let y=q.y,state.move(i,to:Tile(x:x,y:y),data:data,deferMovement:true) else{throw HostError.blocked("이동할 수 없는 칸입니다")}
      case "cancel":guard state.cancelMove(data:data) else{throw HostError.blocked("취소할 이동이 없습니다")}
      case "wait":guard let i=index,state.wait(i,data:data) else{throw HostError.blocked("대기할 수 없습니다")}
      case "attack":guard let i=index,let t=q.target.flatMap({state.index($0)}),state.attack(i,t,data:data) else{throw HostError.blocked("공격할 수 없습니다")}
-     case "cast":guard let i=index,let t=q.target.flatMap({state.index($0)}),let spell=q.spell,state.cast(spell,source:i,target:t,data:data,catalog:spells) else{throw HostError.blocked("책략 조건/사거리/MP를 확인하세요")}
-     case "item":guard let i=index,let t=q.target.flatMap({state.index($0)}),let item=q.item,state.useItem(item,source:i,target:t,data:data) else{throw HostError.blocked("아이템 사용 조건을 확인하세요")}
+     case "cast":
+      guard let i=index,let t=q.target.flatMap({state.index($0)}),let spell=q.spell else{throw HostError.blocked("대상을 선택하세요")}
+      if let reason=BattleActionQuery.spellReason(spell,source:i,target:t,state:state,data:data,spells:spells){throw HostError.blocked(reason)}
+      guard state.cast(spell,source:i,target:t,data:data,catalog:spells) else{throw HostError.blocked("책략 조건/사거리/MP를 확인하세요")}
+     case "item":
+      guard let i=index,let t=q.target.flatMap({state.index($0)}),let item=q.item else{throw HostError.blocked("대상을 선택하세요")}
+      if let reason=BattleActionQuery.itemReason(item,source:i,target:t,state:state,data:data){throw HostError.blocked(reason)}
+      hold(HostPending(kind:"itemUse",id:state.units[i].id,pose:item,duration:0.65,text:labels.items.first{$0.id==item}?.name ?? data.items[item].name,target:state.units[t].id,sound:41)){
+       guard state.useItem(item,source:i,target:t,data:data) else{throw HostError.blocked("도구 사용 완료 조건이 변경됐습니다")}
+      }
      case "end":guard state.side==0,state.outcome == .battle else{throw HostError.blocked("아군 차례가 아닙니다")};state.nextSide(data:data)
      case "step":if state.outcome == .battle {if state.side==0 {if !state.units.indices.contains(where:{state.canAct($0)}){state.nextSide(data:data)}}else if let i=state.nextAIActor(data:data){state.ai(i,data:data,catalog:spells,deferMovement:true)}else{state.nextSide(data:data)}}
      case "auto":if let i=state.units.indices.first(where:{state.canAct($0)}){state.ai(i,data:data,catalog:spells,deferMovement:true)}else{state.nextSide(data:data)}
      default:throw HostError.blocked("Unknown command")
      }
     }
+    if requested != "new" && pending==nil {
+     let results=BattleFeedback.changes(before:before,state:state,data:data,hints:resultHints)
+     if !results.isEmpty {hold(HostPending(kind:"combatResult",id:results[0].id,duration:0.8,results:results)){}}
+    }
     try pump()
-   }catch{ok=false;message=String(describing:error)}
-   let result=Reply(ok:ok,error:message,round:state.round,side:state.side,outcome:state.outcome.rawValue,units:state.units.indices.map{i in let u=state.units[i],s=state.displayed(u,data:data);return HostUnit(id:u.id,x:u.tile.x,y:u.tile.y,hp:u.hp,maxHP:s[5],mp:u.mp,maxMP:s[6],level:u.level,job:u.job,side:u.side,facing:u.effectiveOriginalFacing,hidden:u.hidden,acted:u.acted,moved:u.moved,canAct:state.canAct(i),attack:s[0],defense:s[1])},range:range,targets:targets,spells:available,log:Array(state.log.suffix(8)),money:state.money ?? 0,inventory:state.inventory,unsupported:Array(state.scenarioUnimplemented ?? []).sorted(),pendingMove:state.pendingMove.flatMap{state.units.indices.contains($0.unit) ? state.units[$0.unit].id:nil} ?? -1,hasPending:pending != nil,pending:pending)
+   }catch{ok=false;message=String(describing:error);recoverable=["actions","aim","cast","item"].contains(requested)&&pending==nil&&state.spellExecution==nil&&state.physicalExecution==nil&&state.movementExecution==nil}
+   let result=Reply(ok:ok,error:message,round:state.round,side:state.side,outcome:state.outcome.rawValue,units:state.units.indices.map{i in let u=state.units[i],s=state.displayed(u,data:data);return HostUnit(id:u.id,x:u.tile.x,y:u.tile.y,hp:u.hp,maxHP:s[5],mp:u.mp,maxMP:s[6],level:u.level,job:u.job,side:u.side,facing:u.effectiveOriginalFacing,hidden:u.hidden,acted:u.acted,moved:u.moved,canAct:state.canAct(i),attack:s[0],defense:s[1])},range:range,targets:targets,spells:available,items:items,hasAim:aim != nil,aim:aim,recoverable:recoverable,log:Array(state.log.suffix(8)),money:state.money ?? 0,inventory:state.inventory,unsupported:Array(state.scenarioUnimplemented ?? []).sorted(),pendingMove:state.pendingMove.flatMap{state.units.indices.contains($0.unit) ? state.units[$0.unit].id:nil} ?? -1,hasPending:pending != nil,pending:pending)
    print(String(decoding:try JSONEncoder().encode(result),as:UTF8.self));fflush(stdout)
   }
  }

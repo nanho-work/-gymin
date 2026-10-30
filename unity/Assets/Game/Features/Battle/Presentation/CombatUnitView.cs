@@ -47,7 +47,7 @@ namespace Sanha.Battle
                 if(playing!=null&&playing.id==m.actor.id){float t=Time.unscaledTime-started;
                     if(playing.kind=="move"){action=1;frame=(int)(t/.08f)%4;var dest=Position(playing.x,playing.y);var origin=from[m.actor.id];direction=Mathf.Abs(dest.x-origin.x)>=Mathf.Abs(dest.y-origin.y)?(dest.x<origin.x?3:1):(dest.y>origin.y?0:2);m.root.transform.localPosition=Vector3.Lerp(origin,dest,Mathf.Clamp01(t/Mathf.Max(.01f,playing.duration)));}
                     else if(playing.kind=="attack"||playing.kind=="pose"&&(playing.pose==6||playing.pose==7)){action=2;frame=(int)(t/.16f)%4;}
-                    else if(playing.kind=="spell"||playing.kind=="pose"&&playing.pose==2){action=3;frame=(int)(t/.2f)%4;}
+                    else if(playing.kind=="spell"||playing.kind=="itemUse"||playing.kind=="pose"&&playing.pose==2){action=3;frame=(int)(t/.2f)%4;}
                     else if(playing.kind=="retirement")m.art.color=new Color(1,1,1,playing.pose%2==0?.35f:1);
                 }
                 m.art.sprite=m.frames[Mathf.Clamp(direction,0,3)*16+action*4+frame];

@@ -1,0 +1,25 @@
+{
+  "date": "2026-10-31",
+  "unityLaunched": false,
+  "committed": false,
+  "pushed": false,
+  "nativeQueryTests": "PASS",
+  "nativeProtocol": {
+    "status": "PASS",
+    "commands": 273,
+    "scope": "headless receipts; not audiovisual verification"
+  },
+  "csharpCoreAndRuntimeEditorCompile": "PASS",
+  "assets": {
+    "skills": 68,
+    "usableItemIcons": 17,
+    "iconBytes": 32453,
+    "effectAtlases": 34,
+    "effectBytes": 283343
+  },
+  "limits": [
+    "Unity import/Play and visual layout not verified",
+    "macOS native backend; mobile build not implemented",
+    "original effect mapping -1 has caster motion only"
+  ]
+}

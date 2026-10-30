@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-31",
+  "stateVersion": 3,
+  "unityLaunched": false,
+  "commitPush": false,
+  "nativeFeedbackTests": "PASS; actual physical critical/miss/counter and heal stages",
+  "nativeProtocol": {
+    "commands": 287,
+    "status": "PASS",
+    "scope": "headless; no audiovisual playback claim"
+  },
+  "csharpCoreRuntimeEditorCompile": "PASS",
+  "newBitmapAssets": 0,
+  "limits": [
+    "Unity import/Play and visual layout unverified",
+    "Status-only spell stages do not persist individual hit rolls; no invented miss labels"
+  ]
+}

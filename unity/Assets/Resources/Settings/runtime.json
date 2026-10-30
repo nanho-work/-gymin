@@ -4,9 +4,8 @@
   "referenceWidth": 1280,
   "referenceHeight": 800,
   "fontSize": 20,
-  "fontNames": [
-    "Apple SD Gothic Neo",
-    "Malgun Gothic",
-    "Noto Sans CJK KR"
-  ]
+  "fontResource": "Fonts/NanumGothic-Regular",
+  "battleTileUiSize": 64,
+  "battleMinShortCells": 8,
+  "battleMaxShortCells": 14
 }

@@ -12,7 +12,7 @@ class ScenarioCoreTests
     {
         try
         {
-            BoardCoreTests.Run();
+            BoardCoreTests.Run();BoardCameraTests.Run();BattleActionTests.Run();CombatFeedbackTests.Run();
             var stage=Sample(); var c=new ScenarioCursor(); c.Load(stage);
             Assert(c.AtStart,"initial"); c.Previous(); Assert(c.AtStart,"underflow");
             c.Next(); Assert(c.SceneIndex==0&&c.LineIndex==1,"line");

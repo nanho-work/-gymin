@@ -20,27 +20,31 @@ namespace Sanha.Campaign
         UnitDeployment deployment;
         Vector2 rosterScroll;
         BattleBoardView boardView;
-        BattleController combat;
+        BattleController combat;BattleHud hud;
         bool combatStarted;
         Font font;
-        bool confirmTitle,showBattleIntro;
+        bool confirmTitle;
         public void Initialize(ICampaignRepository repository,RuntimeSettings configuration,TextureCatalog catalog,BoardData boardData,UnitDeployment units,Func<IBattleSession> openBattle)
         {
             settings=configuration;textures=catalog;board=boardData;deployment=units;
             stage=repository.Load().stages.Single(x=>x.id==board.stageId);
             introStage=new StageData{id=stage.id,title=stage.title,scenes=board.introSceneIds.Select(id=>stage.scenes.Single(x=>x.id==id)).ToArray()};
             battleIntro=stage.scenes.Single(x=>x.id==board.battleIntroSceneId);intro.Load(introStage);
-            font=Font.CreateDynamicFontFromOSFont(settings.fontNames,settings.fontSize);
-            boardView=gameObject.AddComponent<BattleBoardView>();boardView.Initialize(board,textures,units);
+            font=GameFont.Load(settings.fontResource);
+            boardView=gameObject.AddComponent<BattleBoardView>();boardView.Initialize(board,textures,units,settings);
             combat=gameObject.AddComponent<BattleController>();combat.Initialize(units,boardView,textures,openBattle);
+            hud=new BattleHud(combat,boardView,units,textures,()=>{combat.Suspend();flow.ReturnToTitle();boardView.SetVisible(false);});boardView.IsPointerOverUi=hud.BlocksPointer;
         }
-        void StartNew(){combatStarted=false;intro.Load(introStage);boardView.ClearSelection();boardView.Fit();confirmTitle=false;flow.StartNew();}
+        void StartNew(){hud.Reset();combatStarted=false;intro.Load(introStage);boardView.ClearSelection();boardView.ResetView();confirmTitle=false;flow.StartNew();}
         void OnGUI()
         {
             if(boardView==null)return;
-            combat.Active=flow.Screen==GameScreen.Battle&&!showBattleIntro&&!confirmTitle;
             boardView.UpdateViewport();
-            if(flow.Screen==GameScreen.Battle&&!confirmTitle&&!showBattleIntro&&!combat.IsBusy)boardView.HandleInput(Event.current);
+            if(flow.Screen==GameScreen.Battle){
+                combat.Active=!hud.PausesBattle;hud.Draw(font);boardView.InputEnabled=flow.Screen==GameScreen.Battle&&!hud.Modal;boardView.SelectionEnabled=!combat.IsBusy;
+                boardView.HandleInput(Event.current);return;
+            }
+            combat.Active=false;boardView.InputEnabled=false;
             using(new GuiViewport(1280,800,font))
             {
                 var text=new GUIStyle(GUI.skin.label){fontSize=20,wordWrap=true};var small=new GUIStyle(text){fontSize=16};
@@ -70,15 +74,8 @@ namespace Sanha.Campaign
                     rosterScroll=GUI.BeginScrollView(new Rect(680,370,480,165),rosterScroll,new Rect(0,0,455,deployment.units.Length*34));
                     for(int i=0;i<deployment.units.Length;i++){var u=deployment.units[i];GUI.Label(new Rect(0,i*34,455,34),$"{u.SideName} · {u.name} · {(u.state=="deployed"?"배치":u.state=="reserve"?"등장 대기":"도입 퇴장")}",small);}
                     GUI.EndScrollView();
-                    if(GUI.Button(new Rect(680,550,380,65),"전장 진입")){flow.EnterBoard();if(!combatStarted){combat.Begin();combatStarted=true;}showBattleIntro=true;boardView.SetVisible(true);boardView.Fit();}
+                    if(GUI.Button(new Rect(680,550,380,65),"전장 진입")){flow.EnterBoard();if(!combatStarted){combat.Begin();combatStarted=true;}hud.ShowIntroduction(battleIntro.lines[0].speaker,battleIntro.lines[0].text,null);boardView.SetVisible(true);boardView.ResetView();}
                     if(GUI.Button(new Rect(680,635,380,45),"도입 이야기 다시 보기")){intro.Load(introStage);flow.StartNew();}
-                }
-                else
-                {
-                    combat.Draw(text,small);
-                    if(GUI.Button(new Rect(960,710,270,35),"전장 전체 보기"))boardView.Fit();
-                    if(showBattleIntro){GUI.Box(new Rect(35,610,870,130),"");DialoguePanel.Draw(new Rect(45,615,700,115),battleIntro.lines[0].speaker,battleIntro.lines[0].text,small);if(GUI.Button(new Rect(755,660,130,50),"전장 확인"))showBattleIntro=false;}
-                    GUI.Label(new Rect(24,760,1100,30),"macOS 로컬 전투 테스트 · 기존 복원 엔진 사용 · 미보유 음원/모션은 미적용 표시",small);
                 }
                 if(confirmTitle)
                 {
@@ -91,6 +88,6 @@ namespace Sanha.Campaign
             }
         }
         string ScreenName()=>flow.Screen==GameScreen.Title?"시작":flow.Screen==GameScreen.Scenario?"이야기":flow.Screen==GameScreen.Preparation?"출진 준비":"전장";
-        void OnDestroy(){if(font!=null)Destroy(font);}
+
     }
 }

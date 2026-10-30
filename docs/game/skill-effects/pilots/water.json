@@ -1,0 +1,154 @@
+{
+  "id": 5,
+  "name": "물살",
+  "originalName": "탁류",
+  "status": "draft",
+  "file": "web/public/images/skills/water-pilot-v1",
+  "bytes": 21282,
+  "width": 512,
+  "height": 256,
+  "cellWidth": 128,
+  "cellHeight": 128,
+  "cols": 4,
+  "rows": 2,
+  "frameCount": 8,
+  "frameMs": 120,
+  "anchor": {
+    "type": "ground",
+    "x": 64,
+    "y": 100
+  },
+  "segments": [
+    {
+      "role": "target-impact",
+      "start": 0,
+      "end": 7
+    }
+  ],
+  "placement": "선택한 한 부대 발 중심. 지형 조건 및 판정은 기존 규칙 유지.",
+  "directionPolicy": "방향 없는 대상 물기둥. 4방향 별도 제작 불필요.",
+  "sharedIds": [],
+  "generation": {
+    "mode": "built-in image_gen",
+    "prompt": "Use case: stylized-concept. Create a transparent pixel-art game VFX sprite sheet for a Korean historical fantasy tactical RPG, a single-target WATER SPLASH spell. EXACT layout 4 columns by 2 rows, eight equal square cells, read left-to-right then top-to-bottom. No text, no numbers, no grid, no ground/background, no characters. 8 consecutive animation frames: 1 tiny low ripple, 2 narrow water spout starting, 3 rising compact splash, 4 peak small water column with curved droplets, 5 column folding into white foam, 6 falling droplets, 7 fewer low droplets, 8 tiny residual ripple fading. Fixed ground contact center in every frame at local x50%, y78%; stable camera and same scale. Keep every effect inside center 70% of each cell with ample transparent margin. Limited deep teal, turquoise blue, pale cyan and white foam palette; bold chunky pixel clusters, crisp pixel edges, dark contour and bright core, mobile-readable at 96 pixels. Similar density and readability to classic tactical RPG flame sprites; not smooth vector, not realistic water, no blurry glow. No freezing, ice, knockback, lightning or cross-shaped area effect. Water rises vertically from one target's feet and settles; it does not travel across screen. All eight frames must be visibly distinct sequential phases and stay fully within their own cells. Transparent alpha background.\n",
+    "sourcePath": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-8529e72f-1b6b-467d-8f08-c059abe434bf.png",
+    "sourceCleanup": "경량본 및 페이지 검수 후 이번 원본 삭제 완료"
+  },
+  "packing": "원본 equal-grid 셀을 모두 88×88로 동일 축소. 개별 확대/타이트크롭 없이 바닥 알파 하단을 y100으로 평행이동해 고정.",
+  "verification": {
+    "alpha": true,
+    "sizeBytesUnder60KB": true,
+    "allFramesNonempty": true,
+    "allFrameBoundsInsideCentral104": true,
+    "frameChecks": [
+      {
+        "frame": 0,
+        "alphaBounds": [
+          31,
+          56,
+          108,
+          100
+        ],
+        "edgeClear": true,
+        "groundY": 100
+      },
+      {
+        "frame": 1,
+        "alphaBounds": [
+          35,
+          40,
+          95,
+          100
+        ],
+        "edgeClear": true,
+        "groundY": 100
+      },
+      {
+        "frame": 2,
+        "alphaBounds": [
+          22,
+          21,
+          100,
+          100
+        ],
+        "edgeClear": true,
+        "groundY": 100
+      },
+      {
+        "frame": 3,
+        "alphaBounds": [
+          23,
+          12,
+          99,
+          100
+        ],
+        "edgeClear": true,
+        "groundY": 100
+      },
+      {
+        "frame": 4,
+        "alphaBounds": [
+          32,
+          14,
+          100,
+          100
+        ],
+        "edgeClear": true,
+        "groundY": 100
+      },
+      {
+        "frame": 5,
+        "alphaBounds": [
+          21,
+          35,
+          99,
+          100
+        ],
+        "edgeClear": true,
+        "groundY": 100
+      },
+      {
+        "frame": 6,
+        "alphaBounds": [
+          21,
+          15,
+          104,
+          100
+        ],
+        "edgeClear": true,
+        "groundY": 100
+      },
+      {
+        "frame": 7,
+        "alphaBounds": [
+          30,
+          20,
+          104,
+          100
+        ],
+        "edgeClear": true,
+        "groundY": 100
+      }
+    ],
+    "visual": "128px 어두운 배경과 96px 밝은 배경 정지 시트 확인. 성장·정점·소멸 구별, 인접 셀 노출 없음.",
+    "notYetVerified": [
+      "사이트 실재생",
+      "모바일 브라우저 재생",
+      "전투 판정 연결"
+    ]
+  },
+  "limitations": [
+    "최종 소멸은 작은 물결이 남은 뒤 렌더러에서 공백으로 전환해야 함.",
+    "투명도가 낮은 미세 입자가 있으며 새로 그린 정밀 픽셀 애니메이션이 아닌 생성 초안."
+  ],
+  "integration": {
+    "status": "draft-connected",
+    "ids": [
+      5
+    ],
+    "page": "/skills",
+    "verified": "대표3종 필터, 재생·정지·4번프레임 선택, 화면 캡처 확인. npm run build 통과.",
+    "limitations": "실제 전투 판정/캐릭터 합성 미연결. 모바일 브라우저 직접 검수 대신 96px/128px 이미지 가독성 확인."
+  },
+  "sourceCleanup": "경량본 및 페이지 검수 후 이번 원본 삭제 완료"
+}

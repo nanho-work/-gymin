@@ -38,9 +38,10 @@
         "name": "유민군",
         "combat": "/images/special-motion-v1/40/combat",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-10",
         "notes": [
-          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -61,9 +62,10 @@
         "name": "해적",
         "combat": "/images/special-motion-v1/41/combat",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-11",
         "notes": [
-          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -84,9 +86,10 @@
         "name": "제독",
         "combat": "/images/special-motion-v1/44/combat",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-12",
         "notes": [
-          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -107,9 +110,10 @@
         "name": "주술사",
         "combat": "/images/special-motion-v1/45/combat",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-13",
         "notes": [
-          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -130,9 +134,10 @@
         "name": "선인",
         "combat": "/images/special-motion-v1/46/combat",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-14",
         "notes": [
-          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -151,9 +156,10 @@
         "name": "물자대",
         "combat": "/images/special-motion-v1/47/combat",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-15",
         "notes": [
-          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -172,9 +178,10 @@
         "name": "식량대",
         "combat": "/images/special-motion-v1/48/combat",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-16",
         "notes": [
-          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -193,9 +200,10 @@
         "name": "황제",
         "combat": "/images/special-motion-v1/51/combat",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-17",
         "notes": [
-          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -214,9 +222,10 @@
         "name": "민중 · 여성",
         "combat": "/images/special-motion-v1/52/combat",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-18",
         "notes": [
-          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -235,9 +244,10 @@
         "name": "민중 · 남성",
         "combat": "/images/special-motion-v1/1052/combat",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-19",
         "notes": [
-          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상."
+          "새 완성 프레임 초안 · 방향별 세부 작화 편차는 후속 검수 대상.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -258,9 +268,10 @@
         "name": "쇠동 부대",
         "combat": "/images/special-motion-v1/1006/combat",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-20",
         "notes": [
-          "원본 병과 #42의 수치·이동은 유지. 외형은 쇠동 설화 동료 모델로 대체."
+          "원본 병과 #42의 수치·이동은 유지. 외형은 쇠동 설화 동료 모델로 대체.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -281,9 +292,10 @@
         "name": "쿵돌 부대",
         "combat": "/images/folklore/kungdol-motion-v2",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-21",
         "notes": [
-          "원본 병과 #43의 수치·이동은 유지. 외형은 쿵돌 설화 동료 모델로 대체."
+          "원본 병과 #43의 수치·이동은 유지. 외형은 쿵돌 설화 동료 모델로 대체.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -304,9 +316,10 @@
         "name": "길목 부대",
         "combat": "/images/folklore/gilmok-motion-v2",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-22",
         "notes": [
-          "원본 병과 #49의 수치·이동은 유지. 외형은 길목 설화 동료 모델로 대체."
+          "원본 병과 #49의 수치·이동은 유지. 외형은 길목 설화 동료 모델로 대체.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -327,9 +340,10 @@
         "name": "사금 부대",
         "combat": "/images/folklore/sageum-motion-v2",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-23",
         "notes": [
-          "원본 병과 #50의 수치·이동은 유지. 외형은 사금 설화 동료 모델로 대체."
+          "원본 병과 #50의 수치·이동은 유지. 외형은 사금 설화 동료 모델로 대체.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]

@@ -1,0 +1,696 @@
+[
+  {
+    "id": 1,
+    "file": "/images/skills/firebolt-v1/sheet.webp",
+    "name": "불벼락",
+    "scope": "한 부대 타격",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120
+  },
+  {
+    "id": 2,
+    "file": "/images/skills/fireburst-v1/sheet.webp",
+    "name": "화염 폭발",
+    "scope": "대상과 상하좌우 · 5칸",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120
+  },
+  {
+    "id": 3,
+    "file": "/images/skills/firedragon-v1/sheet.webp",
+    "name": "화룡",
+    "scope": "대상과 상하좌우 · 5칸",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120
+  },
+  {
+    "id": 4,
+    "file": "/images/skills/firewave-v1/sheet.webp",
+    "name": "화염 파동",
+    "scope": "진행 방향 직선 · 6칸",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120
+  },
+  {
+    "id": 5,
+    "file": "/images/skills/water-pilot-v1/sheet.webp",
+    "name": "물살",
+    "scope": "한 부대 · 물 피해",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120
+  },
+  {
+    "name": "급류",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-6.webp",
+    "id": 6,
+    "scope": "한 부대"
+  },
+  {
+    "name": "물결 폭발",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-7.webp",
+    "id": 7,
+    "scope": "십자 5칸"
+  },
+  {
+    "name": "수룡",
+    "frameCount": 12,
+    "cols": 4,
+    "rows": 3,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-8.webp",
+    "id": 8,
+    "scope": "십자 5칸"
+  },
+  {
+    "name": "죽음의 해일",
+    "frameCount": 12,
+    "cols": 4,
+    "rows": 3,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-9.webp",
+    "id": 9,
+    "scope": "한 부대 · 성공 시 즉시 퇴각",
+    "note": "즉시 퇴각 시도 연출입니다. 성공·면역 판정은 별도입니다."
+  },
+  {
+    "name": "칼바람",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-10.webp",
+    "id": 10,
+    "scope": "한 부대"
+  },
+  {
+    "name": "회오리바람",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-11.webp",
+    "id": 11,
+    "scope": "한 부대"
+  },
+  {
+    "name": "돌풍",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-12.webp",
+    "id": 12,
+    "scope": "주변 9칸"
+  },
+  {
+    "name": "폭풍룡",
+    "frameCount": 12,
+    "cols": 4,
+    "rows": 3,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-13.webp",
+    "id": 13,
+    "scope": "주변 9칸"
+  },
+  {
+    "name": "모래폭풍",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-14.webp",
+    "id": 14,
+    "scope": "전장 전체 적 · 대상별 반복 배치",
+    "note": "전장 전체 적에게 배치할 효과의 단독 예시입니다."
+  },
+  {
+    "name": "낙석",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-15.webp",
+    "id": 15,
+    "scope": "한 부대"
+  },
+  {
+    "name": "산사태",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-16.webp",
+    "id": 16,
+    "scope": "한 부대"
+  },
+  {
+    "name": "지진",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-17.webp",
+    "id": 17,
+    "scope": "십자 5칸"
+  },
+  {
+    "name": "대지의 용",
+    "frameCount": 12,
+    "cols": 4,
+    "rows": 3,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-18.webp",
+    "id": 18,
+    "scope": "십자 5칸"
+  },
+  {
+    "name": "바위 강타",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-19.webp",
+    "id": 19,
+    "scope": "한 부대"
+  },
+  {
+    "name": "생명 흡수",
+    "frameCount": 12,
+    "cols": 4,
+    "rows": 3,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-20.webp",
+    "id": 20,
+    "scope": "대상 수집 → 시전자 이동 → 회복"
+  },
+  {
+    "name": "죽음의 환영",
+    "frameCount": 12,
+    "cols": 4,
+    "rows": 3,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-21.webp",
+    "id": 21,
+    "scope": "한 부대 · 성공 시 즉시 퇴각",
+    "note": "즉시 퇴각 시도 연출입니다. 성공·면역 판정은 별도입니다."
+  },
+  {
+    "name": "마나 흡수",
+    "frameCount": 12,
+    "cols": 4,
+    "rows": 3,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-22.webp",
+    "id": 22,
+    "scope": "대상 수집 → 시전자 이동 → 회복"
+  },
+  {
+    "name": "둔화",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-23.webp",
+    "id": 23,
+    "scope": "십자 5칸 / 광역 둔화 9칸 · 대상별 반복"
+  },
+  {
+    "name": "광역 둔화",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-a-v1/skill-23.webp",
+    "id": 24,
+    "scope": "주변 9칸 · 대상별 반복"
+  },
+  {
+    "name": "위협",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/threat.webp",
+    "id": 25,
+    "scope": "대상과 상하좌우 · 5칸"
+  },
+  {
+    "name": "공포의 외침",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/threat.webp",
+    "id": 26,
+    "scope": "대상과 주변 · 9칸"
+  },
+  {
+    "name": "약화",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/weaken.webp",
+    "id": 27,
+    "scope": "한 부대"
+  },
+  {
+    "name": "광역 약화",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/weaken.webp",
+    "id": 28,
+    "scope": "대상과 상하좌우 · 5칸"
+  },
+  {
+    "name": "방어 약화",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/defense-down.webp",
+    "id": 29,
+    "scope": "한 부대"
+  },
+  {
+    "name": "광역 방어 약화",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/defense-down.webp",
+    "id": 30,
+    "scope": "대상과 상하좌우 · 5칸"
+  },
+  {
+    "name": "혼란",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/confuse.webp",
+    "id": 31,
+    "scope": "한 부대"
+  },
+  {
+    "name": "광역 혼란",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/confuse.webp",
+    "id": 32,
+    "scope": "대상과 상하좌우 · 5칸"
+  },
+  {
+    "name": "독연기",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/poison.webp",
+    "id": 33,
+    "scope": "한 부대"
+  },
+  {
+    "name": "독안개",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/poison-mist.webp",
+    "id": 34,
+    "scope": "대상과 상하좌우 · 5칸"
+  },
+  {
+    "name": "속박",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/bind.webp",
+    "id": 35,
+    "scope": "한 부대"
+  },
+  {
+    "name": "광역 속박",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/bind.webp",
+    "id": 36,
+    "scope": "대상과 상하좌우 · 5칸"
+  },
+  {
+    "name": "침묵",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/silence.webp",
+    "id": 37,
+    "scope": "한 부대"
+  },
+  {
+    "name": "도깨비놀음",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/prank.webp",
+    "id": 38,
+    "scope": "대상과 주변 · 9칸"
+  },
+  {
+    "id": 39,
+    "file": "/images/skills/heal-pilot-v1/sheet.webp",
+    "name": "힐",
+    "scope": "아군 한 부대 · HP 소량 회복",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120
+  },
+  {
+    "name": "그레이트 힐",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/greater-heal.webp",
+    "id": 40,
+    "scope": "한 부대"
+  },
+  {
+    "name": "그룹 힐",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/heal-pilot-v1/sheet.webp",
+    "id": 41,
+    "scope": "대상과 상하좌우 · 5칸"
+  },
+  {
+    "name": "그레이트 그룹 힐",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/greater-heal.webp",
+    "id": 42,
+    "scope": "대상과 주변 · 9칸"
+  },
+  {
+    "name": "원격 힐",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/greater-heal.webp",
+    "id": 43,
+    "scope": "한 부대"
+  },
+  {
+    "name": "마나 회복",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/mana.webp",
+    "id": 44,
+    "scope": "한 부대"
+  },
+  {
+    "name": "상급 마나 회복",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/greater-mana.webp",
+    "id": 45,
+    "scope": "한 부대"
+  },
+  {
+    "name": "정화",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/cleanse.webp",
+    "id": 46,
+    "scope": "한 부대"
+  },
+  {
+    "name": "광역 정화",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/cleanse.webp",
+    "id": 47,
+    "scope": "대상과 주변 · 9칸"
+  },
+  {
+    "name": "헤이스트",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/haste.webp",
+    "id": 48,
+    "scope": "한 부대"
+  },
+  {
+    "name": "민첩 강화",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/agility.webp",
+    "id": 49,
+    "scope": "대상과 상하좌우 · 5칸"
+  },
+  {
+    "name": "광역 민첩 강화",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-b-v1/agility.webp",
+    "id": 50,
+    "scope": "대상과 주변 · 아군 9칸"
+  },
+  {
+    "name": "격려",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-51.webp",
+    "id": 51,
+    "scope": "대상과 상하좌우 · 아군 5칸"
+  },
+  {
+    "name": "승리의 함성",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-51.webp",
+    "id": 52,
+    "scope": "대상과 주변 · 아군 9칸"
+  },
+  {
+    "name": "공격 강화",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-53.webp",
+    "id": 53,
+    "scope": "아군 한 부대"
+  },
+  {
+    "name": "광역 공격 강화",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-53.webp",
+    "id": 54,
+    "scope": "대상과 상하좌우 · 아군 5칸"
+  },
+  {
+    "id": 55,
+    "file": "/images/skills/defense-pilot-v1/sheet.webp",
+    "name": "방어 강화",
+    "scope": "아군 한 부대 · 방어력 상승",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120
+  },
+  {
+    "id": 56,
+    "file": "/images/skills/defense-pilot-v1/sheet.webp",
+    "name": "광역 방어 강화",
+    "scope": "대상과 상하좌우 · 아군 5칸",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120
+  },
+  {
+    "name": "앙코르",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-57.webp",
+    "id": 57,
+    "scope": "행동을 마친 아군 한 부대 · 자신 제외"
+  },
+  {
+    "name": "비 소환",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-58.webp",
+    "id": 58,
+    "scope": "전장 날씨 · 비",
+    "note": "날씨 전환용 초안입니다. 실제 전장 날씨 처리는 연결 전입니다."
+  },
+  {
+    "name": "맑은 하늘",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-59.webp",
+    "id": 59,
+    "scope": "전장 날씨 · 맑음",
+    "note": "날씨 전환용 초안입니다. 실제 전장 날씨 처리는 연결 전입니다."
+  },
+  {
+    "name": "먹구름",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-60.webp",
+    "id": 60,
+    "scope": "전장 날씨 · 흐림",
+    "note": "날씨 전환용 초안입니다. 실제 전장 날씨 처리는 연결 전입니다."
+  },
+  {
+    "name": "기합",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-53.webp",
+    "id": 61,
+    "scope": "자신"
+  },
+  {
+    "name": "마나 전환",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-62.webp",
+    "id": 62,
+    "scope": "자신 · HP를 MP로 전환"
+  },
+  {
+    "name": "불굴",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-63.webp",
+    "id": 63,
+    "scope": "자신 · 공격계열/방어/순발/사기"
+  },
+  {
+    "name": "청룡의 분노",
+    "frameCount": 12,
+    "cols": 4,
+    "rows": 3,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-64.webp",
+    "id": 64,
+    "scope": "시전자 중심 3칸 · 무작위 최대 5회",
+    "followup": {
+      "name": "청룡 단일 번개 타격",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "file": "/images/skills/batch-c-v1/skill-640.webp"
+    },
+    "note": "소환과 단일 번개 타격 예시입니다. 실제 무작위 최대 5회 타격은 게임 판정에 따릅니다."
+  },
+  {
+    "id": 65,
+    "file": "/images/skills/phoenix-v1/sheet.webp",
+    "name": "주작의 불꽃",
+    "scope": "대상과 주변 · 9칸",
+    "frameCount": 8,
+    "cols": 4,
+    "rows": 2,
+    "frameMs": 120
+  },
+  {
+    "name": "현무의 변덕",
+    "frameCount": 12,
+    "cols": 4,
+    "rows": 3,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-66.webp",
+    "id": 66,
+    "scope": "전장 전체 · 아군과 적군"
+  },
+  {
+    "name": "백호의 축복",
+    "frameCount": 12,
+    "cols": 4,
+    "rows": 3,
+    "frameMs": 120,
+    "file": "/images/skills/batch-c-v1/skill-67.webp",
+    "id": 67,
+    "scope": "전장 전체 · 아군",
+    "note": "전장 전체 아군에 적용할 소환·회복 연출 예시입니다. 상태 해제 판정은 별도입니다.",
+    "followup": {
+      "file": "/images/skills/batch-b-v1/greater-heal.webp",
+      "name": "그레이트 힐",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120
+    }
+  }
+]

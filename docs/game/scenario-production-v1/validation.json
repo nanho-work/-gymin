@@ -1,0 +1,24 @@
+{
+  "date": "2026-10-30",
+  "checks": {
+    "stageDrafts": 58,
+    "stageScenes": 464,
+    "storyFiles": 59,
+    "battleFiles": 58,
+    "sourceEvents": 2320,
+    "referencedExistingAssets": 112,
+    "maps": 58,
+    "missingAssets": 0,
+    "sourceHashesMatched": 117,
+    "duplicateSceneIDs": 0,
+    "brokenLocalDocumentLinks": 0
+  },
+  "notPerformed": [
+    "원본 실행 비교",
+    "대본 런타임 연결",
+    "각 배경의 시각 적합성 확인",
+    "모든 원본 대사의 개별 치환",
+    "사이트 UI 변경"
+  ],
+  "status": "문서 구조 및 참조 검사 통과; 집필 초안"
+}

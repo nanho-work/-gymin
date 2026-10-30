@@ -1,0 +1,1709 @@
+{
+  "records": [
+    {
+      "id": 50,
+      "name": "광역 민첩 강화",
+      "reuseId": 49,
+      "scope": "대상과 주변 · 아군 9칸",
+      "limitations": [
+        "공유 에셋을 실제 적용 대상에 배치; 판정은 별도"
+      ]
+    },
+    {
+      "id": 51,
+      "name": "격려",
+      "file": "/tmp/effects-batch-c/skill-51.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 24298,
+      "scope": "대상과 상하좌우 · 아군 5칸",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "directionPolicy": "non-directional target/spirit effect",
+      "limitations": [
+        "콘셉트 초안; 실제 게임 판정·지속 상태·시전자 모션 미연결"
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            24,
+            29,
+            114,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            32,
+            35,
+            108,
+            112
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            19,
+            20,
+            108,
+            104
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            26,
+            24,
+            98,
+            97
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            35,
+            12,
+            113,
+            93
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            40,
+            23,
+            90,
+            99
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            20,
+            22,
+            116,
+            99
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            12,
+            33,
+            83,
+            84
+          ],
+          "empty": false,
+          "edgeClear": true
+        }
+      ],
+      "status": "reviewed-draft"
+    },
+    {
+      "id": 52,
+      "name": "승리의 함성",
+      "reuseId": 51,
+      "scope": "대상과 주변 · 아군 9칸",
+      "limitations": [
+        "공유 에셋을 실제 적용 대상에 배치; 판정은 별도"
+      ]
+    },
+    {
+      "id": 53,
+      "name": "공격 강화",
+      "file": "/tmp/effects-batch-c/skill-53.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 31748,
+      "scope": "아군 한 부대",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "directionPolicy": "non-directional target/spirit effect",
+      "limitations": [
+        "콘셉트 초안; 실제 게임 판정·지속 상태·시전자 모션 미연결"
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            22,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        }
+      ],
+      "status": "reviewed-draft"
+    },
+    {
+      "id": 54,
+      "name": "광역 공격 강화",
+      "reuseId": 53,
+      "scope": "대상과 상하좌우 · 아군 5칸",
+      "limitations": [
+        "공유 에셋을 실제 적용 대상에 배치; 판정은 별도"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "광역 방어 강화",
+      "reuseId": 55,
+      "scope": "대상과 상하좌우 · 아군 5칸",
+      "limitations": [
+        "공유 에셋을 실제 적용 대상에 배치; 판정은 별도"
+      ]
+    },
+    {
+      "id": 57,
+      "name": "앙코르",
+      "file": "/tmp/effects-batch-c/skill-57.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 28008,
+      "scope": "행동을 마친 아군 한 부대 · 자신 제외",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "directionPolicy": "non-directional target/spirit effect",
+      "limitations": [
+        "콘셉트 초안; 실제 게임 판정·지속 상태·시전자 모션 미연결"
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            12,
+            16,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            12,
+            14,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            12,
+            20,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            18,
+            12,
+            116,
+            112
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            12,
+            12,
+            116,
+            111
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            12,
+            12,
+            116,
+            113
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            12,
+            12,
+            116,
+            112
+          ],
+          "empty": false,
+          "edgeClear": true
+        }
+      ],
+      "status": "reviewed-draft"
+    },
+    {
+      "id": 58,
+      "name": "비 소환",
+      "file": "/tmp/effects-batch-c/skill-58.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 36444,
+      "scope": "전장 날씨 · 비",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "directionPolicy": "non-directional target/spirit effect",
+      "limitations": [
+        "콘셉트 초안; 실제 게임 판정·지속 상태·시전자 모션 미연결",
+        "날씨 변경의 1회 시전 연출만 포함; 지속 날씨 오버레이는 엔진 별도"
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            12,
+            17,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            12,
+            16,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            12,
+            17,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            12,
+            19,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            12,
+            12,
+            116,
+            112
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            12,
+            12,
+            116,
+            112
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            12,
+            12,
+            116,
+            114
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        }
+      ],
+      "status": "reviewed-draft"
+    },
+    {
+      "id": 59,
+      "name": "맑은 하늘",
+      "file": "/tmp/effects-batch-c/skill-59.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 30872,
+      "scope": "전장 날씨 · 맑음",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "directionPolicy": "non-directional target/spirit effect",
+      "limitations": [
+        "콘셉트 초안; 실제 게임 판정·지속 상태·시전자 모션 미연결",
+        "날씨 변경의 1회 시전 연출만 포함; 지속 날씨 오버레이는 엔진 별도"
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            12,
+            14,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            12,
+            25,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            12,
+            19,
+            110,
+            108
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            22,
+            12,
+            116,
+            107
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            12,
+            12,
+            116,
+            107
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            12,
+            12,
+            116,
+            108
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            12,
+            14,
+            116,
+            111
+          ],
+          "empty": false,
+          "edgeClear": true
+        }
+      ],
+      "status": "reviewed-draft"
+    },
+    {
+      "id": 60,
+      "name": "먹구름",
+      "file": "/tmp/effects-batch-c/skill-60.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 28198,
+      "scope": "전장 날씨 · 흐림",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "directionPolicy": "non-directional target/spirit effect",
+      "limitations": [
+        "콘셉트 초안; 실제 게임 판정·지속 상태·시전자 모션 미연결",
+        "날씨 변경의 1회 시전 연출만 포함; 지속 날씨 오버레이는 엔진 별도"
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            12,
+            21,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            12,
+            17,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            12,
+            16,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            12,
+            14,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            14,
+            12,
+            116,
+            113
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            12,
+            12,
+            116,
+            113
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            12,
+            12,
+            116,
+            112
+          ],
+          "empty": false,
+          "edgeClear": true
+        }
+      ],
+      "status": "reviewed-draft"
+    },
+    {
+      "id": 61,
+      "name": "기합",
+      "reuseId": 53,
+      "scope": "자신",
+      "limitations": [
+        "공유 에셋을 실제 적용 대상에 배치; 판정은 별도"
+      ]
+    },
+    {
+      "id": 62,
+      "name": "마나 전환",
+      "file": "/tmp/effects-batch-c/skill-62.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 24798,
+      "scope": "자신 · HP를 MP로 전환",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "directionPolicy": "non-directional target/spirit effect",
+      "limitations": [
+        "콘셉트 초안; 실제 게임 판정·지속 상태·시전자 모션 미연결"
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            22,
+            25,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            23,
+            22,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            15,
+            21,
+            97,
+            95
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            12,
+            29,
+            96,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            22,
+            12,
+            105,
+            111
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            25,
+            15,
+            87,
+            110
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            12,
+            12,
+            105,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            14,
+            12,
+            110,
+            106
+          ],
+          "empty": false,
+          "edgeClear": true
+        }
+      ],
+      "status": "reviewed-draft"
+    },
+    {
+      "id": 63,
+      "name": "불굴",
+      "file": "/tmp/effects-batch-c/skill-63.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 25080,
+      "scope": "자신 · 공격계열/방어/순발/사기",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "directionPolicy": "non-directional target/spirit effect",
+      "limitations": [
+        "콘셉트 초안; 실제 게임 판정·지속 상태·시전자 모션 미연결"
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            33,
+            23,
+            114,
+            113
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            12,
+            23,
+            115,
+            108
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            12,
+            16,
+            110,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            13,
+            20,
+            110,
+            114
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            28,
+            21,
+            106,
+            101
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            13,
+            16,
+            104,
+            102
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            12,
+            14,
+            116,
+            108
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            12,
+            18,
+            114,
+            108
+          ],
+          "empty": false,
+          "edgeClear": true
+        }
+      ],
+      "status": "reviewed-draft"
+    },
+    {
+      "id": 64,
+      "name": "청룡의 분노",
+      "file": "/tmp/effects-batch-c/skill-64.webp",
+      "frameCount": 12,
+      "cols": 4,
+      "rows": 3,
+      "frameMs": 120,
+      "width": 512,
+      "height": 384,
+      "bytes": 51010,
+      "scope": "시전자 중심 3칸 · 무작위 최대 5회",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "directionPolicy": "non-directional target/spirit effect",
+      "limitations": [
+        "12프레임 소환 후 별도8프레임 번개 타격을 실제 추첨 순서로 배치; 현재 미리보기는 예시이고 게임 판정 미연결"
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            22,
+            28,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            12,
+            22,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            12,
+            19,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            12,
+            19,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 8,
+          "bbox": [
+            21,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 9,
+          "bbox": [
+            12,
+            12,
+            116,
+            112
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 10,
+          "bbox": [
+            12,
+            12,
+            116,
+            110
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 11,
+          "bbox": [
+            12,
+            12,
+            112,
+            113
+          ],
+          "empty": false,
+          "edgeClear": true
+        }
+      ],
+      "status": "reviewed-draft",
+      "followup": {
+        "name": "청룡 단일 번개 타격",
+        "file": "/tmp/effects-batch-c/skill-640.webp",
+        "frameCount": 8,
+        "cols": 4,
+        "rows": 2,
+        "frameMs": 120,
+        "width": 512,
+        "height": 256,
+        "bytes": 29722,
+        "scope": "청룡이 선택한 적 한 부대 · 1회 타격",
+        "anchor": {
+          "x": 64,
+          "y": 64,
+          "type": "air"
+        },
+        "directionPolicy": "non-directional target/spirit effect",
+        "limitations": [
+          "콘셉트 초안; 실제 게임 판정·지속 상태·시전자 모션 미연결"
+        ],
+        "checks": [
+          {
+            "frame": 0,
+            "bbox": [
+              41,
+              29,
+              101,
+              116
+            ],
+            "empty": false,
+            "edgeClear": true
+          },
+          {
+            "frame": 1,
+            "bbox": [
+              24,
+              15,
+              103,
+              112
+            ],
+            "empty": false,
+            "edgeClear": true
+          },
+          {
+            "frame": 2,
+            "bbox": [
+              18,
+              12,
+              94,
+              115
+            ],
+            "empty": false,
+            "edgeClear": true
+          },
+          {
+            "frame": 3,
+            "bbox": [
+              27,
+              12,
+              98,
+              113
+            ],
+            "empty": false,
+            "edgeClear": true
+          },
+          {
+            "frame": 4,
+            "bbox": [
+              36,
+              12,
+              95,
+              109
+            ],
+            "empty": false,
+            "edgeClear": true
+          },
+          {
+            "frame": 5,
+            "bbox": [
+              42,
+              13,
+              89,
+              107
+            ],
+            "empty": false,
+            "edgeClear": true
+          },
+          {
+            "frame": 6,
+            "bbox": [
+              12,
+              12,
+              116,
+              107
+            ],
+            "empty": false,
+            "edgeClear": true
+          },
+          {
+            "frame": 7,
+            "bbox": [
+              47,
+              41,
+              80,
+              107
+            ],
+            "empty": false,
+            "edgeClear": true
+          }
+        ],
+        "status": "draft",
+        "key": "azure-dragon-hit"
+      }
+    },
+    {
+      "id": 66,
+      "name": "현무의 변덕",
+      "file": "/tmp/effects-batch-c/skill-66.webp",
+      "frameCount": 12,
+      "cols": 4,
+      "rows": 3,
+      "frameMs": 120,
+      "width": 512,
+      "height": 384,
+      "bytes": 51268,
+      "scope": "전장 전체 · 아군과 적군",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "directionPolicy": "non-directional target/spirit effect",
+      "limitations": [
+        "콘셉트 초안; 실제 게임 판정·지속 상태·시전자 모션 미연결",
+        "공통 소환 도입만 표시; 실제 무작위 결과별 상태/회복 효과는 공용 에셋에 후속 연결 필요"
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            20,
+            22,
+            104,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            19,
+            18,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            14,
+            23,
+            101,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            14,
+            19,
+            111,
+            115
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            17,
+            12,
+            111,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            13,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            12,
+            13,
+            110,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 8,
+          "bbox": [
+            25,
+            12,
+            116,
+            107
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 9,
+          "bbox": [
+            30,
+            13,
+            109,
+            111
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 10,
+          "bbox": [
+            17,
+            12,
+            116,
+            107
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 11,
+          "bbox": [
+            12,
+            12,
+            101,
+            102
+          ],
+          "empty": false,
+          "edgeClear": true
+        }
+      ],
+      "status": "reviewed-draft"
+    },
+    {
+      "id": 67,
+      "name": "백호의 축복",
+      "file": "/tmp/effects-batch-c/skill-67.webp",
+      "frameCount": 12,
+      "cols": 4,
+      "rows": 3,
+      "frameMs": 120,
+      "width": 512,
+      "height": 384,
+      "bytes": 69114,
+      "scope": "전장 전체 · 아군",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "directionPolicy": "non-directional target/spirit effect",
+      "limitations": [
+        "콘셉트 초안; 실제 게임 판정·지속 상태·시전자 모션 미연결",
+        "소환 도입; 실제 회복량/상태 해제 결과에 맞춰 공용 회복·정화 효과를 후속 연결"
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            12,
+            15,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            12,
+            15,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            12,
+            15,
+            116,
+            115
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            12,
+            15,
+            113,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 8,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 9,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 10,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 11,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        }
+      ],
+      "status": "reviewed-draft"
+    }
+  ],
+  "sources": [
+    "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-6de1faff-2ee1-40bf-a943-21a5066a1672.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-b0bb8425-bd99-4313-8a05-75bb44c1847a.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-04692acc-7071-4f88-a6c4-814ae8b21f69.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-020eb353-5b51-48fa-8280-f1850be62941.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-ac1462e9-bdaf-40bf-a0ca-31e409369fae.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-8025554e-79c4-4472-94ff-a3b641b288a7.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-b5fd86d3-dcb3-4097-9d83-7d9669c00537.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-376a8d84-1a69-4b55-ac18-d622eb14c1b0.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-5873bdd7-633f-4193-975f-3b27c2e22d53.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-a8ac58c0-c649-48ff-a884-f8c2a88bc544.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-e9b2804f-19d4-4386-a3bc-550caff847fc.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-4562559f-9089-4bcf-aa5a-ff2dd282d12b.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-45714864-bf28-4ec6-bdbb-1eba23585993.png"
+  ],
+  "prompts": {
+    "51": "Use case: stylized-concept. Transparent pixel-art Korean fantasy tactical RPG VFX spritesheet. EXACTLY 4 columns by 2 rows, 8 equal square cells. Read left-to-right top-to-bottom sequential animation. A small GOLDEN abstract pennant outline and two warm upward radiating arcs. It emerges, glows briefly then fades. Morale increase, no healing cross. Sequence starts small, grows, reaches peak around middle, fades to tiny final sparks. Fixed center in every frame; every shape fully within CENTRAL 65 percent of cell with generous transparent margin. Crisp chunky pixel clusters readable at 96px, limited palette, luminous highlight with dark contour like classic tactical RPG. No text, no borders, no grid, no character, no scene, no background. TRUE transparent alpha. Each cell independent with no particles crossing cells. This is a transient spell effect not equipment.",
+    "53": "Use case: stylized-concept. Transparent pixel-art Korean fantasy tactical RPG VFX spritesheet. EXACTLY 4 columns by 2 rows, 8 equal square cells. Read left-to-right top-to-bottom sequential animation. Two sharp ORANGE RED energy prongs rise and unite in a brief bright upward aura, then dissolve. Abstract power, no sword or character. Sequence starts small, grows, reaches peak around middle, fades to tiny final sparks. Fixed center in every frame; every shape fully within CENTRAL 65 percent of cell with generous transparent margin. Crisp chunky pixel clusters readable at 96px, limited palette, luminous highlight with dark contour like classic tactical RPG. No text, no borders, no grid, no character, no scene, no background. TRUE transparent alpha. Each cell independent with no particles crossing cells. This is a transient spell effect not equipment.",
+    "57": "Use case: stylized-concept. Transparent pixel-art Korean fantasy tactical RPG VFX spritesheet. EXACTLY 4 columns by 2 rows, 8 equal square cells. Read left-to-right top-to-bottom sequential animation. A GOLD open circular arc spins progressively to complete one ring, gives a small star glint then dissolves. Extra action opportunity, no clock numerals. Sequence starts small, grows, reaches peak around middle, fades to tiny final sparks. Fixed center in every frame; every shape fully within CENTRAL 65 percent of cell with generous transparent margin. Crisp chunky pixel clusters readable at 96px, limited palette, luminous highlight with dark contour like classic tactical RPG. No text, no borders, no grid, no character, no scene, no background. TRUE transparent alpha. Each cell independent with no particles crossing cells. This is a transient spell effect not equipment.",
+    "58": "Use case: stylized-concept. Transparent pixel-art Korean fantasy tactical RPG VFX spritesheet. EXACTLY 4 columns by 2 rows, 8 equal square cells. Read left-to-right top-to-bottom sequential animation. A small BLUE GRAY raincloud forms overhead, sends thin BLUE rain streaks beneath, then the casting cloud thins to rain mist. NO lightning or ground impact. Sequence starts small, grows, reaches peak around middle, fades to tiny final sparks. Fixed center in every frame; every shape fully within CENTRAL 65 percent of cell with generous transparent margin. Crisp chunky pixel clusters readable at 96px, limited palette, luminous highlight with dark contour like classic tactical RPG. No text, no borders, no grid, no character, no scene, no background. TRUE transparent alpha. Each cell independent with no particles crossing cells. This is a transient spell effect not equipment.",
+    "59": "Use case: stylized-concept. Transparent pixel-art Korean fantasy tactical RPG VFX spritesheet. EXACTLY 4 columns by 2 rows, 8 equal square cells. Read left-to-right top-to-bottom sequential animation. A small BLUE GRAY cloud splits and clears to both sides revealing gentle warm CREAM SUNRAYS, then fades. Weather clearing, no healing cross. Sequence starts small, grows, reaches peak around middle, fades to tiny final sparks. Fixed center in every frame; every shape fully within CENTRAL 65 percent of cell with generous transparent margin. Crisp chunky pixel clusters readable at 96px, limited palette, luminous highlight with dark contour like classic tactical RPG. No text, no borders, no grid, no character, no scene, no background. TRUE transparent alpha. Each cell independent with no particles crossing cells. This is a transient spell effect not equipment.",
+    "60": "Use case: stylized-concept. Transparent pixel-art Korean fantasy tactical RPG VFX spritesheet. EXACTLY 4 columns by 2 rows, 8 equal square cells. Read left-to-right top-to-bottom sequential animation. Soft chunky BLUE GRAY cloud puffs gather into one compact dark cloud, swell softly, then fade. No rain no lightning. Sequence starts small, grows, reaches peak around middle, fades to tiny final sparks. Fixed center in every frame; every shape fully within CENTRAL 65 percent of cell with generous transparent margin. Crisp chunky pixel clusters readable at 96px, limited palette, luminous highlight with dark contour like classic tactical RPG. No text, no borders, no grid, no character, no scene, no background. TRUE transparent alpha. Each cell independent with no particles crossing cells. This is a transient spell effect not equipment.",
+    "62": "Use case: stylized-concept. Transparent pixel-art Korean fantasy tactical RPG VFX spritesheet. EXACTLY 4 columns by 2 rows, 8 equal square cells. Read left-to-right top-to-bottom sequential animation. A small RED glowing orb contracts into center, transitions into a BLUE magical crystal spark, rises and fades. Red life converted into blue mana, no green healing. Sequence starts small, grows, reaches peak around middle, fades to tiny final sparks. Fixed center in every frame; every shape fully within CENTRAL 65 percent of cell with generous transparent margin. Crisp chunky pixel clusters readable at 96px, limited palette, luminous highlight with dark contour like classic tactical RPG. No text, no borders, no grid, no character, no scene, no background. TRUE transparent alpha. Each cell independent with no particles crossing cells. This is a transient spell effect not equipment.",
+    "63": "Use case: stylized-concept. Transparent pixel-art Korean fantasy tactical RPG VFX spritesheet. EXACTLY 4 columns by 2 rows, 8 equal square cells. Read left-to-right top-to-bottom sequential animation. Four SHORT energy lines in restrained ORANGE, BLUEGRAY, TEAL, GOLD light up sequentially then unite into a small gold ring and fade. Never rainbow explosion. Sequence starts small, grows, reaches peak around middle, fades to tiny final sparks. Fixed center in every frame; every shape fully within CENTRAL 65 percent of cell with generous transparent margin. Crisp chunky pixel clusters readable at 96px, limited palette, luminous highlight with dark contour like classic tactical RPG. No text, no borders, no grid, no character, no scene, no background. TRUE transparent alpha. Each cell independent with no particles crossing cells. This is a transient spell effect not equipment.",
+    "66": "Use case: stylized-concept. Transparent pixel-art Korean fantasy tactical RPG VFX spritesheet. EXACTLY 4 columns by 3 rows, 12 equal square cells. Read left-to-right top-to-bottom sequential animation. A spectral TORTOISE SHELL with a curling SERPENT silhouette emerges in muted PURPLE BLUE GRAY energy, peaks then dissolves. No individual status symbols; mysterious neutral spirit, not attack. Sequence starts small, grows, reaches peak around middle, fades to tiny final sparks. Fixed center in every frame; every shape fully within CENTRAL 65 percent of cell with generous transparent margin. Crisp chunky pixel clusters readable at 96px, limited palette, luminous highlight with dark contour like classic tactical RPG. No text, no borders, no grid, no character, no scene, no background. TRUE transparent alpha. Each cell independent with no particles crossing cells. This is a transient spell effect not equipment.",
+    "67": "Use case: stylized-concept. Transparent pixel-art Korean fantasy tactical RPG VFX spritesheet. EXACTLY 4 columns by 3 rows, 12 equal square cells. Read left-to-right top-to-bottom sequential animation. A WHITE TIGER FACE silhouette with subtle silver stripes emerges in SILVER IVORY with a little JADE energy, peaks then dissolves into gentle falling sparks. No body, no character, no resurrection cross. Sequence starts small, grows, reaches peak around middle, fades to tiny final sparks. Fixed center in every frame; every shape fully within CENTRAL 65 percent of cell with generous transparent margin. Crisp chunky pixel clusters readable at 96px, limited palette, luminous highlight with dark contour like classic tactical RPG. No text, no borders, no grid, no character, no scene, no background. TRUE transparent alpha. Each cell independent with no particles crossing cells. This is a transient spell effect not equipment.",
+    "64": "Recreate this azure eastern dragon summoning sprite sheet with the SAME 12 frame animation and same 4 columns 3 rows, but FIX CELL OVERLAP AND CROPPING. Every frame's ENTIRE dragon including all whiskers and wisps must fit well INSIDE the CENTRAL 55 percent of its own equal square cell. No image fragment belonging to a neighboring frame. No clipping at cell edges. Make all dragons considerably smaller relative to the cells. Keep fixed center in every cell, gradual growth then gradual dissolve. Frame6 peak still must fit central55percent. Transparent background, no labels no grid, blue white limited palette pixel art. This is spritesheet editing, preserve 12 frames and 4x3 layout.",
+    "640": "Transparent pixel-art Korean fantasy tactical RPG VFX sprite sheet, exactly 4 columns 2 rows eight equal square cells. Eight sequential frames left to right top to bottom. Single AZURE WHITE lightning bolt descends centered and strikes a compact point: initial short spark, longer fork, full narrow jagged bolt with small ground flash, peak, fragments, fading sparks, fewer sparks, tiny last sparks. Blue cyan white limited palette with dark blue edges, crisp mobile readable pixel clusters. Entire bolt fits CENTRAL 65 percent of each cell with fully transparent margin; NEVER cut at top. Same fixed center, no adjacent cell overlap. No cloud no dragon no character no background no grid no letters. This is one hit for a dragon spell, not a connecting chain. TRUE alpha transparency."
+  },
+  "generator": "built-in image_gen",
+  "status": "reviewed-draft",
+  "sourceCleanup": "검수 후 이번 작업 원본 PNG 삭제 완료. 경량 WebP와 프롬프트 보존.",
+  "processing": "equal cells uniformly resized into104x104 without per-frame tight crop; centered128px padding",
+  "review": [
+    "모든12개시트 밝은/어두운 배경 접촉시트 육안검수",
+    "청룡 셀 침범 초안을 재생성하여 교체",
+    "투명 여백/규격/비어있는프레임/용량 기계검사",
+    "실제사이트재생과 최종사용자승인은 통합담당 후속",
+    "전12시트 정점 프레임96px 축소 비교 확인"
+  ],
+  "existingIds": [
+    55,
+    65
+  ],
+  "extraAssets": [
+    {
+      "name": "청룡 단일 번개 타격",
+      "file": "/tmp/effects-batch-c/skill-640.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 29722,
+      "scope": "청룡이 선택한 적 한 부대 · 1회 타격",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "directionPolicy": "non-directional target/spirit effect",
+      "limitations": [
+        "콘셉트 초안; 실제 게임 판정·지속 상태·시전자 모션 미연결"
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            41,
+            29,
+            101,
+            116
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            24,
+            15,
+            103,
+            112
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            18,
+            12,
+            94,
+            115
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            27,
+            12,
+            98,
+            113
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            36,
+            12,
+            95,
+            109
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            42,
+            13,
+            89,
+            107
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            12,
+            12,
+            116,
+            107
+          ],
+          "empty": false,
+          "edgeClear": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            47,
+            41,
+            80,
+            107
+          ],
+          "empty": false,
+          "edgeClear": true
+        }
+      ],
+      "status": "draft",
+      "key": "azure-dragon-hit"
+    }
+  ],
+  "discardedSources": [
+    {
+      "path": "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-45714864-bf28-4ec6-bdbb-1eba23585993.png",
+      "reason": "청룡 중간 프레임 셀 침범 발견, 재생성으로 교체"
+    }
+  ],
+  "newAssetCount": 12,
+  "newBytes": 430560
+}

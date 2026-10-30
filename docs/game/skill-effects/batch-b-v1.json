@@ -1,0 +1,910 @@
+{
+  "status": "draft",
+  "records": [
+    {
+      "id": 25,
+      "name": "위협",
+      "file": "/tmp/effects-batch-b/threat.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 23068,
+      "scope": "대상과 상하좌우 · 5칸",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "sharedIds": [
+        25,
+        26
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 26,
+      "name": "공포의 외침",
+      "file": "/tmp/effects-batch-b/threat.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 23068,
+      "scope": "대상과 주변 · 9칸",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "sharedIds": [
+        25,
+        26
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 27,
+      "name": "약화",
+      "file": "/tmp/effects-batch-b/weaken.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 22260,
+      "scope": "한 부대",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "sharedIds": [
+        27,
+        28
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 28,
+      "name": "광역 약화",
+      "file": "/tmp/effects-batch-b/weaken.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 22260,
+      "scope": "대상과 상하좌우 · 5칸",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "sharedIds": [
+        27,
+        28
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 29,
+      "name": "방어 약화",
+      "file": "/tmp/effects-batch-b/defense-down.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 35430,
+      "scope": "한 부대",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "sharedIds": [
+        29,
+        30
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 30,
+      "name": "광역 방어 약화",
+      "file": "/tmp/effects-batch-b/defense-down.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 35430,
+      "scope": "대상과 상하좌우 · 5칸",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "sharedIds": [
+        29,
+        30
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 31,
+      "name": "혼란",
+      "file": "/tmp/effects-batch-b/confuse.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 31336,
+      "scope": "한 부대",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "sharedIds": [
+        31,
+        32
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 32,
+      "name": "광역 혼란",
+      "file": "/tmp/effects-batch-b/confuse.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 31336,
+      "scope": "대상과 상하좌우 · 5칸",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "sharedIds": [
+        31,
+        32
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 33,
+      "name": "독연기",
+      "file": "/tmp/effects-batch-b/poison.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 29128,
+      "scope": "한 부대",
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "type": "ground"
+      },
+      "sharedIds": [
+        33
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 34,
+      "name": "독안개",
+      "file": "/tmp/effects-batch-b/poison-mist.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 21040,
+      "scope": "대상과 상하좌우 · 5칸",
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "type": "ground"
+      },
+      "sharedIds": [
+        34
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 35,
+      "name": "속박",
+      "file": "/tmp/effects-batch-b/bind.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 26430,
+      "scope": "한 부대",
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "type": "ground"
+      },
+      "sharedIds": [
+        35,
+        36
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 36,
+      "name": "광역 속박",
+      "file": "/tmp/effects-batch-b/bind.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 26430,
+      "scope": "대상과 상하좌우 · 5칸",
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "type": "ground"
+      },
+      "sharedIds": [
+        35,
+        36
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 37,
+      "name": "침묵",
+      "file": "/tmp/effects-batch-b/silence.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 30406,
+      "scope": "한 부대",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "sharedIds": [
+        37
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 38,
+      "name": "도깨비놀음",
+      "file": "/tmp/effects-batch-b/prank.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 30596,
+      "scope": "대상과 주변 · 9칸",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "sharedIds": [
+        38
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복.",
+        "공통 도입만 제작; 무작위 실제 결과에 맞는 타격/상태/회복 연출은 별도 조합."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 40,
+      "name": "그레이트 힐",
+      "file": "/tmp/effects-batch-b/greater-heal.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 36620,
+      "scope": "한 부대",
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "type": "ground"
+      },
+      "sharedIds": [
+        40,
+        42,
+        43
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 41,
+      "name": "그룹 힐",
+      "file": "/tmp/heal-pilot/sheet.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 21666,
+      "scope": "대상과 상하좌우 · 5칸",
+      "sharedIds": [
+        39,
+        41
+      ],
+      "limitations": [
+        "기존 힐 시트를 실제 대상별 배치하는 광역 초안."
+      ],
+      "validation": {
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 42,
+      "name": "그레이트 그룹 힐",
+      "file": "/tmp/effects-batch-b/greater-heal.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 36620,
+      "scope": "대상과 주변 · 9칸",
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "type": "ground"
+      },
+      "sharedIds": [
+        40,
+        42,
+        43
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 43,
+      "name": "원격 힐",
+      "file": "/tmp/effects-batch-b/greater-heal.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 36620,
+      "scope": "한 부대",
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "type": "ground"
+      },
+      "sharedIds": [
+        40,
+        42,
+        43
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 44,
+      "name": "마나 회복",
+      "file": "/tmp/effects-batch-b/mana.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 24550,
+      "scope": "한 부대",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "sharedIds": [
+        44
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 45,
+      "name": "상급 마나 회복",
+      "file": "/tmp/effects-batch-b/greater-mana.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 32836,
+      "scope": "한 부대",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "sharedIds": [
+        45
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 46,
+      "name": "정화",
+      "file": "/tmp/effects-batch-b/cleanse.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 22690,
+      "scope": "한 부대",
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "type": "ground"
+      },
+      "sharedIds": [
+        46,
+        47
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 47,
+      "name": "광역 정화",
+      "file": "/tmp/effects-batch-b/cleanse.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 22690,
+      "scope": "대상과 주변 · 9칸",
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "type": "ground"
+      },
+      "sharedIds": [
+        46,
+        47
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 48,
+      "name": "헤이스트",
+      "file": "/tmp/effects-batch-b/haste.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 20648,
+      "scope": "한 부대",
+      "anchor": {
+        "x": 64,
+        "y": 100,
+        "type": "ground"
+      },
+      "sharedIds": [
+        48
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    },
+    {
+      "id": 49,
+      "name": "민첩 강화",
+      "file": "/tmp/effects-batch-b/agility.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 32936,
+      "scope": "대상과 상하좌우 · 5칸",
+      "anchor": {
+        "x": 64,
+        "y": 64,
+        "type": "air"
+      },
+      "sharedIds": [
+        49
+      ],
+      "limitations": [
+        "판정과 분리된 시각 초안. 상태 성공/실패 및 반대 효과 상쇄는 실제 결과에 따라 별도 표시.",
+        "8프레임 뒤 공백 후 반복."
+      ],
+      "validation": {
+        "nonemptyFrames": true,
+        "padding": "x12; y2 ground / y12 air; original cell margin preserved",
+        "sourceSize": [
+          1774,
+          887
+        ],
+        "visual": "128px 어두운 배경 8프레임 접촉표 및96px 밝은 배경 정점 확인"
+      }
+    }
+  ],
+  "sources": [
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-44c7c046-58ce-48f2-97ed-311bf42cb217.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-e1ba5349-188d-4b67-a1b4-24f07179965e.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-14a5b8dc-cb08-4257-b614-fe35c55cabb1.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-1d801f03-0ab7-4e17-93cb-c97c457f95c5.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-94919142-6c97-41f2-b0d2-87d8554daabd.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-7cc76491-3121-4f0f-ab35-577143d01b78.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-fa0976a7-faee-496e-afde-bc7dbd08515f.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-2520c55f-f932-4b4b-bd88-ec1f9b7f9935.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-2c4a4e40-b024-4865-b592-a1c211c9ec55.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-2150a696-fc97-4d80-b98f-80c4bbd61edc.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-cfe70f77-ad31-42f6-bbf4-044c118d4b2e.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-b11e35cf-69d7-4ad7-aefe-84a3c8a6cbbd.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-bcc6e422-7a2f-4e4e-a5af-5d2c61880698.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-634f39d2-a9b6-403f-ac1b-ecdd8e55e25d.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-ca0fa152-21cf-4916-a2af-b3f2e89751be.png"
+  ],
+  "prompts": [
+    {
+      "key": "threat",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed center at 50 percent x, 50 percent y of each cell. Morale weakening: dark magenta purple wisps descend around an invisible shoulders area, a small warm spirit flame shrinks downward and dissolves. No skull, no chains, no confusion stars."
+    },
+    {
+      "key": "weaken",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed center at 50 percent x, 50 percent y of each cell. Attack or magic weakening: two dark purple curved ribbons compress a violet energy core in the CENTER and crumble downwards. No weapon icon, no damage explosion."
+    },
+    {
+      "key": "defense-down",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed center at 50 percent x, 50 percent y of each cell. Defense weakening: a translucent slate blue small shield outline appears, cracks into separated shards, and fades away. Distinct shield silhouette, NOT an actual equipable shield."
+    },
+    {
+      "key": "confuse",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed center at 50 percent x, 50 percent y of each cell. Confusion spell: two thin violet circular swirls cross around a small lavender spark, become tangled then dissolve into small purple wisps. No character."
+    },
+    {
+      "key": "poison",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed ground origin at 50 percent x, 78 percent y of each cell. Poison smoke: one compact yellow-green toxic smoke puff rises from below, swells with few dark green bubbles, then disperses. Not fire, no skull, no persistent ground pool."
+    },
+    {
+      "key": "poison-mist",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed ground origin at 50 percent x, 78 percent y of each cell. Poison mist: a LOW WIDE bank of muted yellow-green fog billows outward with three rounded lobes then breaks into wisps and fades. Unlike a tall single puff, this stays low."
+    },
+    {
+      "key": "bind",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed ground origin at 50 percent x, 78 percent y of each cell. Binding spell: dark indigo glowing braided knot loops briefly tighten around empty ankle-height space, flash pale blue, unravel and disappear. No character, no steel chains, no full-body prison."
+    },
+    {
+      "key": "silence",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed center at 50 percent x, 50 percent y of each cell. Silence magic seal: a small lavender hollow circular sigil closes across a violet wisp, the inner light shuts off and the seal crumbles into motes. No letters or text, no mouth."
+    },
+    {
+      "key": "prank",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed center at 50 percent x, 50 percent y of each cell. Korean goblin trick magic INTRO only: two tiny cyan and violet spirit flames orbit each other then meet in one pale spark, dissolve. Playful but mysterious, no face or character, no predetermined heal or damage result."
+    },
+    {
+      "key": "greater-heal",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed ground origin at 50 percent x, 78 percent y of each cell. Greater HEAL: TWO leaf-green streams of luminous motes rise from a stable bottom-center base, broaden into two cream sparkles near chest height, separate into small green particles and fade. Restrained green and cream colors. Stronger than basic heal yet not resurrection, no wings or angel or cross."
+    },
+    {
+      "key": "mana",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed center at 50 percent x, 50 percent y of each cell. Mana recovery: a few blue and pale lavender diamond-like particles curl INTO a small center glow, pulse once, dissolve. Compact, no green, no healing cross."
+    },
+    {
+      "key": "greater-mana",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed center at 50 percent x, 50 percent y of each cell. Greater mana recovery: TWO blue and violet elliptical orbits of crystalline light particles converge into a stronger cream-blue center spark, pulse once then fade into tiny diamond motes. Not a huge explosion."
+    },
+    {
+      "key": "cleanse",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed ground origin at 50 percent x, 78 percent y of each cell. Cleanse: a narrow soft ivory and pale gold veil sweeps upward from ground origin, dissolving a few dark purple specks along its path, then fades completely. Not a healing beam or shield. Clear upward sweep."
+    },
+    {
+      "key": "haste",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed ground origin at 50 percent x, 78 percent y of each cell. Movement haste: TWO short cyan speed streaks sweep forward horizontally RIGHT just above the ground origin, momentary slim motion arc then break into sparks and fade. Small close-to-feet effect, no character, no foot prints."
+    },
+    {
+      "key": "agility",
+      "prompt": "Transparent pixel-art tactical RPG spell VFX sheet. EXACTLY 4 columns x 2 rows equal SQUARE cells, 8 sequential frames reading left-to-right then next row. Canvas aspect 2:1. NO text, borders, grid, characters, scenery. Crisp chunky pixel clusters, limited palette 2 main colors plus bright cream highlight, dark colored edges. Classic tactical RPG mobile readable aesthetic. Each frame fits in central 70 percent of its cell with generous transparent margins; NOTHING touches cell boundaries. Identical scale and anchor for all frames, do not auto-fit frames. Animation frames: 1 small emergence,2 growing,3 stronger,4 peak,5 peak changing,6 dissolving,7 sparse remnants,8 tiny last particles. Fixed center at 50 percent x, 50 percent y of each cell. Agility buff: two thin cyan curved arcs gently cross in an upward X around the BODY center, glint once and dissolve into white-green motes. Not a ground path or movement speed trail, no shield."
+    }
+  ],
+  "validation": "15개 신규 시트 생성/경량화 및128px8프레임 접촉표 육안검수. 96px밝은 배경 정점검수. 사이트 통합 재생은root담당.",
+  "sourceCleanup": "검수 후 이번 작업 원본 PNG 삭제 완료. 경량 WebP와 프롬프트 보존."
+}

@@ -1,0 +1,342 @@
+[
+  {
+    "id": 0,
+    "root": "/images/class-motion-pilot/caster/job-24/combat-v2",
+    "name": "책사"
+  },
+  {
+    "id": 1,
+    "root": "/images/class-motion-pilot/caster/job-25/combat-v1",
+    "name": "참모"
+  },
+  {
+    "id": 2,
+    "root": "/images/class-motion-pilot/cavalry/remaining-20261028/job-1/combat-v1",
+    "name": "영웅"
+  },
+  {
+    "id": 3,
+    "root": "/images/class-motion-pilot/caster/job-26/combat-v1",
+    "name": "군사"
+  },
+  {
+    "id": 4,
+    "root": "/images/class-motion-pilot/caster/job-26/combat-v1",
+    "name": "군사"
+  },
+  {
+    "id": 5,
+    "root": "/images/class-motion-pilot/caster/job-24/combat-v2",
+    "name": "책사"
+  },
+  {
+    "id": 6,
+    "root": "/images/class-motion-pilot/caster/job-25/combat-v1",
+    "name": "참모"
+  },
+  {
+    "id": 7,
+    "root": "/images/class-motion-pilot/caster/job-24/combat-v2",
+    "name": "책사"
+  },
+  {
+    "id": 8,
+    "root": "/images/class-motion-pilot/caster/job-26/combat-v1",
+    "name": "군사"
+  },
+  {
+    "id": 9,
+    "root": "/images/class-motion-pilot/caster/job-25/combat-v1",
+    "name": "참모"
+  },
+  {
+    "id": 10,
+    "root": "/images/playable/wang-geon/full-frame-v1",
+    "name": "군웅 · 왕건"
+  },
+  {
+    "id": 11,
+    "root": "/images/class-motion-pilot/cavalry/remaining-20261028/job-34/combat-v3",
+    "name": "기마참모"
+  },
+  {
+    "id": 12,
+    "root": "/images/class-motion-pilot/cavalry/remaining-20261028/job-1/combat-v1",
+    "name": "영웅"
+  },
+  {
+    "id": 13,
+    "root": "/images/class-motion-pilot/cavalry/remaining-20261028/job-35/combat-v2",
+    "name": "기마군사"
+  },
+  {
+    "id": 14,
+    "root": "/images/class-motion-pilot/cavalry/remaining-20261028/job-34/combat-v3",
+    "name": "기마참모"
+  },
+  {
+    "id": 15,
+    "root": "/images/class-motion-pilot/infantry/job-21/combat-v1",
+    "name": "적병"
+  },
+  {
+    "id": 16,
+    "root": "/images/class-motion-pilot/infantry/job-22/combat-v1",
+    "name": "의적"
+  },
+  {
+    "id": 17,
+    "root": "/images/class-motion-pilot/caster/job-24/combat-v2",
+    "name": "책사"
+  },
+  {
+    "id": 18,
+    "root": "/images/class-motion-pilot/caster/job-25/combat-v1",
+    "name": "참모"
+  },
+  {
+    "id": 19,
+    "root": "/images/class-motion-pilot/infantry/job-23/combat-v1",
+    "name": "호걸"
+  },
+  {
+    "id": 20,
+    "root": "/images/class-motion-pilot/caster/job-30/remaining-20261028/combat-v1",
+    "name": "도사"
+  },
+  {
+    "id": 21,
+    "root": "/images/class-motion-pilot/caster/job-32/remaining-20261028/combat-v1",
+    "name": "요술사"
+  },
+  {
+    "id": 22,
+    "root": "/images/class-motion-pilot/caster/job-31/remaining-20261028/combat-v1",
+    "name": "환술사"
+  },
+  {
+    "id": 23,
+    "root": "/images/class-motion-pilot/infantry/job-18/combat-v1",
+    "name": "무도가"
+  },
+  {
+    "id": 24,
+    "root": "/images/class-motion-pilot/infantry/job-20/combat-v1",
+    "name": "권성"
+  },
+  {
+    "id": 25,
+    "root": "/images/class-motion-pilot/caster/job-30/remaining-20261028/combat-v1",
+    "name": "도사"
+  },
+  {
+    "id": 26,
+    "root": "/images/class-motion-pilot/caster/job-31/remaining-20261028/combat-v1",
+    "name": "환술사"
+  },
+  {
+    "id": 27,
+    "root": "/images/class-motion-pilot/caster/job-30/remaining-20261028/combat-v1",
+    "name": "도사"
+  },
+  {
+    "id": 28,
+    "root": "/images/class-motion-pilot/cavalry/remaining-20261028/job-2/combat-v1",
+    "name": "패왕"
+  },
+  {
+    "id": 29,
+    "root": "/images/class-motion-pilot/infantry/job-21/combat-v1",
+    "name": "적병"
+  },
+  {
+    "id": 30,
+    "root": "/images/class-motion-pilot/caster/job-31/remaining-20261028/combat-v1",
+    "name": "환술사"
+  },
+  {
+    "id": 31,
+    "root": "/images/class-motion-pilot/caster/job-31/remaining-20261028/combat-v1",
+    "name": "환술사"
+  },
+  {
+    "id": 32,
+    "root": "/images/class-motion-pilot/caster/job-32/remaining-20261028/combat-v1",
+    "name": "요술사"
+  },
+  {
+    "id": 33,
+    "root": "/images/class-motion-pilot/infantry/job-19/combat-v1",
+    "name": "권사"
+  },
+  {
+    "id": 34,
+    "root": "/images/class-motion-pilot/caster/job-31/remaining-20261028/combat-v1",
+    "name": "환술사"
+  },
+  {
+    "id": 35,
+    "root": "/images/class-motion-pilot/caster/job-30/remaining-20261028/combat-v1",
+    "name": "도사"
+  },
+  {
+    "id": 36,
+    "root": "/images/class-motion-pilot/caster/job-31/remaining-20261028/combat-v1",
+    "name": "환술사"
+  },
+  {
+    "id": 37,
+    "root": "/images/class-motion-pilot/caster/job-31/remaining-20261028/combat-v1",
+    "name": "환술사"
+  },
+  {
+    "id": 38,
+    "root": "/images/class-motion-pilot/caster/job-32/remaining-20261028/combat-v1",
+    "name": "요술사"
+  },
+  {
+    "id": 39,
+    "root": "/images/playable/wang-geon/full-frame-v1",
+    "name": "군웅 · 왕건"
+  },
+  {
+    "id": 40,
+    "root": "/images/class-motion-pilot/caster/job-28/remaining-20261028/combat-v1",
+    "name": "방술사"
+  },
+  {
+    "id": 41,
+    "root": "/images/class-motion-pilot/caster/job-27/remaining-20261028/combat-v1",
+    "name": "풍수사"
+  },
+  {
+    "id": 42,
+    "root": "/images/class-motion-pilot/caster/job-29/remaining-20261028/combat-v1",
+    "name": "선술사"
+  },
+  {
+    "id": 43,
+    "root": "/images/class-motion-pilot/caster/job-28/remaining-20261028/combat-v1",
+    "name": "방술사"
+  },
+  {
+    "id": 44,
+    "root": "/images/class-motion-pilot/cavalry/remaining-20261028/job-1/combat-v1",
+    "name": "영웅"
+  },
+  {
+    "id": 45,
+    "root": "/images/class-motion-pilot/caster/job-28/remaining-20261028/combat-v1",
+    "name": "방술사"
+  },
+  {
+    "id": 46,
+    "root": "/images/class-motion-pilot/caster/job-27/remaining-20261028/combat-v1",
+    "name": "풍수사"
+  },
+  {
+    "id": 47,
+    "root": "/images/class-motion-pilot/caster/job-29/remaining-20261028/combat-v1",
+    "name": "선술사"
+  },
+  {
+    "id": 48,
+    "root": "/images/class-motion-pilot/caster/job-28/remaining-20261028/combat-v1",
+    "name": "방술사"
+  },
+  {
+    "id": 49,
+    "root": "/images/class-motion-pilot/caster/job-27/remaining-20261028/combat-v1",
+    "name": "풍수사"
+  },
+  {
+    "id": 50,
+    "root": "/images/class-motion-pilot/caster/job-28/remaining-20261028/combat-v1",
+    "name": "방술사"
+  },
+  {
+    "id": 51,
+    "root": "/images/class-motion-pilot/caster/job-27/remaining-20261028/combat-v1",
+    "name": "풍수사"
+  },
+  {
+    "id": 52,
+    "root": "/images/class-motion-pilot/caster/job-28/remaining-20261028/combat-v1",
+    "name": "방술사"
+  },
+  {
+    "id": 53,
+    "root": "/images/class-motion-pilot/caster/job-27/remaining-20261028/combat-v1",
+    "name": "풍수사"
+  },
+  {
+    "id": 54,
+    "root": "/images/class-motion-pilot/caster/job-28/remaining-20261028/combat-v1",
+    "name": "방술사"
+  },
+  {
+    "id": 55,
+    "root": "/images/class-motion-pilot/caster/job-27/remaining-20261028/combat-v1",
+    "name": "풍수사"
+  },
+  {
+    "id": 56,
+    "root": "/images/class-motion-pilot/caster/job-28/remaining-20261028/combat-v1",
+    "name": "방술사"
+  },
+  {
+    "id": 57,
+    "root": "/images/class-motion-pilot/caster/job-29/remaining-20261028/combat-v1",
+    "name": "선술사"
+  },
+  {
+    "id": 58,
+    "root": "/images/class-motion-pilot/cavalry/remaining-20261028/job-35/combat-v2",
+    "name": "기마군사"
+  },
+  {
+    "id": 59,
+    "root": "/images/class-motion-pilot/cavalry/remaining-20261028/job-34/combat-v3",
+    "name": "기마참모"
+  },
+  {
+    "id": 60,
+    "root": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/combat-v2",
+    "name": "기마책사"
+  },
+  {
+    "id": 61,
+    "root": "/images/class-motion-pilot/infantry/job-18/combat-v1",
+    "name": "무도가"
+  },
+  {
+    "id": 62,
+    "root": "/images/class-motion-pilot/caster/job-25/combat-v1",
+    "name": "참모"
+  },
+  {
+    "id": 63,
+    "root": "/images/playable/wang-geon/full-frame-v1",
+    "name": "군웅 · 왕건"
+  },
+  {
+    "id": 64,
+    "root": "/images/class-motion-pilot/cavalry/remaining-20261028/job-35/combat-v2",
+    "name": "기마군사"
+  },
+  {
+    "id": 65,
+    "root": "/images/class-motion-pilot/caster/job-26/combat-v1",
+    "name": "군사"
+  },
+  {
+    "id": 66,
+    "root": "/images/class-motion-pilot/caster/job-32/remaining-20261028/combat-v1",
+    "name": "요술사"
+  },
+  {
+    "id": 67,
+    "root": "/images/class-motion-pilot/caster/job-29/remaining-20261028/combat-v1",
+    "name": "선술사"
+  }
+]

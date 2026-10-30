@@ -1,0 +1,2469 @@
+{
+  "status": "draft",
+  "records": [
+    {
+      "id": 6,
+      "name": "급류",
+      "file": "/tmp/effects-batch-a/skill-6.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 24752,
+      "scope": "한 부대",
+      "anchor": {
+        "type": "ground",
+        "x": 64,
+        "y": 100
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            28,
+            51,
+            103,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            21,
+            34,
+            103,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            22,
+            15,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            20,
+            18,
+            104,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            32,
+            22,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            26,
+            17,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            20,
+            18,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            20,
+            15,
+            96,
+            100
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG fire and water effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: A narrow tall powerful water spout bursts upward once, bends into thick white foam and falls into droplets. Deep teal blue cyan white. A single concentrated jet, not ice. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-795cc698-10f9-4445-adf3-b3ae7477b1f3.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 7,
+      "name": "물결 폭발",
+      "file": "/tmp/effects-batch-a/skill-7.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 27916,
+      "scope": "십자 5칸",
+      "anchor": {
+        "type": "ground",
+        "x": 64,
+        "y": 100
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            28,
+            35,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            21,
+            22,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            20,
+            17,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            20,
+            17,
+            107,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            25,
+            16,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            20,
+            17,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            20,
+            16,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            22,
+            17,
+            104,
+            100
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG fire and water effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: A water explosion with five small rising splashes in a CROSS formation center north south east west. Turquoise water white foam. Initial ripple grows into five splashes then droplets dissolve. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-5cb0e0c0-dabe-4e69-82c6-a11b0db3d89e.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 8,
+      "name": "수룡",
+      "file": "/tmp/effects-batch-a/skill-8.webp",
+      "frameCount": 12,
+      "cols": 4,
+      "rows": 3,
+      "frameMs": 120,
+      "width": 512,
+      "height": 384,
+      "bytes": 38478,
+      "scope": "십자 5칸",
+      "anchor": {
+        "type": "ground",
+        "x": 64,
+        "y": 100
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            30,
+            41,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            20,
+            21,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            20,
+            24,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            20,
+            25,
+            100,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            25,
+            21,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            20,
+            12,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            21,
+            12,
+            103,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            20,
+            29,
+            103,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 8,
+          "bbox": [
+            26,
+            27,
+            105,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 9,
+          "bbox": [
+            24,
+            21,
+            106,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 10,
+          "bbox": [
+            24,
+            17,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 11,
+          "bbox": [
+            20,
+            20,
+            94,
+            100
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG fire and water effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: Water curls into a Korean/East Asian dragon head with long flowing whiskers and antler-like horns, emerging from a small water pool, then collapses into white foam. No western dragon wings. Distinct water silhouette, teal blue white. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.\nEDIT: Edit this transparent 4-column 3-row sprite sheet. Preserve the 12 sequential water dragon animation designs and pixel style. Fix cell overflow: shrink EACH effect uniformly to only 60% of its own cell width and height, anchor bottom center at 78% cell height, leave a large fully transparent margin on all four sides of every cell. Remove ALL horizontal blue line artifacts, clipped neighboring cells, and background speckles outside each effect. Keep exactly 4 columns x 3 rows. Do not connect effects, no text, no grid. Same scale factor across all twelve effects, transparent alpha background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-79f36901-064e-46d6-8c8f-6883503e8407.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false,
+        "revision": "최초 원본 셀 잔여 발견 후 내장 image_gen 편집으로 여백 확보·잔여 제거, 수정본 육안확인."
+      }
+    },
+    {
+      "id": 9,
+      "name": "죽음의 해일",
+      "file": "/tmp/effects-batch-a/skill-9.webp",
+      "frameCount": 12,
+      "cols": 4,
+      "rows": 3,
+      "frameMs": 120,
+      "width": 512,
+      "height": 384,
+      "bytes": 48076,
+      "scope": "한 부대 · 성공 시 즉시 퇴각",
+      "anchor": {
+        "type": "ground",
+        "x": 64,
+        "y": 100
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            24,
+            29,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            20,
+            21,
+            107,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            20,
+            17,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            20,
+            21,
+            105,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            25,
+            12,
+            107,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            22,
+            13,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            20,
+            12,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            20,
+            12,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 8,
+          "bbox": [
+            26,
+            18,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 9,
+          "bbox": [
+            20,
+            21,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 10,
+          "bbox": [
+            24,
+            21,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 11,
+          "bbox": [
+            20,
+            23,
+            104,
+            100
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG fire and water effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: A dark blue compact water wall curls around ONE empty target position, closes into bright foam then disappears. Only water, no characters or skeleton. Do not draw a large ocean or whole battlefield. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-84157950-2247-416d-b5df-94db950accc3.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 10,
+      "name": "칼바람",
+      "file": "/tmp/effects-batch-a/skill-10.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 28464,
+      "scope": "한 부대",
+      "anchor": {
+        "type": "air",
+        "x": 64,
+        "y": 64
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            20,
+            43,
+            110,
+            113
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            28,
+            35,
+            94,
+            103
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            16,
+            23,
+            116,
+            113
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            27,
+            29,
+            108,
+            109
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            27,
+            32,
+            102,
+            95
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            12,
+            18,
+            106,
+            102
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            18,
+            32,
+            116,
+            111
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            12,
+            43,
+            90,
+            101
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG effects. Fixed scale and camera. Effect center identical at cell x50%, y50%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: Two thin bright pale teal wind blades cross at center, sharp curved strokes leave brief curling air trails and fade. No sword object, no blood, no lightning. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-51037f6e-bb41-4e55-a641-cec2d8476590.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 11,
+      "name": "회오리바람",
+      "file": "/tmp/effects-batch-a/skill-11.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 23788,
+      "scope": "한 부대",
+      "anchor": {
+        "type": "ground",
+        "x": 64,
+        "y": 100
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            37,
+            47,
+            106,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            31,
+            36,
+            95,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            32,
+            26,
+            94,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            29,
+            17,
+            100,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            34,
+            17,
+            105,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            40,
+            25,
+            103,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            41,
+            33,
+            104,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            26,
+            24,
+            104,
+            100
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: A narrow compact pale teal miniature tornado spiral rises from ground to one person's height, then uncoils and disappears. Empty center, airy negative space, no levitated objects. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-69326041-c349-407b-9997-9699ad744e40.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 12,
+      "name": "돌풍",
+      "file": "/tmp/effects-batch-a/skill-12.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 24520,
+      "scope": "주변 9칸",
+      "anchor": {
+        "type": "ground",
+        "x": 64,
+        "y": 100
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            30,
+            41,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            20,
+            34,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            20,
+            19,
+            101,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            20,
+            26,
+            105,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            26,
+            34,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            25,
+            30,
+            106,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            23,
+            32,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            20,
+            24,
+            108,
+            100
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: Several short pale teal gust bands sweep and cross in a compact broad square footprint, with tiny dust wisps at edges. The bands emerge, peak, disperse. No long beam, no character. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-217d38d8-e460-49a1-a3b5-24f30c19035b.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 13,
+      "name": "폭풍룡",
+      "file": "/tmp/effects-batch-a/skill-13.webp",
+      "frameCount": 12,
+      "cols": 4,
+      "rows": 3,
+      "frameMs": 120,
+      "width": 512,
+      "height": 384,
+      "bytes": 32514,
+      "scope": "주변 9칸",
+      "anchor": {
+        "type": "ground",
+        "x": 64,
+        "y": 100
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            31,
+            37,
+            102,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            23,
+            23,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            22,
+            22,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            20,
+            21,
+            100,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            27,
+            25,
+            104,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            20,
+            13,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            20,
+            13,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            20,
+            14,
+            97,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 8,
+          "bbox": [
+            38,
+            19,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 9,
+          "bbox": [
+            20,
+            20,
+            100,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 10,
+          "bbox": [
+            22,
+            19,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 11,
+          "bbox": [
+            20,
+            20,
+            100,
+            100
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: An airy twisting wind vortex briefly forms an East Asian dragon head silhouette, horns and flowing whiskers drawn from pale teal white wind ribbons and lots of open space; dissolves into thin air ribbons. Not water, no solid scales, no wings. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.\nEDIT:Edit this transparent 4-column 3-row sprite sheet. Preserve twelve sequential wind dragon animation designs and pale teal pixel style. Fix cell overflow: shrink EACH effect uniformly to only 60% of its own cell width and height, anchor bottom center at 78% cell height. Large fully transparent margin all four sides of each cell. Remove ALL detached horizontal line artifacts and clipped neighboring cell residues. Exactly 4 columns x 3 rows, keep phases and same overall size progression, no text no grid. Same scale factor across twelve effects, transparent alpha background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-422489cb-5afb-4033-a4cc-2a83e906ec55.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false,
+        "revision": "최초 원본 셀 잔여 발견 후 내장 image_gen 편집으로 여백 확보·잔여 제거, 수정본 육안확인."
+      }
+    },
+    {
+      "id": 14,
+      "name": "모래폭풍",
+      "file": "/tmp/effects-batch-a/skill-14.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 25820,
+      "scope": "전장 전체 적 · 대상별 반복 배치",
+      "anchor": {
+        "type": "ground",
+        "x": 64,
+        "y": 100
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행.",
+        "전장 전체 적 각각에 재생하는 국소 모래회오리. 전장 화면 모래띠는 별도 생성하지 않았음."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            28,
+            31,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            21,
+            25,
+            103,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            20,
+            26,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            20,
+            23,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            23,
+            19,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            20,
+            16,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            20,
+            24,
+            106,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            25,
+            25,
+            105,
+            100
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: A local dusty ochre sand whirlwind, low broad circular sand gust with flecks, forms around a single target position and disperses. Transparent surrounding, no scenery. This local effect will be repeated on each enemy across battlefield, not a full-screen image. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-2475042d-294d-4b2d-b8a7-df6eebbde1c7.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 15,
+      "name": "낙석",
+      "file": "/tmp/effects-batch-a/skill-15.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 16664,
+      "scope": "한 부대",
+      "anchor": {
+        "type": "ground",
+        "x": 64,
+        "y": 100
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            24,
+            18,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            20,
+            12,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            20,
+            16,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            20,
+            21,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            23,
+            17,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            20,
+            16,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            20,
+            15,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            20,
+            21,
+            108,
+            100
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline, limited palette. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: One small angular brown-gray rock falls vertically into the fixed bottom ground point, impacts into tiny angular gravel and ochre dust, debris vanishes. Show falling approach, impact, debris decay. Not a meteor, no fire. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-a989f6ff-21b9-499d-811c-56310fcafc55.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 16,
+      "name": "산사태",
+      "file": "/tmp/effects-batch-a/skill-16.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 23218,
+      "scope": "한 부대",
+      "anchor": {
+        "type": "ground",
+        "x": 64,
+        "y": 100
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            24,
+            23,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            20,
+            18,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            20,
+            16,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            20,
+            15,
+            106,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            24,
+            22,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            20,
+            21,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            20,
+            19,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            20,
+            20,
+            105,
+            100
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline, limited palette. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: Three compact angular brown rocks tumble down in quick succession to one ground point, forming one dense ochre dust puff and small gravel then disperse. One target only, no mountains, no scenery. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-317df832-d5c1-4262-889e-d7ebbb73a2a0.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 17,
+      "name": "지진",
+      "file": "/tmp/effects-batch-a/skill-17.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 19040,
+      "scope": "십자 5칸",
+      "anchor": {
+        "type": "ground",
+        "x": 64,
+        "y": 100
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행.",
+        "최종 프레임에 낮은 균열/먼지 잔상이 있어 마지막 후 공백으로 소멸 처리."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            26,
+            31,
+            101,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            22,
+            34,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            20,
+            28,
+            101,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            20,
+            31,
+            104,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            25,
+            21,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            20,
+            24,
+            101,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            31,
+            21,
+            96,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            27,
+            25,
+            93,
+            100
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline, limited palette. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: Five small transient ground cracks in a CROSS formation with tiny brown rock spires briefly rising then falling and dissolving into dust. No permanent ground tile or scenery; transparent black cracks outlined ochre. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-e1280045-d4e9-4b4b-947c-2fb19582bf5f.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 18,
+      "name": "대지의 용",
+      "file": "/tmp/effects-batch-a/skill-18.webp",
+      "frameCount": 12,
+      "cols": 4,
+      "rows": 3,
+      "frameMs": 120,
+      "width": 512,
+      "height": 384,
+      "bytes": 42904,
+      "scope": "십자 5칸",
+      "anchor": {
+        "type": "ground",
+        "x": 64,
+        "y": 100
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            24,
+            33,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            20,
+            19,
+            104,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            26,
+            23,
+            103,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            24,
+            21,
+            102,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            30,
+            19,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            20,
+            15,
+            107,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            20,
+            15,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            20,
+            15,
+            105,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 8,
+          "bbox": [
+            29,
+            23,
+            106,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 9,
+          "bbox": [
+            22,
+            17,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 10,
+          "bbox": [
+            20,
+            18,
+            101,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 11,
+          "bbox": [
+            21,
+            18,
+            108,
+            100
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline, limited palette. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: Brown rocks and ochre earth assemble into an East Asian dragon head with angular antler-like horns, emerging at ground point, then crumble into gravel and dust. Solid rocky silhouette, no wings, no fire. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-c9f5b93a-4e81-4476-9284-d14507cc9823.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 19,
+      "name": "바위 강타",
+      "file": "/tmp/effects-batch-a/skill-19.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 21148,
+      "scope": "한 부대",
+      "anchor": {
+        "type": "ground",
+        "x": 64,
+        "y": 100
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행.",
+        "최종 프레임에 낮은 균열/먼지 잔상이 있어 마지막 후 공백으로 소멸 처리."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            32,
+            23,
+            102,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            20,
+            35,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            20,
+            22,
+            107,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            23,
+            22,
+            105,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            24,
+            23,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            21,
+            28,
+            108,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            20,
+            34,
+            107,
+            100
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            20,
+            32,
+            108,
+            100
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: A single large angular dark brown boulder drops onto fixed ground point, breaks into thick angular stone shards and a low dust ring then fades. Not a meteor, no fire. Compact single target impact. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-d58b8dbf-3d0c-4bc0-912c-33668d192676.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 20,
+      "name": "생명 흡수",
+      "file": "/tmp/effects-batch-a/skill-20.webp",
+      "frameCount": 12,
+      "cols": 4,
+      "rows": 3,
+      "frameMs": 120,
+      "width": 512,
+      "height": 384,
+      "bytes": 49112,
+      "scope": "대상 수집 → 시전자 이동 → 회복",
+      "anchor": {
+        "type": "air",
+        "x": 64,
+        "y": 64
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행.",
+        "이동 중 핵 중심이 셀 내 조금 달라지는 초안. 4프레임을 보간 위치에 표시하고 회복 결과는 엔진 판정과 분리."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            20,
+            29,
+            115,
+            114
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            22,
+            21,
+            113,
+            115
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            12,
+            17,
+            114,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            13,
+            21,
+            114,
+            111
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            33,
+            12,
+            116,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            14,
+            13,
+            111,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            13,
+            12,
+            116,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            12,
+            12,
+            113,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 8,
+          "bbox": [
+            23,
+            12,
+            113,
+            113
+          ],
+          "inside": true
+        },
+        {
+          "frame": 9,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 10,
+          "bbox": [
+            14,
+            12,
+            116,
+            111
+          ],
+          "inside": true
+        },
+        {
+          "frame": 11,
+          "bbox": [
+            12,
+            12,
+            113,
+            108
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette. Fixed scale and camera. Effect center identical at cell x50%, y50%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: Three phases: first row 4 frames red crimson life particles gather at center into a red orb. Second row 4 frames a small red orb pulses with a short trailing tail to RIGHT (visual will travel toward caster). Third row 4 frames orb arrives and opens into soft red cream receiving shimmer then vanishes. No blood, no heart icon, no character. Each phase centered.  Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-6efbffca-72e9-4883-af74-b4cd01e5ff54.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      },
+      "segments": [
+        {
+          "role": "collect",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "role": "travel",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "role": "receive",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "directionPolicy": "이동 구간 꼬리가 화면 오른쪽, 밝은 핵이 왼쪽. 기본 왼쪽 진행으로 해석하고 UI에서 대상→시전자 방향에 맞춰 회전/위치 보간."
+    },
+    {
+      "id": 21,
+      "name": "죽음의 환영",
+      "file": "/tmp/effects-batch-a/skill-21.webp",
+      "frameCount": 12,
+      "cols": 4,
+      "rows": 3,
+      "frameMs": 120,
+      "width": 512,
+      "height": 384,
+      "bytes": 51292,
+      "scope": "한 부대 · 성공 시 즉시 퇴각",
+      "anchor": {
+        "type": "air",
+        "x": 64,
+        "y": 64
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            12,
+            15,
+            116,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            12,
+            17,
+            116,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            12,
+            12,
+            114,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            12,
+            19,
+            106,
+            114
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            12,
+            12,
+            116,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            12,
+            12,
+            115,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            14,
+            12,
+            111,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 8,
+          "bbox": [
+            18,
+            12,
+            116,
+            111
+          ],
+          "inside": true
+        },
+        {
+          "frame": 9,
+          "bbox": [
+            12,
+            12,
+            115,
+            111
+          ],
+          "inside": true
+        },
+        {
+          "frame": 10,
+          "bbox": [
+            13,
+            12,
+            116,
+            108
+          ],
+          "inside": true
+        },
+        {
+          "frame": 11,
+          "bbox": [
+            12,
+            23,
+            109,
+            107
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette. Fixed scale and camera. Effect center identical at cell x50%, y50%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: A thin dark violet spectral veil closes around empty target space, two small pale lights like eyes briefly appear then blink closed and the veil dissipates. No actual ghost person, no skeleton, no dead body. Compact single target spell attempt. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-36437fcf-ab3a-4a1e-adf9-c61dcaea14b7.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 22,
+      "name": "마나 흡수",
+      "file": "/tmp/effects-batch-a/skill-22.webp",
+      "frameCount": 12,
+      "cols": 4,
+      "rows": 3,
+      "frameMs": 120,
+      "width": 512,
+      "height": 384,
+      "bytes": 52380,
+      "scope": "대상 수집 → 시전자 이동 → 회복",
+      "anchor": {
+        "type": "air",
+        "x": 64,
+        "y": 64
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행.",
+        "이동 중 핵 중심이 셀 내 조금 달라지는 초안. 4프레임을 보간 위치에 표시하고 회복 결과는 엔진 판정과 분리."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            17,
+            18,
+            116,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            12,
+            18,
+            115,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            12,
+            18,
+            112,
+            114
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            21,
+            19,
+            111,
+            114
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            20,
+            12,
+            116,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            12,
+            15,
+            116,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            12,
+            15,
+            116,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            12,
+            13,
+            109,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 8,
+          "bbox": [
+            18,
+            12,
+            116,
+            111
+          ],
+          "inside": true
+        },
+        {
+          "frame": 9,
+          "bbox": [
+            12,
+            12,
+            116,
+            110
+          ],
+          "inside": true
+        },
+        {
+          "frame": 10,
+          "bbox": [
+            12,
+            12,
+            116,
+            113
+          ],
+          "inside": true
+        },
+        {
+          "frame": 11,
+          "bbox": [
+            12,
+            12,
+            110,
+            111
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette. Fixed scale and camera. Effect center identical at cell x50%, y50%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: Three phases: first row 4 frames blue-violet mana particles gather at center into a tiny faceted crystal glow. Second row 4 frames crystal glow pulses with short tail to RIGHT (will travel toward caster). Third row 4 frames arriving blue-white crystal light opens into a soft receiving sparkle then fades. No character or symbols. Each phase centered.  Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-09cd795d-31cb-4fa2-bf10-bc9d4675726c.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      },
+      "segments": [
+        {
+          "role": "collect",
+          "start": 0,
+          "end": 3
+        },
+        {
+          "role": "travel",
+          "start": 4,
+          "end": 7
+        },
+        {
+          "role": "receive",
+          "start": 8,
+          "end": 11
+        }
+      ],
+      "directionPolicy": "이동 구간 꼬리가 화면 오른쪽, 밝은 핵이 왼쪽. 기본 왼쪽 진행으로 해석하고 UI에서 대상→시전자 방향에 맞춰 회전/위치 보간."
+    },
+    {
+      "id": 23,
+      "name": "둔화",
+      "file": "/tmp/effects-batch-a/skill-23.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 18634,
+      "scope": "십자 5칸 / 광역 둔화 9칸 · 대상별 반복",
+      "anchor": {
+        "type": "air",
+        "x": 64,
+        "y": 64
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            45,
+            52,
+            86,
+            101
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            39,
+            48,
+            90,
+            109
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            31,
+            34,
+            96,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            24,
+            25,
+            108,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            30,
+            22,
+            101,
+            104
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            32,
+            32,
+            110,
+            102
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            27,
+            30,
+            85,
+            95
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            43,
+            18,
+            77,
+            94
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette. Fixed scale and camera. Effect center identical at cell x50%, y50%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: A gray-violet thin curved aura settles downward around empty body-center; a small abstract downward triangle briefly lights, then all fades. No chains, ice, feet binding, clock or letters. Agility decrease only; understated debuff glow. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-7dffc85a-42af-4458-8c2e-6af78cfa5f37.png",
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      }
+    },
+    {
+      "id": 24,
+      "name": "광역 둔화",
+      "file": "/tmp/effects-batch-a/skill-23.webp",
+      "frameCount": 8,
+      "cols": 4,
+      "rows": 2,
+      "frameMs": 120,
+      "width": 512,
+      "height": 256,
+      "bytes": 18634,
+      "scope": "주변 9칸 · 대상별 반복",
+      "anchor": {
+        "type": "air",
+        "x": 64,
+        "y": 64
+      },
+      "limitations": [
+        "생성 초안. 사이트 실제 재생·전투 연결 검수는 통합 담당이 진행."
+      ],
+      "checks": [
+        {
+          "frame": 0,
+          "bbox": [
+            45,
+            52,
+            86,
+            101
+          ],
+          "inside": true
+        },
+        {
+          "frame": 1,
+          "bbox": [
+            39,
+            48,
+            90,
+            109
+          ],
+          "inside": true
+        },
+        {
+          "frame": 2,
+          "bbox": [
+            31,
+            34,
+            96,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 3,
+          "bbox": [
+            24,
+            25,
+            108,
+            116
+          ],
+          "inside": true
+        },
+        {
+          "frame": 4,
+          "bbox": [
+            30,
+            22,
+            101,
+            104
+          ],
+          "inside": true
+        },
+        {
+          "frame": 5,
+          "bbox": [
+            32,
+            32,
+            110,
+            102
+          ],
+          "inside": true
+        },
+        {
+          "frame": 6,
+          "bbox": [
+            27,
+            30,
+            85,
+            95
+          ],
+          "inside": true
+        },
+        {
+          "frame": 7,
+          "bbox": [
+            43,
+            18,
+            77,
+            94
+          ],
+          "inside": true
+        }
+      ],
+      "prompt": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette. Fixed scale and camera. Effect center identical at cell x50%, y50%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: A gray-violet thin curved aura settles downward around empty body-center; a small abstract downward triangle briefly lights, then all fades. No chains, ice, feet binding, clock or letters. Agility decrease only; understated debuff glow. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+      "source": "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-7dffc85a-42af-4458-8c2e-6af78cfa5f37.png",
+      "aliasOf": 23,
+      "verification": {
+        "visual": "모든 시트 128px 어두운 배경/96px 밝은 배경 육안 확인. 시작·정점·소멸 구별, 셀 내 본체 잘림 없음.",
+        "alphaBounds": "모든 프레임 중앙104px 경계 검사 통과",
+        "browserPlayback": false
+      },
+      "sharedIds": [
+        23,
+        24
+      ]
+    }
+  ],
+  "sources": [
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-795cc698-10f9-4445-adf3-b3ae7477b1f3.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-5cb0e0c0-dabe-4e69-82c6-a11b0db3d89e.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-79f36901-064e-46d6-8c8f-6883503e8407.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-16d030ab-46d7-48ae-bd7b-a15c17524626.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-84157950-2247-416d-b5df-94db950accc3.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-51037f6e-bb41-4e55-a641-cec2d8476590.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-69326041-c349-407b-9997-9699ad744e40.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-217d38d8-e460-49a1-a3b5-24f30c19035b.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-422489cb-5afb-4033-a4cc-2a83e906ec55.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-66f8782b-7476-4a6d-a41e-5d25267660a5.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-2475042d-294d-4b2d-b8a7-df6eebbde1c7.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-a989f6ff-21b9-499d-811c-56310fcafc55.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-317df832-d5c1-4262-889e-d7ebbb73a2a0.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-e1280045-d4e9-4b4b-947c-2fb19582bf5f.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-c9f5b93a-4e81-4476-9284-d14507cc9823.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-d58b8dbf-3d0c-4bc0-912c-33668d192676.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-6efbffca-72e9-4883-af74-b4cd01e5ff54.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-36437fcf-ab3a-4a1e-adf9-c61dcaea14b7.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-09cd795d-31cb-4fa2-bf10-bc9d4675726c.png",
+    "/Users/choenamho/.codex/generated_images/01a18a3e-43a5-7b53-b13a-febb291ba3b8/exec-7dffc85a-42af-4458-8c2e-6af78cfa5f37.png"
+  ],
+  "prompts": {
+    "6": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG fire and water effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: A narrow tall powerful water spout bursts upward once, bends into thick white foam and falls into droplets. Deep teal blue cyan white. A single concentrated jet, not ice. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "7": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG fire and water effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: A water explosion with five small rising splashes in a CROSS formation center north south east west. Turquoise water white foam. Initial ripple grows into five splashes then droplets dissolve. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "8": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG fire and water effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: Water curls into a Korean/East Asian dragon head with long flowing whiskers and antler-like horns, emerging from a small water pool, then collapses into white foam. No western dragon wings. Distinct water silhouette, teal blue white. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.\nEDIT: Edit this transparent 4-column 3-row sprite sheet. Preserve the 12 sequential water dragon animation designs and pixel style. Fix cell overflow: shrink EACH effect uniformly to only 60% of its own cell width and height, anchor bottom center at 78% cell height, leave a large fully transparent margin on all four sides of every cell. Remove ALL horizontal blue line artifacts, clipped neighboring cells, and background speckles outside each effect. Keep exactly 4 columns x 3 rows. Do not connect effects, no text, no grid. Same scale factor across all twelve effects, transparent alpha background.",
+    "9": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG fire and water effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: A dark blue compact water wall curls around ONE empty target position, closes into bright foam then disappears. Only water, no characters or skeleton. Do not draw a large ocean or whole battlefield. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "10": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG effects. Fixed scale and camera. Effect center identical at cell x50%, y50%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: Two thin bright pale teal wind blades cross at center, sharp curved strokes leave brief curling air trails and fade. No sword object, no blood, no lightning. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "11": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: A narrow compact pale teal miniature tornado spiral rises from ground to one person's height, then uncoils and disappears. Empty center, airy negative space, no levitated objects. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "12": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: Several short pale teal gust bands sweep and cross in a compact broad square footprint, with tiny dust wisps at edges. The bands emerge, peak, disperse. No long beam, no character. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "13": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: An airy twisting wind vortex briefly forms an East Asian dragon head silhouette, horns and flowing whiskers drawn from pale teal white wind ribbons and lots of open space; dissolves into thin air ribbons. Not water, no solid scales, no wings. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.\nEDIT:Edit this transparent 4-column 3-row sprite sheet. Preserve twelve sequential wind dragon animation designs and pale teal pixel style. Fix cell overflow: shrink EACH effect uniformly to only 60% of its own cell width and height, anchor bottom center at 78% cell height. Large fully transparent margin all four sides of each cell. Remove ALL detached horizontal line artifacts and clipped neighboring cell residues. Exactly 4 columns x 3 rows, keep phases and same overall size progression, no text no grid. Same scale factor across twelve effects, transparent alpha background.",
+    "14": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette, same visual density as small classic tactical RPG effects. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 70% of each cell with generous transparent margins. No crossing cells, no cropped edges. Subject: A local dusty ochre sand whirlwind, low broad circular sand gust with flecks, forms around a single target position and disperses. Transparent surrounding, no scenery. This local effect will be repeated on each enemy across battlefield, not a full-screen image. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "15": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline, limited palette. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: One small angular brown-gray rock falls vertically into the fixed bottom ground point, impacts into tiny angular gravel and ochre dust, debris vanishes. Show falling approach, impact, debris decay. Not a meteor, no fire. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "16": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline, limited palette. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: Three compact angular brown rocks tumble down in quick succession to one ground point, forming one dense ochre dust puff and small gravel then disperse. One target only, no mountains, no scenery. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "17": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline, limited palette. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: Five small transient ground cracks in a CROSS formation with tiny brown rock spires briefly rising then falling and dissolving into dust. No permanent ground tile or scenery; transparent black cracks outlined ochre. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "18": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline, limited palette. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: Brown rocks and ochre earth assemble into an East Asian dragon head with angular antler-like horns, emerging at ground point, then crumble into gravel and dust. Solid rocky silhouette, no wings, no fire. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "19": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette. Fixed scale and camera. Ground contact anchor identical at cell x50%, y78%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: A single large angular dark brown boulder drops onto fixed ground point, breaks into thick angular stone shards and a low dust ring then fades. Not a meteor, no fire. Compact single target impact. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "20": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette. Fixed scale and camera. Effect center identical at cell x50%, y50%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: Three phases: first row 4 frames red crimson life particles gather at center into a red orb. Second row 4 frames a small red orb pulses with a short trailing tail to RIGHT (visual will travel toward caster). Third row 4 frames orb arrives and opens into soft red cream receiving shimmer then vanishes. No blood, no heart icon, no character. Each phase centered.  Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "21": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette. Fixed scale and camera. Effect center identical at cell x50%, y50%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: A thin dark violet spectral veil closes around empty target space, two small pale lights like eyes briefly appear then blink closed and the veil dissipates. No actual ghost person, no skeleton, no dead body. Compact single target spell attempt. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "22": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 3 ROWS of equal square cells, 12 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette. Fixed scale and camera. Effect center identical at cell x50%, y50%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: Three phases: first row 4 frames blue-violet mana particles gather at center into a tiny faceted crystal glow. Second row 4 frames crystal glow pulses with short tail to RIGHT (will travel toward caster). Third row 4 frames arriving blue-white crystal light opens into a soft receiving sparkle then fades. No character or symbols. Each phase centered.  Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background.",
+    "23": "Use case stylized-concept. Transparent pixel-art VFX sprite sheet for Korean fantasy tactical RPG. EXACTLY FOUR COLUMNS by 2 ROWS of equal square cells, 8 distinct sequential frames reading left to right top to bottom. No labels no numbers no grid no background no scenery no characters. Bold chunky readable pixel clusters, dark outline and luminous core, limited palette. Fixed scale and camera. Effect center identical at cell x50%, y50%. Keep all art including particles inside central 60% of each cell with very generous transparent margins. Absolutely no crossing cells, no cropped edges or horizontal artifacts. Subject: A gray-violet thin curved aura settles downward around empty body-center; a small abstract downward triangle briefly lights, then all fades. No chains, ice, feet binding, clock or letters. Agility decrease only; understated debuff glow. Sequence begins tiny, grows gradually to clear peak, contracts and dissolves into sparse traces in final frame. Crisp pixel style, no blurry glow, no photorealistic texture, no text. Alpha transparent background."
+  },
+  "sourceCleanup": "검수 후 이번 작업 원본 PNG 삭제 완료. 경량 WebP와 프롬프트 보존.",
+  "uniqueAssetCount": 18,
+  "totalBytes": 568720,
+  "verification": "id6–24 19개 연결, 독립 시트18개, id23/24 공유. 기존 사이트 소스 무수정."
+}

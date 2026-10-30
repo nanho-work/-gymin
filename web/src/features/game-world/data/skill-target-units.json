@@ -1,0 +1,398 @@
+[
+  {
+    "id": "0",
+    "name": "왕건 · 군웅 · 왕건",
+    "combat": "/images/playable/monarch-motion-v1/wang-geon/0/combat",
+    "weakened": "/images/playable/monarch-motion-v1/wang-geon/0/weakened"
+  },
+  {
+    "id": "1",
+    "name": "왕건 · 영웅 · 왕건",
+    "combat": "/images/playable/monarch-motion-v1/wang-geon/1/combat",
+    "weakened": "/images/playable/monarch-motion-v1/wang-geon/1/weakened"
+  },
+  {
+    "id": "2",
+    "name": "왕건 · 패왕 · 왕건",
+    "combat": "/images/playable/monarch-motion-v1/wang-geon/2/combat",
+    "weakened": "/images/playable/monarch-motion-v1/wang-geon/2/weakened"
+  },
+  {
+    "id": "3",
+    "name": "궁예 · 군웅 · 궁예",
+    "combat": "/images/playable/monarch-motion-v1/gung-ye/0/combat",
+    "weakened": "/images/playable/monarch-motion-v1/gung-ye/0/weakened"
+  },
+  {
+    "id": "4",
+    "name": "궁예 · 영웅 · 궁예",
+    "combat": "/images/playable/monarch-motion-v1/gung-ye/1/combat",
+    "weakened": "/images/playable/monarch-motion-v1/gung-ye/1/weakened"
+  },
+  {
+    "id": "5",
+    "name": "궁예 · 패왕 · 궁예",
+    "combat": "/images/playable/monarch-motion-v1/gung-ye/2/combat",
+    "weakened": "/images/playable/monarch-motion-v1/gung-ye/2/weakened"
+  },
+  {
+    "id": "6",
+    "name": "견훤 · 군웅 · 견훤",
+    "combat": "/images/playable/monarch-motion-v1/gyeon-hwon/0/combat",
+    "weakened": "/images/playable/monarch-motion-v1/gyeon-hwon/0/weakened"
+  },
+  {
+    "id": "7",
+    "name": "견훤 · 영웅 · 견훤",
+    "combat": "/images/playable/monarch-motion-v1/gyeon-hwon/1/combat",
+    "weakened": "/images/playable/monarch-motion-v1/gyeon-hwon/1/weakened"
+  },
+  {
+    "id": "8",
+    "name": "견훤 · 패왕 · 견훤",
+    "combat": "/images/playable/monarch-motion-v1/gyeon-hwon/2/combat",
+    "weakened": "/images/playable/monarch-motion-v1/gyeon-hwon/2/weakened"
+  },
+  {
+    "id": "9",
+    "name": "서량기병",
+    "combat": "/images/special-motion-v1/39/combat",
+    "weakened": "/images/special-motion-v1/39/weakened"
+  },
+  {
+    "id": "10",
+    "name": "유민군",
+    "combat": "/images/special-motion-v1/40/combat",
+    "weakened": "/images/weakened-complete-v1/unit-10"
+  },
+  {
+    "id": "11",
+    "name": "해적",
+    "combat": "/images/special-motion-v1/41/combat",
+    "weakened": "/images/weakened-complete-v1/unit-11"
+  },
+  {
+    "id": "12",
+    "name": "제독",
+    "combat": "/images/special-motion-v1/44/combat",
+    "weakened": "/images/weakened-complete-v1/unit-12"
+  },
+  {
+    "id": "13",
+    "name": "주술사",
+    "combat": "/images/special-motion-v1/45/combat",
+    "weakened": "/images/weakened-complete-v1/unit-13"
+  },
+  {
+    "id": "14",
+    "name": "선인",
+    "combat": "/images/special-motion-v1/46/combat",
+    "weakened": "/images/weakened-complete-v1/unit-14"
+  },
+  {
+    "id": "15",
+    "name": "물자대",
+    "combat": "/images/special-motion-v1/47/combat",
+    "weakened": "/images/weakened-complete-v1/unit-15"
+  },
+  {
+    "id": "16",
+    "name": "식량대",
+    "combat": "/images/special-motion-v1/48/combat",
+    "weakened": "/images/weakened-complete-v1/unit-16"
+  },
+  {
+    "id": "17",
+    "name": "황제",
+    "combat": "/images/special-motion-v1/51/combat",
+    "weakened": "/images/weakened-complete-v1/unit-17"
+  },
+  {
+    "id": "18",
+    "name": "민중 · 여성",
+    "combat": "/images/special-motion-v1/52/combat",
+    "weakened": "/images/weakened-complete-v1/unit-18"
+  },
+  {
+    "id": "19",
+    "name": "민중 · 남성",
+    "combat": "/images/special-motion-v1/1052/combat",
+    "weakened": "/images/weakened-complete-v1/unit-19"
+  },
+  {
+    "id": "20",
+    "name": "쇠동 부대",
+    "combat": "/images/special-motion-v1/1006/combat",
+    "weakened": "/images/weakened-complete-v1/unit-20"
+  },
+  {
+    "id": "21",
+    "name": "쿵돌 부대",
+    "combat": "/images/folklore/kungdol-motion-v2",
+    "weakened": "/images/weakened-complete-v1/unit-21"
+  },
+  {
+    "id": "22",
+    "name": "길목 부대",
+    "combat": "/images/folklore/gilmok-motion-v2",
+    "weakened": "/images/weakened-complete-v1/unit-22"
+  },
+  {
+    "id": "23",
+    "name": "사금 부대",
+    "combat": "/images/folklore/sageum-motion-v2",
+    "weakened": "/images/weakened-complete-v1/unit-23"
+  },
+  {
+    "id": "24",
+    "name": "몽당",
+    "combat": "/images/folklore/mongdang-motion-v2",
+    "weakened": "/images/weakened-complete-v1/unit-24"
+  },
+  {
+    "id": "25",
+    "name": "망실",
+    "combat": "/images/special-motion-v1/25/combat",
+    "weakened": "/images/weakened-complete-v1/unit-25"
+  },
+  {
+    "id": "26",
+    "name": "불씨",
+    "combat": "/images/folklore/bulssi-motion-v2",
+    "weakened": "/images/weakened-complete-v1/unit-26"
+  },
+  {
+    "id": "27",
+    "name": "여울",
+    "combat": "/images/folklore/yeoul-motion-v2",
+    "weakened": "/images/weakened-complete-v1/unit-27"
+  },
+  {
+    "id": "28",
+    "name": "물결",
+    "combat": "/images/folklore/mulgyeol-motion-v2",
+    "weakened": "/images/weakened-complete-v1/unit-28"
+  },
+  {
+    "id": "29",
+    "name": "소담",
+    "combat": "/images/folklore/sodam-motion-v2",
+    "weakened": "/images/weakened-complete-v1/unit-29"
+  },
+  {
+    "id": "33",
+    "name": "경보병",
+    "combat": "/images/class-motion-pilot/infantry/job-3/combat-v2",
+    "weakened": "/images/weakened-complete-v1/unit-33"
+  },
+  {
+    "id": "34",
+    "name": "중보병",
+    "combat": "/images/class-motion-pilot/infantry/job-4/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-34"
+  },
+  {
+    "id": "35",
+    "name": "근위병",
+    "combat": "/images/class-motion-pilot/infantry/job-5/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-35"
+  },
+  {
+    "id": "36",
+    "name": "궁병",
+    "combat": "/images/class-motion-pilot/archer/job-6/combat-v2",
+    "weakened": "/images/weakened-complete-v1/unit-36"
+  },
+  {
+    "id": "37",
+    "name": "노병",
+    "combat": "/images/class-motion-pilot/archer/job-7/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-37"
+  },
+  {
+    "id": "38",
+    "name": "연노병",
+    "combat": "/images/class-motion-pilot/archer/job-8/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-38"
+  },
+  {
+    "id": "39",
+    "name": "경기병",
+    "combat": "/images/class-motion-pilot/cavalry/job-9/combat-v2",
+    "weakened": "/images/class-motion-pilot/cavalry/job-9/weakened-v2"
+  },
+  {
+    "id": "40",
+    "name": "중기병",
+    "combat": "/images/class-motion-pilot/cavalry/job-10/combat-v1",
+    "weakened": "/images/class-motion-pilot/cavalry/job-10/weakened-v1"
+  },
+  {
+    "id": "41",
+    "name": "친위대",
+    "combat": "/images/class-motion-pilot/cavalry/job-11/combat-v1",
+    "weakened": "/images/class-motion-pilot/cavalry/job-11/weakened-v1"
+  },
+  {
+    "id": "42",
+    "name": "궁기병",
+    "combat": "/images/class-motion-pilot/archer/job-12/combat-v1",
+    "weakened": "/images/class-motion-pilot/archer/job-12/weakened-v1"
+  },
+  {
+    "id": "43",
+    "name": "노기병",
+    "combat": "/images/class-motion-pilot/archer/job-13/combat-v1",
+    "weakened": "/images/class-motion-pilot/archer/job-13/weakened-v1"
+  },
+  {
+    "id": "44",
+    "name": "연노기병",
+    "combat": "/images/class-motion-pilot/archer/job-14/combat-v1",
+    "weakened": "/images/class-motion-pilot/archer/job-14/weakened-v1"
+  },
+  {
+    "id": "45",
+    "name": "경포차",
+    "combat": "/images/class-motion-pilot/archer/job-15/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-45"
+  },
+  {
+    "id": "46",
+    "name": "중포차",
+    "combat": "/images/class-motion-pilot/archer/job-16/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-46"
+  },
+  {
+    "id": "47",
+    "name": "벽력차",
+    "combat": "/images/class-motion-pilot/archer/job-17/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-47"
+  },
+  {
+    "id": "48",
+    "name": "무도가",
+    "combat": "/images/class-motion-pilot/infantry/job-18/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-48"
+  },
+  {
+    "id": "49",
+    "name": "권사",
+    "combat": "/images/class-motion-pilot/infantry/job-19/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-49"
+  },
+  {
+    "id": "50",
+    "name": "권성",
+    "combat": "/images/class-motion-pilot/infantry/job-20/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-50"
+  },
+  {
+    "id": "51",
+    "name": "적병",
+    "combat": "/images/class-motion-pilot/infantry/job-21/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-51"
+  },
+  {
+    "id": "52",
+    "name": "의적",
+    "combat": "/images/class-motion-pilot/infantry/job-22/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-52"
+  },
+  {
+    "id": "53",
+    "name": "호걸",
+    "combat": "/images/class-motion-pilot/infantry/job-23/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-53"
+  },
+  {
+    "id": "54",
+    "name": "책사",
+    "combat": "/images/class-motion-pilot/caster/job-24/combat-v2",
+    "weakened": "/images/weakened-complete-v1/unit-54"
+  },
+  {
+    "id": "55",
+    "name": "참모",
+    "combat": "/images/class-motion-pilot/caster/job-25/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-55"
+  },
+  {
+    "id": "56",
+    "name": "군사",
+    "combat": "/images/class-motion-pilot/caster/job-26/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-56"
+  },
+  {
+    "id": "57",
+    "name": "풍수사",
+    "combat": "/images/class-motion-pilot/caster/job-27/remaining-20261028/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-57"
+  },
+  {
+    "id": "58",
+    "name": "방술사",
+    "combat": "/images/class-motion-pilot/caster/job-28/remaining-20261028/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-58"
+  },
+  {
+    "id": "59",
+    "name": "선술사",
+    "combat": "/images/class-motion-pilot/caster/job-29/remaining-20261028/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-59"
+  },
+  {
+    "id": "60",
+    "name": "도사",
+    "combat": "/images/class-motion-pilot/caster/job-30/remaining-20261028/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-60"
+  },
+  {
+    "id": "61",
+    "name": "환술사",
+    "combat": "/images/class-motion-pilot/caster/job-31/remaining-20261028/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-61"
+  },
+  {
+    "id": "62",
+    "name": "요술사",
+    "combat": "/images/class-motion-pilot/caster/job-32/remaining-20261028/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-62"
+  },
+  {
+    "id": "63",
+    "name": "기마책사",
+    "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/combat-v2",
+    "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-33/weakened-v2"
+  },
+  {
+    "id": "64",
+    "name": "기마참모",
+    "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-34/combat-v3",
+    "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-34/weakened-v3"
+  },
+  {
+    "id": "65",
+    "name": "기마군사",
+    "combat": "/images/class-motion-pilot/cavalry/remaining-20261028/job-35/combat-v2",
+    "weakened": "/images/class-motion-pilot/cavalry/remaining-20261028/job-35/weakened-v2"
+  },
+  {
+    "id": "66",
+    "name": "무용수",
+    "combat": "/images/class-motion-pilot/caster/job-36/remaining-20261028/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-66"
+  },
+  {
+    "id": "67",
+    "name": "무희",
+    "combat": "/images/class-motion-pilot/caster/job-37/remaining-20261028/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-67"
+  },
+  {
+    "id": "68",
+    "name": "무녀",
+    "combat": "/images/class-motion-pilot/caster/job-38/remaining-20261028/combat-v1",
+    "weakened": "/images/weakened-complete-v1/unit-68"
+  }
+]

@@ -16,9 +16,10 @@
         "name": "몽당",
         "combat": "/images/folklore/mongdang-motion-v2",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-24",
         "notes": [
-          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -40,9 +41,10 @@
         "name": "사금",
         "combat": "/images/folklore/sageum-motion-v2",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-23",
         "notes": [
-          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -64,9 +66,10 @@
         "name": "망실",
         "combat": "/images/special-motion-v1/25/combat",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-25",
         "notes": [
-          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -88,9 +91,10 @@
         "name": "불씨",
         "combat": "/images/folklore/bulssi-motion-v2",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-26",
         "notes": [
-          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -112,9 +116,10 @@
         "name": "쿵돌",
         "combat": "/images/folklore/kungdol-motion-v2",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-21",
         "notes": [
-          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -136,9 +141,10 @@
         "name": "여울",
         "combat": "/images/folklore/yeoul-motion-v2",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-27",
         "notes": [
-          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -160,9 +166,10 @@
         "name": "물결",
         "combat": "/images/folklore/mulgyeol-motion-v2",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-28",
         "notes": [
-          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -184,9 +191,10 @@
         "name": "소담",
         "combat": "/images/folklore/sodam-motion-v2",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-29",
         "notes": [
-          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -208,9 +216,10 @@
         "name": "쇠동",
         "combat": "/images/special-motion-v1/1006/combat",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-20",
         "notes": [
-          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -232,9 +241,10 @@
         "name": "길목",
         "combat": "/images/folklore/gilmok-motion-v2",
         "scenario": "",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-22",
         "notes": [
-          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작."
+          "설화 동료 4방향 모션 초안. 전승과 별개의 게임용 창작 외형·동작.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]

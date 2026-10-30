@@ -6,7 +6,7 @@ export function ProjectShell({ children }: {
     children: React.ReactNode;
 }) {
     const path = usePathname();
-    if (["/", "/world", "/story", "/characters", "/items", "/history"].includes(path) || path.startsWith("/items/"))
+    if (["/", "/world", "/story", "/characters", "/items", "/skills", "/history"].includes(path) || path.startsWith("/items/"))
         return <>{children}</>;
     return <AuthProvider><SiteLayout>{children}</SiteLayout></AuthProvider>;
 }

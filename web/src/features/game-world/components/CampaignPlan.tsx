@@ -1,21 +1,41 @@
 "use client";
-import {useState} from 'react';
-import plan from '../data/campaign.json';
-import styles from '../pages/world.module.css';
+import {useEffect,useMemo,useState} from 'react';
+import data from '../data/story-site.json';
+import {catalog} from '../model/itemCatalog';
+import s from './story.module.css';
+const tabs=[['situation','상황'],['script','대본'],['terrain','배경·장애물'],['rewards','보상']] as const;
+type Panel=typeof tabs[number][0];
+const routes=['전체','공통','역사','허구'];
+function Text({body}:{body:string}){
+ return <div className={s.prose}>{body.split(/\n\n+/).map((p,i)=>{
+  if(p.startsWith('### '))return <h3 key={i}>{p.slice(4)}</h3>;
+  if(p.startsWith('|')){const rows=p.split('\n').filter(l=>l.startsWith('|')&&!/^\|[ :|\-]+$/.test(l)).map(l=>l.split('|').slice(1,-1).map(c=>c.trim()));return <div className={s.tableWrap} key={i}><table><thead><tr>{rows[0]?.map((c,j)=><th key={j}>{c}</th>)}</tr></thead><tbody>{rows.slice(1).map((r,k)=><tr key={k}>{r.map((c,j)=><td key={j}>{c}</td>)}</tr>)}</tbody></table></div>;}
+  if(p.startsWith('- '))return <ul key={i}>{p.split('\n').map((l,j)=><li key={j}>{l.replace(/^- /,'')}</li>)}</ul>;
+  return <p key={i}>{p.replace(/\[([^\]]+)\]\([^)]+\)/g,'$1').replace(/\*\*/g,'').replace(/`/g,'')}</p>;
+ })}</div>;
+}
 export function CampaignPlan(){
- const [route,setRoute]=useState('all');
- const common=plan.stages.filter(s=>s.route==='common').length;
- const routeCount=plan.stages.filter(s=>s.route==='A').length;
- return <section className={styles.section}>
-  <div className={styles.heading}><div><span>CAMPAIGN · DESIGN v{plan.version}</span><h1>왕건의 길, 여섯 개의 장</h1></div><span className={styles.draft}>전체 설계 초안</span></div>
-  <p>{plan.status}</p><p>{plan.summary}</p>
-  <div className={styles.campaignStats}><strong>{plan.stages.length}<small>고유 전투안</small></strong><strong>{common+routeCount}<small>한 회차 전투안</small></strong><strong>2<small>후반 경로</small></strong><strong>936<small>공유하는 역사적 도달점</small></strong></div>
-  <div className={styles.branchFlow}><div>1~4막 · C01–C20<br/><b>공통 성장과 공산의 패배</b></div><span>↓ 선택 직전 저장 · 직접 경로 선택</span><div className={styles.branchPaths}>{plan.routes.map(r=><article key={r.id}><span>{r.id}01–{r.id}08 · 8전투</span><h3>{r.name}</h3><p>{r.description}</p><small>{r.companion}</small></article>)}</div><span>↓ F01 합류</span><div>6막 · F01–F08<br/><b>귀부와 통일 · 경로별 후일담</b></div></div>
-  <details className={styles.planNotes}><summary>조조전에서 참고하는 구조와 바꾸는 원칙</summary><ul>{plan.reference.map(t=><li key={t}>{t}</li>)}</ul></details>
-  <h2>장별 흐름과 전투 목록</h2><p>각 전투를 펼치면 목표·패배조건·선택의 결과를 볼 수 있습니다. ‘역사 기반’도 지도·대사·임무 조건까지 사료로 확인했다는 뜻은 아닙니다.</p>
-  <div className={styles.routeFilters} aria-label="경로별 전투 보기">{[['all','전체 설계'],['A','A 경로 한 회차'],['B','B 경로 한 회차']].map(([id,label])=><button key={id} aria-pressed={route===id} onClick={()=>setRoute(id)}>{label}</button>)}</div>
-  {plan.acts.map(act=><section key={act.id} className={styles.campaignAct}><span>{act.id}막 · {act.period}</span><h2>{act.title}</h2><p>{act.summary}</p>{plan.stages.filter(s=>s.act===act.id&&(route==='all'||s.route==='common'||s.route===route)).map(s=><details key={s.id} className={styles.stage}><summary><b>{s.id}</b><strong>{s.title}</strong><small>{s.basis}</small></summary><dl><dt>전투 목표</dt><dd>{s.win}</dd><dt>필수 패배조건</dt><dd>{s.lose}</dd><dt>플레이 주제</dt><dd>{s.play}</dd><dt>이야기·선택 결과</dt><dd>{s.consequence}</dd></dl></details>)}</section>)}
-  {[["분기와 실패 처리",plan.branchRules],["동료와 성장",plan.progression],["통일 이후의 결산",plan.endings],["다음에 함께 확정할 항목",plan.next]].map(([title,items])=><section className={styles.planNotes} key={String(title)}><h2>{title}</h2><ul>{(items as string[]).map(t=><li key={t}>{t}</li>)}</ul></section>)}
-  <div className={styles.planNotes}><h2>역사적 기준 자료</h2>{plan.sources.map(s=><p key={s.url}><a href={s.url} target="_blank" rel="noreferrer">{s.title}</a></p>)}<p>창작 전투의 날짜·인물 참여·지형은 후속 고증 대상입니다. 신령·봉인·의식은 역사적 사실이 아닌 판타지 제안입니다.</p></div>
+ const [view,setView]=useState('stages'),[route,setRoute]=useState('전체'),[query,setQuery]=useState(''),[id,setId]=useState('B00'),[panel,setPanel]=useState<Panel>('situation');
+ useEffect(()=>{
+  const read=()=>{const q=new URLSearchParams(window.location.search);const next=q.get('stage');setId(data.stages.some(x=>x.id===next)?next!:'B00');const p=q.get('panel');setPanel(tabs.some(([key])=>key===p)?p as Panel:'situation');};read();window.addEventListener('popstate',read);return()=>window.removeEventListener('popstate',read);
+ },[]);
+ const shown=useMemo(()=>data.stages.filter(x=>(route==='전체'||x.route.startsWith(route))&&`${x.id} ${x.title} ${x.period} ${x.location} ${x.situation}`.includes(query.trim())),[route,query]);
+ const stage=data.stages.find(x=>x.id===id)!;
+ function choose(next:string,p:Panel=panel){setId(next);setPanel(p);const url=new URL(window.location.href);url.searchParams.set('stage',next);url.searchParams.set('panel',p);window.history.pushState({},'',url);}
+ const connected=data.interludes.filter(x=>stage.interludeKeys.some(k=>x.title.startsWith(k+' ')));
+ return <section className={s.atlas} aria-label="이야기 기획">
+ <div className={s.toolbar}><nav aria-label="이야기 분류">{[['stages','스테이지'],['interludes','주요 장면·동료'],['guide','제작 기준']].map(([v,t])=><button key={v} aria-pressed={view===v} onClick={()=>setView(v)}>{t}</button>)}</nav>{view==='stages'&&<div className={s.search}><input aria-label="스테이지 검색" placeholder="스테이지·지역·상황 검색" value={query} onChange={e=>setQuery(e.target.value)}/>{query&&<button aria-label="검색어 지우기" onClick={()=>setQuery('')}>×</button>}</div>}</div>
+ {view==='stages'?<div className={s.layout}>
+ <aside className={s.sidebar} aria-label="스테이지 선택"><div className={s.routes}>{routes.map(r=><button key={r} onClick={()=>setRoute(r)} aria-pressed={route===r}>{r}</button>)}</div><p className={s.count}>{shown.length}개 전투 패키지</p><div className={s.list}>{shown.map(x=><button key={x.id} aria-current={id===x.id?'true':undefined} onClick={()=>choose(x.id)}><small>{x.id} · {x.period}</small><strong>{x.title}</strong><span>{x.route}</span></button>)}{!shown.length&&<p>검색 결과가 없습니다.</p>}</div></aside>
+ <article className={s.content} key={stage.id}>
+ <header className={s.stageHead}><small>{stage.id} · {stage.period} · {stage.route}</small><h1>{stage.title}</h1><p>{stage.location}</p><span className={s.badge}>시나리오 초안</span></header>
+ <p className={s.notice}>{data.notice}</p>
+ {!shown.some(x=>x.id===id)&&<p className={s.notice}>선택한 스테이지는 현재 필터에 포함되지 않습니다. 왼쪽 목록에서 다른 스테이지를 선택하세요.</p>}
+ <nav className={s.panels} aria-label="스테이지 세부 항목">{tabs.map(([key,label])=><button key={key} aria-pressed={panel===key} onClick={()=>choose(id,key)}>{label}</button>)}</nav>
+ {panel==='situation'&&<div className={s.section}><h2>전투가 시작되는 상황</h2><p>{stage.situation}</p><h2>이 전투에서 다룰 이야기</h2><blockquote><b>{stage.speaker}</b> {stage.opening}</blockquote><h2>전투 후</h2><p>{stage.aftermath}</p><blockquote>{stage.closing}</blockquote><h2>전투 규칙</h2><p>병력·병과·출진 조건·증원·제한 턴·아이템 기능은 원본을 유지합니다. 아래 목표는 원본 인물명이 남은 참조이며, 현재 분기에 따라 적용되는 조건이 다릅니다.</p><details><summary>원본 승리·패배 조건 확인</summary>{stage.objectives.filter(t=>t.includes('승리조건')).map((t,i)=><pre key={i}>{t}</pre>)}</details><p className={s.meta}>원본 전투 {stage.sourceBattle} · 참조 이야기 {stage.storyReference}. 세부 임무·대사·장소 배치는 창작입니다.</p>{connected.length>0&&<><h2>함께 읽을 연결 장면</h2>{connected.map(x=><details key={x.title}><summary>{x.title}</summary><Text body={x.body}/></details>)}</>}</div>}
+ {panel==='script'&&<div className={s.section}><p>상황 설명부터 후일담까지의 연출 초안입니다. 조건 이벤트를 새로 추가하거나 실제로 재생한 결과는 아닙니다.</p>{stage.scenes.map(scene=><details className={s.scene} key={scene.id} open={undefined}><summary><small>{scene.id}</small><strong>{scene.type}</strong></summary><dl><dt>시작 조건</dt><dd>{scene.trigger}</dd><dt>배경</dt><dd>{scene.background}</dd><dt>연출</dt><dd>{scene.direction}</dd></dl>{scene.lines.map((l,i)=><blockquote key={i}><b>{l.speaker}</b><p>{l.text}</p></blockquote>)}</details>)}{connected.length>0&&<><h2>주요 연결 장면</h2>{connected.map(x=><details key={x.title}><summary>{x.title}</summary><Text body={x.body}/></details>)}</>}<details><summary>전투 중 공통 사건 대사</summary><p>적 증원: “적의 후속 부대가 모습을 드러냈습니다.”</p><p>우군 합류: “신호를 보았다. 우리도 맡은 자리를 지키겠다.”</p><p>지휘관 조우: “이곳의 책임은 내가 진다.”</p><p>목표 변경: “명령을 바꾼다. 목표를 확인하고 움직여라.”</p><p>원본에 해당 조건이 있을 때만 사용합니다. 새 증원·효과·보상을 만들지 않습니다.</p></details></div>}
+ {panel==='terrain'&&<div className={s.section}><p>기존 원본 이미지를 재사용한 테스트용 자료입니다. 한국의 실제 전장·궁궐을 재현한 그림은 아닙니다.</p>{stage.mapDetails.map(m=><section key={m.id}><h2>전장 · {m.width} × {m.height}칸</h2><a href={m.image} target="_blank" rel="noreferrer"><img className={s.map} src={m.image} alt={`${stage.title} 원본 테스트 전장`} width={640} height={480} loading="lazy"/></a><p className={s.meta}>기존 맵 {m.id} · 경량 미리보기. 전투 유닛 배치와 진행 중 지형 변경은 포함하지 않습니다.</p><h3>지형과 장애물</h3><div className={s.chips}>{m.terrain.map(t=><span key={t.id}>{t.name}<small>{t.count}칸</small></span>)}</div></section>)}<div className={s.note}><h3>그림과 판정은 별개입니다</h3><p>숲·성벽·울타리 등이 보이더라도 이동 제한과 병과별 효과는 원본 지형 규칙을 따릅니다. 파괴 가능한 장애물이나 불 피해를 그림만 보고 추가하지 않습니다.</p><p>위 수량은 초기 지형 데이터입니다. 날씨·화공·지형 변화는 원본 이벤트가 있을 때만 적용하며, 이 화면은 실제 효과를 실행하지 않습니다.</p></div><h2>이야기 배경 후보</h2><p>해당 원본 이야기 파일에서 참조한 배경입니다. 장면별 적합성은 검토 전입니다.</p><div className={s.backgrounds}>{stage.backgroundImages.map(b=><figure key={b.name}><a href={b.image} target="_blank" rel="noreferrer"><img src={b.image} alt={`기존 배경 후보 ${b.name}`} width={320} height={220} loading="lazy"/></a><figcaption>{b.name}</figcaption></figure>)}</div>{!stage.backgroundImages.length&&<p>별도 배경 호출이 없습니다. 현재 배경 유지 또는 암전으로 구성합니다.</p>}</div>}
+ {panel==='rewards'&&<div className={s.section}><h2>조건별 보상 후보</h2><p className={s.note}>아래 항목을 모두 받는 것이 아닙니다. 전투·이야기의 획득 및 승리 정산 명령을 나누어 표시했습니다. 선택·진행 조건과 실제 지급 여부는 아직 연결 전입니다. 별도 금전 증감·상점 거래 등은 이 목록에 포함하지 않습니다.</p>{stage.rewards.length===0?<p>참조한 파일에 아이템 획득·승리 정산 명령이 없습니다. 보상이 전혀 없다고 확정한 것은 아닙니다.</p>:stage.rewards.map((r,i)=><article className={s.reward} key={r.key}><header><strong>{i+1}. {r.source} · {r.kind}</strong><small>조건별 후보</small></header><p>{r.conditions.length?r.conditions.join(' · '):'원본 이벤트 실행 시 · 진입 경로와 세부 지급 조건 확인 필요'}</p>{r.items.map((item,index)=>{const info=catalog.find(x=>x.id===`item-${item.id}`);return <div className={s.rewardItem} key={`${item.id}-${index}`}>{info&&<img src={info.image} alt="" width={48} height={48} loading="lazy"/>}<div><b>{info?.name??`아이템 ${item.id}`}</b><small>1회 지급 요청 · 원본 ID {item.id}{info&&['weapons','armor','treasures'].includes(info.menu)&&item.id<53?item.level===0||item.level===65535?' · 강화 단계 자동 산정':` · 요청 강화 단계 ${item.level}`:''}</small></div></div>})}{r.goldAdjustment!==null&&<p className={s.gold}>금전: 700 + 왕건 레벨 × 100 {r.goldAdjustment<0?`− ${Math.abs(r.goldAdjustment)}`:r.goldAdjustment>0?`+ ${r.goldAdjustment}`:''}금</p>}<details><summary>원본 조건·참조 확인</summary><p className={s.meta}>{r.event} · 위치 {r.offset}</p><pre>{JSON.stringify({conditions:r.rawConditions,args:r.rawArgs},null,2)}</pre></details></article>)}<p className={s.meta}>원본 아이템 ID를 현재 아이템 도감의 이름·이미지에 연결했습니다. 동일 아이템의 여러 행은 조건이 다른 지급 요청일 수 있어 합산하지 않습니다.</p></div>}
+ </article></div>:<div className={s.documents}><p className={s.notice}>작성한 기획 초안입니다. 세부 승인과 게임 연결 상태를 구분해 읽어 주세요.</p>{(view==='interludes'?data.interludes:data.guidelines).map((x,i)=><details key={`${i}-${x.title}`}><summary>{x.title}</summary><Text body={x.body}/></details>)}</div>}
  </section>;
 }

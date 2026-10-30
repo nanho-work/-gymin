@@ -1,0 +1,2387 @@
+{
+  "root": "/Users/choenamho/Documents/ChatGPT/조조전/outputs/jojo-mac-preview/assets",
+  "backgrounds": [
+    {
+      "file": "background-70.png",
+      "exists": true,
+      "references": [
+        "story-00.json@115",
+        "story-08.json@3144",
+        "story-08.json@6604"
+      ],
+      "relativePath": "cinema/background-70.png"
+    },
+    {
+      "file": "background-16.png",
+      "exists": true,
+      "references": [
+        "story-01.json@121",
+        "story-01.json@756",
+        "story-01.json@4752",
+        "story-01.json@14280"
+      ],
+      "relativePath": "cinema/background-16.png"
+    },
+    {
+      "file": "background-114.png",
+      "exists": true,
+      "references": [
+        "story-01.json@302",
+        "story-01.json@13617",
+        "story-01.json@21644",
+        "story-03.json@4232",
+        "story-04.json@13494",
+        "story-04.json@20748",
+        "story-05.json@2465",
+        "story-05.json@6567",
+        "story-06.json@75",
+        "story-08.json@1059",
+        "story-08.json@2877",
+        "story-09.json@1296",
+        "story-09.json@9780",
+        "story-10.json@5789",
+        "story-10.json@7874",
+        "story-10.json@12132",
+        "story-11.json@984",
+        "story-11.json@2787",
+        "story-12.json@1399",
+        "story-12.json@3726",
+        "story-13.json@79",
+        "story-13.json@3980",
+        "story-13.json@6324",
+        "story-14.json@3155",
+        "story-15.json@6799",
+        "story-15.json@9651",
+        "story-15.json@17432",
+        "story-16.json@3346",
+        "story-16.json@14129",
+        "story-18.json@13625",
+        "story-18.json@18350",
+        "story-19.json@7752",
+        "story-19.json@10698",
+        "story-21.json@4827",
+        "story-21.json@6147",
+        "story-22.json@2436",
+        "story-22.json@7412",
+        "story-23.json@5496",
+        "story-24.json@77",
+        "story-24.json@1861",
+        "story-25.json@4974",
+        "story-25.json@11646",
+        "story-25.json@17490",
+        "story-25.json@20053",
+        "story-26.json@68",
+        "story-26.json@3729",
+        "story-27.json@101",
+        "story-27.json@3529",
+        "story-30.json@2712",
+        "story-31.json@3628",
+        "story-31.json@11836",
+        "story-32.json@1316",
+        "story-32.json@5605",
+        "story-33.json@3855",
+        "story-34.json@1501",
+        "story-35.json@2525",
+        "story-35.json@6642",
+        "story-36.json@4154",
+        "story-36.json@5347",
+        "story-38.json@1943",
+        "story-38.json@4709",
+        "story-38.json@5738",
+        "story-38.json@9376",
+        "story-39.json@1200",
+        "story-39.json@9516",
+        "story-39.json@13614",
+        "story-40.json@81",
+        "story-40.json@1570",
+        "story-41.json@80",
+        "story-42.json@94",
+        "story-42.json@4278",
+        "story-43.json@93",
+        "story-43.json@2328",
+        "story-44.json@85",
+        "story-45.json@81",
+        "story-46.json@1289",
+        "story-46.json@3713",
+        "story-46.json@5505",
+        "story-46.json@8011",
+        "story-46.json@10207",
+        "story-46.json@12045",
+        "story-46.json@18012",
+        "story-46.json@22912",
+        "story-46.json@24925",
+        "story-48.json@8515",
+        "story-49.json@2857",
+        "story-50.json@2601",
+        "story-51.json@1340",
+        "story-52.json@3792",
+        "story-54.json@64",
+        "story-55.json@61",
+        "story-56.json@77",
+        "story-56.json@2641",
+        "story-58.json@3547",
+        "story-58.json@8253",
+        "story-58.json@11626"
+      ],
+      "relativePath": "cinema/background-114.png"
+    },
+    {
+      "file": "background-49.png",
+      "exists": true,
+      "references": [
+        "story-01.json@996",
+        "story-02.json@58",
+        "story-03.json@62",
+        "story-33.json@1676",
+        "story-39.json@7948",
+        "story-39.json@12018",
+        "story-42.json@1975"
+      ],
+      "relativePath": "cinema/background-49.png"
+    },
+    {
+      "file": "background-79.png",
+      "exists": true,
+      "references": [
+        "story-01.json@4902",
+        "story-03.json@1910",
+        "story-10.json@16509",
+        "story-10.json@21901"
+      ],
+      "relativePath": "cinema/background-79.png"
+    },
+    {
+      "file": "background-61.png",
+      "exists": true,
+      "references": [
+        "story-01.json@14411",
+        "story-01.json@23670",
+        "story-02.json@5792",
+        "story-03.json@7103",
+        "story-04.json@21127",
+        "story-05.json@8280",
+        "story-06.json@493",
+        "story-07.json@785",
+        "story-08.json@1347",
+        "story-08.json@5871",
+        "story-08.json@7376",
+        "story-09.json@10306",
+        "story-10.json@86",
+        "story-10.json@3779",
+        "story-10.json@13341",
+        "story-11.json@3287",
+        "story-12.json@3958",
+        "story-13.json@6663",
+        "story-14.json@3499",
+        "story-15.json@102",
+        "story-15.json@17753",
+        "story-16.json@105",
+        "story-16.json@14396",
+        "story-17.json@1675",
+        "story-18.json@18694",
+        "story-19.json@76",
+        "story-19.json@10978",
+        "story-20.json@1483",
+        "story-21.json@7758",
+        "story-22.json@83",
+        "story-22.json@8410",
+        "story-23.json@6855",
+        "story-24.json@2023"
+      ],
+      "relativePath": "cinema/background-61.png"
+    },
+    {
+      "file": "background-94.png",
+      "exists": true,
+      "references": [
+        "story-01.json@18054",
+        "story-01.json@22163",
+        "story-02.json@1211",
+        "story-03.json@4782",
+        "story-04.json@113",
+        "story-04.json@1187",
+        "story-04.json@2248",
+        "story-20.json@4671",
+        "story-40.json@1725",
+        "story-46.json@4212",
+        "story-46.json@7001",
+        "story-46.json@8349",
+        "story-46.json@23369"
+      ],
+      "relativePath": "cinema/background-94.png"
+    },
+    {
+      "file": "background-43.png",
+      "exists": true,
+      "references": [
+        "story-04.json@6175",
+        "story-04.json@11844",
+        "story-46.json@6470"
+      ],
+      "relativePath": "cinema/background-43.png"
+    },
+    {
+      "file": "background-80.png",
+      "exists": true,
+      "references": [
+        "story-04.json@9619"
+      ],
+      "relativePath": "cinema/background-80.png"
+    },
+    {
+      "file": "background-9.png",
+      "exists": true,
+      "references": [
+        "story-04.json@9959",
+        "story-09.json@3878"
+      ],
+      "relativePath": "cinema/background-9.png"
+    },
+    {
+      "file": "background-55.png",
+      "exists": true,
+      "references": [
+        "story-04.json@10227",
+        "story-09.json@1742",
+        "story-31.json@6405",
+        "story-58.json@3704"
+      ],
+      "relativePath": "cinema/background-55.png"
+    },
+    {
+      "file": "background-67.png",
+      "exists": true,
+      "references": [
+        "story-04.json@14233"
+      ],
+      "relativePath": "cinema/background-67.png"
+    },
+    {
+      "file": "background-52.png",
+      "exists": true,
+      "references": [
+        "story-04.json@16399",
+        "story-05.json@90",
+        "story-05.json@2811",
+        "story-09.json@7467",
+        "story-48.json@6471"
+      ],
+      "relativePath": "cinema/background-52.png"
+    },
+    {
+      "file": "background-41.png",
+      "exists": true,
+      "references": [
+        "story-05.json@1736",
+        "story-18.json@1712"
+      ],
+      "relativePath": "cinema/background-41.png"
+    },
+    {
+      "file": "background-46.png",
+      "exists": true,
+      "references": [
+        "story-05.json@5071",
+        "story-13.json@5391"
+      ],
+      "relativePath": "cinema/background-46.png"
+    },
+    {
+      "file": "background-40.png",
+      "exists": true,
+      "references": [
+        "story-05.json@7094",
+        "story-16.json@8981",
+        "story-18.json@3563"
+      ],
+      "relativePath": "cinema/background-40.png"
+    },
+    {
+      "file": "background-48.png",
+      "exists": true,
+      "references": [
+        "story-07.json@72",
+        "story-07.json@102",
+        "story-08.json@88",
+        "story-08.json@118",
+        "story-10.json@6125",
+        "story-10.json@8128",
+        "story-11.json@1395",
+        "story-12.json@1857",
+        "story-13.json@559",
+        "story-13.json@4211",
+        "story-15.json@7261",
+        "story-15.json@10092",
+        "story-15.json@16048",
+        "story-16.json@8408",
+        "story-16.json@9963",
+        "story-16.json@12775",
+        "story-18.json@5835",
+        "story-18.json@8239",
+        "story-18.json@12301",
+        "story-18.json@14184",
+        "story-21.json@5238",
+        "story-22.json@4357",
+        "story-25.json@12198",
+        "story-25.json@14677",
+        "story-25.json@17934",
+        "story-26.json@320",
+        "story-30.json@4753",
+        "story-31.json@95",
+        "story-31.json@4073",
+        "story-31.json@8703",
+        "story-31.json@11375",
+        "story-32.json@3757",
+        "story-34.json@838",
+        "story-35.json@4681",
+        "story-35.json@7077",
+        "story-38.json@78",
+        "story-38.json@2753",
+        "story-38.json@6000",
+        "story-39.json@2074",
+        "story-39.json@4301",
+        "story-39.json@11005",
+        "story-46.json@10622",
+        "story-46.json@12570"
+      ],
+      "relativePath": "cinema/background-48.png"
+    },
+    {
+      "file": "background-107.png",
+      "exists": true,
+      "references": [
+        "story-09.json@84",
+        "story-21.json@93",
+        "story-22.json@1069",
+        "story-25.json@2336",
+        "story-42.json@379",
+        "story-48.json@82"
+      ],
+      "relativePath": "cinema/background-107.png"
+    },
+    {
+      "file": "background-99.png",
+      "exists": true,
+      "references": [
+        "story-09.json@4143",
+        "story-32.json@166",
+        "story-46.json@125"
+      ],
+      "relativePath": "cinema/background-99.png"
+    },
+    {
+      "file": "background-47.png",
+      "exists": true,
+      "references": [
+        "story-09.json@6252",
+        "story-13.json@2794",
+        "story-16.json@3562",
+        "story-16.json@10921",
+        "story-18.json@15797",
+        "story-19.json@8119",
+        "story-21.json@6379",
+        "story-22.json@7611",
+        "story-23.json@2818",
+        "story-25.json@5349",
+        "story-30.json@78"
+      ],
+      "relativePath": "cinema/background-47.png"
+    },
+    {
+      "file": "background-58.png",
+      "exists": true,
+      "references": [
+        "story-10.json@2568",
+        "story-17.json@62",
+        "story-18.json@86"
+      ],
+      "relativePath": "cinema/background-58.png"
+    },
+    {
+      "file": "background-88.png",
+      "exists": true,
+      "references": [
+        "story-10.json@12552",
+        "story-10.json@19123",
+        "story-10.json@21414",
+        "story-15.json@11713"
+      ],
+      "relativePath": "cinema/background-88.png"
+    },
+    {
+      "file": "background-36.png",
+      "exists": true,
+      "references": [
+        "story-10.json@16322"
+      ],
+      "relativePath": "cinema/background-36.png"
+    },
+    {
+      "file": "background-75.png",
+      "exists": true,
+      "references": [
+        "story-11.json@94"
+      ],
+      "relativePath": "cinema/background-75.png"
+    },
+    {
+      "file": "background-87.png",
+      "exists": true,
+      "references": [
+        "story-12.json@67"
+      ],
+      "relativePath": "cinema/background-87.png"
+    },
+    {
+      "file": "background-71.png",
+      "exists": true,
+      "references": [
+        "story-14.json@67",
+        "story-46.json@15948",
+        "story-47.json@76",
+        "story-47.json@3425",
+        "story-51.json@59"
+      ],
+      "relativePath": "cinema/background-71.png"
+    },
+    {
+      "file": "background-42.png",
+      "exists": true,
+      "references": [
+        "story-14.json@1178"
+      ],
+      "relativePath": "cinema/background-42.png"
+    },
+    {
+      "file": "background-101.png",
+      "exists": true,
+      "references": [
+        "story-15.json@5568"
+      ],
+      "relativePath": "cinema/background-101.png"
+    },
+    {
+      "file": "background-103.png",
+      "exists": true,
+      "references": [
+        "story-16.json@4436"
+      ],
+      "relativePath": "cinema/background-103.png"
+    },
+    {
+      "file": "background-35.png",
+      "exists": true,
+      "references": [
+        "story-16.json@5535",
+        "story-18.json@3421",
+        "story-25.json@14318",
+        "story-30.json@3254"
+      ],
+      "relativePath": "cinema/background-35.png"
+    },
+    {
+      "file": "background-65.png",
+      "exists": true,
+      "references": [
+        "story-16.json@5837"
+      ],
+      "relativePath": "cinema/background-65.png"
+    },
+    {
+      "file": "background-69.png",
+      "exists": true,
+      "references": [
+        "story-18.json@7412"
+      ],
+      "relativePath": "cinema/background-69.png"
+    },
+    {
+      "file": "background-74.png",
+      "exists": true,
+      "references": [
+        "story-18.json@9785"
+      ],
+      "relativePath": "cinema/background-74.png"
+    },
+    {
+      "file": "background-112.png",
+      "exists": true,
+      "references": [
+        "story-19.json@6554",
+        "story-50.json@58"
+      ],
+      "relativePath": "cinema/background-112.png"
+    },
+    {
+      "file": "background-113.png",
+      "exists": true,
+      "references": [
+        "story-20.json@83",
+        "story-49.json@3847",
+        "story-58.json@1783"
+      ],
+      "relativePath": "cinema/background-113.png"
+    },
+    {
+      "file": "background-82.png",
+      "exists": true,
+      "references": [
+        "story-22.json@2716",
+        "story-23.json@5827",
+        "story-24.json@508"
+      ],
+      "relativePath": "cinema/background-82.png"
+    },
+    {
+      "file": "background-68.png",
+      "exists": true,
+      "references": [
+        "story-23.json@85",
+        "story-23.json@766",
+        "story-32.json@1601",
+        "story-35.json@3125",
+        "story-46.json@1573"
+      ],
+      "relativePath": "cinema/background-68.png"
+    },
+    {
+      "file": "background-45.png",
+      "exists": true,
+      "references": [
+        "story-25.json@124",
+        "story-47.json@1034"
+      ],
+      "relativePath": "cinema/background-45.png"
+    },
+    {
+      "file": "background-86.png",
+      "exists": true,
+      "references": [
+        "story-25.json@1489",
+        "story-52.json@4188"
+      ],
+      "relativePath": "cinema/background-86.png"
+    },
+    {
+      "file": "background-76.png",
+      "exists": true,
+      "references": [
+        "story-25.json@15590"
+      ],
+      "relativePath": "cinema/background-76.png"
+    },
+    {
+      "file": "background-77.png",
+      "exists": true,
+      "references": [
+        "story-25.json@17102",
+        "story-46.json@25240"
+      ],
+      "relativePath": "cinema/background-77.png"
+    },
+    {
+      "file": "background-53.png",
+      "exists": true,
+      "references": [
+        "story-25.json@20417"
+      ],
+      "relativePath": "cinema/background-53.png"
+    },
+    {
+      "file": "background-93.png",
+      "exists": true,
+      "references": [
+        "story-25.json@21558",
+        "story-26.json@4313",
+        "story-27.json@4046",
+        "story-27.json@6069",
+        "story-27.json@10096",
+        "story-28.json@59",
+        "story-29.json@2964",
+        "story-30.json@5974",
+        "story-31.json@12136",
+        "story-32.json@6472",
+        "story-33.json@5951",
+        "story-34.json@69",
+        "story-34.json@1720",
+        "story-35.json@73",
+        "story-35.json@8318",
+        "story-36.json@59",
+        "story-37.json@73",
+        "story-38.json@9566",
+        "story-39.json@126",
+        "story-39.json@13936",
+        "story-40.json@268",
+        "story-41.json@247",
+        "story-42.json@4542",
+        "story-43.json@937",
+        "story-44.json@275",
+        "story-45.json@400",
+        "story-46.json@28552",
+        "story-47.json@3697",
+        "story-48.json@2992",
+        "story-48.json@9900",
+        "story-49.json@1680",
+        "story-49.json@4421",
+        "story-50.json@2786",
+        "story-51.json@1542",
+        "story-52.json@1766",
+        "story-52.json@6063",
+        "story-53.json@64",
+        "story-54.json@255",
+        "story-55.json@405",
+        "story-56.json@291",
+        "story-56.json@6547",
+        "story-57.json@66"
+      ],
+      "relativePath": "cinema/background-93.png"
+    },
+    {
+      "file": "background-89.png",
+      "exists": true,
+      "references": [
+        "story-27.json@541",
+        "story-27.json@3064",
+        "story-29.json@56",
+        "story-46.json@5742",
+        "story-46.json@9081"
+      ],
+      "relativePath": "cinema/background-89.png"
+    },
+    {
+      "file": "background-50.png",
+      "exists": true,
+      "references": [
+        "story-27.json@1283",
+        "story-48.json@4894"
+      ],
+      "relativePath": "cinema/background-50.png"
+    },
+    {
+      "file": "background-97.png",
+      "exists": true,
+      "references": [
+        "story-30.json@3276",
+        "story-43.json@2481",
+        "story-49.json@66",
+        "story-49.json@3000"
+      ],
+      "relativePath": "cinema/background-97.png"
+    },
+    {
+      "file": "background-84.png",
+      "exists": true,
+      "references": [
+        "story-33.json@93",
+        "story-33.json@4523",
+        "story-46.json@18329"
+      ],
+      "relativePath": "cinema/background-84.png"
+    },
+    {
+      "file": "background-91.png",
+      "exists": true,
+      "references": [
+        "story-33.json@3305",
+        "story-38.json@5008"
+      ],
+      "relativePath": "cinema/background-91.png"
+    },
+    {
+      "file": "background-63.png",
+      "exists": true,
+      "references": [
+        "story-43.json@355"
+      ],
+      "relativePath": "cinema/background-63.png"
+    },
+    {
+      "file": "background-56.png",
+      "exists": true,
+      "references": [
+        "story-52.json@78",
+        "story-58.json@92"
+      ],
+      "relativePath": "cinema/background-56.png"
+    },
+    {
+      "file": "background-106.png",
+      "exists": true,
+      "references": [
+        "story-56.json@2863"
+      ],
+      "relativePath": "cinema/background-106.png"
+    },
+    {
+      "file": "background-64.png",
+      "exists": true,
+      "references": [
+        "story-58.json@12306"
+      ],
+      "relativePath": "cinema/background-64.png"
+    },
+    {
+      "file": "background-72.png",
+      "exists": true,
+      "references": [
+        "story-58.json@14790"
+      ],
+      "relativePath": "cinema/background-72.png"
+    },
+    {
+      "file": "background-73.png",
+      "exists": true,
+      "references": [
+        "story-58.json@18352"
+      ],
+      "relativePath": "cinema/background-73.png"
+    },
+    {
+      "file": "scenario-map-0.png",
+      "exists": true,
+      "references": [
+        "battle-00.json@6147"
+      ],
+      "relativePath": "scenario-map-0.png"
+    },
+    {
+      "file": "scenario-map-1.png",
+      "exists": true,
+      "references": [
+        "battle-01.json@6177"
+      ],
+      "relativePath": "scenario-map-1.png"
+    },
+    {
+      "file": "scenario-map-2.png",
+      "exists": true,
+      "references": [
+        "battle-02.json@6125"
+      ],
+      "relativePath": "scenario-map-2.png"
+    },
+    {
+      "file": "scenario-map-3.png",
+      "exists": true,
+      "references": [
+        "battle-03.json@6125"
+      ],
+      "relativePath": "scenario-map-3.png"
+    },
+    {
+      "file": "scenario-map-4.png",
+      "exists": true,
+      "references": [
+        "battle-04.json@6067"
+      ],
+      "relativePath": "scenario-map-4.png"
+    },
+    {
+      "file": "scenario-map-5.png",
+      "exists": true,
+      "references": [
+        "battle-05.json@6229"
+      ],
+      "relativePath": "scenario-map-5.png"
+    },
+    {
+      "file": "scenario-map-6.png",
+      "exists": true,
+      "references": [
+        "battle-06.json@6151"
+      ],
+      "relativePath": "scenario-map-6.png"
+    },
+    {
+      "file": "scenario-map-7.png",
+      "exists": true,
+      "references": [
+        "battle-07.json@6151"
+      ],
+      "relativePath": "scenario-map-7.png"
+    },
+    {
+      "file": "scenario-map-8.png",
+      "exists": true,
+      "references": [
+        "battle-08.json@6151"
+      ],
+      "relativePath": "scenario-map-8.png"
+    },
+    {
+      "file": "scenario-map-9.png",
+      "exists": true,
+      "references": [
+        "battle-09.json@6067"
+      ],
+      "relativePath": "scenario-map-9.png"
+    },
+    {
+      "file": "scenario-map-10.png",
+      "exists": true,
+      "references": [
+        "battle-10.json@6099"
+      ],
+      "relativePath": "scenario-map-10.png"
+    },
+    {
+      "file": "scenario-map-11.png",
+      "exists": true,
+      "references": [
+        "battle-11.json@6185"
+      ],
+      "relativePath": "scenario-map-11.png"
+    },
+    {
+      "file": "scenario-map-12.png",
+      "exists": true,
+      "references": [
+        "battle-12.json@6075"
+      ],
+      "relativePath": "scenario-map-12.png"
+    },
+    {
+      "file": "scenario-map-13.png",
+      "exists": true,
+      "references": [
+        "battle-13.json@6341"
+      ],
+      "relativePath": "scenario-map-13.png"
+    },
+    {
+      "file": "scenario-map-14.png",
+      "exists": true,
+      "references": [
+        "battle-14.json@6263"
+      ],
+      "relativePath": "scenario-map-14.png"
+    },
+    {
+      "file": "scenario-map-15.png",
+      "exists": true,
+      "references": [
+        "battle-15.json@6185"
+      ],
+      "relativePath": "scenario-map-15.png"
+    },
+    {
+      "file": "scenario-map-16.png",
+      "exists": true,
+      "references": [
+        "battle-16.json@6019"
+      ],
+      "relativePath": "scenario-map-16.png"
+    },
+    {
+      "file": "scenario-map-17.png",
+      "exists": true,
+      "references": [
+        "battle-17.json@6071"
+      ],
+      "relativePath": "scenario-map-17.png"
+    },
+    {
+      "file": "scenario-map-18.png",
+      "exists": true,
+      "references": [
+        "battle-18.json@6263"
+      ],
+      "relativePath": "scenario-map-18.png"
+    },
+    {
+      "file": "scenario-map-19.png",
+      "exists": true,
+      "references": [
+        "battle-19.json@6133"
+      ],
+      "relativePath": "scenario-map-19.png"
+    },
+    {
+      "file": "scenario-map-20.png",
+      "exists": true,
+      "references": [
+        "battle-20.json@6211"
+      ],
+      "relativePath": "scenario-map-20.png"
+    },
+    {
+      "file": "scenario-map-21.png",
+      "exists": true,
+      "references": [
+        "battle-21.json@6185"
+      ],
+      "relativePath": "scenario-map-21.png"
+    },
+    {
+      "file": "scenario-map-22.png",
+      "exists": true,
+      "references": [
+        "battle-22.json@6107"
+      ],
+      "relativePath": "scenario-map-22.png"
+    },
+    {
+      "file": "scenario-map-23.png",
+      "exists": true,
+      "references": [
+        "battle-23.json@6159"
+      ],
+      "relativePath": "scenario-map-23.png"
+    },
+    {
+      "file": "scenario-map-24.png",
+      "exists": true,
+      "references": [
+        "battle-24.json@6075"
+      ],
+      "relativePath": "scenario-map-24.png"
+    },
+    {
+      "file": "scenario-map-25.png",
+      "exists": true,
+      "references": [
+        "battle-25.json@6263"
+      ],
+      "relativePath": "scenario-map-25.png"
+    },
+    {
+      "file": "scenario-map-26.png",
+      "exists": true,
+      "references": [
+        "battle-26.json@6263"
+      ],
+      "relativePath": "scenario-map-26.png"
+    },
+    {
+      "file": "scenario-map-27.png",
+      "exists": true,
+      "references": [
+        "battle-27.json@6390"
+      ],
+      "relativePath": "scenario-map-27.png"
+    },
+    {
+      "file": "scenario-map-28.png",
+      "exists": true,
+      "references": [
+        "battle-28.json@6390"
+      ],
+      "relativePath": "scenario-map-28.png"
+    },
+    {
+      "file": "scenario-map-29.png",
+      "exists": true,
+      "references": [
+        "battle-29.json@6185"
+      ],
+      "relativePath": "scenario-map-29.png"
+    },
+    {
+      "file": "scenario-map-30.png",
+      "exists": true,
+      "references": [
+        "battle-30.json@6159"
+      ],
+      "relativePath": "scenario-map-30.png"
+    },
+    {
+      "file": "scenario-map-31.png",
+      "exists": true,
+      "references": [
+        "battle-31.json@6133"
+      ],
+      "relativePath": "scenario-map-31.png"
+    },
+    {
+      "file": "scenario-map-32.png",
+      "exists": true,
+      "references": [
+        "battle-32.json@6133"
+      ],
+      "relativePath": "scenario-map-32.png"
+    },
+    {
+      "file": "scenario-map-33.png",
+      "exists": true,
+      "references": [
+        "battle-33.json@6159"
+      ],
+      "relativePath": "scenario-map-33.png"
+    },
+    {
+      "file": "scenario-map-34.png",
+      "exists": true,
+      "references": [
+        "battle-34.json@6286"
+      ],
+      "relativePath": "scenario-map-34.png"
+    },
+    {
+      "file": "scenario-map-35.png",
+      "exists": true,
+      "references": [
+        "battle-35.json@6211"
+      ],
+      "relativePath": "scenario-map-35.png"
+    },
+    {
+      "file": "scenario-map-36.png",
+      "exists": true,
+      "references": [
+        "battle-36.json@6185"
+      ],
+      "relativePath": "scenario-map-36.png"
+    },
+    {
+      "file": "scenario-map-37.png",
+      "exists": true,
+      "references": [
+        "battle-37.json@6211"
+      ],
+      "relativePath": "scenario-map-37.png"
+    },
+    {
+      "file": "scenario-map-38.png",
+      "exists": true,
+      "references": [
+        "battle-38.json@6133"
+      ],
+      "relativePath": "scenario-map-38.png"
+    },
+    {
+      "file": "scenario-map-39.png",
+      "exists": true,
+      "references": [
+        "battle-39.json@6133"
+      ],
+      "relativePath": "scenario-map-39.png"
+    },
+    {
+      "file": "scenario-map-40.png",
+      "exists": true,
+      "references": [
+        "battle-40.json@6133"
+      ],
+      "relativePath": "scenario-map-40.png"
+    },
+    {
+      "file": "scenario-map-41.png",
+      "exists": true,
+      "references": [
+        "battle-41.json@6133"
+      ],
+      "relativePath": "scenario-map-41.png"
+    },
+    {
+      "file": "scenario-map-42.png",
+      "exists": true,
+      "references": [
+        "battle-42.json@6107"
+      ],
+      "relativePath": "scenario-map-42.png"
+    },
+    {
+      "file": "scenario-map-43.png",
+      "exists": true,
+      "references": [
+        "battle-43.json@6211"
+      ],
+      "relativePath": "scenario-map-43.png"
+    },
+    {
+      "file": "scenario-map-44.png",
+      "exists": true,
+      "references": [
+        "battle-44.json@6211"
+      ],
+      "relativePath": "scenario-map-44.png"
+    },
+    {
+      "file": "scenario-map-45.png",
+      "exists": true,
+      "references": [
+        "battle-45.json@6211"
+      ],
+      "relativePath": "scenario-map-45.png"
+    },
+    {
+      "file": "scenario-map-46.png",
+      "exists": true,
+      "references": [
+        "battle-46.json@6237"
+      ],
+      "relativePath": "scenario-map-46.png"
+    },
+    {
+      "file": "scenario-map-47.png",
+      "exists": true,
+      "references": [
+        "battle-47.json@6237"
+      ],
+      "relativePath": "scenario-map-47.png"
+    },
+    {
+      "file": "scenario-map-48.png",
+      "exists": true,
+      "references": [
+        "battle-48.json@6211"
+      ],
+      "relativePath": "scenario-map-48.png"
+    },
+    {
+      "file": "scenario-map-49.png",
+      "exists": true,
+      "references": [
+        "battle-49.json@6211"
+      ],
+      "relativePath": "scenario-map-49.png"
+    },
+    {
+      "file": "scenario-map-50.png",
+      "exists": true,
+      "references": [
+        "battle-50.json@6211"
+      ],
+      "relativePath": "scenario-map-50.png"
+    },
+    {
+      "file": "scenario-map-51.png",
+      "exists": true,
+      "references": [
+        "battle-51.json@6185"
+      ],
+      "relativePath": "scenario-map-51.png"
+    },
+    {
+      "file": "scenario-map-52.png",
+      "exists": true,
+      "references": [
+        "battle-52.json@6185"
+      ],
+      "relativePath": "scenario-map-52.png"
+    },
+    {
+      "file": "scenario-map-53.png",
+      "exists": true,
+      "references": [
+        "battle-53.json@6107"
+      ],
+      "relativePath": "scenario-map-53.png"
+    },
+    {
+      "file": "scenario-map-54.png",
+      "exists": true,
+      "references": [
+        "battle-54.json@6075"
+      ],
+      "relativePath": "scenario-map-54.png"
+    },
+    {
+      "file": "scenario-map-55.png",
+      "exists": true,
+      "references": [
+        "battle-55.json@6107"
+      ],
+      "relativePath": "scenario-map-55.png"
+    },
+    {
+      "file": "scenario-map-56.png",
+      "exists": true,
+      "references": [
+        "battle-56.json@5091"
+      ],
+      "relativePath": "scenario-map-56.png"
+    },
+    {
+      "file": "scenario-map-57.png",
+      "exists": true,
+      "references": [
+        "battle-57.json@6211"
+      ],
+      "relativePath": "scenario-map-57.png"
+    }
+  ],
+  "maps": [
+    {
+      "id": 0,
+      "file": "map-00.json",
+      "sha256": "7b2e0e8b9a8f560ab71436644186fb86a810a901ade4cc24e8b15ff3f3bb5979",
+      "width": 20,
+      "height": 20,
+      "image": "scenario-map-0.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "1": 128,
+        "0": 146,
+        "10": 85,
+        "14": 30,
+        "23": 7,
+        "20": 1,
+        "22": 3
+      }
+    },
+    {
+      "id": 1,
+      "file": "map-01.json",
+      "sha256": "ade4707162bd46998a2d67aa08a2948a1f21294802938af01d3b4c52ee99afd6",
+      "width": 20,
+      "height": 20,
+      "image": "scenario-map-1.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "6": 110,
+        "2": 75,
+        "1": 35,
+        "15": 18,
+        "16": 24,
+        "0": 135,
+        "22": 2,
+        "24": 1
+      }
+    },
+    {
+      "id": 2,
+      "file": "map-02.json",
+      "sha256": "75f3532d404d4f7ed1c7783d155a7170adc3c193ee3267828c9bf8073e49460b",
+      "width": 20,
+      "height": 20,
+      "image": "scenario-map-2.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "6": 134,
+        "3": 29,
+        "0": 156,
+        "15": 29,
+        "16": 46,
+        "17": 4,
+        "22": 2
+      }
+    },
+    {
+      "id": 3,
+      "file": "map-03.json",
+      "sha256": "0e625f266f656d98acdd6afddee42f19cb7afb8752d42cefdfe210b0c180f863",
+      "width": 28,
+      "height": 20,
+      "image": "scenario-map-3.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "3": 35,
+        "4": 276,
+        "2": 76,
+        "1": 41,
+        "12": 21,
+        "0": 96,
+        "9": 13,
+        "18": 1,
+        "20": 1
+      }
+    },
+    {
+      "id": 4,
+      "file": "map-04.json",
+      "sha256": "bffb15382d7e426629d5b6e8fd6eac9a0620cab573a535c6d8305625ec1b7cb5",
+      "width": 20,
+      "height": 20,
+      "image": "scenario-map-4.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "4": 191,
+        "2": 110,
+        "21": 2,
+        "20": 1,
+        "1": 37,
+        "0": 38,
+        "12": 10,
+        "9": 11
+      }
+    },
+    {
+      "id": 5,
+      "file": "map-05.json",
+      "sha256": "737c1640a6506f392cc41238bc875f81de26a95e376ee75506afbcde86405246",
+      "width": 24,
+      "height": 24,
+      "image": "scenario-map-5.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "1": 210,
+        "0": 255,
+        "21": 3,
+        "15": 32,
+        "16": 47,
+        "23": 26,
+        "22": 1,
+        "18": 1,
+        "24": 1
+      }
+    },
+    {
+      "id": 6,
+      "file": "map-06.json",
+      "sha256": "0e66e02471d3df1c0ad919ac7528d546ae21067cce14a435dfbe9dc7ce59dd13",
+      "width": 28,
+      "height": 24,
+      "image": "scenario-map-6.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 236,
+        "4": 48,
+        "3": 27,
+        "15": 49,
+        "16": 167,
+        "23": 107,
+        "25": 24,
+        "8": 8,
+        "20": 1,
+        "22": 3,
+        "24": 1,
+        "18": 1
+      }
+    },
+    {
+      "id": 7,
+      "file": "map-07.json",
+      "sha256": "b8f30597fbd527f750a1eca214525d5350bd2cb6fa857e2e63e1e528cc11a8fa",
+      "width": 32,
+      "height": 28,
+      "image": "scenario-map-7.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 242,
+        "2": 106,
+        "15": 96,
+        "16": 224,
+        "23": 171,
+        "25": 24,
+        "8": 8,
+        "22": 3,
+        "24": 1,
+        "18": 1,
+        "3": 20
+      }
+    },
+    {
+      "id": 8,
+      "file": "map-08.json",
+      "sha256": "433af30b73aa744eef9d5fdc0a1c810f73d0209903690f3a0e99a34f6861321c",
+      "width": 24,
+      "height": 24,
+      "image": "scenario-map-8.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "3": 66,
+        "0": 276,
+        "15": 41,
+        "16": 103,
+        "23": 60,
+        "25": 11,
+        "20": 1,
+        "8": 4,
+        "22": 3,
+        "24": 1,
+        "18": 1,
+        "1": 9
+      }
+    },
+    {
+      "id": 9,
+      "file": "map-09.json",
+      "sha256": "eb0fa488063290214f7b55be7cc7dd32c71cbf462a779bda69cebac03433dcfc",
+      "width": 20,
+      "height": 20,
+      "image": "scenario-map-9.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 213,
+        "3": 120,
+        "4": 64,
+        "21": 3
+      }
+    },
+    {
+      "id": 10,
+      "file": "map-10.json",
+      "sha256": "6b9f97c57f47ac540ba9d12687d8f4af54ee29b72d0b64cac667bc93df12e8dd",
+      "width": 24,
+      "height": 20,
+      "image": "scenario-map-10.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "1": 91,
+        "12": 33,
+        "0": 261,
+        "2": 20,
+        "14": 44,
+        "23": 16,
+        "9": 10,
+        "18": 1,
+        "22": 3,
+        "24": 1
+      }
+    },
+    {
+      "id": 11,
+      "file": "map-11.json",
+      "sha256": "df3b23f24918aef5957ba7c89678d27cd79b17f57ef227447ee0a51d2cba73ff",
+      "width": 24,
+      "height": 24,
+      "image": "scenario-map-11.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "10": 175,
+        "12": 28,
+        "0": 117,
+        "9": 17,
+        "11": 111,
+        "3": 59,
+        "14": 32,
+        "23": 12,
+        "15": 12,
+        "16": 9,
+        "22": 2,
+        "24": 1,
+        "18": 1
+      }
+    },
+    {
+      "id": 12,
+      "file": "map-12.json",
+      "sha256": "e6d461909921109baea31cc75de2d0cd9e5028a30f685ea748562ff530eb7ef1",
+      "width": 28,
+      "height": 20,
+      "image": "scenario-map-12.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "15": 30,
+        "0": 180,
+        "4": 156,
+        "5": 56,
+        "16": 87,
+        "3": 17,
+        "23": 22,
+        "22": 4,
+        "14": 6,
+        "18": 1,
+        "24": 1
+      }
+    },
+    {
+      "id": 13,
+      "file": "map-13.json",
+      "sha256": "d70138dec12caad535527815a8381e5c4225ac33ac449249d0dfa10f5e9c86cb",
+      "width": 20,
+      "height": 28,
+      "image": "scenario-map-13.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 301,
+        "5": 107,
+        "6": 2,
+        "15": 14,
+        "19": 1,
+        "4": 58,
+        "2": 29,
+        "1": 27,
+        "23": 7,
+        "22": 1,
+        "16": 12,
+        "20": 1
+      }
+    },
+    {
+      "id": 14,
+      "file": "map-14.json",
+      "sha256": "bbfb89d6066e948a4079f4b454de9d593cca62df0d3d09c583064840e74f455b",
+      "width": 28,
+      "height": 28,
+      "image": "scenario-map-14.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "7": 373,
+        "12": 82,
+        "2": 81,
+        "8": 8,
+        "15": 40,
+        "16": 80,
+        "23": 44,
+        "22": 2,
+        "18": 1,
+        "24": 1,
+        "4": 72
+      }
+    },
+    {
+      "id": 15,
+      "file": "map-15.json",
+      "sha256": "5812aaac1ee75c438bb4beaaca28c4840ba0182a645321d9d229f36ee2e0e368",
+      "width": 32,
+      "height": 20,
+      "image": "scenario-map-15.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 237,
+        "12": 58,
+        "1": 118,
+        "15": 13,
+        "16": 11,
+        "18": 2,
+        "4": 116,
+        "8": 12,
+        "2": 65,
+        "23": 8
+      }
+    },
+    {
+      "id": 16,
+      "file": "map-16.json",
+      "sha256": "56866de684c2e1dab868677cb3d7487a8a2bf885573cf7f37a2882984c04b9f3",
+      "width": 20,
+      "height": 20,
+      "image": "scenario-map-16.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "4": 41,
+        "2": 22,
+        "0": 252,
+        "20": 1,
+        "12": 47,
+        "8": 6,
+        "22": 3,
+        "15": 6,
+        "16": 20,
+        "18": 1,
+        "23": 1
+      }
+    },
+    {
+      "id": 17,
+      "file": "map-17.json",
+      "sha256": "d42f6f85eb113943de3230f492816a99513f365923d465c3ca2c0cdfc55b8bea",
+      "width": 24,
+      "height": 24,
+      "image": "scenario-map-17.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "1": 70,
+        "0": 356,
+        "22": 4,
+        "12": 48,
+        "8": 6,
+        "4": 32,
+        "15": 15,
+        "16": 33,
+        "2": 7,
+        "23": 4,
+        "18": 1
+      }
+    },
+    {
+      "id": 18,
+      "file": "map-18.json",
+      "sha256": "8b52e3efc85cd190e0da49d9000fbeb5edcfd334e8a4e409297ed8b5239e69ce",
+      "width": 32,
+      "height": 32,
+      "image": "scenario-map-18.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 315,
+        "12": 55,
+        "4": 343,
+        "5": 72,
+        "14": 56,
+        "22": 6,
+        "23": 22,
+        "20": 4,
+        "1": 62,
+        "2": 89
+      }
+    },
+    {
+      "id": 19,
+      "file": "map-19.json",
+      "sha256": "be756c460e7338967e07b8076a7415f9d9728ef145ed4d95d1a8d6c93ea48995",
+      "width": 20,
+      "height": 40,
+      "image": "scenario-map-19.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "4": 349,
+        "2": 177,
+        "0": 192,
+        "22": 2,
+        "12": 80
+      }
+    },
+    {
+      "id": 20,
+      "file": "map-20.json",
+      "sha256": "d0e5c60406972cf86f83ca55b593102dc8c1c0ebc5fef7639d8deac6d60f25a4",
+      "width": 24,
+      "height": 28,
+      "image": "scenario-map-20.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "2": 146,
+        "0": 179,
+        "22": 3,
+        "4": 275,
+        "5": 17,
+        "14": 10,
+        "20": 1,
+        "15": 8,
+        "16": 20,
+        "23": 12,
+        "18": 1
+      }
+    },
+    {
+      "id": 21,
+      "file": "map-21.json",
+      "sha256": "5ae63c3e5617846b8a3388be6a6487406e3ea552c684813b6cffb40c223b6c0e",
+      "width": 20,
+      "height": 40,
+      "image": "scenario-map-21.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "2": 208,
+        "0": 472,
+        "14": 63,
+        "20": 1,
+        "15": 10,
+        "16": 26,
+        "23": 16,
+        "22": 2,
+        "24": 1,
+        "18": 1
+      }
+    },
+    {
+      "id": 22,
+      "file": "map-22.json",
+      "sha256": "eeb702a8afa85c146490d820853a60f9075f22b14687a5d5b6ac220aad7860ed",
+      "width": 32,
+      "height": 20,
+      "image": "scenario-map-22.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "23": 25,
+        "16": 54,
+        "15": 20,
+        "25": 17,
+        "0": 367,
+        "14": 18,
+        "12": 38,
+        "24": 1,
+        "22": 5,
+        "20": 1,
+        "18": 1,
+        "8": 8,
+        "2": 68,
+        "1": 17
+      }
+    },
+    {
+      "id": 23,
+      "file": "map-23.json",
+      "sha256": "693f25937a12c48a07644fb843245a858c03f62704b2fb3cb9f006df8955f45c",
+      "width": 20,
+      "height": 20,
+      "image": "scenario-map-23.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "2": 27,
+        "7": 208,
+        "14": 21,
+        "25": 19,
+        "15": 22,
+        "16": 60,
+        "23": 35,
+        "18": 1,
+        "24": 1,
+        "8": 4,
+        "0": 2
+      }
+    },
+    {
+      "id": 24,
+      "file": "map-24.json",
+      "sha256": "422779591cd367a3fbec39e8a7ad18b669ead4f209eed05169bbe59384f6e698",
+      "width": 24,
+      "height": 24,
+      "image": "scenario-map-24.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "4": 99,
+        "2": 162,
+        "0": 216,
+        "15": 5,
+        "16": 10,
+        "18": 1,
+        "3": 13,
+        "20": 1,
+        "12": 28,
+        "9": 4,
+        "10": 37
+      }
+    },
+    {
+      "id": 25,
+      "file": "map-25.json",
+      "sha256": "47000e9f18e703dd37e07d6b8a6cfcbb786d29ad46a5022b7ca1601b004a6b62",
+      "width": 20,
+      "height": 32,
+      "image": "scenario-map-25.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "4": 121,
+        "12": 31,
+        "0": 147,
+        "9": 8,
+        "2": 269,
+        "1": 63,
+        "20": 1
+      }
+    },
+    {
+      "id": 26,
+      "file": "map-26.json",
+      "sha256": "e8892200cf3da46597b1b1c32b90c6b9ab0486e26d92ccef33a409bdc8b5afcc",
+      "width": 32,
+      "height": 24,
+      "image": "scenario-map-26.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 337,
+        "4": 241,
+        "12": 25,
+        "13": 61,
+        "9": 3,
+        "21": 1,
+        "5": 27,
+        "1": 44,
+        "8": 1,
+        "2": 28
+      }
+    },
+    {
+      "id": 27,
+      "file": "map-27.json",
+      "sha256": "40d91d20b510401829dfb7d9e40afb41c9958248fc146d028699cfc7f40723ae",
+      "width": 32,
+      "height": 40,
+      "image": "scenario-map-27.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 272,
+        "2": 179,
+        "1": 110,
+        "14": 101,
+        "23": 33,
+        "20": 1,
+        "24": 1,
+        "22": 4,
+        "13": 540,
+        "10": 39
+      }
+    },
+    {
+      "id": 28,
+      "file": "map-28.json",
+      "sha256": "9aa6a7a280d3ffb3ed0cea261996a8bba79b8499edf6a47d5998e236083dad8a",
+      "width": 32,
+      "height": 40,
+      "image": "scenario-map-28.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 272,
+        "2": 179,
+        "1": 110,
+        "14": 101,
+        "23": 33,
+        "20": 1,
+        "24": 1,
+        "22": 4,
+        "13": 540,
+        "10": 39
+      }
+    },
+    {
+      "id": 29,
+      "file": "map-29.json",
+      "sha256": "7298a93bbaabc2f4487d12f797fd7bdc64e1d223e8013b196ca0d6e3168f6ce2",
+      "width": 36,
+      "height": 20,
+      "image": "scenario-map-29.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 216,
+        "4": 196,
+        "7": 27,
+        "2": 145,
+        "3": 24,
+        "21": 3,
+        "1": 42,
+        "11": 47,
+        "10": 20
+      }
+    },
+    {
+      "id": 30,
+      "file": "map-30.json",
+      "sha256": "a190ddca2c37272cdbe2b4415ed3d774652c6cecac71d5a307f6c03b25cf452c",
+      "width": 20,
+      "height": 20,
+      "image": "scenario-map-30.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 138,
+        "25": 23,
+        "15": 33,
+        "16": 87,
+        "23": 47,
+        "8": 4,
+        "22": 2,
+        "18": 1,
+        "10": 45,
+        "1": 20
+      }
+    },
+    {
+      "id": 31,
+      "file": "map-31.json",
+      "sha256": "ba27ccea67c7efcb95a33b701a4b5e13d4e2f7bd76349857fa00198ead576a70",
+      "width": 20,
+      "height": 32,
+      "image": "scenario-map-31.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "7": 418,
+        "14": 28,
+        "22": 3,
+        "3": 24,
+        "12": 62,
+        "9": 22,
+        "1": 36,
+        "23": 10,
+        "2": 36,
+        "20": 1
+      }
+    },
+    {
+      "id": 32,
+      "file": "map-32.json",
+      "sha256": "0208742ebe824156bcdc15e806237dce4d5a543e33482b832c6a89a33197ce8a",
+      "width": 28,
+      "height": 20,
+      "image": "scenario-map-32.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 158,
+        "3": 30,
+        "4": 163,
+        "5": 160,
+        "15": 17,
+        "19": 2,
+        "20": 1,
+        "16": 16,
+        "23": 11,
+        "22": 1,
+        "18": 1
+      }
+    },
+    {
+      "id": 33,
+      "file": "map-33.json",
+      "sha256": "7b4dd4d1a56a7f5b1bdcdc92cb0f5fc6c12380b6c718b8129270584acbeb353a",
+      "width": 20,
+      "height": 32,
+      "image": "scenario-map-33.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 180,
+        "25": 17,
+        "15": 15,
+        "16": 29,
+        "23": 21,
+        "10": 135,
+        "8": 10,
+        "1": 155,
+        "22": 1,
+        "12": 77
+      }
+    },
+    {
+      "id": 34,
+      "file": "map-34.json",
+      "sha256": "5d67830316530b4e3677dd7d5daef4475fb20cf9afd385c321daf0cb032a483b",
+      "width": 24,
+      "height": 40,
+      "image": "scenario-map-34.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "4": 201,
+        "2": 90,
+        "0": 285,
+        "14": 58,
+        "23": 18,
+        "20": 2,
+        "22": 3,
+        "1": 38,
+        "13": 264,
+        "24": 1
+      }
+    },
+    {
+      "id": 35,
+      "file": "map-35.json",
+      "sha256": "3d7264d3fa44f841dfef65c7b4132f29e0f6a26cc984f216a5e8a6996d2c2b2f",
+      "width": 28,
+      "height": 36,
+      "image": "scenario-map-35.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 390,
+        "4": 518,
+        "5": 59,
+        "15": 19,
+        "16": 11,
+        "18": 1,
+        "19": 3,
+        "22": 6,
+        "20": 1
+      }
+    },
+    {
+      "id": 36,
+      "file": "map-36.json",
+      "sha256": "bd295ee4f39cb9ea08d6e511a7fbcdae710b07e2d56a075948810b7cf89432da",
+      "width": 28,
+      "height": 28,
+      "image": "scenario-map-36.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "1": 124,
+        "12": 92,
+        "4": 105,
+        "0": 460,
+        "22": 3
+      }
+    },
+    {
+      "id": 37,
+      "file": "map-37.json",
+      "sha256": "7d78c084dd1ac9ed3823fc3bd833de1561a713efe4b059b63d5d385030cc1787",
+      "width": 20,
+      "height": 24,
+      "image": "scenario-map-37.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "5": 92,
+        "4": 123,
+        "0": 225,
+        "14": 20,
+        "23": 18,
+        "22": 2
+      }
+    },
+    {
+      "id": 38,
+      "file": "map-38.json",
+      "sha256": "2c292b7e4d23143c7370d2a6f15ba6c613b833b61f4d0aba27421639093e9378",
+      "width": 24,
+      "height": 32,
+      "image": "scenario-map-38.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "13": 180,
+        "4": 212,
+        "0": 299,
+        "22": 4,
+        "15": 20,
+        "17": 2,
+        "14": 14,
+        "23": 16,
+        "16": 18,
+        "20": 2,
+        "18": 1
+      }
+    },
+    {
+      "id": 39,
+      "file": "map-39.json",
+      "sha256": "c11b13c2d4a5265a194e7be67370d6f20ee41fe172c5688b01c2483ee236c1f2",
+      "width": 24,
+      "height": 32,
+      "image": "scenario-map-39.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 211,
+        "3": 102,
+        "4": 163,
+        "5": 157,
+        "15": 60,
+        "16": 49,
+        "23": 18,
+        "20": 4,
+        "22": 4
+      }
+    },
+    {
+      "id": 40,
+      "file": "map-40.json",
+      "sha256": "66cc64c6af79575dbe1a4d11fb4b7fe8a488aab93dde09bfe58961e75b5d11d5",
+      "width": 36,
+      "height": 32,
+      "image": "scenario-map-40.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "4": 364,
+        "3": 263,
+        "5": 338,
+        "15": 77,
+        "16": 102,
+        "22": 7,
+        "20": 1
+      }
+    },
+    {
+      "id": 41,
+      "file": "map-41.json",
+      "sha256": "be1767c93956dffab53d9527649629bde16f8a5a6cb2ae965abb8273cc5d583f",
+      "width": 40,
+      "height": 28,
+      "image": "scenario-map-41.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "1": 62,
+        "0": 378,
+        "15": 116,
+        "16": 278,
+        "23": 266,
+        "14": 12,
+        "17": 4,
+        "22": 2,
+        "24": 1,
+        "18": 1
+      }
+    },
+    {
+      "id": 42,
+      "file": "map-42.json",
+      "sha256": "b15b5f42d7fc5887073cb1f52ed8204147986dd705383baf3277adff23965200",
+      "width": 24,
+      "height": 24,
+      "image": "scenario-map-42.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 189,
+        "15": 85,
+        "16": 249,
+        "17": 6,
+        "22": 2,
+        "24": 1,
+        "18": 1,
+        "14": 8,
+        "2": 35
+      }
+    },
+    {
+      "id": 43,
+      "file": "map-43.json",
+      "sha256": "18ffcc7a757da0f4e1debcbe0e3c8fa565cc0266b28f35343dc9497f74477327",
+      "width": 32,
+      "height": 40,
+      "image": "scenario-map-43.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "13": 582,
+        "2": 179,
+        "10": 39,
+        "1": 105,
+        "0": 272,
+        "14": 69,
+        "23": 26,
+        "22": 6,
+        "20": 1,
+        "24": 1
+      }
+    },
+    {
+      "id": 44,
+      "file": "map-44.json",
+      "sha256": "0661f384ed4d266e48ff1dc68aeb93058ca596edd4db5e0153eba56aa2773f5d",
+      "width": 24,
+      "height": 40,
+      "image": "scenario-map-44.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "4": 201,
+        "2": 90,
+        "0": 285,
+        "14": 58,
+        "23": 18,
+        "20": 2,
+        "22": 3,
+        "1": 38,
+        "13": 264,
+        "24": 1
+      }
+    },
+    {
+      "id": 45,
+      "file": "map-45.json",
+      "sha256": "ed112b4f916f1ef61a349a621fbf207bb99879afc45cf423f3495247e8a8763e",
+      "width": 40,
+      "height": 24,
+      "image": "scenario-map-45.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 320,
+        "15": 140,
+        "16": 476,
+        "14": 20,
+        "18": 4
+      }
+    },
+    {
+      "id": 46,
+      "file": "map-46.json",
+      "sha256": "98e5d167d98b8f825f573f4736832d50e9c8d2b0fd428ef432aea206a5347ecb",
+      "width": 28,
+      "height": 36,
+      "image": "scenario-map-46.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 390,
+        "4": 518,
+        "5": 59,
+        "15": 19,
+        "16": 11,
+        "18": 1,
+        "19": 3,
+        "22": 6,
+        "20": 1
+      }
+    },
+    {
+      "id": 47,
+      "file": "map-47.json",
+      "sha256": "73da238712c233601062536c1dd84a05aae9b33d6ebe2bb4258745971203cb85",
+      "width": 24,
+      "height": 24,
+      "image": "scenario-map-47.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "4": 222,
+        "1": 140,
+        "0": 150,
+        "15": 20,
+        "16": 28,
+        "23": 14,
+        "22": 1,
+        "18": 1
+      }
+    },
+    {
+      "id": 48,
+      "file": "map-48.json",
+      "sha256": "97e9381685c15120f2158be9f54f63f6029b3d1b6d93278ac413076230a0bc57",
+      "width": 20,
+      "height": 24,
+      "image": "scenario-map-48.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 156,
+        "15": 18,
+        "16": 60,
+        "23": 46,
+        "17": 2,
+        "24": 1,
+        "18": 1,
+        "22": 3,
+        "4": 76,
+        "13": 117
+      }
+    },
+    {
+      "id": 49,
+      "file": "map-49.json",
+      "sha256": "c5a1da7e583b8293fbc89a8a1fa38a927f3b02d39d3d4d94e4ce06861f6c11f8",
+      "width": 32,
+      "height": 40,
+      "image": "scenario-map-49.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "13": 582,
+        "2": 173,
+        "10": 39,
+        "1": 105,
+        "0": 276,
+        "14": 69,
+        "23": 26,
+        "22": 6,
+        "20": 1,
+        "24": 1,
+        "28": 2
+      }
+    },
+    {
+      "id": 50,
+      "file": "map-50.json",
+      "sha256": "9261000c4825a9761a6333384268bd4b5235c95dcedda35c2c39cfb56a852e77",
+      "width": 24,
+      "height": 40,
+      "image": "scenario-map-50.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "4": 201,
+        "2": 90,
+        "0": 285,
+        "14": 58,
+        "23": 18,
+        "20": 2,
+        "22": 3,
+        "1": 38,
+        "13": 264,
+        "24": 1
+      }
+    },
+    {
+      "id": 51,
+      "file": "map-51.json",
+      "sha256": "5c81b2a5a36a670760b8b25adf06ad824f2a905307dc361b48c1377df45dd225",
+      "width": 40,
+      "height": 24,
+      "image": "scenario-map-51.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 320,
+        "15": 140,
+        "16": 444,
+        "14": 52,
+        "18": 4
+      }
+    },
+    {
+      "id": 52,
+      "file": "map-52.json",
+      "sha256": "20120bb61e192afca36ee8d9195eb207b5ac73d79fff71f50c8b5cfafefd67ac",
+      "width": 20,
+      "height": 24,
+      "image": "scenario-map-52.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "12": 48,
+        "3": 59,
+        "0": 217,
+        "4": 49,
+        "15": 82,
+        "10": 11,
+        "17": 14
+      }
+    },
+    {
+      "id": 53,
+      "file": "map-53.json",
+      "sha256": "095c8f6969d99b6f563600568e61d71adde18a78c5d32c33ed76dcaf634b68d2",
+      "width": 24,
+      "height": 24,
+      "image": "scenario-map-53.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 189,
+        "15": 85,
+        "16": 247,
+        "17": 6,
+        "28": 2,
+        "22": 2,
+        "24": 1,
+        "18": 1,
+        "14": 8,
+        "2": 35
+      }
+    },
+    {
+      "id": 54,
+      "file": "map-54.json",
+      "sha256": "f2ec510c75c2d0bd6d9ec0c8503e536b575607efdc66157abcdeab961e1f75d1",
+      "width": 40,
+      "height": 32,
+      "image": "scenario-map-54.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "4": 401,
+        "3": 317,
+        "5": 375,
+        "15": 77,
+        "16": 102,
+        "22": 7,
+        "20": 1
+      }
+    },
+    {
+      "id": 55,
+      "file": "map-55.json",
+      "sha256": "8543bef0b834e23fea9c6730f73306977ebd8093ff076bf3cd9485fd9eeb52df",
+      "width": 24,
+      "height": 36,
+      "image": "scenario-map-55.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 246,
+        "3": 97,
+        "4": 188,
+        "5": 185,
+        "15": 60,
+        "14": 12,
+        "22": 5,
+        "16": 49,
+        "23": 18,
+        "20": 4
+      }
+    },
+    {
+      "id": 56,
+      "file": "map-56.json",
+      "sha256": "40d5e0dbb7bf0bec2a5555be5b3aab1ce33e0eaf8daaea39ecec419106490d51",
+      "width": 40,
+      "height": 40,
+      "image": "scenario-map-56.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "0": 98,
+        "2": 94,
+        "4": 338,
+        "1": 391,
+        "9": 19,
+        "6": 132,
+        "12": 97,
+        "16": 1,
+        "22": 2,
+        "14": 42,
+        "5": 24,
+        "3": 31,
+        "13": 331
+      }
+    },
+    {
+      "id": 57,
+      "file": "map-57.json",
+      "sha256": "003cd4fc431ee2918e31739917ba65254dc82a60703fb0acda9ffb173b3efd9a",
+      "width": 40,
+      "height": 40,
+      "image": "scenario-map-57.png",
+      "imageExists": true,
+      "terrainCodeCounts": {
+        "29": 1008,
+        "15": 196,
+        "16": 154,
+        "28": 2,
+        "0": 80,
+        "9": 80,
+        "3": 80
+      }
+    }
+  ]
+}

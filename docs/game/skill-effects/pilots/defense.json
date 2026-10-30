@@ -1,0 +1,145 @@
+{
+  "id": 55,
+  "name": "방어 강화",
+  "status": "draft",
+  "file": "web/public/images/skills/defense-pilot-v1",
+  "bytes": 30804,
+  "width": 512,
+  "height": 256,
+  "cols": 4,
+  "rows": 2,
+  "frameCount": 8,
+  "frameMs": 120,
+  "anchor": {
+    "x": 64,
+    "y": 64,
+    "type": "air"
+  },
+  "playback": {
+    "start": 0,
+    "end": 7,
+    "loop": "one shot, pause 8 ticks before preview repeat"
+  },
+  "role": "brief target defense increase symbol",
+  "placement": "one ally, body center; never permanent equipment or invulnerability",
+  "directionPolicy": "non-directional",
+  "sharedIds": [
+    56
+  ],
+  "sourcePath": "/Users/choenamho/.codex/generated_images/01a18a3e-9080-7221-9a27-0ded9a1f4790/exec-9bb55f71-c4bc-4de6-bf99-258dc76ea7c8.png",
+  "sourceCleanup": "경량본 및 페이지 검수 후 이번 원본 삭제 완료",
+  "generator": "built-in image_gen",
+  "processing": "fixed 104x104 resize per equal cell; no per-frame tight crop; row0 y-6 and row1 y+4 placement correction keeps full shield tip aligned; transparent alpha retained",
+  "checks": [
+    {
+      "frame": 0,
+      "alphaBBox": [
+        16,
+        18,
+        116,
+        110
+      ],
+      "empty": false,
+      "edgeClear": true
+    },
+    {
+      "frame": 1,
+      "alphaBBox": [
+        12,
+        6,
+        116,
+        110
+      ],
+      "empty": false,
+      "edgeClear": true
+    },
+    {
+      "frame": 2,
+      "alphaBBox": [
+        12,
+        6,
+        116,
+        110
+      ],
+      "empty": false,
+      "edgeClear": true
+    },
+    {
+      "frame": 3,
+      "alphaBBox": [
+        12,
+        10,
+        109,
+        110
+      ],
+      "empty": false,
+      "edgeClear": true
+    },
+    {
+      "frame": 4,
+      "alphaBBox": [
+        14,
+        16,
+        116,
+        118
+      ],
+      "empty": false,
+      "edgeClear": true
+    },
+    {
+      "frame": 5,
+      "alphaBBox": [
+        12,
+        16,
+        116,
+        116
+      ],
+      "empty": false,
+      "edgeClear": true
+    },
+    {
+      "frame": 6,
+      "alphaBBox": [
+        12,
+        16,
+        116,
+        116
+      ],
+      "empty": false,
+      "edgeClear": true
+    },
+    {
+      "frame": 7,
+      "alphaBBox": [
+        12,
+        16,
+        111,
+        114
+      ],
+      "empty": false,
+      "edgeClear": true
+    }
+  ],
+  "review": [
+    "8 distinct frames, emergence/full shield/dissolution visible",
+    "transparent padding around all frames",
+    "512x256 size and file under 60KB",
+    "source and packed sheet visually inspected",
+    "packed sheet inspected on dark and light backgrounds; 96px/128px proof inspected"
+  ],
+  "limitations": [
+    "generated glow silhouette is a concept draft",
+    "actual page playback pending root integration",
+    "no gameplay logic or lasting status indicator"
+  ],
+  "prompt": "Use case: stylized-concept. Create a transparent pixel-art tactical RPG spell VFX spritesheet for DEFENSE INCREASE, not an equipped physical shield. EXACTLY 4 columns and 2 rows, 8 equal square cells, read left to right then top to bottom. All cells fixed center. Each effect fits central 65 percent of its cell with ample transparent margins. A brief steel-blue gray and ivory luminous shield OUTLINE appears, thin inner light lines fill upward, softly peaks then dissolves into tiny blue-white motes. Frame1 faint lower outline begins; frame2 outline grows; frame3 full shield outline; frame4 brighter filled inner light; frame5 peak short glint; frame6 outline dissolves; frame7 few motes; frame8 tiny final spark. Shield silhouette simple vertical pointed-bottom, no cross, no lettering or emblem, no held handle, no character, no background, no ground, no panel borders, no grid. Limited palette steel blue, blue gray, ivory highlights. Crisp chunky pixel clusters, mobile readable, classic Korean fantasy tactical RPG VFX, strong bright core and dark blue outline, restrained glow, no photorealism, no rainbow. Identical centered shield geometry through frames, light changes rather than drifting object. Not a permanent bubble or invulnerability barrier. True transparent alpha background.",
+  "integration": {
+    "status": "draft-connected",
+    "ids": [
+      55
+    ],
+    "page": "/skills",
+    "verified": "대표3종 필터, 재생·정지·4번프레임 선택, 화면 캡처 확인. npm run build 통과.",
+    "limitations": "실제 전투 판정/캐릭터 합성 미연결. 모바일 브라우저 직접 검수 대신 96px/128px 이미지 가독성 확인."
+  }
+}

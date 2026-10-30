@@ -52,17 +52,18 @@
     "root": "/images/class-motion-pilot/infantry/job-3/combat-v2",
     "cavalry": false,
     "notes": [
-      "승급·쇠약·타병과 미제작",
+      "기존 전투 원화 제작 당시 메모: 승급·쇠약·타병과 미제작",
       "실제 게임 판정·공통UI·사이트빌드 미변경",
       "미해결 프레임은 unresolvedIssues 참조; 전체 오류 해결 완료로 표시하지 않음",
       "nw-1-2, nw-1-3, nw-1-0: 보행2→3→0 다리 교차 및 옷자락 형태 변화 잔존. 가로 이동 오류는 수정했으나 원화 보행 보간 완성 아님.",
       "se-1-0, se-1-1, sw-1-2, sw-1-3: 보행 지지발 전환에서 상체 기울기와 소매/바지 형태의 미세 차이 잔존.",
       "ne-2-1: 긴 검끝의 투명 여백 보존 때문에 몸통 중심 추정값77px; 목표80 대비3px 차이.",
-      "se-2-0, se-2-3, sw-2-0, sw-2-3: 복귀 자세는 가까워졌지만 미세한 얼굴/투구와 체형 원화 차이 잔존; 최종 게임 원화 승인 필요."
+      "se-2-0, se-2-3, sw-2-0, sw-2-3: 복귀 자세는 가까워졌지만 미세한 얼굴/투구와 체형 원화 차이 잔존; 최종 게임 원화 승인 필요.",
+      "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
     ],
     "combat": "/images/class-motion-pilot/infantry/job-3/combat-v2",
     "scenario": "/images/class-motion-pilot/infantry/job-3/scenario-v2",
-    "weakened": "",
+    "weakened": "/images/weakened-complete-v1/unit-33",
     "version": "integrated-20261029",
     "stages": [
       {
@@ -70,15 +71,16 @@
         "name": "경보병",
         "combat": "/images/class-motion-pilot/infantry/job-3/combat-v2",
         "scenario": "/images/class-motion-pilot/infantry/job-3/scenario-v2",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-33",
         "notes": [
-          "승급·쇠약·타병과 미제작",
+          "기존 전투 원화 제작 당시 메모: 승급·쇠약·타병과 미제작",
           "실제 게임 판정·공통UI·사이트빌드 미변경",
           "미해결 프레임은 unresolvedIssues 참조; 전체 오류 해결 완료로 표시하지 않음",
           "nw-1-2, nw-1-3, nw-1-0: 보행2→3→0 다리 교차 및 옷자락 형태 변화 잔존. 가로 이동 오류는 수정했으나 원화 보행 보간 완성 아님.",
           "se-1-0, se-1-1, sw-1-2, sw-1-3: 보행 지지발 전환에서 상체 기울기와 소매/바지 형태의 미세 차이 잔존.",
           "ne-2-1: 긴 검끝의 투명 여백 보존 때문에 몸통 중심 추정값77px; 목표80 대비3px 차이.",
-          "se-2-0, se-2-3, sw-2-0, sw-2-3: 복귀 자세는 가까워졌지만 미세한 얼굴/투구와 체형 원화 차이 잔존; 최종 게임 원화 승인 필요."
+          "se-2-0, se-2-3, sw-2-0, sw-2-3: 복귀 자세는 가까워졌지만 미세한 얼굴/투구와 체형 원화 차이 잔존; 최종 게임 원화 승인 필요.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       },
       {
@@ -86,7 +88,7 @@
         "name": "중보병",
         "combat": "/images/class-motion-pilot/infantry/job-4/combat-v1",
         "scenario": "/images/class-motion-pilot/infantry/job-4/scenario-v1",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-34",
         "notes": [
           "시각 초안이며 전투 판정/사이트 연결 미구현",
           "공격·스킬 frame3은 frame0 완성 자세 재사용: 3개 고유 자세와 복귀 홀드, 4개 모두 독립 생성인 것처럼 표시하지 않음",
@@ -94,7 +96,8 @@
           "승급별 원화 디테일과4방향 얼굴/체격은 생성 특성상 미세 차이가 남음; 실제 모바일·사이트전환 미검수",
           "NE스킬은 frame1=frame2 거양 자세 홀드, frame3=frame0.2개 고유 자세의4프레임 시퀀스.",
           "{'mode': 'combat', 'frames': ['nw-1-0', 'nw-1-1', 'nw-1-2', 'nw-1-3'], 'issue': 'NW 보행 다리 교차 및 지지발 단계 연결감 미흡. 추가 생성/수정2회는 배경·무기·보행위상 문제로 미채택. 완성 보행으로 승인하지 않음.'}",
-          "{'mode': 'combat', 'frames': ['sw-2-2', 'sw-2-3'], 'issue': '타격 회수에서 준비 자세로 돌아갈 때 팔 높이 변화가 큼.3→0은 동일프레임 홀드로 경계 튐을 없앴으나2→3 자연스러운 보간은 추가 검토.'}"
+          "{'mode': 'combat', 'frames': ['sw-2-2', 'sw-2-3'], 'issue': '타격 회수에서 준비 자세로 돌아갈 때 팔 높이 변화가 큼.3→0은 동일프레임 홀드로 경계 튐을 없앴으나2→3 자연스러운 보간은 추가 검토.'}",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       },
       {
@@ -102,14 +105,15 @@
         "name": "근위병",
         "combat": "/images/class-motion-pilot/infantry/job-5/combat-v1",
         "scenario": "/images/class-motion-pilot/infantry/job-5/scenario-v1",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-35",
         "notes": [
           "시각 초안이며 전투 판정/사이트 연결 미구현",
           "공격·스킬 frame3은 frame0 완성 자세 재사용: 3개 고유 자세와 복귀 홀드, 4개 모두 독립 생성인 것처럼 표시하지 않음",
           "일부 보행/회수 연결 미완: unresolvedFrames 참조",
           "승급별 원화 디테일과4방향 얼굴/체격은 생성 특성상 미세 차이가 남음; 실제 모바일·사이트전환 미검수",
           "{'mode': 'combat', 'frames': ['nw-1-0', 'nw-1-1', 'nw-1-2', 'nw-1-3'], 'issue': 'NW 보행 다리 교차 및 지지발 단계 연결감 미흡. 추가 생성/수정2회는 배경·무기·보행위상 문제로 미채택. 완성 보행으로 승인하지 않음.'}",
-          "{'mode': 'combat', 'frames': ['sw-2-2', 'sw-2-3'], 'issue': '타격 회수에서 준비 자세로 돌아갈 때 팔 높이 변화가 큼.3→0은 동일프레임 홀드로 경계 튐을 없앴으나2→3 자연스러운 보간은 추가 검토.'}"
+          "{'mode': 'combat', 'frames': ['sw-2-2', 'sw-2-3'], 'issue': '타격 회수에서 준비 자세로 돌아갈 때 팔 높이 변화가 큼.3→0은 동일프레임 홀드로 경계 튐을 없앴으나2→3 자연스러운 보간은 추가 검토.'}",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -126,11 +130,12 @@
       "NE/SW 재생성으로 머리카락·자락·갑옷 선의 세부 변화가 있으며 완전한 픽셀 단위 외형 동일성은 보장하지 않는다.",
       "4프레임 공격의 release→recover 변화는 크다. 마지막→대기 연결은 정확히 같지만 보간 프레임을 추가한 것은 아니다.",
       "SW 공격1/2는 대기보다 측면에 가까운 상체 회전이며 발과 조준은 SW를 유지한다.",
-      "승급·포차·게임 판정·UI 연결·빌드·실기기 검수는 미진행이다."
+      "승급·포차·게임 판정·UI 연결·빌드·실기기 검수는 미진행이다.",
+      "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
     ],
     "combat": "/images/class-motion-pilot/archer/job-6/combat-v2",
     "scenario": "/images/class-motion-pilot/archer/job-6/scenario-v2",
-    "weakened": "",
+    "weakened": "/images/weakened-complete-v1/unit-36",
     "version": "integrated-20261029",
     "stages": [
       {
@@ -138,7 +143,7 @@
         "name": "궁병",
         "combat": "/images/class-motion-pilot/archer/job-6/combat-v2",
         "scenario": "/images/class-motion-pilot/archer/job-6/scenario-v2",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-36",
         "notes": [
           "시각 초안. 사용자 최종 승인 및 실제 사이트 연속 재생 검수 전이다.",
           "브라우저 보안 정책이 file:// URL을 차단하여 실시간 재생을 확인하지 못했다. 다른 경로로 우회하지 않았다.",
@@ -146,7 +151,8 @@
           "NE/SW 재생성으로 머리카락·자락·갑옷 선의 세부 변화가 있으며 완전한 픽셀 단위 외형 동일성은 보장하지 않는다.",
           "4프레임 공격의 release→recover 변화는 크다. 마지막→대기 연결은 정확히 같지만 보간 프레임을 추가한 것은 아니다.",
           "SW 공격1/2는 대기보다 측면에 가까운 상체 회전이며 발과 조준은 SW를 유지한다.",
-          "승급·포차·게임 판정·UI 연결·빌드·실기기 검수는 미진행이다."
+          "승급·포차·게임 판정·UI 연결·빌드·실기기 검수는 미진행이다.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       },
       {
@@ -154,14 +160,15 @@
         "name": "노병",
         "combat": "/images/class-motion-pilot/archer/job-7/combat-v1",
         "scenario": "/images/class-motion-pilot/archer/job-7/scenario-v1",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-37",
         "notes": [
           "완성 프레임 시각 초안으로 사용자 최종 승인 및 실제 게임 동작 재현 완료가 아니다.",
           "실제 사이트 연속 재생 및 모바일 실기기 검수 미진행. 정적 시간순 비교와 WebP 디코딩/시간 검사를 구분한다.",
           "머리카락·자락·활 곡률·장식의 미세한 프레임 변화가 남는다. 동일 손·대표 무기·복식 세트의 큰 형태를 검수했으며 픽셀 단위 동일성은 보장하지 않는다.",
           "4프레임의 release(2)→recover(3) 자세 변화는 크다. recover→idle/prepare 연결을 검사했으며 보간 프레임을 추가한 것은 아니다.",
           "SW 공격은 대기보다 측면으로 상체가 회전한다. NE/SW 스킬은 빈 오른손 명령, NW/SE는 활을 드는 시각 동작이며 실제 스킬 판정과 무관하다.",
-          "사이트 UI/공통 데이터/전투 판정/수치/빌드는 수정하지 않았다. 포차·쇠약·다른 병과는 범위 밖이다."
+          "기존 전투 원화 제작 당시 메모: 사이트 UI/공통 데이터/전투 판정/수치/빌드는 수정하지 않았다. 포차·쇠약·다른 병과는 범위 밖이다.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       },
       {
@@ -169,14 +176,15 @@
         "name": "연노병",
         "combat": "/images/class-motion-pilot/archer/job-8/combat-v1",
         "scenario": "/images/class-motion-pilot/archer/job-8/scenario-v1",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-38",
         "notes": [
           "완성 프레임 시각 초안으로 사용자 최종 승인 및 실제 게임 동작 재현 완료가 아니다.",
           "실제 사이트 연속 재생 및 모바일 실기기 검수 미진행. 정적 시간순 비교와 WebP 디코딩/시간 검사를 구분한다.",
           "머리카락·자락·활 곡률·장식의 미세한 프레임 변화가 남는다. 동일 손·대표 무기·복식 세트의 큰 형태를 검수했으며 픽셀 단위 동일성은 보장하지 않는다.",
           "4프레임의 release(2)→recover(3) 자세 변화는 크다. recover→idle/prepare 연결을 검사했으며 보간 프레임을 추가한 것은 아니다.",
           "SW 공격은 대기보다 측면으로 상체가 회전한다. NE/SW 스킬은 빈 오른손 명령, NW/SE는 활을 드는 시각 동작이며 실제 스킬 판정과 무관하다.",
-          "사이트 UI/공통 데이터/전투 판정/수치/빌드는 수정하지 않았다. 포차·쇠약·다른 병과는 범위 밖이다."
+          "기존 전투 원화 제작 당시 메모: 사이트 UI/공통 데이터/전투 판정/수치/빌드는 수정하지 않았다. 포차·쇠약·다른 병과는 범위 밖이다.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -294,38 +302,42 @@
         "id": 15,
         "name": "경포차",
         "notes": [
-          "검수 초안 · 실제 재생 및 작화 확인 대상."
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/archer/job-15/combat-v1",
         "scenario": "/images/class-motion-pilot/archer/job-15/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-45"
       },
       {
         "id": 16,
         "name": "중포차",
         "notes": [
-          "검수 초안 · 실제 재생 및 작화 확인 대상."
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/archer/job-16/combat-v1",
         "scenario": "/images/class-motion-pilot/archer/job-16/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-46"
       },
       {
         "id": 17,
         "name": "벽력차",
         "notes": [
-          "검수 초안 · 실제 재생 및 작화 확인 대상."
+          "검수 초안 · 실제 재생 및 작화 확인 대상.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/archer/job-17/combat-v1",
         "scenario": "/images/class-motion-pilot/archer/job-17/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-47"
       }
     ],
     "combat": "/images/class-motion-pilot/archer/job-15/combat-v1",
     "scenario": "/images/class-motion-pilot/archer/job-15/scenario-v1",
-    "weakened": "",
+    "weakened": "/images/weakened-complete-v1/unit-45",
     "notes": [
-      "검수 초안 · 실제 재생 및 작화 확인 대상."
+      "검수 초안 · 실제 재생 및 작화 확인 대상.",
+      "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
     ],
     "root": "/images/class-motion-pilot/archer/job-15/combat-v1",
     "version": "integrated-20261029"
@@ -344,11 +356,12 @@
           "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
           "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
           "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
-          "SW 전투에서 머리 매듭이 작거나 거의 보이지 않으며 후면/다른 방향과 머리 인상이 다름."
+          "SW 전투에서 머리 매듭이 작거나 거의 보이지 않으며 후면/다른 방향과 머리 인상이 다름.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/infantry/job-18/combat-v1",
         "scenario": "/images/class-motion-pilot/infantry/job-18/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-48"
       },
       {
         "id": 19,
@@ -359,11 +372,12 @@
           "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
           "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
           "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
-          "일부 방향/공격에서 소매 길이와 승급 복식 세부가 달라짐. 승인 정지 모델과 완전한 외형 일치 검수 필요."
+          "일부 방향/공격에서 소매 길이와 승급 복식 세부가 달라짐. 승인 정지 모델과 완전한 외형 일치 검수 필요.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/infantry/job-19/combat-v1",
         "scenario": "/images/class-motion-pilot/infantry/job-19/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-49"
       },
       {
         "id": 20,
@@ -374,23 +388,25 @@
           "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
           "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
           "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
-          "일부 방향/공격에서 소매 길이와 승급 복식 세부가 달라짐. 승인 정지 모델과 완전한 외형 일치 검수 필요."
+          "일부 방향/공격에서 소매 길이와 승급 복식 세부가 달라짐. 승인 정지 모델과 완전한 외형 일치 검수 필요.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/infantry/job-20/combat-v1",
         "scenario": "/images/class-motion-pilot/infantry/job-20/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-50"
       }
     ],
     "combat": "/images/class-motion-pilot/infantry/job-18/combat-v1",
     "scenario": "/images/class-motion-pilot/infantry/job-18/scenario-v1",
-    "weakened": "",
+    "weakened": "/images/weakened-complete-v1/unit-48",
     "notes": [
       "검수 초안 · 실제 재생 및 작화 확인 대상.",
       "보행 action1의0/2와1/3에서 좌우 다리 교대가 충분히 구별되지 않거나 한쪽 보폭 반복처럼 보임. 실제 자연스러운 보행 완성으로 선언하지 않음.",
       "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
       "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
       "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
-      "SW 전투에서 머리 매듭이 작거나 거의 보이지 않으며 후면/다른 방향과 머리 인상이 다름."
+      "SW 전투에서 머리 매듭이 작거나 거의 보이지 않으며 후면/다른 방향과 머리 인상이 다름.",
+      "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
     ],
     "root": "/images/class-motion-pilot/infantry/job-18/combat-v1",
     "version": "integrated-20261029"
@@ -408,11 +424,12 @@
           "보행 action1의0/2와1/3에서 좌우 다리 교대가 충분히 구별되지 않거나 한쪽 보폭 반복처럼 보임. 실제 자연스러운 보행 완성으로 선언하지 않음.",
           "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
           "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
-          "사이트/전투 판정 연결은 이 작업에서 수행하지 않음."
+          "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/infantry/job-21/combat-v1",
         "scenario": "/images/class-motion-pilot/infantry/job-21/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-51"
       },
       {
         "id": 22,
@@ -423,11 +440,12 @@
           "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
           "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
           "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
-          "전투와 시나리오에서 머리 길이·코트 기장 차이, 일부 검 길이 변화가 있음."
+          "전투와 시나리오에서 머리 길이·코트 기장 차이, 일부 검 길이 변화가 있음.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/infantry/job-22/combat-v1",
         "scenario": "/images/class-motion-pilot/infantry/job-22/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-52"
       },
       {
         "id": 23,
@@ -438,22 +456,24 @@
           "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
           "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
           "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
-          "전투와 시나리오에서 머리 길이·코트 기장 차이, 일부 검 길이 변화가 있음."
+          "전투와 시나리오에서 머리 길이·코트 기장 차이, 일부 검 길이 변화가 있음.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/infantry/job-23/combat-v1",
         "scenario": "/images/class-motion-pilot/infantry/job-23/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-53"
       }
     ],
     "combat": "/images/class-motion-pilot/infantry/job-21/combat-v1",
     "scenario": "/images/class-motion-pilot/infantry/job-21/scenario-v1",
-    "weakened": "",
+    "weakened": "/images/weakened-complete-v1/unit-51",
     "notes": [
       "검수 초안 · 실제 재생 및 작화 확인 대상.",
       "보행 action1의0/2와1/3에서 좌우 다리 교대가 충분히 구별되지 않거나 한쪽 보폭 반복처럼 보임. 실제 자연스러운 보행 완성으로 선언하지 않음.",
       "공격/스킬 일부3→0 복귀 자세 차이 및 옷자락 변화가 남음.",
       "허리 띠 영역으로 중심을 맞췄으나 동작별 해부학적 중심의 완전한 고정을 보증하지 않음.",
-      "사이트/전투 판정 연결은 이 작업에서 수행하지 않음."
+      "사이트/전투 판정 연결은 이 작업에서 수행하지 않음.",
+      "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
     ],
     "root": "/images/class-motion-pilot/infantry/job-21/combat-v1",
     "version": "integrated-20261029"
@@ -467,14 +487,15 @@
       "최우선 SW 공격 복귀 자세는 정적 검수에서 수정 확인; 실제 재생 품질 승인 아님",
       "관모·소매·부채의 기존 방향별 편차는 유지, 보행 최종 승인 아님",
       "브라우저 실제 재생 미검수; 190ms 4프레임 정확한 비교 루프 파일 제공",
-      "승급·다른 병과·무용수·쇠약·게임 판정·사이트 연결 미작업",
+      "기존 전투 원화 제작 당시 메모: 승급·다른 병과·무용수·쇠약·게임 판정·사이트 연결 미작업",
       ": existing differences in cap profile, robe folds and fan spread remain; no new scale drift found in static sheets; unchanged",
       ": NW walk height108-109px vs112px idle; gait/hem transition remains a visual draft, actual playback not inspected",
-      ": full release to recovery occurs in one190ms step; four-frame cadence needs integration playback review"
+      ": full release to recovery occurs in one190ms step; four-frame cadence needs integration playback review",
+      "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
     ],
     "combat": "/images/class-motion-pilot/caster/job-24/combat-v2",
     "scenario": "/images/class-motion-pilot/caster/job-24/scenario-v1",
-    "weakened": "",
+    "weakened": "/images/weakened-complete-v1/unit-54",
     "version": "integrated-20261029",
     "stages": [
       {
@@ -482,15 +503,16 @@
         "name": "책사",
         "combat": "/images/class-motion-pilot/caster/job-24/combat-v2",
         "scenario": "/images/class-motion-pilot/caster/job-24/scenario-v1",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-54",
         "notes": [
           "최우선 SW 공격 복귀 자세는 정적 검수에서 수정 확인; 실제 재생 품질 승인 아님",
           "관모·소매·부채의 기존 방향별 편차는 유지, 보행 최종 승인 아님",
           "브라우저 실제 재생 미검수; 190ms 4프레임 정확한 비교 루프 파일 제공",
-          "승급·다른 병과·무용수·쇠약·게임 판정·사이트 연결 미작업",
+          "기존 전투 원화 제작 당시 메모: 승급·다른 병과·무용수·쇠약·게임 판정·사이트 연결 미작업",
           ": existing differences in cap profile, robe folds and fan spread remain; no new scale drift found in static sheets; unchanged",
           ": NW walk height108-109px vs112px idle; gait/hem transition remains a visual draft, actual playback not inspected",
-          ": full release to recovery occurs in one190ms step; four-frame cadence needs integration playback review"
+          ": full release to recovery occurs in one190ms step; four-frame cadence needs integration playback review",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       },
       {
@@ -498,14 +520,15 @@
         "name": "참모",
         "combat": "/images/class-motion-pilot/caster/job-25/combat-v1",
         "scenario": "/images/class-motion-pilot/caster/job-25/scenario-v1",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-55",
         "notes": [
           "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
           "브라우저 실제 연속재생 육안 검수 미완료",
           "SW action2 frame1/2의 팔 뻗기 차이가 작아 중간단계 구분이 약함; frame3은 가슴앞으로 회복 확인.",
           "SE action1 frame3→0의 자락과 발 자세 변화, 모든 방향 세부 자수·부채무늬 편차는 실제 재생 후 검토 필요.",
           "SW 초기 방향/손 오류를 image_gen으로 재제작. 발 검출 하단6.5%는 한쪽 신발만 잡아 중심이 흔들려10%로 확대; SW idle3→0 IoU0.4464→0.9244.",
-          "초기2개 생성은 시트 지시 전달 누락으로 단일인물만 나와 폐기. 최종 프롬프트와 수정 이력만 실제 프레임에 적용."
+          "초기2개 생성은 시트 지시 전달 누락으로 단일인물만 나와 폐기. 최종 프롬프트와 수정 이력만 실제 프레임에 적용.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       },
       {
@@ -513,10 +536,11 @@
         "name": "군사",
         "combat": "/images/class-motion-pilot/caster/job-26/combat-v1",
         "scenario": "/images/class-motion-pilot/caster/job-26/scenario-v1",
-        "weakened": "",
+        "weakened": "/images/weakened-complete-v1/unit-56",
         "notes": [
           "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
-          "브라우저 실제 연속재생 육안 검수 미완료"
+          "브라우저 실제 연속재생 육안 검수 미완료",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ]
       }
     ]
@@ -531,11 +555,12 @@
       "정적 시간순 검수 완료, 실제 브라우저 연속재생 미검수. 사용자 최종 승인 전 초안.",
       "긴 치마/도포가 무릎을 가려 이동1/3 교대보행 가독성이 제한됨.",
       "공격2→3 회복이 한 프레임이고 머리카락/옷자락이 변해 실제 타이밍 검수 필요.",
-      "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차."
+      "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차.",
+      "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
     ],
     "combat": "/images/class-motion-pilot/caster/job-27/remaining-20261028/combat-v1",
     "scenario": "/images/class-motion-pilot/caster/job-27/remaining-20261028/scenario-v1",
-    "weakened": "",
+    "weakened": "/images/weakened-complete-v1/unit-57",
     "version": "integrated-20261029",
     "stages": [
       {
@@ -546,11 +571,12 @@
           "정적 시간순 검수 완료, 실제 브라우저 연속재생 미검수. 사용자 최종 승인 전 초안.",
           "긴 치마/도포가 무릎을 가려 이동1/3 교대보행 가독성이 제한됨.",
           "공격2→3 회복이 한 프레임이고 머리카락/옷자락이 변해 실제 타이밍 검수 필요.",
-          "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차."
+          "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/caster/job-27/remaining-20261028/combat-v1",
         "scenario": "/images/class-motion-pilot/caster/job-27/remaining-20261028/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-57"
       },
       {
         "id": 28,
@@ -560,11 +586,12 @@
           "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
           "브라우저 실제 연속재생 육안 검수 미완료",
           "SW 공격2 왼쪽 여백3px: 잘림 없음, 고정 접지점과 크기를 유지함.",
-          "긴 옷의 교대보행 가독성 제한. 공격 회복1프레임과 장식 편차 실제 재생 검수 필요."
+          "긴 옷의 교대보행 가독성 제한. 공격 회복1프레임과 장식 편차 실제 재생 검수 필요.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/caster/job-28/remaining-20261028/combat-v1",
         "scenario": "/images/class-motion-pilot/caster/job-28/remaining-20261028/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-58"
       },
       {
         "id": 29,
@@ -573,11 +600,12 @@
           "검수 초안 · 실제 재생 및 작화 확인 대상.",
           "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
           "브라우저 실제 연속재생 육안 검수 미완료",
-          "긴 옷으로 교대보행 가독성 제한. 공격2→3 회복1프레임과 장식·무기 원근 편차의 실제 재생 검수 필요."
+          "긴 옷으로 교대보행 가독성 제한. 공격2→3 회복1프레임과 장식·무기 원근 편차의 실제 재생 검수 필요.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/caster/job-29/remaining-20261028/combat-v1",
         "scenario": "/images/class-motion-pilot/caster/job-29/remaining-20261028/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-59"
       }
     ]
   },
@@ -590,11 +618,12 @@
       "검수 초안 · 실제 재생 및 작화 확인 대상.",
       "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
       "브라우저 실제 연속재생 육안 검수 미완료",
-      "긴 도포로 보행 무릎 교대 가독성 제한; 공격 회복1프레임과 장식 편차의 실재생 검수 필요"
+      "긴 도포로 보행 무릎 교대 가독성 제한; 공격 회복1프레임과 장식 편차의 실재생 검수 필요",
+      "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
     ],
     "combat": "/images/class-motion-pilot/caster/job-30/remaining-20261028/combat-v1",
     "scenario": "/images/class-motion-pilot/caster/job-30/remaining-20261028/scenario-v1",
-    "weakened": "",
+    "weakened": "/images/weakened-complete-v1/unit-60",
     "version": "integrated-20261029",
     "stages": [
       {
@@ -604,11 +633,12 @@
           "검수 초안 · 실제 재생 및 작화 확인 대상.",
           "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
           "브라우저 실제 연속재생 육안 검수 미완료",
-          "긴 도포로 보행 무릎 교대 가독성 제한; 공격 회복1프레임과 장식 편차의 실재생 검수 필요"
+          "긴 도포로 보행 무릎 교대 가독성 제한; 공격 회복1프레임과 장식 편차의 실재생 검수 필요",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/caster/job-30/remaining-20261028/combat-v1",
         "scenario": "/images/class-motion-pilot/caster/job-30/remaining-20261028/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-60"
       },
       {
         "id": 31,
@@ -617,11 +647,12 @@
           "검수 초안 · 실제 재생 및 작화 확인 대상.",
           "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
           "브라우저 실제 연속재생 육안 검수 미완료",
-          "긴 옷으로 교대보행 가독성 제한. 공격2→3 회복1프레임과 장식·무기 원근 편차의 실제 재생 검수 필요."
+          "긴 옷으로 교대보행 가독성 제한. 공격2→3 회복1프레임과 장식·무기 원근 편차의 실제 재생 검수 필요.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/caster/job-31/remaining-20261028/combat-v1",
         "scenario": "/images/class-motion-pilot/caster/job-31/remaining-20261028/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-61"
       },
       {
         "id": 32,
@@ -630,11 +661,12 @@
           "검수 초안 · 실제 재생 및 작화 확인 대상.",
           "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
           "브라우저 실제 연속재생 육안 검수 미완료",
-          "긴 옷으로 교대보행 가독성 제한. 공격2→3 회복1프레임과 장식·무기 원근 편차의 실제 재생 검수 필요."
+          "긴 옷으로 교대보행 가독성 제한. 공격2→3 회복1프레임과 장식·무기 원근 편차의 실제 재생 검수 필요.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/caster/job-32/remaining-20261028/combat-v1",
         "scenario": "/images/class-motion-pilot/caster/job-32/remaining-20261028/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-62"
       }
     ]
   },
@@ -705,11 +737,12 @@
       "정적 시간순 검수 완료, 실제 브라우저 연속재생 미검수. 사용자 최종 승인 전 초안.",
       "긴 치마/도포가 무릎을 가려 이동1/3 교대보행 가독성이 제한됨.",
       "공격2→3 회복이 한 프레임이고 머리카락/옷자락이 변해 실제 타이밍 검수 필요.",
-      "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차."
+      "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차.",
+      "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
     ],
     "combat": "/images/class-motion-pilot/caster/job-36/remaining-20261028/combat-v1",
     "scenario": "/images/class-motion-pilot/caster/job-36/remaining-20261028/scenario-v1",
-    "weakened": "",
+    "weakened": "/images/weakened-complete-v1/unit-66",
     "version": "integrated-20261029",
     "stages": [
       {
@@ -720,11 +753,12 @@
           "정적 시간순 검수 완료, 실제 브라우저 연속재생 미검수. 사용자 최종 승인 전 초안.",
           "긴 치마/도포가 무릎을 가려 이동1/3 교대보행 가독성이 제한됨.",
           "공격2→3 회복이 한 프레임이고 머리카락/옷자락이 변해 실제 타이밍 검수 필요.",
-          "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차."
+          "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/caster/job-36/remaining-20261028/combat-v1",
         "scenario": "/images/class-motion-pilot/caster/job-36/remaining-20261028/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-66"
       },
       {
         "id": 37,
@@ -734,11 +768,12 @@
           "정적 시간순 검수 완료, 실제 브라우저 연속재생 미검수. 사용자 최종 승인 전 초안.",
           "긴 치마/도포가 무릎을 가려 이동1/3 교대보행 가독성이 제한됨.",
           "공격2→3 회복이 한 프레임이고 머리카락/옷자락이 변해 실제 타이밍 검수 필요.",
-          "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차."
+          "머리장식·옷 세부 문양과 무기 원근 길이에 작은 생성 편차.",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/caster/job-37/remaining-20261028/combat-v1",
         "scenario": "/images/class-motion-pilot/caster/job-37/remaining-20261028/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-67"
       },
       {
         "id": 38,
@@ -746,11 +781,12 @@
         "notes": [
           "검수 초안 · 실제 재생 및 작화 확인 대상.",
           "시각 초안, 실제 전투판정 및 사이트 연결 미작업",
-          "브라우저 실제 연속재생 육안 검수 미완료"
+          "브라우저 실제 연속재생 육안 검수 미완료",
+          "2026-10-30: 전용 쇠약 4방향 16프레임 연결. 기존 전투 원화 제작 당시의 쇠약 미제작 메모를 대체합니다."
         ],
         "combat": "/images/class-motion-pilot/caster/job-38/remaining-20261028/combat-v1",
         "scenario": "/images/class-motion-pilot/caster/job-38/remaining-20261028/scenario-v1",
-        "weakened": ""
+        "weakened": "/images/weakened-complete-v1/unit-68"
       }
     ]
   }

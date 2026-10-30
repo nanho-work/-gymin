@@ -1,0 +1,57 @@
+{
+  "id": 39,
+  "name": "힐",
+  "status": "draft",
+  "file": "web/public/images/skills/heal-pilot-v1",
+  "bytes": 21666,
+  "width": 512,
+  "height": 256,
+  "cols": 4,
+  "rows": 2,
+  "frameCount": 8,
+  "frameMs": 120,
+  "anchor": {
+    "x": 64,
+    "y": 100,
+    "type": "ground"
+  },
+  "playback": {
+    "start": 0,
+    "end": 7,
+    "loop": false
+  },
+  "role": "target-heal",
+  "placement": "선택 아군 한 부대 발 기준. 힐/그룹 힐 공유 시 실제 적용 대상별 배치.",
+  "direction": "방향 없음",
+  "sharedIds": [
+    39,
+    41
+  ],
+  "generator": "built-in image_gen",
+  "prompt": "Use case: stylized-concept. Create a transparent pixel-art tactical RPG HEAL spell VFX spritesheet, a small single-target HP healing effect. Exactly 4 columns by 2 rows of equal SQUARE cells, 8 chronological animation frames left-to-right top-to-bottom. Overall canvas aspect ratio 2:1. NO text, NO borders, NO grid, NO characters, NO scenery. Restrained palette pale fresh leaf green and warm cream white with dark green edges, readable chunky pixel clusters and crisp edges similar to a classic tactical RPG fire VFX. NOT smooth airbrush. In each cell, fixed ground origin at horizontal center, 78 percent down the cell. All effect art stays within central 75 percent width and height with generous transparent padding. Small green light motes rise from that same base to chest height, bloom once softly cream-white, dissolve upward. Frame1 tiny low sparks, frame2 several rising motes, frame3 curving narrow upward streams, frame4 brightest modest healing sparkle at mid-height, frame5 streams begin breaking, frame6 fewer upward particles, frame7 very sparse particles, frame8 tiny last motes. This is BASIC minor heal, not divine resurrection or full heal: no angel, no wings, no cross icon, no huge pillar, no large magic circle. Stable identical coordinate system and scale for every frame, do not fit each frame to fill cell, no art touches neighboring cell. Actual transparent alpha background.",
+  "source": "/Users/choenamho/.codex/generated_images/01a18a3e-74fc-7ce0-9ea7-4d2ba2df0a35/exec-dd7ab9a8-8b5a-492f-934e-21fdff4c9dbd.png",
+  "sourceCleanup": "경량본 및 페이지 검수 후 이번 원본 삭제 완료",
+  "processing": "원본 전체를 동일배율416x208로 축소한 뒤104셀을128셀에x12/y6 배치. 프레임별 자동크롭/맞춤확대 없음. WebP quality80.",
+  "validation": {
+    "dimensions": true,
+    "alpha": true,
+    "eightNonemptyCells": true,
+    "cellMargin": "좌우12px 이상, 위6px 이상 투명 패딩으로 인접 셀 노출 방지",
+    "visual": "128px 어두운 배경 및96px 밝은 배경 확인. 상승 곡선/정점/소멸 구별됨.",
+    "preview": "/tmp/heal-pilot/review.png"
+  },
+  "limitations": [
+    "마지막 프레임에 작은 지면 잔광이 남으므로 재생 후 공백 구간 필요",
+    "별 모양 반짝임은 장식이며 회복량/완전회복을 뜻하지 않음",
+    "실제 전투 판정 및 사이트 통합 검수 전"
+  ],
+  "integration": {
+    "status": "draft-connected",
+    "ids": [
+      39
+    ],
+    "page": "/skills",
+    "verified": "대표3종 필터, 재생·정지·4번프레임 선택, 화면 캡처 확인. npm run build 통과.",
+    "limitations": "실제 전투 판정/캐릭터 합성 미연결. 모바일 브라우저 직접 검수 대신 96px/128px 이미지 가독성 확인."
+  }
+}

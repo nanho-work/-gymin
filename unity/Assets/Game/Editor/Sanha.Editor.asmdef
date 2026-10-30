@@ -1,0 +1,12 @@
+{
+  "name": "Sanha.Editor",
+  "references": [
+    "Sanha.Runtime",
+    "Sanha.Scenario.Core",
+    "Sanha.Battle.Core",
+    "Sanha.Campaign.Core"
+  ],
+  "includePlatforms": [
+    "Editor"
+  ]
+}

@@ -1,0 +1,25 @@
+import {readFile,writeFile,mkdir} from 'node:fs/promises';
+import path from 'node:path';
+import {createHash} from 'node:crypto';
+import {repo,toolSettings} from './unity/environment.mjs';
+const {project,originalAssets}=toolSettings();
+const config=JSON.parse(await readFile(path.join(repo,'config/unity/first-stage.json')));
+const mapSource=path.join('campaign',`map-${String(config.mapId).padStart(2,'0')}.json`);
+const mapBytes=await readFile(path.join(originalAssets,mapSource));
+const namesBytes=await readFile(path.join(originalAssets,'manifest.json'));
+const map=JSON.parse(mapBytes),names=JSON.parse(namesBytes).terrainNames;
+const campaign=JSON.parse(await readFile(path.join(project,'Assets/Resources/Campaign/campaign.json')));
+const story=JSON.parse(await readFile(path.join(repo,'web/src/features/game-world/data/story-site.json')));
+const reference=story.stages.find(s=>s.id===config.stageId)?.mapDetails?.[0];
+if(!reference||reference.id!==map.id||reference.width!==map.width||reference.height!==map.height||path.basename(reference.image,'.webp')!==path.basename(map.image,'.png'))throw Error('Board and background source mismatch');
+const stage=campaign.stages.find(x=>x.id===config.stageId);
+if(!stage || !config.introSceneIds.every(id=>stage.scenes.some(s=>s.id===id)) || !stage.scenes.some(s=>s.id===config.battleIntroSceneId)) throw Error('Invalid flow scene binding');
+if(map.id!==config.mapId||map.terrain.length!==map.width*map.height||map.terrain.some(x=>!Number.isInteger(x)||!names[x]))throw Error('Invalid original map');
+// Reuse exactly the PNG already exported by the scenario exporter. No image duplication.
+const background='Campaign/battlefield';
+const bytes=await readFile(path.join(project,'Assets/Resources',background+'.png'));
+const data={schemaVersion:1,...config,width:map.width,height:map.height,terrain:map.terrain,terrainNames:names,background};
+const output=path.join(project,'Assets/Resources/Battle');await mkdir(output,{recursive:true});
+await writeFile(path.join(output,'first-stage.json'),JSON.stringify(data));
+await writeFile(path.join(project,'board-export-manifest.json'),JSON.stringify({stageId:config.stageId,mapId:map.id,sources:[{file:mapSource,sha256:createHash('sha256').update(mapBytes).digest('hex')},{file:'manifest.json',sha256:createHash('sha256').update(namesBytes).digest('hex')}],background,backgroundSha256:createHash('sha256').update(bytes).digest('hex'),coordinateSystem:'top-left origin; x right, y down; one terrain value per tile; row-major',scope:'terrain and flow only; no inferred deployments or passability'},null,2)+'\n');
+console.log(`Exported ${config.stageId}: ${map.width}x${map.height}, ${map.terrain.length} original terrain cells; existing background reused.`);

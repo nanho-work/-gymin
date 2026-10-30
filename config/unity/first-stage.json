@@ -1,0 +1,11 @@
+{
+  "stageId": "B00",
+  "mapId": 0,
+  "introSceneIds": [
+    "I00",
+    "B00-P00",
+    "B00-P01",
+    "B00-P02"
+  ],
+  "battleIntroSceneId": "B00-P03"
+}

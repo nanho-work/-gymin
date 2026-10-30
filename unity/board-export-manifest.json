@@ -1,0 +1,18 @@
+{
+  "stageId": "B00",
+  "mapId": 0,
+  "sources": [
+    {
+      "file": "campaign/map-00.json",
+      "sha256": "7b2e0e8b9a8f560ab71436644186fb86a810a901ade4cc24e8b15ff3f3bb5979"
+    },
+    {
+      "file": "manifest.json",
+      "sha256": "390d4dfa492325207c91d4580496f04b2fb66b0104a261fcb59203006b3cfd67"
+    }
+  ],
+  "background": "Campaign/battlefield",
+  "backgroundSha256": "086fe2e0461d53863d20d83d60e8beee21b2a9d4ac8e51cd20eee0d9956651e4",
+  "coordinateSystem": "top-left origin; x right, y down; one terrain value per tile; row-major",
+  "scope": "terrain and flow only; no inferred deployments or passability"
+}

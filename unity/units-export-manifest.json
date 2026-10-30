@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "sources": [
+    {
+      "file": "first-battle.json",
+      "sha256": "7cbc17958f42526d4d34cdfa3ea4f28a463fcd2df65e740ddb7f8c9e05aa895b"
+    },
+    {
+      "file": "campaign/battle-00.json",
+      "sha256": "f45c6cf40a3e72465ed38b7760ffa394a813f5962d0e9b1a5a2ddc614af8b3df"
+    }
+  ],
+  "catalogs": [
+    {
+      "file": "characters.json",
+      "sha256": "5c77d791ef5ca26fcfea33497fa05721ba79887b09b648ee1719dd8fac7d23b9"
+    },
+    {
+      "file": "motion-pilots.json",
+      "sha256": "aa3a318b2a43a685fb473076a84eb2c003cb703604143a696d1c7b127995c936"
+    },
+    {
+      "file": "monarch-motions.json",
+      "sha256": "5147f9cf4cbf5af2ca2da81e7d9c7c81937a7559d701a4d3dda786242c2c37e2"
+    },
+    {
+      "file": "special-motions.json",
+      "sha256": "f8580719fec40302c03088815bb400269334dd82060f4d397fc16e54254ad5b0"
+    }
+  ],
+  "snapshot": "B00 setup complete; staged retirements applied; no turn events or AI simulated",
+  "facingMap": [
+    "0=nw",
+    "1=ne",
+    "2=se",
+    "3=sw"
+  ],
+  "assets": [
+    {
+      "source": "/images/playable/monarch-motion-v1/wang-geon/0/combat/ne-0-0.webp",
+      "key": "Battle/unit-c2d080af6d5eaace",
+      "sha256": "c2d080af6d5eaacece8e813f321cbe0ae5ffea0155fd0b1860e6c329d703ac51",
+      "bytes": 7837
+    },
+    {
+      "source": "/images/playable/monarch-motion-v1/gyeon-hwon/0/combat/sw-0-0.webp",
+      "key": "Battle/unit-471855fc2421aa18",
+      "sha256": "471855fc2421aa187623ae9920d9c268b19f6d1752184df77ed50a7038d84def",
+      "bytes": 10743
+    },
+    {
+      "source": "/images/class-motion-pilot/cavalry/job-9/combat-v2/sw-0-0.webp",
+      "key": "Battle/unit-856d3ee18ca6ae8a",
+      "sha256": "856d3ee18ca6ae8a1270a309aec679b350584e2b50fb7d7e935f47e8f33fcbd2",
+      "bytes": 8936
+    },
+    {
+      "source": "/images/class-motion-pilot/infantry/job-3/combat-v2/nw-0-0.webp",
+      "key": "Battle/unit-8f8273b9481a927c",
+      "sha256": "8f8273b9481a927cb4f290c2e25325e3a802980066178054a365cb001b81718a",
+      "bytes": 6012
+    },
+    {
+      "source": "/images/class-motion-pilot/archer/job-6/combat-v2/nw-0-0.webp",
+      "key": "Battle/unit-581a4cccbf30e959",
+      "sha256": "581a4cccbf30e959d2abdb2ead42d8b45ec00e496519501cf35d4d81b2b3008a",
+      "bytes": 5415
+    },
+    {
+      "source": "/images/class-motion-pilot/cavalry/job-9/combat-v2/ne-0-0.webp",
+      "key": "Battle/unit-35e2b8d0bba989b9",
+      "sha256": "35e2b8d0bba989b98fee2b5642088cc466721015143cde0e7aaecc269d2a07b0",
+      "bytes": 8429
+    },
+    {
+      "source": "/images/class-motion-pilot/archer/job-6/combat-v2/sw-0-0.webp",
+      "key": "Battle/unit-fb89d885462df700",
+      "sha256": "fb89d885462df700dde241c3b032024192d58b56e04573a4ad7cfa60154be8ce",
+      "bytes": 6030
+    },
+    {
+      "source": "/images/class-motion-pilot/caster/job-24/combat-v2/nw-0-0.webp",
+      "key": "Battle/unit-061f62c289ab8e9d",
+      "sha256": "061f62c289ab8e9dc01c93b2c10e0a9ddaea064c29f9f27963a3dd521c76754a",
+      "bytes": 5066
+    },
+    {
+      "source": "/images/class-motion-pilot/caster/job-27/remaining-20261028/combat-v1/se-0-0.webp",
+      "key": "Battle/unit-bb30ae3bddec2bfa",
+      "sha256": "bb30ae3bddec2bfa16a111c0d041c1ed04f9b3fae1649c2f79c439247f496479",
+      "bytes": 5376
+    },
+    {
+      "source": "/images/class-motion-pilot/caster/job-30/remaining-20261028/combat-v1/se-0-0.webp",
+      "key": "Battle/unit-acd2578f7d0ae240",
+      "sha256": "acd2578f7d0ae240d4da59c50e4330c4bc1dae9da84d04604701da7e090cf073",
+      "bytes": 5391
+    },
+    {
+      "source": "/images/special-motion-v1/40/combat/ne-0-0.webp",
+      "key": "Battle/unit-b8f39cc7dc4d627a",
+      "sha256": "b8f39cc7dc4d627a09ad66cc1741558c6686bc1a94cde6c7dba3785cddaf0a7b",
+      "bytes": 6540
+    },
+    {
+      "source": "/images/special-motion-v1/40/combat/se-0-0.webp",
+      "key": "Battle/unit-3cd42e23327950f7",
+      "sha256": "3cd42e23327950f71d237c35637a96465ea01002aa498618e61b859253517bd0",
+      "bytes": 6606
+    }
+  ],
+  "counts": {
+    "deployed": 17,
+    "reserve": 7,
+    "retired": 2
+  },
+  "limits": [
+    "No runtime EEX execution",
+    "HP/MP/combat stats not computed",
+    "Reserve units are not auto-spawned until event engine is implemented"
+  ]
+}

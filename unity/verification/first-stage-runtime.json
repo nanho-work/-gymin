@@ -1,0 +1,16 @@
+{
+  "date": "2026-10-30",
+  "scope": "B00 macOS native adapter; actual Unity batch Play; not onscreen manual review, speaker audibility or standalone build",
+  "unity": "6000.2.6f2",
+  "result": "SANHA_BATTLE_PLAY_PASS round=7 money=1000 inventory=87,87,76 commands=21 spellSteps=6 moveCancel=True unresolved=90,92 scope=Unity-batch-Play-not-onscreen-or-audibility",
+  "originalUnsupportedCommands": [
+    90,
+    92
+  ],
+  "musicPolicy": "Unprovided original CD music omitted by explicit user authorization; no replacement",
+  "sourceHashes": {
+    "scripts/game/unity/native/BattleHost.swift": "6908b0e1136b151d139c7bca62a148d132873fd65136de39c91eb68caeb32984",
+    "unity/Assets/Game/Features/Battle/Presentation/BattleController.cs": "27e4ad0722250402b68525423711f9de2fde54851b5e8518bdd27b1ba4d954be",
+    "unity/Assets/Game/Features/Battle/Infrastructure/NativeBattleSession.cs": "37e3c717488ab5a872fbcdd6d1bed429dd71956c48bd8f3b023f150662986d08"
+  }
+}

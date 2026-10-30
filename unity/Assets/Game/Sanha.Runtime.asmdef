@@ -1,0 +1,8 @@
+{
+  "name": "Sanha.Runtime",
+  "references": [
+    "Sanha.Scenario.Core",
+    "Sanha.Battle.Core",
+    "Sanha.Campaign.Core"
+  ]
+}

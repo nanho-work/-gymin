@@ -1,0 +1,284 @@
+{
+  "platform": "macOS local validation only",
+  "source": "existing Swift restoration core; readonly",
+  "sources": [
+    {
+      "file": "Movement.swift",
+      "sha256": "5cb16ff699876b1e6143bad004d0f629aa7592b70de342b0371021d009c0ee2a"
+    },
+    {
+      "file": "Combat.swift",
+      "sha256": "d884113e6d0c0b97d2accaf906d8a290432d2440aafdd45bb006f867b306c9b2"
+    },
+    {
+      "file": "Turns.swift",
+      "sha256": "6c4684a651b2c9353ecb12809de111cb69abcd34c4ec5edbcb401174cdd9b616"
+    },
+    {
+      "file": "OriginalCombat.swift",
+      "sha256": "c025ffb9d06e15b1327c086261e7b1f76439441a6670be3b2b24e1297fb76e07"
+    },
+    {
+      "file": "PhysicalCombat.swift",
+      "sha256": "8c04b3df164ea4c98a1e74604bd3bc1f4da06f5212df56ab041fe230de5993b3"
+    },
+    {
+      "file": "BattleEnvironment.swift",
+      "sha256": "6e41b095fc297b3ef327683e9aaf42dff02f59675dfc620e9813c69ff43aa61d"
+    },
+    {
+      "file": "TurnRecovery.swift",
+      "sha256": "1d19826d55a996a525c6c22d1942ed580927f3ea7acedf1ff92dc9016d47ce04"
+    },
+    {
+      "file": "BattleEffects.swift",
+      "sha256": "72f946405b7d332b1255c193bcafdef64fda1ab37fd07415fd9d2024a2111738"
+    },
+    {
+      "file": "OriginalSpells.swift",
+      "sha256": "d5114289c9c8686be72977e2973674cfd6df92692a9238210ca97055ab31bd0c"
+    },
+    {
+      "file": "SpellDetails.swift",
+      "sha256": "06c949a007e4453e5f929408d225a8ae12d1d0f140b5e28baa155f981f10547d"
+    },
+    {
+      "file": "SpellAI.swift",
+      "sha256": "f7dc8aaa2fe8d22b8590ca7b8722b2fa1c70726c199e16e93fa2620b47972729"
+    },
+    {
+      "file": "CampaignMovementExecution.swift",
+      "sha256": "aba4923ced5ab0f54482eb7e830c15f116fe05e8fa1ddb78a93e6fea965c2c13"
+    },
+    {
+      "file": "CampaignModel.swift",
+      "sha256": "b94fb19c846b46009be18b2a098e9f8727df8761166c08d9d9dae7fd6555b2d3"
+    },
+    {
+      "file": "SpellDamageStage.swift",
+      "sha256": "1b5c015431809aa641d0b752be912a4a9d50cb771ef60c13f49087764511756f"
+    },
+    {
+      "file": "CampaignSpellExecution.swift",
+      "sha256": "3158014c3e32719f7ab383905a54f1bff77c74622527e7440606ecd9cc796b33"
+    },
+    {
+      "file": "PhysicalStrikeStage.swift",
+      "sha256": "45e4c38df0eae464cd3382cb840365c43a441c10faff06a1eca07a915c891fae"
+    },
+    {
+      "file": "CampaignStrikeStage.swift",
+      "sha256": "2dc12d27f50a91101b4b20726168580fa489c4e9cda50bc4677a4da50acefc1b"
+    },
+    {
+      "file": "PhysicalExchangeStage.swift",
+      "sha256": "491eabc489bc6d2b4b20e3c55cae85692dab4dde042e00c688102f6593646280"
+    },
+    {
+      "file": "PhysicalActionStage.swift",
+      "sha256": "0743f36e86a65e8bd738fa229f48020f724c8bf2566a095df5d5e89cc39c0e6f"
+    },
+    {
+      "file": "CampaignPhysicalExecution.swift",
+      "sha256": "1c3592624e04df03dca8f711f857d78a8ad070bae7ba2a03e5303751c5f6ed81"
+    },
+    {
+      "file": "CampaignNotice.swift",
+      "sha256": "b50657c0c5484f0e820f70bbc1633f9f13936bfe19f5aec16caa30cf7c8de802"
+    },
+    {
+      "file": "CampaignTurnLimit.swift",
+      "sha256": "8957cdedd5c93b062a330086f29a854c8db24fa673f3986f20d7ed4ef6c978e5"
+    },
+    {
+      "file": "OriginalTurnLimit.swift",
+      "sha256": "19c34ae359cee59cfe4ba9d6f3a1ea7ffcfe33522270da8f2034341d230d38bd"
+    },
+    {
+      "file": "CampaignNormalAction.swift",
+      "sha256": "ba1d332613b64fcd9fe88c7f50e7b1847645c06bbb1411544652375de12636c8"
+    },
+    {
+      "file": "CampaignRetirementRuntime.swift",
+      "sha256": "8b59c4e5feccf66dd2289dfc4ce18f0b45fa066e12ad032bb758ce4d34d65f6e"
+    },
+    {
+      "file": "AreaRetirementCursor.swift",
+      "sha256": "ffc8fcee849e1691eacd9e762a9711c1258d829b70328039d5b1f63616ce0a68"
+    },
+    {
+      "file": "OriginalRetirementSchedule.swift",
+      "sha256": "148f64c38337b1540c32af223405a420054958c263b9620280501ba1f49908c6"
+    },
+    {
+      "file": "RetirementTimeline.swift",
+      "sha256": "dcb66292b6b412eeaabbd0a4eb7b756227f20abb10deb0395df0625f24dbc77f"
+    },
+    {
+      "file": "RetirementTransaction.swift",
+      "sha256": "0ca2bc90a52dd64a0cb04c5815911b75a138b5841b5a85a4e2adef89a2d56dd0"
+    },
+    {
+      "file": "verification/TutorialTestSupport.swift",
+      "sha256": "58b594eea118ed323804ef94254b7dd735b8b22d414ad4983874e5d9337c1c88"
+    },
+    {
+      "file": "CampaignCommonProgress.swift",
+      "sha256": "b5dfa133fda81c14e74c6bd3ecebd22ed74214121695bf042061e20e12d837f9"
+    },
+    {
+      "file": "CampaignCommonProgressStore.swift",
+      "sha256": "9f93a0556d0b56972dc32a1fcea494cd3243ab70e3932b40df176329dd6e6f35"
+    },
+    {
+      "file": "CampaignTutorialFlow.swift",
+      "sha256": "b3444dfa23b12b40882ef73f255d4cfb2ecf59461303d849550ed53b14de486a"
+    },
+    {
+      "file": "CampaignTutorialSession.swift",
+      "sha256": "b0225ccb45ae71b11d9db0d3c58d0962ea82af84bbd9d970cbcb61b1c0eb8118"
+    },
+    {
+      "file": "CampaignTutorialText.swift",
+      "sha256": "5d20c168a7234546ecdccbc54baabc7e2399ad66f0fc1b2727edf4d2d40b47df"
+    },
+    {
+      "file": "CampaignTutorialLessons.swift",
+      "sha256": "7e07b7809895f42f0859e571ee7ac435d8f003d0a61596ebbbcc65d319e60b82"
+    },
+    {
+      "file": "CampaignTutorialRewards.swift",
+      "sha256": "26a6208b847fab470cbab4d2585f46ec7f567b1fbca483a5408a53e52789c5dd"
+    },
+    {
+      "file": "CampaignTutorialRuntime.swift",
+      "sha256": "fc775689ab346aeecdd1767b1c23778e7d83e2c638175363cf7edb7f38464da5"
+    },
+    {
+      "file": "CampaignAI.swift",
+      "sha256": "e1697987295886c81e387072e810e12550a9da5cafc15c2be6e977bd90d44cfa"
+    },
+    {
+      "file": "CampaignAIEvents.swift",
+      "sha256": "82028932f7e1bd057a309ccc61ef90da201c3c3fa0980143c7f9981f4e5122a5"
+    },
+    {
+      "file": "CampaignAIConditions.swift",
+      "sha256": "998befb2cc956683186865dfa7806547ffb72e95c16c8d52bd9fceb4f60c3bcc"
+    },
+    {
+      "file": "CampaignAIPriority.swift",
+      "sha256": "ff2c7064dc502b75f66d9b87bbd6933f19c596f86fda80ed3c66cfc0a4593a35"
+    },
+    {
+      "file": "CampaignEventConditions.swift",
+      "sha256": "3e1bdfe184bf518946d4e4bb8169f24ce4a8ed7a7d8ec3b27b28560c70bceb2c"
+    },
+    {
+      "file": "OriginalEventDispatch.swift",
+      "sha256": "390ff85f1e2d99d2d00ab5287bd88bb9166de1d60c3e92a96f314791861cc5b5"
+    },
+    {
+      "file": "CampaignEventRuntime.swift",
+      "sha256": "337ca7f08c16742d3b04703f13e1e35725b6cac821950cef55a1fa2d286e26d9"
+    },
+    {
+      "file": "CampaignPresentationRuntime.swift",
+      "sha256": "e0ac0879d10f19204a8e6fc639136baeecfea37106f22aa9786f2ce26dd82afd"
+    },
+    {
+      "file": "OriginalScenarioPresentation.swift",
+      "sha256": "4c0ea1183a534cdc2d7c859b0a3faf2a7d366d5c3d2f397cc3a7ebb4b76b9d2f"
+    },
+    {
+      "file": "CampaignEventRewards.swift",
+      "sha256": "e0b07f36415a6625aaad4f83324695298d23d249e34f94b8f8c24a9a6ac1f97b"
+    },
+    {
+      "file": "CampaignScenarioEffects.swift",
+      "sha256": "bbaa1b6964569ae2cc777bb7ab894af22e92593e59e455c16b91b9a47721429e"
+    },
+    {
+      "file": "CampaignDuelEvents.swift",
+      "sha256": "b652a39096fb8a628d7966fd989df1e666fe7ad207ec8c42f2a220888a872124"
+    },
+    {
+      "file": "OriginalScenarioTerrain.swift",
+      "sha256": "fa5df435c8712a968277d3d0520d17503b27d5ff13a9d877823e540ee95375ee"
+    },
+    {
+      "file": "CampaignTerrain.swift",
+      "sha256": "b0e0c2e6b19e804052bbc66269e524ffbed24afa66b67dc538eaf2e7cf5d8fa5"
+    },
+    {
+      "file": "CampaignFacing.swift",
+      "sha256": "331b452e221d521a4fb52efe5abe5dc0a352d1109708bfce5488f66aa9479003"
+    },
+    {
+      "file": "CampaignDeathDialogue.swift",
+      "sha256": "59dc093ac91b6e03bf17686c11b1a3f1a7960ae608eedb50f9bc217b0063d491"
+    },
+    {
+      "file": "CampaignDialogue.swift",
+      "sha256": "da108a887a3985107ad673441d582a2633144f06bc30bad1937a0083b3432026"
+    },
+    {
+      "file": "CampaignDialogueRuntime.swift",
+      "sha256": "a0b8dca218848257301abd51a84b1cd552bce5a69c55d4db7095d37ae6b8d61e"
+    },
+    {
+      "file": "CampaignProgression.swift",
+      "sha256": "92b59053f4fe3a872aac49ceacc0b48d1e8f831322da929f3709bcce32fb5774"
+    },
+    {
+      "file": "CampaignStory.swift",
+      "sha256": "5666e0829c2e8109d4cd169bef3a1ba73630eb1f8f3f3c22df8d83b7c0d72dab"
+    },
+    {
+      "file": "CampaignSecondBattle.swift",
+      "sha256": "dbb8014110f2b1e1dbedbce7b6ad72b047c9343806f6d5d67f1028d9b08448c9"
+    },
+    {
+      "file": "CampaignThirdBattle.swift",
+      "sha256": "6f9527f09de88aaaae768c3af5f596287cfaeeb8a44db080aa506ed3b1755db1"
+    },
+    {
+      "file": "CampaignFourthBattle.swift",
+      "sha256": "f776696e883b5ccdaf9a446bf01c3df20019187279cd5f0582f3957458f030e7"
+    },
+    {
+      "file": "CampaignPreparation.swift",
+      "sha256": "64a28a5b34a1b35938cb177f7bd2f404d3f72af47a7704587d11b0d4cd4c3173"
+    },
+    {
+      "file": "CampaignJourney.swift",
+      "sha256": "3e331d54c4ee6ae2d58b653fcd6e730e59a3c9c1925cb9258c51dbdef0ab3b2f"
+    },
+    {
+      "file": "CampaignCatalog.swift",
+      "sha256": "7b982547eb1e872eaeb2b8dcf59819649223a9dd4a8ba398e4d63006ff5f7ad5"
+    },
+    {
+      "file": "CampaignAlignment.swift",
+      "sha256": "4e2470b70364965bb0460eaba15d100c19215bedb8cb0595bef1f9d7baa4b5e7"
+    },
+    {
+      "file": "OriginalScenarioCamera.swift",
+      "sha256": "8847000b2beeb1065520acbefb7feb62f55f95be6b797eb7cdad01ccc8ad4f91"
+    },
+    {
+      "file": "PhysicalPresentation.swift",
+      "sha256": "a5052ad5b37fa7f1102780b986ebbac070e1acc5c4206e0d9a1e7024413a45da"
+    },
+    {
+      "file": "SpellPresentation.swift",
+      "sha256": "c5f9b633348c3fb180faf2f40747a6da26144f06a3612b9532edcd4f7ac8fbfd"
+    }
+  ],
+  "cinemaDataExtraction": "CampaignCinemaActor/Scene definitions only; no Cocoa UI",
+  "limits": [
+    "C# port and mobile backend remain future work",
+    "No original animation/audio timing claim",
+    "Unhandled modal/event fails visibly"
+  ]
+}

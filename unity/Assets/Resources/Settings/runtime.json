@@ -1,0 +1,12 @@
+{
+  "campaignResource": "Campaign/campaign",
+  "initialStageId": "B00",
+  "referenceWidth": 1280,
+  "referenceHeight": 800,
+  "fontSize": 20,
+  "fontNames": [
+    "Apple SD Gothic Neo",
+    "Malgun Gothic",
+    "Noto Sans CJK KR"
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "schemaVersion": 1,
+  "visualStageId": "B00",
+  "introId": "I00",
+  "introTitle": "송악에서 남쪽으로",
+  "introExpectedLines": 5,
+  "actors": [
+    {
+      "name": "왕건",
+      "catalog": "monarch",
+      "match": "왕건",
+      "direction": "se",
+      "assetName": "actor-1"
+    },
+    {
+      "name": "궁예",
+      "catalog": "monarch",
+      "match": "궁예",
+      "direction": "sw",
+      "assetName": "actor-2"
+    },
+    {
+      "name": "길목 수장",
+      "catalog": "pilot",
+      "match": 21,
+      "direction": "sw",
+      "assetName": "actor-3"
+    },
+    {
+      "name": "군관",
+      "catalog": "pilot",
+      "match": 3,
+      "direction": "sw",
+      "assetName": "actor-4"
+    },
+    {
+      "name": "전령",
+      "catalog": "pilot",
+      "match": 3,
+      "direction": "sw",
+      "assetName": "actor-5"
+    },
+    {
+      "name": "기록관",
+      "catalog": "pilot",
+      "match": 24,
+      "direction": "sw",
+      "assetName": "actor-6"
+    }
+  ],
+  "battlefieldScenes": [
+    "B00-P03",
+    "B00-P04",
+    "B00-P05"
+  ],
+  "mapScenes": [
+    "B00-P00",
+    "B00-P07"
+  ],
+  "positions": [
+    0.34,
+    0.69
+  ],
+  "casts": {
+    "I00": [
+      "왕건",
+      "궁예"
+    ],
+    "B00-P01": [
+      "왕건",
+      "길목 수장"
+    ],
+    "B00-P02": [
+      "왕건",
+      "군관"
+    ],
+    "B00-P03": [
+      "왕건"
+    ],
+    "B00-P04": [
+      "왕건",
+      "전령"
+    ],
+    "B00-P05": [
+      "왕건"
+    ],
+    "B00-P06": [
+      "왕건",
+      "기록관"
+    ]
+  }
+}

@@ -349,3 +349,15 @@ Hong Yu card uses HongCompleteMotion: three cavalry ranks, mounted combat, unarm
 ### 이야기 메뉴 시나리오 열람
 
 `/story?stage=B00&panel=situation`에서 전체58전투 패키지의 상황·대본·배경/장애물·보상 후보를 열람합니다. 스테이지·지역 검색과 경로 필터, 주요 연결 장면·설화 동료·제작 기준을 제공합니다. 원본 조건별 보상을 합산하지 않으며 실제 엔진 연결 전 상태를 표시합니다. 기존 배경/맵112장을 WebP로 변환한 미리보기는 총3,026,534바이트입니다. 원본은 보존합니다. 화면 데이터는 `story-site.json`, 기준 대본은 `docs/game/scenario-production-v1/`입니다.
+
+첫 스테이지 시각 미리보기: `/story?stage=B00&panel=preview`. 도입과8장면의 대본을 기존 배경·완성 캐릭터 프레임으로 넘겨 봅니다. 장면 선택/이전/다음/처음부터와 좌우 화살표 지원. 실제 전투와 분기/보상 판정은 실행하지 않습니다. 신규 이미지 파일은 추가하지 않았습니다.
+
+### Unity 제작 시작
+
+`unity/README.md`에 전체 구현 순서와 현재 범위를 기록했습니다. `node scripts/game/export-unity.mjs`로 사이트 기준 대본58패키지와 첫 B00의 소형 이미지 참조를 Unity에 내보냅니다. Rosetta 2 설치와 잘못된 패키지 참조 수정 후 Unity import/검증 및 B00 Play 대본 진행을 확인했습니다. 게임 전투 실행은 아직 구현 전입니다.
+
+Unity 구조/반복작업 기준: `unity/docs/architecture.md`. 실행 설정·배역 설정·도구 환경변수를 분리했고 시나리오 엔진과 공통 대화/조작부를 재사용한다. `node scripts/game/unity/check.mjs --compile-unity`는 데이터·순수 엔진 검사 및 설치된 Unity DLL 대상 외부 소스 컴파일이며 Unity Play 확인과 구분한다.
+
+Unity 제작 순서: unity/docs/production-roadmap.md. Game.unity에서 새 게임 → 도입 → 출진 준비 → B00 전장으로 연결. 원본20×20 지형400칸, 월드 격자·선택·카메라 조작 적용. 병력/전투는 후속 단계.
+
+Unity 첫 전장에 원본 초기 동맹3·적14 병력 및 병과별 제작 에셋을 연결했습니다. 왕건 등7명은 원본 등장 대기 상태, 도입 퇴장2명은 제외합니다. 상세: unity/docs/first-stage-deployment.md.

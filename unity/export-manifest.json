@@ -1,0 +1,93 @@
+{
+  "source": "web/src/features/game-world/data/story-site.json",
+  "stageCount": 58,
+  "visualStages": [
+    "B00"
+  ],
+  "files": [
+    {
+      "source": "/images/story-reference/background-70.webp",
+      "target": "Campaign/courtyard",
+      "sha256": "5959450bf68dd847b841711acb2966c99fb57fb0b7e175b9f2442b4bc6fc7967",
+      "bytes": 190847
+    },
+    {
+      "source": "/images/story-reference/scenario-map-0.webp",
+      "target": "Campaign/battlefield",
+      "sha256": "566f31936563dea63d989efa506aae16a57f7f1310529306df227b283ce73509",
+      "bytes": 152506
+    },
+    {
+      "source": "/images/playable/monarch-motion-v1/wang-geon/0/scenario/se-0-0.webp",
+      "target": "Campaign/actor-1-scenario",
+      "sha256": "d51c2836ce508c1fa696e113dce209555b3e36b49ea51f6ec799580670c29d23",
+      "bytes": 5634
+    },
+    {
+      "source": "/images/playable/monarch-motion-v1/wang-geon/0/combat/se-0-0.webp",
+      "target": "Campaign/actor-1-combat",
+      "sha256": "f2c4b2ec4e2fa67c7b8bb825e651db4d5babee94a19d9a4c67006e1b524c4779",
+      "bytes": 9136
+    },
+    {
+      "source": "/images/playable/monarch-motion-v1/gung-ye/0/scenario/sw-0-0.webp",
+      "target": "Campaign/actor-2-scenario",
+      "sha256": "1d0a2db59c7de724179981ee6b6b0a8b2f06241d629ecb6c3cf7bc121f05c9fa",
+      "bytes": 5672
+    },
+    {
+      "source": "/images/playable/monarch-motion-v1/gung-ye/0/combat/sw-0-0.webp",
+      "target": "Campaign/actor-2-combat",
+      "sha256": "1e9616e1bd6c3536ef3a34fe30bfbcd88bc63c512a619f7466385abfb4fe9663",
+      "bytes": 7445
+    },
+    {
+      "source": "/images/class-motion-pilot/infantry/job-21/scenario-v1/sw-0-0.webp",
+      "target": "Campaign/actor-3-scenario",
+      "sha256": "c78a68a041acc69a9aa60666bbba7c22472da094a39df189f29b191b34c34aab",
+      "bytes": 5381
+    },
+    {
+      "source": "/images/class-motion-pilot/infantry/job-21/combat-v1/sw-0-0.webp",
+      "target": "Campaign/actor-3-combat",
+      "sha256": "30e5bfe2f6e6de305a54ea76e94560a3a2e4d99ca17531ec7846913262fc65f0",
+      "bytes": 6254
+    },
+    {
+      "source": "/images/class-motion-pilot/infantry/job-3/scenario-v2/sw-0-0.webp",
+      "target": "Campaign/actor-4-scenario",
+      "sha256": "84893bf3433459868012e44cc126b2d2c4dbe0510f51fac15b64fe21857bd613",
+      "bytes": 5294
+    },
+    {
+      "source": "/images/class-motion-pilot/infantry/job-3/combat-v2/sw-0-0.webp",
+      "target": "Campaign/actor-4-combat",
+      "sha256": "fcda61e145da445ba1bbc256556f373568521bc1e5af40fb53237ca0b082ea5f",
+      "bytes": 5509
+    },
+    {
+      "source": "/images/class-motion-pilot/infantry/job-3/scenario-v2/sw-0-0.webp",
+      "target": "Campaign/actor-5-scenario",
+      "sha256": "84893bf3433459868012e44cc126b2d2c4dbe0510f51fac15b64fe21857bd613",
+      "bytes": 5294
+    },
+    {
+      "source": "/images/class-motion-pilot/infantry/job-3/combat-v2/sw-0-0.webp",
+      "target": "Campaign/actor-5-combat",
+      "sha256": "fcda61e145da445ba1bbc256556f373568521bc1e5af40fb53237ca0b082ea5f",
+      "bytes": 5509
+    },
+    {
+      "source": "/images/class-motion-pilot/caster/job-24/scenario-v1/sw-0-0.webp",
+      "target": "Campaign/actor-6-scenario",
+      "sha256": "c0f78a122f0011c62d4adc39510534b373c3df87c3943974ec429092039aaadf",
+      "bytes": 5476
+    },
+    {
+      "source": "/images/class-motion-pilot/caster/job-24/combat-v2/sw-0-0.webp",
+      "target": "Campaign/actor-6-combat",
+      "sha256": "6dbfe2d9dea2ea255595e1dc4c773ea9a67a465950a4c5d848dae5fe9b7b55ef",
+      "bytes": 5844
+    }
+  ]
+}
